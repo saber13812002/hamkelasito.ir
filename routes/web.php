@@ -19,6 +19,7 @@ Route::get('/', function () {
 });
 
 
+// https://www.itsolutionstuff.com/post/laravel-10-custom-login-and-registration-exampleexample.html
 
 Route::get('login', [AuthController::class, 'index'])->name('login');
 Route::post('post-login', [AuthController::class, 'postLogin'])->name('login.post');
