@@ -15,33 +15,20 @@ use Illuminate\View\View;
 
 class AuthController extends Controller
 {
-    /**
-     * Write code on Method
-     *
-     * @return View ()
-     */
-    public function index(): View
+
+    public function index()
     {
         return view('auth.login');
     }
 
-    /**
-     * Write code on Method
-     *
-     * @return View ()
-     */
-    public function registration(): View
+
+    public function registration()
     {
         return view('auth.registration');
     }
 
-    /**
-     * Write code on Method
-     *
-     * @param Request $request
-     * @return RedirectResponse ()
-     */
-    public function postLogin(Request $request): RedirectResponse
+
+    public function postLogin(Request $request)
     {
         $request->validate([
             'email' => 'required',
@@ -57,13 +44,8 @@ class AuthController extends Controller
         return redirect("login")->withSuccess('Oppes! You have entered invalid credentials');
     }
 
-    /**
-     * Write code on Method
-     *
-     * @param Request $request
-     * @return RedirectResponse ()
-     */
-    public function postRegistration(Request $request): RedirectResponse
+
+    public function postRegistration(Request $request)
     {
         $request->validate([
             'name' => 'required',
@@ -77,12 +59,8 @@ class AuthController extends Controller
         return redirect("dashboard")->withSuccess('Great! You have Successfully loggedin');
     }
 
-    /**
-     * Write code on Method
-     *
-     * @return Application|Factory|\Illuminate\Contracts\View\View|\Illuminate\Foundation\Application ()
-     */
-    public function dashboard(): Application|Factory|\Illuminate\Contracts\View\View|\Illuminate\Foundation\Application
+
+    public function dashboard()
     {
         if (Auth::check()) {
             return view('dashboard');
@@ -91,11 +69,7 @@ class AuthController extends Controller
         return redirect("login")->withSuccess('Opps! You do not have access');
     }
 
-    /**
-     * Write code on Method
-     *
-     * @return response()
-     */
+
     public function create(array $data)
     {
         return User::create([
@@ -105,12 +79,7 @@ class AuthController extends Controller
         ]);
     }
 
-    /**
-     * Write code on Method
-     *
-     * @return RedirectResponse ()
-     */
-    public function logout(): RedirectResponse
+    public function logout()
     {
         Session::flush();
         Auth::logout();
