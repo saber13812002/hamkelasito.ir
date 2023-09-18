@@ -14,7 +14,7 @@
                             </div>
                             You are Logged In
                         @else
-                            You need login
+                            You need login. please click <a href="/login">here to login</a> or <a href="/registration">here to register</a>
                         @endif
                     </div>
                 </div>
