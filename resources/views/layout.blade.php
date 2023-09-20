@@ -45,7 +45,7 @@
         }
     </style>
 </head>
-<body>
+<body lang="{{App::getLocale()}}" dir="{{(App::isLocale('ar') ? 'rtl' : 'ltr')}}">
 
 <nav class="navbar navbar-expand-lg navbar-light navbar-laravel">
     <div class="container">
