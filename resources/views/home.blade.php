@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- saved from url=(0046)home.html -->
+<!-- saved from url=(0046)/ -->
 <html lang="en" data-be-installed="true"><plasmo-csui><template shadowrootmode="open"><style>*,:before,:after,::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:#3b82f680;--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: }.dd-sr-only{clip:rect(0,0,0,0);white-space:nowrap;border-width:0;width:1px;height:1px;margin:-1px;padding:0;position:absolute;overflow:hidden}.dd-absolute{position:absolute}.dd-relative{position:relative}.-dd-top-\[40\%\]{top:-40%}.dd-bottom-0{bottom:0}.dd-left-0{left:0}.dd-left-\[130\%\]{left:130%}.dd-right-0{right:0}.dd-top-0{top:0}.dd-top-1{top:.25rem}.dd-top-2{top:.5rem}.-dd-z-10{z-index:-10}.dd-z-10{z-index:10}.dd-m-4{margin:1rem}.dd-mx-\[8px\]{margin-left:8px;margin-right:8px}.dd-mt-2{margin-top:.5rem}.dd-block{display:block}.dd-inline-block{display:inline-block}.dd-flex{display:flex}.dd-inline-flex{display:inline-flex}.dd-hidden{display:none}.\!dd-h-full{height:100%!important}.dd-h-2{height:.5rem}.dd-h-3{height:.75rem}.dd-h-4{height:1rem}.dd-h-5{height:1.25rem}.dd-h-6{height:1.5rem}.dd-h-8{height:2rem}.dd-h-\[1px\]{height:1px}.dd-h-full{height:100%}.dd-max-h-0{max-height:0}.dd-max-h-full{max-height:100%}.\!dd-w-\[22px\]{width:22px!important}.\!dd-w-\[24px\]{width:24px!important}.dd-w-10{width:2.5rem}.dd-w-11{width:2.75rem}.dd-w-12{width:3rem}.dd-w-16{width:4rem}.dd-w-2{width:.5rem}.dd-w-3{width:.75rem}.dd-w-4{width:1rem}.dd-w-6{width:1.5rem}.dd-w-8{width:2rem}.dd-w-9{width:2.25rem}.dd-w-96{width:24rem}.dd-w-full{width:100%}.\!dd-max-w-\[22px\]{max-width:22px!important}.\!dd-max-w-\[24px\]{max-width:24px!important}.dd-flex-1{flex:1}.dd-flex-shrink-0{flex-shrink:0}.dd-flex-grow{flex-grow:1}.dd-basis-auto{flex-basis:auto}.dd-translate-x-1{--tw-translate-x:.25rem;transform:translate(var(--tw-translate-x),var(--tw-translate-y))rotate(var(--tw-rotate))skewX(var(--tw-skew-x))skewY(var(--tw-skew-y))scaleX(var(--tw-scale-x))scaleY(var(--tw-scale-y))}.dd-translate-x-5{--tw-translate-x:1.25rem;transform:translate(var(--tw-translate-x),var(--tw-translate-y))rotate(var(--tw-rotate))skewX(var(--tw-skew-x))skewY(var(--tw-skew-y))scaleX(var(--tw-scale-x))scaleY(var(--tw-scale-y))}.dd-translate-x-7{--tw-translate-x:1.75rem;transform:translate(var(--tw-translate-x),var(--tw-translate-y))rotate(var(--tw-rotate))skewX(var(--tw-skew-x))skewY(var(--tw-skew-y))scaleX(var(--tw-scale-x))scaleY(var(--tw-scale-y))}.dd-translate-x-9{--tw-translate-x:2.25rem;transform:translate(var(--tw-translate-x),var(--tw-translate-y))rotate(var(--tw-rotate))skewX(var(--tw-skew-x))skewY(var(--tw-skew-y))scaleX(var(--tw-scale-x))scaleY(var(--tw-scale-y))}.dd-cursor-pointer{cursor:pointer}.dd-select-none{user-select:none}.dd-items-start{align-items:flex-start}.dd-items-end{align-items:flex-end}.dd-items-center{align-items:center}.dd-justify-center{justify-content:center}.dd-justify-between{justify-content:space-between}.dd-gap-2{gap:.5rem}.dd-gap-4{gap:1rem}.dd-gap-\[10px\]{gap:10px}.dd-gap-\[6px\]{gap:6px}.dd-overflow-hidden{overflow:hidden}.dd-rounded{border-radius:.25rem}.dd-rounded-\[4px\]{border-radius:4px}.dd-rounded-full{border-radius:9999px}.dd-border-0{border-width:0}.dd-bg-black{--tw-bg-opacity:1;background-color:rgb(0 0 0/var(--tw-bg-opacity))}.dd-bg-inherit{background-color:inherit}.dd-bg-primary-base{--tw-bg-opacity:1;background-color:rgb(72 167 248/var(--tw-bg-opacity))}.dd-bg-sky-light{--tw-bg-opacity:1;background-color:rgb(227 229 229/var(--tw-bg-opacity))}.dd-bg-sky-lighter{--tw-bg-opacity:1;background-color:rgb(242 244 245/var(--tw-bg-opacity))}.dd-bg-sky-lightest{--tw-bg-opacity:1;background-color:rgb(247 249 250/var(--tw-bg-opacity))}.dd-bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255/var(--tw-bg-opacity))}.dd-bg-gradient-to-r{background-image:linear-gradient(to right,var(--tw-gradient-stops))}.dd-from-primary-darkest{--tw-gradient-from:#0065d0 var(--tw-gradient-from-position);--tw-gradient-to:#0065d000 var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to)}.dd-via-primary-darkest\/75{--tw-gradient-to:#0065d000 var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),#0065d0bf var(--tw-gradient-via-position),var(--tw-gradient-to)}.dd-to-primary-base{--tw-gradient-to:#48a7f8 var(--tw-gradient-to-position)}.dd-p-4{padding:1rem}.dd-px-4{padding-left:1rem;padding-right:1rem}.dd-px-\[16px\]{padding-left:16px;padding-right:16px}.dd-py-2{padding-top:.5rem;padding-bottom:.5rem}.dd-py-4{padding-top:1rem;padding-bottom:1rem}.dd-py-\[4px\]{padding-top:4px;padding-bottom:4px}.dd-py-\[6px\]{padding-top:6px;padding-bottom:6px}.dd-text-center{text-align:center}.dd-font-IRANSans{font-family:IRANSans}.dd-text-\[10px\]{font-size:10px}.dd-text-sm{font-size:.875rem;line-height:1.25rem}.dd-font-medium{font-weight:500}.dd-leading-none{line-height:1}.dd-text-ink-darkest{--tw-text-opacity:1;color:rgb(18 26 33/var(--tw-text-opacity))}.dd-text-ink-light{--tw-text-opacity:1;color:rgb(108 112 114/var(--tw-text-opacity))}.dd-text-red-500{--tw-text-opacity:1;color:rgb(239 68 68/var(--tw-text-opacity))}.dd-text-sky-dark{--tw-text-opacity:1;color:rgb(151 156 158/var(--tw-text-opacity))}.dd-text-white{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity))}.dd-opacity-0{opacity:0}.dd-opacity-100{opacity:1}.dd-shadow-sm{--tw-shadow:0 1px 2px 0 #0000000d;--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.dd-shadow-sky-light{--tw-shadow-color:#e3e5e5;--tw-shadow:var(--tw-shadow-colored)}.dd-outline-none{outline-offset:2px;outline:2px solid #0000}.dd-transition{transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter,-webkit-backdrop-filter;transition-duration:.15s;transition-timing-function:cubic-bezier(.4,0,.2,1)}.dd-transition-all{transition-property:all;transition-duration:.15s;transition-timing-function:cubic-bezier(.4,0,.2,1)}.dd-duration-300{transition-duration:.3s}.dd-ease-out{transition-timing-function:cubic-bezier(0,0,.2,1)}body,blockquote,dl,dd,h1,h2,h3,h4,h5,h6,hr,figure,p,pre{margin:0}button{font-family:inherit}a{color:inherit;text-decoration:none}.visited\:dd-text-white:visited{color:#fff}.hover\:dd-bg-sky-light:hover{--tw-bg-opacity:1;background-color:rgb(227 229 229/var(--tw-bg-opacity))}.dd-group:hover .group-hover\:dd-flex{display:flex}:is([dir=rtl] .rtl\:-dd-translate-x-1){--tw-translate-x:-.25rem;transform:translate(var(--tw-translate-x),var(--tw-translate-y))rotate(var(--tw-rotate))skewX(var(--tw-skew-x))skewY(var(--tw-skew-y))scaleX(var(--tw-scale-x))scaleY(var(--tw-scale-y))}:is([dir=rtl] .rtl\:-dd-translate-x-5){--tw-translate-x:-1.25rem;transform:translate(var(--tw-translate-x),var(--tw-translate-y))rotate(var(--tw-rotate))skewX(var(--tw-skew-x))skewY(var(--tw-skew-y))scaleX(var(--tw-scale-x))scaleY(var(--tw-scale-y))}:is([dir=rtl] .rtl\:-dd-translate-x-7){--tw-translate-x:-1.75rem;transform:translate(var(--tw-translate-x),var(--tw-translate-y))rotate(var(--tw-rotate))skewX(var(--tw-skew-x))skewY(var(--tw-skew-y))scaleX(var(--tw-scale-x))scaleY(var(--tw-scale-y))}:is([dir=rtl] .rtl\:-dd-translate-x-9){--tw-translate-x:-2.25rem;transform:translate(var(--tw-translate-x),var(--tw-translate-y))rotate(var(--tw-rotate))skewX(var(--tw-skew-x))skewY(var(--tw-skew-y))scaleX(var(--tw-scale-x))scaleY(var(--tw-scale-y))}:is(.dd-dark .dark\:dd-bg-ink-dark){--tw-bg-opacity:1;background-color:rgb(22 37 54/var(--tw-bg-opacity))}:is(.dd-dark .dark\:dd-bg-ink-darkest){--tw-bg-opacity:1;background-color:rgb(18 26 33/var(--tw-bg-opacity))}:is(.dd-dark .dark\:dd-bg-ink-light){--tw-bg-opacity:1;background-color:rgb(108 112 114/var(--tw-bg-opacity))}:is(.dd-dark .dark\:dd-bg-gradient-to-r){background-image:linear-gradient(to right,var(--tw-gradient-stops))}:is(.dd-dark .dark\:dd-from-primary-darkest){--tw-gradient-from:#0065d0 var(--tw-gradient-from-position);--tw-gradient-to:#0065d000 var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),var(--tw-gradient-to)}:is(.dd-dark .dark\:dd-via-primary-darkest\/90){--tw-gradient-to:#0065d000 var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from),#0065d0e6 var(--tw-gradient-via-position),var(--tw-gradient-to)}:is(.dd-dark .dark\:dd-to-primary-base){--tw-gradient-to:#48a7f8 var(--tw-gradient-to-position)}:is(.dd-dark .dark\:dd-text-ink-lighter){--tw-text-opacity:1;color:rgb(114 119 122/var(--tw-text-opacity))}:is(.dd-dark .dark\:dd-text-red-400){--tw-text-opacity:1;color:rgb(248 113 113/var(--tw-text-opacity))}:is(.dd-dark .dark\:dd-text-sky-base){--tw-text-opacity:1;color:rgb(205 207 208/var(--tw-text-opacity))}:is(.dd-dark .dark\:dd-text-white){--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity))}:is(.dd-dark .dark\:dd-shadow-ink-base){--tw-shadow-color:#222e3c;--tw-shadow:var(--tw-shadow-colored)}:is(.dd-dark .dark\:hover\:dd-bg-ink-base:hover){--tw-bg-opacity:1;background-color:rgb(34 46 60/var(--tw-bg-opacity))}</style><div id="plasmo-shadow-container" style="z-index: 2147483647; position: relative;"><div id="plasmo-overlay-0" class="plasmo-csui-container" style="display: flex; position: absolute; top: 0px; left: 0px;"></div></div></template></plasmo-csui><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -777,7 +777,7 @@
                 </button>
             </div>
             <div class="app-bar-title">
-                <a href="home.html" class="app-logo" aria-label="Liliana">
+                <a href="/" class="app-logo" aria-label="Liliana">
                     <img src="storage/assets/logo-white.svg" class="lazy lz-entered lz-loaded" data-src="storage/assets/img/logo-white.svg" width="88" height="24" alt="liliana" data-ll-status="loaded">
                     <noscript>
                         <img src="storage/assets/img/logo-white.svg" width="88" height="24" alt="liliana">
@@ -787,11 +787,11 @@
             </div>
             <div class="actions">
                 <div class="app-lang">
-                    <a href="home.html?lng=jp" class="btn btn-icon" aria-label="Change Language To Japane">
+                    <a href="/?lng=jp" class="btn btn-icon" aria-label="Change Language To Japane">
                         JP
                     </a>
                     <div class="divider"></div>
-                    <a href="home.html?lng=en" class="btn btn-icon active" aria-label="Change language To English">
+                    <a href="/?lng=en" class="btn btn-icon active" aria-label="Change language To English">
                         EN
                     </a>
                 </div>
@@ -827,7 +827,7 @@
                     <!-- menu nav -->
                     <nav class="menu-nav">
                         <ul>
-                            <li class="active"><a href="home.html">Home</a></li>
+                            <li class="active"><a href="/">Home</a></li>
                             <li><a href="work.html">Portfolio</a></li>
                             <li><a href="news-category.html">News</a></li>
                             <li><a href="about-us.html">About us</a></li>
@@ -908,13 +908,13 @@
                                 Login
                             </span>
                         </a>
-                        <a href="home.html#" class="dashboard">
+                        <a href="/#" class="dashboard">
                             <span>
                                 Miss Leslie Alexander
                                 <i class="icon-arrow-right"></i>
                             </span>
                         </a>
-                        <a href="home.html#" class="logout">
+                        <a href="/#" class="logout">
                             <span>
                                 Logout
                                 <i class="icon-logout"></i>
@@ -957,7 +957,7 @@
                                 <div class="tab-content-item active" data-tab-target="tab_header_menu">
                                     <nav class="menu-nav">
                                         <ul>
-                                            <li><a href="home.html">Home</a></li>
+                                            <li><a href="/">Home</a></li>
                                             <li><a href="work.html">Portfolio</a></li>
                                             <li><a href="news-category.html">News</a></li>
                                             <li><a href="about-us.html">About us</a></li>
@@ -1112,7 +1112,7 @@
             <div class="recent-search-section">
                 <div class="recent-model-heading">
                     <span>Recent Searches</span>
-                    <a href="home.html#" id="btn_clear_search_recent">Clear All</a>
+                    <a href="/#" id="btn_clear_search_recent">Clear All</a>
                 </div>
                 <div class="recent-model">
                     <a href="model-page.html">
@@ -2012,17 +2012,17 @@
                                 <div class="heading-filters desktop">
                                     <ul>
                                         <li>
-                                            <a href="home.html#" class="filter-option" data-filter="japanese" aria-label="Filter Japanese Top Models">
+                                            <a href="/#" class="filter-option" data-filter="japanese" aria-label="Filter Japanese Top Models">
                                                 Japanese
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="home.html#" class="filter-option" data-filter="mixed" aria-label="Filter Mixed Top Models">
+                                            <a href="/#" class="filter-option" data-filter="mixed" aria-label="Filter Mixed Top Models">
                                                 Mixed
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="home.html#" class="filter-option active" data-filter="international" aria-label="Filter International Top Models">
+                                            <a href="/#" class="filter-option active" data-filter="international" aria-label="Filter International Top Models">
                                                 International
                                             </a>
                                         </li>
@@ -2037,17 +2037,17 @@
                         </div>
                         <ul class="heading-filters mobile">
                             <li>
-                                <a href="home.html#" class="filter-option" data-filter="japanese" aria-label="Filter Japanese Top Models">
+                                <a href="/#" class="filter-option" data-filter="japanese" aria-label="Filter Japanese Top Models">
                                     Japanese
                                 </a>
                             </li>
                             <li>
-                                <a href="home.html#" class="filter-option" data-filter="mixed" aria-label="Filter Mixed Japanese Top Models">
+                                <a href="/#" class="filter-option" data-filter="mixed" aria-label="Filter Mixed Japanese Top Models">
                                     Mixed
                                 </a>
                             </li>
                             <li>
-                                <a href="home.html#" class="filter-option active" data-filter="international" aria-label="Filter International Top Models">
+                                <a href="/#" class="filter-option active" data-filter="international" aria-label="Filter International Top Models">
                                     International
                                 </a>
                             </li>
@@ -2301,12 +2301,12 @@
                                 <div class="heading-filters desktop">
                                     <ul>
                                         <li>
-                                            <a href="home.html#" class="filter-option active" data-filter="talent" aria-label="Filter Talent Top Featured">
+                                            <a href="/#" class="filter-option active" data-filter="talent" aria-label="Filter Talent Top Featured">
                                                 Talent
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="home.html#" class="filter-option" data-filter="actor" aria-label="Filter Actor Top Featured">
+                                            <a href="/#" class="filter-option" data-filter="actor" aria-label="Filter Actor Top Featured">
                                                 Actor
                                             </a>
                                         </li>
@@ -2316,12 +2316,12 @@
                         </div>
                         <ul class="heading-filters mobile">
                             <li>
-                                <a href="home.html#" class="filter-option active" data-filter="talent" aria-label="Filter Talent Top Featured">
+                                <a href="/#" class="filter-option active" data-filter="talent" aria-label="Filter Talent Top Featured">
                                     Talent
                                 </a>
                             </li>
                             <li>
-                                <a href="home.html#" class="filter-option" data-filter="actor" aria-label="Filter Actor Top Featured">
+                                <a href="/#" class="filter-option" data-filter="actor" aria-label="Filter Actor Top Featured">
                                     Actor
                                 </a>
                             </li>
@@ -2751,7 +2751,7 @@
             <!-- start about us -->
             <div class="col-12 col-sm-6 col-lg-4">
                 <div class="ft-about-us">
-                    <a href="home.html#" class="ft-site-logo">
+                    <a href="/#" class="ft-site-logo">
                         <img src="storage/assets/lazy-trp-1x1.webp" class="lazy lz-dark" data-src="storage/assets/img/logo-white.svg" width="88" height="24" alt="Liliana">
                         <noscript>
                             <img src="storage/assets/img/logo-white.svg" width="88" height="24" alt="Liliana">
@@ -2817,7 +2817,7 @@
                         <div class="accordion-content" style="display: none;">
                             <div class="ft-menu">
                                 <ul>
-                                    <li><a href="home.html">Home</a></li>
+                                    <li><a href="/">Home</a></li>
                                     <li><a href="work.html">Portfolio</a></li>
                                     <li><a href="news-category.html">News</a></li>
                                     <li><a href="about-us.html">About us</a></li>
