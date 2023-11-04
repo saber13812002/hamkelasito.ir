@@ -802,7 +802,7 @@
                 <button class="btn btn-icon app-bar-desktop" id="btn_appbar_search" aria-label="Open Search">
                     <i class="icon-search-normal"></i>
                 </button>
-                <a href="/dashboard/models/index.html" class="user-dashboard">
+                <a href="/dashboard/models/" class="user-dashboard">
                     <i class="icon-user"></i>
 <!--                    <img src="storage/assets/img/lazy-1x1.webp" class="lazy" data-src="storage/assets/img/1x1/001.webp"-->
 <!--                         width="80" height="80" alt="Model">-->
@@ -828,12 +828,12 @@
                     <nav class="menu-nav">
                         <ul>
                             <li class="active"><a href="/">Home</a></li>
-                            <li><a href="work.html">Portfolio</a></li>
-                            <li><a href="news-category.html">News</a></li>
-                            <li><a href="about-us.html">About us</a></li>
-                            <li><a href="contact-us.html">Contact us</a></li>
-                            <li><a href="company-profile.html">Company Profile</a></li>
-                            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                            <li><a href="work">Portfolio</a></li>
+                            <li><a href="news-category">News</a></li>
+                            <li><a href="about-us">About us</a></li>
+                            <li><a href="contact-us">Contact us</a></li>
+                            <li><a href="company-profile">Company Profile</a></li>
+                            <li><a href="privacy-policy">Privacy Policy</a></li>
                         </ul>
                     </nav>
 
@@ -842,49 +842,49 @@
                         <div class="category">
                             <div class="category-title">Model</div>
                             <ul class="category-content">
-                                <li><a href="models-list.html">All</a></li>
-                                <li><a href="models-list.html">Women</a></li>
-                                <li><a href="models-list.html">Men</a></li>
-                                <li><a href="models-list.html">Kids &amp; Babies</a></li>
-                                <li><a href="models-list.html">Japanese</a></li>
-                                <li><a href="models-list.html">Mixed</a></li>
-                                <li><a href="models-list.html">International</a></li>
+                                <li><a href="models-list">All</a></li>
+                                <li><a href="models-list">Women</a></li>
+                                <li><a href="models-list">Men</a></li>
+                                <li><a href="models-list">Kids &amp; Babies</a></li>
+                                <li><a href="models-list">Japanese</a></li>
+                                <li><a href="models-list">Mixed</a></li>
+                                <li><a href="models-list">International</a></li>
                             </ul>
                         </div>
                         <div class="category">
                             <div class="category-title">Talent</div>
                             <ul class="category-content">
-                                <li><a href="models-list.html">All</a></li>
-                                <li><a href="models-list.html">Women</a></li>
-                                <li><a href="models-list.html">Men</a></li>
-                                <li><a href="models-list.html">Kids</a></li>
-                                <li><a href="models-list.html">Japanese</a></li>
-                                <li><a href="models-list.html">Mixed</a></li>
-                                <li><a href="models-list.html">International</a></li>
+                                <li><a href="models-list">All</a></li>
+                                <li><a href="models-list">Women</a></li>
+                                <li><a href="models-list">Men</a></li>
+                                <li><a href="models-list">Kids</a></li>
+                                <li><a href="models-list">Japanese</a></li>
+                                <li><a href="models-list">Mixed</a></li>
+                                <li><a href="models-list">International</a></li>
                             </ul>
                         </div>
                         <div class="category">
                             <div class="category-title">Actor</div>
                             <ul class="category-content">
-                                <li><a href="models-list.html">All</a></li>
-                                <li><a href="models-list.html">Actors</a></li>
-                                <li><a href="models-list.html">Actresses</a></li>
-                                <li><a href="models-list.html">Kids</a></li>
-                                <li><a href="models-list.html">Japanese</a></li>
-                                <li><a href="models-list.html">Mixed</a></li>
-                                <li><a href="models-list.html">International</a></li>
+                                <li><a href="models-list">All</a></li>
+                                <li><a href="models-list">Actors</a></li>
+                                <li><a href="models-list">Actresses</a></li>
+                                <li><a href="models-list">Kids</a></li>
+                                <li><a href="models-list">Japanese</a></li>
+                                <li><a href="models-list">Mixed</a></li>
+                                <li><a href="models-list">International</a></li>
                             </ul>
                         </div>
                         <div class="category">
                             <div class="category-title">Extra</div>
                             <ul class="category-content">
-                                <li><a href="models-list.html">All</a></li>
-                                <li><a href="models-list.html">Women</a></li>
-                                <li><a href="models-list.html">Men</a></li>
-                                <li><a href="models-list.html">Kids</a></li>
-                                <li><a href="models-list.html">Japanese</a></li>
-                                <li><a href="models-list.html">Mixed</a></li>
-                                <li><a href="models-list.html">International</a></li>
+                                <li><a href="models-list">All</a></li>
+                                <li><a href="models-list">Women</a></li>
+                                <li><a href="models-list">Men</a></li>
+                                <li><a href="models-list">Kids</a></li>
+                                <li><a href="models-list">Japanese</a></li>
+                                <li><a href="models-list">Mixed</a></li>
+                                <li><a href="models-list">International</a></li>
                             </ul>
                         </div>
                     </div>
@@ -896,13 +896,13 @@
 
                     <!-- side action -->
                     <div class="side-action">
-                        <a href="become-a-model.html" class="btn btn-icon-left">
+                        <a href="become-a-model" class="btn btn-icon-left">
                             <span>
                                 <i class="icon-add"></i>
                                 Become Liliana
                             </span>
                         </a>
-                        <a href="login.html" class="btn btn-primary btn-icon-left">
+                        <a href="login" class="btn btn-primary btn-icon-left">
                             <span>
                                 <i class="icon-log-in"></i>
                                 Login
@@ -958,12 +958,12 @@
                                     <nav class="menu-nav">
                                         <ul>
                                             <li><a href="/">Home</a></li>
-                                            <li><a href="work.html">Portfolio</a></li>
-                                            <li><a href="news-category.html">News</a></li>
-                                            <li><a href="about-us.html">About us</a></li>
-                                            <li><a href="contact-us.html">Contact us</a></li>
-                                            <li><a href="company-profile.html">Company Profile</a></li>
-                                            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                                            <li><a href="work">Portfolio</a></li>
+                                            <li><a href="news-category">News</a></li>
+                                            <li><a href="about-us">About us</a></li>
+                                            <li><a href="contact-us">Contact us</a></li>
+                                            <li><a href="company-profile">Company Profile</a></li>
+                                            <li><a href="privacy-policy">Privacy Policy</a></li>
                                         </ul>
                                     </nav>
                                 </div>
@@ -976,13 +976,13 @@
                                             </button>
                                             <div class="accordion-content" style="display: none;">
                                                 <ul>
-                                                    <li><a href="models-list.html">All</a></li>
-                                                    <li><a href="models-list.html">Women</a></li>
-                                                    <li><a href="models-list.html">Men</a></li>
-                                                    <li><a href="models-list.html">Kids &amp; Babies</a></li>
-                                                    <li><a href="models-list.html">Japanese</a></li>
-                                                    <li><a href="models-list.html">Mixed</a></li>
-                                                    <li><a href="models-list.html">International</a></li>
+                                                    <li><a href="models-list">All</a></li>
+                                                    <li><a href="models-list">Women</a></li>
+                                                    <li><a href="models-list">Men</a></li>
+                                                    <li><a href="models-list">Kids &amp; Babies</a></li>
+                                                    <li><a href="models-list">Japanese</a></li>
+                                                    <li><a href="models-list">Mixed</a></li>
+                                                    <li><a href="models-list">International</a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -993,13 +993,13 @@
                                             </button>
                                             <div class="accordion-content" style="display: none;">
                                                 <ul>
-                                                    <li><a href="models-list.html">All</a></li>
-                                                    <li><a href="models-list.html">Women</a></li>
-                                                    <li><a href="models-list.html">Men</a></li>
-                                                    <li><a href="models-list.html">Kids</a></li>
-                                                    <li><a href="models-list.html">Japanese</a></li>
-                                                    <li><a href="models-list.html">Mixed</a></li>
-                                                    <li><a href="models-list.html">International</a></li>
+                                                    <li><a href="models-list">All</a></li>
+                                                    <li><a href="models-list">Women</a></li>
+                                                    <li><a href="models-list">Men</a></li>
+                                                    <li><a href="models-list">Kids</a></li>
+                                                    <li><a href="models-list">Japanese</a></li>
+                                                    <li><a href="models-list">Mixed</a></li>
+                                                    <li><a href="models-list">International</a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -1010,13 +1010,13 @@
                                             </button>
                                             <div class="accordion-content" style="display: none;">
                                                 <ul>
-                                                    <li><a href="models-list.html">All</a></li>
-                                                    <li><a href="models-list.html">Actors</a></li>
-                                                    <li><a href="models-list.html">Actresses</a></li>
-                                                    <li><a href="models-list.html">Kids</a></li>
-                                                    <li><a href="models-list.html">Japanese</a></li>
-                                                    <li><a href="models-list.html">Mixed</a></li>
-                                                    <li><a href="models-list.html">International</a></li>
+                                                    <li><a href="models-list">All</a></li>
+                                                    <li><a href="models-list">Actors</a></li>
+                                                    <li><a href="models-list">Actresses</a></li>
+                                                    <li><a href="models-list">Kids</a></li>
+                                                    <li><a href="models-list">Japanese</a></li>
+                                                    <li><a href="models-list">Mixed</a></li>
+                                                    <li><a href="models-list">International</a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -1027,13 +1027,13 @@
                                             </button>
                                             <div class="accordion-content" style="display: none;">
                                                 <ul>
-                                                    <li><a href="models-list.html">All</a></li>
-                                                    <li><a href="models-list.html">Women</a></li>
-                                                    <li><a href="models-list.html">Men</a></li>
-                                                    <li><a href="models-list.html">Kids</a></li>
-                                                    <li><a href="models-list.html">Japanese</a></li>
-                                                    <li><a href="models-list.html">Mixed</a></li>
-                                                    <li><a href="models-list.html">International</a></li>
+                                                    <li><a href="models-list">All</a></li>
+                                                    <li><a href="models-list">Women</a></li>
+                                                    <li><a href="models-list">Men</a></li>
+                                                    <li><a href="models-list">Kids</a></li>
+                                                    <li><a href="models-list">Japanese</a></li>
+                                                    <li><a href="models-list">Mixed</a></li>
+                                                    <li><a href="models-list">International</a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -1050,14 +1050,14 @@
                             </noscript>
                             <div class="user-content">
                                 <div class="user-display-name">Miss Leslie Alexander</div>
-                                <a href="/dashboard/models/index.html">
+                                <a href="/dashboard/models/index">
                                     Go to Dashboard
                                     <i class="icon-arrow-right"></i>
                                 </a>
                             </div>
                         </div>
-                        <a href="login.html" class="btn btn-primary btn-full">Login</a>
-                        <a href="become-a-model.html" class="btn btn-full">Become Liliana</a>
+                        <a href="login" class="btn btn-primary btn-full">Login</a>
+                        <a href="become-a-model" class="btn btn-full">Become Liliana</a>
                         <ul class="menu-contact-us">
                             <li>
                                 <i class="icon-sms"></i>
@@ -1089,7 +1089,7 @@
                     </button>
                 </div>
                 <div class="app-bar-title">
-                    <form action="models-list.html" method="post">
+                    <form action="models-list" method="post">
                         <button class="btn btn-icon" aria-label="Search">
                             <i class="icon-search-normal"></i>
                         </button>
@@ -1115,27 +1115,27 @@
                     <a href="/#" id="btn_clear_search_recent">Clear All</a>
                 </div>
                 <div class="recent-model">
-                    <a href="model-page.html">
+                    <a href="model-page">
                         <img src="storage/assets/img/slider/012.webp" class="lazy lz-entered lz-loaded" data-src="storage/assets/img/3x4/012.webp" width="120" height="160" alt="Model" data-ll-status="loaded">
                         <noscript>
                             <img src="storage/assets/img/3x4/012.webp" width="120" height="160" alt="Model">
                         </noscript>
                         <span>Maaya</span>
                     </a>
-                    <a href="model-page.html">
+                    <a href="model-page">
                         <img src="storage/assets/img/slider/011.webp" class="lazy lz-entered lz-loaded" data-src="storage/assets/img/3x4/011.webp" width="120" height="160" alt="Model" data-ll-status="loaded">
                         <noscript>
                             <img src="storage/assets/img/3x4/011.webp" width="120" height="160" alt="Model">
                         </noscript>
                         <span>Soya</span>
                     </a>
-                    <a href="model-page.html">
+                    <a href="model-page">
                         <div class="replacement-box">
                             <i class="icon-gallery"></i>
                         </div>
                         <span>Mikel</span>
                     </a>
-                    <a href="model-page.html">
+                    <a href="model-page">
                         <img src="storage/assets/img/slider/028.webp" class="lazy lz-entered lz-loaded" data-src="storage/assets/img/3x4/028.webp" width="120" height="160" alt="Model" data-ll-status="loaded">
                         <noscript>
                             <img src="storage/assets/img/3x4/028.webp" width="120" height="160" alt="Model">
@@ -1151,7 +1151,7 @@
 <!--            <div class="not-found-result">Not Found Result</div>-->
             <ul>
                 <li>
-                    <a href="model-page.html">
+                    <a href="model-page">
                         <img src="storage/assets/lazy-1x1.webp" class="lazy" data-src="storage/assets/img/1x1/003.webp" width="80" height="80" alt="model">
                         <noscript>
                             <img src="storage/assets/img/1x1/005.webp" width="80" height="80" alt="model">
@@ -1167,7 +1167,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="model-page.html">
+                    <a href="model-page">
                         <img src="storage/assets/img/slider/004.webp" class="lazy lz-entered lz-loaded" data-src="storage/assets/img/1x1/004.webp" width="80" height="80" alt="model" data-ll-status="loaded">
                         <noscript>
                             <img src="storage/assets/img/1x1/005.webp" width="80" height="80" alt="model">
@@ -1181,7 +1181,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="model-page.html">
+                    <a href="model-page">
                         <img src="storage/assets/img/slider/005.webp" class="lazy lz-entered lz-loaded" data-src="storage/assets/img/1x1/005.webp" width="80" height="80" alt="model" data-ll-status="loaded">
                         <noscript>
                             <img src="storage/assets/img/1x1/005.webp" width="80" height="80" alt="model">
@@ -1195,7 +1195,7 @@
                     </a>
                 </li>
             </ul>
-            <a href="models-list.html" class="more-result">
+            <a href="models-list" class="more-result">
                 See All 25 Results
                 <i class="icon-arrow-right"></i>
             </a>
@@ -1207,14 +1207,14 @@
     <div class="bookmark">
         <div class="empty-bookmark" style="display: none;">
             <p>You have not added any models to the list yet.</p>
-            <a href="models-list.html" class="btn btn-xl btn-icon-left btn-full">
+            <a href="models-list" class="btn btn-xl btn-icon-left btn-full">
                 + Add Models
             </a>
         </div>
         <div class="bookmark-items">
             <div class="bookmark-item" style="width: 203.5px;">
                 <article class="model-card item-bookmarked" itemscope="" itemtype="https://schema.org/Person">
-                    <a href="model-page.html" itemprop="url">
+                    <a href="model-page" itemprop="url">
                         <meta itemprop="image" content="storage/assets/img/3x4/007.webp">
                         <img src="storage/assets/img/slider/007.webp" class="lazy lz-entered lz-loaded" data-src="storage/assets/img/3x4/007.webp" width="200" height="260" alt="model" data-ll-status="loaded">
                         <noscript>
@@ -1242,7 +1242,7 @@
             </div>
             <div class="bookmark-item" style="width: 203.5px;">
                 <article class="model-card item-bookmarked" itemscope="" itemtype="https://schema.org/Person">
-                    <a href="model-page.html" itemprop="url">
+                    <a href="model-page" itemprop="url">
                         <meta itemprop="image" content="storage/assets/img/3x4/017.webp">
                         <img src="storage/assets/img/slider/017.webp" class="lazy lz-entered lz-loaded" data-src="storage/assets/img/3x4/017.webp" width="200" height="260" alt="model" data-ll-status="loaded">
                         <noscript>
@@ -1270,7 +1270,7 @@
             </div>
             <div class="bookmark-item" style="width: 203.5px;">
                 <article class="model-card item-bookmarked" itemscope="" itemtype="https://schema.org/Person">
-                    <a href="model-page.html" itemprop="url">
+                    <a href="model-page" itemprop="url">
                         <meta itemprop="image" content="storage/assets/img/3x4/027.webp">
                         <img src="storage/assets/img/slider/027.webp" class="lazy lz-entered lz-loaded" data-src="storage/assets/img/3x4/027.webp" width="200" height="260" alt="model" data-ll-status="loaded">
                         <noscript>
@@ -1298,7 +1298,7 @@
             </div>
             <div class="bookmark-item" style="width: 203.5px;">
                 <article class="model-card item-bookmarked" itemscope="" itemtype="https://schema.org/Person">
-                    <a href="model-page.html" itemprop="url">
+                    <a href="model-page" itemprop="url">
                         <meta itemprop="image" content="storage/assets/img/3x4/021.webp">
                         <img src="storage/assets/img/slider/021.webp" class="lazy lz-entered lz-loaded" data-src="storage/assets/img/3x4/021.webp" width="200" height="260" alt="model" data-ll-status="loaded">
                         <noscript>
@@ -1326,7 +1326,7 @@
             </div>
             <div class="bookmark-item" style="width: 203.5px;">
                 <article class="model-card item-bookmarked" itemscope="" itemtype="https://schema.org/Person">
-                    <a href="model-page.html" itemprop="url">
+                    <a href="model-page" itemprop="url">
                         <meta itemprop="image" content="storage/assets/img/3x4/025.webp">
                         <img src="storage/assets/img/slider/025.webp" class="lazy lz-entered lz-loaded" data-src="storage/assets/img/3x4/025.webp" width="200" height="260" alt="model" data-ll-status="loaded">
                         <noscript>
@@ -1354,7 +1354,7 @@
             </div>
             <div class="bookmark-item" style="width: 203.5px;">
                 <article class="model-card item-bookmarked" itemscope="" itemtype="https://schema.org/Person">
-                    <a href="model-page.html" itemprop="url">
+                    <a href="model-page" itemprop="url">
                         <meta itemprop="image" content="storage/assets/img/3x4/024.webp">
                         <img src="storage/assets/img/slider/024.webp" class="lazy lz-entered lz-loaded" data-src="storage/assets/img/3x4/024.webp" width="200" height="260" alt="model" data-ll-status="loaded">
                         <noscript>
@@ -1382,8 +1382,8 @@
             </div>
         </div>
         <div class="bookmark-actions">
-            <a href="models-list.html" class="btn btn-full">Hire Some Models</a>
-            <a href="bookmark-select-models.html" class="btn btn-primary btn-full">
+            <a href="models-list" class="btn btn-full">Hire Some Models</a>
+            <a href="bookmark-select-models" class="btn btn-primary btn-full">
                 Hire All Models
             </a>
         </div>
@@ -1578,7 +1578,7 @@
             <div class="slider-view">
                 <div class="slider-contents"><div class="item-content slider-content-0 active" data-index="0">
                         <div class="item-title">
-                            <a href="model-page.html" aria-label="MIYU" itemprop="url"><span itemprop="name">MIYU</span></a>
+                            <a href="model-page" aria-label="MIYU" itemprop="url"><span itemprop="name">MIYU</span></a>
                             <a href="storage/assets/video/video-001.mp4" data-light-box="slide_1_video" data-light-box-type="video" aria-label="Video" class="item-btn-play" data-object-id="0">
                                 <i class="icon-subtract"></i>
                             </a>
@@ -1618,13 +1618,13 @@
                             </div>
                         </div>
                         <div class="item-description">I am Vegan and passionate about Ethical Living, the way to live without harming any people, Animal and our mother Earth. Therefore, I mostly model for ethical/ vegan/ sustainable jobs.</div>
-                        <a href="model-page.html" class="item-read-more" style="display: none;">
+                        <a href="model-page" class="item-read-more" style="display: none;">
                             <span>Read More</span>
                             <i class="icon-arrow-right"></i>
                         </a>
                     </div><div class="item-content slider-content-1" data-index="1">
                         <div class="item-title">
-                            <a href="model-page.html" aria-label="YURIKA" itemprop="url"><span itemprop="name">YURIKA</span></a>
+                            <a href="model-page" aria-label="YURIKA" itemprop="url"><span itemprop="name">YURIKA</span></a>
                             <a href="storage/assets/video/video-001.mp4" data-light-box="slide_2_video" data-light-box-type="video" aria-label="Video" class="item-btn-play" data-object-id="1">
                                 <i class="icon-subtract"></i>
                             </a>
@@ -1664,13 +1664,13 @@
                             </div>
                         </div>
                         <div class="item-description">I have been modeling for 12 years. I have done over 200 shoots a year, so companies that are concerned about direction can also rely on me. [my experience] I have experience in beauty, bridal, kimono, business, travel, and family ad shoots, apparel e-commerce shoots, magazines, stock photo shoots, video, reporter, and live-streaming corporate projects. I'm also able to provide the following services. ・Clothing size: size 7, S-M ・Shoe size: 23.5cm, size M Various outfits are available. (suits, office casual, yoga/training wear, loungewear, casual wear, accessories, etc.) Hair and makeup can be arranged if necessary. I can also do your hair without makeup. Nails are not provided. [Appeal Points] 1) I'm confident in our teeth and appreciate a natural smile. I am also good at posing for brand images and situations. 2) I can be entrusted with self hair and makeup for photoshoots. I am particular about beauty, and I also deliver beauty and makeup-related services through live-streaming for major manufacturers. I am also particular about skin care and have received favorable reviews for the lack of retouching. I am also a professional photographer, and I am always ready to respond flexibly on site.</div>
-                        <a href="model-page.html" class="item-read-more" style="display: inline;">
+                        <a href="model-page" class="item-read-more" style="display: inline;">
                             <span>Read More</span>
                             <i class="icon-arrow-right"></i>
                         </a>
                     </div><div class="item-content slider-content-2" data-index="2">
                         <div class="item-title">
-                            <a href="model-page.html" aria-label="MATTHIEU" itemprop="url"><span itemprop="name">MATTHIEU</span></a>
+                            <a href="model-page" aria-label="MATTHIEU" itemprop="url"><span itemprop="name">MATTHIEU</span></a>
                             <a href="storage/assets/video/video-001.mp4" data-light-box="slide_3_video" data-light-box-type="video" aria-label="Video" class="item-btn-play" data-object-id="2">
                                 <i class="icon-subtract"></i>
                             </a>
@@ -1710,13 +1710,13 @@
                             </div>
                         </div>
                         <div class="item-description">I'm a French native speaker living in Tokyo. I have a great passion for fashion, movies, and photography. I have done some modeling/acting gigs with companies like NHK, 7-11, Netflix, Nisshin, and others. I love to bring my energy and passion for every project.</div>
-                        <a href="model-page.html" class="item-read-more" style="display: inline;">
+                        <a href="model-page" class="item-read-more" style="display: inline;">
                             <span>Read More</span>
                             <i class="icon-arrow-right"></i>
                         </a>
                     </div><div class="item-content slider-content-3" data-index="3">
                         <div class="item-title">
-                            <a href="model-page.html" aria-label="VERONIKA" itemprop="url"><span itemprop="name">VERONIKA</span></a>
+                            <a href="model-page" aria-label="VERONIKA" itemprop="url"><span itemprop="name">VERONIKA</span></a>
                             <a href="storage/assets/video/video-001.mp4" data-light-box="slide_4_video" data-light-box-type="video" aria-label="Video" class="item-btn-play" data-object-id="3">
                                 <i class="icon-subtract"></i>
                             </a>
@@ -1756,13 +1756,13 @@
                             </div>
                         </div>
                         <div class="item-description">I am a 28 year old woman born in Czech Republic. I have a Bachelor’s degree in Teaching of Physical education and English. After my studies I moved to Japan to teach tennis in the International tennis school in Tokyo. Currently I am a stay-home mum of a 2 year old daughter. Things I love doing: (Aerial) yoga, Hula dance, reading, traveling, learning about Japanese traditions like kimono, ikebana, tea ceremony.., Visiting Japanese beauty salons, learning about fashion, health and beauty, taking photos &amp; videos of places in Japan, arts &amp; crafts.</div>
-                        <a href="model-page.html" class="item-read-more" style="display: inline;">
+                        <a href="model-page" class="item-read-more" style="display: inline;">
                             <span>Read More</span>
                             <i class="icon-arrow-right"></i>
                         </a>
                     </div><div class="item-content slider-content-4" data-index="4">
                         <div class="item-title">
-                            <a href="model-page.html" aria-label="TOYA" itemprop="url"><span itemprop="name">TOYA</span></a>
+                            <a href="model-page" aria-label="TOYA" itemprop="url"><span itemprop="name">TOYA</span></a>
                             <a href="storage/assets/video/video-001.mp4" data-light-box="slide_5_video" data-light-box-type="video" aria-label="Video" class="item-btn-play" data-object-id="4">
                                 <i class="icon-subtract"></i>
                             </a>
@@ -1802,13 +1802,13 @@
                             </div>
                         </div>
                         <div class="item-description">I would like to be involved in a wide range of work from fashion to advertising. I am looking forward to working with you.</div>
-                        <a href="model-page.html" class="item-read-more" style="display: none;">
+                        <a href="model-page" class="item-read-more" style="display: none;">
                             <span>Read More</span>
                             <i class="icon-arrow-right"></i>
                         </a>
                     </div><div class="item-content slider-content-5" data-index="5">
                         <div class="item-title">
-                            <a href="model-page.html" aria-label="MARIKO" itemprop="url"><span itemprop="name">MARIKO</span></a>
+                            <a href="model-page" aria-label="MARIKO" itemprop="url"><span itemprop="name">MARIKO</span></a>
                             <a href="storage/assets/video/video-001.mp4" data-light-box="slide_6_video" data-light-box-type="video" aria-label="Video" class="item-btn-play" data-object-id="5">
                                 <i class="icon-subtract"></i>
                             </a>
@@ -1848,13 +1848,13 @@
                             </div>
                         </div>
                         <div class="item-description">Hi,I'm Mariko!I'm working as a model in Korea right now but I'll start modeling in Japan from September this year.I have a lot of modeling experiences in Korea and I'm looking forward to making new ones in Japan as well.</div>
-                        <a href="model-page.html" class="item-read-more" style="display: none;">
+                        <a href="model-page" class="item-read-more" style="display: none;">
                             <span>Read More</span>
                             <i class="icon-arrow-right"></i>
                         </a>
                     </div><div class="item-content slider-content-6" data-index="6">
                         <div class="item-title">
-                            <a href="model-page.html" aria-label="REZA" itemprop="url"><span itemprop="name">REZA</span></a>
+                            <a href="model-page" aria-label="REZA" itemprop="url"><span itemprop="name">REZA</span></a>
                             <a href="storage/assets/video/video-001.mp4" data-light-box="slide_7_video" data-light-box-type="video" aria-label="Video" class="item-btn-play" data-object-id="6">
                                 <i class="icon-subtract"></i>
                             </a>
@@ -1894,7 +1894,7 @@
                             </div>
                         </div>
                         <div class="item-description">Hi I’m Reza, I was born in Tehran and raised in Japan. I can speak 3 languages(Persian,English,Japanese). I have experience in theater and have worked with several great directors. Also had the pleasure to do MC on “gakitsuka”.</div>
-                        <a href="model-page.html" class="item-read-more" style="display: none;">
+                        <a href="model-page" class="item-read-more" style="display: none;">
                             <span>Read More</span>
                             <i class="icon-arrow-right"></i>
                         </a>
@@ -1920,7 +1920,7 @@
             <div class="container-xxl">
                 <div class="home-categories-content">
                     <div class="home-categories-item" itemscope="" itemtype="https://schema.org/DefinedTerm">
-                        <a href="models-list.html" aria-label="Woman Category" itemprop="url">
+                        <a href="models-list" aria-label="Woman Category" itemprop="url">
                             <img src="storage/assets/img_002.webp" class="lazy lz-entered lz-loaded" data-src="storage/assets/img/img_002.webp" width="298" height="438" alt="Woman Category" data-ll-status="loaded">
                             <noscript>
                                 <img src="storage/assets/img/img_002.webp" width="298" height="438" alt="Woman Category">
@@ -1932,7 +1932,7 @@
                         </a>
                     </div>
                     <div class="home-categories-item" itemscope="" itemtype="https://schema.org/DefinedTerm">
-                        <a href="models-list.html" aria-label="Man Category" itemprop="url">
+                        <a href="models-list" aria-label="Man Category" itemprop="url">
                             <img src="storage/assets/img_003.webp" class="lazy lz-entered lz-loaded" data-src="storage/assets/img/img_003.webp" width="298" height="438" alt="Man Category" data-ll-status="loaded">
                             <noscript>
                                 <img src="storage/assets/img/img_003.webp" width="298" height="438" alt="Man Category">
@@ -1944,7 +1944,7 @@
                         </a>
                     </div>
                     <div class="home-categories-item" itemscope="" itemtype="https://schema.org/DefinedTerm">
-                        <a href="models-list.html" aria-label="Kids &amp; Baby Models" itemprop="url">
+                        <a href="models-list" aria-label="Kids &amp; Baby Models" itemprop="url">
                             <img src="storage/assets/img_004.webp" class="lazy lz-entered lz-loaded" data-src="storage/assets/img/img_004.webp" width="298" height="438" alt="Kid &amp; Baby Models" data-ll-status="loaded">
                             <noscript>
                                 <img src="storage/assets/img/img_004.webp" width="298" height="438" alt="Kid & Baby Models">
@@ -2030,7 +2030,7 @@
                                 </div>
                             </div>
                             <div class="action-area">
-                                <a href="models-list.html" itemprop="url">
+                                <a href="models-list" itemprop="url">
                                     <span>See All</span>
                                 </a>
                             </div>
@@ -2056,7 +2056,7 @@
                     <div class="heading-content" itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
                         <div class="filter-item" data-filter="international" style="width: auto;">
                             <article class="model-card" itemprop="item" itemscope="" itemtype="https://schema.org/Person">
-                                <a href="model-page.html" itemprop="url">
+                                <a href="model-page" itemprop="url">
                                     <meta itemprop="image" content="storage/assets/img/3x4/029.webp">
                                     <img src="storage/assets/lazy-3x4.webp" class="lazy" data-src="storage/assets/img/3x4/029.webp" width="200" height="260" alt="model">
                                     <noscript>
@@ -2084,7 +2084,7 @@
                         </div>
                         <div class="filter-item" data-filter="international,japanese" style="width: auto;">
                             <article class="model-card" itemprop="item" itemscope="" itemtype="https://schema.org/Person">
-                                <a href="model-page.html" itemprop="url">
+                                <a href="model-page" itemprop="url">
                                     <meta itemprop="image" content="storage/assets/img/3x4/002.webp">
                                     <img src="storage/assets/lazy-3x4.webp" class="lazy" data-src="storage/assets/img/3x4/002.webp" width="200" height="260" alt="model">
                                     <noscript>
@@ -2112,7 +2112,7 @@
                         </div>
                         <div class="filter-item" data-filter="international,japanese" style="width: auto;">
                             <article class="model-card" itemprop="item" itemscope="" itemtype="https://schema.org/Person">
-                                <a href="model-page.html" itemprop="url">
+                                <a href="model-page" itemprop="url">
                                     <meta itemprop="image" content="storage/assets/img/3x4/027.webp">
                                     <img src="storage/assets/lazy-3x4.webp" class="lazy" data-src="storage/assets/img/3x4/027.webp" width="200" height="260" alt="model">
                                     <noscript>
@@ -2140,7 +2140,7 @@
                         </div>
                         <div class="filter-item" data-filter="international,mixed" style="width: auto;">
                             <article class="model-card" itemprop="item" itemscope="" itemtype="https://schema.org/Person">
-                                <a href="model-page.html" itemprop="url">
+                                <a href="model-page" itemprop="url">
                                     <meta itemprop="image" content="storage/assets/img/3x4/004.webp">
                                     <img src="storage/assets/lazy-3x4.webp" class="lazy" data-src="storage/assets/img/3x4/004.webp" width="200" height="260" alt="model">
                                     <noscript>
@@ -2168,7 +2168,7 @@
                         </div>
                         <div class="filter-item" data-filter="international,mixed" style="width: auto;">
                             <article class="model-card" itemprop="item" itemscope="" itemtype="https://schema.org/Person">
-                                <a href="model-page.html" itemprop="url">
+                                <a href="model-page" itemprop="url">
                                     <meta itemprop="image" content="storage/assets/img/3x4/025.webp">
                                     <img src="storage/assets/lazy-3x4.webp" class="lazy" data-src="storage/assets/img/3x4/025.webp" width="200" height="260" alt="model">
                                     <noscript>
@@ -2196,7 +2196,7 @@
                         </div>
                         <div class="filter-item" data-filter="international" style="width: auto;">
                             <article class="model-card" itemprop="item" itemscope="" itemtype="https://schema.org/Person">
-                                <a href="model-page.html" itemprop="url">
+                                <a href="model-page" itemprop="url">
                                     <meta itemprop="image" content="storage/assets/img/3x4/006.webp">
                                     <img src="storage/assets/lazy-3x4.webp" class="lazy" data-src="storage/assets/img/3x4/006.webp" width="200" height="260" alt="model">
                                     <noscript>
@@ -2224,7 +2224,7 @@
                         </div>
                         <div class="filter-item" data-filter="international,mixed" style="width: auto;">
                             <article class="model-card" itemprop="item" itemscope="" itemtype="https://schema.org/Person">
-                                <a href="model-page.html" itemprop="url">
+                                <a href="model-page" itemprop="url">
                                     <meta itemprop="image" content="storage/assets/img/3x4/023.webp">
                                     <img src="storage/assets/lazy-3x4.webp" class="lazy" data-src="storage/assets/img/3x4/023.webp" width="200" height="260" alt="model">
                                     <noscript>
@@ -2252,7 +2252,7 @@
                         </div>
                         <div class="filter-item" data-filter="international" style="width: auto;">
                             <article class="model-card" itemprop="item" itemscope="" itemtype="https://schema.org/Person">
-                                <a href="model-page.html" itemprop="url">
+                                <a href="model-page" itemprop="url">
                                     <meta itemprop="image" content="storage/assets/img/3x4/008.webp">
                                     <img src="storage/assets/lazy-3x4.webp" class="lazy" data-src="storage/assets/img/3x4/008.webp" width="200" height="260" alt="model">
                                     <noscript>
@@ -2279,7 +2279,7 @@
                             </article>
                         </div>
                         <div class="see-more" style="width: auto;">
-                            <a href="models-list.html" class="btn btn-xxl btn-floating">
+                            <a href="models-list" class="btn btn-xxl btn-floating">
                                 <span>See All</span>
                             </a>
                         </div>
@@ -2330,7 +2330,7 @@
                     <div class="heading-content" itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem">
                         <div class="filter-item" data-filter="talent" style="width: auto;">
                             <article class="model-card" itemprop="item" itemscope="" itemtype="https://schema.org/Person">
-                                <a href="model-page.html" itemprop="url">
+                                <a href="model-page" itemprop="url">
                                     <meta itemprop="image" content="storage/assets/img/3x4/015.webp">
                                     <img src="storage/assets/lazy-3x4.webp" class="lazy" data-src="storage/assets/img/3x4/015.webp" width="200" height="260" alt="model">
                                     <noscript>
@@ -2358,7 +2358,7 @@
                         </div>
                         <div class="filter-item" data-filter="talent" style="width: auto;">
                             <article class="model-card" itemprop="item" itemscope="" itemtype="https://schema.org/Person">
-                                <a href="model-page.html" itemprop="url">
+                                <a href="model-page" itemprop="url">
                                     <meta itemprop="image" content="storage/assets/img/3x4/011.webp">
                                     <img src="storage/assets/lazy-3x4.webp" class="lazy" data-src="storage/assets/img/3x4/011.webp" width="200" height="260" alt="model">
                                     <noscript>
@@ -2386,7 +2386,7 @@
                         </div>
                         <div class="filter-item" data-filter="talent,actor" style="width: auto;">
                             <article class="model-card" itemprop="item" itemscope="" itemtype="https://schema.org/Person">
-                                <a href="model-page.html" itemprop="url">
+                                <a href="model-page" itemprop="url">
                                     <meta itemprop="image" content="storage/assets/img/3x4/024.webp">
                                     <img src="storage/assets/lazy-3x4.webp" class="lazy" data-src="storage/assets/img/3x4/024.webp" width="200" height="260" alt="model">
                                     <noscript>
@@ -2414,7 +2414,7 @@
                         </div>
                         <div class="filter-item" data-filter="talent" style="width: auto;">
                             <article class="model-card" itemprop="item" itemscope="" itemtype="https://schema.org/Person">
-                                <a href="model-page.html" itemprop="url">
+                                <a href="model-page" itemprop="url">
                                     <meta itemprop="image" content="storage/assets/img/3x4/022.webp">
                                     <img src="storage/assets/lazy-3x4.webp" class="lazy" data-src="storage/assets/img/3x4/022.webp" width="200" height="260" alt="model">
                                     <noscript>
@@ -2442,7 +2442,7 @@
                         </div>
                         <div class="filter-item" data-filter="talent" style="width: auto;">
                             <article class="model-card" itemprop="item" itemscope="" itemtype="https://schema.org/Person">
-                                <a href="model-page.html" itemprop="url">
+                                <a href="model-page" itemprop="url">
                                     <meta itemprop="image" content="storage/assets/img/3x4/018.webp">
                                     <img src="storage/assets/lazy-3x4.webp" class="lazy" data-src="storage/assets/img/3x4/018.webp" width="200" height="260" alt="model">
                                     <noscript>
@@ -2470,7 +2470,7 @@
                         </div>
                         <div class="filter-item" data-filter="talent,actor" style="width: auto;">
                             <article class="model-card" itemprop="item" itemscope="" itemtype="https://schema.org/Person">
-                                <a href="model-page.html" itemprop="url">
+                                <a href="model-page" itemprop="url">
                                     <meta itemprop="image" content="storage/assets/img/3x4/007.webp">
                                     <img src="storage/assets/lazy-3x4.webp" class="lazy" data-src="storage/assets/img/3x4/007.webp" width="200" height="260" alt="model">
                                     <noscript>
@@ -2498,7 +2498,7 @@
                         </div>
                         <div class="filter-item" data-filter="talent" style="width: auto;">
                             <article class="model-card" itemprop="item" itemscope="" itemtype="https://schema.org/Person">
-                                <a href="model-page.html" itemprop="url">
+                                <a href="model-page" itemprop="url">
                                     <meta itemprop="image" content="storage/assets/img/3x4/014.webp">
                                     <img src="storage/assets/lazy-3x4.webp" class="lazy" data-src="storage/assets/img/3x4/014.webp" width="200" height="260" alt="model">
                                     <noscript>
@@ -2526,7 +2526,7 @@
                         </div>
                         <div class="filter-item" data-filter="talent,actor" style="width: auto;">
                             <article class="model-card" itemprop="item" itemscope="" itemtype="https://schema.org/Person">
-                                <a href="model-page.html" itemprop="url">
+                                <a href="model-page" itemprop="url">
                                     <meta itemprop="image" content="storage/assets/img/3x4/016.webp">
                                     <img src="storage/assets/lazy-3x4.webp" class="lazy" data-src="storage/assets/img/3x4/016.webp" width="200" height="260" alt="model">
                                     <noscript>
@@ -2553,7 +2553,7 @@
                             </article>
                         </div>
                         <div class="see-more" style="width: auto;">
-                            <a href="models-list.html" class="btn btn-xxl btn-floating">
+                            <a href="models-list" class="btn btn-xxl btn-floating">
                                 <span>See All</span>
                             </a>
                         </div>
@@ -2574,7 +2574,7 @@
                                 <h2 class="heading-title" itemprop="name">NEWS</h2>
                             </div>
                             <div class="action-area">
-                                <a href="news-category.html" itemprop="url">
+                                <a href="news-category" itemprop="url">
                                     <span>See All</span>
                                 </a>
                             </div>
@@ -2585,7 +2585,7 @@
                             <article class="news-card" itemscope="" itemtype="https://schema.org/NewsArticle" itemprop="hasPart">
                                 <div class="card-thumbnail">
                                     <meta itemprop="thumbnailUrl" content="storage/assets/img/news-003.webp">
-                                    <a href="news-single-company.html">
+                                    <a href="news-single-company">
                                         <img src="storage/assets/lazy-1.7x1.webp" class="card-thumbnail-image lazy" data-src="storage/assets/img/news-003.webp" width="312" height="177" alt="news title">
                                         <noscript>
                                             <img src="storage/assets/img/news-003.webp" class="card-thumbnail-image"
@@ -2594,10 +2594,10 @@
                                     </a>
                                 </div>
                                 <div class="card-content">
-                                    <h2 class="card-title" itemprop="name"><a href="news-single-company.html" itemprop="url">News Title</a></h2>
+                                    <h2 class="card-title" itemprop="name"><a href="news-single-company" itemprop="url">News Title</a></h2>
                                     <div class="card-author" itemprop="author">
                                         <i class="icon-user"></i>
-                                        <a href="news-single-company.html">Admin</a>
+                                        <a href="news-single-company">Admin</a>
                                     </div>
                                     <div class="card-date">
                                         <i class="icon-clock"></i>
@@ -2609,9 +2609,9 @@
                                         ago and have over 50,000 followers. I hope to share with young girls and.
                                     </div>
                                     <div class="card-category">
-                                        <a href="news-category.html">Fashion</a>
-                                        <a href="news-category.html">Modeling</a>
-                                        <a href="news-category.html">New Face</a>
+                                        <a href="news-category">Fashion</a>
+                                        <a href="news-category">Modeling</a>
+                                        <a href="news-category">New Face</a>
                                     </div>
                                 </div>
                             </article>
@@ -2620,7 +2620,7 @@
                             <article class="news-card" itemscope="" itemtype="https://schema.org/NewsArticle" itemprop="hasPart">
                                 <div class="card-thumbnail">
                                     <meta itemprop="thumbnailUrl" content="storage/assets/img/news-004.webp">
-                                    <a href="news-single-company.html">
+                                    <a href="news-single-company">
                                         <img src="storage/assets/lazy-1.7x1.webp" class="card-thumbnail-image lazy" data-src="storage/assets/img/news-004.webp" width="312" height="177" alt="news title">
                                         <noscript>
                                             <img src="storage/assets/img/news-004.webp" class="card-thumbnail-image"
@@ -2629,10 +2629,10 @@
                                     </a>
                                 </div>
                                 <div class="card-content">
-                                    <h2 class="card-title" itemprop="name"><a href="news-single-company.html" itemprop="url">News Title</a></h2>
+                                    <h2 class="card-title" itemprop="name"><a href="news-single-company" itemprop="url">News Title</a></h2>
                                     <div class="card-author" itemprop="author">
                                         <i class="icon-user"></i>
-                                        <a href="news-single-company.html">Admin</a>
+                                        <a href="news-single-company">Admin</a>
                                     </div>
                                     <div class="card-date">
                                         <i class="icon-clock"></i>
@@ -2644,9 +2644,9 @@
                                         ago and have over 50,000 followers. I hope to share with young girls and.
                                     </div>
                                     <div class="card-category">
-                                        <a href="news-category.html">Fashion</a>
-                                        <a href="news-category.html">Modeling</a>
-                                        <a href="news-category.html">New Face</a>
+                                        <a href="news-category">Fashion</a>
+                                        <a href="news-category">Modeling</a>
+                                        <a href="news-category">New Face</a>
                                     </div>
                                 </div>
                             </article>
@@ -2655,7 +2655,7 @@
                             <article class="news-card" itemscope="" itemtype="https://schema.org/NewsArticle" itemprop="hasPart">
                                 <div class="card-thumbnail">
                                     <meta itemprop="thumbnailUrl" content="storage/assets/img/news-005.webp">
-                                    <a href="news-single-company.html">
+                                    <a href="news-single-company">
                                         <img src="storage/assets/lazy-1.7x1.webp" class="card-thumbnail-image lazy" data-src="storage/assets/img/news-005.webp" width="312" height="177" alt="news title">
                                         <noscript>
                                             <img src="storage/assets/img/news-005.webp" class="card-thumbnail-image"
@@ -2664,10 +2664,10 @@
                                     </a>
                                 </div>
                                 <div class="card-content">
-                                    <h2 class="card-title" itemprop="name"><a href="news-single-company.html" itemprop="url">News Title</a></h2>
+                                    <h2 class="card-title" itemprop="name"><a href="news-single-company" itemprop="url">News Title</a></h2>
                                     <div class="card-author" itemprop="author">
                                         <i class="icon-user"></i>
-                                        <a href="news-single-company.html">Admin</a>
+                                        <a href="news-single-company">Admin</a>
                                     </div>
                                     <div class="card-date">
                                         <i class="icon-clock"></i>
@@ -2679,9 +2679,9 @@
                                         ago and have over 50,000 followers. I hope to share with young girls and.
                                     </div>
                                     <div class="card-category">
-                                        <a href="news-category.html">Fashion</a>
-                                        <a href="news-category.html">Modeling</a>
-                                        <a href="news-category.html">New Face</a>
+                                        <a href="news-category">Fashion</a>
+                                        <a href="news-category">Modeling</a>
+                                        <a href="news-category">New Face</a>
                                     </div>
                                 </div>
                             </article>
@@ -2690,7 +2690,7 @@
                             <article class="news-card" itemscope="" itemtype="https://schema.org/NewsArticle" itemprop="hasPart">
                                 <div class="card-thumbnail">
                                     <meta itemprop="thumbnailUrl" content="storage/assets/img/news-006.webp">
-                                    <a href="news-single-company.html">
+                                    <a href="news-single-company">
                                         <img src="storage/assets/lazy-1.7x1.webp" class="card-thumbnail-image lazy" data-src="storage/assets/img/news-006.webp" width="312" height="177" alt="news title">
                                         <noscript>
                                             <img src="storage/assets/img/news-006.webp" class="card-thumbnail-image"
@@ -2699,10 +2699,10 @@
                                     </a>
                                 </div>
                                 <div class="card-content">
-                                    <h2 class="card-title" itemprop="name"><a href="news-single-company.html" itemprop="url">News Title</a></h2>
+                                    <h2 class="card-title" itemprop="name"><a href="news-single-company" itemprop="url">News Title</a></h2>
                                     <div class="card-author" itemprop="author">
                                         <i class="icon-user"></i>
-                                        <a href="news-single-company.html">Admin</a>
+                                        <a href="news-single-company">Admin</a>
                                     </div>
                                     <div class="card-date">
                                         <i class="icon-clock"></i>
@@ -2714,15 +2714,15 @@
                                         ago and have over 50,000 followers. I hope to share with young girls and.
                                     </div>
                                     <div class="card-category">
-                                        <a href="news-category.html">Fashion</a>
-                                        <a href="news-category.html">Modeling</a>
-                                        <a href="news-category.html">New Face</a>
+                                        <a href="news-category">Fashion</a>
+                                        <a href="news-category">Modeling</a>
+                                        <a href="news-category">New Face</a>
                                     </div>
                                 </div>
                             </article>
                         </div>
                         <div class="see-more" style="width: auto;">
-                            <a href="news.html" class="btn btn-xxl btn-floating" itemprop="url">
+                            <a href="news" class="btn btn-xxl btn-floating" itemprop="url">
                                 <span>See All</span>
                             </a>
                         </div>
@@ -2818,12 +2818,12 @@
                             <div class="ft-menu">
                                 <ul>
                                     <li><a href="/">Home</a></li>
-                                    <li><a href="work.html">Portfolio</a></li>
-                                    <li><a href="news-category.html">News</a></li>
-                                    <li><a href="about-us.html">About us</a></li>
-                                    <li><a href="contact-us.html">Contact us</a></li>
-                                    <li><a href="company-profile.html">Company Profile</a></li>
-                                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                                    <li><a href="work">Portfolio</a></li>
+                                    <li><a href="news-category">News</a></li>
+                                    <li><a href="about-us">About us</a></li>
+                                    <li><a href="contact-us">Contact us</a></li>
+                                    <li><a href="company-profile">Company Profile</a></li>
+                                    <li><a href="privacy-policy">Privacy Policy</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -2836,10 +2836,10 @@
                         <div class="accordion-content" style="display: none;">
                             <div class="ft-categories">
                                 <ul>
-                                    <li><a href="models-list.html">Model</a></li>
-                                    <li><a href="models-list.html">Talent</a></li>
-                                    <li><a href="models-list.html">Actor</a></li>
-                                    <li><a href="models-list.html">Extra</a></li>
+                                    <li><a href="models-list">Model</a></li>
+                                    <li><a href="models-list">Talent</a></li>
+                                    <li><a href="models-list">Actor</a></li>
+                                    <li><a href="models-list">Extra</a></li>
                                 </ul>
                             </div>
                         </div>

@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Session;
 
-// https://www.itsolutionstuff.com/post/laravel-10-custom-login-and-registration-exampleexample.html
+// https://www.itsolutionstuff.com/post/laravel-10-custom-login-and-registration-exampleexample
 
 class AuthController extends Controller
 {
