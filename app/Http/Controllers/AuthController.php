@@ -66,6 +66,15 @@ class AuthController extends Controller
         return redirect("login")->withSuccess('Opps! You do not have access');
     }
 
+    public function admin()
+    {
+//        if (Auth::check()) {
+            return view('auth.admin');
+//        }
+
+//        return redirect("login")->withSuccess('Opps! You do not have access');
+    }
+
 
     public function create(array $data)
     {
