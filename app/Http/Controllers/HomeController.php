@@ -8,6 +8,10 @@ use Illuminate\Support\Facades\Auth;
 
 class HomeController
 {
+    public function home()
+    {
+        return view('home');
+    }
 
     public function lang(Request $request)
     {
