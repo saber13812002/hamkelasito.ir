@@ -15,11 +15,16 @@
  - install php
  - install compsoer
  - run composer i
+ - run php artisan key:gen
  - run php artisan serve
  - run php artisan storage:link
  - unzip public.zip in storage in storage
  - php artisan adminlte:install
  - php artisan adminlte:status
+ - php artisan migrate
+ - php artisan db:seed --class=CategoriesTableSeeder
+ - php artisan db:seed --class=MembersSeeder
+
 
 ## License
 
