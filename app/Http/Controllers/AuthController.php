@@ -34,7 +34,7 @@ class AuthController extends Controller
 
         $credentials = $request->only('email', 'password');
         if (Auth::attempt($credentials)) {
-            return redirect()->intended('dashboard')
+            return redirect()->intended('admin')
                 ->withSuccess('You have Successfully loggedin goto <a href="/">home</a> or go to <a href="/admin">admin panel</a>');
         }
 
@@ -53,7 +53,7 @@ class AuthController extends Controller
         $data = $request->all();
         $check = $this->create($data);
 
-        return redirect("dashboard")->withSuccess('Great! You have Successfully loggedin');
+        return redirect("admin")->withSuccess('Great! You have Successfully loggedin');
     }
 
 
