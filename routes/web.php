@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AuthController;
 use App\Models\Category;
+use App\Models\Members;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -17,8 +18,14 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+
     $categories = Category::all();
-    return view('home', ["categories" => $categories]);
+    $members = Members::all();
+
+    return view('home', [
+        "categories" => $categories,
+        "members" => $members
+    ]);
 });
 
 Route::get('/dashboard', function () {
