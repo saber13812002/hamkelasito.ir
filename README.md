@@ -18,7 +18,8 @@
  - run php artisan serve
  - run php artisan storage:link
  - unzip public.zip in storage in storage
- - 
+ - php artisan adminlte:install
+ - php artisan adminlte:status
 
 ## License
 
