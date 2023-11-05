@@ -1558,7 +1558,7 @@
                                 <div class="filter-item" data-filter="{{ $member->type }}" style="width: auto;">
                                     <article class="model-card" itemprop="item" itemscope=""
                                              itemtype="https://schema.org/Person">
-                                        <a href="model-page" itemprop="url">
+                                        <a href="model-page?id={{ $member->id }}" itemprop="url">
                                             <meta itemprop="image"
                                                   content="storage/assets/img/3x4/{{ $member->profile_image }}.webp">
                                             <img src="storage/assets/lazy-3x4.webp" class="lazy"
