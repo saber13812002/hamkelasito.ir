@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\MembersController;
 use App\Models\Category;
 use App\Models\Members;
 use Illuminate\Support\Facades\Auth;
@@ -43,6 +45,15 @@ Route::get('dashboard', [AuthController::class, 'dashboard']);
 Route::get('logout', [AuthController::class, 'logout'])->name('logout');
 
 Route::get('admin', [AuthController::class, 'admin']);
+
+Route::get('category', [CategoryController::class, 'index']);
+
+Route::get('members', [MembersController::class, 'index']);
+
+//Route::get('/admin', function () {
+//    Route::get('/', [AuthController::class, 'admin']);
+//    Route::get('/category', [\App\Http\Controllers\CategoryController::class, 'index']);
+//});
 
 Auth::routes();
 
