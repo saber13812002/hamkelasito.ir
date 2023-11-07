@@ -68,4 +68,9 @@ class HomeController
     {
         return view('about-us');
     }
+
+    public function ContactUs()
+    {
+        return view('contact-us');
+    }
 }

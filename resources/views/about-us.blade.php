@@ -10,7 +10,7 @@
             <div class="container-xxxl">
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="./home.html">Home</a></li>
+                        <li class="breadcrumb-item"><a href="./home">Home</a></li>
                         <li class="breadcrumb-item active" aria-current="page">About Us</li>
                     </ol>
                 </nav>
@@ -80,15 +80,15 @@
             <div class="container-lg">
                 <div class="link-item">
                     <h2>Company Profile</h2>
-                    <span>Our company profile can be see <a href="./company-profile.html">here.</a></span>
+                    <span>Our company profile can be see <a href="./company-profile">here.</a></span>
                 </div>
                 <div class="link-item">
                     <h2>Contact Us</h2>
-                    <span>You can contact us <a href="./contact-us.html">here.</a></span>
+                    <span>You can contact us <a href="./contact-us">here.</a></span>
                 </div>
                 <div class="link-item">
                     <h2>Privacy Policy</h2>
-                    <span>Our privacy policy can be see <a href="./privacy-policy.html">here.</a></span>
+                    <span>Our privacy policy can be see <a href="./privacy-policy">here.</a></span>
                 </div>
             </div>
         </section>

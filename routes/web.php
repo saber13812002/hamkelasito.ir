@@ -51,4 +51,5 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::get('/model-page', [App\Http\Controllers\HomeController::class, 'modelPage'])->name('model-page');
 Route::get('/models-list', [App\Http\Controllers\HomeController::class, 'modelsList'])->name('models-list');
 Route::get('/about-us', [App\Http\Controllers\HomeController::class, 'aboutUs'])->name('about-us');
+Route::get('/contact-us', [App\Http\Controllers\HomeController::class, 'contactUs'])->name('contact-us');
 
