@@ -23,6 +23,14 @@ class MemberController extends Controller
     /**
      * Show the form for creating a new resource.
      */
+    public function main()
+    {
+        return view('dashboard.main');
+    }
+
+    /**
+     * Show the form for creating a new resource.
+     */
     public function role()
     {
         return view('dashboard.role');

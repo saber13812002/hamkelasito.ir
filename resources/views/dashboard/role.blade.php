@@ -4,244 +4,187 @@
 
     <!-- content -->
     <main id="main">
-        <div id="sidebar">
-            <div class="user-box">
-                <div class="user-info">
-                    <img src="storage/assets/img/lazy-1x1.webp" class="user-avatar lazy" id="user_level"
-                         data-src="storage/assets/img/profile/profile-1/Thumbnail/profile-001.webp" width="40" height="40"
-                         alt="image user profile">
-                    <noscript>
-                        <img src="storage/assets/img/profile/profile-1/Thumbnail/profile-001.webp" class="user-avatar"
-                             width="40" height="40" alt="image user profile">
-                    </noscript>
-                    <div class="user-display-name">Olivia Rhye</div>
-                    <div class="user-stage-name">Batman</div>
-                    <div class="user-id">No. 2123</div>
-                </div>
-                <div class="user-categories">
-                    <a href="#">Influencer</a>
-                    <a href="#">Model</a>
-                </div>
-            </div>
-            <div class="menu hidden-scrollbar">
-                <ul>
-                    <li>
-                        <a href="/dashboard-models/" class="active">
-                            <i class="icon-bar-chart-2"></i>
-                            <span>Dashboard</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/dashboard-models/role">
-                            <i class="icon-terms"></i>
-                            <span>Role</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/dashboard-models/user-info">
-                            <i class="icon-user"></i>
-                            <span>User info</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/dashboard-models/gallery">
-                            <i class="icon-gallery"></i>
-                            <span>Photo Gallery</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/dashboard-models/video-gallery">
-                            <i class="icon-play-circle"></i>
-                            <span>Video Gallery</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/dashboard-models/voice-gallery">
-                            <i class="icon-microphone-2"></i>
-                            <span>Voice Gallery</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/dashboard-models/security-privacy">
-                            <i class="icon-shield"></i>
-                            <span>Security & Privacy</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/dashboard-models/account-info" id="account_info">
-                            <i class="icon-info"></i>
-                            <span>Account info</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="sidebar-actions">
-                <a href="/logout" class="danger">
-                    <i class="icon-logout"></i>
-                    <span>Log out</span>
-                </a>
-            </div>
-            <div class="sidebar-mobile-actions">
-                <a href="#" class="btn btn-primary btn-full btn-icon-right">
-                <span>
-                    Go to lilianamodels.com
-                    <i class="icon-arrow-right-1"></i>
-                </span>
-                </a>
-            </div>
-        </div>
+        @include('dashboard.sidebar')
         <div id="ds_content">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
                         <div class="white-box">
-                            <div class="white-box-content content-mixing">
-                                <div class="notifications-list">
-                                    <div class="notification-item warning">
-                                        <div class="notification-content">
-                                            <i class="icon-alert-triangle notification-icon"></i>
-                                            <div class="notification-inner-content">
-                                                <div class="notification-title">Photos Replaced Successfully</div>
-                                                <div class="notification-description">
-                                                    Your photos have been successfully replaced. Your new job experience
-                                                    has been successfully verified and registered.
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="notification-actions">
-                                            <a href="#" class="notification-read-more"
-                                               data-label="Photos Replaced Successfully" data-status="warning"
-                                               data-content="Your photos have been successfully replaced. Your new job experience has been successfully verified and registered. Your photos have been successfully replaced. Your new job experience has been successfully verified and registered. Your photos have been successfully replaced. Your new job experience has been successfully verified and registered. Your photos have been successfully replaced. Your new job experience has been successfully verified and registered. Your photos have been successfully replaced. Your new job experience has been successfully verified and registered. Your photos have been successfully replaced. Your new job experience has been successfully verified and registered.">
-                                                <span>Read More</span>
-                                                <i class="icon-arrow-right"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="progress-bar-box">
-                                    <div class="progress-bar-header">
-                                        <div class="mini-circle-progress" data-num="80" data-value="0%"></div>
-                                        <div class="progress-bar-header-content">
-                                            <div class="progress-bar-title">
-                                                Account Status
-                                                <button type="button" aria-label="info">
-                                                    <i class="icon-info"></i>
-                                                </button>
-                                            </div>
-                                            <div class="progress-bar-description">
-                                                Please be aware that some fields in your dashboard are still unfilled.
-                                                Kindly complete the missing information to benefit from more special
-                                                services
-                                                and features. If you need assistance, our support team is ready to help.
-                                            </div>
-                                        </div>
-                                        <div class="progress-bar-actions">
-                                            <a href="/dashboard-models/user-info">
-                                                <span>See what’s not completed</span>
-                                                <i class="icon-arrow-right"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <div class="white-box">
                             <div class="white-box-header">
-                                <div class="white-box-title">Notifications</div>
-                                <div class="white-box-actions">
-                                    <a href="/dashboard-models/notifications">
-                                        <span>See All</span>
-                                        <i class="icon-arrow-right"></i>
-                                    </a>
-                                </div>
+                                <div class="white-box-title">Role</div>
                             </div>
                             <div class="white-box-content">
-                                <div class="notifications-list">
-                                    <div class="notification-item success">
-                                        <div class="notification-content">
-                                            <i class="icon-tick notification-icon"></i>
-                                            <div class="notification-inner-content">
-                                                <div class="notification-title">Photos Replaced Successfully</div>
-                                                <div class="notification-description">
-                                                    Your photos have been successfully replaced. Your new job experience
-                                                    has been successfully verified and registered.
+
+                                <!-- get offers as group -->
+                                <div class="form-section">
+                                    <div class="form-section-label"><span>Work as <span
+                                                class="field-required-star">*</span></span></div>
+                                    <div class="form-section-content">
+
+                                        <!-- type checkbox -->
+                                        <div>
+                                            <div class="row justify-content-space-between field-group-validations"
+                                                 data-group-validation-relation="or">
+
+                                                <!-- model -->
+                                                <div class="col-auto">
+                                                    <div class="field field-type-checkbox" data-type="checkbox"
+                                                         data-required="true">
+                                                        <div class="field-content">
+                                                            <label>
+                                                                <input type="checkbox" name="get_offers_as_model"
+                                                                       id="get_offers_as_model" checked>
+                                                                <span class="field-label">Model</span>
+                                                                <span class="checkmark"></span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
                                                 </div>
+
+                                                <!-- talent -->
+                                                <div class="col-auto">
+                                                    <div class="field field-type-checkbox" data-type="checkbox"
+                                                         data-required="true">
+                                                        <div class="field-content">
+                                                            <label>
+                                                                <input type="checkbox" name="get_offers_as_talent"
+                                                                       id="get_offers_as_talent">
+                                                                <span class="field-label">Talent</span>
+                                                                <span class="checkmark"></span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- actor actress -->
+                                                <div class="col-auto">
+                                                    <div class="field field-type-checkbox" data-type="checkbox"
+                                                         data-required="true">
+                                                        <div class="field-content">
+                                                            <label>
+                                                                <input type="checkbox"
+                                                                       name="get_offers_as_actor_actress"
+                                                                       id="get_offers_as_actor_actress" checked>
+                                                                <span class="field-label">Actor-Actress</span>
+                                                                <span class="checkmark"></span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <!-- extra -->
+                                                <div class="col-auto">
+                                                    <div class="field field-type-checkbox" data-type="checkbox"
+                                                         data-required="true">
+                                                        <div class="field-content">
+                                                            <label>
+                                                                <input type="checkbox" name="work_as_extra"
+                                                                       id="work_as_extra">
+                                                                <span class="field-label">Extra</span>
+                                                                <span class="checkmark"></span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 field-error-msg"></div>
+
                                             </div>
                                         </div>
-                                        <div class="notification-actions">
-                                            <a href="#" class="notification-read-more"
-                                               data-label="Photos Replaced Successfully" data-status="success"
-                                               data-content="Your photos have been successfully replaced. Your new job experience has been successfully verified and registered. Your photos have been successfully replaced. Your new job experience has been successfully verified and registered. Your photos have been successfully replaced. Your new job experience has been successfully verified and registered. Your photos have been successfully replaced. Your new job experience has been successfully verified and registered. Your photos have been successfully replaced. Your new job experience has been successfully verified and registered. Your photos have been successfully replaced. Your new job experience has been successfully verified and registered.">
-                                                <span>Read More</span>
-                                                <i class="icon-arrow-right"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="notification-item danger">
-                                        <div class="notification-content">
-                                            <i class="icon-alert-triangle notification-icon"></i>
-                                            <div class="notification-inner-content">
-                                                <div class="notification-title">Photos Replaced Successfully</div>
-                                                <div class="notification-description">
-                                                    Your photos have been successfully replaced. Your new job experience
-                                                    has been successfully verified and registered.
+
+                                        <!-- sub model -->
+                                        <div data-dependency="#get_offers_as_model" data-dependency-value="on">
+                                            <div class="field field-type-select" data-field-defualt-text=" "
+                                                 data-btn-submit-text="Select"
+                                                 data-required="true" data-type="select" data-select-all="true"
+                                                 data-clear="true">
+                                                <div class="field-content">
+                                                    <label for="model_type">Model Type <span
+                                                            class="field-required-star">*</span></label>
+                                                    <select name="model_type" id="model_type" multiple>
+                                                        <option value="fashion_model" selected>Fashion Model</option>
+                                                        <option value="advertising_model">Advertising Model</option>
+                                                        <option value="fitness_model" selected>Fitness Model</option>
+                                                        <option value="natural_model">Natural Model</option>
+                                                        <option value="parts_model">Parts Model</option>
+                                                    </select>
+                                                    <i class="icon-arrow-down"></i>
                                                 </div>
                                             </div>
+                                            <div class="field-error-msg" id="field_error_model_type"></div>
                                         </div>
-                                        <div class="notification-actions">
-                                            <a href="#" class="notification-read-more"
-                                               data-label="Photos Replaced Successfully" data-status="danger"
-                                               data-content="Your photos have been successfully replaced. Your new job experience has been successfully verified and registered. Your photos have been successfully replaced. Your new job experience has been successfully verified and registered. Your photos have been successfully replaced. Your new job experience has been successfully verified and registered. Your photos have been successfully replaced. Your new job experience has been successfully verified and registered. Your photos have been successfully replaced. Your new job experience has been successfully verified and registered. Your photos have been successfully replaced. Your new job experience has been successfully verified and registered.">
-                                                <span>Read More</span>
-                                                <i class="icon-arrow-right"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="notification-item info">
-                                        <div class="notification-content">
-                                            <i class="icon-info notification-icon"></i>
-                                            <div class="notification-inner-content">
-                                                <div class="notification-title">Photos Replaced Successfully</div>
-                                                <div class="notification-description">
-                                                    Your photos have been successfully replaced. Your new job experience
-                                                    has been successfully verified and registered.
+
+                                        <!-- sub talent -->
+                                        <div data-dependency="#get_offers_as_talent" data-dependency-value="on">
+                                            <div class="field field-type-select" data-field-defualt-text=" "
+                                                 data-btn-submit-text="Select"
+                                                 data-required="true" data-type="select" data-select-all="true"
+                                                 data-clear="true">
+                                                <div class="field-content">
+                                                    <label for="talent_type">Talent Type <span
+                                                            class="field-required-star">*</span></label>
+                                                    <select name="talent_type" id="talent_type" multiple>
+                                                        <option value="talent">Talent</option>
+                                                        <option value="radio_personality">Radio personality</option>
+                                                        <option value="comedian">Comedian</option>
+                                                        <option value="Moderator_MC">Moderator (MC)</option>
+                                                        <option value="critic">Critic</option>
+                                                        <option value="cultural_person">Cultural person</option>
+                                                        <option value="international_exchange_person">international
+                                                            exchange
+                                                            person
+                                                        </option>
+                                                        <option value="reporter">Reporter</option>
+                                                    </select>
+                                                    <i class="icon-arrow-down"></i>
                                                 </div>
                                             </div>
+                                            <div class="field-error-msg" id="field_error_talent_type"></div>
                                         </div>
-                                        <div class="notification-actions">
-                                            <a href="#" class="notification-read-more"
-                                               data-label="Photos Replaced Successfully" data-status="info"
-                                               data-content="Your photos have been successfully replaced. Your new job experience has been successfully verified and registered. Your photos have been successfully replaced. Your new job experience has been successfully verified and registered. Your photos have been successfully replaced. Your new job experience has been successfully verified and registered. Your photos have been successfully replaced. Your new job experience has been successfully verified and registered. Your photos have been successfully replaced. Your new job experience has been successfully verified and registered. Your photos have been successfully replaced. Your new job experience has been successfully verified and registered.">
-                                                <span>Read More</span>
-                                                <i class="icon-arrow-right"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="notification-item warning">
-                                        <div class="notification-content">
-                                            <i class="icon-alert-triangle notification-icon"></i>
-                                            <div class="notification-inner-content">
-                                                <div class="notification-title">Photos Replaced Successfully</div>
-                                                <div class="notification-description">
-                                                    Your photos have been successfully replaced. Your new job experience
-                                                    has been successfully verified and registered.
+
+                                        <!-- sub actor actress -->
+                                        <div data-dependency="#get_offers_as_actor_actress" data-dependency-value="on">
+                                            <div class="field field-type-select" data-field-defualt-text=" "
+                                                 data-btn-submit-text="Select"
+                                                 data-required="true" data-type="select" data-select-all="true"
+                                                 data-clear="true">
+                                                <div class="field-content">
+                                                    <label for="actor_actress_type">Actor-Actress Type <span
+                                                            class="field-required-star">*</span></label>
+                                                    <select name="actor_actress_type" id="actor_actress_type" multiple>
+                                                        <option value="movie_actor">Movie actor</option>
+                                                        <option value="tv_actor" selected>Tv actor</option>
+                                                        <option value="musical_actor">Musical actor</option>
+                                                        <option value="stage_actor">Stage actor</option>
+                                                        <option value="action_actor">Action actor</option>
+                                                        <option value="voice_actor" selected>Voice Actor</option>
+                                                    </select>
+                                                    <i class="icon-arrow-down"></i>
                                                 </div>
                                             </div>
+                                            <div class="field-error-msg" id="field_error_actor_actress_type"></div>
                                         </div>
-                                        <div class="notification-actions">
-                                            <a href="#" class="notification-read-more"
-                                               data-label="Photos Replaced Successfully" data-status="warning"
-                                               data-content="Your photos have been successfully replaced. Your new job experience has been successfully verified and registered. Your photos have been successfully replaced. Your new job experience has been successfully verified and registered. Your photos have been successfully replaced. Your new job experience has been successfully verified and registered. Your photos have been successfully replaced. Your new job experience has been successfully verified and registered. Your photos have been successfully replaced. Your new job experience has been successfully verified and registered. Your photos have been successfully replaced. Your new job experience has been successfully verified and registered.">
-                                                <span>Read More</span>
-                                                <i class="icon-arrow-right"></i>
-                                            </a>
+
+                                        <!-- sub extra -->
+                                        <div data-dependency="#work_as_extra" data-dependency-value="on">
+                                            <div class="field field-type-select" data-field-defualt-text=" "
+                                                 data-btn-submit-text="Select"
+                                                 data-required="true" data-type="select">
+                                                <div class="field-content">
+                                                    <label for="extra_type">Extra Type <span
+                                                            class="field-required-star">*</span></label>
+                                                    <select name="extra_type" id="extra_type" multiple>
+                                                        <option value="All types of extra" selected>All types of extra
+                                                        </option>
+                                                    </select>
+                                                    <i class="icon-arrow-down"></i>
+                                                </div>
+                                            </div>
+                                            <div class="field-error-msg" id="field_error_extra_type"></div>
                                         </div>
+
                                     </div>
                                 </div>
+
                             </div>
                         </div>
                     </div>
@@ -249,3 +192,15 @@
             </div>
         </div>
     </main>
+
+    <div class="page-actions">
+        <a href="/dashboard-models/user-info" class="btn">
+            Cancel
+        </a>
+        <button type="button" class="btn btn-primary btn-save-edit-form" data-page="role">
+            Save
+        </button>
+    </div>
+
+
+@endsection

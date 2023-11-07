@@ -27,7 +27,7 @@
 
             <!-- start company info -->
             <section class="section section-content" itemscope itemtype="https://schema.org/Organization">
-                <meta itemprop="logo" content="storage/assets/img/logo.svg">
+                <meta itemprop="logo" content="/storage/assets/img/logo.svg">
                 <div class="container-lg">
                     <table>
                         <tr>

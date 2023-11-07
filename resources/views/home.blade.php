@@ -22,16 +22,16 @@
                                     <div class="item-background">
                                         <picture>
                                             <source class="owl-lazy" media="(min-width: 1560px)"
-                                                    data-srcset="storage/assets/img/slider/004-l.webp"
-                                                    srcset="storage/assets/img/slider/004-l.webp">
+                                                    data-srcset="/storage/assets/img/slider/004-l.webp"
+                                                    srcset="/storage/assets/img/slider/004-l.webp">
                                             <source class="owl-lazy" media="(min-width: 576px)"
-                                                    data-srcset="storage/assets/img/slider/004-m.webp"
-                                                    srcset="storage/assets/img/slider/004-m.webp">
-                                            <img class="owl-lazy" data-src="storage/assets/img/slider/004-s.webp"
-                                                 alt="model" src="storage/assets/004-s.webp" style="opacity: 1;">
+                                                    data-srcset="/storage/assets/img/slider/004-m.webp"
+                                                    srcset="/storage/assets/img/slider/004-m.webp">
+                                            <img class="owl-lazy" data-src="/storage/assets/img/slider/004-s.webp"
+                                                 alt="model" src="/storage/assets/004-s.webp" style="opacity: 1;">
                                         </picture>
                                     </div>
-                                    <meta itemprop="image" content="storage/assets/img/3x4/040.webp">
+                                    <meta itemprop="image" content="/storage/assets/img/3x4/040.webp">
 
 
                                 </div>
@@ -42,16 +42,16 @@
                                     <div class="item-background">
                                         <picture>
                                             <source class="owl-lazy" media="(min-width: 1560px)"
-                                                    data-srcset="storage/assets/img/slider/005-l.webp"
-                                                    srcset="storage/assets/img/slider/005-l.webp">
+                                                    data-srcset="/storage/assets/img/slider/005-l.webp"
+                                                    srcset="/storage/assets/img/slider/005-l.webp">
                                             <source class="owl-lazy" media="(min-width: 576px)"
-                                                    data-srcset="storage/assets/img/slider/005-m.webp"
-                                                    srcset="storage/assets/img/slider/005-m.webp">
-                                            <img class="owl-lazy" data-src="storage/assets/img/slider/005-s.webp"
-                                                 alt="model" src="storage/assets/005-s.webp" style="opacity: 1;">
+                                                    data-srcset="/storage/assets/img/slider/005-m.webp"
+                                                    srcset="/storage/assets/img/slider/005-m.webp">
+                                            <img class="owl-lazy" data-src="/storage/assets/img/slider/005-s.webp"
+                                                 alt="model" src="/storage/assets/005-s.webp" style="opacity: 1;">
                                         </picture>
                                     </div>
-                                    <meta itemprop="image" content="storage/assets/img/3x4/041.webp">
+                                    <meta itemprop="image" content="/storage/assets/img/3x4/041.webp">
 
 
                                 </div>
@@ -62,16 +62,16 @@
                                     <div class="item-background">
                                         <picture>
                                             <source class="owl-lazy" media="(min-width: 1560px)"
-                                                    data-srcset="storage/assets/img/slider/006-l.webp"
-                                                    srcset="storage/assets/img/slider/006-l.webp">
+                                                    data-srcset="/storage/assets/img/slider/006-l.webp"
+                                                    srcset="/storage/assets/img/slider/006-l.webp">
                                             <source class="owl-lazy" media="(min-width: 576px)"
-                                                    data-srcset="storage/assets/img/slider/006-m.webp"
-                                                    srcset="storage/assets/img/slider/006-m.webp">
-                                            <img class="owl-lazy" data-src="storage/assets/img/slider/006-s.webp"
-                                                 alt="model" src="storage/assets/006-s.webp" style="opacity: 1;">
+                                                    data-srcset="/storage/assets/img/slider/006-m.webp"
+                                                    srcset="/storage/assets/img/slider/006-m.webp">
+                                            <img class="owl-lazy" data-src="/storage/assets/img/slider/006-s.webp"
+                                                 alt="model" src="/storage/assets/006-s.webp" style="opacity: 1;">
                                         </picture>
                                     </div>
-                                    <meta itemprop="image" content="storage/assets/img/3x4/042.webp">
+                                    <meta itemprop="image" content="/storage/assets/img/3x4/042.webp">
 
 
                                 </div>
@@ -82,17 +82,17 @@
                                     <div class="item-background">
                                         <picture>
                                             <source class="owl-lazy" media="(min-width: 1560px)"
-                                                    data-srcset="storage/assets/img/slider/007-l.webp"
-                                                    srcset="storage/assets/img/slider/007-l.webp">
+                                                    data-srcset="/storage/assets/img/slider/007-l.webp"
+                                                    srcset="/storage/assets/img/slider/007-l.webp">
                                             <source class="owl-lazy" media="(min-width: 576px)"
-                                                    data-srcset="storage/assets/img/slider/007-m.webp"
-                                                    srcset="storage/assets/img/slider/007-m.webp">
-                                            <img class="owl-lazy" data-src="storage/assets/img/slider/007-s.webp"
-                                                 alt="model" src="storage/assets/img/slider/007-s.webp"
+                                                    data-srcset="/storage/assets/img/slider/007-m.webp"
+                                                    srcset="/storage/assets/img/slider/007-m.webp">
+                                            <img class="owl-lazy" data-src="/storage/assets/img/slider/007-s.webp"
+                                                 alt="model" src="/storage/assets/img/slider/007-s.webp"
                                                  style="opacity: 1;">
                                         </picture>
                                     </div>
-                                    <meta itemprop="image" content="storage/assets/img/3x4/043.webp">
+                                    <meta itemprop="image" content="/storage/assets/img/3x4/043.webp">
 
 
                                 </div>
@@ -103,16 +103,16 @@
                                     <div class="item-background">
                                         <picture>
                                             <source class="owl-lazy" media="(min-width: 1560px)"
-                                                    data-srcset="storage/assets/img/slider/001-l.webp"
-                                                    srcset="storage/assets/img/slider/001-l.webp">
+                                                    data-srcset="/storage/assets/img/slider/001-l.webp"
+                                                    srcset="/storage/assets/img/slider/001-l.webp">
                                             <source class="owl-lazy" media="(min-width: 576px)"
-                                                    data-srcset="storage/assets/img/slider/001-m.webp"
-                                                    srcset="storage/assets/img/slider/001-m.webp">
-                                            <img class="owl-lazy" data-src="storage/assets/img/slider/001-s.webp"
-                                                 alt="model" src="storage/assets/001-s.webp" style="opacity: 1;">
+                                                    data-srcset="/storage/assets/img/slider/001-m.webp"
+                                                    srcset="/storage/assets/img/slider/001-m.webp">
+                                            <img class="owl-lazy" data-src="/storage/assets/img/slider/001-s.webp"
+                                                 alt="model" src="/storage/assets/001-s.webp" style="opacity: 1;">
                                         </picture>
                                     </div>
-                                    <meta itemprop="image" content="storage/assets/img/3x4/037.webp">
+                                    <meta itemprop="image" content="/storage/assets/img/3x4/037.webp">
 
 
                                 </div>
@@ -123,16 +123,16 @@
                                     <div class="item-background">
                                         <picture>
                                             <source class="owl-lazy" media="(min-width: 1560px)"
-                                                    data-srcset="storage/assets/img/slider/002-l.webp"
-                                                    srcset="storage/assets/img/slider/002-l.webp">
+                                                    data-srcset="/storage/assets/img/slider/002-l.webp"
+                                                    srcset="/storage/assets/img/slider/002-l.webp">
                                             <source class="owl-lazy" media="(min-width: 576px)"
-                                                    data-srcset="storage/assets/img/slider/002-m.webp"
-                                                    srcset="storage/assets/img/slider/002-m.webp">
-                                            <img class="owl-lazy" data-src="storage/assets/img/slider/002-s.webp"
-                                                 alt="model" src="storage/assets/002-s.webp" style="opacity: 1;">
+                                                    data-srcset="/storage/assets/img/slider/002-m.webp"
+                                                    srcset="/storage/assets/img/slider/002-m.webp">
+                                            <img class="owl-lazy" data-src="/storage/assets/img/slider/002-s.webp"
+                                                 alt="model" src="/storage/assets/002-s.webp" style="opacity: 1;">
                                         </picture>
                                     </div>
-                                    <meta itemprop="image" content="storage/assets/img/3x4/038.webp">
+                                    <meta itemprop="image" content="/storage/assets/img/3x4/038.webp">
 
 
                                 </div>
@@ -143,16 +143,16 @@
                                     <div class="item-background">
                                         <picture>
                                             <source class="owl-lazy" media="(min-width: 1560px)"
-                                                    data-srcset="storage/assets/img/slider/003-l.webp"
-                                                    srcset="storage/assets/img/slider/003-l.webp">
+                                                    data-srcset="/storage/assets/img/slider/003-l.webp"
+                                                    srcset="/storage/assets/img/slider/003-l.webp">
                                             <source class="owl-lazy" media="(min-width: 576px)"
-                                                    data-srcset="storage/assets/img/slider/003-m.webp"
-                                                    srcset="storage/assets/img/slider/003-m.webp">
-                                            <img class="owl-lazy" data-src="storage/assets/img/slider/003-s.webp"
-                                                 alt="model" src="storage/assets/003-s.webp" style="opacity: 1;">
+                                                    data-srcset="/storage/assets/img/slider/003-m.webp"
+                                                    srcset="/storage/assets/img/slider/003-m.webp">
+                                            <img class="owl-lazy" data-src="/storage/assets/img/slider/003-s.webp"
+                                                 alt="model" src="/storage/assets/003-s.webp" style="opacity: 1;">
                                         </picture>
                                     </div>
-                                    <meta itemprop="image" content="storage/assets/img/3x4/039.webp">
+                                    <meta itemprop="image" content="/storage/assets/img/3x4/039.webp">
 
 
                                 </div>
@@ -163,16 +163,16 @@
                                     <div class="item-background">
                                         <picture>
                                             <source class="owl-lazy" media="(min-width: 1560px)"
-                                                    data-srcset="storage/assets/img/slider/004-l.webp"
-                                                    srcset="storage/assets/img/slider/004-l.webp">
+                                                    data-srcset="/storage/assets/img/slider/004-l.webp"
+                                                    srcset="/storage/assets/img/slider/004-l.webp">
                                             <source class="owl-lazy" media="(min-width: 576px)"
-                                                    data-srcset="storage/assets/img/slider/004-m.webp"
-                                                    srcset="storage/assets/img/slider/004-m.webp">
-                                            <img class="owl-lazy" data-src="storage/assets/img/slider/004-s.webp"
-                                                 alt="model" src="storage/assets/004-s.webp" style="opacity: 1;">
+                                                    data-srcset="/storage/assets/img/slider/004-m.webp"
+                                                    srcset="/storage/assets/img/slider/004-m.webp">
+                                            <img class="owl-lazy" data-src="/storage/assets/img/slider/004-s.webp"
+                                                 alt="model" src="/storage/assets/004-s.webp" style="opacity: 1;">
                                         </picture>
                                     </div>
-                                    <meta itemprop="image" content="storage/assets/img/3x4/040.webp">
+                                    <meta itemprop="image" content="/storage/assets/img/3x4/040.webp">
 
 
                                 </div>
@@ -183,16 +183,16 @@
                                     <div class="item-background">
                                         <picture>
                                             <source class="owl-lazy" media="(min-width: 1560px)"
-                                                    data-srcset="storage/assets/img/slider/005-l.webp"
-                                                    srcset="storage/assets/img/slider/005-l.webp">
+                                                    data-srcset="/storage/assets/img/slider/005-l.webp"
+                                                    srcset="/storage/assets/img/slider/005-l.webp">
                                             <source class="owl-lazy" media="(min-width: 576px)"
-                                                    data-srcset="storage/assets/img/slider/005-m.webp"
-                                                    srcset="storage/assets/img/slider/005-m.webp">
-                                            <img class="owl-lazy" data-src="storage/assets/img/slider/005-s.webp"
-                                                 alt="model" src="storage/assets/005-s.webp" style="opacity: 1;">
+                                                    data-srcset="/storage/assets/img/slider/005-m.webp"
+                                                    srcset="/storage/assets/img/slider/005-m.webp">
+                                            <img class="owl-lazy" data-src="/storage/assets/img/slider/005-s.webp"
+                                                 alt="model" src="/storage/assets/005-s.webp" style="opacity: 1;">
                                         </picture>
                                     </div>
-                                    <meta itemprop="image" content="storage/assets/img/3x4/041.webp">
+                                    <meta itemprop="image" content="/storage/assets/img/3x4/041.webp">
 
 
                                 </div>
@@ -203,16 +203,16 @@
                                     <div class="item-background">
                                         <picture>
                                             <source class="owl-lazy" media="(min-width: 1560px)"
-                                                    data-srcset="storage/assets/img/slider/006-l.webp"
-                                                    srcset="storage/assets/img/slider/006-l.webp">
+                                                    data-srcset="/storage/assets/img/slider/006-l.webp"
+                                                    srcset="/storage/assets/img/slider/006-l.webp">
                                             <source class="owl-lazy" media="(min-width: 576px)"
-                                                    data-srcset="storage/assets/img/slider/006-m.webp"
-                                                    srcset="storage/assets/img/slider/006-m.webp">
-                                            <img class="owl-lazy" data-src="storage/assets/img/slider/006-s.webp"
-                                                 alt="model" src="storage/assets/006-s.webp" style="opacity: 1;">
+                                                    data-srcset="/storage/assets/img/slider/006-m.webp"
+                                                    srcset="/storage/assets/img/slider/006-m.webp">
+                                            <img class="owl-lazy" data-src="/storage/assets/img/slider/006-s.webp"
+                                                 alt="model" src="/storage/assets/006-s.webp" style="opacity: 1;">
                                         </picture>
                                     </div>
-                                    <meta itemprop="image" content="storage/assets/img/3x4/042.webp">
+                                    <meta itemprop="image" content="/storage/assets/img/3x4/042.webp">
 
 
                                 </div>
@@ -223,16 +223,16 @@
                                     <div class="item-background">
                                         <picture>
                                             <source class="owl-lazy" media="(min-width: 1560px)"
-                                                    data-srcset="storage/assets/img/slider/007-l.webp"
-                                                    srcset="storage/assets/img/slider/007-l.webp">
+                                                    data-srcset="/storage/assets/img/slider/007-l.webp"
+                                                    srcset="/storage/assets/img/slider/007-l.webp">
                                             <source class="owl-lazy" media="(min-width: 576px)"
-                                                    data-srcset="storage/assets/img/slider/007-m.webp"
-                                                    srcset="storage/assets/img/slider/007-m.webp">
-                                            <img class="owl-lazy" data-src="storage/assets/img/slider/007-s.webp"
+                                                    data-srcset="/storage/assets/img/slider/007-m.webp"
+                                                    srcset="/storage/assets/img/slider/007-m.webp">
+                                            <img class="owl-lazy" data-src="/storage/assets/img/slider/007-s.webp"
                                                  alt="model" src="/assets/img/slider/007-s.webp" style="opacity: 1;">
                                         </picture>
                                     </div>
-                                    <meta itemprop="image" content="storage/assets/img/3x4/043.webp">
+                                    <meta itemprop="image" content="/storage/assets/img/3x4/043.webp">
 
 
                                 </div>
@@ -243,16 +243,16 @@
                                     <div class="item-background">
                                         <picture>
                                             <source class="owl-lazy" media="(min-width: 1560px)"
-                                                    data-srcset="storage/assets/img/slider/001-l.webp"
-                                                    srcset="storage/assets/img/slider/001-l.webp">
+                                                    data-srcset="/storage/assets/img/slider/001-l.webp"
+                                                    srcset="/storage/assets/img/slider/001-l.webp">
                                             <source class="owl-lazy" media="(min-width: 576px)"
-                                                    data-srcset="storage/assets/img/slider/001-m.webp"
-                                                    srcset="storage/assets/img/slider/001-m.webp">
-                                            <img class="owl-lazy" data-src="storage/assets/img/slider/001-s.webp"
-                                                 alt="model" src="storage/assets/001-s.webp" style="opacity: 1;">
+                                                    data-srcset="/storage/assets/img/slider/001-m.webp"
+                                                    srcset="/storage/assets/img/slider/001-m.webp">
+                                            <img class="owl-lazy" data-src="/storage/assets/img/slider/001-s.webp"
+                                                 alt="model" src="/storage/assets/001-s.webp" style="opacity: 1;">
                                         </picture>
                                     </div>
-                                    <meta itemprop="image" content="storage/assets/img/3x4/037.webp">
+                                    <meta itemprop="image" content="/storage/assets/img/3x4/037.webp">
 
 
                                 </div>
@@ -263,16 +263,16 @@
                                     <div class="item-background">
                                         <picture>
                                             <source class="owl-lazy" media="(min-width: 1560px)"
-                                                    data-srcset="storage/assets/img/slider/002-l.webp"
-                                                    srcset="storage/assets/img/slider/002-l.webp">
+                                                    data-srcset="/storage/assets/img/slider/002-l.webp"
+                                                    srcset="/storage/assets/img/slider/002-l.webp">
                                             <source class="owl-lazy" media="(min-width: 576px)"
-                                                    data-srcset="storage/assets/img/slider/002-m.webp"
-                                                    srcset="storage/assets/img/slider/002-m.webp">
-                                            <img class="owl-lazy" data-src="storage/assets/img/slider/002-s.webp"
-                                                 alt="model" src="storage/assets/002-s.webp" style="opacity: 1;">
+                                                    data-srcset="/storage/assets/img/slider/002-m.webp"
+                                                    srcset="/storage/assets/img/slider/002-m.webp">
+                                            <img class="owl-lazy" data-src="/storage/assets/img/slider/002-s.webp"
+                                                 alt="model" src="/storage/assets/002-s.webp" style="opacity: 1;">
                                         </picture>
                                     </div>
-                                    <meta itemprop="image" content="storage/assets/img/3x4/038.webp">
+                                    <meta itemprop="image" content="/storage/assets/img/3x4/038.webp">
 
 
                                 </div>
@@ -283,16 +283,16 @@
                                     <div class="item-background">
                                         <picture>
                                             <source class="owl-lazy" media="(min-width: 1560px)"
-                                                    data-srcset="storage/assets/img/slider/003-l.webp"
-                                                    srcset="storage/assets/img/slider/003-l.webp">
+                                                    data-srcset="/storage/assets/img/slider/003-l.webp"
+                                                    srcset="/storage/assets/img/slider/003-l.webp">
                                             <source class="owl-lazy" media="(min-width: 576px)"
-                                                    data-srcset="storage/assets/img/slider/003-m.webp"
-                                                    srcset="storage/assets/img/slider/003-m.webp">
-                                            <img class="owl-lazy" data-src="storage/assets/img/slider/003-s.webp"
-                                                 alt="model" src="storage/assets/003-s.webp" style="opacity: 1;">
+                                                    data-srcset="/storage/assets/img/slider/003-m.webp"
+                                                    srcset="/storage/assets/img/slider/003-m.webp">
+                                            <img class="owl-lazy" data-src="/storage/assets/img/slider/003-s.webp"
+                                                 alt="model" src="/storage/assets/003-s.webp" style="opacity: 1;">
                                         </picture>
                                     </div>
-                                    <meta itemprop="image" content="storage/assets/img/3x4/039.webp">
+                                    <meta itemprop="image" content="/storage/assets/img/3x4/039.webp">
 
 
                                 </div>
@@ -303,16 +303,16 @@
                                     <div class="item-background">
                                         <picture>
                                             <source class="owl-lazy" media="(min-width: 1560px)"
-                                                    data-srcset="storage/assets/img/slider/004-l.webp"
-                                                    srcset="storage/assets/img/slider/004-l.webp">
+                                                    data-srcset="/storage/assets/img/slider/004-l.webp"
+                                                    srcset="/storage/assets/img/slider/004-l.webp">
                                             <source class="owl-lazy" media="(min-width: 576px)"
-                                                    data-srcset="storage/assets/img/slider/004-m.webp"
-                                                    srcset="storage/assets/img/slider/004-m.webp">
-                                            <img class="owl-lazy" data-src="storage/assets/img/slider/004-s.webp"
-                                                 alt="model" src="storage/assets/004-s.webp" style="opacity: 1;">
+                                                    data-srcset="/storage/assets/img/slider/004-m.webp"
+                                                    srcset="/storage/assets/img/slider/004-m.webp">
+                                            <img class="owl-lazy" data-src="/storage/assets/img/slider/004-s.webp"
+                                                 alt="model" src="/storage/assets/004-s.webp" style="opacity: 1;">
                                         </picture>
                                     </div>
-                                    <meta itemprop="image" content="storage/assets/img/3x4/040.webp">
+                                    <meta itemprop="image" content="/storage/assets/img/3x4/040.webp">
 
 
                                 </div>
@@ -341,7 +341,7 @@
                         <div class="item-content slider-content-0 active" data-index="0">
                             <div class="item-title">
                                 <a href="model-page" aria-label="MIYU" itemprop="url"><span itemprop="name">MIYU</span></a>
-                                <a href="storage/assets/video/video-001.mp4" data-light-box="slide_1_video"
+                                <a href="/storage/assets/video/video-001.mp4" data-light-box="slide_1_video"
                                    data-light-box-type="video" aria-label="Video" class="item-btn-play"
                                    data-object-id="0">
                                     <i class="icon-subtract"></i>
@@ -394,7 +394,7 @@
                             <div class="item-title">
                                 <a href="model-page" aria-label="YURIKA" itemprop="url"><span
                                         itemprop="name">YURIKA</span></a>
-                                <a href="storage/assets/video/video-001.mp4" data-light-box="slide_2_video"
+                                <a href="/storage/assets/video/video-001.mp4" data-light-box="slide_2_video"
                                    data-light-box-type="video" aria-label="Video" class="item-btn-play"
                                    data-object-id="1">
                                     <i class="icon-subtract"></i>
@@ -459,7 +459,7 @@
                             <div class="item-title">
                                 <a href="model-page" aria-label="MATTHIEU" itemprop="url"><span
                                         itemprop="name">MATTHIEU</span></a>
-                                <a href="storage/assets/video/video-001.mp4" data-light-box="slide_3_video"
+                                <a href="/storage/assets/video/video-001.mp4" data-light-box="slide_3_video"
                                    data-light-box-type="video" aria-label="Video" class="item-btn-play"
                                    data-object-id="2">
                                     <i class="icon-subtract"></i>
@@ -513,7 +513,7 @@
                             <div class="item-title">
                                 <a href="model-page" aria-label="VERONIKA" itemprop="url"><span
                                         itemprop="name">VERONIKA</span></a>
-                                <a href="storage/assets/video/video-001.mp4" data-light-box="slide_4_video"
+                                <a href="/storage/assets/video/video-001.mp4" data-light-box="slide_4_video"
                                    data-light-box-type="video" aria-label="Video" class="item-btn-play"
                                    data-object-id="3">
                                     <i class="icon-subtract"></i>
@@ -569,7 +569,7 @@
                         <div class="item-content slider-content-4" data-index="4">
                             <div class="item-title">
                                 <a href="model-page" aria-label="TOYA" itemprop="url"><span itemprop="name">TOYA</span></a>
-                                <a href="storage/assets/video/video-001.mp4" data-light-box="slide_5_video"
+                                <a href="/storage/assets/video/video-001.mp4" data-light-box="slide_5_video"
                                    data-light-box-type="video" aria-label="Video" class="item-btn-play"
                                    data-object-id="4">
                                     <i class="icon-subtract"></i>
@@ -621,7 +621,7 @@
                             <div class="item-title">
                                 <a href="model-page" aria-label="MARIKO" itemprop="url"><span
                                         itemprop="name">MARIKO</span></a>
-                                <a href="storage/assets/video/video-001.mp4" data-light-box="slide_6_video"
+                                <a href="/storage/assets/video/video-001.mp4" data-light-box="slide_6_video"
                                    data-light-box-type="video" aria-label="Video" class="item-btn-play"
                                    data-object-id="5">
                                     <i class="icon-subtract"></i>
@@ -673,7 +673,7 @@
                         <div class="item-content slider-content-6" data-index="6">
                             <div class="item-title">
                                 <a href="model-page" aria-label="REZA" itemprop="url"><span itemprop="name">REZA</span></a>
-                                <a href="storage/assets/video/video-001.mp4" data-light-box="slide_7_video"
+                                <a href="/storage/assets/video/video-001.mp4" data-light-box="slide_7_video"
                                    data-light-box-type="video" aria-label="Video" class="item-btn-play"
                                    data-object-id="6">
                                     <i class="icon-subtract"></i>
@@ -768,11 +768,11 @@
                         @foreach($categories as $category)
                             <div class="home-categories-item" itemscope="" itemtype="https://schema.org/DefinedTerm">
                                 <a href="models-list?id={{ $category->id }}" aria-label="Woman Category" itemprop="url">
-                                    <img src="storage/assets/{{ $category->image }}" class="lazy lz-entered lz-loaded"
-                                         data-src="storage/assets/img/{{ $category->image }}" width="298" height="438"
+                                    <img src="/storage/assets/{{ $category->image }}" class="lazy lz-entered lz-loaded"
+                                         data-src="/storage/assets/img/{{ $category->image }}" width="298" height="438"
                                          alt="Woman Category" data-ll-status="loaded">
                                     <noscript>
-                                        <img src="storage/assets/img/{{ $category->image }}" width="298" height="438"
+                                        <img src="/storage/assets/img/{{ $category->image }}" width="298" height="438"
                                              alt="Woman Category">
                                     </noscript>
                                     <div class="home-categories-title">
@@ -905,13 +905,13 @@
                                              itemtype="https://schema.org/Person">
                                         <a href="model-page?id={{ $member->id }}" itemprop="url">
                                             <meta itemprop="image"
-                                                  content="storage/assets/img/3x4/{{ $member->profile_image }}.webp">
-                                            <img src="storage/assets/img/lazy-3x4.webp" class="lazy"
-                                                 data-src="storage/assets/img/3x4/{{ $member->profile_image }}.webp"
+                                                  content="/storage/assets/img/3x4/{{ $member->profile_image }}.webp">
+                                            <img src="/storage/assets/img/lazy-3x4.webp" class="lazy"
+                                                 data-src="/storage/assets/img/3x4/{{ $member->profile_image }}.webp"
                                                  width="200" height="260"
                                                  alt="model">
                                             <noscript>
-                                                <img src="storage/assets/img/3x4/{{ $member->profile_image }}.webp"
+                                                <img src="/storage/assets/img/3x4/{{ $member->profile_image }}.webp"
                                                      width="200" height="260"
                                                      alt="model">
                                             </noscript>
@@ -975,13 +975,13 @@
                                 <article class="news-card" itemscope="" itemtype="https://schema.org/NewsArticle"
                                          itemprop="hasPart">
                                     <div class="card-thumbnail">
-                                        <meta itemprop="thumbnailUrl" content="storage/assets/img/news-003.webp">
+                                        <meta itemprop="thumbnailUrl" content="/storage/assets/img/news-003.webp">
                                         <a href="news-single-company">
-                                            <img src="storage/assets/img/lazy-1.7x1.webp" class="card-thumbnail-image lazy"
-                                                 data-src="storage/assets/img/news-003.webp" width="312" height="177"
+                                            <img src="/storage/assets/img/lazy-1.7x1.webp" class="card-thumbnail-image lazy"
+                                                 data-src="/storage/assets/img/news-003.webp" width="312" height="177"
                                                  alt="news title">
                                             <noscript>
-                                                <img src="storage/assets/img/news-003.webp" class="card-thumbnail-image"
+                                                <img src="/storage/assets/img/news-003.webp" class="card-thumbnail-image"
                                                      width="312" height="177" alt="news title">
                                             </noscript>
                                         </a>
@@ -1015,13 +1015,13 @@
                                 <article class="news-card" itemscope="" itemtype="https://schema.org/NewsArticle"
                                          itemprop="hasPart">
                                     <div class="card-thumbnail">
-                                        <meta itemprop="thumbnailUrl" content="storage/assets/img/news-004.webp">
+                                        <meta itemprop="thumbnailUrl" content="/storage/assets/img/news-004.webp">
                                         <a href="news-single-company">
-                                            <img src="storage/assets/img/lazy-1.7x1.webp" class="card-thumbnail-image lazy"
-                                                 data-src="storage/assets/img/news-004.webp" width="312" height="177"
+                                            <img src="/storage/assets/img/lazy-1.7x1.webp" class="card-thumbnail-image lazy"
+                                                 data-src="/storage/assets/img/news-004.webp" width="312" height="177"
                                                  alt="news title">
                                             <noscript>
-                                                <img src="storage/assets/img/news-004.webp" class="card-thumbnail-image"
+                                                <img src="/storage/assets/img/news-004.webp" class="card-thumbnail-image"
                                                      width="312" height="177" alt="news title">
                                             </noscript>
                                         </a>
@@ -1055,13 +1055,13 @@
                                 <article class="news-card" itemscope="" itemtype="https://schema.org/NewsArticle"
                                          itemprop="hasPart">
                                     <div class="card-thumbnail">
-                                        <meta itemprop="thumbnailUrl" content="storage/assets/img/news-005.webp">
+                                        <meta itemprop="thumbnailUrl" content="/storage/assets/img/news-005.webp">
                                         <a href="news-single-company">
-                                            <img src="storage/assets/img/lazy-1.7x1.webp" class="card-thumbnail-image lazy"
-                                                 data-src="storage/assets/img/news-005.webp" width="312" height="177"
+                                            <img src="/storage/assets/img/lazy-1.7x1.webp" class="card-thumbnail-image lazy"
+                                                 data-src="/storage/assets/img/news-005.webp" width="312" height="177"
                                                  alt="news title">
                                             <noscript>
-                                                <img src="storage/assets/img/news-005.webp" class="card-thumbnail-image"
+                                                <img src="/storage/assets/img/news-005.webp" class="card-thumbnail-image"
                                                      width="312" height="177" alt="news title">
                                             </noscript>
                                         </a>
@@ -1095,13 +1095,13 @@
                                 <article class="news-card" itemscope="" itemtype="https://schema.org/NewsArticle"
                                          itemprop="hasPart">
                                     <div class="card-thumbnail">
-                                        <meta itemprop="thumbnailUrl" content="storage/assets/img/news-006.webp">
+                                        <meta itemprop="thumbnailUrl" content="/storage/assets/img/news-006.webp">
                                         <a href="news-single-company">
-                                            <img src="storage/assets/img/lazy-1.7x1.webp" class="card-thumbnail-image lazy"
-                                                 data-src="storage/assets/img/news-006.webp" width="312" height="177"
+                                            <img src="/storage/assets/img/lazy-1.7x1.webp" class="card-thumbnail-image lazy"
+                                                 data-src="/storage/assets/img/news-006.webp" width="312" height="177"
                                                  alt="news title">
                                             <noscript>
-                                                <img src="storage/assets/img/news-006.webp" class="card-thumbnail-image"
+                                                <img src="/storage/assets/img/news-006.webp" class="card-thumbnail-image"
                                                      width="312" height="177" alt="news title">
                                             </noscript>
                                         </a>
@@ -1147,12 +1147,12 @@
 
 
     <!-- start scripts -->
-    <script src="storage/assets/js/lib/jQuery.min.js"></script>
-    <script src="storage/assets/js/lib/lazyload.min.js"></script>
-    <script src="storage/assets/js/owl.carousel.min.js"></script>
-    <script src="storage/assets/js/super-slider.min.js"></script>
-    <script src="storage/assets/js/component.min.js"></script>
-    <script src="storage/assets/js/scripts.min.js"></script>
+    <script src="/storage/assets/js/lib/jQuery.min.js"></script>
+    <script src="/storage/assets/js/lib/lazyload.min.js"></script>
+    <script src="/storage/assets/js/owl.carousel.min.js"></script>
+    <script src="/storage/assets/js/super-slider.min.js"></script>
+    <script src="/storage/assets/js/component.min.js"></script>
+    <script src="/storage/assets/js/scripts.min.js"></script>
 
 
     <style type="text/css" class="L-GoogleBookmarkOptOut">

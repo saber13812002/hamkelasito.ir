@@ -356,12 +356,12 @@
                                          itemtype="https://schema.org/Person">
                                     <a href="./model-page?id={{ $member->id }}" itemprop="url">
                                         <meta itemprop="image"
-                                              content="storage/assets/img/3x4/{{ $member->profile_image}}.webp">
-                                        <img src="storage/assets/img/lazy-3x4.webp" class="lazy"
-                                             data-src="storage/assets/img/3x4/{{ $member->profile_image}}.webp"
+                                              content="/storage/assets/img/3x4/{{ $member->profile_image}}.webp">
+                                        <img src="/storage/assets/img/lazy-3x4.webp" class="lazy"
+                                             data-src="/storage/assets/img/3x4/{{ $member->profile_image}}.webp"
                                              width="200" height="260" alt="model">
                                         <noscript>
-                                            <img src="storage/assets/img/3x4/{{ $member->profile_image}}.webp"
+                                            <img src="/storage/assets/img/3x4/{{ $member->profile_image}}.webp"
                                                  width="200" height="260"
                                                  alt="model">
                                         </noscript>
@@ -408,13 +408,13 @@
 
     <!-- start scripts -->
     {{--    TODO Saber --}}
-    <script src="storage/assets/js/lib/jQuery.min.js"></script>
-    <script src="storage/assets/js/lib/lazyload.min.js"></script>
-    <script src="storage/assets/js/app-screen.min.js"></script>
-    <script src="storage/assets/js/modal-screen.min.js"></script>
-    <script src="storage/assets/js/api-request-manager.min.js"></script>
-    <script src="storage/assets/js/pro-validation.min.js"></script>
-    <script src="storage/assets/js/component.min.js"></script>
-    <script src="storage/assets/js/scripts.min.js"></script>
+    <script src="/storage/assets/js/lib/jQuery.min.js"></script>
+    <script src="/storage/assets/js/lib/lazyload.min.js"></script>
+    <script src="/storage/assets/js/app-screen.min.js"></script>
+    <script src="/storage/assets/js/modal-screen.min.js"></script>
+    <script src="/storage/assets/js/api-request-manager.min.js"></script>
+    <script src="/storage/assets/js/pro-validation.min.js"></script>
+    <script src="/storage/assets/js/component.min.js"></script>
+    <script src="/storage/assets/js/scripts.min.js"></script>
 
 @endsection
