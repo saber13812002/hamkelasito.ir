@@ -83,4 +83,9 @@ class HomeController
     {
         return view('privacy-policy');
     }
+
+    public function becomeModel()
+    {
+        return view('become-a-model');
+    }
 }

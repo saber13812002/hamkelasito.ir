@@ -103,7 +103,7 @@
                         </div>
                         <div class="col-12 col-md-6">
                             <h2>Contact Support:</h2>
-                            <form action="./contact-us.html" method="post">
+                            <form action="./contact-us" method="post">
                                 <div class="row">
 
                                     <!-- name -->
