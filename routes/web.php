@@ -52,4 +52,4 @@ Route::get('/model-page', [App\Http\Controllers\HomeController::class, 'modelPag
 Route::get('/models-list', [App\Http\Controllers\HomeController::class, 'modelsList'])->name('models-list');
 Route::get('/about-us', [App\Http\Controllers\HomeController::class, 'aboutUs'])->name('about-us');
 Route::get('/contact-us', [App\Http\Controllers\HomeController::class, 'contactUs'])->name('contact-us');
-
+Route::get('/company-profile', [App\Http\Controllers\HomeController::class, 'companyProfile'])->name('company-profile');

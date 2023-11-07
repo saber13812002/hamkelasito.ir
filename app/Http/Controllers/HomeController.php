@@ -73,4 +73,9 @@ class HomeController
     {
         return view('contact-us');
     }
+
+    public function companyProfile()
+    {
+        return view('company-profile');
+    }
 }
