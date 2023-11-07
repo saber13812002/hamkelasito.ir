@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::post('/', function (Request $request) {
+Route::any('/', function (Request $request) {
 //    dd($request->query('filter'), $request->query('sort'));
     return Member::all();
 });
@@ -28,14 +28,14 @@ Route::group(['prefix' => 'user', 'middleware' => 'auth:sanctum'], function () {
         return $request->user();
     });
 
-    // http://localhost:8000/api/languages/
+    // /api/languages/
     Route::get('/lang', [
         'uses' => [HomeController::class, 'lang'],
         'as' => 'lang.index'
     ]);
 });
 
-// http://localhost:8000/api/languages/
+// /api/languages/
 Route::get('/languages', function (Request $request) {
 //    dd($request->query('filter'), $request->query('sort'));
     $json = loadJSON('languages');
@@ -44,7 +44,7 @@ Route::get('/languages', function (Request $request) {
 //    return Language::all();
 });
 
-// http://localhost:8000/api/country/
+// /api/country/
 Route::get('/country', function (Request $request) {
 //    dd($request->query('filter'), $request->query('sort'));
     $json = loadJSON('country');
@@ -52,7 +52,7 @@ Route::get('/country', function (Request $request) {
 //    return Country::all();
 });
 
-// http://localhost:8000/api/uploadphoto/
+// /api/uploadphoto/
 Route::get('/uploadphoto', function (Request $request) {
 //    dd($request->query('filter'), $request->query('sort'));
     return Member::all();
