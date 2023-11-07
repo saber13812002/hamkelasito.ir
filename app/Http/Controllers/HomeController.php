@@ -78,4 +78,9 @@ class HomeController
     {
         return view('company-profile');
     }
+
+    public function privacyPolicy()
+    {
+        return view('privacy-policy');
+    }
 }
