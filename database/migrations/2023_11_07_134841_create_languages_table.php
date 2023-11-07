@@ -13,8 +13,10 @@ return new class extends Migration
     {
         Schema::create('languages', function (Blueprint $table) {
             $table->id();
-            $table->string('title');
-            $table->string('locale');
+            $table->string('text');
+            $table->string('value');
+            $table->string('color');
+            $table->string('flag');
             $table->timestamps();
         });
     }
