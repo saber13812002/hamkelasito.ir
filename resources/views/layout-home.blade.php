@@ -765,6 +765,8 @@
 
 <body class="page-home" data-liner-extension-version="7.13.13" data-new-gr-c-s-check-loaded="14.1136.0" data-gr-ext-installed="" style="visibility: visible;">
 
+@include('header-site')
+
 @yield('content-home')
 
 
