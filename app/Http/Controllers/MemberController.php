@@ -2,18 +2,19 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Members;
-use App\Http\Requests\StoreMembersRequest;
-use App\Http\Requests\UpdateMembersRequest;
+use App\Models\Member;
+use App\Http\Requests\StoreMemberRequest;
+use App\Http\Requests\UpdateMemberRequest;
 
-class MembersController extends Controller
+class MemberController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        $members = Members::all();
+        $members = Member::all();
+//        dd($members);
         return view('member.index', compact('members'));
     }
 
@@ -28,7 +29,7 @@ class MembersController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StoreMembersRequest $request)
+    public function store(StoreMemberRequest $request)
     {
         //
     }
@@ -36,7 +37,7 @@ class MembersController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Members $members)
+    public function show(Member $members)
     {
         //
     }
@@ -44,7 +45,7 @@ class MembersController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Members $members)
+    public function edit(Member $members)
     {
         //
     }
@@ -52,7 +53,7 @@ class MembersController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(UpdateMembersRequest $request, Members $members)
+    public function update(UpdateMemberRequest $request, Member $members)
     {
         //
     }
@@ -60,7 +61,7 @@ class MembersController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Members $members)
+    public function destroy(Member $members)
     {
         //
     }

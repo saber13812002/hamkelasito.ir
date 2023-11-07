@@ -2,15 +2,33 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Category;
+use App\Models\Member;
 use Illuminate\Http\Client\Request;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Auth;
 
 class HomeController
 {
-    public function home()
+    public function index()
     {
-        return view('home');
+        $categories = Category::all();
+        $members = Member::all();
+
+        return view('home', [
+            "categories" => $categories,
+            "members" => $members
+        ]);
+    }
+
+    public function modelPage(\Illuminate\Http\Request $request)
+    {
+        if ($request->has('id')) {
+            $id = $request->id;
+            $member = Member::query()->find($id);
+            return view('model-page', compact('member'));
+        } else
+            return view('home');
     }
 
     public function lang(Request $request)

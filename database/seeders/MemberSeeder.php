@@ -2,16 +2,16 @@
 
 namespace Database\Seeders;
 
-use App\Models\Members;
+use App\Models\Member;
 use Illuminate\Database\Seeder;
 
-class MembersSeeder extends Seeder
+class MemberSeeder extends Seeder
 {
     /**
      * Run the database seeds.
      */
     public function run(): void
     {
-        Members::factory()->count(100)->create();
+        Member::factory()->count(100)->create();
     }
 }
