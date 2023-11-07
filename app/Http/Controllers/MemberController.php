@@ -10,6 +10,8 @@ class MemberController extends Controller
 {
     /**
      * Display a listing of the resource.
+     *
+     * admin panel super admin
      */
     public function index()
     {
@@ -21,9 +23,9 @@ class MemberController extends Controller
     /**
      * Show the form for creating a new resource.
      */
-    public function create()
+    public function role()
     {
-        //
+        return view('dashboard.role');
     }
 
     /**

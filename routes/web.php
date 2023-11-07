@@ -55,3 +55,5 @@ Route::get('/contact-us', [App\Http\Controllers\HomeController::class, 'contactU
 Route::get('/company-profile', [App\Http\Controllers\HomeController::class, 'companyProfile'])->name('company-profile');
 Route::get('/privacy-policy', [App\Http\Controllers\HomeController::class, 'privacyPolicy'])->name('privacy-policy');
 Route::get('/become-a-model', [App\Http\Controllers\HomeController::class, 'becomeModel'])->name('become-a-model');
+
+Route::get('/dashboard-models', [App\Http\Controllers\MemberController::class, 'role'])->name('role');
