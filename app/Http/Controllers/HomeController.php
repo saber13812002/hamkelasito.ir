@@ -88,4 +88,14 @@ class HomeController
     {
         return view('become-a-model');
     }
+
+    public function composite(\Illuminate\Http\Request $request)
+    {
+        if ($request->has('id')) {
+            $id = $request->id;
+            $member = Member::query()->find($id);
+            return view('pdf.composite', compact('member'));
+        } else
+        return redirect('home');
+    }
 }

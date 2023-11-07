@@ -62,7 +62,7 @@
                                     </div>
                                 </div>
                                 <div class="actions">
-                                    <a href="model-page#" aria-label="Model Composite">
+                                    <a href="/composite?id={{$member->id}}" aria-label="Model Composite">
                                         <i class="icon-document"></i>
                                         <span>Composite</span>
                                     </a>
