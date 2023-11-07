@@ -2,15 +2,54 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Category;
+use App\Models\Member;
 use Illuminate\Http\Client\Request;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Auth;
 
 class HomeController
 {
-    public function home()
+    public function index()
     {
-        return view('home');
+        $categories = Category::all();
+        $members = Member::all();
+
+        return view('home', [
+            "categories" => $categories,
+            "members" => $members
+        ]);
+    }
+
+    public function modelPage(\Illuminate\Http\Request $request)
+    {
+        if ($request->has('id')) {
+            $id = $request->id;
+            $member = Member::query()->find($id);
+            return view('model-page', compact('member'));
+        } else
+            return redirect('home');
+    }
+
+    public function modelsList(\Illuminate\Http\Request $request)
+    {
+        $global = 'all';
+        if ($request->has('global')) {
+            $global = $request->get('global');
+        }
+        if ($global == 'all') {
+            $members = Member::all();
+        } else {
+            $members = Member::query()->whereType($global)->get();
+        }
+
+        $categories = Category::all();
+
+        return view('models-list', [
+            "categories" => $categories,
+            "members" => $members
+        ]);
+
     }
 
     public function lang(Request $request)
@@ -23,5 +62,30 @@ class HomeController
         $user->locale = $locale;
         $user->save();
         return redirect()->back();
+    }
+
+    public function aboutUs()
+    {
+        return view('about-us');
+    }
+
+    public function ContactUs()
+    {
+        return view('contact-us');
+    }
+
+    public function companyProfile()
+    {
+        return view('company-profile');
+    }
+
+    public function privacyPolicy()
+    {
+        return view('privacy-policy');
+    }
+
+    public function becomeModel()
+    {
+        return view('become-a-model');
     }
 }
