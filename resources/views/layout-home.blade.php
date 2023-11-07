@@ -769,7 +769,8 @@
 
 @yield('content-home')
 
-
+@include('loader-site')
+@include('footer-site')
 </body>
 <div class="liner-mini-tooltip liner-disabled liner-page-text-only-tooltip">
     <div class="liner-page-tooltip-body-point"></div>
