@@ -50,7 +50,7 @@
                     <button class="btn btn-icon app-bar-mobile" id="btn_appbar_filter" aria-label="Open Filter">
                         <i class="icon-filter"></i>
                     </button>
-                    <a href="../dashboard/models/index.html" class="user-dashboard">
+                    <a href="../dashboard/models/" class="user-dashboard">
                         <i class="icon-user"></i>
                         <!--                    <img src="storage/assets/img/lazy-1x1.webp" class="lazy" data-src="storage/assets/img/1x1/001.webp"-->
                         <!--                         width="80" height="80" alt="Model">-->
@@ -144,13 +144,13 @@
 
                         <!-- side action -->
                         <div class="side-action">
-                            <a href="./become-a-model.html" class="btn btn-icon-left">
+                            <a href="./become-a-model" class="btn btn-icon-left">
                             <span>
                                 <i class="icon-add"></i>
                                 Become Liliana
                             </span>
                             </a>
-                            <a href="./login.html" class="btn btn-primary btn-icon-left">
+                            <a href="./login" class="btn btn-primary btn-icon-left">
                             <span>
                                 <i class="icon-log-in"></i>
                                 Login
@@ -261,11 +261,11 @@
                                                     <ul>
                                                         <li><a href="./models-list">All</a></li>
                                                         <li><a href="./models-list">Actors</a></li>
-                                                        <li><a href="./models-list.html">Actresses</a></li>
-                                                        <li><a href="./models-list.html">Kids</a></li>
-                                                        <li><a href="./models-list.html">Japanese</a></li>
-                                                        <li><a href="./models-list.html">Mixed</a></li>
-                                                        <li><a href="./models-list.html">International</a></li>
+                                                        <li><a href="./models-list">Actresses</a></li>
+                                                        <li><a href="./models-list">Kids</a></li>
+                                                        <li><a href="./models-list">Japanese</a></li>
+                                                        <li><a href="./models-list">Mixed</a></li>
+                                                        <li><a href="./models-list">International</a></li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -276,13 +276,13 @@
                                                 </button>
                                                 <div class="accordion-content">
                                                     <ul>
-                                                        <li><a href="./models-list.html">All</a></li>
-                                                        <li><a href="./models-list.html">Women</a></li>
-                                                        <li><a href="./models-list.html">Men</a></li>
-                                                        <li><a href="./models-list.html">Kids</a></li>
-                                                        <li><a href="./models-list.html">Japanese</a></li>
-                                                        <li><a href="./models-list.html">Mixed</a></li>
-                                                        <li><a href="./models-list.html">International</a></li>
+                                                        <li><a href="./models-list">All</a></li>
+                                                        <li><a href="./models-list">Women</a></li>
+                                                        <li><a href="./models-list">Men</a></li>
+                                                        <li><a href="./models-list">Kids</a></li>
+                                                        <li><a href="./models-list">Japanese</a></li>
+                                                        <li><a href="./models-list">Mixed</a></li>
+                                                        <li><a href="./models-list">International</a></li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -301,14 +301,14 @@
                                 </noscript>
                                 <div class="user-content">
                                     <div class="user-display-name">Miss Leslie Alexander</div>
-                                    <a href="../dashboard/models/index.html">
+                                    <a href="../dashboard/models/">
                                         Go to Dashboard
                                         <i class="icon-arrow-right"></i>
                                     </a>
                                 </div>
                             </div>
-                            <a href="./login.html" class="btn btn-primary btn-full">Login</a>
-                            <a href="./become-a-model.html" class="btn btn-full">Become Liliana</a>
+                            <a href="./login" class="btn btn-primary btn-full">Login</a>
+                            <a href="./become-a-model" class="btn btn-full">Become Liliana</a>
                             <ul class="menu-contact-us">
                                 <li>
                                     <i class="icon-sms"></i>
@@ -340,7 +340,7 @@
                         </button>
                     </div>
                     <div class="app-bar-title">
-                        <form action="./models-list.html" method="post">
+                        <form action="./models-list" method="post">
                             <button class="btn btn-icon" aria-label="Search">
                                 <i class="icon-search-normal"></i>
                             </button>
@@ -366,7 +366,7 @@
                         <a href="#" id="btn_clear_search_recent">Clear All</a>
                     </div>
                     <div class="recent-model">
-                        <a href="./model-page.html">
+                        <a href="./model-page">
                             <img src="storage/assets/img/lazy-3x4.webp" class="lazy"
                                  data-src="storage/assets/img/3x4/012.webp"
                                  width="120" height="160" alt="Model">
@@ -375,7 +375,7 @@
                             </noscript>
                             <span>Maaya</span>
                         </a>
-                        <a href="./model-page.html">
+                        <a href="./model-page">
                             <img src="storage/assets/img/lazy-3x4.webp" class="lazy"
                                  data-src="storage/assets/img/3x4/011.webp"
                                  width="120" height="160" alt="Model">
@@ -384,13 +384,13 @@
                             </noscript>
                             <span>Soya</span>
                         </a>
-                        <a href="./model-page.html">
+                        <a href="./model-page">
                             <div class="replacement-box">
                                 <i class="icon-gallery"></i>
                             </div>
                             <span>Mikel</span>
                         </a>
-                        <a href="./model-page.html">
+                        <a href="./model-page">
                             <img src="storage/assets/img/lazy-3x4.webp" class="lazy"
                                  data-src="storage/assets/img/3x4/028.webp"
                                  width="120" height="160" alt="Model">
@@ -408,7 +408,7 @@
                 <!--            <div class="not-found-result">Not Found Result</div>-->
                 <ul>
                     <li>
-                        <a href="./model-page.html">
+                        <a href="./model-page">
                             <img src="storage/assets/img/lazy-1x1.webp" class="lazy"
                                  data-src="storage/assets/img/1x1/003.webp"
                                  width="80" height="80" alt="model">
@@ -426,7 +426,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="./model-page.html">
+                        <a href="./model-page">
                             <img src="storage/assets/img/lazy-1x1.webp" class="lazy"
                                  data-src="storage/assets/img/1x1/004.webp"
                                  width="80" height="80" alt="model">
@@ -442,7 +442,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="./model-page.html">
+                        <a href="./model-page">
                             <img src="storage/assets/img/lazy-1x1.webp" class="lazy"
                                  data-src="storage/assets/img/1x1/005.webp"
                                  width="80" height="80" alt="model">
@@ -458,7 +458,7 @@
                         </a>
                     </li>
                 </ul>
-                <a href="./models-list.html" class="more-result">
+                <a href="./models-list" class="more-result">
                     See All 25 Results
                     <i class="icon-arrow-right"></i>
                 </a>
@@ -1276,14 +1276,14 @@
         <div class="bookmark">
             <div class="empty-bookmark" style="display: none;">
                 <p>You have not added any models to the list yet.</p>
-                <a href="./models-list.html" class="btn btn-xl btn-icon-left btn-full">
+                <a href="./models-list" class="btn btn-xl btn-icon-left btn-full">
                     + Add Models
                 </a>
             </div>
             <div class="bookmark-items">
                 <div class="bookmark-item">
                     <article class="model-card item-bookmarked" itemscope itemtype="https://schema.org/Person">
-                        <a href="./model-page.html" itemprop="url">
+                        <a href="./model-page" itemprop="url">
                             <meta itemprop="image" content="storage/assets/img/3x4/007.webp">
                             <img src="storage/assets/img/lazy-3x4.webp" class="lazy"
                                  data-src="storage/assets/img/3x4/007.webp"
@@ -1313,7 +1313,7 @@
                 </div>
                 <div class="bookmark-item">
                     <article class="model-card item-bookmarked" itemscope itemtype="https://schema.org/Person">
-                        <a href="./model-page.html" itemprop="url">
+                        <a href="./model-page" itemprop="url">
                             <meta itemprop="image" content="storage/assets/img/3x4/017.webp">
                             <img src="storage/assets/img/lazy-3x4.webp" class="lazy"
                                  data-src="storage/assets/img/3x4/017.webp"
@@ -1343,7 +1343,7 @@
                 </div>
                 <div class="bookmark-item">
                     <article class="model-card item-bookmarked" itemscope itemtype="https://schema.org/Person">
-                        <a href="./model-page.html" itemprop="url">
+                        <a href="./model-page" itemprop="url">
                             <meta itemprop="image" content="storage/assets/img/3x4/027.webp">
                             <img src="storage/assets/img/lazy-3x4.webp" class="lazy"
                                  data-src="storage/assets/img/3x4/027.webp"
@@ -1373,7 +1373,7 @@
                 </div>
                 <div class="bookmark-item">
                     <article class="model-card item-bookmarked" itemscope itemtype="https://schema.org/Person">
-                        <a href="./model-page.html" itemprop="url">
+                        <a href="./model-page" itemprop="url">
                             <meta itemprop="image" content="storage/assets/img/3x4/021.webp">
                             <img src="storage/assets/img/lazy-3x4.webp" class="lazy"
                                  data-src="storage/assets/img/3x4/021.webp"
@@ -1403,7 +1403,7 @@
                 </div>
                 <div class="bookmark-item">
                     <article class="model-card item-bookmarked" itemscope itemtype="https://schema.org/Person">
-                        <a href="./model-page.html" itemprop="url">
+                        <a href="./model-page" itemprop="url">
                             <meta itemprop="image" content="storage/assets/img/3x4/025.webp">
                             <img src="storage/assets/img/lazy-3x4.webp" class="lazy"
                                  data-src="storage/assets/img/3x4/025.webp"
@@ -1433,7 +1433,7 @@
                 </div>
                 <div class="bookmark-item">
                     <article class="model-card item-bookmarked" itemscope itemtype="https://schema.org/Person">
-                        <a href="./model-page.html" itemprop="url">
+                        <a href="./model-page" itemprop="url">
                             <meta itemprop="image" content="storage/assets/img/3x4/024.webp">
                             <img src="storage/assets/img/lazy-3x4.webp" class="lazy"
                                  data-src="storage/assets/img/3x4/024.webp"
@@ -1463,8 +1463,8 @@
                 </div>
             </div>
             <div class="bookmark-actions">
-                <a href="./models-list.html" class="btn btn-full">Hire Some Models</a>
-                <a href="./bookmark-select-models.html" class="btn btn-primary btn-full">
+                <a href="./models-list" class="btn btn-full">Hire Some Models</a>
+                <a href="./bookmark-select-models" class="btn btn-primary btn-full">
                     Hire All Models
                 </a>
             </div>
@@ -1831,7 +1831,7 @@
                             <div class="grid-item">
                                 <article class="model-card" itemscope
                                          itemtype="https://schema.org/Person">
-                                    <a href="./model-page.html" itemprop="url">
+                                    <a href="./model-page?id={{ $member->id }}" itemprop="url">
                                         <meta itemprop="image"
                                               content="storage/assets/img/3x4/{{ $member->profile_image}}.webp">
                                         <img src="storage/assets/img/lazy-3x4.webp" class="lazy"
@@ -1973,12 +1973,12 @@
                                 <div class="ft-menu">
                                     <ul>
                                         <li><a href="./home">Home</a></li>
-                                        <li><a href="./work.html">Portfolio</a></li>
-                                        <li><a href="./news-category.html">News</a></li>
-                                        <li><a href="./about-us.html">About us</a></li>
-                                        <li><a href="./contact-us.html">Contact us</a></li>
-                                        <li><a href="./company-profile.html">Company Profile</a></li>
-                                        <li><a href="./privacy-policy.html">Privacy Policy</a></li>
+                                        <li><a href="./work">Portfolio</a></li>
+                                        <li><a href="./news-category">News</a></li>
+                                        <li><a href="./about-us">About us</a></li>
+                                        <li><a href="./contact-us">Contact us</a></li>
+                                        <li><a href="./company-profile">Company Profile</a></li>
+                                        <li><a href="./privacy-policy">Privacy Policy</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -1991,10 +1991,10 @@
                             <div class="accordion-content">
                                 <div class="ft-categories">
                                     <ul>
-                                        <li><a href="./models-list.html">Model</a></li>
-                                        <li><a href="./models-list.html">Talent</a></li>
-                                        <li><a href="./models-list.html">Actor</a></li>
-                                        <li><a href="./models-list.html">Extra</a></li>
+                                        <li><a href="./models-list">Model</a></li>
+                                        <li><a href="./models-list">Talent</a></li>
+                                        <li><a href="./models-list">Actor</a></li>
+                                        <li><a href="./models-list">Extra</a></li>
                                     </ul>
                                 </div>
                             </div>
