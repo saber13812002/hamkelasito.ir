@@ -1951,13 +1951,12 @@
     </footer>
 
     <!-- start scripts -->
-    <script src="storage/assets/jQuery.min.js.download"></script>
-    <script src="storage/assets/lazyload.min.js.download"></script>
-    <script src="storage/assets/owl.carousel.min.js.download"></script>
-    <script src="storage/assets/super-slider.min.js.download"></script>
-    <script src="storage/assets/component.min.js.download"></script>
-    <script src="storage/assets/scripts.min.js.download"></script>
-
+    <script src="storage/assets/js/lib/jQuery.min.js"></script>
+    <script src="storage/assets/js/lib/lazyload.min.js"></script>
+    <script src="storage/assets/js/owl.carousel.min.js"></script>
+    <script src="storage/assets/js/super-slider.min.js"></script>
+    <script src="storage/assets/js/component.min.js"></script>
+    <script src="storage/assets/js/scripts.min.js"></script>
 
 
     <style type="text/css" class="L-GoogleBookmarkOptOut">

@@ -3,8 +3,6 @@
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\MemberController;
-use App\Models\Category;
-use App\Models\Member;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -50,4 +48,5 @@ Auth::routes();
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('root');
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/model-page', [App\Http\Controllers\HomeController::class, 'modelPage'])->name('model-page');
+Route::get('/models-list', [App\Http\Controllers\HomeController::class, 'modelsList'])->name('models-list');
 

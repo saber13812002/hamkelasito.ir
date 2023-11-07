@@ -28,7 +28,28 @@ class HomeController
             $member = Member::query()->find($id);
             return view('model-page', compact('member'));
         } else
-            return view('home');
+            return redirect('home');
+    }
+
+    public function modelsList(\Illuminate\Http\Request $request)
+    {
+        $global = 'all';
+        if ($request->has('global')) {
+            $global = $request->get('global');
+        }
+        if ($global == 'all') {
+            $members = Member::all();
+        } else {
+            $members = Member::query()->whereType($global)->get();
+        }
+
+        $categories = Category::all();
+
+        return view('models-list', [
+            "categories" => $categories,
+            "members" => $members
+        ]);
+
     }
 
     public function lang(Request $request)
