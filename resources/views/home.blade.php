@@ -768,11 +768,11 @@
                         @foreach($categories as $category)
                             <div class="home-categories-item" itemscope="" itemtype="https://schema.org/DefinedTerm">
                                 <a href="models-list?id={{ $category->id }}" aria-label="Woman Category" itemprop="url">
-                                    <img src="/storage/assets/{{ $category->image }}" class="lazy lz-entered lz-loaded"
-                                         data-src="/storage/assets/img/{{ $category->image }}" width="298" height="438"
+                                    <img src="/storage/assets/img/category/{{ $category->image }}" class="lazy lz-entered lz-loaded"
+                                         data-src="/storage/assets/img/category/{{ $category->image }}" width="298" height="438"
                                          alt="Woman Category" data-ll-status="loaded">
                                     <noscript>
-                                        <img src="/storage/assets/img/{{ $category->image }}" width="298" height="438"
+                                        <img src="/storage/assets/img/category/{{ $category->image }}" width="298" height="438"
                                              alt="Woman Category">
                                     </noscript>
                                     <div class="home-categories-title">
