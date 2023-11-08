@@ -23,7 +23,11 @@
  - php artisan adminlte:status
  - php artisan migrate
  - php artisan db:seed --class=CategoriesTableSeeder
- - php artisan db:seed --class=MembersSeeder
+ - php artisan db:seed --class=MemberSeeder
+ - php artisan db:seed --class=MembersTableSeeder
+ - php artisan db:seed --class=SliderSeeder
+ - php artisan db:seed --class=CountriesTableSeeder
+ - php artisan db:seed --class=LanguagesTableSeeder
 
 
 ## License
