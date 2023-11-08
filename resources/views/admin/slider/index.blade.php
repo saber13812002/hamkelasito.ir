@@ -40,6 +40,7 @@
                             <th>{{__('Video')}}</th>
                             <th>{{__('Order')}}</th>
                             <th>{{__('Enable')}}</th>
+                            <th>{{__('Options')}}</th>
                         </tr>
                         </thead>
                         <tbody>

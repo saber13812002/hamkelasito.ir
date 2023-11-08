@@ -48,6 +48,7 @@
                             <th>{{__('Eye Color')}}</th>
                             <th>{{__('Nationality')}}</th>
                             <th>{{__('Language')}}</th>
+                            <th>{{__('Profile Image')}}</th>
                             <th>{{__('Options')}}</th>
                         </tr>
                         </thead>
