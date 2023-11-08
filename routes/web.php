@@ -2,7 +2,10 @@
 
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\CountryController;
+use App\Http\Controllers\LanguageController;
 use App\Http\Controllers\MemberController;
+use App\Http\Controllers\SliderController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -33,11 +36,17 @@ Route::post('post-registration', [AuthController::class, 'postRegistration'])->n
 Route::get('dashboard', [AuthController::class, 'dashboard']);
 Route::get('logout', [AuthController::class, 'logout'])->name('logout');
 
-Route::get('admin', [AuthController::class, 'admin']);
 
-Route::get('category', [CategoryController::class, 'index']);
+Route::group(['prefix' => 'admin'], function () {
+    Route::get('', [AuthController::class, 'admin']);
+    Route::get('categories', [CategoryController::class, 'index']);
+    Route::get('members', [MemberController::class, 'index']);
+    Route::get('sliders', [SliderController::class, 'index']);
+    Route::get('languages', [LanguageController::class, 'index']);
+    Route::get('countries', [CountryController::class, 'index']);
+});
 
-Route::get('members', [MemberController::class, 'index']);
+
 
 //Route::get('/admin', function () {
 //    Route::get('/', [AuthController::class, 'admin']);

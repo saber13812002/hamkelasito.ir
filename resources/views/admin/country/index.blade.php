@@ -11,14 +11,14 @@
     <div class="row">
         <div class="col-md-12 mb-2">
 
-            <button data-toggle="modal" data-target="#createCategory"
-                    class="btn btn-success float-right">{{__('Add Category')}} <i class="fas fa-cogs"></i></button>
+            <button data-toggle="modal" data-target="#createCountry"
+                    class="btn btn-success float-right">{{__('Add Country')}} <i class="fas fa-cogs"></i></button>
         </div>
         <div class="col-12">
 
             <div class="card">
                 <div class="card-header">
-                    <h3 class="card-title">{{__('Categories Management')}}</h3>
+                    <h3 class="card-title">{{__('Countries Management')}}</h3>
 
                     <div class="card-tools">
 
@@ -31,9 +31,10 @@
                         <thead>
                         <tr>
                             <th>#</th>
-                            <th>{{__('Slug')}}</th>
-                            <th>{{__('Name')}}</th>
-                            <th>{{__('Image')}}</th>
+                            <th>{{__('Text')}}</th>
+                            <th>{{__('Value')}}</th>
+                            <th>{{__('Color')}}</th>
+                            <th>{{__('Flag')}}</th>
                             <th>{{__('Options')}}</th>
                         </tr>
                         </thead>
@@ -41,15 +42,16 @@
                         @php
                             $i=0;
                         @endphp
-                        @foreach ($categories as $category)
+                        @foreach ($countries as $country)
                             @php
                                 $i++
                             @endphp
-                            <tr id="#user{{$category->id}}">
+                            <tr id="#country{{$country->id}}">
                                 <td>{{$i}}</td>
-                                <td>{{$category->slug}}</td>
-                                <td>{{$category->name}}</td>
-                                <td>{{$category->image}}</td>
+                                <td>{{$country->text}}</td>
+                                <td>{{$country->value}}</td>
+                                <td>{{$country->color}}</td>
+                                <td>{{$country->flag}}</td>
                                 <td>
                                 </td>
                             </tr>

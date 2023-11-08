@@ -59,7 +59,7 @@
                             @php
                                 $i++
                             @endphp
-                            <tr id="#user{{$item->id}}">
+                            <tr id="#member{{$item->id}}">
                                 <td>{{$i}}</td>
                                 <td>{{$item->no}}</td>
                                 <td>{{$item->name}}</td>
