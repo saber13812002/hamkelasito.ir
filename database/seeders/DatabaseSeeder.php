@@ -20,8 +20,9 @@ class DatabaseSeeder extends Seeder
         // ]);
         $this->call(CategoriesTableSeeder::class);
         $this->call(MemberSeeder::class);
-
         $this->call(LanguagesTableSeeder::class);
         $this->call(CountriesTableSeeder::class);
+        $this->call(SlidersTableSeeder::class);
+        $this->call(MembersTableSeeder::class);
     }
 }

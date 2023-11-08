@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Category;
 use App\Models\Member;
+use App\Models\Slider;
 use Illuminate\Http\Client\Request;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Auth;
@@ -14,11 +15,9 @@ class HomeController
     {
         $categories = Category::all();
         $members = Member::all();
+        $sliders = Slider::all();
 
-        return view('home', [
-            "categories" => $categories,
-            "members" => $members
-        ]);
+        return view('home', compact('categories', 'members', 'sliders'));
     }
 
     public function modelPage(\Illuminate\Http\Request $request)
@@ -96,6 +95,6 @@ class HomeController
             $member = Member::query()->find($id);
             return view('pdf.composite', compact('member'));
         } else
-        return redirect('home');
+            return redirect('home');
     }
 }
