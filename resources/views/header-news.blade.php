@@ -9,12 +9,12 @@
                 <button class="btn btn-icon app-bar-desktop" id="btn_appbar_menu" aria-label="Open Menu">
                     <i class="icon-menu"></i>
                 </button>
-                <a href="./news.html" class="btn btn-icon app-bar-mobile" aria-label="back">
+                <a href="./news" class="btn btn-icon app-bar-mobile" aria-label="back">
                     <i class="icon-arrow-left-1"></i>
                 </a>
             </div>
             <div class="app-bar-title">
-                <a href="./home.html" class="app-logo" aria-label="Liliana">
+                <a href="./home" class="app-logo" aria-label="Liliana">
                     <img src="/storage/assets/img/lazy-trp-1x1.webp" class="lazy" data-src="/storage/assets/img/logo.svg" width="88"
                          height="24" alt="liliana">
                     <noscript>
@@ -40,10 +40,10 @@
                 <button class="btn btn-icon app-bar-desktop" id="btn_appbar_search" aria-label="Open Search">
                     <i class="icon-search-normal"></i>
                 </button>
-                <button class="btn btn-icon app-bar-mobile g-share-button" aria-label="Share" data-title="News Single" data-text="I have been a full-time housewife for 25 years, but started Instagram 2 years ago and have over 50,000 followers. I hope to share..." data-url="https://liliana.asensive.ir/frontend/news-single.html">
+                <button class="btn btn-icon app-bar-mobile g-share-button" aria-label="Share" data-title="News Single" data-text="I have been a full-time housewife for 25 years, but started Instagram 2 years ago and have over 50,000 followers. I hope to share..." data-url="https://liliana.asensive.ir/frontend/news-single">
                     <i class="icon-share"></i>
                 </button>
-                <a href="../dashboard/models/index.html" class="user-dashboard">
+                <a href="../dashboard/models/index" class="user-dashboard">
                     <i class="icon-user"></i>
                     <!--                    <img src="/storage/assets/img/lazy-1x1.webp" class="lazy" data-src="/storage/assets/img/1x1/001.webp"-->
                     <!--                         width="80" height="80" alt="Model">-->
@@ -68,13 +68,13 @@
                     <!-- menu nav -->
                     <nav class="menu-nav">
                         <ul>
-                            <li class="active"><a href="./home.html">Home</a></li>
-                            <li><a href="./work.html">Portfolio</a></li>
-                            <li><a href="./news-category.html">News</a></li>
-                            <li><a href="./about-us.html">About us</a></li>
-                            <li><a href="./contact-us.html">Contact us</a></li>
-                            <li><a href="./company-profile.html">Company Profile</a></li>
-                            <li><a href="./privacy-policy.html">Privacy Policy</a></li>
+                            <li class="active"><a href="./home">Home</a></li>
+                            <li><a href="./work">Portfolio</a></li>
+                            <li><a href="./news-category">News</a></li>
+                            <li><a href="./about-us">About us</a></li>
+                            <li><a href="./contact-us">Contact us</a></li>
+                            <li><a href="./company-profile">Company Profile</a></li>
+                            <li><a href="./privacy-policy">Privacy Policy</a></li>
                         </ul>
                     </nav>
 
@@ -83,49 +83,49 @@
                         <div class="category">
                             <div class="category-title">Model</div>
                             <ul class="category-content">
-                                <li><a href="./models-list.html">All</a></li>
-                                <li><a href="./models-list.html">Women</a></li>
-                                <li><a href="./models-list.html">Men</a></li>
-                                <li><a href="./models-list.html">Kids & Babies</a></li>
-                                <li><a href="./models-list.html">Japanese</a></li>
-                                <li><a href="./models-list.html">Mixed</a></li>
-                                <li><a href="./models-list.html">International</a></li>
+                                <li><a href="./models-list">All</a></li>
+                                <li><a href="./models-list">Women</a></li>
+                                <li><a href="./models-list">Men</a></li>
+                                <li><a href="./models-list">Kids & Babies</a></li>
+                                <li><a href="./models-list">Japanese</a></li>
+                                <li><a href="./models-list">Mixed</a></li>
+                                <li><a href="./models-list">International</a></li>
                             </ul>
                         </div>
                         <div class="category">
                             <div class="category-title">Talent</div>
                             <ul class="category-content">
-                                <li><a href="./models-list.html">All</a></li>
-                                <li><a href="./models-list.html">Women</a></li>
-                                <li><a href="./models-list.html">Men</a></li>
-                                <li><a href="./models-list.html">Kids</a></li>
-                                <li><a href="./models-list.html">Japanese</a></li>
-                                <li><a href="./models-list.html">Mixed</a></li>
-                                <li><a href="./models-list.html">International</a></li>
+                                <li><a href="./models-list">All</a></li>
+                                <li><a href="./models-list">Women</a></li>
+                                <li><a href="./models-list">Men</a></li>
+                                <li><a href="./models-list">Kids</a></li>
+                                <li><a href="./models-list">Japanese</a></li>
+                                <li><a href="./models-list">Mixed</a></li>
+                                <li><a href="./models-list">International</a></li>
                             </ul>
                         </div>
                         <div class="category">
                             <div class="category-title">Actor</div>
                             <ul class="category-content">
-                                <li><a href="./models-list.html">All</a></li>
-                                <li><a href="./models-list.html">Actors</a></li>
-                                <li><a href="./models-list.html">Actresses</a></li>
-                                <li><a href="./models-list.html">Kids</a></li>
-                                <li><a href="./models-list.html">Japanese</a></li>
-                                <li><a href="./models-list.html">Mixed</a></li>
-                                <li><a href="./models-list.html">International</a></li>
+                                <li><a href="./models-list">All</a></li>
+                                <li><a href="./models-list">Actors</a></li>
+                                <li><a href="./models-list">Actresses</a></li>
+                                <li><a href="./models-list">Kids</a></li>
+                                <li><a href="./models-list">Japanese</a></li>
+                                <li><a href="./models-list">Mixed</a></li>
+                                <li><a href="./models-list">International</a></li>
                             </ul>
                         </div>
                         <div class="category">
                             <div class="category-title">Extra</div>
                             <ul class="category-content">
-                                <li><a href="./models-list.html">All</a></li>
-                                <li><a href="./models-list.html">Women</a></li>
-                                <li><a href="./models-list.html">Men</a></li>
-                                <li><a href="./models-list.html">Kids</a></li>
-                                <li><a href="./models-list.html">Japanese</a></li>
-                                <li><a href="./models-list.html">Mixed</a></li>
-                                <li><a href="./models-list.html">International</a></li>
+                                <li><a href="./models-list">All</a></li>
+                                <li><a href="./models-list">Women</a></li>
+                                <li><a href="./models-list">Men</a></li>
+                                <li><a href="./models-list">Kids</a></li>
+                                <li><a href="./models-list">Japanese</a></li>
+                                <li><a href="./models-list">Mixed</a></li>
+                                <li><a href="./models-list">International</a></li>
                             </ul>
                         </div>
                     </div>
@@ -137,13 +137,13 @@
 
                     <!-- side action -->
                     <div class="side-action">
-                        <a href="./become-a-model.html" class="btn btn-icon-left">
+                        <a href="./become-a-model" class="btn btn-icon-left">
                             <span>
                                 <i class="icon-add"></i>
                                 Become Liliana
                             </span>
                         </a>
-                        <a href="./login.html" class="btn btn-primary btn-icon-left">
+                        <a href="./login" class="btn btn-primary btn-icon-left">
                             <span>
                                 <i class="icon-log-in"></i>
                                 Login
@@ -198,13 +198,13 @@
                                 <div class="tab-content-item" data-tab-target="tab_header_menu">
                                     <nav class="menu-nav">
                                         <ul>
-                                            <li><a href="./home.html">Home</a></li>
-                                            <li><a href="./work.html">Portfolio</a></li>
-                                            <li><a href="./news-category.html">News</a></li>
-                                            <li><a href="./about-us.html">About us</a></li>
-                                            <li><a href="./contact-us.html">Contact us</a></li>
-                                            <li><a href="./company-profile.html">Company Profile</a></li>
-                                            <li><a href="./privacy-policy.html">Privacy Policy</a></li>
+                                            <li><a href="./home">Home</a></li>
+                                            <li><a href="./work">Portfolio</a></li>
+                                            <li><a href="./news-category">News</a></li>
+                                            <li><a href="./about-us">About us</a></li>
+                                            <li><a href="./contact-us">Contact us</a></li>
+                                            <li><a href="./company-profile">Company Profile</a></li>
+                                            <li><a href="./privacy-policy">Privacy Policy</a></li>
                                         </ul>
                                     </nav>
                                 </div>
@@ -218,13 +218,13 @@
                                             </button>
                                             <div class="accordion-content">
                                                 <ul>
-                                                    <li><a href="./models-list.html">All</a></li>
-                                                    <li><a href="./models-list.html">Women</a></li>
-                                                    <li><a href="./models-list.html">Men</a></li>
-                                                    <li><a href="./models-list.html">Kids & Babies</a></li>
-                                                    <li><a href="./models-list.html">Japanese</a></li>
-                                                    <li><a href="./models-list.html">Mixed</a></li>
-                                                    <li><a href="./models-list.html">International</a></li>
+                                                    <li><a href="./models-list">All</a></li>
+                                                    <li><a href="./models-list">Women</a></li>
+                                                    <li><a href="./models-list">Men</a></li>
+                                                    <li><a href="./models-list">Kids & Babies</a></li>
+                                                    <li><a href="./models-list">Japanese</a></li>
+                                                    <li><a href="./models-list">Mixed</a></li>
+                                                    <li><a href="./models-list">International</a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -235,13 +235,13 @@
                                             </button>
                                             <div class="accordion-content">
                                                 <ul>
-                                                    <li><a href="./models-list.html">All</a></li>
-                                                    <li><a href="./models-list.html">Women</a></li>
-                                                    <li><a href="./models-list.html">Men</a></li>
-                                                    <li><a href="./models-list.html">Kids</a></li>
-                                                    <li><a href="./models-list.html">Japanese</a></li>
-                                                    <li><a href="./models-list.html">Mixed</a></li>
-                                                    <li><a href="./models-list.html">International</a></li>
+                                                    <li><a href="./models-list">All</a></li>
+                                                    <li><a href="./models-list">Women</a></li>
+                                                    <li><a href="./models-list">Men</a></li>
+                                                    <li><a href="./models-list">Kids</a></li>
+                                                    <li><a href="./models-list">Japanese</a></li>
+                                                    <li><a href="./models-list">Mixed</a></li>
+                                                    <li><a href="./models-list">International</a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -252,13 +252,13 @@
                                             </button>
                                             <div class="accordion-content">
                                                 <ul>
-                                                    <li><a href="./models-list.html">All</a></li>
-                                                    <li><a href="./models-list.html">Actors</a></li>
-                                                    <li><a href="./models-list.html">Actresses</a></li>
-                                                    <li><a href="./models-list.html">Kids</a></li>
-                                                    <li><a href="./models-list.html">Japanese</a></li>
-                                                    <li><a href="./models-list.html">Mixed</a></li>
-                                                    <li><a href="./models-list.html">International</a></li>
+                                                    <li><a href="./models-list">All</a></li>
+                                                    <li><a href="./models-list">Actors</a></li>
+                                                    <li><a href="./models-list">Actresses</a></li>
+                                                    <li><a href="./models-list">Kids</a></li>
+                                                    <li><a href="./models-list">Japanese</a></li>
+                                                    <li><a href="./models-list">Mixed</a></li>
+                                                    <li><a href="./models-list">International</a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -269,13 +269,13 @@
                                             </button>
                                             <div class="accordion-content">
                                                 <ul>
-                                                    <li><a href="./models-list.html">All</a></li>
-                                                    <li><a href="./models-list.html">Women</a></li>
-                                                    <li><a href="./models-list.html">Men</a></li>
-                                                    <li><a href="./models-list.html">Kids</a></li>
-                                                    <li><a href="./models-list.html">Japanese</a></li>
-                                                    <li><a href="./models-list.html">Mixed</a></li>
-                                                    <li><a href="./models-list.html">International</a></li>
+                                                    <li><a href="./models-list">All</a></li>
+                                                    <li><a href="./models-list">Women</a></li>
+                                                    <li><a href="./models-list">Men</a></li>
+                                                    <li><a href="./models-list">Kids</a></li>
+                                                    <li><a href="./models-list">Japanese</a></li>
+                                                    <li><a href="./models-list">Mixed</a></li>
+                                                    <li><a href="./models-list">International</a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -293,14 +293,14 @@
                             </noscript>
                             <div class="user-content">
                                 <div class="user-display-name">Miss Leslie Alexander</div>
-                                <a href="../dashboard/models/index.html">
+                                <a href="../dashboard/models/index">
                                     Go to Dashboard
                                     <i class="icon-arrow-right"></i>
                                 </a>
                             </div>
                         </div>
-                        <a href="./login.html" class="btn btn-primary btn-full">Login</a>
-                        <a href="./become-a-model.html" class="btn btn-full">Become Liliana</a>
+                        <a href="./login" class="btn btn-primary btn-full">Login</a>
+                        <a href="./become-a-model" class="btn btn-full">Become Liliana</a>
                         <ul class="menu-contact-us">
                             <li>
                                 <i class="icon-sms"></i>
@@ -332,7 +332,7 @@
                     </button>
                 </div>
                 <div class="app-bar-title">
-                    <form action="./models-list.html" method="post">
+                    <form action="./models-list" method="post">
                         <button class="btn btn-icon" aria-label="Search">
                             <i class="icon-search-normal"></i>
                         </button>
@@ -358,7 +358,7 @@
                     <a href="#" id="btn_clear_search_recent">Clear All</a>
                 </div>
                 <div class="recent-model">
-                    <a href="./model-page.html">
+                    <a href="./model-page">
                         <img src="/storage/assets/img/lazy-3x4.webp" class="lazy" data-src="/storage/assets/img/3x4/012.webp"
                              width="120" height="160" alt="Model">
                         <noscript>
@@ -366,7 +366,7 @@
                         </noscript>
                         <span>Maaya</span>
                     </a>
-                    <a href="./model-page.html">
+                    <a href="./model-page">
                         <img src="/storage/assets/img/lazy-3x4.webp" class="lazy" data-src="/storage/assets/img/3x4/011.webp"
                              width="120" height="160" alt="Model">
                         <noscript>
@@ -374,13 +374,13 @@
                         </noscript>
                         <span>Soya</span>
                     </a>
-                    <a href="./model-page.html">
+                    <a href="./model-page">
                         <div class="replacement-box">
                             <i class="icon-gallery"></i>
                         </div>
                         <span>Mikel</span>
                     </a>
-                    <a href="./model-page.html">
+                    <a href="./model-page">
                         <img src="/storage/assets/img/lazy-3x4.webp" class="lazy" data-src="/storage/assets/img/3x4/028.webp"
                              width="120" height="160" alt="Model">
                         <noscript>
@@ -397,7 +397,7 @@
             <!--            <div class="not-found-result">Not Found Result</div>-->
             <ul>
                 <li>
-                    <a href="./model-page.html">
+                    <a href="./model-page">
                         <img src="/storage/assets/img/lazy-1x1.webp" class="lazy" data-src="/storage/assets/img/1x1/003.webp"
                              width="80" height="80" alt="model">
                         <noscript>
@@ -414,7 +414,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="./model-page.html">
+                    <a href="./model-page">
                         <img src="/storage/assets/img/lazy-1x1.webp" class="lazy" data-src="/storage/assets/img/1x1/004.webp"
                              width="80" height="80" alt="model">
                         <noscript>
@@ -429,7 +429,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="./model-page.html">
+                    <a href="./model-page">
                         <img src="/storage/assets/img/lazy-1x1.webp" class="lazy" data-src="/storage/assets/img/1x1/005.webp"
                              width="80" height="80" alt="model">
                         <noscript>
@@ -444,7 +444,7 @@
                     </a>
                 </li>
             </ul>
-            <a href="./models-list.html" class="more-result">
+            <a href="./models-list" class="more-result">
                 See All 25 Results
                 <i class="icon-arrow-right"></i>
             </a>

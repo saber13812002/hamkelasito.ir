@@ -48,7 +48,7 @@
                                         </a>
                                     </div>
                                     <div class="card-content">
-                                        <h2 class="card-title" itemprop="name"><a href="./news-single.html" itemprop="url">News Title</a></h2>
+                                        <h2 class="card-title" itemprop="name"><a href="./news-single" itemprop="url">News Title</a></h2>
                                         <div class="card-author" itemprop="author">
                                             <i class="icon-user"></i>
                                             <a href="./news-single">Admin</a>
@@ -86,7 +86,7 @@
                                         </a>
                                     </div>
                                     <div class="card-content">
-                                        <h2 class="card-title" itemprop="name"><a href="./news-single.html" itemprop="url">News Title</a></h2>
+                                        <h2 class="card-title" itemprop="name"><a href="./news-single" itemprop="url">News Title</a></h2>
                                         <div class="card-author" itemprop="author">
                                             <i class="icon-user"></i>
                                             <a href="./news-single">Admin</a>
@@ -124,7 +124,7 @@
                                         </a>
                                     </div>
                                     <div class="card-content">
-                                        <h2 class="card-title" itemprop="name"><a href="./news-single.html" itemprop="url">News Title</a></h2>
+                                        <h2 class="card-title" itemprop="name"><a href="./news-single" itemprop="url">News Title</a></h2>
                                         <div class="card-author" itemprop="author">
                                             <i class="icon-user"></i>
                                             <a href="./news-single">Admin</a>
@@ -162,7 +162,7 @@
                                         </a>
                                     </div>
                                     <div class="card-content">
-                                        <h2 class="card-title" itemprop="name"><a href="./news-single.html" itemprop="url">News Title</a></h2>
+                                        <h2 class="card-title" itemprop="name"><a href="./news-single" itemprop="url">News Title</a></h2>
                                         <div class="card-author" itemprop="author">
                                             <i class="icon-user"></i>
                                             <a href="./news-single">Admin</a>
@@ -200,7 +200,7 @@
                                         </a>
                                     </div>
                                     <div class="card-content">
-                                        <h2 class="card-title" itemprop="name"><a href="./news-single.html" itemprop="url">News Title</a></h2>
+                                        <h2 class="card-title" itemprop="name"><a href="./news-single" itemprop="url">News Title</a></h2>
                                         <div class="card-author" itemprop="author">
                                             <i class="icon-user"></i>
                                             <a href="./news-single">Admin</a>
@@ -238,7 +238,7 @@
                                         </a>
                                     </div>
                                     <div class="card-content">
-                                        <h2 class="card-title" itemprop="name"><a href="./news-single.html" itemprop="url">News Title</a></h2>
+                                        <h2 class="card-title" itemprop="name"><a href="./news-single" itemprop="url">News Title</a></h2>
                                         <div class="card-author" itemprop="author">
                                             <i class="icon-user"></i>
                                             <a href="./news-single">Admin</a>
@@ -276,7 +276,7 @@
                                         </a>
                                     </div>
                                     <div class="card-content">
-                                        <h2 class="card-title" itemprop="name"><a href="./news-single.html" itemprop="url">News Title</a></h2>
+                                        <h2 class="card-title" itemprop="name"><a href="./news-single" itemprop="url">News Title</a></h2>
                                         <div class="card-author" itemprop="author">
                                             <i class="icon-user"></i>
                                             <a href="./news-single">Admin</a>
@@ -314,7 +314,7 @@
                                         </a>
                                     </div>
                                     <div class="card-content">
-                                        <h2 class="card-title" itemprop="name"><a href="./news-single.html" itemprop="url">News Title</a></h2>
+                                        <h2 class="card-title" itemprop="name"><a href="./news-single" itemprop="url">News Title</a></h2>
                                         <div class="card-author" itemprop="author">
                                             <i class="icon-user"></i>
                                             <a href="./news-single">Admin</a>
@@ -352,7 +352,7 @@
                                         </a>
                                     </div>
                                     <div class="card-content">
-                                        <h2 class="card-title" itemprop="name"><a href="./news-single.html" itemprop="url">News Title</a></h2>
+                                        <h2 class="card-title" itemprop="name"><a href="./news-single" itemprop="url">News Title</a></h2>
                                         <div class="card-author" itemprop="author">
                                             <i class="icon-user"></i>
                                             <a href="./news-single">Admin</a>
@@ -390,7 +390,7 @@
                                         </a>
                                     </div>
                                     <div class="card-content">
-                                        <h2 class="card-title" itemprop="name"><a href="./news-single.html" itemprop="url">News Title</a></h2>
+                                        <h2 class="card-title" itemprop="name"><a href="./news-single" itemprop="url">News Title</a></h2>
                                         <div class="card-author" itemprop="author">
                                             <i class="icon-user"></i>
                                             <a href="./news-single">Admin</a>
@@ -428,7 +428,7 @@
                                         </a>
                                     </div>
                                     <div class="card-content">
-                                        <h2 class="card-title" itemprop="name"><a href="./news-single.html" itemprop="url">News Title</a></h2>
+                                        <h2 class="card-title" itemprop="name"><a href="./news-single" itemprop="url">News Title</a></h2>
                                         <div class="card-author" itemprop="author">
                                             <i class="icon-user"></i>
                                             <a href="./news-single">Admin</a>
@@ -466,7 +466,7 @@
                                         </a>
                                     </div>
                                     <div class="card-content">
-                                        <h2 class="card-title" itemprop="name"><a href="./news-single.html" itemprop="url">News Title</a></h2>
+                                        <h2 class="card-title" itemprop="name"><a href="./news-single" itemprop="url">News Title</a></h2>
                                         <div class="card-author" itemprop="author">
                                             <i class="icon-user"></i>
                                             <a href="./news-single">Admin</a>
