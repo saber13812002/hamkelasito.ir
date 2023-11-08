@@ -850,13 +850,13 @@ Voice
                                 <article class="news-card" itemscope="" itemtype="https://schema.org/NewsArticle"
                                          itemprop="hasPart">
                                     <div class="card-thumbnail">
-                                        <meta itemprop="thumbnailUrl" content="/storage/assets/img/news-003.webp">
+                                        <meta itemprop="thumbnailUrl" content="/storage/assets/img/news/news-003.webp">
                                         <a href="news-single">
                                             <img src="/storage/assets/img/lazy-1.7x1.webp" class="card-thumbnail-image lazy"
-                                                 data-src="/storage/assets/img/news-003.webp" width="312" height="177"
+                                                 data-src="/storage/assets/img/news/news-003.webp" width="312" height="177"
                                                  alt="news title">
                                             <noscript>
-                                                <img src="/storage/assets/img/news-003.webp" class="card-thumbnail-image"
+                                                <img src="/storage/assets/img/news/news-003.webp" class="card-thumbnail-image"
                                                      width="312" height="177" alt="news title">
                                             </noscript>
                                         </a>
@@ -890,13 +890,13 @@ Voice
                                 <article class="news-card" itemscope="" itemtype="https://schema.org/NewsArticle"
                                          itemprop="hasPart">
                                     <div class="card-thumbnail">
-                                        <meta itemprop="thumbnailUrl" content="/storage/assets/img/news-004.webp">
+                                        <meta itemprop="thumbnailUrl" content="/storage/assets/img/news/news-004.webp">
                                         <a href="news-single">
                                             <img src="/storage/assets/img/lazy-1.7x1.webp" class="card-thumbnail-image lazy"
-                                                 data-src="/storage/assets/img/news-004.webp" width="312" height="177"
+                                                 data-src="/storage/assets/img/news/news-004.webp" width="312" height="177"
                                                  alt="news title">
                                             <noscript>
-                                                <img src="/storage/assets/img/news-004.webp" class="card-thumbnail-image"
+                                                <img src="/storage/assets/img/news/news-004.webp" class="card-thumbnail-image"
                                                      width="312" height="177" alt="news title">
                                             </noscript>
                                         </a>
@@ -930,13 +930,13 @@ Voice
                                 <article class="news-card" itemscope="" itemtype="https://schema.org/NewsArticle"
                                          itemprop="hasPart">
                                     <div class="card-thumbnail">
-                                        <meta itemprop="thumbnailUrl" content="/storage/assets/img/news-005.webp">
+                                        <meta itemprop="thumbnailUrl" content="/storage/assets/img/news/news-005.webp">
                                         <a href="news-single">
                                             <img src="/storage/assets//lazy-1.7x1.webp" class="card-thumbnail-image lazy"
-                                                 data-src="/storage/assets/img/news-005.webp" width="312" height="177"
+                                                 data-src="/storage/assets/img/news/news-005.webp" width="312" height="177"
                                                  alt="news title">
                                             <noscript>
-                                                <img src="/storage/assets/img/news-005.webp" class="card-thumbnail-image"
+                                                <img src="/storage/assets/img/news/news-005.webp" class="card-thumbnail-image"
                                                      width="312" height="177" alt="news title">
                                             </noscript>
                                         </a>
@@ -970,13 +970,13 @@ Voice
                                 <article class="news-card" itemscope="" itemtype="https://schema.org/NewsArticle"
                                          itemprop="hasPart">
                                     <div class="card-thumbnail">
-                                        <meta itemprop="thumbnailUrl" content="/storage/assets/img/news-006.webp">
+                                        <meta itemprop="thumbnailUrl" content="/storage/assets/img/news/news-006.webp">
                                         <a href="news-single">
                                             <img src="/storage/assets//lazy-1.7x1.webp" class="card-thumbnail-image lazy"
-                                                 data-src="/storage/assets/img/news-006.webp" width="312" height="177"
+                                                 data-src="/storage/assets/img/news/news-006.webp" width="312" height="177"
                                                  alt="news title">
                                             <noscript>
-                                                <img src="/storage/assets/img/news-006.webp" class="card-thumbnail-image"
+                                                <img src="/storage/assets/img/news/news-006.webp" class="card-thumbnail-image"
                                                      width="312" height="177" alt="news title">
                                             </noscript>
                                         </a>
