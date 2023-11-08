@@ -76,13 +76,13 @@
 <!-- model gallery -->
 <div class="model-gallery">
     <div class="model-base-image">
-        <img src="storage/assets/img/3x4/{{$member->profile_image}}.webp" alt="Image">
+        <img src="/storage/assets/img/3x4/{{$member->profile_image}}.webp" alt="Image">
     </div>
     <div class="model-gallery-images">
-        <img src="storage/assets/img/3x4/{{$member->profile_image}}.webp" alt="Image">
-        <img src="storage/assets/img/3x4/{{$member->profile_image}}.webp" alt="Image">
-        <img src="storage/assets/img/3x4/{{$member->profile_image}}.webp" alt="Image">
-        <img src="storage/assets/img/3x4/{{$member->profile_image}}.webp" alt="Image">
+        <img src="/storage/assets/img/3x4/{{$member->profile_image}}.webp" alt="Image">
+        <img src="/storage/assets/img/3x4/{{$member->profile_image}}.webp" alt="Image">
+        <img src="/storage/assets/img/3x4/{{$member->profile_image}}.webp" alt="Image">
+        <img src="/storage/assets/img/3x4/{{$member->profile_image}}.webp" alt="Image">
     </div>
 </div>
 
