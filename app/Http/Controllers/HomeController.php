@@ -65,22 +65,22 @@ class HomeController
 
     public function aboutUs()
     {
-        return view('about-us');
+        return view('layouts.single-pages.about-us');
     }
 
     public function ContactUs()
     {
-        return view('contact-us');
+        return view('layouts.single-pages.contact-us');
     }
 
     public function companyProfile()
     {
-        return view('company-profile');
+        return view('layouts.single-pages.company-profile');
     }
 
     public function privacyPolicy()
     {
-        return view('privacy-policy');
+        return view('layouts.single-pages.privacy-policy');
     }
 
     public function becomeModel()

@@ -20,7 +20,7 @@
 
 <body class="page page-news">
 
-@include('header-news')
+@include('layouts.news.header-news')
 
 @yield('content-news')
 

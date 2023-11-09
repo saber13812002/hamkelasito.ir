@@ -13,7 +13,7 @@ class NewsController extends Controller
      */
     public function newsResult()
     {
-        return view('news-result');
+        return view('layouts.news.news-result');
     }
 
     /**
@@ -21,7 +21,7 @@ class NewsController extends Controller
      */
     public function newsCategory()
     {
-        return view('news-category');
+        return view('layouts.news.news-category');
     }
 
     /**
@@ -29,7 +29,7 @@ class NewsController extends Controller
      */
     public function newsSingle()
     {
-        return view('news-single');
+        return view('layouts.news.news-single');
     }
 
     /**
@@ -37,7 +37,7 @@ class NewsController extends Controller
      */
     public function newsSingleCompany()
     {
-        return view('news-single-company');
+        return view('layouts.news.news-single-company');
     }
 
     /**
