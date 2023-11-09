@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Member;
 use App\Http\Requests\StoreMemberRequest;
 use App\Http\Requests\UpdateMemberRequest;
+use App\Models\Member;
 
 class MemberController extends Controller
 {
@@ -33,6 +33,62 @@ class MemberController extends Controller
     public function role()
     {
         return view('dashboard.role');
+    }
+
+    /**
+     * Show the form for creating a new resource.
+     */
+    public function userInfo()
+    {
+        return view('dashboard.user-info');
+    }
+
+    /**
+     * Show the form for creating a new resource.
+     */
+    public function gallery()
+    {
+        return view('dashboard.gallery');
+    }
+
+    /**
+     * Show the form for creating a new resource.
+     */
+    public function videoGallery()
+    {
+        return view('dashboard.video-gallery');
+    }
+
+    /**
+     * Show the form for creating a new resource.
+     */
+    public function voiceGallery()
+    {
+        return view('dashboard.voice-gallery');
+    }
+
+    /**
+     * Show the form for creating a new resource.
+     */
+    public function securityPrivacy()
+    {
+        return view('dashboard.security-privacy');
+    }
+
+    /**
+     * Show the form for creating a new resource.
+     */
+    public function accountInfo()
+    {
+        return view('dashboard.account-info');
+    }
+
+    /**
+     * Show the form for creating a new resource.
+     */
+    public function galleryTagEdit()
+    {
+        return view('dashboard.gallery-tag-edit');
     }
 
     /**

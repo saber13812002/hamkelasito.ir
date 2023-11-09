@@ -80,6 +80,14 @@ Route::get('/composite', [App\Http\Controllers\HomeController::class, 'composite
 Route::group(['prefix' => 'dashboard-models', 'middleware' => ['auth', 'web', 'verified']], function () {
     Route::get('', [App\Http\Controllers\MemberController::class, 'main'])->name('main');
     Route::get('role', [App\Http\Controllers\MemberController::class, 'role'])->name('role');
+    Route::get('user-info', [App\Http\Controllers\MemberController::class, 'userInfo'])->name('user-info');
+    Route::get('gallery', [App\Http\Controllers\MemberController::class, 'gallery'])->name('gallery');
+    Route::get('video-gallery', [App\Http\Controllers\MemberController::class, 'videoGallery'])->name('video-gallery');
+    Route::get('voice-gallery', [App\Http\Controllers\MemberController::class, 'voiceGallery'])->name('voice-gallery');
+    Route::get('security-privacy', [App\Http\Controllers\MemberController::class, 'securityPrivacy'])->name('security-privacy');
+    Route::get('account-info', [App\Http\Controllers\MemberController::class, 'accountInfo'])->name('account-info');
+
+    Route::get('gallery-tag-edit', [App\Http\Controllers\MemberController::class, 'galleryTagEdit'])->name('gallery-tag-edit');
 });
 
 // email verification

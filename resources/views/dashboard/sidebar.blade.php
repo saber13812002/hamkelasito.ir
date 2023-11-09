@@ -62,7 +62,7 @@
                 </a>
             </li>
             <li>
-                <a href="/dashboard-models/account-info" id="account_info">
+                <a href="/dashboard-models/account-info" id="account-info">
                     <i class="icon-info"></i>
                     <span>Account info</span>
                 </a>

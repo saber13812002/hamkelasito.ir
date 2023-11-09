@@ -30,8 +30,14 @@
 <script src="/storage/assets/js/lib/lazyload.min.js"></script>
 <script src="/storage/assets/js/popup.min.js"></script>
 <script src="/storage/assets/js/modal-side.min.js"></script>
+<script src="/storage/assets/js/lib/cropper.min.js"></script>
+<script src="/storage/assets/js/photo-selector.min.js"></script>
+<script src="/storage/assets/js/api-request-manager.min.js"></script>
+<script src="/storage/assets/js/modal-screen.min.js"></script>
+<script src="/storage/assets/js/media-library.min.js"></script>
+<script src="/storage/assets/js/pro-validation.min.js"></script>
+<script src="/storage/assets/js/component.min.js"></script>
 <script src="/storage/assets/js/dashboard.min.js"></script>
-
 
 </body>
 
