@@ -2,6 +2,10 @@
 
 @section('content-dashboard')
 
+    <body class="page-dashboard">
+
+    @include('dashboard.header')
+
     <!-- content -->
     <main id="main">
         @include('dashboard.sidebar')
@@ -164,6 +168,5 @@
             </div>
         </div>
     </main>
-
 
 @endsection

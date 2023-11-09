@@ -2,6 +2,10 @@
 
 @section('content-dashboard')
 
+    <body class="page-role enable-page-actions">
+
+    @include('dashboard.header')
+
     <!-- content -->
     <main id="main">
         @include('dashboard.sidebar')
@@ -191,6 +195,7 @@
                 </div>
             </div>
         </div>
+
     </main>
 
     <div class="page-actions">
@@ -201,6 +206,4 @@
             Save
         </button>
     </div>
-
-
 @endsection
