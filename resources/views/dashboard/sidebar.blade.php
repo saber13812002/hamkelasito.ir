@@ -8,7 +8,7 @@
                 <img src="/storage/assets/img/profile/profile-1/Thumbnail/profile-001.webp" class="user-avatar"
                      width="40" height="40" alt="image user profile">
             </noscript>
-            <div class="user-display-name">Olivia Rhye</div>
+            <div class="user-display-name">{{Auth::user()->name}}</div>
             <div class="user-stage-name">Batman</div>
             <div class="user-id">No. 2123</div>
         </div>

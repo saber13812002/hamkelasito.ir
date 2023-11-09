@@ -37,7 +37,7 @@ Route::get('dashboard', [AuthController::class, 'dashboard']);
 Route::get('logout', [AuthController::class, 'logout'])->name('logout');
 
 
-Route::group(['prefix' => 'admin'], function () {
+Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'web', 'verified']], function () {
     Route::get('', [AuthController::class, 'admin']);
     Route::get('categories', [CategoryController::class, 'index']);
     Route::get('members', [MemberController::class, 'index']);
@@ -45,7 +45,6 @@ Route::group(['prefix' => 'admin'], function () {
     Route::get('languages', [LanguageController::class, 'index']);
     Route::get('countries', [CountryController::class, 'index']);
 });
-
 
 
 //Route::get('/admin', function () {
@@ -78,5 +77,10 @@ Route::get('/news-single-company', [App\Http\Controllers\NewsController::class, 
 Route::get('/composite', [App\Http\Controllers\HomeController::class, 'composite'])->name('composite');
 
 // DASHBOARD
-Route::get('/dashboard-models', [App\Http\Controllers\MemberController::class, 'main'])->name('main');
-Route::get('/dashboard-models/role', [App\Http\Controllers\MemberController::class, 'role'])->name('role');
+Route::group(['prefix' => 'dashboard-models', 'middleware' => ['auth', 'web', 'verified']], function () {
+    Route::get('', [App\Http\Controllers\MemberController::class, 'main'])->name('main');
+    Route::get('role', [App\Http\Controllers\MemberController::class, 'role'])->name('role');
+});
+
+// email verification
+Auth::routes(['verify' => true]);

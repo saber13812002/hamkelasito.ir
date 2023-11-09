@@ -28,6 +28,17 @@
  - php artisan db:seed --class=SliderSeeder
  - php artisan db:seed --class=CountriesTableSeeder
  - php artisan db:seed --class=LanguagesTableSeeder
+ - make sure you do configuration for email verification in env file
+```  MAIL_MAILER=smtp
+  MAIL_HOST=mailpit
+  MAIL_PORT=1025
+  MAIL_USERNAME=null
+  MAIL_PASSWORD=null
+  MAIL_ENCRYPTION=null
+  MAIL_FROM_ADDRESS="hello@example.com"
+  MAIL_FROM_NAME="${APP_NAME}"
+  ```
+ - 
 
 
 ## License
