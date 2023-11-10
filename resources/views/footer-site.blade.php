@@ -8,10 +8,10 @@
             <div class="col-12 col-sm-6 col-lg-4">
                 <div class="ft-about-us">
                     <a href="/#" class="ft-site-logo">
-                        <img src="storage/assets/img/lazy-trp-1x1.webp" class="lazy lz-dark"
-                             data-src="storage/assets/img/logo-white.svg" width="88" height="24" alt="Liliana">
+                        <img src="/storage/assets/img/lazy-trp-1x1.webp" class="lazy lz-dark"
+                             data-src="/storage/assets/img/logo-white.svg" width="88" height="24" alt="Liliana">
                         <noscript>
-                            <img src="storage/assets/img/logo-white.svg" width="88" height="24" alt="Liliana">
+                            <img src="/storage/assets/img/logo-white.svg" width="88" height="24" alt="Liliana">
                         </noscript>
                     </a>
                     <p>

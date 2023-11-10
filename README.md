@@ -23,7 +23,22 @@
  - php artisan adminlte:status
  - php artisan migrate
  - php artisan db:seed --class=CategoriesTableSeeder
- - php artisan db:seed --class=MembersSeeder
+ - php artisan db:seed --class=MemberSeeder
+ - php artisan db:seed --class=MembersTableSeeder
+ - php artisan db:seed --class=SlidersTableSeeder
+ - php artisan db:seed --class=CountriesTableSeeder
+ - php artisan db:seed --class=LanguagesTableSeeder
+ - make sure you do configuration for email verification in env file
+```  MAIL_MAILER=smtp
+  MAIL_HOST=mailpit
+  MAIL_PORT=1025
+  MAIL_USERNAME=null
+  MAIL_PASSWORD=null
+  MAIL_ENCRYPTION=null
+  MAIL_FROM_ADDRESS="hello@example.com"
+  MAIL_FROM_NAME="${APP_NAME}"
+  ```
+ - 
 
 
 ## License

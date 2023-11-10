@@ -12,11 +12,11 @@
                 </div>
                 <div class="app-bar-title">
                     <a href="/" class="app-logo" aria-label="Liliana">
-                        <img src="storage/assets/img/logo-white.svg" class="lazy lz-entered lz-loaded"
-                             data-src="storage/assets/img/logo-white.svg" width="88" height="24" alt="liliana"
+                        <img src="/storage/assets/img/logo-white.svg" class="lazy lz-entered lz-loaded"
+                             data-src="/storage/assets/img/logo-white.svg" width="88" height="24" alt="liliana"
                              data-ll-status="loaded">
                         <noscript>
-                            <img src="storage/assets/img/logo-white.svg" width="88" height="24" alt="liliana">
+                            <img src="/storage/assets/img/logo-white.svg" width="88" height="24" alt="liliana">
                         </noscript>
                     </a>
                     <h1 class="app-bar-title-hidden">Liliana Models</h1>
@@ -40,10 +40,10 @@
                     </button>
                     <a href="/dashboard-models/" class="user-dashboard">
                         <i class="icon-user"></i>
-                        <!--                    <img src="storage/assets/img/lazy-1x1.webp" class="lazy" data-src="storage/assets/img/1x1/001.webp"-->
+                        <!--                    <img src="/storage/assets/img/lazy-1x1.webp" class="lazy" data-src="/storage/assets/img/1x1/001.webp"-->
                         <!--                         width="80" height="80" alt="Model">-->
                         <!--                    <noscript>-->
-                        <!--                        <img src="storage/assets/img/1x1/001.webp" width="80" height="80" alt="Model">-->
+                        <!--                        <img src="/storage/assets/img/1x1/001.webp" width="80" height="80" alt="Model">-->
                         <!--                    </noscript>-->
                     </a>
                 </div>
@@ -280,10 +280,10 @@
                         </div>
                         <div class="col-auto">
                             <div class="user-account-mini">
-                                <img src="storage/assets/img/lazy-1x1.webp" class="lazy"
-                                     data-src="storage/assets/img/1x1/001.webp" width="80" height="80" alt="Model">
+                                <img src="/storage/assets/img/lazy-1x1.webp" class="lazy"
+                                     data-src="/storage/assets/img/1x1/001.webp" width="80" height="80" alt="Model">
                                 <noscript>
-                                    <img src="storage/assets/img/1x1/001.webp" width="80" height="80" alt="Model">
+                                    <img src="/storage/assets/img/1x1/001.webp" width="80" height="80" alt="Model">
                                 </noscript>
                                 <div class="user-content">
                                     <div class="user-display-name">Miss Leslie Alexander</div>
@@ -353,20 +353,20 @@
                     </div>
                     <div class="recent-model">
                         <a href="model-page">
-                            <img src="storage/assets/img/slider/012.webp" class="lazy lz-entered lz-loaded"
-                                 data-src="storage/assets/img/3x4/012.webp" width="120" height="160" alt="Model"
+                            <img src="/storage/assets/img/slider/012.webp" class="lazy lz-entered lz-loaded"
+                                 data-src="/storage/assets/img/3x4/012.webp" width="120" height="160" alt="Model"
                                  data-ll-status="loaded">
                             <noscript>
-                                <img src="storage/assets/img/3x4/012.webp" width="120" height="160" alt="Model">
+                                <img src="/storage/assets/img/3x4/012.webp" width="120" height="160" alt="Model">
                             </noscript>
                             <span>Maaya</span>
                         </a>
                         <a href="model-page">
-                            <img src="storage/assets/img/slider/011.webp" class="lazy lz-entered lz-loaded"
-                                 data-src="storage/assets/img/3x4/011.webp" width="120" height="160" alt="Model"
+                            <img src="/storage/assets/img/slider/011.webp" class="lazy lz-entered lz-loaded"
+                                 data-src="/storage/assets/img/3x4/011.webp" width="120" height="160" alt="Model"
                                  data-ll-status="loaded">
                             <noscript>
-                                <img src="storage/assets/img/3x4/011.webp" width="120" height="160" alt="Model">
+                                <img src="/storage/assets/img/3x4/011.webp" width="120" height="160" alt="Model">
                             </noscript>
                             <span>Soya</span>
                         </a>
@@ -377,11 +377,11 @@
                             <span>Mikel</span>
                         </a>
                         <a href="model-page">
-                            <img src="storage/assets/img/slider/028.webp" class="lazy lz-entered lz-loaded"
-                                 data-src="storage/assets/img/3x4/028.webp" width="120" height="160" alt="Model"
+                            <img src="/storage/assets/img/slider/028.webp" class="lazy lz-entered lz-loaded"
+                                 data-src="/storage/assets/img/3x4/028.webp" width="120" height="160" alt="Model"
                                  data-ll-status="loaded">
                             <noscript>
-                                <img src="storage/assets/img/3x4/028.webp" width="120" height="160" alt="Model">
+                                <img src="/storage/assets/img/3x4/028.webp" width="120" height="160" alt="Model">
                             </noscript>
                             <span>Nycoli</span>
                         </a>
@@ -395,10 +395,10 @@
                 <ul>
                     <li>
                         <a href="model-page">
-                            <img src="storage/assets/img/lazy-1x1.webp" class="lazy"
-                                 data-src="storage/assets/img/1x1/003.webp" width="80" height="80" alt="model">
+                            <img src="/storage/assets/img/lazy-1x1.webp" class="lazy"
+                                 data-src="/storage/assets/img/1x1/003.webp" width="80" height="80" alt="model">
                             <noscript>
-                                <img src="storage/assets/img/1x1/005.webp" width="80" height="80" alt="model">
+                                <img src="/storage/assets/img/1x1/005.webp" width="80" height="80" alt="model">
                             </noscript>
                             <div>
                                 <div class="item-title">Cameron Williamson</div>
@@ -412,11 +412,11 @@
                     </li>
                     <li>
                         <a href="model-page">
-                            <img src="storage/assets/img/slider/004.webp" class="lazy lz-entered lz-loaded"
-                                 data-src="storage/assets/img/1x1/004.webp" width="80" height="80" alt="model"
+                            <img src="/storage/assets/img/slider/004.webp" class="lazy lz-entered lz-loaded"
+                                 data-src="/storage/assets/img/1x1/004.webp" width="80" height="80" alt="model"
                                  data-ll-status="loaded">
                             <noscript>
-                                <img src="storage/assets/img/1x1/005.webp" width="80" height="80" alt="model">
+                                <img src="/storage/assets/img/1x1/005.webp" width="80" height="80" alt="model">
                             </noscript>
                             <div>
                                 <div class="item-title">Cameron Alexander</div>
@@ -428,11 +428,11 @@
                     </li>
                     <li>
                         <a href="model-page">
-                            <img src="storage/assets/img/slider/005.webp" class="lazy lz-entered lz-loaded"
-                                 data-src="storage/assets/img/1x1/005.webp" width="80" height="80" alt="model"
+                            <img src="/storage/assets/img/slider/005.webp" class="lazy lz-entered lz-loaded"
+                                 data-src="/storage/assets/img/1x1/005.webp" width="80" height="80" alt="model"
                                  data-ll-status="loaded">
                             <noscript>
-                                <img src="storage/assets/img/1x1/005.webp" width="80" height="80" alt="model">
+                                <img src="/storage/assets/img/1x1/005.webp" width="80" height="80" alt="model">
                             </noscript>
                             <div>
                                 <div class="item-title">Cameron Fox</div>
@@ -463,12 +463,12 @@
                 <div class="bookmark-item" style="width: 203.5px;">
                     <article class="model-card item-bookmarked" itemscope="" itemtype="https://schema.org/Person">
                         <a href="model-page" itemprop="url">
-                            <meta itemprop="image" content="storage/assets/img/3x4/007.webp">
-                            <img src="storage/assets/img/slider/007.webp" class="lazy lz-entered lz-loaded"
-                                 data-src="storage/assets/img/3x4/007.webp" width="200" height="260" alt="model"
+                            <meta itemprop="image" content="/storage/assets/img/3x4/007.webp">
+                            <img src="/storage/assets/img/slider/007.webp" class="lazy lz-entered lz-loaded"
+                                 data-src="/storage/assets/img/3x4/007.webp" width="200" height="260" alt="model"
                                  data-ll-status="loaded">
                             <noscript>
-                                <img src="storage/assets/img/3x4/007.webp" width="200" height="260" alt="model">
+                                <img src="/storage/assets/img/3x4/007.webp" width="200" height="260" alt="model">
                             </noscript>
                             <div class="card-metas">
                                 <span class="meta-item">New Face</span>
@@ -493,12 +493,12 @@
                 <div class="bookmark-item" style="width: 203.5px;">
                     <article class="model-card item-bookmarked" itemscope="" itemtype="https://schema.org/Person">
                         <a href="model-page" itemprop="url">
-                            <meta itemprop="image" content="storage/assets/img/3x4/017.webp">
-                            <img src="storage/assets/img/slider/017.webp" class="lazy lz-entered lz-loaded"
-                                 data-src="storage/assets/img/3x4/017.webp" width="200" height="260" alt="model"
+                            <meta itemprop="image" content="/storage/assets/img/3x4/017.webp">
+                            <img src="/storage/assets/img/slider/017.webp" class="lazy lz-entered lz-loaded"
+                                 data-src="/storage/assets/img/3x4/017.webp" width="200" height="260" alt="model"
                                  data-ll-status="loaded">
                             <noscript>
-                                <img src="storage/assets/img/3x4/017.webp" width="200" height="260" alt="model">
+                                <img src="/storage/assets/img/3x4/017.webp" width="200" height="260" alt="model">
                             </noscript>
                             <div class="card-metas">
                                 <span class="meta-item">New Face</span>
@@ -523,12 +523,12 @@
                 <div class="bookmark-item" style="width: 203.5px;">
                     <article class="model-card item-bookmarked" itemscope="" itemtype="https://schema.org/Person">
                         <a href="model-page" itemprop="url">
-                            <meta itemprop="image" content="storage/assets/img/3x4/027.webp">
-                            <img src="storage/assets/img/slider/027.webp" class="lazy lz-entered lz-loaded"
-                                 data-src="storage/assets/img/3x4/027.webp" width="200" height="260" alt="model"
+                            <meta itemprop="image" content="/storage/assets/img/3x4/027.webp">
+                            <img src="/storage/assets/img/slider/027.webp" class="lazy lz-entered lz-loaded"
+                                 data-src="/storage/assets/img/3x4/027.webp" width="200" height="260" alt="model"
                                  data-ll-status="loaded">
                             <noscript>
-                                <img src="storage/assets/img/3x4/027.webp" width="200" height="260" alt="model">
+                                <img src="/storage/assets/img/3x4/027.webp" width="200" height="260" alt="model">
                             </noscript>
                             <div class="card-metas">
                                 <span class="meta-item">New Face</span>
@@ -553,12 +553,12 @@
                 <div class="bookmark-item" style="width: 203.5px;">
                     <article class="model-card item-bookmarked" itemscope="" itemtype="https://schema.org/Person">
                         <a href="model-page" itemprop="url">
-                            <meta itemprop="image" content="storage/assets/img/3x4/021.webp">
-                            <img src="storage/assets/img/slider/021.webp" class="lazy lz-entered lz-loaded"
-                                 data-src="storage/assets/img/3x4/021.webp" width="200" height="260" alt="model"
+                            <meta itemprop="image" content="/storage/assets/img/3x4/021.webp">
+                            <img src="/storage/assets/img/slider/021.webp" class="lazy lz-entered lz-loaded"
+                                 data-src="/storage/assets/img/3x4/021.webp" width="200" height="260" alt="model"
                                  data-ll-status="loaded">
                             <noscript>
-                                <img src="storage/assets/img/3x4/021.webp" width="200" height="260" alt="model">
+                                <img src="/storage/assets/img/3x4/021.webp" width="200" height="260" alt="model">
                             </noscript>
                             <div class="card-metas">
                                 <span class="meta-item">New Face</span>
@@ -583,12 +583,12 @@
                 <div class="bookmark-item" style="width: 203.5px;">
                     <article class="model-card item-bookmarked" itemscope="" itemtype="https://schema.org/Person">
                         <a href="model-page" itemprop="url">
-                            <meta itemprop="image" content="storage/assets/img/3x4/025.webp">
-                            <img src="storage/assets/img/slider/025.webp" class="lazy lz-entered lz-loaded"
-                                 data-src="storage/assets/img/3x4/025.webp" width="200" height="260" alt="model"
+                            <meta itemprop="image" content="/storage/assets/img/3x4/025.webp">
+                            <img src="/storage/assets/img/slider/025.webp" class="lazy lz-entered lz-loaded"
+                                 data-src="/storage/assets/img/3x4/025.webp" width="200" height="260" alt="model"
                                  data-ll-status="loaded">
                             <noscript>
-                                <img src="storage/assets/img/3x4/025.webp" width="200" height="260" alt="model">
+                                <img src="/storage/assets/img/3x4/025.webp" width="200" height="260" alt="model">
                             </noscript>
                             <div class="card-metas">
                                 <span class="meta-item">New Face</span>
@@ -613,12 +613,12 @@
                 <div class="bookmark-item" style="width: 203.5px;">
                     <article class="model-card item-bookmarked" itemscope="" itemtype="https://schema.org/Person">
                         <a href="model-page" itemprop="url">
-                            <meta itemprop="image" content="storage/assets/img/3x4/024.webp">
-                            <img src="storage/assets/img/slider/024.webp" class="lazy lz-entered lz-loaded"
-                                 data-src="storage/assets/img/3x4/024.webp" width="200" height="260" alt="model"
+                            <meta itemprop="image" content="/storage/assets/img/3x4/024.webp">
+                            <img src="/storage/assets/img/slider/024.webp" class="lazy lz-entered lz-loaded"
+                                 data-src="/storage/assets/img/3x4/024.webp" width="200" height="260" alt="model"
                                  data-ll-status="loaded">
                             <noscript>
-                                <img src="storage/assets/img/3x4/024.webp" width="200" height="260" alt="model">
+                                <img src="/storage/assets/img/3x4/024.webp" width="200" height="260" alt="model">
                             </noscript>
                             <div class="card-metas">
                                 <span class="meta-item">New Face</span>

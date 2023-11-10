@@ -292,12 +292,27 @@ return [
     'menu' => [
         [
             'text' => 'Categories',
-            'url'  => 'category',
+            'url'  => 'admin/categories',
             'icon' => 'fas fa-fw fa-user',
         ],
         [
             'text' => 'Members',
-            'url'  => 'members',
+            'url'  => 'admin/members',
+            'icon' => 'fas fa-fw fa-user',
+        ],
+        [
+            'text' => 'Sliders',
+            'url'  => 'admin/sliders',
+            'icon' => 'fas fa-fw fa-user',
+        ],
+        [
+            'text' => 'Countries',
+            'url'  => 'admin/countries',
+            'icon' => 'fas fa-fw fa-user',
+        ],
+        [
+            'text' => 'Languages',
+            'url'  => 'admin/languages',
             'icon' => 'fas fa-fw fa-user',
         ],
     ],

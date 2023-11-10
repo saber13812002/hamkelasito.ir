@@ -23,12 +23,12 @@
                     <div class="model-info">
                         <div class="model-thumbnail">
                             <meta itemprop="image"
-                                  content="storage/assets/img/profile/profile-1/Thumbnail/profile-001.webp">
-                            <img src="storage/assets/img/3x4/{{$member->profile_image}}.webp" class="lazy lz-entered lz-loaded"
-                                 data-src="storage/assets/img/profile/profile-1/Thumbnail/profile-001.webp" width="410"
+                                  content="/storage/assets/img/profile/profile-1/Thumbnail/profile-001.webp">
+                            <img src="/storage/assets/img/3x4/{{$member->profile_image}}.webp" class="lazy lz-entered lz-loaded"
+                                 data-src="/storage/assets/img/profile/profile-1/Thumbnail/profile-001.webp" width="410"
                                  height="548" alt="model name" data-ll-status="loaded">
                             <noscript>
-                                <img src="storage/assets/img/profile/profile-1/Thumbnail/profile-001.webp" width="410"
+                                <img src="/storage/assets/img/profile/profile-1/Thumbnail/profile-001.webp" width="410"
                                      height="548" alt="model name">
                             </noscript>
                             <div class="model-metas">
@@ -62,7 +62,7 @@
                                     </div>
                                 </div>
                                 <div class="actions">
-                                    <a href="model-page#" aria-label="Model Composite">
+                                    <a href="/composite?id={{$member->id}}" aria-label="Model Composite">
                                         <i class="icon-document"></i>
                                         <span>Composite</span>
                                     </a>
@@ -353,17 +353,17 @@ Voice
                                     <div class="grid-item" itemprop="item" itemscope=""
                                          itemtype="https://schema.org/ImageGallery">
                                         <meta itemprop="image"
-                                              content="storage/assets/img/profile/profile-1/orginal/001.jpg">
-                                        <a href="storage/assets/img/profile/profile-1/orginal/001.jpg"
+                                              content="/storage/assets/img/profile/profile-1/orginal/001.jpg">
+                                        <a href="/storage/assets/img/profile/profile-1/orginal/001.jpg"
                                            aria-label="Photo" data-light-box="gallery_photo" data-light-box-type="image"
                                            itemprop="url" data-object-id="0">
                                             <meta itemprop="thumbnailUrl"
-                                                  content="storage/assets/img/profile/profile-1/3x4/001.webp">
-                                            <img src="storage/assets/001.webp" class="lazy lz-entered lz-loaded"
-                                                 data-src="storage/assets/img/profile/profile-1/3x4/001.webp"
+                                                  content="/storage/assets/img/profile/profile-1/3x4/001.webp">
+                                            <img src="/storage/assets/001.webp" class="lazy lz-entered lz-loaded"
+                                                 data-src="/storage/assets/img/profile/profile-1/3x4/001.webp"
                                                  width="192" height="262" alt="image" data-ll-status="loaded">
                                             <noscript>
-                                                <img src="storage/assets/img/profile/profile-1/3x4/001.webp" width="192"
+                                                <img src="/storage/assets/img/profile/profile-1/3x4/001.webp" width="192"
                                                      height="262" alt="image">
                                             </noscript>
 
@@ -373,17 +373,17 @@ Voice
                                     <div class="grid-item" itemprop="item" itemscope=""
                                          itemtype="https://schema.org/ImageGallery">
                                         <meta itemprop="image"
-                                              content="storage/assets/img/profile/profile-1/orginal/002.jpg">
-                                        <a href="storage/assets/img/profile/profile-1/orginal/002.jpg"
+                                              content="/storage/assets/img/profile/profile-1/orginal/002.jpg">
+                                        <a href="/storage/assets/img/profile/profile-1/orginal/002.jpg"
                                            aria-label="Photo" data-light-box="gallery_photo" data-light-box-type="image"
                                            itemprop="url" data-object-id="1">
                                             <meta itemprop="thumbnailUrl"
-                                                  content="storage/assets/img/profile/profile-1/3x4/002.webp">
-                                            <img src="storage/assets/002.webp" class="lazy lz-entered lz-loaded"
-                                                 data-src="storage/assets/img/profile/profile-1/3x4/002.webp"
+                                                  content="/storage/assets/img/profile/profile-1/3x4/002.webp">
+                                            <img src="/storage/assets/002.webp" class="lazy lz-entered lz-loaded"
+                                                 data-src="/storage/assets/img/profile/profile-1/3x4/002.webp"
                                                  width="192" height="262" alt="image" data-ll-status="loaded">
                                             <noscript>
-                                                <img src="storage/assets/img/profile/profile-1/3x4/002.webp" width="192"
+                                                <img src="/storage/assets/img/profile/profile-1/3x4/002.webp" width="192"
                                                      height="262" alt="image">
                                             </noscript>
 
@@ -393,17 +393,17 @@ Voice
                                     <div class="grid-item" itemprop="item" itemscope=""
                                          itemtype="https://schema.org/ImageGallery">
                                         <meta itemprop="image"
-                                              content="storage/assets/img/profile/profile-1/orginal/003.jpg">
-                                        <a href="storage/assets/img/profile/profile-1/orginal/003.jpg"
+                                              content="/storage/assets/img/profile/profile-1/orginal/003.jpg">
+                                        <a href="/storage/assets/img/profile/profile-1/orginal/003.jpg"
                                            aria-label="Photo" data-light-box="gallery_photo" data-light-box-type="image"
                                            itemprop="url" data-object-id="2">
                                             <meta itemprop="thumbnailUrl"
-                                                  content="storage/assets/img/profile/profile-1/3x4/003.webp">
-                                            <img src="storage/assets/003.webp" class="lazy lz-entered lz-loaded"
-                                                 data-src="storage/assets/img/profile/profile-1/3x4/003.webp"
+                                                  content="/storage/assets/img/profile/profile-1/3x4/003.webp">
+                                            <img src="/storage/assets/003.webp" class="lazy lz-entered lz-loaded"
+                                                 data-src="/storage/assets/img/profile/profile-1/3x4/003.webp"
                                                  width="192" height="262" alt="image" data-ll-status="loaded">
                                             <noscript>
-                                                <img src="storage/assets/img/profile/profile-1/3x4/003.webp" width="192"
+                                                <img src="/storage/assets/img/profile/profile-1/3x4/003.webp" width="192"
                                                      height="262" alt="image">
                                             </noscript>
 
@@ -413,17 +413,17 @@ Voice
                                     <div class="grid-item" itemprop="item" itemscope=""
                                          itemtype="https://schema.org/ImageGallery">
                                         <meta itemprop="image"
-                                              content="storage/assets/img/profile/profile-1/orginal/004.jpg">
-                                        <a href="storage/assets/img/profile/profile-1/orginal/004.jpg"
+                                              content="/storage/assets/img/profile/profile-1/orginal/004.jpg">
+                                        <a href="/storage/assets/img/profile/profile-1/orginal/004.jpg"
                                            aria-label="Photo" data-light-box="gallery_photo" data-light-box-type="image"
                                            itemprop="url" data-object-id="3">
                                             <meta itemprop="thumbnailUrl"
-                                                  content="storage/assets/img/profile/profile-1/3x4/004.webp">
-                                            <img src="storage/assets/004(1).webp" class="lazy lz-entered lz-loaded"
-                                                 data-src="storage/assets/img/profile/profile-1/3x4/004.webp"
+                                                  content="/storage/assets/img/profile/profile-1/3x4/004.webp">
+                                            <img src="/storage/assets/004(1).webp" class="lazy lz-entered lz-loaded"
+                                                 data-src="/storage/assets/img/profile/profile-1/3x4/004.webp"
                                                  width="192" height="262" alt="image" data-ll-status="loaded">
                                             <noscript>
-                                                <img src="storage/assets/img/profile/profile-1/3x4/004.webp" width="192"
+                                                <img src="/storage/assets/img/profile/profile-1/3x4/004.webp" width="192"
                                                      height="262" alt="image">
                                             </noscript>
 
@@ -433,17 +433,17 @@ Voice
                                     <div class="grid-item" itemprop="item" itemscope=""
                                          itemtype="https://schema.org/ImageGallery">
                                         <meta itemprop="image"
-                                              content="storage/assets/img/profile/profile-1/orginal/005.jpg">
-                                        <a href="storage/assets/img/profile/profile-1/orginal/005.jpg"
+                                              content="/storage/assets/img/profile/profile-1/orginal/005.jpg">
+                                        <a href="/storage/assets/img/profile/profile-1/orginal/005.jpg"
                                            aria-label="Photo" data-light-box="gallery_photo" data-light-box-type="image"
                                            itemprop="url" data-object-id="4">
                                             <meta itemprop="thumbnailUrl"
-                                                  content="storage/assets/img/profile/profile-1/3x4/005.webp">
-                                            <img src="storage/assets/005(1).webp" class="lazy lz-entered lz-loaded"
-                                                 data-src="storage/assets/img/profile/profile-1/3x4/005.webp"
+                                                  content="/storage/assets/img/profile/profile-1/3x4/005.webp">
+                                            <img src="/storage/assets/005(1).webp" class="lazy lz-entered lz-loaded"
+                                                 data-src="/storage/assets/img/profile/profile-1/3x4/005.webp"
                                                  width="192" height="262" alt="image" data-ll-status="loaded">
                                             <noscript>
-                                                <img src="storage/assets/img/profile/profile-1/3x4/005.webp" width="192"
+                                                <img src="/storage/assets/img/profile/profile-1/3x4/005.webp" width="192"
                                                      height="262" alt="image">
                                             </noscript>
 
@@ -453,17 +453,17 @@ Voice
                                     <div class="grid-item" itemprop="item" itemscope=""
                                          itemtype="https://schema.org/ImageGallery">
                                         <meta itemprop="image"
-                                              content="storage/assets/img/profile/profile-1/orginal/006.jpg">
-                                        <a href="storage/assets/img/profile/profile-1/orginal/006.jpg"
+                                              content="/storage/assets/img/profile/profile-1/orginal/006.jpg">
+                                        <a href="/storage/assets/img/profile/profile-1/orginal/006.jpg"
                                            aria-label="Photo" data-light-box="gallery_photo" data-light-box-type="image"
                                            itemprop="url" data-object-id="5">
                                             <meta itemprop="thumbnailUrl"
-                                                  content="storage/assets/img/profile/profile-1/3x4/006.webp">
-                                            <img src="storage/assets/img/lazy-3x4.webp" class="lazy"
-                                                 data-src="storage/assets/img/profile/profile-1/3x4/006.webp"
+                                                  content="/storage/assets/img/profile/profile-1/3x4/006.webp">
+                                            <img src="/storage/assets/img/lazy-3x4.webp" class="lazy"
+                                                 data-src="/storage/assets/img/profile/profile-1/3x4/006.webp"
                                                  width="192" height="262" alt="image">
                                             <noscript>
-                                                <img src="storage/assets/img/profile/profile-1/3x4/006.webp" width="192"
+                                                <img src="/storage/assets/img/profile/profile-1/3x4/006.webp" width="192"
                                                      height="262" alt="image">
                                             </noscript>
 
@@ -473,17 +473,17 @@ Voice
                                     <div class="grid-item" itemprop="item" itemscope=""
                                          itemtype="https://schema.org/ImageGallery">
                                         <meta itemprop="image"
-                                              content="storage/assets/img/profile/profile-1/orginal/007.jpg">
-                                        <a href="storage/assets/img/profile/profile-1/orginal/007.jpg"
+                                              content="/storage/assets/img/profile/profile-1/orginal/007.jpg">
+                                        <a href="/storage/assets/img/profile/profile-1/orginal/007.jpg"
                                            aria-label="Photo" data-light-box="gallery_photo" data-light-box-type="image"
                                            itemprop="url" data-object-id="6">
                                             <meta itemprop="thumbnailUrl"
-                                                  content="storage/assets/img/profile/profile-1/3x4/007.webp">
-                                            <img src="storage/assets/img/lazy-3x4.webp" class="lazy"
-                                                 data-src="storage/assets/img/profile/profile-1/3x4/007.webp"
+                                                  content="/storage/assets/img/profile/profile-1/3x4/007.webp">
+                                            <img src="/storage/assets/img/lazy-3x4.webp" class="lazy"
+                                                 data-src="/storage/assets/img/profile/profile-1/3x4/007.webp"
                                                  width="192" height="262" alt="image">
                                             <noscript>
-                                                <img src="storage/assets/img/profile/profile-1/3x4/007.webp" width="192"
+                                                <img src="/storage/assets/img/profile/profile-1/3x4/007.webp" width="192"
                                                      height="262" alt="image">
                                             </noscript>
 
@@ -493,17 +493,17 @@ Voice
                                     <div class="grid-item" itemprop="item" itemscope=""
                                          itemtype="https://schema.org/ImageGallery">
                                         <meta itemprop="image"
-                                              content="storage/assets/img/profile/profile-1/orginal/008.jpg">
-                                        <a href="storage/assets/img/profile/profile-1/orginal/008.jpg"
+                                              content="/storage/assets/img/profile/profile-1/orginal/008.jpg">
+                                        <a href="/storage/assets/img/profile/profile-1/orginal/008.jpg"
                                            aria-label="Photo" data-light-box="gallery_photo" data-light-box-type="image"
                                            itemprop="url" data-object-id="7">
                                             <meta itemprop="thumbnailUrl"
-                                                  content="storage/assets/img/profile/profile-1/3x4/008.webp">
-                                            <img src="storage/assets/img/lazy-3x4.webp" class="lazy"
-                                                 data-src="storage/assets/img/profile/profile-1/3x4/008.webp"
+                                                  content="/storage/assets/img/profile/profile-1/3x4/008.webp">
+                                            <img src="/storage/assets/img/lazy-3x4.webp" class="lazy"
+                                                 data-src="/storage/assets/img/profile/profile-1/3x4/008.webp"
                                                  width="192" height="262" alt="image">
                                             <noscript>
-                                                <img src="storage/assets/img/profile/profile-1/3x4/008.webp" width="192"
+                                                <img src="/storage/assets/img/profile/profile-1/3x4/008.webp" width="192"
                                                      height="262" alt="image">
                                             </noscript>
 
@@ -513,17 +513,17 @@ Voice
                                     <div class="grid-item" itemprop="item" itemscope=""
                                          itemtype="https://schema.org/ImageGallery">
                                         <meta itemprop="image"
-                                              content="storage/assets/img/profile/profile-1/orginal/009.jpg">
-                                        <a href="storage/assets/img/profile/profile-1/orginal/009.jpg"
+                                              content="/storage/assets/img/profile/profile-1/orginal/009.jpg">
+                                        <a href="/storage/assets/img/profile/profile-1/orginal/009.jpg"
                                            aria-label="Photo" data-light-box="gallery_photo" data-light-box-type="image"
                                            itemprop="url" data-object-id="8">
                                             <meta itemprop="thumbnailUrl"
-                                                  content="storage/assets/img/profile/profile-1/3x4/009.webp">
-                                            <img src="storage/assets/img/lazy-3x4.webp" class="lazy"
-                                                 data-src="storage/assets/img/profile/profile-1/3x4/009.webp"
+                                                  content="/storage/assets/img/profile/profile-1/3x4/009.webp">
+                                            <img src="/storage/assets/img/lazy-3x4.webp" class="lazy"
+                                                 data-src="/storage/assets/img/profile/profile-1/3x4/009.webp"
                                                  width="192" height="262" alt="image">
                                             <noscript>
-                                                <img src="storage/assets/img/profile/profile-1/3x4/009.webp" width="192"
+                                                <img src="/storage/assets/img/profile/profile-1/3x4/009.webp" width="192"
                                                      height="262" alt="image">
                                             </noscript>
 
@@ -550,17 +550,17 @@ Voice
                                     <div class="grid-item" itemprop="item" itemscope=""
                                          itemtype="https://schema.org/VideoObject">
                                         <div class="video-card">
-                                            <a href="storage/assets/video/video-001.mp4" data-light-box="gallery_video"
+                                            <a href="/storage/assets/video/video-001.mp4" data-light-box="gallery_video"
                                                data-light-box-type="video" aria-label="Video" itemprop="url"
                                                data-object-id="10">
                                                 <div class="card-thumbnail">
                                                     <meta itemprop="thumbnail"
-                                                          content="storage/assets/img/video-001.webp">
-                                                    <img src="storage/assets/img/lazy-1.7x1.webp" class="lazy"
-                                                         data-src="storage/assets/img/video-001.webp" width="296"
+                                                          content="/storage/assets/img/video-001.webp">
+                                                    <img src="/storage/assets/img/lazy-1.7x1.webp" class="lazy"
+                                                         data-src="/storage/assets/img/video-001.webp" width="296"
                                                          height="168" alt="video">
                                                     <noscript>
-                                                        <img src="storage/assets/img/video-001.webp" width="296"
+                                                        <img src="/storage/assets/img/video-001.webp" width="296"
                                                              height="168"
                                                              alt="video">
                                                     </noscript>
@@ -579,17 +579,17 @@ Voice
                                     <div class="grid-item" itemprop="item" itemscope=""
                                          itemtype="https://schema.org/VideoObject">
                                         <div class="video-card">
-                                            <a href="storage/assets/video/video-002.mp4" data-light-box="gallery_video"
+                                            <a href="/storage/assets/video/video-002.mp4" data-light-box="gallery_video"
                                                data-light-box-type="video" aria-label="Video" itemprop="url"
                                                data-object-id="11">
                                                 <div class="card-thumbnail">
                                                     <meta itemprop="thumbnail"
-                                                          content="storage/assets/img/video-002.webp">
-                                                    <img src="storage/assets/img/lazy-1.7x1.webp" class="lazy"
-                                                         data-src="storage/assets/img/video-002.webp" width="296"
+                                                          content="/storage/assets/img/video-002.webp">
+                                                    <img src="/storage/assets/img/lazy-1.7x1.webp" class="lazy"
+                                                         data-src="/storage/assets/img/video-002.webp" width="296"
                                                          height="168" alt="video">
                                                     <noscript>
-                                                        <img src="storage/assets/img/video-002.webp" width="296"
+                                                        <img src="/storage/assets/img/video-002.webp" width="296"
                                                              height="168"
                                                              alt="video">
                                                     </noscript>
@@ -608,17 +608,17 @@ Voice
                                     <div class="grid-item" itemprop="item" itemscope=""
                                          itemtype="https://schema.org/VideoObject">
                                         <div class="video-card">
-                                            <a href="storage/assets/video/video-003.mp4" data-light-box="gallery_video"
+                                            <a href="/storage/assets/video/video-003.mp4" data-light-box="gallery_video"
                                                data-light-box-type="video" aria-label="Video" itemprop="url"
                                                data-object-id="12">
                                                 <div class="card-thumbnail">
                                                     <meta itemprop="thumbnail"
-                                                          content="storage/assets/img/video-003.webp">
-                                                    <img src="storage/assets/img/lazy-1.7x1.webp" class="lazy"
-                                                         data-src="storage/assets/img/video-003.webp" width="296"
+                                                          content="/storage/assets/img/video-003.webp">
+                                                    <img src="/storage/assets/img/lazy-1.7x1.webp" class="lazy"
+                                                         data-src="/storage/assets/img/video-003.webp" width="296"
                                                          height="168" alt="video">
                                                     <noscript>
-                                                        <img src="storage/assets/img/video-003.webp" width="296"
+                                                        <img src="/storage/assets/img/video-003.webp" width="296"
                                                              height="168"
                                                              alt="video">
                                                     </noscript>
@@ -637,17 +637,17 @@ Voice
                                     <div class="grid-item" itemprop="item" itemscope=""
                                          itemtype="https://schema.org/VideoObject">
                                         <div class="video-card">
-                                            <a href="storage/assets/video/video-004.mp4" data-light-box="gallery_video"
+                                            <a href="/storage/assets/video/video-004.mp4" data-light-box="gallery_video"
                                                data-light-box-type="video" aria-label="Video" itemprop="url"
                                                data-object-id="13">
                                                 <div class="card-thumbnail">
                                                     <meta itemprop="thumbnail"
-                                                          content="storage/assets/img/video-004.webp">
-                                                    <img src="storage/assets/img/lazy-1.7x1.webp" class="lazy"
-                                                         data-src="storage/assets/img/video-004.webp" width="296"
+                                                          content="/storage/assets/img/video-004.webp">
+                                                    <img src="/storage/assets/img/lazy-1.7x1.webp" class="lazy"
+                                                         data-src="/storage/assets/img/video-004.webp" width="296"
                                                          height="168" alt="video">
                                                     <noscript>
-                                                        <img src="storage/assets/img/video-004.webp" width="296"
+                                                        <img src="/storage/assets/img/video-004.webp" width="296"
                                                              height="168"
                                                              alt="video">
                                                     </noscript>
@@ -671,9 +671,9 @@ Voice
                                 <div class="grid-audio">
                                     <div class="grid-item" itemprop="item" itemscope=""
                                          itemtype="https://schema.org/AudioObject">
-                                        <meta itemprop="contentUrl" content="storage/assets/music/music-001.mp3">
+                                        <meta itemprop="contentUrl" content="/storage/assets/music/music-001.mp3">
                                         <meta itemprop="encodingFormat" content="audio/mp3">
-                                        <div class="audio-card" data-src="storage/assets/music/music-001.mp3"
+                                        <div class="audio-card" data-src="/storage/assets/music/music-001.mp3"
                                              data-detect="true">
                                             <div class="card-content">
                                                 <div class="card-title" itemprop="name">Voice Title</div>
@@ -721,9 +721,9 @@ Voice
                                     </div>
                                     <div class="grid-item" itemprop="item" itemscope=""
                                          itemtype="https://schema.org/AudioObject">
-                                        <meta itemprop="contentUrl" content="storage/assets/music/music-002.mp3">
+                                        <meta itemprop="contentUrl" content="/storage/assets/music/music-002.mp3">
                                         <meta itemprop="encodingFormat" content="audio/mp3">
-                                        <div class="audio-card" data-src="storage/assets/music/music-002.mp3"
+                                        <div class="audio-card" data-src="/storage/assets/music/music-002.mp3"
                                              data-detect="true">
                                             <div class="card-content">
                                                 <div class="card-title" itemprop="name">Voice Title</div>
@@ -771,9 +771,9 @@ Voice
                                     </div>
                                     <div class="grid-item" itemprop="item" itemscope=""
                                          itemtype="https://schema.org/AudioObject">
-                                        <meta itemprop="contentUrl" content="storage/assets/music/music-003.mp3">
+                                        <meta itemprop="contentUrl" content="/storage/assets/music/music-003.mp3">
                                         <meta itemprop="encodingFormat" content="audio/mp3">
-                                        <div class="audio-card" data-src="storage/assets/music/music-003.mp3"
+                                        <div class="audio-card" data-src="/storage/assets/music/music-003.mp3"
                                              data-detect="true">
                                             <div class="card-content">
                                                 <div class="card-title" itemprop="name">Voice Title</div>
@@ -829,197 +829,18 @@ Voice
                 </div>
             </section>
 
-            <!-- start news -->
-            <section class="section section-news" itemscope="" itemtype="https://schema.org/Collection">
-                <div class="container-xxl">
-                    <div class="heading-box heading-news" data-auto-size="true" data-col="1.25">
-                        <div class="heading">
-                            <div class="top-area">
-                                <div class="title-area">
-                                    <h2 class="heading-title" itemprop="name">{{$member->name}} RELATED NEWS</h2>
-                                </div>
-                                <div class="action-area">
-                                    <a href="news-result" itemprop="url">
-                                        See All
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="heading-content">
-                            <div style="width: auto;">
-                                <article class="news-card" itemscope="" itemtype="https://schema.org/NewsArticle"
-                                         itemprop="hasPart">
-                                    <div class="card-thumbnail">
-                                        <meta itemprop="thumbnailUrl" content="storage/assets/img/news-003.webp">
-                                        <a href="news-single">
-                                            <img src="storage/assets/img/lazy-1.7x1.webp" class="card-thumbnail-image lazy"
-                                                 data-src="storage/assets/img/news-003.webp" width="312" height="177"
-                                                 alt="news title">
-                                            <noscript>
-                                                <img src="storage/assets/img/news-003.webp" class="card-thumbnail-image"
-                                                     width="312" height="177" alt="news title">
-                                            </noscript>
-                                        </a>
-                                    </div>
-                                    <div class="card-content">
-                                        <h2 class="card-title" itemprop="name"><a href="news-single" itemprop="url">News
-                                                Title</a></h2>
-                                        <div class="card-author" itemprop="author">
-                                            <i class="icon-user"></i>
-                                            <a href="news-single">Admin</a>
-                                        </div>
-                                        <div class="card-date">
-                                            <i class="icon-clock"></i>
-                                            <meta itemprop="datePublished" content="2022-04-29">
-                                            <time datetime="2022-04-29">29th April 2022</time>
-                                        </div>
-                                        <div class="card-description" itemprop="description">
-                                            I have been a full-time housewife for 25 years, but started Instagram 2
-                                            years
-                                            ago and have over 50,000 followers. I hope to share with young girls and.
-                                        </div>
-                                        <div class="card-category">
-                                            <a href="news-category">Fashion</a>
-                                            <a href="news-category">Modeling</a>
-                                            <a href="news-category">New Face</a>
-                                        </div>
-                                    </div>
-                                </article>
-                            </div>
-                            <div style="width: auto;">
-                                <article class="news-card" itemscope="" itemtype="https://schema.org/NewsArticle"
-                                         itemprop="hasPart">
-                                    <div class="card-thumbnail">
-                                        <meta itemprop="thumbnailUrl" content="storage/assets/img/news-004.webp">
-                                        <a href="news-single">
-                                            <img src="storage/assets/img/lazy-1.7x1.webp" class="card-thumbnail-image lazy"
-                                                 data-src="storage/assets/img/news-004.webp" width="312" height="177"
-                                                 alt="news title">
-                                            <noscript>
-                                                <img src="storage/assets/img/news-004.webp" class="card-thumbnail-image"
-                                                     width="312" height="177" alt="news title">
-                                            </noscript>
-                                        </a>
-                                    </div>
-                                    <div class="card-content">
-                                        <h2 class="card-title" itemprop="name"><a href="news-single" itemprop="url">News
-                                                Title</a></h2>
-                                        <div class="card-author" itemprop="author">
-                                            <i class="icon-user"></i>
-                                            <a href="news-single">Admin</a>
-                                        </div>
-                                        <div class="card-date">
-                                            <i class="icon-clock"></i>
-                                            <meta itemprop="datePublished" content="2022-04-29">
-                                            <time datetime="2022-04-29">29th April 2022</time>
-                                        </div>
-                                        <div class="card-description" itemprop="description">
-                                            I have been a full-time housewife for 25 years, but started Instagram 2
-                                            years
-                                            ago and have over 50,000 followers. I hope to share with young girls and.
-                                        </div>
-                                        <div class="card-category">
-                                            <a href="news-category">Fashion</a>
-                                            <a href="news-category">Modeling</a>
-                                            <a href="news-category">New Face</a>
-                                        </div>
-                                    </div>
-                                </article>
-                            </div>
-                            <div style="width: auto;">
-                                <article class="news-card" itemscope="" itemtype="https://schema.org/NewsArticle"
-                                         itemprop="hasPart">
-                                    <div class="card-thumbnail">
-                                        <meta itemprop="thumbnailUrl" content="storage/assets/img/news-005.webp">
-                                        <a href="news-single">
-                                            <img src="storage/assets//lazy-1.7x1.webp" class="card-thumbnail-image lazy"
-                                                 data-src="storage/assets/img/news-005.webp" width="312" height="177"
-                                                 alt="news title">
-                                            <noscript>
-                                                <img src="storage/assets/img/news-005.webp" class="card-thumbnail-image"
-                                                     width="312" height="177" alt="news title">
-                                            </noscript>
-                                        </a>
-                                    </div>
-                                    <div class="card-content">
-                                        <h2 class="card-title" itemprop="name"><a href="news-single" itemprop="url">News
-                                                Title</a></h2>
-                                        <div class="card-author" itemprop="author">
-                                            <i class="icon-user"></i>
-                                            <a href="news-single">Admin</a>
-                                        </div>
-                                        <div class="card-date">
-                                            <i class="icon-clock"></i>
-                                            <meta itemprop="datePublished" content="2022-04-29">
-                                            <time datetime="2022-04-29">29th April 2022</time>
-                                        </div>
-                                        <div class="card-description" itemprop="description">
-                                            I have been a full-time housewife for 25 years, but started Instagram 2
-                                            years
-                                            ago and have over 50,000 followers. I hope to share with young girls and.
-                                        </div>
-                                        <div class="card-category">
-                                            <a href="news-category">Fashion</a>
-                                            <a href="news-category">Modeling</a>
-                                            <a href="news-category">New Face</a>
-                                        </div>
-                                    </div>
-                                </article>
-                            </div>
-                            <div style="width: auto;">
-                                <article class="news-card" itemscope="" itemtype="https://schema.org/NewsArticle"
-                                         itemprop="hasPart">
-                                    <div class="card-thumbnail">
-                                        <meta itemprop="thumbnailUrl" content="storage/assets/img/news-006.webp">
-                                        <a href="news-single">
-                                            <img src="storage/assets//lazy-1.7x1.webp" class="card-thumbnail-image lazy"
-                                                 data-src="storage/assets/img/news-006.webp" width="312" height="177"
-                                                 alt="news title">
-                                            <noscript>
-                                                <img src="storage/assets/img/news-006.webp" class="card-thumbnail-image"
-                                                     width="312" height="177" alt="news title">
-                                            </noscript>
-                                        </a>
-                                    </div>
-                                    <div class="card-content">
-                                        <h2 class="card-title" itemprop="name"><a href="news-single" itemprop="url">News
-                                                Title</a></h2>
-                                        <div class="card-author" itemprop="author">
-                                            <i class="icon-user"></i>
-                                            <a href="news-single">Admin</a>
-                                        </div>
-                                        <div class="card-date">
-                                            <i class="icon-clock"></i>
-                                            <meta itemprop="datePublished" content="2022-04-29">
-                                            <time datetime="2022-04-29">29th April 2022</time>
-                                        </div>
-                                        <div class="card-description" itemprop="description">
-                                            I have been a full-time housewife for 25 years, but started Instagram 2
-                                            years
-                                            ago and have over 50,000 followers. I hope to share with young girls and.
-                                        </div>
-                                        <div class="card-category">
-                                            <a href="news-category">Fashion</a>
-                                            <a href="news-category">Modeling</a>
-                                            <a href="news-category">New Face</a>
-                                        </div>
-                                    </div>
-                                </article>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+
+            @include('layouts.related-news')
 
         </div>
     </main>
 
 
     <!-- start scripts -->
-    <script src="storage/assets/js/lib/jQuery.min.js"></script>
-    <script src="storage/assets/js/lib/lazyload.min.js"></script>
-    <script src="storage/assets/js/component.min.js"></script>
-    <script src="storage/assets/js/scripts.min.js"></script>
+    <script src="/storage/assets/js/lib/jQuery.min.js"></script>
+    <script src="/storage/assets/js/lib/lazyload.min.js"></script>
+    <script src="/storage/assets/js/component.min.js"></script>
+    <script src="/storage/assets/js/scripts.min.js"></script>
 
 
 

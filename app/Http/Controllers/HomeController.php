@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Category;
 use App\Models\Member;
+use App\Models\Slider;
 use Illuminate\Http\Client\Request;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Auth;
@@ -14,11 +15,9 @@ class HomeController
     {
         $categories = Category::all();
         $members = Member::all();
+        $sliders = Slider::all();
 
-        return view('home', [
-            "categories" => $categories,
-            "members" => $members
-        ]);
+        return view('home', compact('categories', 'members', 'sliders'));
     }
 
     public function modelPage(\Illuminate\Http\Request $request)
@@ -66,26 +65,36 @@ class HomeController
 
     public function aboutUs()
     {
-        return view('about-us');
+        return view('layouts.single-pages.about-us');
     }
 
     public function ContactUs()
     {
-        return view('contact-us');
+        return view('layouts.single-pages.contact-us');
     }
 
     public function companyProfile()
     {
-        return view('company-profile');
+        return view('layouts.single-pages.company-profile');
     }
 
     public function privacyPolicy()
     {
-        return view('privacy-policy');
+        return view('layouts.single-pages.privacy-policy');
     }
 
     public function becomeModel()
     {
         return view('become-a-model');
+    }
+
+    public function composite(\Illuminate\Http\Request $request)
+    {
+        if ($request->has('id')) {
+            $id = $request->id;
+            $member = Member::query()->find($id);
+            return view('pdf.composite', compact('member'));
+        } else
+            return redirect('home');
     }
 }
