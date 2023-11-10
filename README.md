@@ -25,7 +25,7 @@
  - php artisan db:seed --class=CategoriesTableSeeder
  - php artisan db:seed --class=MemberSeeder
  - php artisan db:seed --class=MembersTableSeeder
- - php artisan db:seed --class=SliderSeeder
+ - php artisan db:seed --class=SlidersTableSeeder
  - php artisan db:seed --class=CountriesTableSeeder
  - php artisan db:seed --class=LanguagesTableSeeder
  - make sure you do configuration for email verification in env file
