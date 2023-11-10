@@ -88,6 +88,7 @@ Route::group(['prefix' => 'dashboard-models', 'middleware' => ['auth', 'web', 'v
     Route::get('account-info', [App\Http\Controllers\MemberController::class, 'accountInfo'])->name('account-info');
 
     Route::get('gallery-tag-edit', [App\Http\Controllers\MemberController::class, 'galleryTagEdit'])->name('gallery-tag-edit');
+    Route::get('user-info-edit-skills', [App\Http\Controllers\MemberController::class, 'userInfoEdiSkills'])->name('user-info-edit-skills');
 });
 
 // email verification

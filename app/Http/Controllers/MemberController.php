@@ -92,6 +92,14 @@ class MemberController extends Controller
     }
 
     /**
+     * Show the form for creating a new resource.
+     */
+    public function userInfoEdiSkills()
+    {
+        return view('dashboard.user-info-edit-skills');
+    }
+
+    /**
      * Store a newly created resource in storage.
      */
     public function store(StoreMemberRequest $request)

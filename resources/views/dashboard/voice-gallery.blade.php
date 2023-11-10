@@ -29,7 +29,7 @@
 
                                 <div class="gallery-grid">
                                     <div class="gallery-item">
-                                        <div class="audio-card" data-src="../../assets/music/music-001.mp3">
+                                        <div class="audio-card" data-src="/storage/assets/music/music-001.mp3">
                                             <div class="card-content">
                                                 <div class="card-title" itemprop="name">Voice Title</div>
                                                 <div class="card-time">
@@ -89,7 +89,7 @@
                                         </div>
                                     </div>
                                     <div class="gallery-item">
-                                        <div class="audio-card" data-src="../../assets/music/music-002.mp3">
+                                        <div class="audio-card" data-src="/storage/assets/music/music-002.mp3">
                                             <div class="card-content">
                                                 <div class="card-title" itemprop="name">Voice Title</div>
                                                 <div class="card-time">
@@ -149,7 +149,7 @@
                                         </div>
                                     </div>
                                     <div class="gallery-item">
-                                        <div class="audio-card" data-src="../../assets/music/music-003.mp3">
+                                        <div class="audio-card" data-src="/storage/assets/music/music-003.mp3">
                                             <div class="card-content">
                                                 <div class="card-title" itemprop="name">Voice Title</div>
                                                 <div class="card-time">
