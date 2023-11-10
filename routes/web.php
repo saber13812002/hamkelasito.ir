@@ -88,7 +88,12 @@ Route::group(['prefix' => 'dashboard-models', 'middleware' => ['auth', 'web', 'v
     Route::get('account-info', [App\Http\Controllers\MemberController::class, 'accountInfo'])->name('account-info');
 
     Route::get('gallery-tag-edit', [App\Http\Controllers\MemberController::class, 'galleryTagEdit'])->name('gallery-tag-edit');
+    Route::get('user-info-edit-basic-info', [App\Http\Controllers\MemberController::class, 'userInfoEditBasicInfo'])->name('user-info-edit-basic-info');
+    Route::get('user-info-edit-physical-info', [App\Http\Controllers\MemberController::class, 'userInfoEditPhysicalInfo'])->name('user-info-edit-physical-info');
     Route::get('user-info-edit-skills', [App\Http\Controllers\MemberController::class, 'userInfoEdiSkills'])->name('user-info-edit-skills');
+    Route::get('user-info-edit-contact', [App\Http\Controllers\MemberController::class, 'userInfoEditContact'])->name('user-info-edit-contact');
+    Route::get('user-info-edit-bank-and-visa', [App\Http\Controllers\MemberController::class, 'userInfoEditBankAndVisa'])->name('user-info-edit-bank-and-visa');
+    Route::get('user-info-edit-other', [App\Http\Controllers\MemberController::class, 'userInfoEditOther'])->name('user-info-edit-other');
 });
 
 // email verification

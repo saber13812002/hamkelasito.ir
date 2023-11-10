@@ -94,9 +94,49 @@ class MemberController extends Controller
     /**
      * Show the form for creating a new resource.
      */
+    public function userInfoEditBasicInfo()
+    {
+        return view('dashboard.user-info-edit-basic-info');
+    }
+
+    /**
+     * Show the form for creating a new resource.
+     */
+    public function userInfoEditPhysicalInfo()
+    {
+        return view('dashboard.user-info-edit-physical-info');
+    }
+
+    /**
+     * Show the form for creating a new resource.
+     */
     public function userInfoEdiSkills()
     {
         return view('dashboard.user-info-edit-skills');
+    }
+
+    /**
+     * Show the form for creating a new resource.
+     */
+    public function userInfoEditContact()
+    {
+        return view('dashboard.user-info-edit-contact');
+    }
+
+    /**
+     * Show the form for creating a new resource.
+     */
+    public function userInfoEditBankAndVisa()
+    {
+        return view('dashboard.user-info-edit-bank-and-visa');
+    }
+
+    /**
+     * Show the form for creating a new resource.
+     */
+    public function userInfoEditOther()
+    {
+        return view('dashboard.user-info-edit-other');
     }
 
     /**
