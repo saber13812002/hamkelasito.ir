@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StoreMemberRequest;
 use App\Http\Requests\UpdateMemberRequest;
 use App\Models\Member;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
 
 class MemberController extends Controller
 {
@@ -190,8 +192,10 @@ class MemberController extends Controller
     /**
      * Show the form for creating a new resource.
      */
-    public function step1()
+    public function step1(Request $request)
     {
+//        dd($request);
+        Log::info($request);
         return view('apply_as.step-1');
     }
 

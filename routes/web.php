@@ -33,7 +33,7 @@ Route::get('/become-a-model', [App\Http\Controllers\HomeController::class, 'beco
 Route::get('login', [AuthController::class, 'index'])->name('login');
 Route::post('post-login', [AuthController::class, 'postLogin'])->name('login.post');
 Route::get('registration', [AuthController::class, 'registration'])->name('register');
-Route::get('apply-as-a-model', [AuthController::class, 'registration'])->name('apply-as-a-model');
+//Route::get('apply-as-a-model', [AuthController::class, 'registration'])->name('apply-as-a-model');
 Route::post('post-registration', [AuthController::class, 'postRegistration'])->name('register.post');
 Route::get('dashboard', [AuthController::class, 'dashboard']);
 Route::get('logout', [AuthController::class, 'logout'])->name('logout');
