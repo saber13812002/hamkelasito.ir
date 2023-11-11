@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StoreMemberRequest;
 use App\Http\Requests\UpdateMemberRequest;
 use App\Models\Member;
+use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
 
@@ -202,56 +203,63 @@ class MemberController extends Controller
     /**
      * Show the form for creating a new resource.
      */
-    public function step2()
+    public function step2(FormRequest $request)
     {
+        Log::info($request);
         return view('apply_as.step-2');
     }
 
     /**
      * Show the form for creating a new resource.
      */
-    public function step3()
+    public function step3(FormRequest $request)
     {
+        Log::info($request);
         return view('apply_as.step-3');
     }
 
     /**
      * Show the form for creating a new resource.
      */
-    public function step4()
+    public function step4(FormRequest $request)
     {
+        Log::info($request);
         return view('apply_as.step-4');
     }
 
     /**
      * Show the form for creating a new resource.
      */
-    public function step5()
+    public function step5(FormRequest $request)
     {
+        Log::info($request);
         return view('apply_as.step-5');
     }
 
     /**
      * Show the form for creating a new resource.
      */
-    public function step6()
+    public function step6(FormRequest $request)
     {
+        Log::info($request);
         return view('apply_as.step-6');
     }
 
     /**
      * Show the form for creating a new resource.
      */
-    public function step7()
+    public function step7(FormRequest $request)
     {
+        Log::info($request);
         return view('apply_as.step-7');
     }
 
     /**
      * Show the form for creating a new resource.
      */
-    public function step8()
+    public function step8(FormRequest $request)
     {
+        Log::info($request);
         return view('apply_as.step-8');
     }
 }

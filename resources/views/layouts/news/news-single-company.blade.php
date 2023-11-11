@@ -357,6 +357,7 @@
                 </div>
                 <div class="app-bar-title">
                     <form action="./models-list" method="post">
+                        @csrf
                         <button class="btn btn-icon" aria-label="Search">
                             <i class="icon-search-normal"></i>
                         </button>

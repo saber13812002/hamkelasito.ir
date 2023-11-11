@@ -22,7 +22,7 @@
             <!-- start form -->
             <div class="section section-form">
                 <form action="./apply-as-a-model-success" method="post">
-
+                    @csrf
                     <!-- start steps -->
                     <div class="progress-indicator" data-switch-with-point="true">
 

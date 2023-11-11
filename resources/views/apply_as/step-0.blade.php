@@ -33,7 +33,7 @@
             </div>
 
             <form method="post" action="./apply-as-a-model-form-step-1" class="progress-indicator">
-
+                @csrf
                 <!-- start apply as a model -->
                 <div class="section section-form">
                     <div class="container-lg step-content">
