@@ -178,4 +178,76 @@ class MemberController extends Controller
     {
         //
     }
+
+    /**
+     * Show the form for creating a new resource.
+     */
+    public function step0()
+    {
+        return view('apply_as.step-0');
+    }
+
+    /**
+     * Show the form for creating a new resource.
+     */
+    public function step1()
+    {
+        return view('apply_as.step-1');
+    }
+
+    /**
+     * Show the form for creating a new resource.
+     */
+    public function step2()
+    {
+        return view('apply_as.step-2');
+    }
+
+    /**
+     * Show the form for creating a new resource.
+     */
+    public function step3()
+    {
+        return view('apply_as.step-3');
+    }
+
+    /**
+     * Show the form for creating a new resource.
+     */
+    public function step4()
+    {
+        return view('apply_as.step-4');
+    }
+
+    /**
+     * Show the form for creating a new resource.
+     */
+    public function step5()
+    {
+        return view('apply_as.step-5');
+    }
+
+    /**
+     * Show the form for creating a new resource.
+     */
+    public function step6()
+    {
+        return view('apply_as.step-6');
+    }
+
+    /**
+     * Show the form for creating a new resource.
+     */
+    public function step7()
+    {
+        return view('apply_as.step-7');
+    }
+
+    /**
+     * Show the form for creating a new resource.
+     */
+    public function step8()
+    {
+        return view('apply_as.step-8');
+    }
 }

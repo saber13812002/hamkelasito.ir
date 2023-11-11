@@ -28,10 +28,12 @@ Route::get('/dashboard', function () {
 
 // https://www.itsolutionstuff.com/post/laravel-10-custom-login-and-registration-exampleexample
 
+Route::get('/become-a-model', [App\Http\Controllers\HomeController::class, 'becomeModel'])->name('become-a-model');
+
 Route::get('login', [AuthController::class, 'index'])->name('login');
 Route::post('post-login', [AuthController::class, 'postLogin'])->name('login.post');
 Route::get('registration', [AuthController::class, 'registration'])->name('register');
-Route::get('apply-as-a-model', [AuthController::class, 'registration'])->name('become-a-model');
+Route::get('apply-as-a-model', [AuthController::class, 'registration'])->name('apply-as-a-model');
 Route::post('post-registration', [AuthController::class, 'postRegistration'])->name('register.post');
 Route::get('dashboard', [AuthController::class, 'dashboard']);
 Route::get('logout', [AuthController::class, 'logout'])->name('logout');
@@ -64,7 +66,6 @@ Route::get('/about-us', [App\Http\Controllers\HomeController::class, 'aboutUs'])
 Route::get('/contact-us', [App\Http\Controllers\HomeController::class, 'contactUs'])->name('contact-us');
 Route::get('/company-profile', [App\Http\Controllers\HomeController::class, 'companyProfile'])->name('company-profile');
 Route::get('/privacy-policy', [App\Http\Controllers\HomeController::class, 'privacyPolicy'])->name('privacy-policy');
-Route::get('/become-a-model', [App\Http\Controllers\HomeController::class, 'becomeModel'])->name('become-a-model');
 
 // NEWS
 Route::get('/news-result', [App\Http\Controllers\NewsController::class, 'newsResult'])->name('news-result');
@@ -76,8 +77,22 @@ Route::get('/news-single-company', [App\Http\Controllers\NewsController::class, 
 // PDF
 Route::get('/composite', [App\Http\Controllers\HomeController::class, 'composite'])->name('composite');
 
+
 // DASHBOARD
 Route::group(['prefix' => 'dashboard-models', 'middleware' => ['auth', 'web', 'verified']], function () {
+
+    //APPLY_AS_A_MODEL_FORM
+    Route::get('apply-as-a-model-form-role', [App\Http\Controllers\MemberController::class, 'step0'])->name('step0');
+    Route::get('apply-as-a-model-form-step-1', [App\Http\Controllers\MemberController::class, 'step1'])->name('step1');
+    Route::get('apply-as-a-model-form-step-2', [App\Http\Controllers\MemberController::class, 'step2'])->name('step2');
+    Route::get('apply-as-a-model-form-step-3', [App\Http\Controllers\MemberController::class, 'step3'])->name('step3');
+    Route::get('apply-as-a-model-form-step-4', [App\Http\Controllers\MemberController::class, 'step4'])->name('step4');
+    Route::get('apply-as-a-model-form-step-5', [App\Http\Controllers\MemberController::class, 'step5'])->name('step5');
+    Route::get('apply-as-a-model-form-step-6', [App\Http\Controllers\MemberController::class, 'step6'])->name('step6');
+    Route::get('apply-as-a-model-form-step-final-check', [App\Http\Controllers\MemberController::class, 'step7'])->name('step7');
+    Route::get('apply-as-a-model-success', [App\Http\Controllers\MemberController::class, 'step8'])->name('step8');
+
+
     Route::get('', [App\Http\Controllers\MemberController::class, 'main'])->name('main');
     Route::get('role', [App\Http\Controllers\MemberController::class, 'role'])->name('role');
     Route::get('user-info', [App\Http\Controllers\MemberController::class, 'userInfo'])->name('user-info');
