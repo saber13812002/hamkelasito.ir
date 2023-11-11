@@ -65,3 +65,25 @@
   'job_experiences' => '[{"type":{"type":"select","input":"film","text":"Film"},"other_type":{"type":"text","input":"","text":""},"year":{"type":"select","input":"2021","text":"2021"},"month":{"type":"select","input":"2","text":"2 (February)"},"title":{"type":"text","input":"asdfasdf","text":"asdfasdf"},"description":{"type":"textarea","input":"adfadsf","text":"adfadsf"},"photos":{"type":"upload","input":"","text":[]},"videos":{"type":"upload","input":"","text":[]},"audios":{"type":"upload","input":"","text":[]}},{"type":{"type":"select","input":"drama","text":"Drama"},"other_type":{"type":"text","input":"","text":""},"year":{"type":"select","input":"2021","text":"2021"},"month":{"type":"select","input":"3","text":"3 (March)"},"title":{"type":"text","input":"asdfadsfadsfa","text":"asdfadsfadsfa"},"description":{"type":"textarea","input":"asdfadsfasdf","text":"asdfadsfasdf"},"photos":{"type":"upload","input":"","text":[]},"videos":{"type":"upload","input":"","text":[]},"audios":{"type":"upload","input":"","text":[]}}]',
   'job_experiences_pdf' => NULL,
 )
+[2023-11-11 18:30:53] local.INFO: array (
+  'data' => '[object Object]',
+  'file' =>
+  \Illuminate\Http\UploadedFile::__set_state(array(
+     'test' => false,
+     'originalName' => 'blob',
+     'mimeType' => 'image/png',
+     'error' => 0,
+     'hashName' => NULL,
+  )),
+)
+[2023-11-11 18:32:22] local.INFO: array (
+  'file' =>
+  \Illuminate\Http\UploadedFile::__set_state(array(
+     'test' => false,
+     'originalName' => 'saber saber - Copy.jpg',
+     'mimeType' => 'image/jpeg',
+     'error' => 0,
+     'hashName' => NULL,
+  )),
+)
+

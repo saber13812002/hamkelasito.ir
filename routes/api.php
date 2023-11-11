@@ -4,6 +4,7 @@ use App\Http\Controllers\HomeController;
 use App\Models\Member;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -53,9 +54,10 @@ Route::get('/country', function (Request $request) {
 });
 
 // /api/uploadphoto/
-Route::get('/uploadphoto', function (Request $request) {
+Route::post('/uploadphoto', function (Request $request) {
 //    dd($request->query('filter'), $request->query('sort'));
-    return Member::all();
+    Log::info($request);
+    return true;
 });
 
 

@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StoreMemberRequest;
 use App\Http\Requests\UpdateMemberRequest;
 use App\Models\Member;
+use App\Models\TempTable;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
@@ -197,6 +198,7 @@ class MemberController extends Controller
     {
 //        dd($request);
         Log::info($request);
+        $this->saveRequestToTempTable($request);
         return view('apply_as.step-1');
     }
 
@@ -261,5 +263,11 @@ class MemberController extends Controller
     {
         Log::info($request);
         return view('apply_as.step-8');
+    }
+
+    private function saveRequestToTempTable(Request $request)
+    {
+
+//        TempTable::query()
     }
 }
