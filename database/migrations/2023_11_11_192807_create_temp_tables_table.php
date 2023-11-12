@@ -14,8 +14,10 @@ return new class extends Migration
         Schema::create('temp_tables', function (Blueprint $table) {
             $table->id();
 
+            $table->integer('step_id');
             $table->bigInteger('user_id')->default(1);
             $table->bigInteger('member_id')->default(1);
+
             $table->string('model_name')->default('Member');
             $table->string('model_field');
             $table->Enum('type', ['int', 'string', 'text', 'json'])->default('string');

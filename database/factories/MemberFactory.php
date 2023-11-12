@@ -25,6 +25,14 @@ class MemberFactory extends Factory
             'name' => $this->faker->firstName,
             'family' => $this->faker->lastName,
             'alias' => $this->faker->firstName,
+
+            'model_type' => $this->faker->randomElement(['Fashion Model', 'Fashion Model,Advertising Model', 'Advertising Model', 'Fitness Model', '']),
+            'talent_type' => $this->faker->randomElement(['Talent', 'Radio personality', 'Comedian', '']),
+            'actor_actress_type' => $this->faker->randomElement(['Tv actor', 'Movie actor', 'Movie actor,Tv actor', '']),
+            'extra_type' => $this->faker->randomElement(['All types of extra', '']),
+
+            'gender' => $this->faker->randomElement(['Male', 'Female', 'Other']),
+
             'town' => $this->faker->streetName,
             'type' => $this->faker->randomElement(['japanese', 'mixed', 'international']),
             'model_categories' => $this->faker->randomElement(['Artist', 'Model']),
@@ -44,9 +52,11 @@ class MemberFactory extends Factory
             'linkedin_page_follower_count' => $this->faker->numberBetween(1, 10),
 
             'biography' => $this->faker->paragraph(),
-            'language' => 'English',
+            'language' => $this->faker->randomElement(['en', 'ja', 'fa']),
+            'nationality' => $this->faker->randomElement(['Japan', 'England', 'USA']),
             'skills' => $this->faker->paragraph(),
             'skill_tags' => $this->faker->randomElement(['Basketball', 'Inline-skating', 'Tennis']),
+
         ];
     }
 }

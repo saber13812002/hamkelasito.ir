@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StoreMemberRequest;
 use App\Http\Requests\UpdateMemberRequest;
 use App\Models\Member;
+use App\Models\TempField;
 use App\Models\TempTable;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Http\Request;
@@ -198,7 +199,7 @@ class MemberController extends Controller
     {
 //        dd($request);
         Log::info($request);
-        $this->saveRequestToTempTable($request);
+        $this->saveRequestToTempTable($request, 0);
         return view('apply_as.step-1');
     }
 
@@ -208,6 +209,7 @@ class MemberController extends Controller
     public function step2(FormRequest $request)
     {
         Log::info($request);
+        $this->saveRequestToTempTable($request, 1);
         return view('apply_as.step-2');
     }
 
@@ -265,9 +267,29 @@ class MemberController extends Controller
         return view('apply_as.step-8');
     }
 
-    private function saveRequestToTempTable(Request $request)
+    private function saveRequestToTempTable(Request $request, int $stepId)
     {
+//        dd(auth()->user());
+//        $tempTable->member_id
+        $tempFields = TempField::query()->whereStepId($stepId)->get();
+//        dd($tempTable, $stepId, $tempFields);
+        foreach ($tempFields as $tempField) {
+            $tempTable = new TempTable();
+            $tempTable->step_id = $stepId;
+            $tempTable->user_id = auth()->user()->id;
+//            dd($request->get('model_type'));
+            if ($request->has($tempField->model_field)) {
+                $tempTable['model_field'] = $tempField->model_field;
+                $tempTable['model_name'] = $tempField->model_name;
+                $tempTable['type'] = $tempField->type;
+                $tempTable['value'] = $request->get($tempField->model_field);
+//                dd($request,$tempTable,$tempField);
+            }
 
-//        TempTable::query()
+//            $tempTable->value = "";
+//            $tempTable->text = "";
+//            $tempTable->json = "";
+            $tempTable->save();
+        }
     }
 }

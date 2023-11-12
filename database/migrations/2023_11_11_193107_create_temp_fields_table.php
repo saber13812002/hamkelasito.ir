@@ -14,8 +14,10 @@ return new class extends Migration
         Schema::create('temp_fields', function (Blueprint $table) {
             $table->id();
 
+            $table->integer('step_id');
             $table->string('model_name')->default('Member');
             $table->string('model_field');
+            $table->string('request_key');
             $table->Enum('type', ['int', 'string', 'text', 'json'])->default('string');
             $table->dateTime('enabled_at')->nullable();
 

@@ -18,7 +18,7 @@
  - run install.bat commands
  - run update.bat
 
-## mail configuration
+### mail configuration
  - make sure you do configuration for email verification in env file
 ```  MAIL_MAILER=smtp
   MAIL_HOST=mailpit
@@ -31,6 +31,11 @@
   ```
  - 
 
+### translation.io
+config your env with this key:
+
+ - TRANSLATIONIO_KEY
+ - https://translation.io/saber13812002/lili/
 
 ## License
 
