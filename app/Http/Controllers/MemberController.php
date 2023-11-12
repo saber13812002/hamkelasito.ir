@@ -274,22 +274,22 @@ class MemberController extends Controller
         $tempFields = TempField::query()->whereStepId($stepId)->get();
 //        dd($tempTable, $stepId, $tempFields);
         foreach ($tempFields as $tempField) {
-            $tempTable = new TempTable();
-            $tempTable->step_id = $stepId;
-            $tempTable->user_id = auth()->user()->id;
 //            dd($request->get('model_type'));
             if ($request->has($tempField->model_field)) {
+                $tempTable = new TempTable();
+                $tempTable->step_id = $stepId;
+                $tempTable->user_id = auth()->user()->id;
                 $tempTable['model_field'] = $tempField->model_field;
                 $tempTable['model_name'] = $tempField->model_name;
                 $tempTable['type'] = $tempField->type;
                 $tempTable['value'] = $request->get($tempField->model_field);
 //                dd($request,$tempTable,$tempField);
-            }
-
+                $tempTable->save();
 //            $tempTable->value = "";
 //            $tempTable->text = "";
 //            $tempTable->json = "";
-            $tempTable->save();
+            }
+
         }
     }
 }
