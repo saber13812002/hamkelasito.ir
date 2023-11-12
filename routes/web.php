@@ -84,15 +84,15 @@ Auth::routes();
 Route::group(['prefix' => 'dashboard-models', 'middleware' => ['auth', 'web', 'verified']], function () {
 
     //APPLY_AS_A_MODEL_FORM
-    Route::get('apply-as-a-model-form-role', [App\Http\Controllers\MemberController::class, 'step0'])->name('step0');
-    Route::post('apply-as-a-model-form-step-1', [App\Http\Controllers\MemberController::class, 'step1'])->name('step1');
-    Route::post('apply-as-a-model-form-step-2', [App\Http\Controllers\MemberController::class, 'step2'])->name('step2');
-    Route::post('apply-as-a-model-form-step-3', [App\Http\Controllers\MemberController::class, 'step3'])->name('step3');
-    Route::post('apply-as-a-model-form-step-4', [App\Http\Controllers\MemberController::class, 'step4'])->name('step4');
-    Route::post('apply-as-a-model-form-step-5', [App\Http\Controllers\MemberController::class, 'step5'])->name('step5');
-    Route::post('apply-as-a-model-form-step-6', [App\Http\Controllers\MemberController::class, 'step6'])->name('step6');
-    Route::post('apply-as-a-model-form-step-final-check', [App\Http\Controllers\MemberController::class, 'step7'])->name('step7');
-    Route::post('apply-as-a-model-success', [App\Http\Controllers\MemberController::class, 'step8'])->name('step8');
+    Route::any('apply-as-a-model-form-role', [App\Http\Controllers\MemberController::class, 'step0'])->name('step0');
+    Route::any('apply-as-a-model-form-step-1', [App\Http\Controllers\MemberController::class, 'step1'])->name('step1');
+    Route::any('apply-as-a-model-form-step-2', [App\Http\Controllers\MemberController::class, 'step2'])->name('step2');
+    Route::any('apply-as-a-model-form-step-3', [App\Http\Controllers\MemberController::class, 'step3'])->name('step3');
+    Route::any('apply-as-a-model-form-step-4', [App\Http\Controllers\MemberController::class, 'step4'])->name('step4');
+    Route::any('apply-as-a-model-form-step-5', [App\Http\Controllers\MemberController::class, 'step5'])->name('step5');
+    Route::any('apply-as-a-model-form-step-6', [App\Http\Controllers\MemberController::class, 'step6'])->name('step6');
+    Route::any('apply-as-a-model-form-step-final-check', [App\Http\Controllers\MemberController::class, 'step7'])->name('step7');
+    Route::any('apply-as-a-model-success', [App\Http\Controllers\MemberController::class, 'step8'])->name('step8');
 
 
     Route::get('', [App\Http\Controllers\MemberController::class, 'main'])->name('main');

@@ -57,7 +57,28 @@ Route::get('/country', function (Request $request) {
 Route::post('/uploadphoto', function (Request $request) {
 //    dd($request->query('filter'), $request->query('sort'));
     Log::info($request);
-    return true;
+    if ($request->hasFile('file')) {
+        $file = $request->file('file');
+
+        // Generate a unique filename
+        $uniqId = uniqid();
+        $filename = $uniqId . ($file->getClientOriginalExtension() ? '.' . $file->getClientOriginalExtension() : ".png");
+
+        // Save the file to the storage directory
+        $file->storeAs('uploads', $filename);
+
+        $fullUrl = config('app.url') . '/uploads/' . $filename;
+        return response()->json([
+            'message' => 'File uploaded successfully',
+            'url' => $fullUrl,
+            'id' => $uniqId,
+            'type' => 'photo',
+            'name' => $filename,
+            'thumbnail' => $fullUrl,
+        ], 200);
+    }
+    return response()->json(['error' => 'No file uploaded'], 400);
+
 });
 
 

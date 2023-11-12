@@ -4,8 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-return new class extends Migration
-{
+return new class extends Migration {
     /**
      * Run the migrations.
      */
@@ -18,7 +17,8 @@ return new class extends Migration
             $table->string('model_name')->default('Member');
             $table->string('model_field');
             $table->string('request_key');
-            $table->Enum('type', ['int', 'string', 'text', 'json'])->default('string');
+            $table->Enum('type', ['int', 'string', 'text', 'json', 'file'])->default('string');
+            $table->string('file_type')->nullable();
             $table->dateTime('enabled_at')->nullable();
 
             $table->timestamps();
