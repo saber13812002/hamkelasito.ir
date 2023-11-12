@@ -249,6 +249,7 @@ class MemberController extends Controller
     public function step6(FormRequest $request)
     {
         Log::info($request);
+        $this->saveRequestToTempTable($request, 5);
         return view('apply_as.step-6');
     }
 
@@ -258,6 +259,7 @@ class MemberController extends Controller
     public function step7(FormRequest $request)
     {
         Log::info($request);
+        $this->saveRequestToTempTable($request, 6);
         return view('apply_as.step-7');
     }
 
@@ -267,6 +269,7 @@ class MemberController extends Controller
     public function step8(FormRequest $request)
     {
         Log::info($request);
+        $this->saveRequestToTempTable($request, 7);
         return view('apply_as.step-8');
     }
 
@@ -285,12 +288,15 @@ class MemberController extends Controller
                 $tempTable['model_field'] = $tempField->model_field;
                 $tempTable['model_name'] = $tempField->model_name;
                 $tempTable['type'] = $tempField->type;
-                if ($tempField->type == 'string' || $tempField->type == 'int')
-                    $tempTable['value'] = $request->get($tempField->model_field);
-                else if ($tempField->type == 'json')
+                if ($tempField->type == 'json')
                     $tempTable['json'] = $request->get($tempField->model_field);
                 else if ($tempField->type == 'text')
                     $tempTable['text'] = $request->get($tempField->model_field);
+                else if ($tempField->type == 'file') {
+                    $tempTable['value'] = $request->get($tempField->model_field);
+                } else
+                    $tempTable['value'] = $request->get($tempField->model_field);
+
 //                dd($request,$tempTable,$tempField);
                 $tempTable->save();
 //            $tempTable->value = "";

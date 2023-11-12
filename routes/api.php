@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\HomeController;
 use App\Models\Member;
+use App\Models\Upload;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Log;
@@ -62,12 +63,30 @@ Route::post('/uploadphoto', function (Request $request) {
 
         // Generate a unique filename
         $uniqId = uniqid();
-        $filename = $uniqId . ($file->getClientOriginalExtension() ? '.' . $file->getClientOriginalExtension() : ".png");
+        $extension = ($file->getClientOriginalExtension() ? $file->getClientOriginalExtension() : "png");
+        $filename = $uniqId . '.' . $extension;
 
         // Save the file to the storage directory
         $file->storeAs('uploads', $filename);
 
-        $fullUrl = config('app.url') . '/uploads/' . $filename;
+        $relativeUrl = '/uploads/' . $filename;
+        $fullUrl = config('app.url') . $relativeUrl;
+
+
+//        $image_resize = Image::make($file->getRealPath());
+//        $image_resize->resize(636,852);
+//        $path = 'uploads/thumbnails/' . $filename;
+//        $image_resize->save($path);
+//        $imageUri = 'uploads/thumbnails/' . $filename;
+
+        $upload = new Upload();
+        $upload->full_url = $fullUrl;
+        $upload->name = $filename;
+        $upload->extension = $extension;
+        $upload->type = 'Image';
+        $upload->relative_url = $relativeUrl;
+        $upload->save();
+
         return response()->json([
             'message' => 'File uploaded successfully',
             'url' => $fullUrl,

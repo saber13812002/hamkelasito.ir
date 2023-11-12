@@ -26,5 +26,6 @@ class DatabaseSeeder extends Seeder
         $this->call(MembersTableSeeder::class);
         $this->call(TempFieldsTableSeeder::class);
         $this->call(UsersTableSeeder::class);
+//        $this->call(TempTablesTableSeeder::class);
     }
 }
