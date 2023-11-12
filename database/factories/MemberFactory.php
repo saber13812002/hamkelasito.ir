@@ -18,20 +18,35 @@ class MemberFactory extends Factory
     {
         $rand = mt_rand(1, 43);
         $rand3digit = sprintf("%03d", $rand);
+
+        $gender = $this->faker->randomElement(['Male', 'Female', 'Other']);
+
         return [
             'profile_image' => $rand3digit,
             'thumbnail_image' => $rand3digit,
             'no' => $rand,
-            'name' => $this->faker->firstName,
+
+            'name' => $this->faker->firstName($gender),
+            'middle_name' => $this->faker->firstName($gender),
             'family' => $this->faker->lastName,
-            'alias' => $this->faker->firstName,
+            'alias' => $this->faker->firstName($gender),
+
+            'first_name_furigana' => $this->faker->firstName($gender),
+            'last_name_furigana' => $this->faker->firstName($gender),
 
             'model_type' => $this->faker->randomElement(['Fashion Model', 'Fashion Model,Advertising Model', 'Advertising Model', 'Fitness Model', '']),
             'talent_type' => $this->faker->randomElement(['Talent', 'Radio personality', 'Comedian', '']),
             'actor_actress_type' => $this->faker->randomElement(['Tv actor', 'Movie actor', 'Movie actor,Tv actor', '']),
             'extra_type' => $this->faker->randomElement(['All types of extra', '']),
 
-            'gender' => $this->faker->randomElement(['Male', 'Female', 'Other']),
+            'stage_name' => $this->faker->firstName($gender),
+            'have_other_nationality' => $this->faker->randomElement(['yes', '']),
+            'other_nationality' => $this->faker->randomElement(['Iranian', '']),
+            'are_you_mixed' => $this->faker->randomElement(['yes', '']),
+            'fathers_nationality' => $this->faker->randomElement(['Albania', 'Brazil', '']),
+            'mothers_nationality' => $this->faker->randomElement(['Albania', 'Brazil', '']),
+
+            'gender' => $gender,
 
             'town' => $this->faker->streetName,
             'type' => $this->faker->randomElement(['japanese', 'mixed', 'international']),
