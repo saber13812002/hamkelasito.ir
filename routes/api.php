@@ -71,7 +71,7 @@ Route::any('/uploadphoto', function (Request $request) {
 
 
         $relativeUrl = '/uploads/' . $filename;
-        $fullUrl = config('app.url') . $relativeUrl;
+        $fullUrl = $relativeUrl;
 
         if (config('app.env') == 'production') {
             $file->move(env('UPLOADER_LOCATION'), $filename);
