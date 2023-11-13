@@ -55,7 +55,7 @@ Route::get('/country', function (Request $request) {
 });
 
 // /api/uploadphoto/
-Route::post('/uploadphoto', function (Request $request) {
+Route::any('/uploadphoto', function (Request $request) {
 //    dd($request->query('filter'), $request->query('sort'));
     Log::info($request);
     if ($request->hasFile('file')) {
@@ -69,10 +69,13 @@ Route::post('/uploadphoto', function (Request $request) {
         // Save the file to the storage directory
         $file->storeAs('uploads', $filename);
 
+
         $relativeUrl = '/uploads/' . $filename;
         $fullUrl = config('app.url') . $relativeUrl;
 
-
+        if (config('app.env') == 'production') {
+            $file->move(env('UPLOADER_LOCATION'), $filename);
+        }
 //        $image_resize = Image::make($file->getRealPath());
 //        $image_resize->resize(636,852);
 //        $path = 'uploads/thumbnails/' . $filename;
