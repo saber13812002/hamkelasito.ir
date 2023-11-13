@@ -13,7 +13,8 @@ class TempFieldController extends Controller
      */
     public function index()
     {
-        //
+        $temp_fields = TempField::all();
+        return view('admin.fields.index', compact('temp_fields'));
     }
 
     /**

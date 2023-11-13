@@ -13,7 +13,8 @@ class TempTableController extends Controller
      */
     public function index()
     {
-        //
+        $approve_items = TempTable::all();
+        return view('admin.approval.index', compact('approve_items'));
     }
 
     /**

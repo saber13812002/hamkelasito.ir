@@ -315,6 +315,16 @@ return [
             'url'  => 'admin/languages',
             'icon' => 'fas fa-fw fa-user',
         ],
+        [
+            'text' => 'Approval Fields',
+            'url'  => 'admin/fields',
+            'icon' => 'fas fa-fw fa-user',
+        ],
+        [
+            'text' => 'Approval',
+            'url'  => 'admin/approval',
+            'icon' => 'fas fa-fw fa-user',
+        ],
     ],
 
     /*

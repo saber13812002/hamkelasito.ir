@@ -6,6 +6,8 @@ use App\Http\Controllers\CountryController;
 use App\Http\Controllers\LanguageController;
 use App\Http\Controllers\MemberController;
 use App\Http\Controllers\SliderController;
+use App\Http\Controllers\TempFieldController;
+use App\Http\Controllers\TempTableController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -46,6 +48,8 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'web', 'verified']],
     Route::get('sliders', [SliderController::class, 'index']);
     Route::get('languages', [LanguageController::class, 'index']);
     Route::get('countries', [CountryController::class, 'index']);
+    Route::get('fields', [TempFieldController::class, 'index']);
+    Route::get('approval', [TempTableController::class, 'index']);
 });
 
 
