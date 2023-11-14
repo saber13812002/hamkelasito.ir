@@ -466,7 +466,7 @@
 
                                 <!-- nationality -->
                                 <div class="field field-type-select"
-                                     data-source="https://liliana.asensive.ir/api/country/"
+                                     data-source="/api/country/"
                                      data-field-defualt-text="Select Item" data-field-search="true"
                                      data-required="true" data-btn-submit-text="Select" data-type="select">
                                     <div class="field-content">

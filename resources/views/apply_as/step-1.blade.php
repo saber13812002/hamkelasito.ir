@@ -225,7 +225,7 @@
                                             <!-- other nationality -->
                                             <div data-dependency=".have_other_nationality" data-dependency-value="yes">
                                                 <div class="field field-type-select"
-                                                     data-source="https://liliana.asensive.ir/api/country/"
+                                                     data-source="/api/country/"
                                                      data-field-defualt-text="Select Item" data-field-search="true"
                                                      data-required="true" data-btn-submit-text="Select" data-type="select" data-clear="true">
                                                     <div class="field-content">
@@ -284,7 +284,7 @@
                                             <!-- father -->
                                             <div data-dependency=".are_you_mixed" data-dependency-value="yes">
                                                 <div class="field field-type-select"
-                                                     data-source="https://liliana.asensive.ir/api/country/"
+                                                     data-source="/api/country/"
                                                      data-field-defualt-text="Select Item" data-field-search="true" data-clear="true"
                                                      data-required="true" data-btn-submit-text="Select" data-type="select">
                                                     <div class="field-content">
@@ -301,7 +301,7 @@
                                             <!-- mother -->
                                             <div data-dependency=".are_you_mixed" data-dependency-value="yes">
                                                 <div class="field field-type-select"
-                                                     data-source="https://liliana.asensive.ir/api/country/"
+                                                     data-source="/api/country/"
                                                      data-field-defualt-text="Select Item" data-field-search="true" data-clear="true"
                                                      data-required="true" data-btn-submit-text="Select" data-type="select">
                                                     <div class="field-content">

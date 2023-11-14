@@ -75,52 +75,57 @@ Route::get('/city/{city}', function (Request $request) {
 });
 
 // /api/uploadphoto/
-Route::any('/uploadphoto', function (Request $request) {
+Route::group([
+    'middleware' => ['api', 'cors'],
+    'prefix' => '',
+], function () {
+    Route::any('/uploadphoto', function (Request $request) {
 //    dd($request->query('filter'), $request->query('sort'));
-    Log::info($request->hasFile('file'));
-    if ($request->hasFile('file')) {
-        $file = $request->file('file');
+        Log::info($request->hasFile('file'));
+        if ($request->hasFile('file')) {
+            $file = $request->file('file');
 
-        // Generate a unique filename
-        $uniqId = uniqid();
-        $extension = ($file->getClientOriginalExtension() ? $file->getClientOriginalExtension() : "png");
-        $filename = $uniqId . '.' . $extension;
+            // Generate a unique filename
+            $uniqId = uniqid();
+            $extension = ($file->getClientOriginalExtension() ? $file->getClientOriginalExtension() : "png");
+            $filename = $uniqId . '.' . $extension;
 
-        // Save the file to the storage directory
-        $file->storeAs('uploads', $filename);
+            // Save the file to the storage directory
+            $file->storeAs('uploads', $filename);
 
 
-        $relativeUrl = '/uploads/' . $filename;
-        $fullUrl = $relativeUrl;
+            $relativeUrl = '/uploads/' . $filename;
+            $fullUrl = $relativeUrl;
 
-        if (config('app.env') == 'production') {
-            $file->move(env('UPLOADER_LOCATION'), $filename);
-        }
+            if (config('app.env') == 'production') {
+                $file->move(env('UPLOADER_LOCATION'), $filename);
+            }
 //        $image_resize = Image::make($file->getRealPath());
 //        $image_resize->resize(636,852);
 //        $path = 'uploads/thumbnails/' . $filename;
 //        $image_resize->save($path);
 //        $imageUri = 'uploads/thumbnails/' . $filename;
 
-        $upload = new Upload();
-        $upload->full_url = $fullUrl;
-        $upload->name = $filename;
-        $upload->extension = $extension;
-        $upload->type = 'Image';
-        $upload->relative_url = $relativeUrl;
-        $upload->save();
+            $upload = new Upload();
+            $upload->full_url = $fullUrl;
+            $upload->name = $filename;
+            $upload->extension = $extension;
+            $upload->type = 'Image';
+            $upload->relative_url = $relativeUrl;
+            $upload->save();
 
-        return response()->json([
-            'message' => 'File uploaded successfully',
-            'url' => $fullUrl,
-            'id' => $uniqId,
-            'type' => 'photo',
-            'name' => $filename,
-            'thumbnail' => $fullUrl,
-        ], 200);
-    }
-    return response()->json(['error' => 'No file uploaded'], 400);
+            return response()->json([
+                'message' => 'File uploaded successfully',
+                'url' => $fullUrl,
+                'id' => $uniqId,
+                'type' => 'photo',
+                'name' => $filename,
+                'thumbnail' => $fullUrl,
+            ], 200);
+        }
+        return response()->json(['error' => 'No file uploaded'], 400);
 
+    });
 });
 
 

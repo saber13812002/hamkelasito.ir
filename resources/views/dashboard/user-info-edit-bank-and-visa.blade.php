@@ -207,7 +207,7 @@
                                     <div class="form-section-content">
                                         <div>
                                             <div class="field field-type-upload" data-type="upload" data-required="true">
-                                                <div class="upload-drop-zone" data-limit-count="1" data-limit-size="10" data-accept=".png,.jpg" data-edit-mode="true" data-edit-type="photo" data-default="[{&quot;id&quot;:346479,&quot;type&quot;:&quot;photo&quot;,&quot;name&quot;:&quot;File Name&quot;,&quot;thumbnail&quot;:&quot;https://liliana.asensive.ir/assets/img/passport.png&quot;,&quot;req&quot;:&quot;[&quot;}]">
+                                                <div class="upload-drop-zone" data-limit-count="1" data-limit-size="10" data-accept=".png,.jpg" data-edit-mode="true" data-edit-type="photo" data-default="[{&quot;id&quot;:346479,&quot;type&quot;:&quot;photo&quot;,&quot;name&quot;:&quot;File Name&quot;,&quot;thumbnail&quot;:&quot;/assets/img/passport.png&quot;,&quot;req&quot;:&quot;[&quot;}]">
                                                     <input type="hidden" class="input-drop-zone" name="passport_photo" id="passport_photo">
                                                     <label>Photo of Passport</label>
                                                     <i class="icon-upload"></i>

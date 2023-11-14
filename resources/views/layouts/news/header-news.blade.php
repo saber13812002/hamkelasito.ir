@@ -40,7 +40,7 @@
                 <button class="btn btn-icon app-bar-desktop" id="btn_appbar_search" aria-label="Open Search">
                     <i class="icon-search-normal"></i>
                 </button>
-                <button class="btn btn-icon app-bar-mobile g-share-button" aria-label="Share" data-title="News Single" data-text="I have been a full-time housewife for 25 years, but started Instagram 2 years ago and have over 50,000 followers. I hope to share..." data-url="https://liliana.asensive.ir/frontend/news-single">
+                <button class="btn btn-icon app-bar-mobile g-share-button" aria-label="Share" data-title="News Single" data-text="I have been a full-time housewife for 25 years, but started Instagram 2 years ago and have over 50,000 followers. I hope to share..." data-url="/news-single">
                     <i class="icon-share"></i>
                 </button>
                 <a href="../dashboard/models/index" class="user-dashboard">
