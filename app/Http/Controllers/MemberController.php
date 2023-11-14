@@ -198,7 +198,6 @@ class MemberController extends Controller
     public function step1(Request $request)
     {
 //        dd($request);
-        Log::info($request);
         $this->saveRequestToTempTable($request, 0);
         return view('apply_as.step-1');
     }
@@ -208,7 +207,6 @@ class MemberController extends Controller
      */
     public function step2(FormRequest $request)
     {
-        Log::info($request);
         $this->saveRequestToTempTable($request, 1);
         return view('apply_as.step-2');
     }
@@ -218,7 +216,6 @@ class MemberController extends Controller
      */
     public function step3(FormRequest $request)
     {
-        Log::info($request);
         $this->saveRequestToTempTable($request, 2);
         return view('apply_as.step-3');
     }
@@ -228,7 +225,6 @@ class MemberController extends Controller
      */
     public function step4(FormRequest $request)
     {
-        Log::info($request);
         $this->saveRequestToTempTable($request, 3);
         return view('apply_as.step-4');
     }
@@ -238,7 +234,6 @@ class MemberController extends Controller
      */
     public function step5(FormRequest $request)
     {
-        Log::info($request);
         $this->saveRequestToTempTable($request, 4);
         return view('apply_as.step-5');
     }
@@ -248,7 +243,6 @@ class MemberController extends Controller
      */
     public function step6(FormRequest $request)
     {
-        Log::info($request);
         $this->saveRequestToTempTable($request, 5);
         return view('apply_as.step-6');
     }
@@ -258,7 +252,6 @@ class MemberController extends Controller
      */
     public function step7(FormRequest $request)
     {
-        Log::info($request);
         $this->saveRequestToTempTable($request, 6);
         return view('apply_as.step-7');
     }
@@ -268,13 +261,14 @@ class MemberController extends Controller
      */
     public function step8(FormRequest $request)
     {
-        Log::info($request);
         $this->saveRequestToTempTable($request, 7);
         return view('apply_as.step-8');
     }
 
     private function saveRequestToTempTable(Request $request, int $stepId)
     {
+        $request->request->add(['step' => $stepId]);
+        Log::info($request);
 //        dd(auth()->user());
 //        $tempTable->member_id
         $tempFields = TempField::query()->whereStepId($stepId)->get();
