@@ -8,6 +8,7 @@
     <meta name="description"
           content="Liliana Model Agency is a new style modeling agency with a wide range of talents, centered on foreign models. We provide high-quality and detailed services with the first priority being to build trust with customers, models, and all people involved in the project.">
     <meta name="theme-color" content="#0D0D0D">
+    <meta name="robots" content="noindex">
     <title>News - Liliana</title>
 
     <!-- start styles -->
