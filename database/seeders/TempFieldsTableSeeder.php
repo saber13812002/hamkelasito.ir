@@ -14,12 +14,12 @@ class TempFieldsTableSeeder extends Seeder
      */
     public function run()
     {
-
+        
 
         \DB::table('temp_fields')->delete();
-
+        
         \DB::table('temp_fields')->insert(array (
-            0 =>
+            0 => 
             array (
                 'id' => 1,
                 'step_id' => 0,
@@ -27,12 +27,12 @@ class TempFieldsTableSeeder extends Seeder
                 'model_field' => 'model_type',
                 'request_key' => 'model_type',
                 'type' => 'string',
-                'file_type' => NULL,
-                'enabled_at' => '2023-11-12 13:01:08',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'file_type' => '',
+                'enabled_at' => '2023-11-12 13:01:00',
+                'created_at' => '2023-11-12 13:01:00',
+                'updated_at' => '2023-11-12 13:01:00',
             ),
-            1 =>
+            1 => 
             array (
                 'id' => 2,
                 'step_id' => 0,
@@ -40,12 +40,12 @@ class TempFieldsTableSeeder extends Seeder
                 'model_field' => 'talent_type',
                 'request_key' => 'talent_type',
                 'type' => 'string',
-                'file_type' => NULL,
-                'enabled_at' => '2023-11-12 13:01:08',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'file_type' => '',
+                'enabled_at' => '2023-11-12 13:01:00',
+                'created_at' => '2023-11-12 13:01:00',
+                'updated_at' => '2023-11-12 13:01:00',
             ),
-            2 =>
+            2 => 
             array (
                 'id' => 3,
                 'step_id' => 0,
@@ -53,12 +53,12 @@ class TempFieldsTableSeeder extends Seeder
                 'model_field' => 'actor_actress_type',
                 'request_key' => 'actor_actress_type',
                 'type' => 'string',
-                'file_type' => NULL,
-                'enabled_at' => '2023-11-12 13:01:08',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'file_type' => '',
+                'enabled_at' => '2023-11-12 13:01:00',
+                'created_at' => '2023-11-12 13:01:00',
+                'updated_at' => '2023-11-12 13:01:00',
             ),
-            3 =>
+            3 => 
             array (
                 'id' => 4,
                 'step_id' => 0,
@@ -66,12 +66,12 @@ class TempFieldsTableSeeder extends Seeder
                 'model_field' => 'extra_type',
                 'request_key' => 'extra_type',
                 'type' => 'string',
-                'file_type' => NULL,
-                'enabled_at' => '2023-11-12 13:01:08',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'file_type' => '',
+                'enabled_at' => '2023-11-12 13:01:00',
+                'created_at' => '2023-11-12 13:01:00',
+                'updated_at' => '2023-11-12 13:01:00',
             ),
-            4 =>
+            4 => 
             array (
                 'id' => 5,
                 'step_id' => 0,
@@ -79,12 +79,12 @@ class TempFieldsTableSeeder extends Seeder
                 'model_field' => 'gender',
                 'request_key' => 'gender',
                 'type' => 'string',
-                'file_type' => NULL,
-                'enabled_at' => '2023-11-12 13:01:08',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'file_type' => '',
+                'enabled_at' => '2023-11-12 13:01:00',
+                'created_at' => '2023-11-12 13:01:00',
+                'updated_at' => '2023-11-12 13:01:00',
             ),
-            5 =>
+            5 => 
             array (
                 'id' => 6,
                 'step_id' => 0,
@@ -92,12 +92,12 @@ class TempFieldsTableSeeder extends Seeder
                 'model_field' => 'birhtday_year',
                 'request_key' => 'birhtday_year',
                 'type' => 'string',
-                'file_type' => NULL,
-                'enabled_at' => '2023-11-12 13:01:08',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'file_type' => '',
+                'enabled_at' => '2023-11-12 13:01:00',
+                'created_at' => '2023-11-12 13:01:00',
+                'updated_at' => '2023-11-12 13:01:00',
             ),
-            6 =>
+            6 => 
             array (
                 'id' => 7,
                 'step_id' => 0,
@@ -105,12 +105,12 @@ class TempFieldsTableSeeder extends Seeder
                 'model_field' => 'birhtday_month',
                 'request_key' => 'birhtday_month',
                 'type' => 'string',
-                'file_type' => NULL,
-                'enabled_at' => '2023-11-12 13:01:08',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'file_type' => '',
+                'enabled_at' => '2023-11-12 13:01:00',
+                'created_at' => '2023-11-12 13:01:00',
+                'updated_at' => '2023-11-12 13:01:00',
             ),
-            7 =>
+            7 => 
             array (
                 'id' => 8,
                 'step_id' => 0,
@@ -118,12 +118,12 @@ class TempFieldsTableSeeder extends Seeder
                 'model_field' => 'birhtday_day',
                 'request_key' => 'birhtday_day',
                 'type' => 'string',
-                'file_type' => NULL,
-                'enabled_at' => '2023-11-12 13:01:08',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'file_type' => '',
+                'enabled_at' => '2023-11-12 13:01:00',
+                'created_at' => '2023-11-12 13:01:00',
+                'updated_at' => '2023-11-12 13:01:00',
             ),
-            8 =>
+            8 => 
             array (
                 'id' => 9,
                 'step_id' => 0,
@@ -131,12 +131,12 @@ class TempFieldsTableSeeder extends Seeder
                 'model_field' => 'nationality',
                 'request_key' => 'nationality',
                 'type' => 'string',
-                'file_type' => NULL,
-                'enabled_at' => '2023-11-12 13:01:08',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'file_type' => '',
+                'enabled_at' => '2023-11-12 13:01:00',
+                'created_at' => '2023-11-12 13:01:00',
+                'updated_at' => '2023-11-12 13:01:00',
             ),
-            9 =>
+            9 => 
             array (
                 'id' => 10,
                 'step_id' => 0,
@@ -144,12 +144,12 @@ class TempFieldsTableSeeder extends Seeder
                 'model_field' => 'name',
                 'request_key' => 'first_name',
                 'type' => 'string',
-                'file_type' => NULL,
-                'enabled_at' => '2023-11-12 13:01:08',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'file_type' => '',
+                'enabled_at' => '2023-11-12 13:01:00',
+                'created_at' => '2023-11-12 13:01:00',
+                'updated_at' => '2023-11-12 13:01:00',
             ),
-            10 =>
+            10 => 
             array (
                 'id' => 11,
                 'step_id' => 1,
@@ -157,12 +157,12 @@ class TempFieldsTableSeeder extends Seeder
                 'model_field' => 'first_name_furigana',
                 'request_key' => 'first_name_furigana',
                 'type' => 'string',
-                'file_type' => NULL,
-                'enabled_at' => '2023-11-12 13:01:08',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'file_type' => '',
+                'enabled_at' => '2023-11-12 13:01:00',
+                'created_at' => '2023-11-12 13:01:00',
+                'updated_at' => '2023-11-12 13:01:00',
             ),
-            11 =>
+            11 => 
             array (
                 'id' => 12,
                 'step_id' => 1,
@@ -170,12 +170,12 @@ class TempFieldsTableSeeder extends Seeder
                 'model_field' => 'middle_name',
                 'request_key' => 'middle_name',
                 'type' => 'string',
-                'file_type' => NULL,
-                'enabled_at' => '2023-11-12 13:01:08',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'file_type' => '',
+                'enabled_at' => '2023-11-12 13:01:00',
+                'created_at' => '2023-11-12 13:01:00',
+                'updated_at' => '2023-11-12 13:01:00',
             ),
-            12 =>
+            12 => 
             array (
                 'id' => 13,
                 'step_id' => 1,
@@ -183,12 +183,12 @@ class TempFieldsTableSeeder extends Seeder
                 'model_field' => 'family',
                 'request_key' => 'last_name',
                 'type' => 'string',
-                'file_type' => NULL,
-                'enabled_at' => '2023-11-12 13:01:08',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'file_type' => '',
+                'enabled_at' => '2023-11-12 13:01:00',
+                'created_at' => '2023-11-12 13:01:00',
+                'updated_at' => '2023-11-12 13:01:00',
             ),
-            13 =>
+            13 => 
             array (
                 'id' => 14,
                 'step_id' => 1,
@@ -196,12 +196,12 @@ class TempFieldsTableSeeder extends Seeder
                 'model_field' => 'last_name_furigana',
                 'request_key' => 'last_name_furigana',
                 'type' => 'string',
-                'file_type' => NULL,
-                'enabled_at' => '2023-11-12 13:01:08',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'file_type' => '',
+                'enabled_at' => '2023-11-12 13:01:00',
+                'created_at' => '2023-11-12 13:01:00',
+                'updated_at' => '2023-11-12 13:01:00',
             ),
-            14 =>
+            14 => 
             array (
                 'id' => 15,
                 'step_id' => 1,
@@ -209,12 +209,12 @@ class TempFieldsTableSeeder extends Seeder
                 'model_field' => 'stage_name',
                 'request_key' => 'stage_name',
                 'type' => 'string',
-                'file_type' => NULL,
-                'enabled_at' => '2023-11-12 13:01:08',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'file_type' => '',
+                'enabled_at' => '2023-11-12 13:01:00',
+                'created_at' => '2023-11-12 13:01:00',
+                'updated_at' => '2023-11-12 13:01:00',
             ),
-            15 =>
+            15 => 
             array (
                 'id' => 16,
                 'step_id' => 1,
@@ -222,12 +222,12 @@ class TempFieldsTableSeeder extends Seeder
                 'model_field' => 'have_other_nationality',
                 'request_key' => 'have_other_nationality',
                 'type' => 'string',
-                'file_type' => NULL,
-                'enabled_at' => '2023-11-12 13:01:08',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'file_type' => '',
+                'enabled_at' => '2023-11-12 13:01:00',
+                'created_at' => '2023-11-12 13:01:00',
+                'updated_at' => '2023-11-12 13:01:00',
             ),
-            16 =>
+            16 => 
             array (
                 'id' => 17,
                 'step_id' => 1,
@@ -235,12 +235,12 @@ class TempFieldsTableSeeder extends Seeder
                 'model_field' => 'other_nationality',
                 'request_key' => 'other_nationality',
                 'type' => 'string',
-                'file_type' => NULL,
-                'enabled_at' => '2023-11-12 13:01:08',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'file_type' => '',
+                'enabled_at' => '2023-11-12 13:01:00',
+                'created_at' => '2023-11-12 13:01:00',
+                'updated_at' => '2023-11-12 13:01:00',
             ),
-            17 =>
+            17 => 
             array (
                 'id' => 18,
                 'step_id' => 1,
@@ -248,12 +248,12 @@ class TempFieldsTableSeeder extends Seeder
                 'model_field' => 'are_you_mixed',
                 'request_key' => 'are_you_mixed',
                 'type' => 'string',
-                'file_type' => NULL,
-                'enabled_at' => '2023-11-12 13:01:08',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'file_type' => '',
+                'enabled_at' => '2023-11-12 13:01:00',
+                'created_at' => '2023-11-12 13:01:00',
+                'updated_at' => '2023-11-12 13:01:00',
             ),
-            18 =>
+            18 => 
             array (
                 'id' => 19,
                 'step_id' => 1,
@@ -261,12 +261,12 @@ class TempFieldsTableSeeder extends Seeder
                 'model_field' => 'fathers_nationality',
                 'request_key' => 'fathers_nationality',
                 'type' => 'string',
-                'file_type' => NULL,
-                'enabled_at' => '2023-11-12 13:01:08',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'file_type' => '',
+                'enabled_at' => '2023-11-12 13:01:00',
+                'created_at' => '2023-11-12 13:01:00',
+                'updated_at' => '2023-11-12 13:01:00',
             ),
-            19 =>
+            19 => 
             array (
                 'id' => 20,
                 'step_id' => 1,
@@ -274,12 +274,12 @@ class TempFieldsTableSeeder extends Seeder
                 'model_field' => 'mothers_nationality',
                 'request_key' => 'mothers_nationality',
                 'type' => 'string',
-                'file_type' => NULL,
-                'enabled_at' => '2023-11-12 13:01:08',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'file_type' => '',
+                'enabled_at' => '2023-11-12 13:01:00',
+                'created_at' => '2023-11-12 13:01:00',
+                'updated_at' => '2023-11-12 13:01:00',
             ),
-            20 =>
+            20 => 
             array (
                 'id' => 21,
                 'step_id' => 2,
@@ -287,12 +287,12 @@ class TempFieldsTableSeeder extends Seeder
                 'model_field' => 'eye_color',
                 'request_key' => 'eye_color',
                 'type' => 'string',
-                'file_type' => NULL,
-                'enabled_at' => '2023-11-12 13:01:08',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'file_type' => '',
+                'enabled_at' => '2023-11-12 13:01:00',
+                'created_at' => '2023-11-12 13:01:00',
+                'updated_at' => '2023-11-12 13:01:00',
             ),
-            21 =>
+            21 => 
             array (
                 'id' => 22,
                 'step_id' => 2,
@@ -300,12 +300,12 @@ class TempFieldsTableSeeder extends Seeder
                 'model_field' => 'current_hair_color',
                 'request_key' => 'current_hair_color',
                 'type' => 'string',
-                'file_type' => NULL,
-                'enabled_at' => '2023-11-12 13:01:08',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'file_type' => '',
+                'enabled_at' => '2023-11-12 13:01:00',
+                'created_at' => '2023-11-12 13:01:00',
+                'updated_at' => '2023-11-12 13:01:00',
             ),
-            22 =>
+            22 => 
             array (
                 'id' => 23,
                 'step_id' => 2,
@@ -313,12 +313,12 @@ class TempFieldsTableSeeder extends Seeder
                 'model_field' => 'height',
                 'request_key' => 'height',
                 'type' => 'string',
-                'file_type' => NULL,
-                'enabled_at' => '2023-11-12 13:01:08',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'file_type' => '',
+                'enabled_at' => '2023-11-12 13:01:00',
+                'created_at' => '2023-11-12 13:01:00',
+                'updated_at' => '2023-11-12 13:01:00',
             ),
-            23 =>
+            23 => 
             array (
                 'id' => 24,
                 'step_id' => 2,
@@ -326,12 +326,12 @@ class TempFieldsTableSeeder extends Seeder
                 'model_field' => 'weight',
                 'request_key' => 'weight',
                 'type' => 'string',
-                'file_type' => NULL,
-                'enabled_at' => '2023-11-12 13:01:08',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'file_type' => '',
+                'enabled_at' => '2023-11-12 13:01:00',
+                'created_at' => '2023-11-12 13:01:00',
+                'updated_at' => '2023-11-12 13:01:00',
             ),
-            24 =>
+            24 => 
             array (
                 'id' => 25,
                 'step_id' => 2,
@@ -339,12 +339,12 @@ class TempFieldsTableSeeder extends Seeder
                 'model_field' => 'bust',
                 'request_key' => 'bust',
                 'type' => 'string',
-                'file_type' => NULL,
-                'enabled_at' => '2023-11-12 13:01:08',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'file_type' => '',
+                'enabled_at' => '2023-11-12 13:01:00',
+                'created_at' => '2023-11-12 13:01:00',
+                'updated_at' => '2023-11-12 13:01:00',
             ),
-            25 =>
+            25 => 
             array (
                 'id' => 26,
                 'step_id' => 2,
@@ -352,12 +352,12 @@ class TempFieldsTableSeeder extends Seeder
                 'model_field' => 'hips',
                 'request_key' => 'hips',
                 'type' => 'string',
-                'file_type' => NULL,
-                'enabled_at' => '2023-11-12 13:01:08',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'file_type' => '',
+                'enabled_at' => '2023-11-12 13:01:00',
+                'created_at' => '2023-11-12 13:01:00',
+                'updated_at' => '2023-11-12 13:01:00',
             ),
-            26 =>
+            26 => 
             array (
                 'id' => 27,
                 'step_id' => 2,
@@ -365,12 +365,12 @@ class TempFieldsTableSeeder extends Seeder
                 'model_field' => 'waist',
                 'request_key' => 'waist',
                 'type' => 'string',
-                'file_type' => NULL,
-                'enabled_at' => '2023-11-12 13:01:08',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'file_type' => '',
+                'enabled_at' => '2023-11-12 13:01:00',
+                'created_at' => '2023-11-12 13:01:00',
+                'updated_at' => '2023-11-12 13:01:00',
             ),
-            27 =>
+            27 => 
             array (
                 'id' => 28,
                 'step_id' => 2,
@@ -378,12 +378,12 @@ class TempFieldsTableSeeder extends Seeder
                 'model_field' => 'size_unit',
                 'request_key' => 'size_unit',
                 'type' => 'string',
-                'file_type' => NULL,
-                'enabled_at' => '2023-11-12 13:01:08',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'file_type' => '',
+                'enabled_at' => '2023-11-12 13:01:00',
+                'created_at' => '2023-11-12 13:01:00',
+                'updated_at' => '2023-11-12 13:01:00',
             ),
-            28 =>
+            28 => 
             array (
                 'id' => 29,
                 'step_id' => 2,
@@ -391,12 +391,12 @@ class TempFieldsTableSeeder extends Seeder
                 'model_field' => 'shoe_jp_size',
                 'request_key' => 'shoe_jp_size',
                 'type' => 'string',
-                'file_type' => NULL,
-                'enabled_at' => '2023-11-12 13:01:08',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'file_type' => '',
+                'enabled_at' => '2023-11-12 13:01:00',
+                'created_at' => '2023-11-12 13:01:00',
+                'updated_at' => '2023-11-12 13:01:00',
             ),
-            29 =>
+            29 => 
             array (
                 'id' => 30,
                 'step_id' => 2,
@@ -404,12 +404,12 @@ class TempFieldsTableSeeder extends Seeder
                 'model_field' => 'shoe_uk_size',
                 'request_key' => 'shoe_uk_size',
                 'type' => 'string',
-                'file_type' => NULL,
-                'enabled_at' => '2023-11-12 13:01:08',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'file_type' => '',
+                'enabled_at' => '2023-11-12 13:01:00',
+                'created_at' => '2023-11-12 13:01:00',
+                'updated_at' => '2023-11-12 13:01:00',
             ),
-            30 =>
+            30 => 
             array (
                 'id' => 31,
                 'step_id' => 2,
@@ -417,12 +417,12 @@ class TempFieldsTableSeeder extends Seeder
                 'model_field' => 'shoe_us_men_size',
                 'request_key' => 'shoe_us_men_size',
                 'type' => 'string',
-                'file_type' => NULL,
-                'enabled_at' => '2023-11-12 13:01:08',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'file_type' => '',
+                'enabled_at' => '2023-11-12 13:01:00',
+                'created_at' => '2023-11-12 13:01:00',
+                'updated_at' => '2023-11-12 13:01:00',
             ),
-            31 =>
+            31 => 
             array (
                 'id' => 32,
                 'step_id' => 2,
@@ -430,12 +430,12 @@ class TempFieldsTableSeeder extends Seeder
                 'model_field' => 'shoe_us_women_size',
                 'request_key' => 'shoe_us_women_size',
                 'type' => 'string',
-                'file_type' => NULL,
-                'enabled_at' => '2023-11-12 13:01:08',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'file_type' => '',
+                'enabled_at' => '2023-11-12 13:01:00',
+                'created_at' => '2023-11-12 13:01:00',
+                'updated_at' => '2023-11-12 13:01:00',
             ),
-            32 =>
+            32 => 
             array (
                 'id' => 33,
                 'step_id' => 2,
@@ -443,143 +443,143 @@ class TempFieldsTableSeeder extends Seeder
                 'model_field' => 'shoe_eu_size',
                 'request_key' => 'shoe_eu_size',
                 'type' => 'string',
-                'file_type' => NULL,
-                'enabled_at' => '2023-11-12 13:01:08',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'file_type' => '',
+                'enabled_at' => '2023-11-12 13:01:00',
+                'created_at' => '2023-11-12 13:01:00',
+                'updated_at' => '2023-11-12 13:01:00',
             ),
-            33 =>
+            33 => 
             array (
                 'id' => 34,
+                'step_id' => 2,
+                'model_name' => 'Member',
+                'model_field' => 'clothe_size',
+                'request_key' => 'clothe_size',
+                'type' => 'string',
+                'file_type' => '',
+                'enabled_at' => '2023-11-12 13:01:00',
+                'created_at' => '2023-11-12 13:01:00',
+                'updated_at' => '2023-11-12 13:01:00',
+            ),
+            34 => 
+            array (
+                'id' => 35,
                 'step_id' => 3,
                 'model_name' => 'Member',
                 'model_field' => 'native_language',
                 'request_key' => 'native_language',
                 'type' => 'string',
-                'file_type' => NULL,
-                'enabled_at' => '2023-11-12 13:01:08',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'file_type' => '',
+                'enabled_at' => '2023-11-12 13:01:00',
+                'created_at' => '2023-11-12 13:01:00',
+                'updated_at' => '2023-11-12 13:01:00',
             ),
-            34 =>
+            35 => 
             array (
-                'id' => 35,
+                'id' => 36,
                 'step_id' => 3,
                 'model_name' => 'Member',
                 'model_field' => 'other_language',
                 'request_key' => 'other_language',
                 'type' => 'json',
-                'file_type' => NULL,
-                'enabled_at' => '2023-11-12 13:01:08',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'file_type' => '',
+                'enabled_at' => '2023-11-12 13:01:00',
+                'created_at' => '2023-11-12 13:01:00',
+                'updated_at' => '2023-11-12 13:01:00',
             ),
-            35 =>
+            36 => 
             array (
-                'id' => 36,
+                'id' => 37,
                 'step_id' => 3,
                 'model_name' => 'Member',
                 'model_field' => 'biography',
                 'request_key' => 'biography',
                 'type' => 'text',
-                'file_type' => NULL,
-                'enabled_at' => '2023-11-12 13:01:08',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'file_type' => '',
+                'enabled_at' => '2023-11-12 13:01:00',
+                'created_at' => '2023-11-12 13:01:00',
+                'updated_at' => '2023-11-12 13:01:00',
             ),
-            36 =>
+            37 => 
             array (
-                'id' => 37,
+                'id' => 38,
                 'step_id' => 3,
                 'model_name' => 'Member',
                 'model_field' => 'skills',
                 'request_key' => 'skills',
                 'type' => 'json',
-                'file_type' => NULL,
-                'enabled_at' => '2023-11-12 13:01:08',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'file_type' => '',
+                'enabled_at' => '2023-11-12 13:01:00',
+                'created_at' => '2023-11-12 13:01:00',
+                'updated_at' => '2023-11-12 13:01:00',
             ),
-            37 =>
+            38 => 
             array (
-                'id' => 38,
+                'id' => 39,
                 'step_id' => 3,
                 'model_name' => 'Member',
                 'model_field' => 'job_experiences',
                 'request_key' => 'job_experiences',
                 'type' => 'json',
-                'file_type' => NULL,
-                'enabled_at' => '2023-11-12 13:01:08',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'file_type' => '',
+                'enabled_at' => '2023-11-12 13:01:00',
+                'created_at' => '2023-11-12 13:01:00',
+                'updated_at' => '2023-11-12 13:01:00',
             ),
-            38 =>
+            39 => 
             array (
-                'id' => 39,
+                'id' => 40,
                 'step_id' => 3,
                 'model_name' => 'Member',
                 'model_field' => 'job_experiences_pdf',
                 'request_key' => 'job_experiences_pdf',
                 'type' => 'file',
                 'file_type' => 'File',
-                'enabled_at' => '2023-11-12 13:01:08',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'enabled_at' => '2023-11-12 13:01:00',
+                'created_at' => '2023-11-12 13:01:00',
+                'updated_at' => '2023-11-12 13:01:00',
             ),
-            39 =>
+            40 => 
             array (
-                'id' => 40,
+                'id' => 41,
                 'step_id' => 4,
                 'model_name' => 'Member',
                 'model_field' => 'profile_image',
                 'request_key' => 'profile_image',
                 'type' => 'file',
                 'file_type' => 'Image',
-                'enabled_at' => '2023-11-12 13:01:08',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'enabled_at' => '2023-11-12 13:01:00',
+                'created_at' => '2023-11-12 13:01:00',
+                'updated_at' => '2023-11-12 13:01:00',
             ),
-            40 =>
+            41 => 
             array (
-                'id' => 41,
+                'id' => 42,
                 'step_id' => 4,
                 'model_name' => 'Member',
                 'model_field' => 'full_length_photo',
                 'request_key' => 'full_length_photo',
                 'type' => 'file',
                 'file_type' => 'Image',
-                'enabled_at' => '2023-11-12 13:01:08',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'enabled_at' => '2023-11-12 13:01:00',
+                'created_at' => '2023-11-12 13:01:00',
+                'updated_at' => '2023-11-12 13:01:00',
             ),
-            41 =>
+            42 => 
             array (
-                'id' => 42,
+                'id' => 43,
                 'step_id' => 4,
                 'model_name' => 'Member',
                 'model_field' => 'other_photos',
                 'request_key' => 'other_photos',
                 'type' => 'file',
                 'file_type' => 'Image',
-                'enabled_at' => '2023-11-12 13:01:08',
-                'created_at' => NULL,
-                'updated_at' => NULL,
+                'enabled_at' => '2023-11-12 13:01:00',
+                'created_at' => '2023-11-12 13:01:00',
+                'updated_at' => '2023-11-12 13:01:00',
             ),
-            42 =>
-                array (
-                    'id' => 43,
-                    'step_id' => 2,
-                    'model_name' => 'Member',
-                    'model_field' => 'clothe_size',
-                    'request_key' => 'clothe_size',
-                    'type' => 'string',
-                    'file_type' => NULL,
-                    'enabled_at' => '2023-11-12 13:01:08',
-                    'created_at' => NULL,
-                    'updated_at' => NULL,
-                ),
         ));
-
-
+        
+        
     }
 }
