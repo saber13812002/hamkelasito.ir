@@ -77,7 +77,7 @@ Route::get('/city/{city}', function (Request $request) {
 // /api/uploadphoto/
 Route::any('/uploadphoto', function (Request $request) {
 //    dd($request->query('filter'), $request->query('sort'));
-    Log::info($request);
+    Log::info($request->hasFile('file'));
     if ($request->hasFile('file')) {
         $file = $request->file('file');
 
