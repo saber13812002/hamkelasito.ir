@@ -1,7 +1,9 @@
 <?php
 
 use App\Http\Controllers\HomeController;
+use App\Models\City;
 use App\Models\Member;
+use App\Models\State;
 use App\Models\Upload;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
@@ -52,6 +54,24 @@ Route::get('/country', function (Request $request) {
     $json = loadJSON('country');
     return json_decode($json);
 //    return Country::all();
+});
+
+
+Route::get('/state/{state}', function (Request $request, string $state) {
+//    dd($request->query('filter'), $request->query('sort'));
+    $json = loadJSON('state');
+    return json_decode($json);
+//    dd(json_decode($json));
+    return State::all();
+});
+
+
+Route::get('/city/{city}', function (Request $request) {
+//    dd($request->query('filter'), $request->query('sort'));
+    $json = loadJSON('city');
+    return json_decode($json);
+//    dd(json_decode($json));
+    return City::all();
 });
 
 // /api/uploadphoto/
