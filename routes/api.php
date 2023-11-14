@@ -57,6 +57,13 @@ Route::get('/country', function (Request $request) {
 });
 
 
+Route::get('/numcode', function (Request $request) {
+//    dd($request->query('filter'), $request->query('sort'));
+    $json = loadJSON('num-codes');
+    return json_decode($json);
+//    return Country::all();
+});
+
 Route::get('/state/{state}', function (Request $request, string $state) {
 //    dd($request->query('filter'), $request->query('sort'));
     $json = loadJSON('state');
