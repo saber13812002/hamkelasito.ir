@@ -64,11 +64,11 @@ Auth::routes();
     Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('root');
     Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
     Route::get('/model-page', [App\Http\Controllers\HomeController::class, 'modelPage'])->name('model-page');
-    Route::get('/models-list', [App\Http\Controllers\HomeController::class, 'modelsList'])->name('models-list');
+    Route::any('/models-list', [App\Http\Controllers\HomeController::class, 'modelsList'])->name('models-list');
 
 // STATIC PAGES
     Route::get('/about-us', [App\Http\Controllers\HomeController::class, 'aboutUs'])->name('about-us');
-    Route::get('/contact-us', [App\Http\Controllers\HomeController::class, 'contactUs'])->name('contact-us');
+    Route::any('/contact-us', [App\Http\Controllers\HomeController::class, 'contactUs'])->name('contact-us');
     Route::get('/company-profile', [App\Http\Controllers\HomeController::class, 'companyProfile'])->name('company-profile');
     Route::get('/privacy-policy', [App\Http\Controllers\HomeController::class, 'privacyPolicy'])->name('privacy-policy');
 

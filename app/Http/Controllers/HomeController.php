@@ -5,9 +5,10 @@ namespace App\Http\Controllers;
 use App\Models\Category;
 use App\Models\Member;
 use App\Models\Slider;
-use Illuminate\Http\Client\Request;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Log;
+use Illuminate\Http\Request;
 
 class HomeController
 {
@@ -20,7 +21,7 @@ class HomeController
         return view('home', compact('categories', 'members', 'sliders'));
     }
 
-    public function modelPage(\Illuminate\Http\Request $request)
+    public function modelPage(Request $request)
     {
         if ($request->has('id')) {
             $id = $request->id;
@@ -30,8 +31,9 @@ class HomeController
             return redirect('home');
     }
 
-    public function modelsList(\Illuminate\Http\Request $request)
+    public function modelsList(Request $request)
     {
+        Log::info($request);
         $global = 'all';
         if ($request->has('global')) {
             $global = $request->get('global');
@@ -68,8 +70,9 @@ class HomeController
         return view('layouts.single-pages.about-us');
     }
 
-    public function ContactUs()
+    public function ContactUs(Request $request)
     {
+        Log::info($request);
         return view('layouts.single-pages.contact-us');
     }
 
@@ -88,7 +91,7 @@ class HomeController
         return view('become-a-model');
     }
 
-    public function composite(\Illuminate\Http\Request $request)
+    public function composite(Request $request)
     {
         if ($request->has('id')) {
             $id = $request->id;
