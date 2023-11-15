@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Category;
 use App\Models\Member;
 use App\Models\Slider;
+use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Log;
@@ -31,7 +32,7 @@ class HomeController
             return redirect('home');
     }
 
-    public function modelsList(Request $request)
+    public function modelsList(FormRequest $request)
     {
         Log::info($request);
         $global = 'all';
@@ -70,9 +71,15 @@ class HomeController
         return view('layouts.single-pages.about-us');
     }
 
-    public function ContactUs(Request $request)
+    public function ContactUs(FormRequest $request)
     {
         Log::info($request);
+//        'name' => 'صابر طباطبائییزدی',
+//  'company' => 'HomeQom',
+//  'mail' => 'saber.tabatabaee@gmail.com',
+//  'phone' => '09196070718',
+//  'category' => 'introduction_to_liliana',
+//  'message' => 'werqwer',
         return view('layouts.single-pages.contact-us');
     }
 
