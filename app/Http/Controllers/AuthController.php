@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Session;
@@ -34,8 +35,18 @@ class AuthController extends Controller
 
         $credentials = $request->only('email', 'password');
         if (Auth::attempt($credentials)) {
+            $user = Auth::user();
+//            Log::info(Auth::createTokenDriver('session'));
+            $token = $user->createToken(
+                $user->name . '_' . Carbon::now(), // The name of the token
+                ['*'],                         // Whatever abilities you want
+                Carbon::now()->addDays(6)     // The expiration date
+            )->plainTextToken;
+
+            session()->put('token', $token);
+
             return redirect()->intended('admin')
-                ->withSuccess('You have Successfully loggedin goto <a href="/">home</a> or go to <a href="/admin">admin panel</a>');
+                ->withSuccess('You have Successfully loggedin goto or go to admin panel</a>');
         }
 
         return redirect("login")->withSuccess('Oppes! You have entered invalid credentials');

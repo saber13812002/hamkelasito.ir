@@ -12,6 +12,7 @@
     <!-- start main -->
     <main>
         <div id="content">
+            <input id="token" type="hidden" value="{{$token}}">
 
             <!-- start breadcrumb -->
             <div class="page-breadcrumb sz-space">

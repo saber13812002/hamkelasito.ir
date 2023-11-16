@@ -322,7 +322,8 @@
                                                     <div class="card-content-item">{{ $member->hair_color }}</div>
                                                 </div>
                                                 <div class="card-action">
-                                                    <div class="btn btn-icon btn-add-model-to-bookmark">
+                                                    <div class="btn btn-icon btn-add-model-to-bookmark"
+                                                         id="{{ $member->id }}">
                                                         <i class="icon-archive-add"></i>
                                                     </div>
                                                 </div>

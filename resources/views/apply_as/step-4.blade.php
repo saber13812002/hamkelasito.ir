@@ -12,6 +12,7 @@
     <!-- start main -->
     <main>
         <div id="content">
+            <input id="token" type="hidden" value="{{$token}}">
 
             <!-- start page title -->
             <div class="page-title">

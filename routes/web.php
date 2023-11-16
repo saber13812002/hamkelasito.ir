@@ -63,26 +63,26 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'web', 'verified']],
 Auth::routes();
 
 //Route::group(['prefix' => 'dashboard-models', 'middleware' => ['set.locale']], function () {
-    Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('root');
-    Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-    Route::get('/model-page', [App\Http\Controllers\HomeController::class, 'modelPage'])->name('model-page');
-    Route::any('/models-list', [HomeController::class, 'modelsList'])->name('models-list');
+Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('root');
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/model-page', [App\Http\Controllers\HomeController::class, 'modelPage'])->name('model-page');
+Route::any('/models-list', [HomeController::class, 'modelsList'])->name('models-list');
 
 // STATIC PAGES
-    Route::get('/about-us', [App\Http\Controllers\HomeController::class, 'aboutUs'])->name('about-us');
-    Route::any('/contact-us', [App\Http\Controllers\HomeController::class, 'contactUs'])->name('contact-us');
-    Route::get('/company-profile', [App\Http\Controllers\HomeController::class, 'companyProfile'])->name('company-profile');
-    Route::get('/privacy-policy', [App\Http\Controllers\HomeController::class, 'privacyPolicy'])->name('privacy-policy');
+Route::get('/about-us', [App\Http\Controllers\HomeController::class, 'aboutUs'])->name('about-us');
+Route::any('/contact-us', [App\Http\Controllers\HomeController::class, 'contactUs'])->name('contact-us');
+Route::get('/company-profile', [App\Http\Controllers\HomeController::class, 'companyProfile'])->name('company-profile');
+Route::get('/privacy-policy', [App\Http\Controllers\HomeController::class, 'privacyPolicy'])->name('privacy-policy');
 
 // NEWS
-    Route::get('/news-result', [App\Http\Controllers\NewsController::class, 'newsResult'])->name('news-result');
-    Route::get('/news-category', [App\Http\Controllers\NewsController::class, 'newsCategory'])->name('news-category');
-    Route::get('/news-single', [App\Http\Controllers\NewsController::class, 'newsSingle'])->name('news-single');
-    Route::get('/news-single-company', [App\Http\Controllers\NewsController::class, 'newsSingleCompany'])->name('news-single-company');
+Route::get('/news-result', [App\Http\Controllers\NewsController::class, 'newsResult'])->name('news-result');
+Route::get('/news-category', [App\Http\Controllers\NewsController::class, 'newsCategory'])->name('news-category');
+Route::get('/news-single', [App\Http\Controllers\NewsController::class, 'newsSingle'])->name('news-single');
+Route::get('/news-single-company', [App\Http\Controllers\NewsController::class, 'newsSingleCompany'])->name('news-single-company');
 
 
 // PDF
-    Route::get('/composite', [App\Http\Controllers\HomeController::class, 'composite'])->name('composite');
+Route::get('/composite', [App\Http\Controllers\HomeController::class, 'composite'])->name('composite');
 
 //});
 

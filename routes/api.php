@@ -93,12 +93,12 @@ Route::get('/city/{city}', function (Request $request) {
 
 // /api/uploadphoto/
 Route::group([
-    'middleware' => ['api', 'cors'],
+//    'middleware' => ['api', 'cors', 'web'],
     'prefix' => '',
 ], function () {
     Route::any('/uploadphoto', function (Request $request) {
 //    dd($request->query('filter'), $request->query('sort'));
-        Log::info($request->hasFile('file'));
+        Log::info($request->header('Authorization') ? "1" : "0");
         if ($request->hasFile('file')) {
             $file = $request->file('file');
 
@@ -143,6 +143,17 @@ Route::group([
         return response()->json(['error' => 'No file uploaded'], 400);
 
     });
+});
+
+Route::post('/bookmark/{member_id}', function (Request $request, $member_id) {
+    Log::info(json_decode($request));
+    Log::info($member_id);
+    Log::info(auth()->user() ? auth()->user()->id : "-");
+    \Illuminate\Support\Facades\Session::put("bookmark_" . $member_id, $member_id);
+//    $request->session()->put("bookmark_" . $member_id, $member_id);
+    session(["bookmark__" . $member_id => $member_id]);
+//    $request->session()->push("bookmark___" . $member_id, $member_id);
+
 });
 
 

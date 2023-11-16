@@ -11,6 +11,7 @@
     <!-- start main -->
     <main>
         <div id="content">
+            <input id="token" type="hidden" value="{{$token}}">
 
             <div class="section">
                 <div class="container-lg">

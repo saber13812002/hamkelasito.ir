@@ -29,7 +29,8 @@ class MemberController extends Controller
      */
     public function main()
     {
-        return view('dashboard.main');
+        $token = session('token');
+        return view('dashboard.main', compact('token'));
     }
 
     /**
@@ -37,7 +38,8 @@ class MemberController extends Controller
      */
     public function role()
     {
-        return view('dashboard.role');
+        $token = session('token');
+        return view('dashboard.role', compact('token'));
     }
 
     /**
@@ -45,7 +47,8 @@ class MemberController extends Controller
      */
     public function userInfo()
     {
-        return view('dashboard.user-info');
+        $token = session('token');
+        return view('dashboard.user-info', compact('token'));
     }
 
     /**
@@ -53,7 +56,8 @@ class MemberController extends Controller
      */
     public function gallery()
     {
-        return view('dashboard.gallery');
+        $token = session('token');
+        return view('dashboard.gallery', compact('token'));
     }
 
     /**
@@ -61,7 +65,8 @@ class MemberController extends Controller
      */
     public function videoGallery()
     {
-        return view('dashboard.video-gallery');
+        $token = session('token');
+        return view('dashboard.video-gallery', compact('token'));
     }
 
     /**
@@ -69,7 +74,8 @@ class MemberController extends Controller
      */
     public function voiceGallery()
     {
-        return view('dashboard.voice-gallery');
+        $token = session('token');
+        return view('dashboard.voice-gallery', compact('token'));
     }
 
     /**
@@ -77,7 +83,8 @@ class MemberController extends Controller
      */
     public function securityPrivacy()
     {
-        return view('dashboard.security-privacy');
+        $token = session('token');
+        return view('dashboard.security-privacy', compact('token'));
     }
 
     /**
@@ -85,7 +92,8 @@ class MemberController extends Controller
      */
     public function accountInfo()
     {
-        return view('dashboard.account-info');
+        $token = session('token');
+        return view('dashboard.account-info', compact('token'));
     }
 
     /**
@@ -93,7 +101,8 @@ class MemberController extends Controller
      */
     public function galleryTagEdit()
     {
-        return view('dashboard.gallery-tag-edit');
+        $token = session('token');
+        return view('dashboard.gallery-tag-edit', compact('token'));
     }
 
     /**
@@ -101,7 +110,8 @@ class MemberController extends Controller
      */
     public function userInfoEditBasicInfo()
     {
-        return view('dashboard.user-info-edit-basic-info');
+        $token = session('token');
+        return view('dashboard.user-info-edit-basic-info', compact('token'));
     }
 
     /**
@@ -109,7 +119,8 @@ class MemberController extends Controller
      */
     public function userInfoEditPhysicalInfo()
     {
-        return view('dashboard.user-info-edit-physical-info');
+        $token = session('token');
+        return view('dashboard.user-info-edit-physical-info', compact('token'));
     }
 
     /**
@@ -117,7 +128,8 @@ class MemberController extends Controller
      */
     public function userInfoEdiSkills()
     {
-        return view('dashboard.user-info-edit-skills');
+        $token = session('token');
+        return view('dashboard.user-info-edit-skills', compact('token'));
     }
 
     /**
@@ -125,7 +137,8 @@ class MemberController extends Controller
      */
     public function userInfoEditContact()
     {
-        return view('dashboard.user-info-edit-contact');
+        $token = session('token');
+        return view('dashboard.user-info-edit-contact', compact('token'));
     }
 
     /**
@@ -133,7 +146,8 @@ class MemberController extends Controller
      */
     public function userInfoEditBankAndVisa()
     {
-        return view('dashboard.user-info-edit-bank-and-visa');
+        $token = session('token');
+        return view('dashboard.user-info-edit-bank-and-visa', compact('token'));
     }
 
     /**
@@ -141,7 +155,8 @@ class MemberController extends Controller
      */
     public function userInfoEditOther()
     {
-        return view('dashboard.user-info-edit-other');
+        $token = session('token');
+        return view('dashboard.user-info-edit-other', compact('token'));
     }
 
     /**
@@ -208,7 +223,8 @@ class MemberController extends Controller
     public function step2(FormRequest $request)
     {
         $this->saveRequestToTempTable($request, 1);
-        return view('apply_as.step-2');
+        $token = session('token');
+        return view('apply_as.step-2', compact('token'));
     }
 
     /**
@@ -217,7 +233,8 @@ class MemberController extends Controller
     public function step3(FormRequest $request)
     {
         $this->saveRequestToTempTable($request, 2);
-        return view('apply_as.step-3');
+        $token = session('token');
+        return view('apply_as.step-3', compact('token'));
     }
 
     /**
@@ -226,7 +243,8 @@ class MemberController extends Controller
     public function step4(FormRequest $request)
     {
         $this->saveRequestToTempTable($request, 3);
-        return view('apply_as.step-4');
+        $token = session('token');
+        return view('apply_as.step-4', compact('token'));
     }
 
     /**
@@ -235,7 +253,8 @@ class MemberController extends Controller
     public function step5(FormRequest $request)
     {
         $this->saveRequestToTempTable($request, 4);
-        return view('apply_as.step-5');
+        $token = session('token');
+        return view('apply_as.step-5', compact('token'));
     }
 
     /**
@@ -244,7 +263,8 @@ class MemberController extends Controller
     public function step6(FormRequest $request)
     {
         $this->saveRequestToTempTable($request, 5);
-        return view('apply_as.step-6');
+        $token = session('token');
+        return view('apply_as.step-6', compact('token'));
     }
 
     /**
@@ -253,7 +273,8 @@ class MemberController extends Controller
     public function step7(FormRequest $request)
     {
         $this->saveRequestToTempTable($request, 6);
-        return view('apply_as.step-7');
+        $token = session('token');
+        return view('apply_as.step-7', compact('token'));
     }
 
     /**
@@ -262,7 +283,8 @@ class MemberController extends Controller
     public function step8(FormRequest $request)
     {
         $this->saveRequestToTempTable($request, 7);
-        return view('apply_as.step-8');
+        $token = session('token');
+        return view('apply_as.step-8', compact('token'));
     }
 
     private function saveRequestToTempTable(Request $request, int $stepId)
