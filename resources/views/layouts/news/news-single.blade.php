@@ -160,30 +160,33 @@
 
                     <!-- side action -->
                     <div class="side-action">
-                        <a href="./become-a-model" class="btn btn-icon-left">
+                        @guest
+                            <a href="./become-a-model" class="btn btn-icon-left">
                             <span>
                                 <i class="icon-add"></i>
                                 Become Liliana
                             </span>
-                        </a>
-                        <a href="./login" class="btn btn-primary btn-icon-left">
+                            </a>
+                            <a href="./login" class="btn btn-primary btn-icon-left">
                             <span>
                                 <i class="icon-log-in"></i>
                                 Login
                             </span>
-                        </a>
-                        <a href="#" class="dashboard">
+                            </a>
+                        @else
+                            <a href="#" class="dashboard">
                             <span>
-                                Miss Leslie Alexander
+                                {{Auth::user()->name}}
                                 <i class="icon-arrow-right"></i>
                             </span>
-                        </a>
-                        <a href="#" class="logout">
+                            </a>
+                            <a href="#" class="logout">
                             <span>
                                 Logout
                                 <i class="icon-logout"></i>
                             </span>
-                        </a>
+                            </a>
+                        @endguest
                     </div>
 
                     <!-- side info -->
@@ -308,23 +311,28 @@
                         </div>
                     </div>
                     <div class="col-auto">
-                        <div class="user-account-mini">
-                            <img src="/storage/assets/img/lazy-1x1.webp" class="lazy"
-                                 data-src="/storage/assets/img/1x1/001.webp"
-                                 width="80" height="80" alt="Model">
-                            <noscript>
-                                <img src="/storage/assets/img/1x1/001.webp" width="80" height="80" alt="Model">
-                            </noscript>
-                            <div class="user-content">
-                                <div class="user-display-name">Miss Leslie Alexander</div>
-                                <a href="../dashboard/models/index">
-                                    Go to Dashboard
-                                    <i class="icon-arrow-right"></i>
-                                </a>
+                        @guest
+                        @else
+                            <div class="user-account-mini">
+                                <img src="/storage/assets/img/lazy-1x1.webp" class="lazy"
+                                     data-src="/storage/assets/img/1x1/001.webp"
+                                     width="80" height="80" alt="Model">
+                                <noscript>
+                                    <img src="/storage/assets/img/1x1/001.webp" width="80" height="80" alt="Model">
+                                </noscript>
+                                <div class="user-content">
+                                    <div class="user-display-name">{{Auth::user()->name}}</div>
+                                    <a href="../dashboard/models/index">
+                                        Go to Dashboard
+                                        <i class="icon-arrow-right"></i>
+                                    </a>
+                                </div>
                             </div>
-                        </div>
-                        <a href="./login" class="btn btn-primary btn-full">Login</a>
-                        <a href="./become-a-model" class="btn btn-full">Become Liliana</a>
+                        @endguest
+                        @guest
+                            <a href="./login" class="btn btn-primary btn-full">Login</a>
+                            <a href="./become-a-model" class="btn btn-full">Become Liliana</a>
+                        @endguest
                         <ul class="menu-contact-us">
                             <li>
                                 <i class="icon-sms"></i>
