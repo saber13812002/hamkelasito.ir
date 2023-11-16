@@ -1,4 +1,3 @@
-<!--            <div class="not-found-result">Not Found Result</div>-->
 <ul>
     @foreach($foundItems as $foundItem)
         <li>
@@ -15,7 +14,6 @@
                     <div class="tags">
                         <span>{{$foundItem->model_categories}}</span>
                         {{--                        <span>Artist</span>--}}
-                        {{--                        <span>Athlete</span>--}}
                     </div>
                 </div>
             </a>
@@ -23,7 +21,6 @@
     @endforeach
 </ul>
 @if($count>3)
-
     <a href="models-list" class="more-result">
         See All {{$count}} Results
         <i class="icon-arrow-right"></i>
