@@ -26,6 +26,16 @@ Route::any('/', function (Request $request) {
     return Member::all();
 });
 
+Route::any('/search', function (Request $request) {
+//    dd($request->query('filter'), $request->query('sort'));
+    $phrase = $request->s;
+    $foundItems = Member::where('name', 'like', '%' . $phrase . '%')->limit(3)->get();
+    $count = $foundItems->count();
+    if ($count > 0)
+        return view('search.results', compact('foundItems', 'count'))->render();
+    return view('search.not-found');
+});
+
 Route::group(['prefix' => 'user', 'middleware' => 'auth:sanctum'], function () {
 
     Route::get('/', function (Request $request) {
