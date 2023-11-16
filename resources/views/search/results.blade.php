@@ -2,7 +2,7 @@
 <ul>
     @foreach($foundItems as $foundItem)
         <li>
-            <a href="model-page">
+            <a href="/model-page?id={{$foundItem->id}}">
                 <img src="/storage/assets/img/lazy-1x1.webp" class="lazy"
                      data-src="/storage/assets/img/1x1/{{$foundItem->profile_images}}.webp"
                      width="80" height="80" alt="model">
