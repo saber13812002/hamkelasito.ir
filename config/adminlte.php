@@ -325,6 +325,11 @@ return [
             'url'  => 'admin/approval',
             'icon' => 'fas fa-fw fa-user',
         ],
+        [
+            'text' => 'Contact Us',
+            'url'  => 'admin/contact-us',
+            'icon' => 'fas fa-fw fa-user',
+        ],
     ],
 
     /*

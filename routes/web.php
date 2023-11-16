@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\ContactUsController;
 use App\Http\Controllers\CountryController;
 use App\Http\Controllers\LanguageController;
 use App\Http\Controllers\MemberController;
@@ -50,6 +51,7 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'web', 'verified']],
     Route::get('countries', [CountryController::class, 'index']);
     Route::get('fields', [TempFieldController::class, 'index']);
     Route::get('approval', [TempTableController::class, 'index']);
+    Route::get('contact-us', [ContactUsController::class, 'index']);
 });
 
 

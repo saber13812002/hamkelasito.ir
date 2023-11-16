@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Category;
+use App\Models\ContactUs;
 use App\Models\Member;
 use App\Models\Slider;
 use Illuminate\Foundation\Http\FormRequest;
@@ -74,12 +75,15 @@ class HomeController
     public function ContactUs(FormRequest $request)
     {
         Log::info($request);
-//        'name' => 'صابر طباطبائییزدی',
-//  'company' => 'HomeQom',
-//  'mail' => 'saber.tabatabaee@gmail.com',
-//  'phone' => '09196070718',
-//  'category' => 'introduction_to_liliana',
-//  'message' => 'werqwer',
+
+       $contactUs = new ContactUs();
+       $contactUs->name = $request->name;
+       $contactUs->company = $request->company;
+       $contactUs->mail = $request->mail;
+       $contactUs->phone = $request->phone;
+       $contactUs->category = $request->category;
+       $contactUs->message = $request->message;
+        $contactUs->save();
         return view('layouts.single-pages.contact-us');
     }
 
