@@ -291,6 +291,11 @@ return [
 
     'menu' => [
         [
+            'text' => 'Main',
+            'url'  => 'admin',
+            'icon' => 'fas fa-fw fa-main',
+        ],
+        [
             'text' => 'Categories',
             'url'  => 'admin/categories',
             'icon' => 'fas fa-fw fa-cat',

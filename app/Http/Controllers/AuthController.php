@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Member;
+use App\Models\TempTable;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Carbon;
@@ -80,7 +82,24 @@ class AuthController extends Controller
     public function admin()
     {
         if (Auth::check()) {
-            return view('auth.admin');
+            $awaitingMembers = TempTable::distinct('member_id')
+                ->orWhereNull('approved_at')
+                ->orWhere('approved_at', '=', '')
+                ->count();
+            $totalMembers = Member::count();
+            $completedApprovals = $totalMembers - $awaitingMembers;
+            $totalItems = TempTable::count();
+            $rejectedItems = TempTable::query()
+                ->whereDate('updated_at', '>=', 'created_at')
+                ->count();
+            $awaitingItems = $totalItems - $rejectedItems;
+            return view('auth.admin', compact(
+                'awaitingMembers',
+                'completedApprovals',
+                'awaitingItems',
+                'rejectedItems',
+                'totalMembers'
+            ));
         }
 
         return redirect("login")->withSuccess('Opps! You do not have access');
