@@ -293,12 +293,12 @@ return [
         [
             'text' => 'Categories',
             'url'  => 'admin/categories',
-            'icon' => 'fas fa-fw fa-user',
+            'icon' => 'fas fa-fw fa-cat',
         ],
         [
             'text' => 'Members',
             'url'  => 'admin/members',
-            'icon' => 'fas fa-fw fa-user',
+            'icon' => 'fas fa-fw fa-users',
         ],
         [
             'text' => 'Users',
@@ -308,27 +308,27 @@ return [
         [
             'text' => 'Sliders',
             'url'  => 'admin/sliders',
-            'icon' => 'fas fa-fw fa-user',
+            'icon' => 'fas fa-fw fa-map',
         ],
         [
             'text' => 'Countries',
             'url'  => 'admin/countries',
-            'icon' => 'fas fa-fw fa-user',
+            'icon' => 'fas fa-fw fa-icons',
         ],
         [
             'text' => 'Languages',
             'url'  => 'admin/languages',
-            'icon' => 'fas fa-fw fa-user',
+            'icon' => 'fas fa-fw fa-language',
         ],
         [
             'text' => 'Approval Fields',
             'url'  => 'admin/fields',
-            'icon' => 'fas fa-fw fa-user',
+            'icon' => 'fas fa-fw fa-check',
         ],
         [
             'text' => 'Approval',
             'url'  => 'admin/approval',
-            'icon' => 'fas fa-fw fa-user',
+            'icon' => 'fas fa-fw fa-check',
         ],
         [
             'text' => 'Contact Us',
