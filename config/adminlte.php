@@ -301,6 +301,11 @@ return [
             'icon' => 'fas fa-fw fa-user',
         ],
         [
+            'text' => 'Users',
+            'url'  => 'admin/users',
+            'icon' => 'fas fa-fw fa-user',
+        ],
+        [
             'text' => 'Sliders',
             'url'  => 'admin/sliders',
             'icon' => 'fas fa-fw fa-user',
