@@ -47,6 +47,7 @@
 <script src="/storage/assets/js/media-library.min.js"></script>
 <script src="/storage/assets/js/dashboard.min.js"></script>
 
+<script src="/storage/assets/js/token.js"></script>
 </body>
 
 </html>
