@@ -34,6 +34,8 @@
                             <th>{{__('Slug')}}</th>
                             <th>{{__('Name')}}</th>
                             <th>{{__('Image')}}</th>
+                            <th>{{__('Created At')}}</th>
+                            <th>{{__('Updated At')}}</th>
                             <th>{{__('Options')}}</th>
                         </tr>
                         </thead>
@@ -50,6 +52,8 @@
                                 <td>{{$category->slug}}</td>
                                 <td>{{$category->name}}</td>
                                 <td>{{$category->image}}</td>
+                                <td>{{$category->created_at}}</td>
+                                <td>{{$category->updated_at}}</td>
                                 <td>
                                 </td>
                             </tr>
@@ -73,7 +77,7 @@
 @stop
 
 @section('css')
-    <link rel="stylesheet" href="/css/admin_custom.css">
+    /*<link rel="stylesheet" href="/css/admin_custom.css">*/
 @stop
 
 @section('js')
