@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('name')->nullable();
             $table->string('extension')->nullable();
             $table->string('type')->nullable();
+            $table->bigInteger('user_id')->nullable();
             $table->string('relative_url')->nullable();
             $table->timestamps();
         });

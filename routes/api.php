@@ -91,14 +91,24 @@ Route::get('/city/{city}', function (Request $request) {
     return City::all();
 });
 
+Route::get('/city/', function (Request $request) {
+    $json = loadJSON('city');
+    return json_decode($json);
+});
+
 // /api/uploadphoto/
 Route::group([
-//    'middleware' => ['api', 'cors', 'web'],
+    'middleware' => ['auth:sanctum', 'cors'],
     'prefix' => '',
 ], function () {
     Route::any('/uploadphoto', function (Request $request) {
 //    dd($request->query('filter'), $request->query('sort'));
-        Log::info($request->header('Authorization') ? "1" : "0");
+//        Log::info($request->header('Authorization') ? "1" : "0");
+//        Log::info();
+        $user_id = 0;
+        if (auth()->user()) {
+            $user_id = auth()->user()->id;
+        }
         if ($request->hasFile('file')) {
             $file = $request->file('file');
 
@@ -129,6 +139,7 @@ Route::group([
             $upload->extension = $extension;
             $upload->type = 'Image';
             $upload->relative_url = $relativeUrl;
+            $upload->user_id = $user_id > 0 ? $user_id : null;
             $upload->save();
 
             return response()->json([
