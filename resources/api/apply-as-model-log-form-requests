@@ -108,6 +108,10 @@
   'step' => 6,
 )
 
+[2023-11-17 00:45:42] local.INFO: array (
+  '_token' => '7B5bWTN5mF0oK5MtdeR2zSQs7IHQ4FKhyrBxCIPi',
+  'step' => 7,
+)
 
 [2023-11-11 18:32:22] local.INFO: array (
   'file' =>
