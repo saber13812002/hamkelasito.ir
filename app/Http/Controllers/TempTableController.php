@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\TempTable;
 use App\Http\Requests\StoreTempTableRequest;
 use App\Http\Requests\UpdateTempTableRequest;
+use App\Models\TempTable;
 
 class TempTableController extends Controller
 {
@@ -16,13 +16,18 @@ class TempTableController extends Controller
         $approve_items = TempTable::all();
         return view('admin.approval.index', compact('approve_items'));
     }
+
     /**
      * Display a listing of the resource.
      */
     public function memberTempTables($member_id)
     {
-        $approve_items = TempTable::whereMemberId($member_id)->get();
-        return view('admin.member.tempTables', compact('approve_items'));
+        $approve_items = TempTable::whereMemberId($member_id)
+            ->whereNotNull('value')
+            ->orWhereNotNull('json')
+            ->orWhereNotNull('text')
+            ->get();
+        return view('admin.member.tempTables', compact('approve_items', 'member_id'));
     }
 
     /**

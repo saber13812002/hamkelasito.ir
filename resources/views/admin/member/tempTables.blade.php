@@ -21,7 +21,7 @@
                     <h3 class="card-title">{{__('Approval Management')}}</h3>
 
                     <div class="card-tools">
-
+                        Member Id: {{$member_id}}
                     </div>
                 </div>
                 <!-- /.card-header -->
@@ -30,21 +30,19 @@
                     <table class="table table-hover" id="users_table">
                         <thead>
                         <tr>
-                            <th>#</th>
-                            <th>{{__('Id')}}</th>
-                            <th>{{__('Step Id')}}</th>
-                            <th>{{__('User Id')}}</th>
-                            <th>{{__('Member Id')}}</th>
-                            <th>{{__('Model Name')}}</th>
+                            {{--                            <th>#</th>--}}
+                            {{--                            <th>{{__('Id')}}</th>--}}
+                            {{--                            <th>{{__('Step Id')}}</th>--}}
+                            {{--                            <th>{{__('User Id')}}</th>--}}
+                            {{--                            <th>{{__('Model Name')}}</th>--}}
                             <th>{{__('Model Field')}}</th>
-                            <th>{{__('Type')}}</th>
+                            {{--                            <th>{{__('Type')}}</th>--}}
                             <th>{{__('Value')}}</th>
-                            <th>{{__('Text')}}</th>
-                            <th>{{__('Json')}}</th>
-                            <th>{{__('Approved At')}}</th>
-                            <th>{{__('Admin Id')}}</th>
+                            {{--                            <th>{{__('Approved At')}}</th>--}}
+                            {{--                            <th>{{__('Admin Id')}}</th>--}}
                             <th>{{__('Created At')}}</th>
-                            <th>{{__('Updated At')}}</th>
+                            {{--                            <th>{{__('Updated At')}}</th>--}}
+                            <th>{{__('Options')}}</th>
                         </tr>
                         </thead>
                         <tbody>
@@ -56,22 +54,22 @@
                                 $i++
                             @endphp
                             <tr id="#slider{{$item->id}}">
-                                <td>{{$i}}</td>
-                                <td>{{$item->id}}</td>
-                                <td>{{$item->step_id}}</td>
-                                <td>{{$item->user_id}}</td>
-                                <td>{{$item->member_id}}</td>
-                                <td>{{$item->model_name}}</td>
+                                {{--                                <td>{{$i}}</td>--}}
+                                {{--                                <td>{{$item->id}}</td>--}}
+                                {{--                                <td>{{$item->step_id}}</td>--}}
+                                {{--                                <td>{{$item->user_id}}</td>--}}
+                                {{--                                <td>{{$item->model_name}}</td>--}}
                                 <td>{{$item->model_field}}</td>
-                                <td>{{$item->type}}</td>
-                                <td>{{$item->value}}</td>
-                                <td>{{$item->text}}</td>
-                                <td>{{$item->json}}</td>
-                                <td>{{$item->approved_at}}</td>
-                                <td>{{$item->admin_id}}</td>
+                                {{--                                <td>{{$item->type}}</td>--}}
+                                <td>{{$item->value}}
+                                    {{$item->text}}
+                                    {{$item->json}}</td>
+                                {{--                                <td>{{$item->approved_at}}</td>--}}
+                                {{--                                <td>{{$item->admin_id}}</td>--}}
                                 <td>{{$item->created_at}}</td>
-                                <td>{{$item->updated_at}}</td>
+                                {{--                                <td>{{$item->updated_at}}</td>--}}
                                 <td>
+
                                 </td>
                             </tr>
                         @endforeach
