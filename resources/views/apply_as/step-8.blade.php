@@ -22,7 +22,7 @@
                             <div class="req-message-title">Congratulation!</div>
                             <div class="req-message-description">Thank you for submitting your primary details. We'll review the information and aim to respond within 2 business days for confirmation.</div>
                             <div class="req-message-actions">
-                                <a href="./dashboard-admin" class="btn btn-primary btn-full">
+                                <a href="/dashboard-admin" class="btn btn-primary btn-full">
                                     Go Home
                                 </a>
                             </div>
