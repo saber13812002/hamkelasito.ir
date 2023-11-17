@@ -82,21 +82,8 @@
                         <div class="col-md-12">
                             <i class="fa fa-users" style="font-size: 2rem; color: #6f42c1"></i>
                             <span style="font-size:1.5rem;font-weight: 900; color: #6f42c1">{{$totalMembers}}
-                                @php
-                                    //                            $total = Auth()->user()->Bookings->where('status',1)->sum('price');
-                                    //                            $our_commission = Auth()->user()->our_commission;
-                                    //                            $hotel_commission = Auth()->user()->hotel_commission;
-                                    //                            $our_commission = ($our_commission / 100) * $total;
-                                    //                            $hotel_commission = ($hotel_commission / 100) * $total;
-                                    //                            $total = $total - ($hotel_commission + $our_commission);
-                                    //
-                                    //                            echo $total;
-
-                                @endphp
-
                         </span>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -105,8 +92,6 @@
     <div class="row">
 
         <div class="col-lg-12">
-
-
             <div class="card card-primary card-outline">
                 <div class="card-body">
                     <h5 class="card-title">{{ __('Last 10 New Approvals') }}</h5>
@@ -114,33 +99,29 @@
                     <table class="table table-bordered  table-striped table-hover ui-state-hover">
                         <thead>
                         <tr>
-                            <th>{{__('Customer Name')}}</th>
-                            <th>{{__('Server Name')}}</th>
-                            <th>{{__('Notes')}}</th>
-                            <th>{{__('Booked Date')}}</th>
+                            <th>{{__('Id')}}</th>
+{{--                            <th>{{__('User Id')}}</th>--}}
+                            <th>{{__('Member Name')}}</th>
+                            <th>{{__('Fields Count')}}</th>
+                            <th>{{__('Date')}}</th>
+                            <th>{{__('Options')}}</th>
                         </tr>
                         </thead>
                         <tbody>
-                        @foreach(\App\Models\Member::take(10) as $book)
+                        @foreach($memberAwaitItems as $memberAwaitItem)
                             <tr>
-                                <td>{{$book->customer->name}}</td>
-                                {{--                  @dd($book->bookable_type)--}}
-                                <td>{{$book->bookable?$book->bookable->title:""}}</td>
-                                <td>{{$book->notes}}</td>
+                                <td>{{$memberAwaitItem->id}}</td>
+{{--                                <td>{{$memberAwaitItem->user_id}}</td>--}}
+                                <td>{{$memberAwaitItem->name}}</td>
+                                <td>{{$memberAwaitItem->member_id}}</td>
                                 @php
-                                    $d = explode(" ",$book->ends_at);
+                                    $d = explode(" ",$memberAwaitItem->created_at);
                                 @endphp
                                 <td>Date : {{$d[0]}} <br> Time : {{$d[1]}}</td>
                                 <td>
                                     <div class="btn-group">
-                                        <a href="{{route('reservations.view',$book->id)}}" target="_blank"
-                                           class="btn btn-warning"> <i class="fa fa-eye"></i> View </a>
-                                        <button class="btn btn-success" data-toggle="modal" data-target="#exampleModal"
-                                                type="button">{{__('Completed')}} <i class="fa fa-check-circle"></i>
-                                        </button>
-
-                                        <button class="btn btn-danger" data-toggle="modal" data-target="#rejectModel"
-                                                type="button">{{__('Rejected')}} <i class="fa fa-ban"></i></button>
+                                        <a href="{{route('admin.member.tempTables',$memberAwaitItem->id)}}" target="_blank"
+                                           class="btn btn-warning"> <i class="fa fa-eye"></i> View Fields</a>
                                     </div>
                                 </td>
                             </tr>
@@ -214,39 +195,3 @@
 
 @endsection
 
-
-@section('js')
-    <script>
-        $("#completeForm").on("submit", function (e) {
-            e.preventDefault();
-            $.ajax({
-                url: "/Users/reservations/completed/key",
-                type: "POST",
-                data: {
-                    "_token": "{{csrf_token()}}",
-                    "booking_key": $("#booking_key").val()
-                },
-                success: function (data) {
-                    // console.log(data)
-                    location.reload();
-                }
-            })
-        })
-        $("#rejectForm").on("submit", function (e) {
-            e.preventDefault();
-            $.ajax({
-                url: "/Users/reservations/rejected/key",
-                type: "POST",
-                data: {
-                    "_token": "{{csrf_token()}}",
-                    "booking_key": $("#booking_key_rejected").val(),
-                    "notes": $("#notes").val()
-                },
-                success: function (data) {
-                    location.reload();
-                }
-            })
-        })
-
-    </script>
-@stop

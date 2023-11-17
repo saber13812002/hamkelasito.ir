@@ -53,6 +53,7 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'web', 'verified']],
     Route::get('countries', [CountryController::class, 'index']);
     Route::get('fields', [TempFieldController::class, 'index']);
     Route::get('approval', [TempTableController::class, 'index']);
+    Route::get('member-temp-table/{member_id}', [TempTableController::class, 'memberTempTables'])->name('admin.member.tempTables');
     Route::get('contact-us', [ContactUsController::class, 'index']);
 });
 

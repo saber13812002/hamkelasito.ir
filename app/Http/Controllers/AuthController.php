@@ -82,9 +82,13 @@ class AuthController extends Controller
     public function admin()
     {
         if (Auth::check()) {
-            $awaitingMembers = TempTable::distinct('member_id')
+            $memberAwaitBuilder = TempTable::distinct('member_id')
                 ->orWhereNull('approved_at')
-                ->orWhere('approved_at', '=', '')
+                ->orWhere('approved_at', '=', '');
+            $array = TempTable::query()->distinct()->pluck('member_id')->toArray();
+            $memberAwaitItems = Member::whereIn('id', $array)->get();
+//            dd($memberAwaitItems);
+            $awaitingMembers = $memberAwaitBuilder
                 ->count();
             $totalMembers = Member::count();
             $completedApprovals = $totalMembers - $awaitingMembers;
@@ -94,6 +98,7 @@ class AuthController extends Controller
                 ->count();
             $awaitingItems = $totalItems - $rejectedItems;
             return view('auth.admin', compact(
+                'memberAwaitItems',
                 'awaitingMembers',
                 'completedApprovals',
                 'awaitingItems',

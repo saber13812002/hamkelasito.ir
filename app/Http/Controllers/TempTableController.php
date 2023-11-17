@@ -16,6 +16,14 @@ class TempTableController extends Controller
         $approve_items = TempTable::all();
         return view('admin.approval.index', compact('approve_items'));
     }
+    /**
+     * Display a listing of the resource.
+     */
+    public function memberTempTables($member_id)
+    {
+        $approve_items = TempTable::whereMemberId($member_id)->get();
+        return view('admin.member.tempTables', compact('approve_items'));
+    }
 
     /**
      * Show the form for creating a new resource.

@@ -34,4 +34,8 @@ class Member extends Model
     {
         return $this->belongsTo(TempTable::class);
     }
+    public function user(): HasOne
+    {
+        return $this->hasOne(User::class);
+    }
 }
