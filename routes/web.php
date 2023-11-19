@@ -6,6 +6,7 @@ use App\Http\Controllers\ContactUsController;
 use App\Http\Controllers\CountryController;
 use App\Http\Controllers\LanguageController;
 use App\Http\Controllers\MemberController;
+use App\Http\Controllers\Proxy\Survey\SurveyController;
 use App\Http\Controllers\SliderController;
 use App\Http\Controllers\TempFieldController;
 use App\Http\Controllers\TempTableController;
@@ -55,6 +56,10 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'web', 'verified']],
     Route::get('approval', [TempTableController::class, 'index']);
     Route::get('member-temp-table/{member_id}', [TempTableController::class, 'memberTempTables'])->name('admin.member.tempTables');
     Route::get('contact-us', [ContactUsController::class, 'index']);
+
+    // Survey
+
+    Route::get('survey', [SurveyController::class, 'index']);
 });
 
 

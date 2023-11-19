@@ -340,6 +340,11 @@ return [
             'url'  => 'admin/contact-us',
             'icon' => 'fas fa-fw fa-user',
         ],
+        [
+            'text' => 'Survey',
+            'url'  => 'admin/survey',
+            'icon' => 'fas fa-fw fa-question',
+        ],
     ],
 
     /*
