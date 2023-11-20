@@ -27,56 +27,67 @@
                 <!-- /.card-header -->
 
                 <div class="card-body table-responsive p-0">
-                    <table class="table table-hover" id="users_table">
-                        <thead>
-                        <tr>
-                            <th>#</th>
-                            <th>{{__('Id')}}</th>
-                            <th>{{__('Step Id')}}</th>
-                            <th>{{__('User Id')}}</th>
-                            <th>{{__('Member Id')}}</th>
-                            <th>{{__('Model Name')}}</th>
-                            <th>{{__('Model Field')}}</th>
-                            <th>{{__('Type')}}</th>
-                            <th>{{__('Value')}}</th>
-                            <th>{{__('Text')}}</th>
-                            <th>{{__('Json')}}</th>
-                            <th>{{__('Approved At')}}</th>
-                            <th>{{__('Admin Id')}}</th>
-                            <th>{{__('Created At')}}</th>
-                            <th>{{__('Updated At')}}</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        @php
-                            $i=0;
-                        @endphp
-                        @foreach ($approve_items as $item)
-                            @php
-                                $i++
-                            @endphp
-                            <tr id="#slider{{$item->id}}">
-                                <td>{{$i}}</td>
-                                <td>{{$item->id}}</td>
-                                <td>{{$item->step_id}}</td>
-                                <td>{{$item->user_id}}</td>
-                                <td>{{$item->member_id}}</td>
-                                <td>{{$item->model_name}}</td>
-                                <td>{{$item->model_field}}</td>
-                                <td>{{$item->type}}</td>
-                                <td>{{$item->value}}</td>
-                                <td>{{$item->text}}</td>
-                                <td>{{$item->json}}</td>
-                                <td>{{$item->approved_at}}</td>
-                                <td>{{$item->admin_id}}</td>
-                                <td>{{$item->created_at}}</td>
-                                <td>{{$item->updated_at}}</td>
-                                <td>
-                                </td>
+                    <form action="{{ route('items.approve') }}" method="POST">
+                        @csrf
+                        <table class="table table-hover" id="users_table">
+                            <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>{{__('Id')}}</th>
+                                <th>{{__('Step Id')}}</th>
+                                <th>{{__('User Id')}}</th>
+                                <th>{{__('Member Id')}}</th>
+                                <th>{{__('Model Name')}}</th>
+                                <th>{{__('Model Field')}}</th>
+                                <th>{{__('Type')}}</th>
+                                <th>{{__('Approve')}}</th>
+                                <th>{{__('Value')}}</th>
+                                <th>{{__('Text')}}</th>
+                                <th>{{__('Json')}}</th>
+                                <th>{{__('Approved At')}}</th>
+                                <th>{{__('Admin Id')}}</th>
+                                <th>{{__('Created At')}}</th>
+                                <th>{{__('Updated At')}}</th>
                             </tr>
-                        @endforeach
-                        </tbody>
-                    </table>
+                            </thead>
+                            <tbody>
+                            @php
+                                $i=0;
+                            @endphp
+                            @foreach ($approve_items as $item)
+                                @php
+                                    $i++
+                                @endphp
+                                <tr id="#slider{{$item->id}}">
+                                    <td>{{$i}}</td>
+                                    <td>{{$item->id}}</td>
+                                    <td>{{$item->step_id}}</td>
+                                    <td>{{$item->user_id}}</td>
+                                    <td>{{$item->member_id}}</td>
+                                    <td>{{$item->model_name}}</td>
+                                    <td>{{$item->model_field}}</td>
+                                    <td>{{$item->type}}</td>
+                                    <td>
+                                        <div class="checkbox">
+                                            <label>
+                                                <input type="checkbox" name="items[]" value="{{ $item->id }}">
+
+                                            </label>
+                                        </div>
+                                    </td>
+                                    <td>{{$item->value}}</td>
+                                    <td>{{$item->text}}</td>
+                                    <td>{{$item->json}}</td>
+                                    <td>{{$item->approved_at}}</td>
+                                    <td>{{$item->admin_id}}</td>
+                                    <td>{{$item->created_at}}</td>
+                                    <td>{{$item->updated_at}}</td>
+                                </tr>
+                            @endforeach
+                            </tbody>
+                        </table>
+                        <button type="submit" class="btn btn-primary">Approve</button>
+                    </form>
                 </div>
                 <div class="card-footer">
                     <div class="row">

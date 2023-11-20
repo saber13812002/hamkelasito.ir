@@ -13,6 +13,8 @@ class Member extends Model
 {
     use HasFactory;
 
+    protected $guarded = [];
+
     protected $appends = ['is_new'];
 
     protected function isNew(): Attribute
@@ -34,6 +36,7 @@ class Member extends Model
     {
         return $this->belongsTo(TempTable::class);
     }
+
     public function user(): HasOne
     {
         return $this->hasOne(User::class);

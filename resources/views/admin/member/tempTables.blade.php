@@ -69,7 +69,10 @@
                                 <td>{{$item->created_at}}</td>
                                 {{--                                <td>{{$item->updated_at}}</td>--}}
                                 <td>
-
+                                    <div class="btn-group">
+                                        <a href="{{route('admin.survey.choices',101)}}" target="_blank"
+                                           class="btn btn-error"> <i class="fa fa-eye"></i> View Choice</a>
+                                    </div>
                                 </td>
                             </tr>
                         @endforeach

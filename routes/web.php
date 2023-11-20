@@ -57,6 +57,8 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'web', 'verified']],
     Route::get('member-temp-table/{member_id}', [TempTableController::class, 'memberTempTables'])->name('admin.member.tempTables');
     Route::get('contact-us', [ContactUsController::class, 'index']);
 
+    Route::post('/items/approve', [TempTableController::class, 'postApproveForm'])->name('items.approve');
+
     // Survey
     Route::get('survey', [SurveyController::class, 'index'])->name('admin.survey.index');
     Route::get('packages', [SurveyController::class, 'packages'])->name('admin.survey.packages');
