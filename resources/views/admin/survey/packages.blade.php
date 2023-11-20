@@ -35,9 +35,12 @@
                             <th>{{__('parent_id')}}</th>
                             <th>{{__('title')}}</th>
                             <th>{{__('description')}}</th>
+                            <th>{{__('first_text')}}</th>
+                            <th>{{__('final_text')}}</th>
                             <th>{{__('started_at')}}</th>
                             <th>{{__('finished_at')}}</th>
                             <th>{{__('is_active')}}</th>
+                            <th>{{__('is_deletable')}}</th>
                             <th>{{__('Created At')}}</th>
                             <th>{{__('Updated At')}}</th>
                             <th>{{__('Options')}}</th>
@@ -57,15 +60,18 @@
                                 <td>{{$item['parent_id']}}</td>
                                 <td>{{$item['title']}}</td>
                                 <td>{{$item['description']}}</td>
+                                <td>{{$item['first_text']}}</td>
+                                <td>{{$item['final_text']}}</td>
                                 <td>{{$item['started_at']}}</td>
                                 <td>{{$item['finished_at']}}</td>
                                 <td>{{$item['is_active']}}</td>
+                                <td>{{$item['is_deletable']}}</td>
                                 <td>{{$item['created_at']}}</td>
                                 <td>{{$item['updated_at']}}</td>
                                 <td>
                                     <div class="btn-group">
-                                        <a href="{{route('admin.survey.packages',$item['id'])}}" target="_blank"
-                                           class="btn btn-error"> <i class="fa fa-eye"></i> View Packages</a>
+                                        <a href="{{route('admin.survey.questions',91)}}" target="_blank"
+                                           class="btn btn-error"> <i class="fa fa-eye"></i> View Questions</a>
                                     </div>
                                 </td>
                             </tr>

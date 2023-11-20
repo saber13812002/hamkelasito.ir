@@ -58,8 +58,10 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'web', 'verified']],
     Route::get('contact-us', [ContactUsController::class, 'index']);
 
     // Survey
-
-    Route::get('survey', [SurveyController::class, 'index']);
+    Route::get('survey', [SurveyController::class, 'index'])->name('admin.survey.index');
+    Route::get('packages', [SurveyController::class, 'packages'])->name('admin.survey.packages');
+    Route::get('questions/{package_id}', [SurveyController::class, 'questions'])->name('admin.survey.questions');
+    Route::get('choices/{question_id}', [SurveyController::class, 'choices'])->name('admin.survey.choices');
 });
 
 
