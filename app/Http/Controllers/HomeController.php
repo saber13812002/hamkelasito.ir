@@ -118,7 +118,7 @@ class HomeController
         if ($id) {
             $member = Member::query()->find($id);
 //            return view('pdf.composite', compact('member'));
-            $pdf = Pdf::loadView('pdf.composite', ['member' => $member]);
+            $pdf = Pdf::loadView('pdf.composite2', ['member' => $member]);
             return $pdf->download('composite-' . $id . '.pdf');
         } else
             return redirect('home');
