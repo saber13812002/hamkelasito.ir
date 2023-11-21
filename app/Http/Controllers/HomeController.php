@@ -6,11 +6,12 @@ use App\Models\Category;
 use App\Models\ContactUs;
 use App\Models\Member;
 use App\Models\Slider;
+use Barryvdh\DomPDF\Facade\Pdf;
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Log;
-use Illuminate\Http\Request;
 
 class HomeController
 {
@@ -76,13 +77,13 @@ class HomeController
     {
         Log::info($request);
 
-       $contactUs = new ContactUs();
-       $contactUs->name = $request->name;
-       $contactUs->company = $request->company;
-       $contactUs->mail = $request->mail;
-       $contactUs->phone = $request->phone;
-       $contactUs->category = $request->category;
-       $contactUs->message = $request->message;
+        $contactUs = new ContactUs();
+        $contactUs->name = $request->name;
+        $contactUs->company = $request->company;
+        $contactUs->mail = $request->mail;
+        $contactUs->phone = $request->phone;
+        $contactUs->category = $request->category;
+        $contactUs->message = $request->message;
         $contactUs->save();
         return view('layouts.single-pages.contact-us');
     }
@@ -107,7 +108,19 @@ class HomeController
         if ($request->has('id')) {
             $id = $request->id;
             $member = Member::query()->find($id);
-            return view('pdf.composite', compact('member'));
+            $url = config('app.url');
+            return view('pdf.composite', compact('member', 'url'));
+        } else
+            return redirect('home');
+    }
+
+    public function composite2(Request $request, $id)
+    {
+        if ($id) {
+            $member = Member::query()->find($id);
+//            return view('pdf.composite', compact('member'));
+            $pdf = Pdf::loadView('pdf.composite2', ['member' => $member, 'url' => config('app.url')]);
+            return $pdf->download('composite' . $id . '.pdf');
         } else
             return redirect('home');
     }

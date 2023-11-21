@@ -95,6 +95,7 @@ Route::get('/news-single-company', [App\Http\Controllers\NewsController::class, 
 
 // PDF
 Route::get('/composite', [App\Http\Controllers\HomeController::class, 'composite'])->name('composite');
+Route::get('/composite2/{id}', [App\Http\Controllers\HomeController::class, 'composite2'])->name('composite');
 
 //});
 

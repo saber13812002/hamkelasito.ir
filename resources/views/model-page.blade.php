@@ -66,7 +66,7 @@
                                         <i class="icon-document"></i>
                                         <span>Composite</span>
                                     </a>
-                                    <a href="model-page#" aria-label="Model Profile">
+                                    <a href="/composite2/{{$member->id}}" aria-label="Model Profile">
                                         <i class="icon-user-square"></i>
                                         <span>Profile</span>
                                     </a>
