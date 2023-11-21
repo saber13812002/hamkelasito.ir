@@ -7,6 +7,7 @@ use App\Models\ContactUs;
 use App\Models\Member;
 use App\Models\Slider;
 use Barryvdh\DomPDF\Facade\Pdf;
+use Dompdf\Dompdf;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;
