@@ -119,7 +119,136 @@ class HomeController
             $member = Member::query()->find($id);
 //            return view('pdf.composite', compact('member'));
             $pdf = Pdf::loadView('pdf.composite2', ['member' => $member, 'url' => config('app.url')]);
-            return $pdf->download('composite-' . $id . '.pdf');
+
+
+            $html ="
+<html lang=\"en\">
+<head>
+    <meta charset=\"UTF-8\">
+    <title>Liliana Composite -No. 37 Name Consuelo</title>
+
+</head>
+<body>
+
+<!-- header -->
+<header id=\"header\">
+    <div class=\"profile-name\">
+        <div class=\"name\">Consuelo Lehner
+            <span id=\"profile_id\">
+                No. 37
+            </span>
+        </div>
+        <div class=\"profile-meta\">
+            <div class=\"jp-name\">Patrick</div>
+        </div>
+    </div>
+    <div id=\"brand\">
+        <img src=\"https://lili.pardisania.ir/storage/assets/img/logo.svg\" alt=\"liliana\">
+    </div>
+</header>
+
+<!-- model meta -->
+<div class=\"model-meta\">
+    <div class=\"meta-item\">
+        <div class=\"name\">Nationality</div>
+        <div class=\"value\">USA</div>
+    </div>
+    <div class=\"vertical-divider\"></div>
+    <div class=\"meta-item\">
+        <div class=\"name\">Language</div>
+        <div class=\"value\">en</div>
+    </div>
+    <div class=\"vertical-divider\"></div>
+    <div class=\"meta-item\">
+        <div class=\"name\">Height</div>
+        <div class=\"value\">168</div>
+    </div>
+    <div class=\"vertical-divider\"></div>
+    <div class=\"meta-item\">
+        <div class=\"name\">Bust</div>
+        <div class=\"value\">67</div>
+    </div>
+    <div class=\"vertical-divider\"></div>
+    <div class=\"meta-item\">
+        <div class=\"name\">Hips</div>
+        <div class=\"value\">84</div>
+    </div>
+    <div class=\"vertical-divider\"></div>
+    <div class=\"meta-item\">
+        <div class=\"name\">Waist</div>
+        <div class=\"value\">72</div>
+    </div>
+    <div class=\"vertical-divider\"></div>
+    <div class=\"meta-item\">
+        <div class=\"name\">Shoes</div>
+        <div class=\"value\">44</div>
+    </div>
+    <div class=\"vertical-divider\"></div>
+    <div class=\"meta-item\">
+        <div class=\"name\">Eye</div>
+        <div class=\"value\">Khaki</div>
+    </div>
+    <div class=\"vertical-divider\"></div>
+    <div class=\"meta-item\">
+        <div class=\"name\">Hair</div>
+        <div class=\"value\">Gainsboro</div>
+    </div>
+</div>
+
+<!-- model gallery -->
+<div class=\"model-gallery\">
+    <div class=\"model-base-image\">
+        <img src=\"https://lili.pardisania.ir/storage/assets/img/3x4/037.webp\" alt=\"Image\">
+    </div>
+    <div class=\"model-gallery-images\">
+        <img src=\"https://lili.pardisania.ir/storage/assets/img/3x4/037.webp\" alt=\"Image\">
+        <img src=\"https://lili.pardisania.ir/storage/assets/img/3x4/037.webp\" alt=\"Image\">
+        <img src=\"https://lili.pardisania.ir/storage/assets/img/3x4/037.webp\" alt=\"Image\">
+        <img src=\"https://lili.pardisania.ir/storage/assets/img/3x4/037.webp\" alt=\"Image\">
+    </div>
+</div>
+
+<!-- footer -->
+<footer id=\"footer\">
+
+    <div class=\"contacts\">
+        <div class=\"contacts-item\">
+            <div class=\"name\">Tel</div>
+            <div class=\"value\">03-6362-3355</div>
+        </div>
+        <div class=\"vertical-divider\"></div>
+        <div class=\"contacts-item\">
+            <div class=\"name\">Fax</div>
+            <div class=\"value\">03-6323-0195</div>
+        </div>
+        <div class=\"vertical-divider\"></div>
+        <div class=\"contacts-item\">
+            <div class=\"name\">Email</div>
+            <div class=\"value\">info@lilianamodels.com</div>
+        </div>
+        <div class=\"vertical-divider\"></div>
+        <div class=\"contacts-item\">
+            <div class=\"name\">URL</div>
+            <div class=\"value\">www.lilianamodels.com</div>
+        </div>
+        <div class=\"vertical-divider\"></div>
+        <div class=\"contacts-item\">
+            <div class=\"name\">Address</div>
+            <div class=\"value\">4-4-8, Akasaka, Minato-ku, Tokyo, 107-0052</div>
+        </div>
+    </div>
+
+</footer>
+
+</body>
+</html>";
+
+            $dompdf = new DOMPDF();
+            $dompdf->load_html($html);
+            $dompdf->render();
+            $dompdf->set_base_path('https://lili.pardisania.ir/storage/assets/css/composite.css');
+            $dompdf->stream("hello.pdf");
+//            return $pdf->download('composite-' . $id . '.pdf');
         } else
             return redirect('home');
     }
