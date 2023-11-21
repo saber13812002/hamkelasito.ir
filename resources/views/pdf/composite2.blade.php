@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Liliana Composite -No. {{$member->no}} Name {{$member->name}}</title>
-    <link href="{{$url}}/storage/assets/css/composite2.css" rel="stylesheet">
+    <link href="/storage/assets/css/composite2.css" rel="stylesheet">
 </head>
 <body>
 
@@ -21,7 +21,7 @@
         </div>
     </div>
     <div id="brand">
-        <img src="{{$url}}/storage/assets/img/logo.svg" alt="liliana">
+        <img src="/storage/assets/img/logo.svg" alt="liliana">
     </div>
 </header>
 
@@ -76,13 +76,13 @@
 <!-- model gallery -->
 <div class="model-gallery">
     <div class="model-base-image">
-        <img src="{{$url}}/storage/assets/img/3x4/{{$member->profile_image}}.webp" alt="Image">
+        <img src="/storage/assets/img/3x4/{{$member->profile_image}}.webp" alt="Image">
     </div>
     <div class="model-gallery-images">
-        <img src="{{$url}}/storage/assets/img/3x4/{{$member->profile_image}}.webp" alt="Image">
-        <img src="{{$url}}/storage/assets/img/3x4/{{$member->profile_image}}.webp" alt="Image">
-        <img src="{{$url}}/storage/assets/img/3x4/{{$member->profile_image}}.webp" alt="Image">
-        <img src="{{$url}}/storage/assets/img/3x4/{{$member->profile_image}}.webp" alt="Image">
+        <img src="/storage/assets/img/3x4/{{$member->profile_image}}.webp" alt="Image">
+        <img src="/storage/assets/img/3x4/{{$member->profile_image}}.webp" alt="Image">
+        <img src="/storage/assets/img/3x4/{{$member->profile_image}}.webp" alt="Image">
+        <img src="/storage/assets/img/3x4/{{$member->profile_image}}.webp" alt="Image">
     </div>
 </div>
 

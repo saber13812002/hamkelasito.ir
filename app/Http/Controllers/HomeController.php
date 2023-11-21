@@ -108,8 +108,7 @@ class HomeController
         if ($request->has('id')) {
             $id = $request->id;
             $member = Member::query()->find($id);
-            $url = config('app.url');
-            return view('pdf.composite', compact('member', 'url'));
+            return view('pdf.composite', compact('member'));
         } else
             return redirect('home');
     }
@@ -119,8 +118,8 @@ class HomeController
         if ($id) {
             $member = Member::query()->find($id);
 //            return view('pdf.composite', compact('member'));
-            $pdf = Pdf::loadView('pdf.composite2', ['member' => $member, 'url' => config('app.url')]);
-            return $pdf->download('composite' . $id . '.pdf');
+            $pdf = Pdf::loadView('pdf.composite', ['member' => $member]);
+            return $pdf->download('composite-' . $id . '.pdf');
         } else
             return redirect('home');
     }
