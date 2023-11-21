@@ -123,4 +123,14 @@ class HomeController
         } else
             return redirect('home');
     }
+
+    public function composite3(Request $request, $id)
+    {
+        if ($id) {
+            $member = Member::query()->find($id);
+            $url = config('app.url');
+            return view('pdf.composite2', compact('member', 'url'));
+        } else
+            return redirect('home');
+    }
 }
