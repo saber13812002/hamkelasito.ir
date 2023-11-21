@@ -6,55 +6,6 @@
     <title>Liliana Composite -No. {{$member->no}} Name {{$member->name}}</title>
 
     <style>
-        @font-face {
-            font-family: 'TheSeasons';
-            font-weight: normal;
-            font-style: normal;
-            font-display: swap;
-            src: "https://lili.pardisania.ir/storage/assets/fonts/TheSeasons/TheSeasons-Bd.otf";
-        }
-
-        @font-face {
-            font-family: 'Amelaryas';
-            font-weight: normal;
-            font-style: normal;
-            font-display: swap;
-            src: "https://lili.pardisania.ir/storage/assets/fonts/Amelaryas/Amelaryas.ttf"; }
-
-        @font-face {
-            font-family: 'Montserrat';
-            font-weight: 300;
-            font-style: normal;
-            font-display: swap;
-            src: "https://lili.pardisania.ir/storage/assets/fonts/Montserrat-Light.ttf"; }
-
-        @font-face {
-            font-family: 'Montserrat';
-            font-weight: normal;
-            font-style: normal;
-            font-display: swap;
-            src: "https://lili.pardisania.ir/storage/assets/fonts/Montserrat-Regular.ttf"; }
-
-        @font-face {
-            font-family: 'Montserrat';
-            font-weight: 500;
-            font-style: normal;
-            font-display: swap;
-            src: "https://lili.pardisania.ir/storage/assets/fonts/Montserrat-Medium.ttf"; }
-
-        @font-face {
-            font-family: 'Montserrat';
-            font-weight: 600;
-            font-style: normal;
-            font-display: swap;
-            src: "https://lili.pardisania.ir/storage/assets/fonts/Montserrat-SemiBold.ttf"; }
-
-        @font-face {
-            font-family: 'Montserrat';
-            font-weight: 700;
-            font-style: normal;
-            font-display: swap;
-            src: "https://lili.pardisania.ir/storage/assets/fonts/Montserrat-Bold.ttf"; }
 
         @page {
             size: A4 landscape;
