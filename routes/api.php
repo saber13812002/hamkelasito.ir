@@ -21,9 +21,55 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
 Route::any('/', function (Request $request) {
-//    dd($request->query('filter'), $request->query('sort'));
-    return Member::all();
+//    dd($request->query('filter'), $request->query('sort'), $request->sort);
+
+    $data = $request->all();
+    dd($data);
+//    return Member::all();
+
+    dd($request->sort);
+    Member::all();
+    return '<div class="grid-item">
+                                <article class="model-card" itemscope
+                                         itemtype="https://schema.org/Person">
+                                    <a href="./model-page?id={{ $member->id }}" itemprop="url">
+                                        <meta itemprop="image"
+                                              content="/storage/assets/img/3x4/{{ $member->profile_image}}.webp">
+                                        <img src="/storage/assets/img/lazy-3x4.webp" class="lazy"
+                                             data-src="/storage/assets/img/3x4/{{ $member->profile_image}}.webp"
+                                             width="200" height="260" alt="model">
+                                        <noscript>
+                                            <img src="/storage/assets/img/3x4/{{ $member->profile_image}}.webp"
+                                                 width="200" height="260"
+                                                 alt="model">
+                                        </noscript>
+    @if($member->isNew)
+                                            <div class="card-metas">
+                                                <span class="meta-item">NEW FACE</span>
+                                            </div>
+    @endif
+                                        <div class="card-content">
+                                            <div class="card-inner-content">
+                                                <h2 class="card-primary-title" itemprop="name">{{ $member->name}}</h2>
+                                                <div class="card-content-item"
+                                                     itemprop="nationality">{{ $member->nationality}}</div>
+                                                <div class="card-content-item">{{ $member->town}}</div>
+                                                <div class="card-content-item">{{ $member->height}} / {{ $member->bust}}
+                                                    / {{ $member->waist}} / {{ $member->hips}} / {{ $member->age}}</div>
+                                                <div class="card-content-item">{{ $member->model_categories}}</div>
+                                            </div>
+                                            <div class="card-action">
+                                                <div class="btn btn-icon btn-add-model-to-bookmark">
+                                                    <i class="icon-archive-add"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </article>
+                            </div>';
+
 });
 
 Route::any('/search', function (Request $request) {
@@ -32,7 +78,7 @@ Route::any('/search', function (Request $request) {
     $foundItems = Member::where('name', 'like', '%' . $phrase . '%')->limit(3)->get();
     $count = $foundItems->count();
     if ($count > 0)
-        return view('search.results', compact('foundItems', 'count'))->render();
+        return view('search.results', compact('foundItems', 'count', 'phrase'))->render();
     return view('search.not-found');
 });
 

@@ -21,7 +21,7 @@
     @endforeach
 </ul>
 @if($count>3)
-    <a href="models-list" class="more-result">
+    <a href="models-list/?s={{$phrase}}" class="more-result">
         See All {{$count}} Results
         <i class="icon-arrow-right"></i>
     </a>
