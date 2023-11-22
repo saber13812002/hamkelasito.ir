@@ -38,11 +38,16 @@ Route::get('/become-a-model', [App\Http\Controllers\HomeController::class, 'beco
 
 Route::get('login', [AuthController::class, 'index'])->name('login');
 Route::post('post-login', [AuthController::class, 'postLogin'])->name('login.post');
-Route::get('registration', [AuthController::class, 'registration'])->name('register');
+Route::get('register', [AuthController::class, 'registration'])->name('register');
 //Route::get('apply-as-a-model', [AuthController::class, 'registration'])->name('apply-as-a-model');
 Route::post('post-registration', [AuthController::class, 'postRegistration'])->name('register.post');
 Route::get('dashboard', [AuthController::class, 'dashboard']);
 Route::get('logout', [AuthController::class, 'logout'])->name('logout');
+
+//Route::get('password/reset', 'Auth\ForgotPasswordController@showLinkRequestForm')->name('password.request');
+//Route::post('password/email', 'Auth\ForgotPasswordController@sendResetLinkEmail')->name('password.email');
+//Route::get('password/reset/{token}', 'Auth\ResetPasswordController@showResetForm')->name('password.reset');
+//Route::post('password/reset', 'Auth\ResetPasswordController@reset');
 
 
 Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'web', 'verified']], function () {
@@ -73,7 +78,7 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'web', 'verified']],
 //    Route::get('/category', [\App\Http\Controllers\CategoryController::class, 'index']);
 //});
 
-Auth::routes();
+//Auth::routes();
 
 //Route::group(['prefix' => 'dashboard-models', 'middleware' => ['set.locale']], function () {
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('root');
@@ -105,7 +110,8 @@ Route::get('/composite3/{id}', [App\Http\Controllers\HomeController::class, 'com
 Route::group(['prefix' => 'dashboard-models', 'middleware' => ['auth', 'web', 'verified']], function () {
 
     //APPLY_AS_A_MODEL_FORM
-    Route::any('apply-as-a-model-form-role', [App\Http\Controllers\MemberController::class, 'step0'])->name('step0');
+    Route::get('apply-as-a-model-form-role', [App\Http\Controllers\MemberController::class, 'step0get'])->name('step0');
+    Route::post('apply-as-a-model-form-role', [App\Http\Controllers\MemberController::class, 'step0'])->name('step0');
     Route::any('apply-as-a-model-form-step-1', [App\Http\Controllers\MemberController::class, 'step1'])->name('step1');
     Route::any('apply-as-a-model-form-step-2', [App\Http\Controllers\MemberController::class, 'step2'])->name('step2');
     Route::any('apply-as-a-model-form-step-3', [App\Http\Controllers\MemberController::class, 'step3'])->name('step3');
@@ -135,4 +141,4 @@ Route::group(['prefix' => 'dashboard-models', 'middleware' => ['auth', 'web', 'v
 });
 
 // email verification
-Auth::routes(['verify' => true]);
+//Auth::routes(['verify' => true]);
