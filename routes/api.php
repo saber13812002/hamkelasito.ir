@@ -74,11 +74,12 @@ Route::any('/', function (Request $request) {
 
 Route::any('/search', function (Request $request) {
 //    dd($request->query('filter'), $request->query('sort'));
+    $limit = 3;
     $phrase = $request->s;
-    $foundItems = Member::where('name', 'like', '%' . $phrase . '%')->limit(3)->get();
+    $foundItems = Member::where('name', 'like', '%' . $phrase . '%')->limit($limit + 1)->get();
     $count = $foundItems->count();
     if ($count > 0)
-        return view('search.results', compact('foundItems', 'count', 'phrase'))->render();
+        return view('search.results', compact('foundItems', 'count', 'phrase', 'limit'))->render();
     return view('search.not-found');
 });
 

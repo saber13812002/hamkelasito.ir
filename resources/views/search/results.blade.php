@@ -20,7 +20,7 @@
         </li>
     @endforeach
 </ul>
-@if($count>3)
+@if($count>$limit)
     <a href="models-list/?s={{$phrase}}" class="more-result">
         See All {{$count}} Results
         <i class="icon-arrow-right"></i>
