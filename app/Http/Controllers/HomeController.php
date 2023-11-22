@@ -38,14 +38,26 @@ class HomeController
     {
         Log::info($request);
         $global = 'all';
+        $categoryId = null;
         if ($request->has('global')) {
             $global = $request->get('global');
         }
-        if ($global == 'all') {
+        if ($request->has('category_id')) {
+            $categoryId = $request->get('category_id');
+        }
+        if ($global == 'all' || $categoryId == null) {
             $members = Member::all();
         } else {
-            $members = Member::query()->whereType($global)->get();
+            $membersBuilder = Member::query()->whereType($global);
+            $membersBuilder->whereModelCategories('Model');
+            if ($categoryId == 1 || $categoryId == 2) {
+                $membersBuilder->whereGender($categoryId);
+            } else {
+                $membersBuilder->where('age', 'lt', 18);
+            }
+            $membersBuilder->get();
         }
+
 
         $categories = Category::all();
 
@@ -121,7 +133,7 @@ class HomeController
             $pdf = Pdf::loadView('pdf.composite2', ['member' => $member, 'url' => config('app.url')]);
 
 
-            $html ="
+            $html = "
 <html lang=\"en\">
 <head>
     <meta charset=\"UTF-8\">
