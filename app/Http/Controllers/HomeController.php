@@ -6,8 +6,7 @@ use App\Models\Category;
 use App\Models\ContactUs;
 use App\Models\Member;
 use App\Models\Slider;
-use Barryvdh\DomPDF\Facade\Pdf;
-use Dompdf\Dompdf;
+use Barryvdh\DomPDF\Facade\Pdf as PDF;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;
@@ -259,8 +258,10 @@ class HomeController
         if ($id) {
             $member = Member::query()->find($id);
             $url = config('app.url');
-            return view('pdf.composite2', compact('member', 'url'));
+            $pdf = PDF::loadView('pdf.composite2', compact('member', 'url'));
+            return $pdf->download('composite-' . $id . '.pdf');
         } else
             return redirect('home');
     }
+
 }
