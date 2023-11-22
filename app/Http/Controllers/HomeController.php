@@ -48,7 +48,10 @@ class HomeController
         if ($global == 'all' && $categoryId == null) {
             $members = Member::all();
         } else {
-            $membersBuilder = Member::query()->whereType($global);
+            $membersBuilder = Member::query();
+            if ($global != 'all') {
+                $membersBuilder->whereType($global);
+            }
             $membersBuilder->whereModelCategories('Model');
             if ($categoryId == 1 || $categoryId == 2) {
                 $membersBuilder->whereGender($categoryId);
