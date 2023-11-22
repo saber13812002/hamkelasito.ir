@@ -37,6 +37,7 @@ class HomeController
     public function modelsList(FormRequest $request)
     {
         Log::info($request);
+        $filter = [];
         $global = 'all';
         $categoryId = null;
         if ($request->has('global')) {
@@ -62,24 +63,22 @@ class HomeController
         }
         if ($request->has('s')) {
             $filterName = $request->get('s');
-            $filterName = '%' . $filterName . '%';
-            $membersBuilder->where('name', 'like', $filterName)
-                ->orWhere('family', 'like', $filterName)
-                ->orWhere('middle_name', 'like', $filterName)
-                ->orWhere('alias', 'like', $filterName)
-                ->orWhere('first_name_furigana', 'like', $filterName)
-                ->orWhere('last_name_furigana', 'like', $filterName)
-                ->orWhere('stage_name', 'like', $filterName);
+            $filterNameQuery = '%' . $filterName . '%';
+            $membersBuilder->where('name', 'like', $filterNameQuery)
+                ->orWhere('family', 'like', $filterNameQuery)
+                ->orWhere('middle_name', 'like', $filterNameQuery)
+                ->orWhere('alias', 'like', $filterNameQuery)
+                ->orWhere('first_name_furigana', 'like', $filterNameQuery)
+                ->orWhere('last_name_furigana', 'like', $filterNameQuery)
+                ->orWhere('stage_name', 'like', $filterNameQuery);
+            $filter['name'] = $filterName;
         }
 
         $members = $membersBuilder->get();
 
         $categories = Category::all();
 
-        return view('models-list', [
-            "categories" => $categories,
-            "members" => $members
-        ]);
+        return view('models-list', compact('members', 'categories', 'filter'));
 
     }
 

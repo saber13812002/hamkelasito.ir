@@ -105,7 +105,9 @@
                                     <div class="field field-type-nr-input" data-type="text">
                                         <div class="field-content">
                                             <label for="member_name">Name/Stage Name (Talent Name)</label>
-                                            <input type="text" name="member_name" id="member_name">
+                                            <input type="text" name="member_name"
+                                                   @if (isset($filter) && isset($filter['name'])) value="{{$filter['name']}}"
+                                                   @endif id="member_name">
                                         </div>
                                     </div>
                                 </div>
