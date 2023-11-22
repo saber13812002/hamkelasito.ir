@@ -76,8 +76,10 @@ Route::any('/search', function (Request $request) {
 //    dd($request->query('filter'), $request->query('sort'));
     $limit = 3;
     $phrase = $request->s;
-    $foundItems = Member::where('name', 'like', '%' . $phrase . '%')->limit($limit + 1)->get();
+    $phraseResults = Member::where('name', 'like', '%' . $phrase . '%');
+    $foundItems = $phraseResults->limit($limit + 1)->get();
     $count = $foundItems->count();
+    $foundItems = $phraseResults->limit($limit)->get();
     if ($count > 0)
         return view('search.results', compact('foundItems', 'count', 'phrase', 'limit'))->render();
     return view('search.not-found');
