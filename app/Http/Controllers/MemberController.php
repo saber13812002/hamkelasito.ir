@@ -202,9 +202,20 @@ class MemberController extends Controller
     /**
      * Show the form for creating a new resource.
      */
+    public function step0get()
+    {
+        $old = TempTable::query()->whereUserId(auth()->user()->id)->whereStepId(0)->get();
+        $token = session('token');
+        return view('apply_as.step-0', compact('token','old'));
+    }
+
+    /**
+     * Show the form for creating a new resource.
+     */
     public function step0()
     {
-        return view('apply_as.step-0');
+        $token = session('token');
+        return view('apply_as.step-0', compact('token'));
     }
 
     /**
@@ -214,7 +225,8 @@ class MemberController extends Controller
     {
 //        dd($request);
         $this->saveRequestToTempTable($request, 0);
-        return view('apply_as.step-1');
+        $token = session('token');
+        return view('apply_as.step-1', compact('token'));
     }
 
     /**

@@ -52,11 +52,11 @@
 
                                         <!-- model -->
                                         <div class="col-auto">
-                                            <div class="field field-type-checkbox" data-type="checkbox"
+                                            <div class="field field-type-checkbox @if (isset($old) && isset($old['work_as_model'])) "{{$old['work_as_model']?"field--valid":"field--invalid"}}" @endif " data-type="checkbox"
                                                  data-required="true">
                                                 <div class="field-content">
                                                     <label>
-                                                        <input type="checkbox" name="work_as_model" id="work_as_model">
+                                                        <input type="checkbox" name="work_as_model"id="work_as_model">
                                                         <span class="field-label">Model</span>
                                                         <span class="checkmark"></span>
                                                     </label>
@@ -135,7 +135,7 @@
                                 </div>
 
                                 <!-- sub talent -->
-                                <div data-dependency="#work_as_talent" data-dependency-value="on">
+                                <div data-dependency="#work_as_talent" data-dependency-value="on"  @if (isset($old) && isset($old['work_as_model'])) "{{$old['work_as_model']?"data-dependency-show=\"true\"":"field--invalid"}}" @endif >
                                     <div class="field field-type-select" data-field-defualt-text=" "
                                          data-btn-submit-text="Select"
                                          data-required="true" data-type="select" data-select-all="true"
