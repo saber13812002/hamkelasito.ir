@@ -52,12 +52,14 @@ class HomeController
             if ($global != 'all') {
                 $membersBuilder->whereType($global);
             }
+//            dd($membersBuilder->get());
             $membersBuilder->whereModelCategories('Model');
             if ($categoryId == 1 || $categoryId == 2) {
-                $membersBuilder->whereGender($categoryId);
+                $membersBuilder->whereGender($categoryId == 1 ? "Male" : "Female");
             } else {
-                $membersBuilder->where('age', 'lt', 18);
+                $membersBuilder->where('age', '<', 18);
             }
+            dd($membersBuilder->get());
             $members = $membersBuilder->get();
         }
 
