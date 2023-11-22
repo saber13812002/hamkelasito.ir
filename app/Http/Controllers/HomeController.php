@@ -45,7 +45,7 @@ class HomeController
         if ($request->has('category_id')) {
             $categoryId = $request->get('category_id');
         }
-        if ($global == 'all' || $categoryId == null) {
+        if ($global == 'all' && $categoryId == null) {
             $members = Member::all();
         } else {
             $membersBuilder = Member::query()->whereType($global);
