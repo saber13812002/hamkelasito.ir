@@ -59,7 +59,7 @@ class HomeController
             } else {
                 $membersBuilder->where('age', '<', 18);
             }
-            dd($membersBuilder->get());
+//            dd($membersBuilder->get());
             $members = $membersBuilder->get();
         }
 
