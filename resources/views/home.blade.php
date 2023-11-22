@@ -153,7 +153,7 @@
                     <div class="home-categories-content">
                         @foreach($categories as $category)
                             <div class="home-categories-item" itemscope="" itemtype="https://schema.org/DefinedTerm">
-                                <a href="models-list?age_group={{ $category->id }}" aria-label="{{ $category->name }} Category"
+                                <a href="models-list?category_id={{ $category->id }}" aria-label="{{ $category->name }} Category"
                                    itemprop="url">
                                     <img src="/storage/assets/img/category/{{ $category->image }}"
                                          class="lazy lz-entered lz-loaded"
