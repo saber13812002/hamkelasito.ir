@@ -45,9 +45,8 @@ class HomeController
         if ($request->has('category_id')) {
             $categoryId = $request->get('category_id');
         }
-        if ($global == 'all' && $categoryId == null) {
-            $members = Member::all();
-        } else {
+        $membersBuilder = Member::query();
+        if (!$global == 'all' || !$categoryId == null) {
             $membersBuilder = Member::query();
             if ($global != 'all') {
                 $membersBuilder->whereType($global);
@@ -60,9 +59,20 @@ class HomeController
                 $membersBuilder->where('age', '<', 18);
             }
 //            dd($membersBuilder->get());
-            $members = $membersBuilder->get();
+        }
+        if ($request->has('s')) {
+            $filterName = $request->get('s');
+            $filterName = '%' . $filterName . '%';
+            $membersBuilder->where('name', 'like', $filterName)
+                ->orWhere('family', 'like', $filterName)
+                ->orWhere('middle_name', 'like', $filterName)
+                ->orWhere('alias', 'like', $filterName)
+                ->orWhere('first_name_furigana', 'like', $filterName)
+                ->orWhere('last_name_furigana', 'like', $filterName)
+                ->orWhere('stage_name', 'like', $filterName);
         }
 
+        $members = $membersBuilder->get();
 
         $categories = Category::all();
 
