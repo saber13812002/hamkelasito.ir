@@ -809,18 +809,54 @@
                                                 <label for="birhtday_month">Month <span
                                                         class="field-required-star">*</span></label>
                                                 <select name="birhtday_month" id="birhtday_month">
-                                                    <option value="1">1 (January)</option>
-                                                    <option value="2">2 (February)</option>
-                                                    <option value="3">3 (March)</option>
-                                                    <option value="4">4 (April)</option>
-                                                    <option value="5">5 (May)</option>
-                                                    <option value="6">6 (June)</option>
-                                                    <option selected value="7">7 (July)</option>
-                                                    <option value="8">8 (August)</option>
-                                                    <option value="9">9 (September)</option>
-                                                    <option value="10">10 (October)</option>
-                                                    <option value="11">11 (November)</option>
-                                                    <option value="12">12 (December)</option>
+                                                    <option
+                                                        @if (isset($old) && isset($old['birhtday_month']) && str_contains($old['birhtday_month'],"1"))
+                                                            {{"selected"}}
+                                                        @endif value="1">1 (January)</option>
+                                                    <option
+                                                        @if (isset($old) && isset($old['birhtday_month']) && str_contains($old['birhtday_month'],"2"))
+                                                            {{"selected"}}
+                                                        @endif value="2">2 (February)</option>
+                                                    <option
+                                                        @if (isset($old) && isset($old['birhtday_month']) && str_contains($old['birhtday_month'],"3"))
+                                                            {{"selected"}}
+                                                        @endif value="3">3 (March)</option>
+                                                    <option
+                                                        @if (isset($old) && isset($old['birhtday_month']) && str_contains($old['birhtday_month'],"4"))
+                                                            {{"selected"}}
+                                                        @endif value="4">4 (April)</option>
+                                                    <option
+                                                        @if (isset($old) && isset($old['birhtday_month']) && str_contains($old['birhtday_month'],"5"))
+                                                            {{"selected"}}
+                                                        @endif value="5">5 (May)</option>
+                                                    <option
+                                                        @if (isset($old) && isset($old['birhtday_month']) && str_contains($old['birhtday_month'],"6"))
+                                                            {{"selected"}}
+                                                        @endif value="6">6 (June)</option>
+                                                    <option
+                                                        @if (isset($old) && isset($old['birhtday_month']) && str_contains($old['birhtday_month'],"7"))
+                                                            {{"selected"}}
+                                                        @endif value="7">7 (July)</option>
+                                                    <option
+                                                        @if (isset($old) && isset($old['birhtday_month']) && str_contains($old['birhtday_month'],"8"))
+                                                            {{"selected"}}
+                                                        @endif value="8">8 (August)</option>
+                                                    <option
+                                                        @if (isset($old) && isset($old['birhtday_month']) && str_contains($old['birhtday_month'],"9"))
+                                                            {{"selected"}}
+                                                        @endif value="9">9 (September)</option>
+                                                    <option
+                                                        @if (isset($old) && isset($old['birhtday_month']) && str_contains($old['birhtday_month'],"10"))
+                                                            {{"selected"}}
+                                                        @endif value="10">10 (October)</option>
+                                                    <option
+                                                        @if (isset($old) && isset($old['birhtday_month']) && str_contains($old['birhtday_month'],"11"))
+                                                            {{"selected"}}
+                                                        @endif value="11">11 (November)</option>
+                                                    <option
+                                                        @if (isset($old) && isset($old['birhtday_month']) && str_contains($old['birhtday_month'],"12"))
+                                                            {{"selected"}}
+                                                        @endif value="12">12 (December)</option>
                                                 </select>
                                                 <i class="icon-arrow-down"></i>
                                             </div>
@@ -836,37 +872,130 @@
                                                 <label for="birhtday_day">Day <span
                                                         class="field-required-star">*</span></label>
                                                 <select name="birhtday_day" id="birhtday_day">
-                                                    <option value="1">1</option>
-                                                    <option value="2">2</option>
-                                                    <option value="3">3</option>
-                                                    <option value="4">4</option>
-                                                    <option value="5">5</option>
-                                                    <option value="6">6</option>
-                                                    <option value="7">7</option>
-                                                    <option value="8">8</option>
-                                                    <option value="9">9</option>
-                                                    <option value="10">10</option>
-                                                    <option value="11">11</option>
-                                                    <option value="12">12</option>
-                                                    <option value="13">13</option>
-                                                    <option value="14">14</option>
-                                                    <option value="15">15</option>
-                                                    <option value="16">16</option>
-                                                    <option value="17">17</option>
-                                                    <option value="18">18</option>
-                                                    <option value="19">19</option>
-                                                    <option value="20">20</option>
-                                                    <option value="21">21</option>
-                                                    <option value="22">22</option>
-                                                    <option value="23">23</option>
-                                                    <option value="24">24</option>
-                                                    <option value="25">25</option>
-                                                    <option value="26">26</option>
-                                                    <option value="27">27</option>
-                                                    <option value="28">28</option>
-                                                    <option value="29">29</option>
-                                                    <option value="30">30</option>
-                                                    <option value="31">31</option>
+                                                    <option
+                                                        @if (isset($old) && isset($old['birhtday_day']) && str_contains($old['birhtday_day'],"1"))
+                                                            {{"selected"}}
+                                                        @endif value="1">1</option>
+                                                    <option
+                                                        @if (isset($old) && isset($old['birhtday_day']) && str_contains($old['birhtday_day'],"2"))
+                                                            {{"selected"}}
+                                                        @endif value="2">2</option>
+                                                    <option
+                                                        @if (isset($old) && isset($old['birhtday_day']) && str_contains($old['birhtday_day'],"3"))
+                                                            {{"selected"}}
+                                                        @endif value="3">3</option>
+                                                    <option
+                                                        @if (isset($old) && isset($old['birhtday_day']) && str_contains($old['birhtday_day'],"4"))
+                                                            {{"selected"}}
+                                                        @endif value="4">4</option>
+                                                    <option
+                                                        @if (isset($old) && isset($old['birhtday_day']) && str_contains($old['birhtday_day'],"5"))
+                                                            {{"selected"}}
+                                                        @endif value="5">5</option>
+                                                    <option
+                                                        @if (isset($old) && isset($old['birhtday_day']) && str_contains($old['birhtday_day'],"6"))
+                                                            {{"selected"}}
+                                                        @endif value="6">6</option>
+                                                    <option
+                                                        @if (isset($old) && isset($old['birhtday_day']) && str_contains($old['birhtday_day'],"7"))
+                                                            {{"selected"}}
+                                                        @endif value="7">7</option>
+                                                    <option
+                                                        @if (isset($old) && isset($old['birhtday_day']) && str_contains($old['birhtday_day'],"8"))
+                                                            {{"selected"}}
+                                                        @endif value="8">8</option>
+                                                    <option
+                                                        @if (isset($old) && isset($old['birhtday_day']) && str_contains($old['birhtday_day'],"9"))
+                                                            {{"selected"}}
+                                                        @endif value="9">9</option>
+                                                    <option
+                                                        @if (isset($old) && isset($old['birhtday_day']) && str_contains($old['birhtday_day'],"10"))
+                                                            {{"selected"}}
+                                                        @endif value="10">10</option>
+                                                    <option
+                                                        @if (isset($old) && isset($old['birhtday_day']) && str_contains($old['birhtday_day'],"11"))
+                                                            {{"selected"}}
+                                                        @endif value="11">11</option>
+                                                    <option
+                                                        @if (isset($old) && isset($old['birhtday_day']) && str_contains($old['birhtday_day'],"12"))
+                                                            {{"selected"}}
+                                                        @endif value="12">12</option>
+                                                    <option
+                                                        @if (isset($old) && isset($old['birhtday_day']) && str_contains($old['birhtday_day'],"13"))
+                                                            {{"selected"}}
+                                                        @endif value="13">13</option>
+                                                    <option
+                                                        @if (isset($old) && isset($old['birhtday_day']) && str_contains($old['birhtday_day'],"14"))
+                                                            {{"selected"}}
+                                                        @endif value="14">14</option>
+                                                    <option
+                                                        @if (isset($old) && isset($old['birhtday_day']) && str_contains($old['birhtday_day'],"15"))
+                                                            {{"selected"}}
+                                                        @endif value="15">15</option>
+                                                    <option
+                                                        @if (isset($old) && isset($old['birhtday_day']) && str_contains($old['birhtday_day'],"16"))
+                                                            {{"selected"}}
+                                                        @endif value="16">16</option>
+                                                    <option
+                                                        @if (isset($old) && isset($old['birhtday_day']) && str_contains($old['birhtday_day'],"17"))
+                                                            {{"selected"}}
+                                                        @endif value="17">17</option>
+                                                    <option
+                                                        @if (isset($old) && isset($old['birhtday_day']) && str_contains($old['birhtday_day'],"18"))
+                                                            {{"selected"}}
+                                                        @endif value="18">18</option>
+                                                    <option
+                                                        @if (isset($old) && isset($old['birhtday_day']) && str_contains($old['birhtday_day'],"19"))
+                                                            {{"selected"}}
+                                                        @endif value="19">19</option>
+                                                    <option
+                                                        @if (isset($old) && isset($old['birhtday_day']) && str_contains($old['birhtday_day'],"20"))
+                                                            {{"selected"}}
+                                                        @endif value="20">20</option>
+                                                    <option
+                                                        @if (isset($old) && isset($old['birhtday_day']) && str_contains($old['birhtday_day'],"21"))
+                                                            {{"selected"}}
+                                                        @endif value="21">21</option>
+                                                    <option
+                                                        @if (isset($old) && isset($old['birhtday_day']) && str_contains($old['birhtday_day'],"22"))
+                                                            {{"selected"}}
+                                                        @endif value="22">22</option>
+                                                    <option
+                                                        @if (isset($old) && isset($old['birhtday_day']) && str_contains($old['birhtday_day'],"23"))
+                                                            {{"selected"}}
+                                                        @endif value="23">23</option>
+                                                    <option
+                                                        @if (isset($old) && isset($old['birhtday_day']) && str_contains($old['birhtday_day'],"24"))
+                                                            {{"selected"}}
+                                                        @endif value="24">24</option>
+                                                    <option
+                                                        @if (isset($old) && isset($old['birhtday_day']) && str_contains($old['birhtday_day'],"25"))
+                                                            {{"selected"}}
+                                                        @endif value="25">25</option>
+                                                    <option
+                                                        @if (isset($old) && isset($old['birhtday_day']) && str_contains($old['birhtday_day'],"26"))
+                                                            {{"selected"}}
+                                                        @endif value="26">26</option>
+                                                    <option
+                                                        @if (isset($old) && isset($old['birhtday_day']) && str_contains($old['birhtday_day'],"27"))
+                                                            {{"selected"}}
+                                                        @endif value="27">27</option>
+                                                    <option
+                                                        @if (isset($old) && isset($old['birhtday_day']) && str_contains($old['birhtday_day'],"28"))
+                                                            {{"selected"}}
+                                                        @endif value="28">28</option>
+                                                    <option
+                                                        @if (isset($old) && isset($old['birhtday_day']) && str_contains($old['birhtday_day'],"29"))
+                                                            {{"selected"}}
+                                                        @endif value="29">29</option>
+                                                    <option
+                                                        @if (isset($old) && isset($old['birhtday_day']) && str_contains($old['birhtday_day'],"30"))
+                                                            {{"selected"}}
+                                                        @endif value="30">30</option>
+                                                    <option
+                                                        @if (isset($old) && isset($old['birhtday_day']) && str_contains($old['birhtday_day'],"31"))
+                                                            {{"selected"}}
+                                                        @endif value="31">31</option>
                                                 </select>
                                                 <i class="icon-arrow-down"></i>
                                             </div>
