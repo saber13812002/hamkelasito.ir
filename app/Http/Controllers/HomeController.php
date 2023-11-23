@@ -75,6 +75,10 @@ class HomeController
             $filter['name'] = $filterName;
         }
 
+        if ($global != 'all') {
+            $membersBuilder->whereType($global);
+        }
+
         $members = $membersBuilder->get();
 
         $categories = Category::all();
