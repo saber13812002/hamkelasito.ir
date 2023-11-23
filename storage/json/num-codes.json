@@ -1,0 +1,1752 @@
+[
+    {
+        "id": "AFG",
+        "text": "+93",
+        "value": "AFG",
+        "color": false,
+        "flag": "https:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/5\/5c\/Flag_of_the_Taliban.svg\/320px-Flag_of_the_Taliban.svg.png"
+    },
+    {
+        "id": "ALA",
+        "text": "+358",
+        "value": "ALA",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/ax.png"
+    },
+    {
+        "id": "ALB",
+        "text": "+355",
+        "value": "ALB",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/al.png"
+    },
+    {
+        "id": "DZA",
+        "text": "+213",
+        "value": "DZA",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/dz.png"
+    },
+    {
+        "id": "ASM",
+        "text": "+1",
+        "value": "ASM",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/as.png"
+    },
+    {
+        "id": "AND",
+        "text": "+376",
+        "value": "AND",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/ad.png"
+    },
+    {
+        "id": "AGO",
+        "text": "+244",
+        "value": "AGO",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/ao.png"
+    },
+    {
+        "id": "AIA",
+        "text": "+1",
+        "value": "AIA",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/ai.png"
+    },
+    {
+        "id": "ATA",
+        "text": "+672",
+        "value": "ATA",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/aq.png"
+    },
+    {
+        "id": "ATG",
+        "text": "+1",
+        "value": "ATG",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/ag.png"
+    },
+    {
+        "id": "ARG",
+        "text": "+54",
+        "value": "ARG",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/ar.png"
+    },
+    {
+        "id": "ARM",
+        "text": "+374",
+        "value": "ARM",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/am.png"
+    },
+    {
+        "id": "ABW",
+        "text": "+297",
+        "value": "ABW",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/aw.png"
+    },
+    {
+        "id": "AUS",
+        "text": "+61",
+        "value": "AUS",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/au.png"
+    },
+    {
+        "id": "AUT",
+        "text": "+43",
+        "value": "AUT",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/at.png"
+    },
+    {
+        "id": "AZE",
+        "text": "+994",
+        "value": "AZE",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/az.png"
+    },
+    {
+        "id": "BHS",
+        "text": "+1",
+        "value": "BHS",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/bs.png"
+    },
+    {
+        "id": "BHR",
+        "text": "+973",
+        "value": "BHR",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/bh.png"
+    },
+    {
+        "id": "BGD",
+        "text": "+880",
+        "value": "BGD",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/bd.png"
+    },
+    {
+        "id": "BRB",
+        "text": "+1",
+        "value": "BRB",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/bb.png"
+    },
+    {
+        "id": "BLR",
+        "text": "+375",
+        "value": "BLR",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/by.png"
+    },
+    {
+        "id": "BEL",
+        "text": "+32",
+        "value": "BEL",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/be.png"
+    },
+    {
+        "id": "BLZ",
+        "text": "+501",
+        "value": "BLZ",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/bz.png"
+    },
+    {
+        "id": "BEN",
+        "text": "+229",
+        "value": "BEN",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/bj.png"
+    },
+    {
+        "id": "BMU",
+        "text": "+1",
+        "value": "BMU",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/bm.png"
+    },
+    {
+        "id": "BTN",
+        "text": "+975",
+        "value": "BTN",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/bt.png"
+    },
+    {
+        "id": "BOL",
+        "text": "+591",
+        "value": "BOL",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/bo.png"
+    },
+    {
+        "id": "BES",
+        "text": "+599",
+        "value": "BES",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/bq.png"
+    },
+    {
+        "id": "BIH",
+        "text": "+387",
+        "value": "BIH",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/ba.png"
+    },
+    {
+        "id": "BWA",
+        "text": "+267",
+        "value": "BWA",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/bw.png"
+    },
+    {
+        "id": "BVT",
+        "text": "+47",
+        "value": "BVT",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/bv.png"
+    },
+    {
+        "id": "BRA",
+        "text": "+55",
+        "value": "BRA",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/br.png"
+    },
+    {
+        "id": "IOT",
+        "text": "+246",
+        "value": "IOT",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/io.png"
+    },
+    {
+        "id": "UMI",
+        "text": "+246",
+        "value": "UMI",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/um.png"
+    },
+    {
+        "id": "VGB",
+        "text": "+1",
+        "value": "VGB",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/vg.png"
+    },
+    {
+        "id": "VIR",
+        "text": "+1 340",
+        "value": "VIR",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/vi.png"
+    },
+    {
+        "id": "BRN",
+        "text": "+673",
+        "value": "BRN",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/bn.png"
+    },
+    {
+        "id": "BGR",
+        "text": "+359",
+        "value": "BGR",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/bg.png"
+    },
+    {
+        "id": "BFA",
+        "text": "+226",
+        "value": "BFA",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/bf.png"
+    },
+    {
+        "id": "BDI",
+        "text": "+257",
+        "value": "BDI",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/bi.png"
+    },
+    {
+        "id": "KHM",
+        "text": "+855",
+        "value": "KHM",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/kh.png"
+    },
+    {
+        "id": "CMR",
+        "text": "+237",
+        "value": "CMR",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/cm.png"
+    },
+    {
+        "id": "CAN",
+        "text": "+1",
+        "value": "CAN",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/ca.png"
+    },
+    {
+        "id": "CPV",
+        "text": "+238",
+        "value": "CPV",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/cv.png"
+    },
+    {
+        "id": "CYM",
+        "text": "+1",
+        "value": "CYM",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/ky.png"
+    },
+    {
+        "id": "CAF",
+        "text": "+236",
+        "value": "CAF",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/cf.png"
+    },
+    {
+        "id": "TCD",
+        "text": "+235",
+        "value": "TCD",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/td.png"
+    },
+    {
+        "id": "CHL",
+        "text": "+56",
+        "value": "CHL",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/cl.png"
+    },
+    {
+        "id": "CHN",
+        "text": "+86",
+        "value": "CHN",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/cn.png"
+    },
+    {
+        "id": "CXR",
+        "text": "+61",
+        "value": "CXR",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/cx.png"
+    },
+    {
+        "id": "CCK",
+        "text": "+61",
+        "value": "CCK",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/cc.png"
+    },
+    {
+        "id": "COL",
+        "text": "+57",
+        "value": "COL",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/co.png"
+    },
+    {
+        "id": "COM",
+        "text": "+269",
+        "value": "COM",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/km.png"
+    },
+    {
+        "id": "COG",
+        "text": "+242",
+        "value": "COG",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/cg.png"
+    },
+    {
+        "id": "COD",
+        "text": "+243",
+        "value": "COD",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/cd.png"
+    },
+    {
+        "id": "COK",
+        "text": "+682",
+        "value": "COK",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/ck.png"
+    },
+    {
+        "id": "CRI",
+        "text": "+506",
+        "value": "CRI",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/cr.png"
+    },
+    {
+        "id": "HRV",
+        "text": "+385",
+        "value": "HRV",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/hr.png"
+    },
+    {
+        "id": "CUB",
+        "text": "+53",
+        "value": "CUB",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/cu.png"
+    },
+    {
+        "id": "CUW",
+        "text": "+599",
+        "value": "CUW",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/cw.png"
+    },
+    {
+        "id": "CYP",
+        "text": "+357",
+        "value": "CYP",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/cy.png"
+    },
+    {
+        "id": "CZE",
+        "text": "+420",
+        "value": "CZE",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/cz.png"
+    },
+    {
+        "id": "DNK",
+        "text": "+45",
+        "value": "DNK",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/dk.png"
+    },
+    {
+        "id": "DJI",
+        "text": "+253",
+        "value": "DJI",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/dj.png"
+    },
+    {
+        "id": "DMA",
+        "text": "+1",
+        "value": "DMA",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/dm.png"
+    },
+    {
+        "id": "DOM",
+        "text": "+1",
+        "value": "DOM",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/do.png"
+    },
+    {
+        "id": "ECU",
+        "text": "+593",
+        "value": "ECU",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/ec.png"
+    },
+    {
+        "id": "EGY",
+        "text": "+20",
+        "value": "EGY",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/eg.png"
+    },
+    {
+        "id": "SLV",
+        "text": "+503",
+        "value": "SLV",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/sv.png"
+    },
+    {
+        "id": "GNQ",
+        "text": "+240",
+        "value": "GNQ",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/gq.png"
+    },
+    {
+        "id": "ERI",
+        "text": "+291",
+        "value": "ERI",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/er.png"
+    },
+    {
+        "id": "EST",
+        "text": "+372",
+        "value": "EST",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/ee.png"
+    },
+    {
+        "id": "ETH",
+        "text": "+251",
+        "value": "ETH",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/et.png"
+    },
+    {
+        "id": "FLK",
+        "text": "+500",
+        "value": "FLK",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/fk.png"
+    },
+    {
+        "id": "FRO",
+        "text": "+298",
+        "value": "FRO",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/fo.png"
+    },
+    {
+        "id": "FJI",
+        "text": "+679",
+        "value": "FJI",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/fj.png"
+    },
+    {
+        "id": "FIN",
+        "text": "+358",
+        "value": "FIN",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/fi.png"
+    },
+    {
+        "id": "FRA",
+        "text": "+33",
+        "value": "FRA",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/fr.png"
+    },
+    {
+        "id": "GUF",
+        "text": "+594",
+        "value": "GUF",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/gf.png"
+    },
+    {
+        "id": "PYF",
+        "text": "+689",
+        "value": "PYF",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/pf.png"
+    },
+    {
+        "id": "ATF",
+        "text": "+262",
+        "value": "ATF",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/tf.png"
+    },
+    {
+        "id": "GAB",
+        "text": "+241",
+        "value": "GAB",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/ga.png"
+    },
+    {
+        "id": "GMB",
+        "text": "+220",
+        "value": "GMB",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/gm.png"
+    },
+    {
+        "id": "GEO",
+        "text": "+995",
+        "value": "GEO",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/ge.png"
+    },
+    {
+        "id": "DEU",
+        "text": "+49",
+        "value": "DEU",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/de.png"
+    },
+    {
+        "id": "GHA",
+        "text": "+233",
+        "value": "GHA",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/gh.png"
+    },
+    {
+        "id": "GIB",
+        "text": "+350",
+        "value": "GIB",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/gi.png"
+    },
+    {
+        "id": "GRC",
+        "text": "+30",
+        "value": "GRC",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/gr.png"
+    },
+    {
+        "id": "GRL",
+        "text": "+299",
+        "value": "GRL",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/gl.png"
+    },
+    {
+        "id": "GRD",
+        "text": "+1",
+        "value": "GRD",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/gd.png"
+    },
+    {
+        "id": "GLP",
+        "text": "+590",
+        "value": "GLP",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/gp.png"
+    },
+    {
+        "id": "GUM",
+        "text": "+1",
+        "value": "GUM",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/gu.png"
+    },
+    {
+        "id": "GTM",
+        "text": "+502",
+        "value": "GTM",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/gt.png"
+    },
+    {
+        "id": "GGY",
+        "text": "+44",
+        "value": "GGY",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/gg.png"
+    },
+    {
+        "id": "GIN",
+        "text": "+224",
+        "value": "GIN",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/gn.png"
+    },
+    {
+        "id": "GNB",
+        "text": "+245",
+        "value": "GNB",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/gw.png"
+    },
+    {
+        "id": "GUY",
+        "text": "+592",
+        "value": "GUY",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/gy.png"
+    },
+    {
+        "id": "HTI",
+        "text": "+509",
+        "value": "HTI",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/ht.png"
+    },
+    {
+        "id": "HMD",
+        "text": "+672",
+        "value": "HMD",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/hm.png"
+    },
+    {
+        "id": "VAT",
+        "text": "+379",
+        "value": "VAT",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/va.png"
+    },
+    {
+        "id": "HND",
+        "text": "+504",
+        "value": "HND",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/hn.png"
+    },
+    {
+        "id": "HUN",
+        "text": "+36",
+        "value": "HUN",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/hu.png"
+    },
+    {
+        "id": "HKG",
+        "text": "+852",
+        "value": "HKG",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/hk.png"
+    },
+    {
+        "id": "ISL",
+        "text": "+354",
+        "value": "ISL",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/is.png"
+    },
+    {
+        "id": "IND",
+        "text": "+91",
+        "value": "IND",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/in.png"
+    },
+    {
+        "id": "IDN",
+        "text": "+62",
+        "value": "IDN",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/id.png"
+    },
+    {
+        "id": "CIV",
+        "text": "+225",
+        "value": "CIV",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/ci.png"
+    },
+    {
+        "id": "IRN",
+        "text": "+98",
+        "value": "IRN",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/ir.png"
+    },
+    {
+        "id": "IRQ",
+        "text": "+964",
+        "value": "IRQ",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/iq.png"
+    },
+    {
+        "id": "IRL",
+        "text": "+353",
+        "value": "IRL",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/ie.png"
+    },
+    {
+        "id": "IMN",
+        "text": "+44",
+        "value": "IMN",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/im.png"
+    },
+    {
+        "id": "ISR",
+        "text": "+972",
+        "value": "ISR",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/il.png"
+    },
+    {
+        "id": "ITA",
+        "text": "+39",
+        "value": "ITA",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/it.png"
+    },
+    {
+        "id": "JAM",
+        "text": "+1",
+        "value": "JAM",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/jm.png"
+    },
+    {
+        "id": "JPN",
+        "text": "+81",
+        "value": "JPN",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/jp.png"
+    },
+    {
+        "id": "JEY",
+        "text": "+44",
+        "value": "JEY",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/je.png"
+    },
+    {
+        "id": "JOR",
+        "text": "+962",
+        "value": "JOR",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/jo.png"
+    },
+    {
+        "id": "KAZ",
+        "text": "+76,77",
+        "value": "KAZ",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/kz.png"
+    },
+    {
+        "id": "KEN",
+        "text": "+254",
+        "value": "KEN",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/ke.png"
+    },
+    {
+        "id": "KIR",
+        "text": "+686",
+        "value": "KIR",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/ki.png"
+    },
+    {
+        "id": "KWT",
+        "text": "+965",
+        "value": "KWT",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/kw.png"
+    },
+    {
+        "id": "KGZ",
+        "text": "+996",
+        "value": "KGZ",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/kg.png"
+    },
+    {
+        "id": "LAO",
+        "text": "+856",
+        "value": "LAO",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/la.png"
+    },
+    {
+        "id": "LVA",
+        "text": "+371",
+        "value": "LVA",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/lv.png"
+    },
+    {
+        "id": "LBN",
+        "text": "+961",
+        "value": "LBN",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/lb.png"
+    },
+    {
+        "id": "LSO",
+        "text": "+266",
+        "value": "LSO",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/ls.png"
+    },
+    {
+        "id": "LBR",
+        "text": "+231",
+        "value": "LBR",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/lr.png"
+    },
+    {
+        "id": "LBY",
+        "text": "+218",
+        "value": "LBY",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/ly.png"
+    },
+    {
+        "id": "LIE",
+        "text": "+423",
+        "value": "LIE",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/li.png"
+    },
+    {
+        "id": "LTU",
+        "text": "+370",
+        "value": "LTU",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/lt.png"
+    },
+    {
+        "id": "LUX",
+        "text": "+352",
+        "value": "LUX",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/lu.png"
+    },
+    {
+        "id": "MAC",
+        "text": "+853",
+        "value": "MAC",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/mo.png"
+    },
+    {
+        "id": "MKD",
+        "text": "+389",
+        "value": "MKD",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/mk.png"
+    },
+    {
+        "id": "MDG",
+        "text": "+261",
+        "value": "MDG",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/mg.png"
+    },
+    {
+        "id": "MWI",
+        "text": "+265",
+        "value": "MWI",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/mw.png"
+    },
+    {
+        "id": "MYS",
+        "text": "+60",
+        "value": "MYS",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/my.png"
+    },
+    {
+        "id": "MDV",
+        "text": "+960",
+        "value": "MDV",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/mv.png"
+    },
+    {
+        "id": "MLI",
+        "text": "+223",
+        "value": "MLI",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/ml.png"
+    },
+    {
+        "id": "MLT",
+        "text": "+356",
+        "value": "MLT",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/mt.png"
+    },
+    {
+        "id": "MHL",
+        "text": "+692",
+        "value": "MHL",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/mh.png"
+    },
+    {
+        "id": "MTQ",
+        "text": "+596",
+        "value": "MTQ",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/mq.png"
+    },
+    {
+        "id": "MRT",
+        "text": "+222",
+        "value": "MRT",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/mr.png"
+    },
+    {
+        "id": "MUS",
+        "text": "+230",
+        "value": "MUS",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/mu.png"
+    },
+    {
+        "id": "MYT",
+        "text": "+262",
+        "value": "MYT",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/yt.png"
+    },
+    {
+        "id": "MEX",
+        "text": "+52",
+        "value": "MEX",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/mx.png"
+    },
+    {
+        "id": "FSM",
+        "text": "+691",
+        "value": "FSM",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/fm.png"
+    },
+    {
+        "id": "MDA",
+        "text": "+373",
+        "value": "MDA",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/md.png"
+    },
+    {
+        "id": "MCO",
+        "text": "+377",
+        "value": "MCO",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/mc.png"
+    },
+    {
+        "id": "MNG",
+        "text": "+976",
+        "value": "MNG",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/mn.png"
+    },
+    {
+        "id": "MNE",
+        "text": "+382",
+        "value": "MNE",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/me.png"
+    },
+    {
+        "id": "MSR",
+        "text": "+1",
+        "value": "MSR",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/ms.png"
+    },
+    {
+        "id": "MAR",
+        "text": "+212",
+        "value": "MAR",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/ma.png"
+    },
+    {
+        "id": "MOZ",
+        "text": "+258",
+        "value": "MOZ",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/mz.png"
+    },
+    {
+        "id": "MMR",
+        "text": "+95",
+        "value": "MMR",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/mm.png"
+    },
+    {
+        "id": "NAM",
+        "text": "+264",
+        "value": "NAM",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/na.png"
+    },
+    {
+        "id": "NRU",
+        "text": "+674",
+        "value": "NRU",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/nr.png"
+    },
+    {
+        "id": "NPL",
+        "text": "+977",
+        "value": "NPL",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/np.png"
+    },
+    {
+        "id": "NLD",
+        "text": "+31",
+        "value": "NLD",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/nl.png"
+    },
+    {
+        "id": "NCL",
+        "text": "+687",
+        "value": "NCL",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/nc.png"
+    },
+    {
+        "id": "NZL",
+        "text": "+64",
+        "value": "NZL",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/nz.png"
+    },
+    {
+        "id": "NIC",
+        "text": "+505",
+        "value": "NIC",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/ni.png"
+    },
+    {
+        "id": "NER",
+        "text": "+227",
+        "value": "NER",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/ne.png"
+    },
+    {
+        "id": "NGA",
+        "text": "+234",
+        "value": "NGA",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/ng.png"
+    },
+    {
+        "id": "NIU",
+        "text": "+683",
+        "value": "NIU",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/nu.png"
+    },
+    {
+        "id": "NFK",
+        "text": "+672",
+        "value": "NFK",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/nf.png"
+    },
+    {
+        "id": "PRK",
+        "text": "+850",
+        "value": "PRK",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/kp.png"
+    },
+    {
+        "id": "MNP",
+        "text": "+1",
+        "value": "MNP",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/mp.png"
+    },
+    {
+        "id": "NOR",
+        "text": "+47",
+        "value": "NOR",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/no.png"
+    },
+    {
+        "id": "OMN",
+        "text": "+968",
+        "value": "OMN",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/om.png"
+    },
+    {
+        "id": "PAK",
+        "text": "+92",
+        "value": "PAK",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/pk.png"
+    },
+    {
+        "id": "PLW",
+        "text": "+680",
+        "value": "PLW",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/pw.png"
+    },
+    {
+        "id": "PSE",
+        "text": "+970",
+        "value": "PSE",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/ps.png"
+    },
+    {
+        "id": "PAN",
+        "text": "+507",
+        "value": "PAN",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/pa.png"
+    },
+    {
+        "id": "PNG",
+        "text": "+675",
+        "value": "PNG",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/pg.png"
+    },
+    {
+        "id": "PRY",
+        "text": "+595",
+        "value": "PRY",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/py.png"
+    },
+    {
+        "id": "PER",
+        "text": "+51",
+        "value": "PER",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/pe.png"
+    },
+    {
+        "id": "PHL",
+        "text": "+63",
+        "value": "PHL",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/ph.png"
+    },
+    {
+        "id": "PCN",
+        "text": "+64",
+        "value": "PCN",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/pn.png"
+    },
+    {
+        "id": "POL",
+        "text": "+48",
+        "value": "POL",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/pl.png"
+    },
+    {
+        "id": "PRT",
+        "text": "+351",
+        "value": "PRT",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/pt.png"
+    },
+    {
+        "id": "PRI",
+        "text": "+1",
+        "value": "PRI",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/pr.png"
+    },
+    {
+        "id": "QAT",
+        "text": "+974",
+        "value": "QAT",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/qa.png"
+    },
+    {
+        "id": "UNK",
+        "text": "+383",
+        "value": "UNK",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/xk.png"
+    },
+    {
+        "id": "REU",
+        "text": "+262",
+        "value": "REU",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/re.png"
+    },
+    {
+        "id": "ROU",
+        "text": "+40",
+        "value": "ROU",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/ro.png"
+    },
+    {
+        "id": "RUS",
+        "text": "+7",
+        "value": "RUS",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/ru.png"
+    },
+    {
+        "id": "RWA",
+        "text": "+250",
+        "value": "RWA",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/rw.png"
+    },
+    {
+        "id": "BLM",
+        "text": "+590",
+        "value": "BLM",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/bl.png"
+    },
+    {
+        "id": "SHN",
+        "text": "+290",
+        "value": "SHN",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/sh.png"
+    },
+    {
+        "id": "KNA",
+        "text": "+1",
+        "value": "KNA",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/kn.png"
+    },
+    {
+        "id": "LCA",
+        "text": "+1",
+        "value": "LCA",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/lc.png"
+    },
+    {
+        "id": "MAF",
+        "text": "+590",
+        "value": "MAF",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/mf.png"
+    },
+    {
+        "id": "SPM",
+        "text": "+508",
+        "value": "SPM",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/pm.png"
+    },
+    {
+        "id": "VCT",
+        "text": "+1",
+        "value": "VCT",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/vc.png"
+    },
+    {
+        "id": "WSM",
+        "text": "+685",
+        "value": "WSM",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/ws.png"
+    },
+    {
+        "id": "SMR",
+        "text": "+378",
+        "value": "SMR",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/sm.png"
+    },
+    {
+        "id": "STP",
+        "text": "+239",
+        "value": "STP",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/st.png"
+    },
+    {
+        "id": "SAU",
+        "text": "+966",
+        "value": "SAU",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/sa.png"
+    },
+    {
+        "id": "SEN",
+        "text": "+221",
+        "value": "SEN",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/sn.png"
+    },
+    {
+        "id": "SRB",
+        "text": "+381",
+        "value": "SRB",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/rs.png"
+    },
+    {
+        "id": "SYC",
+        "text": "+248",
+        "value": "SYC",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/sc.png"
+    },
+    {
+        "id": "SLE",
+        "text": "+232",
+        "value": "SLE",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/sl.png"
+    },
+    {
+        "id": "SGP",
+        "text": "+65",
+        "value": "SGP",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/sg.png"
+    },
+    {
+        "id": "SXM",
+        "text": "+1",
+        "value": "SXM",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/sx.png"
+    },
+    {
+        "id": "SVK",
+        "text": "+421",
+        "value": "SVK",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/sk.png"
+    },
+    {
+        "id": "SVN",
+        "text": "+386",
+        "value": "SVN",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/si.png"
+    },
+    {
+        "id": "SLB",
+        "text": "+677",
+        "value": "SLB",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/sb.png"
+    },
+    {
+        "id": "SOM",
+        "text": "+252",
+        "value": "SOM",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/so.png"
+    },
+    {
+        "id": "ZAF",
+        "text": "+27",
+        "value": "ZAF",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/za.png"
+    },
+    {
+        "id": "SGS",
+        "text": "+500",
+        "value": "SGS",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/gs.png"
+    },
+    {
+        "id": "KOR",
+        "text": "+82",
+        "value": "KOR",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/kr.png"
+    },
+    {
+        "id": "ESP",
+        "text": "+34",
+        "value": "ESP",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/es.png"
+    },
+    {
+        "id": "LKA",
+        "text": "+94",
+        "value": "LKA",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/lk.png"
+    },
+    {
+        "id": "SDN",
+        "text": "+249",
+        "value": "SDN",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/sd.png"
+    },
+    {
+        "id": "SSD",
+        "text": "+211",
+        "value": "SSD",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/ss.png"
+    },
+    {
+        "id": "SUR",
+        "text": "+597",
+        "value": "SUR",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/sr.png"
+    },
+    {
+        "id": "SJM",
+        "text": "+47",
+        "value": "SJM",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/sj.png"
+    },
+    {
+        "id": "SWZ",
+        "text": "+268",
+        "value": "SWZ",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/sz.png"
+    },
+    {
+        "id": "SWE",
+        "text": "+46",
+        "value": "SWE",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/se.png"
+    },
+    {
+        "id": "CHE",
+        "text": "+41",
+        "value": "CHE",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/ch.png"
+    },
+    {
+        "id": "SYR",
+        "text": "+963",
+        "value": "SYR",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/sy.png"
+    },
+    {
+        "id": "TWN",
+        "text": "+886",
+        "value": "TWN",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/tw.png"
+    },
+    {
+        "id": "TJK",
+        "text": "+992",
+        "value": "TJK",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/tj.png"
+    },
+    {
+        "id": "TZA",
+        "text": "+255",
+        "value": "TZA",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/tz.png"
+    },
+    {
+        "id": "THA",
+        "text": "+66",
+        "value": "THA",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/th.png"
+    },
+    {
+        "id": "TLS",
+        "text": "+670",
+        "value": "TLS",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/tl.png"
+    },
+    {
+        "id": "TGO",
+        "text": "+228",
+        "value": "TGO",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/tg.png"
+    },
+    {
+        "id": "TKL",
+        "text": "+690",
+        "value": "TKL",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/tk.png"
+    },
+    {
+        "id": "TON",
+        "text": "+676",
+        "value": "TON",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/to.png"
+    },
+    {
+        "id": "TTO",
+        "text": "+1",
+        "value": "TTO",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/tt.png"
+    },
+    {
+        "id": "TUN",
+        "text": "+216",
+        "value": "TUN",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/tn.png"
+    },
+    {
+        "id": "TUR",
+        "text": "+90",
+        "value": "TUR",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/tr.png"
+    },
+    {
+        "id": "TKM",
+        "text": "+993",
+        "value": "TKM",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/tm.png"
+    },
+    {
+        "id": "TCA",
+        "text": "+1",
+        "value": "TCA",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/tc.png"
+    },
+    {
+        "id": "TUV",
+        "text": "+688",
+        "value": "TUV",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/tv.png"
+    },
+    {
+        "id": "UGA",
+        "text": "+256",
+        "value": "UGA",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/ug.png"
+    },
+    {
+        "id": "UKR",
+        "text": "+380",
+        "value": "UKR",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/ua.png"
+    },
+    {
+        "id": "ARE",
+        "text": "+971",
+        "value": "ARE",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/ae.png"
+    },
+    {
+        "id": "GBR",
+        "text": "+44",
+        "value": "GBR",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/gb.png"
+    },
+    {
+        "id": "USA",
+        "text": "+1",
+        "value": "USA",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/us.png"
+    },
+    {
+        "id": "URY",
+        "text": "+598",
+        "value": "URY",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/uy.png"
+    },
+    {
+        "id": "UZB",
+        "text": "+998",
+        "value": "UZB",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/uz.png"
+    },
+    {
+        "id": "VUT",
+        "text": "+678",
+        "value": "VUT",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/vu.png"
+    },
+    {
+        "id": "VEN",
+        "text": "+58",
+        "value": "VEN",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/ve.png"
+    },
+    {
+        "id": "VNM",
+        "text": "+84",
+        "value": "VNM",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/vn.png"
+    },
+    {
+        "id": "WLF",
+        "text": "+681",
+        "value": "WLF",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/wf.png"
+    },
+    {
+        "id": "ESH",
+        "text": "+212",
+        "value": "ESH",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/eh.png"
+    },
+    {
+        "id": "YEM",
+        "text": "+967",
+        "value": "YEM",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/ye.png"
+    },
+    {
+        "id": "ZMB",
+        "text": "+260",
+        "value": "ZMB",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/zm.png"
+    },
+    {
+        "id": "ZWE",
+        "text": "+263",
+        "value": "ZWE",
+        "color": false,
+        "flag": "https:\/\/flagcdn.com\/w320\/zw.png"
+    }
+]

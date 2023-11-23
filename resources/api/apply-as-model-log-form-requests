@@ -1,0 +1,137 @@
+
+[2023-11-11 17:41:57] local.INFO: array (
+  '_token' => 'pAomNLG9SZXryxuuzxJ8XG7z45yYHM7w44cFm9Zt',
+  'work_as_model' => 'on',
+  'model_type' => 'fashion_model',
+  'talent_type' => NULL,
+  'actor_actress_type' => NULL,
+  'extra_type' => 'All types of extra',
+  'gender' => 'male',
+  'birhtday_year' => '2022',
+  'birhtday_month' => '2',
+  'birhtday_day' => '2',
+  'nationality' => 'Algeria',
+  'step' => 0,
+)
+[2023-11-11 17:58:19] local.INFO: array (
+  '_token' => 'pAomNLG9SZXryxuuzxJ8XG7z45yYHM7w44cFm9Zt',
+  'work_as_model' => 'on',
+  'model_type' => 'fashion_model',
+  'talent_type' => NULL,
+  'actor_actress_type' => NULL,
+  'extra_type' => 'All types of extra',
+  'gender' => 'male',
+  'birhtday_year' => '2022',
+  'birhtday_month' => '2',
+  'birhtday_day' => '2',
+  'nationality' => 'Algeria',
+  'step' => 0,
+)
+[2023-11-11 18:01:06] local.INFO: array (
+  '_token' => 'pAomNLG9SZXryxuuzxJ8XG7z45yYHM7w44cFm9Zt',
+  'first_name' => 'asdf',
+  'first_name_furigana' => '島',
+  'middle_name' => 'adf',
+  'last_name' => 'adf',
+  'last_name_furigana' => '島',
+  'stage_name' => 'adf',
+  'have_other_nationality' => 'yes',
+  'other_nationality' => 'Åland Islands,Albania',
+  'are_you_mixed' => 'yes',
+  'fathers_nationality' => 'Afghanistan',
+  'mothers_nationality' => 'Albania',
+  'step' => 1,
+)
+[2023-11-11 18:06:05] local.INFO: array (
+  '_token' => 'pAomNLG9SZXryxuuzxJ8XG7z45yYHM7w44cFm9Zt',
+  'eye_color' => 'Amber',
+  'current_hair_color' => 'Black',
+  'height' => '124',
+  'weight' => '45',
+  'bust' => '45',
+  'hips' => '45',
+  'waist' => '33',
+  'size_unit' => 'eu',
+  'shoe_jp_size' => NULL,
+  'shoe_uk_size' => NULL,
+  'shoe_us_men_size' => NULL,
+  'shoe_us_women_size' => NULL,
+  'shoe_eu_size' => '44',
+  'clothe_size' => '90',
+  'step' => 2,
+)
+[2023-11-11 18:08:35] local.INFO: array (
+  '_token' => 'pAomNLG9SZXryxuuzxJ8XG7z45yYHM7w44cFm9Zt',
+  'native_language' => 'az',
+  'other_language' => '[{"language":{"type":"select","input":"aa","text":"Afar"},"level":{"type":"select","input":"Fluent","text":"Fluent"}},{"language":{"type":"select","input":"ak","text":"Akan"},"level":{"type":"select","input":"Native","text":"Native"}}]',
+  'biography' => 'sdfasfsdfasdfasdf',
+  'skills' => '[{"skills_type":{"type":"select","input":"dance_skill","text":"Dance Skill"},"other_skills":{"type":"text","input":"","text":""},"sport_skill_type":{"type":"select","input":"","text":""},"dance_skill_type":{"type":"select","input":"hip_hop_dance","text":"Hip hop dance"},"singing_skill_type":{"type":"select","input":"","text":""},"acting_skill_type":{"type":"select","input":"","text":""},"musical_instrument_skill_type":{"type":"select","input":"","text":""},"performance_skill_type":{"type":"select","input":"","text":""},"driving_skill_type":{"type":"select","input":"","text":""},"culinary_skill_type":{"type":"select","input":"","text":""},"visual_art_skill_type":{"type":"select","input":"","text":""},"sport_other_skills":{"type":"text","input":"","text":""},"dance_other_skills":{"type":"text","input":"","text":""},"singing_other_skills":{"type":"text","input":"","text":""},"acting_other_skills":{"type":"text","input":"","text":""},"musical_instrument_other_skills":{"type":"text","input":"","text":""},"performance_other_skills":{"type":"text","input":"","text":""},"driving_other_skills":{"type":"text","input":"","text":""},"culinary_other_skills":{"type":"text","input":"","text":""},"visual_art_other_skills":{"type":"text","input":"","text":""},"skills_description":{"type":"textarea","input":"adsfadsfadsf","text":"adsfadsfadsf"},"photos":{"type":"upload","input":"","text":[]},"videos":{"type":"upload","input":"","text":[]},"audios":{"type":"upload","input":"","text":[]}},{"skills_type":{"type":"select","input":"singing_skill","text":"Singing Skill"},"other_skills":{"type":"text","input":"","text":""},"sport_skill_type":{"type":"select","input":"","text":""},"dance_skill_type":{"type":"select","input":"","text":""},"singing_skill_type":{"type":"select","input":"techno","text":"Techno"},"acting_skill_type":{"type":"select","input":"","text":""},"musical_instrument_skill_type":{"type":"select","input":"","text":""},"performance_skill_type":{"type":"select","input":"","text":""},"driving_skill_type":{"type":"select","input":"","text":""},"culinary_skill_type":{"type":"select","input":"","text":""},"visual_art_skill_type":{"type":"select","input":"","text":""},"sport_other_skills":{"type":"text","input":"","text":""},"dance_other_skills":{"type":"text","input":"","text":""},"singing_other_skills":{"type":"text","input":"","text":""},"acting_other_skills":{"type":"text","input":"","text":""},"musical_instrument_other_skills":{"type":"text","input":"","text":""},"performance_other_skills":{"type":"text","input":"","text":""},"driving_other_skills":{"type":"text","input":"","text":""},"culinary_other_skills":{"type":"text","input":"","text":""},"visual_art_other_skills":{"type":"text","input":"","text":""},"skills_description":{"type":"textarea","input":"sadfasdfasdfadsfadsf","text":"sadfasdfasdfadsfadsf"},"photos":{"type":"upload","input":"","text":[]},"videos":{"type":"upload","input":"","text":[]},"audios":{"type":"upload","input":"","text":[]}},{"skills_type":{"type":"select","input":"singing_skill","text":"Singing Skill"},"other_skills":{"type":"text","input":"","text":""},"sport_skill_type":{"type":"select","input":"","text":""},"dance_skill_type":{"type":"select","input":"","text":""},"singing_skill_type":{"type":"select","input":"disco","text":"Disco"},"acting_skill_type":{"type":"select","input":"","text":""},"musical_instrument_skill_type":{"type":"select","input":"","text":""},"performance_skill_type":{"type":"select","input":"","text":""},"driving_skill_type":{"type":"select","input":"","text":""},"culinary_skill_type":{"type":"select","input":"","text":""},"visual_art_skill_type":{"type":"select","input":"","text":""},"sport_other_skills":{"type":"text","input":"","text":""},"dance_other_skills":{"type":"text","input":"","text":""},"singing_other_skills":{"type":"text","input":"","text":""},"acting_other_skills":{"type":"text","input":"","text":""},"musical_instrument_other_skills":{"type":"text","input":"","text":""},"performance_other_skills":{"type":"text","input":"","text":""},"driving_other_skills":{"type":"text","input":"","text":""},"culinary_other_skills":{"type":"text","input":"","text":""},"visual_art_other_skills":{"type":"text","input":"","text":""},"skills_description":{"type":"textarea","input":"asdfasdfasdf","text":"asdfasdfasdf"},"photos":{"type":"upload","input":"","text":[]},"videos":{"type":"upload","input":"","text":[]},"audios":{"type":"upload","input":"","text":[]}}]',
+  'job_experiences' => '[{"type":{"type":"select","input":"film","text":"Film"},"other_type":{"type":"text","input":"","text":""},"year":{"type":"select","input":"2021","text":"2021"},"month":{"type":"select","input":"2","text":"2 (February)"},"title":{"type":"text","input":"asdfasdf","text":"asdfasdf"},"description":{"type":"textarea","input":"adfadsf","text":"adfadsf"},"photos":{"type":"upload","input":"","text":[]},"videos":{"type":"upload","input":"","text":[]},"audios":{"type":"upload","input":"","text":[]}},{"type":{"type":"select","input":"drama","text":"Drama"},"other_type":{"type":"text","input":"","text":""},"year":{"type":"select","input":"2021","text":"2021"},"month":{"type":"select","input":"3","text":"3 (March)"},"title":{"type":"text","input":"asdfadsfadsfa","text":"asdfadsfadsfa"},"description":{"type":"textarea","input":"asdfadsfasdf","text":"asdfadsfasdf"},"photos":{"type":"upload","input":"","text":[]},"videos":{"type":"upload","input":"","text":[]},"audios":{"type":"upload","input":"","text":[]}}]',
+  'job_experiences_pdf' => NULL,
+  'step' => 3,
+)
+[2023-11-12 15:22:11] local.INFO: array (
+  '_token' => 'bvJxYGXYJxYNFOBuVe0bzo4olpcOc0kRQxlbrqg4',
+  'profile_image' => '6550ed98cedcf',
+  'full_length_photo' => '6550eda01a119',
+  'other_photos' => NULL,
+  'step' => 4,
+)
+
+
+[2023-11-14 16:23:29] local.INFO: array (
+  '_token' => 'fuFuqMwitlHsZaZb3gA0AWVxmFGK7CFjrhTQrPZn',
+  'country_code' => 'JPN',
+  'mobile_number' => '09196070718',
+  'country' => 'Japan',
+  'zipcode' => '1565913813',
+  'state' => 'state2',
+  'city' => 'jpc1',
+  'area' => 'sdf',
+  'address' => 'خ مطهری ترکمنستان ک توسکا پ 10',
+  'address_2' => 'ک توسکا پ ۱۰',
+  'step' => 5,
+)
+
+[2023-11-14 16:25:04] local.INFO: array (
+  '_token' => 'fuFuqMwitlHsZaZb3gA0AWVxmFGK7CFjrhTQrPZn',
+  'authentication_type' => 'drive_license',
+  'passport_photo' => NULL,
+  'front_photo_drive_license_card' => '65539f5856b75',
+  'back_photo_drive_license_card' => '65539f5e74344',
+  'front_photo_insurance_card' => NULL,
+  'back_photo_insurance_card' => NULL,
+  'front_photo_my_number_card' => NULL,
+  'back_photo_my_number_card' => NULL,
+  'front_photo_residence_card' => NULL,
+  'back_photo_residence_card' => NULL,
+  'step' => 6,
+)
+
+[2023-11-17 00:45:42] local.INFO: array (
+  '_token' => '7B5bWTN5mF0oK5MtdeR2zSQs7IHQ4FKhyrBxCIPi',
+  'step' => 7,
+)
+
+[2023-11-11 18:32:22] local.INFO: array (
+  'file' =>
+  \Illuminate\Http\UploadedFile::__set_state(array(
+     'test' => false,
+     'originalName' => 'saber saber - Copy.jpg',
+     'mimeType' => 'image/jpeg',
+     'error' => 0,
+     'hashName' => NULL,
+  )),
+)
+
+[2023-11-11 18:30:53] local.INFO: array (
+  'data' => '[object Object]',
+  'file' =>
+  \Illuminate\Http\UploadedFile::__set_state(array(
+     'test' => false,
+     'originalName' => 'blob',
+     'mimeType' => 'image/png',
+     'error' => 0,
+     'hashName' => NULL,
+  )),
+)

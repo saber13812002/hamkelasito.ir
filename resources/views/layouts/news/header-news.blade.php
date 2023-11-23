@@ -1,4 +1,3 @@
-
 <!-- start header -->
 <header id="header">
 
@@ -15,7 +14,8 @@
             </div>
             <div class="app-bar-title">
                 <a href="./home" class="app-logo" aria-label="Liliana">
-                    <img src="/storage/assets/img/lazy-trp-1x1.webp" class="lazy" data-src="/storage/assets/img/logo.svg" width="88"
+                    <img src="/storage/assets/img/lazy-trp-1x1.webp" class="lazy"
+                         data-src="/storage/assets/img/logo.svg" width="88"
                          height="24" alt="liliana">
                     <noscript>
                         <img src="/storage/assets/img/logo.svg" width="88" height="24" alt="liliana">
@@ -40,7 +40,9 @@
                 <button class="btn btn-icon app-bar-desktop" id="btn_appbar_search" aria-label="Open Search">
                     <i class="icon-search-normal"></i>
                 </button>
-                <button class="btn btn-icon app-bar-mobile g-share-button" aria-label="Share" data-title="News Single" data-text="I have been a full-time housewife for 25 years, but started Instagram 2 years ago and have over 50,000 followers. I hope to share..." data-url="https://liliana.asensive.ir/frontend/news-single">
+                <button class="btn btn-icon app-bar-mobile g-share-button" aria-label="Share" data-title="News Single"
+                        data-text="I have been a full-time housewife for 25 years, but started Instagram 2 years ago and have over 50,000 followers. I hope to share..."
+                        data-url="/news-single">
                     <i class="icon-share"></i>
                 </button>
                 <a href="../dashboard/models/index" class="user-dashboard">
@@ -137,30 +139,33 @@
 
                     <!-- side action -->
                     <div class="side-action">
-                        <a href="./become-a-model" class="btn btn-icon-left">
+                        @guest
+                            <a href="./become-a-model" class="btn btn-icon-left">
                             <span>
                                 <i class="icon-add"></i>
                                 Become Liliana
                             </span>
-                        </a>
-                        <a href="./login" class="btn btn-primary btn-icon-left">
+                            </a>
+                            <a href="./login" class="btn btn-primary btn-icon-left">
                             <span>
                                 <i class="icon-log-in"></i>
                                 Login
                             </span>
-                        </a>
-                        <a href="#" class="dashboard">
+                            </a>
+                        @else
+                            <a href="#" class="dashboard">
                             <span>
-                                Miss Leslie Alexander
+                                {{Auth::user()->name}}
                                 <i class="icon-arrow-right"></i>
                             </span>
-                        </a>
-                        <a href="#" class="logout">
+                            </a>
+                            <a href="#" class="logout">
                             <span>
                                 Logout
                                 <i class="icon-logout"></i>
                             </span>
-                        </a>
+                            </a>
+                        @endguest
                     </div>
 
                     <!-- side info -->
@@ -285,22 +290,28 @@
                         </div>
                     </div>
                     <div class="col-auto">
-                        <div class="user-account-mini">
-                            <img src="/storage/assets/img/lazy-1x1.webp" class="lazy" data-src="/storage/assets/img/1x1/001.webp"
-                                 width="80" height="80" alt="Model">
-                            <noscript>
-                                <img src="/storage/assets/img/1x1/001.webp" width="80" height="80" alt="Model">
-                            </noscript>
-                            <div class="user-content">
-                                <div class="user-display-name">Miss Leslie Alexander</div>
-                                <a href="../dashboard/models/index">
-                                    Go to Dashboard
-                                    <i class="icon-arrow-right"></i>
-                                </a>
+                        @guest
+                        @else
+                            <div class="user-account-mini">
+                                <img src="/storage/assets/img/lazy-1x1.webp" class="lazy"
+                                     data-src="/storage/assets/img/1x1/001.webp"
+                                     width="80" height="80" alt="Model">
+                                <noscript>
+                                    <img src="/storage/assets/img/1x1/001.webp" width="80" height="80" alt="Model">
+                                </noscript>
+                                <div class="user-content">
+                                    <div class="user-display-name">{{Auth::user()->name}}</div>
+                                    <a href="../dashboard/models/index">
+                                        Go to Dashboard
+                                        <i class="icon-arrow-right"></i>
+                                    </a>
+                                </div>
                             </div>
-                        </div>
-                        <a href="./login" class="btn btn-primary btn-full">Login</a>
-                        <a href="./become-a-model" class="btn btn-full">Become Liliana</a>
+                        @endguest
+                        @guest
+                            <a href="./login" class="btn btn-primary btn-full">Login</a>
+                            <a href="./become-a-model" class="btn btn-full">Become Liliana</a>
+                        @endguest
                         <ul class="menu-contact-us">
                             <li>
                                 <i class="icon-sms"></i>
@@ -332,7 +343,8 @@
                     </button>
                 </div>
                 <div class="app-bar-title">
-                    <form action="./models-list" method="post">
+                    <form action="{{ route('models-list') }}" method="post">
+                        @csrf
                         <button class="btn btn-icon" aria-label="Search">
                             <i class="icon-search-normal"></i>
                         </button>
@@ -359,7 +371,8 @@
                 </div>
                 <div class="recent-model">
                     <a href="./model-page">
-                        <img src="/storage/assets/img/lazy-3x4.webp" class="lazy" data-src="/storage/assets/img/3x4/012.webp"
+                        <img src="/storage/assets/img/lazy-3x4.webp" class="lazy"
+                             data-src="/storage/assets/img/3x4/012.webp"
                              width="120" height="160" alt="Model">
                         <noscript>
                             <img src="/storage/assets/img/3x4/012.webp" width="120" height="160" alt="Model">
@@ -367,7 +380,8 @@
                         <span>Maaya</span>
                     </a>
                     <a href="./model-page">
-                        <img src="/storage/assets/img/lazy-3x4.webp" class="lazy" data-src="/storage/assets/img/3x4/011.webp"
+                        <img src="/storage/assets/img/lazy-3x4.webp" class="lazy"
+                             data-src="/storage/assets/img/3x4/011.webp"
                              width="120" height="160" alt="Model">
                         <noscript>
                             <img src="/storage/assets/img/3x4/011.webp" width="120" height="160" alt="Model">
@@ -381,7 +395,8 @@
                         <span>Mikel</span>
                     </a>
                     <a href="./model-page">
-                        <img src="/storage/assets/img/lazy-3x4.webp" class="lazy" data-src="/storage/assets/img/3x4/028.webp"
+                        <img src="/storage/assets/img/lazy-3x4.webp" class="lazy"
+                             data-src="/storage/assets/img/3x4/028.webp"
                              width="120" height="160" alt="Model">
                         <noscript>
                             <img src="/storage/assets/img/3x4/028.webp" width="120" height="160" alt="Model">
@@ -398,7 +413,8 @@
             <ul>
                 <li>
                     <a href="./model-page">
-                        <img src="/storage/assets/img/lazy-1x1.webp" class="lazy" data-src="/storage/assets/img/1x1/003.webp"
+                        <img src="/storage/assets/img/lazy-1x1.webp" class="lazy"
+                             data-src="/storage/assets/img/1x1/003.webp"
                              width="80" height="80" alt="model">
                         <noscript>
                             <img src="/storage/assets/img/1x1/005.webp" width="80" height="80" alt="model">
@@ -415,7 +431,8 @@
                 </li>
                 <li>
                     <a href="./model-page">
-                        <img src="/storage/assets/img/lazy-1x1.webp" class="lazy" data-src="/storage/assets/img/1x1/004.webp"
+                        <img src="/storage/assets/img/lazy-1x1.webp" class="lazy"
+                             data-src="/storage/assets/img/1x1/004.webp"
                              width="80" height="80" alt="model">
                         <noscript>
                             <img src="/storage/assets/img/1x1/005.webp" width="80" height="80" alt="model">
@@ -430,7 +447,8 @@
                 </li>
                 <li>
                     <a href="./model-page">
-                        <img src="/storage/assets/img/lazy-1x1.webp" class="lazy" data-src="/storage/assets/img/1x1/005.webp"
+                        <img src="/storage/assets/img/lazy-1x1.webp" class="lazy"
+                             data-src="/storage/assets/img/1x1/005.webp"
                              width="80" height="80" alt="model">
                         <noscript>
                             <img src="/storage/assets/img/1x1/005.webp" width="80" height="80" alt="model">

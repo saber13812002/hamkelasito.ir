@@ -129,7 +129,7 @@
                                         <!-- insert job offer language -->
                                         <div data-dependency="#job_offer_language" data-dependency-value="machine_translation">
                                             <div class="field field-type-select" data-field-defualt-text=" " data-btn-submit-text="Select"
-                                                 data-required="true" data-type="select" data-source="https://liliana.asensive.ir/api/languages/"
+                                                 data-required="true" data-type="select" data-source="/api/languages/"
                                                  data-field-search="true">
                                                 <div class="field-content">
                                                     <label for="insert_job_offer_language">Language Translated by Machine <span class="field-required-star">*</span></label>

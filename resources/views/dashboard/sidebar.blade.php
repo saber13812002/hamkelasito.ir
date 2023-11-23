@@ -1,4 +1,5 @@
 <div id="sidebar">
+    <input id="token" type="hidden" value="{{$token}}">
     <div class="user-box">
         <div class="user-info">
             <img src="/storage/assets/img/lazy-1x1.webp" class="user-avatar lazy" id="user_level"
@@ -86,3 +87,4 @@
 </div>
 
 <script src="/storage/assets/js/dashboard-menu-active-class.js"></script>
+<script src="/storage/assets/js/token.js"></script>

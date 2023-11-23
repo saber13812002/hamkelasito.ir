@@ -62,7 +62,7 @@
                             <div class="item-content slider-content-{{ $slider->order-1 }} active"
                                  data-index="{{ $slider->order-1 }}">
                                 <div class="item-title">
-                                    <a href="model-page" aria-label="{{ $slider->order-1 }}" itemprop="url"><span
+                                    <a href="model-page?id={{ $slider->member?$slider->member->id:"" }}" aria-label="{{ $slider->order-1 }}" itemprop="url"><span
                                             itemprop="name">{{ $slider->member?$slider->member->name:"" }}</span></a>
                                     <a {{$slider->video?"":"style=display:none"}} href="/storage/assets/video/{{ $slider->video }}"
                                        data-light-box="slide_{{ $slider->order-1 }}_video"
@@ -153,7 +153,7 @@
                     <div class="home-categories-content">
                         @foreach($categories as $category)
                             <div class="home-categories-item" itemscope="" itemtype="https://schema.org/DefinedTerm">
-                                <a href="models-list?id={{ $category->id }}" aria-label="{{ $category->name }} Category"
+                                <a href="models-list?category_id={{ $category->id }}" aria-label="{{ $category->name }} Category"
                                    itemprop="url">
                                     <img src="/storage/assets/img/category/{{ $category->image }}"
                                          class="lazy lz-entered lz-loaded"
@@ -322,7 +322,8 @@
                                                     <div class="card-content-item">{{ $member->hair_color }}</div>
                                                 </div>
                                                 <div class="card-action">
-                                                    <div class="btn btn-icon btn-add-model-to-bookmark">
+                                                    <div class="btn btn-icon btn-add-model-to-bookmark"
+                                                         id="{{ $member->id }}">
                                                         <i class="icon-archive-add"></i>
                                                     </div>
                                                 </div>
@@ -352,10 +353,10 @@
     <!-- start scripts -->
     <script src="/storage/assets/js/lib/jQuery.min.js"></script>
     <script src="/storage/assets/js/lib/lazyload.min.js"></script>
-    <script src="/storage/assets/js/owl.carousel.min.js"></script>
-    <script src="/storage/assets/js/super-slider.min.js"></script>
-    <script src="/storage/assets/js/component.min.js"></script>
-    <script src="/storage/assets/js/scripts.min.js"></script>
+    <script src="/storage/assets/js/lib/owl.carousel.min.js"></script>
+    <script src="/storage/assets/js/super-slider.js"></script>
+    <script src="/storage/assets/js/component.js"></script>
+    <script src="/storage/assets/js/scripts.js"></script>
 
 
     <style type="text/css" class="L-GoogleBookmarkOptOut">

@@ -1,9 +1,13 @@
 <?php
 
 use App\Http\Controllers\HomeController;
-use App\Models\Member;
+use App\Http\Controllers\MemberController;
+use App\Models\City;
+use App\Models\State;
+use App\Models\Upload;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,10 +21,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::any('/', function (Request $request) {
-//    dd($request->query('filter'), $request->query('sort'));
-    return Member::all();
-});
+
+Route::any('/',  [MemberController::class, 'api']);
+
+
+Route::any('/search', [MemberController::class, 'search']);
+
+Route::any('/filter', [MemberController::class, 'filter']);
 
 Route::group(['prefix' => 'user', 'middleware' => 'auth:sanctum'], function () {
 
@@ -52,10 +59,105 @@ Route::get('/country', function (Request $request) {
 //    return Country::all();
 });
 
-// /api/uploadphoto/
-Route::get('/uploadphoto', function (Request $request) {
+
+Route::get('/numcode', function (Request $request) {
 //    dd($request->query('filter'), $request->query('sort'));
-    return Member::all();
+    $json = loadJSON('num-codes');
+    return json_decode($json);
+//    return Country::all();
+});
+
+Route::get('/state/{state}', function (Request $request, string $state) {
+//    dd($request->query('filter'), $request->query('sort'));
+    $json = loadJSON('state');
+    return json_decode($json);
+//    dd(json_decode($json));
+    return State::all();
+});
+
+
+Route::get('/city/{city}', function (Request $request) {
+//    dd($request->query('filter'), $request->query('sort'));
+    $json = loadJSON('city');
+    return json_decode($json);
+//    dd(json_decode($json));
+    return City::all();
+});
+
+Route::get('/city/', function (Request $request) {
+    $json = loadJSON('city');
+    return json_decode($json);
+});
+
+// /api/uploadphoto/
+Route::group([
+    'middleware' => ['auth:sanctum', 'cors'],
+    'prefix' => '',
+], function () {
+    Route::any('/uploadphoto', function (Request $request) {
+//    dd($request->query('filter'), $request->query('sort'));
+//        Log::info($request->header('Authorization') ? "1" : "0");
+//        Log::info();
+        $user_id = 0;
+        if (auth()->user()) {
+            $user_id = auth()->user()->id;
+        }
+        if ($request->hasFile('file')) {
+            $file = $request->file('file');
+
+            // Generate a unique filename
+            $uniqId = uniqid();
+            $extension = ($file->getClientOriginalExtension() ? $file->getClientOriginalExtension() : "png");
+            $filename = $uniqId . '.' . $extension;
+
+            // Save the file to the storage directory
+            $file->storeAs('uploads', $filename);
+
+
+            $relativeUrl = '/uploads/' . $filename;
+            $fullUrl = $relativeUrl;
+
+            if (config('app.env') == 'production') {
+                $file->move(env('UPLOADER_LOCATION'), $filename);
+            }
+//        $image_resize = Image::make($file->getRealPath());
+//        $image_resize->resize(636,852);
+//        $path = 'uploads/thumbnails/' . $filename;
+//        $image_resize->save($path);
+//        $imageUri = 'uploads/thumbnails/' . $filename;
+
+            $upload = new Upload();
+            $upload->full_url = $fullUrl;
+            $upload->name = $filename;
+            $upload->extension = $extension;
+            $upload->type = 'Image';
+            $upload->relative_url = $relativeUrl;
+            $upload->user_id = $user_id > 0 ? $user_id : null;
+            $upload->save();
+
+            return response()->json([
+                'message' => 'File uploaded successfully',
+                'url' => $fullUrl,
+                'id' => $uniqId,
+                'type' => 'photo',
+                'name' => $filename,
+                'thumbnail' => $fullUrl,
+            ], 200);
+        }
+        return response()->json(['error' => 'No file uploaded'], 400);
+
+    });
+});
+
+Route::post('/bookmark/{member_id}', function (Request $request, $member_id) {
+    Log::info(json_decode($request));
+    Log::info($member_id);
+    Log::info(auth()->user() ? auth()->user()->id : "-");
+    \Illuminate\Support\Facades\Session::put("bookmark_" . $member_id, $member_id);
+//    $request->session()->put("bookmark_" . $member_id, $member_id);
+    session(["bookmark__" . $member_id => $member_id]);
+//    $request->session()->push("bookmark___" . $member_id, $member_id);
+
 });
 
 

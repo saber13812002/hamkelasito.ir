@@ -1,0 +1,30 @@
+[
+    {
+        "id": "jpc1",
+        "text": "jpc1",
+        "value": "jpc1",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "jpc2",
+        "text": "jpc2",
+        "value": "jpc2",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "jpc3",
+        "text": "jpc3",
+        "value": "jpc3",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "jpc4",
+        "text": "jpc4",
+        "value": "jpc4",
+        "color": false,
+        "flag": false
+    }
+]

@@ -5,6 +5,11 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StoreMemberRequest;
 use App\Http\Requests\UpdateMemberRequest;
 use App\Models\Member;
+use App\Models\TempField;
+use App\Models\TempTable;
+use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
 
 class MemberController extends Controller
 {
@@ -20,11 +25,59 @@ class MemberController extends Controller
     }
 
     /**
+     * api.
+     */
+    public function api(Request $request)
+    {
+        $data = $request->all();
+//    dd($data);
+//    return Member::all();
+
+//    dd($request->sort);
+//    Member::all();
+        return '';
+    }
+
+    /**
+     * search .
+     *
+     */
+    public function search(Request $request)
+    {
+//    dd($request->query('filter'), $request->query('sort'));
+        $limit = 3;
+        $phrase = $request->s;
+        $phraseResults = Member::where('name', 'like', '%' . $phrase . '%');
+        $foundItems = $phraseResults->limit($limit + 1)->get();
+        $count = $foundItems->count();
+        $foundItems = $phraseResults->limit($limit)->get();
+        if ($count > 0)
+            return view('search.results', compact('foundItems', 'count', 'phrase', 'limit'))->render();
+        return view('search.not-found');
+    }
+
+    /**
+     * filter results.
+     *
+     */
+    public function filter(Request $request)
+    {
+//        dd($request->query('filter'), $request->query('sort'), $request->sort, $request);
+
+//        dd($request->data);
+        $memberBuilder = Member::query();
+        $memberBuilder->whereId(1);
+        $members = $memberBuilder->get();
+        return view('layouts.single-pages.models-list-items', compact('members'));
+    }
+
+    /**
      * Show the form for creating a new resource.
      */
     public function main()
     {
-        return view('dashboard.main');
+        $token = session('token');
+        return view('dashboard.main', compact('token'));
     }
 
     /**
@@ -32,7 +85,8 @@ class MemberController extends Controller
      */
     public function role()
     {
-        return view('dashboard.role');
+        $token = session('token');
+        return view('dashboard.role', compact('token'));
     }
 
     /**
@@ -40,7 +94,8 @@ class MemberController extends Controller
      */
     public function userInfo()
     {
-        return view('dashboard.user-info');
+        $token = session('token');
+        return view('dashboard.user-info', compact('token'));
     }
 
     /**
@@ -48,7 +103,8 @@ class MemberController extends Controller
      */
     public function gallery()
     {
-        return view('dashboard.gallery');
+        $token = session('token');
+        return view('dashboard.gallery', compact('token'));
     }
 
     /**
@@ -56,7 +112,8 @@ class MemberController extends Controller
      */
     public function videoGallery()
     {
-        return view('dashboard.video-gallery');
+        $token = session('token');
+        return view('dashboard.video-gallery', compact('token'));
     }
 
     /**
@@ -64,7 +121,8 @@ class MemberController extends Controller
      */
     public function voiceGallery()
     {
-        return view('dashboard.voice-gallery');
+        $token = session('token');
+        return view('dashboard.voice-gallery', compact('token'));
     }
 
     /**
@@ -72,7 +130,8 @@ class MemberController extends Controller
      */
     public function securityPrivacy()
     {
-        return view('dashboard.security-privacy');
+        $token = session('token');
+        return view('dashboard.security-privacy', compact('token'));
     }
 
     /**
@@ -80,7 +139,8 @@ class MemberController extends Controller
      */
     public function accountInfo()
     {
-        return view('dashboard.account-info');
+        $token = session('token');
+        return view('dashboard.account-info', compact('token'));
     }
 
     /**
@@ -88,7 +148,8 @@ class MemberController extends Controller
      */
     public function galleryTagEdit()
     {
-        return view('dashboard.gallery-tag-edit');
+        $token = session('token');
+        return view('dashboard.gallery-tag-edit', compact('token'));
     }
 
     /**
@@ -96,7 +157,8 @@ class MemberController extends Controller
      */
     public function userInfoEditBasicInfo()
     {
-        return view('dashboard.user-info-edit-basic-info');
+        $token = session('token');
+        return view('dashboard.user-info-edit-basic-info', compact('token'));
     }
 
     /**
@@ -104,7 +166,8 @@ class MemberController extends Controller
      */
     public function userInfoEditPhysicalInfo()
     {
-        return view('dashboard.user-info-edit-physical-info');
+        $token = session('token');
+        return view('dashboard.user-info-edit-physical-info', compact('token'));
     }
 
     /**
@@ -112,7 +175,8 @@ class MemberController extends Controller
      */
     public function userInfoEdiSkills()
     {
-        return view('dashboard.user-info-edit-skills');
+        $token = session('token');
+        return view('dashboard.user-info-edit-skills', compact('token'));
     }
 
     /**
@@ -120,7 +184,8 @@ class MemberController extends Controller
      */
     public function userInfoEditContact()
     {
-        return view('dashboard.user-info-edit-contact');
+        $token = session('token');
+        return view('dashboard.user-info-edit-contact', compact('token'));
     }
 
     /**
@@ -128,7 +193,8 @@ class MemberController extends Controller
      */
     public function userInfoEditBankAndVisa()
     {
-        return view('dashboard.user-info-edit-bank-and-visa');
+        $token = session('token');
+        return view('dashboard.user-info-edit-bank-and-visa', compact('token'));
     }
 
     /**
@@ -136,7 +202,8 @@ class MemberController extends Controller
      */
     public function userInfoEditOther()
     {
-        return view('dashboard.user-info-edit-other');
+        $token = session('token');
+        return view('dashboard.user-info-edit-other', compact('token'));
     }
 
     /**
@@ -177,5 +244,141 @@ class MemberController extends Controller
     public function destroy(Member $members)
     {
         //
+    }
+
+    /**
+     * Show the form for creating a new resource.
+     */
+    public function step0get()
+    {
+        $old = TempTable::query()->whereUserId(auth()->user()->id)->whereStepId(0)->get();
+        $token = session('token');
+        return view('apply_as.step-0', compact('token', 'old'));
+    }
+
+    /**
+     * Show the form for creating a new resource.
+     */
+    public function step0()
+    {
+        $token = session('token');
+        return view('apply_as.step-0', compact('token'));
+    }
+
+    /**
+     * Show the form for creating a new resource.
+     */
+    public function step1(Request $request)
+    {
+//        dd($request);
+        $this->saveRequestToTempTable($request, 0);
+        $token = session('token');
+        return view('apply_as.step-1', compact('token'));
+    }
+
+    /**
+     * Show the form for creating a new resource.
+     */
+    public function step2(FormRequest $request)
+    {
+        $this->saveRequestToTempTable($request, 1);
+        $token = session('token');
+        return view('apply_as.step-2', compact('token'));
+    }
+
+    /**
+     * Show the form for creating a new resource.
+     */
+    public function step3(FormRequest $request)
+    {
+        $this->saveRequestToTempTable($request, 2);
+        $token = session('token');
+        return view('apply_as.step-3', compact('token'));
+    }
+
+    /**
+     * Show the form for creating a new resource.
+     */
+    public function step4(FormRequest $request)
+    {
+        $this->saveRequestToTempTable($request, 3);
+        $token = session('token');
+        return view('apply_as.step-4', compact('token'));
+    }
+
+    /**
+     * Show the form for creating a new resource.
+     */
+    public function step5(FormRequest $request)
+    {
+        $this->saveRequestToTempTable($request, 4);
+        $token = session('token');
+        return view('apply_as.step-5', compact('token'));
+    }
+
+    /**
+     * Show the form for creating a new resource.
+     */
+    public function step6(FormRequest $request)
+    {
+        $this->saveRequestToTempTable($request, 5);
+        $token = session('token');
+        return view('apply_as.step-6', compact('token'));
+    }
+
+    /**
+     * Show the form for creating a new resource.
+     */
+    public function step7(FormRequest $request)
+    {
+        $this->saveRequestToTempTable($request, 6);
+        $token = session('token');
+        return view('apply_as.step-7', compact('token'));
+    }
+
+    /**
+     * Show the form for creating a new resource.
+     */
+    public function step8(FormRequest $request)
+    {
+        $this->saveRequestToTempTable($request, 7);
+        $token = session('token');
+        return view('apply_as.step-8', compact('token'));
+    }
+
+    private function saveRequestToTempTable(Request $request, int $stepId)
+    {
+        $request->request->add(['step' => $stepId]);
+        Log::info($request);
+//        dd(auth()->user());
+//        $tempTable->member_id
+        $tempFields = TempField::query()->whereStepId($stepId)->get();
+//        dd($tempTable, $stepId, $tempFields);
+        foreach ($tempFields as $tempField) {
+//            dd($request->get('model_type'));
+            if ($request->has($tempField->model_field)) {
+                $tempTable = new TempTable();
+                $tempTable->step_id = $stepId;
+                $tempTable->user_id = auth()->user()->id;
+                $tempTable['model_field'] = $tempField->model_field;
+                $tempTable['model_name'] = $tempField->model_name;
+                $tempTable['type'] = $tempField->type;
+                if ($tempField->type == 'json')
+                    $tempTable['json'] = $request->get($tempField->model_field);
+                else if ($tempField->type == 'text')
+                    $tempTable['text'] = $request->get($tempField->model_field);
+                else if ($tempField->type == 'file') {
+                    $tempTable['value'] = $request->get($tempField->model_field);
+                } else
+                    $tempTable['value'] = $request->get($tempField->model_field);
+
+//                dd($request,$tempTable,$tempField);
+                $tempTable->save();
+//            $tempTable->value = "";
+//            $tempTable->text = "";
+//            $tempTable->json = "";
+            }
+
+        }
     }
 }

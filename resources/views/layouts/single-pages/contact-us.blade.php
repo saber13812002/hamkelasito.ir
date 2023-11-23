@@ -103,7 +103,8 @@
                         </div>
                         <div class="col-12 col-md-6">
                             <h2>Contact Support:</h2>
-                            <form action="./contact-us" method="post">
+                            <form action="{{ route('contact-us') }}" method="post">
+                                @csrf
                                 <div class="row">
 
                                     <!-- name -->

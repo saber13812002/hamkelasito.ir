@@ -291,29 +291,59 @@ return [
 
     'menu' => [
         [
+            'text' => 'Main',
+            'url'  => 'admin',
+            'icon' => 'fas fa-fw fa-main',
+        ],
+        [
             'text' => 'Categories',
             'url'  => 'admin/categories',
-            'icon' => 'fas fa-fw fa-user',
+            'icon' => 'fas fa-fw fa-cat',
         ],
         [
             'text' => 'Members',
             'url'  => 'admin/members',
+            'icon' => 'fas fa-fw fa-users',
+        ],
+        [
+            'text' => 'Users',
+            'url'  => 'admin/users',
             'icon' => 'fas fa-fw fa-user',
         ],
         [
             'text' => 'Sliders',
             'url'  => 'admin/sliders',
-            'icon' => 'fas fa-fw fa-user',
+            'icon' => 'fas fa-fw fa-map',
         ],
         [
             'text' => 'Countries',
             'url'  => 'admin/countries',
-            'icon' => 'fas fa-fw fa-user',
+            'icon' => 'fas fa-fw fa-icons',
         ],
         [
             'text' => 'Languages',
             'url'  => 'admin/languages',
+            'icon' => 'fas fa-fw fa-language',
+        ],
+        [
+            'text' => 'Approval Fields',
+            'url'  => 'admin/fields',
+            'icon' => 'fas fa-fw fa-check',
+        ],
+        [
+            'text' => 'Approval',
+            'url'  => 'admin/approval',
+            'icon' => 'fas fa-fw fa-check',
+        ],
+        [
+            'text' => 'Contact Us',
+            'url'  => 'admin/contact-us',
             'icon' => 'fas fa-fw fa-user',
+        ],
+        [
+            'text' => 'Survey',
+            'url'  => 'admin/survey',
+            'icon' => 'fas fa-fw fa-question',
         ],
     ],
 

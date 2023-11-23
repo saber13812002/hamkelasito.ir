@@ -66,7 +66,7 @@
                                         <i class="icon-document"></i>
                                         <span>Composite</span>
                                     </a>
-                                    <a href="model-page#" aria-label="Model Profile">
+                                    <a href="/composite2/{{$member->id}}" aria-label="Model Profile">
                                         <i class="icon-user-square"></i>
                                         <span>Profile</span>
                                     </a>
@@ -839,8 +839,8 @@ Voice
     <!-- start scripts -->
     <script src="/storage/assets/js/lib/jQuery.min.js"></script>
     <script src="/storage/assets/js/lib/lazyload.min.js"></script>
-    <script src="/storage/assets/js/component.min.js"></script>
-    <script src="/storage/assets/js/scripts.min.js"></script>
+    <script src="/storage/assets/js/component.js"></script>
+    <script src="/storage/assets/js/scripts.js"></script>
 
 
 

@@ -59,7 +59,7 @@
             <!-- start apply as a model -->
             <div class="section section-apply-model">
                 <div class="container-lg">
-                    <a href="./apply-as-a-model" class="btn btn-primary">
+                    <a href="./register" class="btn btn-primary">
                         Apply
                     </a>
                 </div>

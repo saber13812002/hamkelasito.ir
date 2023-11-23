@@ -13,15 +13,36 @@ return new class extends Migration {
         Schema::create('members', function (Blueprint $table) {
             $table->id();
 
-            $table->string('profile_image');
-            $table->string('thumbnail_image');
+
+            $table->bigInteger('user_id')->nullable();
+
+            $table->string('profile_image')->nullable();
+            $table->string('thumbnail_image')->nullable();
 
             $table->integer('no')->nullable();
-            $table->string('name');
-            $table->string('family');
+            $table->string('name')->nullable();
+            $table->string('middle_name')->nullable();
+            $table->string('family')->nullable();
             $table->string('alias')->nullable();
 
-            $table->string('town');
+            $table->string('first_name_furigana')->nullable();
+            $table->string('last_name_furigana')->nullable();
+
+            $table->string('stage_name')->nullable();
+            $table->string('have_other_nationality')->nullable();
+            $table->string('other_nationality')->nullable();
+            $table->string('are_you_mixed')->nullable();
+            $table->string('fathers_nationality')->nullable();
+            $table->string('mothers_nationality')->nullable();
+
+            $table->string('model_type')->nullable();
+            $table->string('talent_type')->nullable();
+            $table->string('actor_actress_type')->nullable();
+            $table->string('extra_type')->nullable();
+
+            $table->string('gender')->nullable();
+
+            $table->string('town')->nullable();
 
             $table->enum('type', ['japanese', 'mixed', 'international', 'N/A'])->default('N/A');
 
@@ -34,8 +55,8 @@ return new class extends Migration {
             $table->string('shoe_size')->nullable();
             $table->string('hair_color')->nullable();
             $table->string('eye_color')->nullable();
-            $table->string('nationality')->nullable();
-            $table->string('language')->nullable();
+            $table->string('nationality')->nullable()->default('Japan');
+            $table->string('language')->nullable()->default('ja');
 
             $table->string('instagram_page_follower_count')->nullable();
             $table->string('twitter_page_follower_count')->nullable();

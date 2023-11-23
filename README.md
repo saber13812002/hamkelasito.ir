@@ -13,21 +13,12 @@
  - install mysql if you need
  - install navicat
  - install php
- - install compsoer
- - run composer i
- - run php artisan key:gen
- - run php artisan serve
- - run php artisan storage:link
- - unzip public.zip in storage in storage
- - php artisan adminlte:install
- - php artisan adminlte:status
- - php artisan migrate
- - php artisan db:seed --class=CategoriesTableSeeder
- - php artisan db:seed --class=MemberSeeder
- - php artisan db:seed --class=MembersTableSeeder
- - php artisan db:seed --class=SlidersTableSeeder
- - php artisan db:seed --class=CountriesTableSeeder
- - php artisan db:seed --class=LanguagesTableSeeder
+ - install composer
+ - copy .env.local .env
+ - run install.bat commands
+ - run update.bat
+
+### mail configuration
  - make sure you do configuration for email verification in env file
 ```  MAIL_MAILER=smtp
   MAIL_HOST=mailpit
@@ -40,6 +31,11 @@
   ```
  - 
 
+### translation.io
+config your env with this key:
+
+ - TRANSLATIONIO_KEY
+ - https://translation.io/saber13812002/lili/
 
 ## License
 

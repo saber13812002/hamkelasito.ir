@@ -26,7 +26,7 @@ class VerificationController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = RouteServiceProvider::DASHBOARD_MODELS;
+    protected $redirectTo = RouteServiceProvider::APPLY_AS_A_MODEL_FORM_ROLE;
 
     /**
      * Create a new controller instance.

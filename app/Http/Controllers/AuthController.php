@@ -2,8 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Member;
+use App\Models\TempTable;
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Session;
@@ -34,8 +37,18 @@ class AuthController extends Controller
 
         $credentials = $request->only('email', 'password');
         if (Auth::attempt($credentials)) {
+            $user = Auth::user();
+//            Log::info(Auth::createTokenDriver('session'));
+            $token = $user->createToken(
+                $user->name . '_' . Carbon::now(), // The name of the token
+                ['*'],                         // Whatever abilities you want
+                Carbon::now()->addDays(6)     // The expiration date
+            )->plainTextToken;
+
+            session()->put('token', $token);
+
             return redirect()->intended('admin')
-                ->withSuccess('You have Successfully loggedin goto <a href="/">home</a> or go to <a href="/admin">admin panel</a>');
+                ->withSuccess('You have Successfully loggedin goto or go to admin panel</a>');
         }
 
         return redirect("login")->withSuccess('Oppes! You have entered invalid credentials');
@@ -44,6 +57,7 @@ class AuthController extends Controller
 
     public function postRegistration(Request $request)
     {
+//        dd($request);
         $request->validate([
             'name' => 'required',
             'email' => 'required|email|unique:users',
@@ -53,7 +67,7 @@ class AuthController extends Controller
         $data = $request->all();
         $check = $this->create($data);
 
-        return redirect("admin")->withSuccess('Great! You have Successfully loggedin');
+        return redirect("dashboard-models")->withSuccess('Great! You have Successfully logged in');
     }
 
 
@@ -69,7 +83,29 @@ class AuthController extends Controller
     public function admin()
     {
         if (Auth::check()) {
-            return view('auth.admin');
+            $memberAwaitBuilder = TempTable::distinct('member_id')
+                ->orWhereNull('approved_at')
+                ->orWhere('approved_at', '=', '');
+            $array = TempTable::query()->distinct()->pluck('member_id')->toArray();
+            $memberAwaitItems = Member::whereIn('id', $array)->get();
+//            dd($memberAwaitItems);
+            $awaitingMembers = $memberAwaitBuilder
+                ->count();
+            $totalMembers = Member::count();
+            $completedApprovals = $totalMembers - $awaitingMembers;
+            $totalItems = TempTable::count();
+            $rejectedItems = TempTable::query()
+                ->whereDate('updated_at', '>=', 'created_at')
+                ->count();
+            $awaitingItems = $totalItems - $rejectedItems;
+            return view('auth.admin', compact(
+                'memberAwaitItems',
+                'awaitingMembers',
+                'completedApprovals',
+                'awaitingItems',
+                'rejectedItems',
+                'totalMembers'
+            ));
         }
 
         return redirect("login")->withSuccess('Opps! You do not have access');

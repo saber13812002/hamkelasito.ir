@@ -1,0 +1,30 @@
+[
+    {
+        "id": "state1",
+        "text": "state1",
+        "value": "state1",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "state2",
+        "text": "state2",
+        "value": "state2",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "state3",
+        "text": "state3",
+        "value": "state3",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "state4",
+        "text": "state4",
+        "value": "state4",
+        "color": false,
+        "flag": false
+    }
+]
