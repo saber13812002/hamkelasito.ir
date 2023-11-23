@@ -252,6 +252,7 @@ class MemberController extends Controller
     public function step0get()
     {
         $old = TempTable::query()->whereUserId(auth()->user()->id)->whereStepId(0)->get();
+//        dd($old);
         $token = session('token');
         return view('apply_as.step-0', compact('token', 'old'));
     }

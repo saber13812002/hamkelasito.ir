@@ -117,7 +117,7 @@
                                                  data-required-type="firstname">
                                                 <div class="field-content">
                                                     <label for="first_name">First Name <span class="field-required-star">*</span></label>
-                                                    <input type="text" name="first_name" id="first_name">
+                                                    <input value="saner" type="text" name="first_name" id="first_name">
                                                 </div>
                                             </div>
                                             <div class="field-error-msg" id="field_error_first_name"></div>
@@ -197,7 +197,7 @@
                                                         <div class="field field-type-radio" data-required="true" data-type="radio">
                                                             <div class="field-content">
                                                                 <label>
-                                                                    <input type="radio" value="yes" name="have_other_nationality" class="have_other_nationality">
+                                                                    <input checked type="radio" value="yes" name="have_other_nationality" class="have_other_nationality">
                                                                     <span class="checkmark"></span>
                                                                     Yes
                                                                 </label>
@@ -231,7 +231,7 @@
                                                      data-required="true" data-btn-submit-text="Select" data-type="select" data-clear="true">
                                                     <div class="field-content">
                                                         <label for="fathers_nationality">Other Nationality <span class="field-required-star">*</span></label>
-                                                        <select name="other_nationality"
+                                                        <select name="other_nationality" data-default-value="Paraguay,Albania"
                                                                 id="other_nationality" multiple></select>
                                                         <i class="icon-arrow-down"></i>
                                                     </div>
@@ -328,7 +328,7 @@
                                             <a href="#" class="save">Save & Exit</a>
                                         </div>
                                         <div class="col-auto">
-                                            <a href="./become-a-model" class="btn">
+                                            <a href="./apply-as-a-model-form-role" class="btn">
                                                 Back
                                             </a>
                                             <button type="submit" class="btn btn-primary btn-icon-right next-step">
