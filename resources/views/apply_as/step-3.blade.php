@@ -121,7 +121,7 @@
                                         <div class="form-section-label">Language(s)</div>
                                         <div class="form-section-content">
                                             <div class="field field-type-select"
-                                                 data-source="https://liliana.asensive.ir/api/languages/"
+                                                 data-source="/api/languages/"
                                                  data-field-defualt-text="Select Item" data-btn-submit-text="Select" data-field-search="true"
                                                  data-required="true" data-type="select">
                                                 <div class="field-content">
@@ -151,7 +151,7 @@
                                                         <div class="repeater-row">
                                                             <div class="row">
                                                                 <div class="col">
-                                                                    <div class="field field-type-select field-language table-visible" data-required="true" data-field-defualt-text="Select Item" data-btn-submit-text="Select" data-source="https://liliana.asensive.ir/api/languages/" data-field-search="true" data-type="select">
+                                                                    <div class="field field-type-select field-language table-visible" data-required="true" data-field-defualt-text="Select Item" data-btn-submit-text="Select" data-source="/api/languages/" data-field-search="true" data-type="select">
                                                                         <div class="field-content">
                                                                             <label for="more_language_lng">Language <span class="field-required-star">*</span></label>
                                                                             <select name="language" id="more_language_lng"></select>

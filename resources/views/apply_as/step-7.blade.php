@@ -835,7 +835,7 @@
                                                                      data-default-count="2">
                                                                     <button type="button"
                                                                             class="image-preview-eye-button"
-                                                                            data-images="[&quot;https://liliana.asensive.ir/assets/img/passport.png&quot;]">
+                                                                            data-images="[&quot;/assets/img/passport.png&quot;]">
                                                                         <i class="icon-eye"></i></button>
                                                                 </div>
                                                             </div>
@@ -1128,7 +1128,7 @@
                             <!-- other nationality -->
                             <div data-dependency=".have_other_nationality" data-dependency-value="yes">
                                 <div class="field field-type-select top-options"
-                                     data-source="https://liliana.asensive.ir/api/country/"
+                                     data-source="/api/country/"
                                      data-field-defualt-text="Select Item" data-field-search="true" data-clear="true"
                                      data-required="true" data-btn-submit-text="Select" data-type="select">
                                     <div class="field-content">
@@ -1191,7 +1191,7 @@
                             <!-- father -->
                             <div data-dependency=".are_you_mixed" data-dependency-value="yes">
                                 <div class="field field-type-select top-options"
-                                     data-source="https://liliana.asensive.ir/api/country/"
+                                     data-source="/api/country/"
                                      data-field-defualt-text="Select Item" data-field-search="true" data-clear="true"
                                      data-required="true" data-btn-submit-text="Select" data-type="select">
                                     <div class="field-content">
@@ -1209,7 +1209,7 @@
                             <!-- mother -->
                             <div data-dependency=".are_you_mixed" data-dependency-value="yes">
                                 <div class="field field-type-select top-options"
-                                     data-source="https://liliana.asensive.ir/api/country/"
+                                     data-source="/api/country/"
                                      data-field-defualt-text="Select Item" data-field-search="true" data-clear="true"
                                      data-required="true" data-btn-submit-text="Select" data-type="select">
                                     <div class="field-content">
@@ -1826,7 +1826,7 @@
                         <div class="form-section-label">Language(s)</div>
                         <div class="form-section-content">
                             <div class="field field-type-select"
-                                 data-source="https://liliana.asensive.ir/api/languages/"
+                                 data-source="/api/languages/"
                                  data-field-defualt-text="Select Item" data-btn-submit-text="Select"
                                  data-field-search="true"
                                  data-required="true" data-type="select">
@@ -1866,7 +1866,7 @@
                                                     <div class="field field-type-select field-language table-visible"
                                                          data-required="true" data-field-defualt-text="Select Item"
                                                          data-btn-submit-text="Select"
-                                                         data-source="https://liliana.asensive.ir/api/languages/"
+                                                         data-source="/api/languages/"
                                                          data-field-search="true" data-type="select">
                                                         <div class="field-content">
                                                             <label for="more_language_lng">Language <span
@@ -2994,7 +2994,7 @@
                                 <div class="field field-type-upload" data-type="upload" data-required="true">
                                     <div class="upload-drop-zone" data-limit-count="1" data-limit-size="10"
                                          data-ratio="3/4" data-accept=".png,.jpg"
-                                         data-default="[{&quot;id&quot;:115329,&quot;type&quot;:&quot;photo&quot;,&quot;name&quot;:&quot;File Name&quot;,&quot;thumbnail&quot;:&quot;https://liliana.asensive.ir/assets/img/3x4/024.webp&quot;,&quot;url&quot;:&quot;https://liliana.asensive.ir/assets/img/3x4/024.webp&quot;,&quot;req&quot;:&quot;[&quot;}]">
+                                         data-default="[{&quot;id&quot;:115329,&quot;type&quot;:&quot;photo&quot;,&quot;name&quot;:&quot;File Name&quot;,&quot;thumbnail&quot;:&quot;/assets/img/3x4/024.webp&quot;,&quot;url&quot;:&quot;/assets/img/3x4/024.webp&quot;,&quot;req&quot;:&quot;[&quot;}]">
                                         <input type="hidden" class="input-drop-zone" name="profile_image"
                                                id="profile_image">
                                         <label>Waist Up Photo</label>
@@ -3030,7 +3030,7 @@
                                 <div class="field field-type-upload" data-type="upload" data-required="true">
                                     <div class="upload-drop-zone" data-limit-count="1" data-limit-size="10"
                                          data-ratio="3/4" data-accept=".png,.jpg"
-                                         data-default="[{&quot;id&quot;:115329,&quot;type&quot;:&quot;photo&quot;,&quot;name&quot;:&quot;File Name&quot;,&quot;thumbnail&quot;:&quot;https://liliana.asensive.ir/assets/img/3x4/026.webp&quot;,&quot;url&quot;:&quot;https://liliana.asensive.ir/assets/img/3x4/026.webp&quot;,&quot;req&quot;:&quot;[&quot;}]">
+                                         data-default="[{&quot;id&quot;:115329,&quot;type&quot;:&quot;photo&quot;,&quot;name&quot;:&quot;File Name&quot;,&quot;thumbnail&quot;:&quot;/assets/img/3x4/026.webp&quot;,&quot;url&quot;:&quot;/assets/img/3x4/026.webp&quot;,&quot;req&quot;:&quot;[&quot;}]">
                                         <input type="hidden" class="input-drop-zone" name="full_length_photo"
                                                id="full_length_photo">
                                         <label>Full Length Photo</label>
@@ -3066,7 +3066,7 @@
                                 <div class="field field-type-upload" data-type="upload" data-required="false">
                                     <div class="upload-drop-zone" data-limit-count="20" data-limit-size="10"
                                          data-ratio="3/4,4/3" data-accept=".png,.jpg" data-view-more="true"
-                                         data-default="[{&quot;id&quot;:525876,&quot;type&quot;:&quot;photo&quot;,&quot;name&quot;:&quot;File Name&quot;,&quot;thumbnail&quot;:&quot;https://liliana.asensive.ir/assets/img/3x4/012.webp&quot;,&quot;url&quot;:&quot;https://liliana.asensive.ir/assets/img/3x4/012.webp&quot;,&quot;req&quot;:&quot;[&quot;},{&quot;id&quot;:702590,&quot;type&quot;:&quot;photo&quot;,&quot;name&quot;:&quot;File Name&quot;,&quot;thumbnail&quot;:&quot;https://liliana.asensive.ir/assets/img/3x4/006.webp&quot;,&quot;url&quot;:&quot;https://liliana.asensive.ir/assets/img/3x4/006.webp&quot;,&quot;req&quot;:&quot;[&quot;},{&quot;id&quot;:922459,&quot;type&quot;:&quot;photo&quot;,&quot;name&quot;:&quot;File Name&quot;,&quot;thumbnail&quot;:&quot;https://liliana.asensive.ir/assets/img/3x4/020.webp&quot;,&quot;url&quot;:&quot;https://liliana.asensive.ir/assets/img/3x4/020.webp&quot;,&quot;req&quot;:&quot;[&quot;}]">
+                                         data-default="[{&quot;id&quot;:525876,&quot;type&quot;:&quot;photo&quot;,&quot;name&quot;:&quot;File Name&quot;,&quot;thumbnail&quot;:&quot;/assets/img/3x4/012.webp&quot;,&quot;url&quot;:&quot;/assets/img/3x4/012.webp&quot;,&quot;req&quot;:&quot;[&quot;},{&quot;id&quot;:702590,&quot;type&quot;:&quot;photo&quot;,&quot;name&quot;:&quot;File Name&quot;,&quot;thumbnail&quot;:&quot;/assets/img/3x4/006.webp&quot;,&quot;url&quot;:&quot;/assets/img/3x4/006.webp&quot;,&quot;req&quot;:&quot;[&quot;},{&quot;id&quot;:922459,&quot;type&quot;:&quot;photo&quot;,&quot;name&quot;:&quot;File Name&quot;,&quot;thumbnail&quot;:&quot;/assets/img/3x4/020.webp&quot;,&quot;url&quot;:&quot;/assets/img/3x4/020.webp&quot;,&quot;req&quot;:&quot;[&quot;}]">
                                         <input type="hidden" class="input-drop-zone" name="other_photos"
                                                id="other_photos">
                                         <label>Other Photos</label>
@@ -3117,7 +3117,7 @@
                             <div class="row gap-1">
                                 <div class="col col-country-code">
                                     <div class="field field-type-select"
-                                         data-source="https://liliana.asensive.ir/api/numcode/"
+                                         data-source="/api/numcode/"
                                          data-btn-submit-text="Select"
                                          data-field-defualt-text="Select Item" data-field-search="true"
                                          data-required="true" data-type="select">
@@ -3152,7 +3152,7 @@
 
                             <!-- country -->
                             <div class="field field-type-select"
-                                 data-source="https://liliana.asensive.ir/api/country/" data-btn-submit-text="Select"
+                                 data-source="/api/country/" data-btn-submit-text="Select"
                                  data-field-defualt-text="Select Item" data-field-search="true"
                                  data-required="true" data-type="select">
                                 <div class="field-content">
@@ -3301,7 +3301,7 @@
                                 <div class="field field-type-upload" data-type="upload" data-required="true">
                                     <div class="upload-drop-zone" data-limit-count="1" data-limit-size="10"
                                          data-accept=".png,.jpg"
-                                         data-default="[{&quot;id&quot;:346479,&quot;type&quot;:&quot;photo&quot;,&quot;name&quot;:&quot;File Name&quot;,&quot;thumbnail&quot;:&quot;https://liliana.asensive.ir/assets/img/passport.png&quot;,&quot;req&quot;:&quot;[&quot;}]">
+                                         data-default="[{&quot;id&quot;:346479,&quot;type&quot;:&quot;photo&quot;,&quot;name&quot;:&quot;File Name&quot;,&quot;thumbnail&quot;:&quot;/assets/img/passport.png&quot;,&quot;req&quot;:&quot;[&quot;}]">
                                         <input type="hidden" class="input-drop-zone" name="passport_photo"
                                                id="passport_photo">
                                         <label>Photo of Passport</label>
