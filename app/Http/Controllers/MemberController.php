@@ -62,7 +62,7 @@ class MemberController extends Controller
      */
     public function filter(Request $request)
     {
-        dd($request->query('filter'), $request->query('sort'), $request->sort, $request);
+//        dd($request->query('filter'), $request->query('sort'), $request->sort, $request);
 
 //        dd($request->data);
         $memberBuilder = Member::query();
