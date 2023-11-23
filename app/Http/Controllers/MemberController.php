@@ -25,6 +25,53 @@ class MemberController extends Controller
     }
 
     /**
+     * api.
+     */
+    public function api(Request $request)
+    {
+        $data = $request->all();
+//    dd($data);
+//    return Member::all();
+
+//    dd($request->sort);
+//    Member::all();
+        return '';
+    }
+
+    /**
+     * search .
+     *
+     */
+    public function search(Request $request)
+    {
+//    dd($request->query('filter'), $request->query('sort'));
+        $limit = 3;
+        $phrase = $request->s;
+        $phraseResults = Member::where('name', 'like', '%' . $phrase . '%');
+        $foundItems = $phraseResults->limit($limit + 1)->get();
+        $count = $foundItems->count();
+        $foundItems = $phraseResults->limit($limit)->get();
+        if ($count > 0)
+            return view('search.results', compact('foundItems', 'count', 'phrase', 'limit'))->render();
+        return view('search.not-found');
+    }
+
+    /**
+     * filter results.
+     *
+     */
+    public function filter(Request $request)
+    {
+        dd($request->query('filter'), $request->query('sort'), $request->sort, $request);
+
+//        dd($request->data);
+        $memberBuilder = Member::query();
+        $memberBuilder->whereId(1);
+        $members = $memberBuilder->get();
+        return view('layouts.single-pages.models-list-items', compact('members'));
+    }
+
+    /**
      * Show the form for creating a new resource.
      */
     public function main()
@@ -206,7 +253,7 @@ class MemberController extends Controller
     {
         $old = TempTable::query()->whereUserId(auth()->user()->id)->whereStepId(0)->get();
         $token = session('token');
-        return view('apply_as.step-0', compact('token','old'));
+        return view('apply_as.step-0', compact('token', 'old'));
     }
 
     /**
