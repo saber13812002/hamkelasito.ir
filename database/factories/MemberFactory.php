@@ -19,6 +19,8 @@ class MemberFactory extends Factory
         $rand = mt_rand(1, 43);
         $rand3digit = sprintf("%03d", $rand);
 
+        $remainder = $rand % 10 == 9;
+
         $gender = $this->faker->randomElement(['Male', 'Female', 'Other']);
 
         return [
@@ -26,7 +28,7 @@ class MemberFactory extends Factory
             'thumbnail_image' => $rand3digit,
             'no' => $rand,
 
-            'name' => $this->faker->firstName($gender),
+            'name' => $this->faker->firstName($gender) . ($remainder ? "and" : ""),
             'middle_name' => $this->faker->firstName($gender),
             'family' => $this->faker->lastName,
             'alias' => $this->faker->firstName($gender),
