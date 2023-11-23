@@ -251,8 +251,8 @@ class MemberController extends Controller
      */
     public function step0get()
     {
-        $old = TempTable::query()->whereUserId(auth()->user()->id)->whereStepId(0)->get();
-//        dd($old);
+        $old = TempTable::query()->whereUserId(auth()->user()->id)->whereStepId(0)->get()->pluck('value', 'model_field');
+//        dd($old['model_type'], isset($old), isset($old['model_type']));
         $token = session('token');
         return view('apply_as.step-0', compact('token', 'old'));
     }
@@ -350,6 +350,7 @@ class MemberController extends Controller
     private function saveRequestToTempTable(Request $request, int $stepId)
     {
         $request->request->add(['step' => $stepId]);
+        $userId = auth()->user()->id;
         Log::info($request);
 //        dd(auth()->user());
 //        $tempTable->member_id
@@ -358,12 +359,20 @@ class MemberController extends Controller
         foreach ($tempFields as $tempField) {
 //            dd($request->get('model_type'));
             if ($request->has($tempField->model_field)) {
-                $tempTable = new TempTable();
-                $tempTable->step_id = $stepId;
-                $tempTable->user_id = auth()->user()->id;
-                $tempTable['model_field'] = $tempField->model_field;
-                $tempTable['model_name'] = $tempField->model_name;
-                $tempTable['type'] = $tempField->type;
+                $tempTable = TempTable::query()
+                    ->whereStepId($stepId)
+                    ->whereUserId($userId)
+                    ->whereModelField($tempField->model_field)
+                    ->first();
+//                dd($tempTable);
+                if (!$tempTable) {
+                    $tempTable = new TempTable();
+                    $tempTable->step_id = $stepId;
+                    $tempTable->user_id = $userId;
+                    $tempTable['model_field'] = $tempField->model_field;
+                    $tempTable['model_name'] = $tempField->model_name;
+                    $tempTable['type'] = $tempField->type;
+                }
                 if ($tempField->type == 'json')
                     $tempTable['json'] = $request->get($tempField->model_field);
                 else if ($tempField->type == 'text')
