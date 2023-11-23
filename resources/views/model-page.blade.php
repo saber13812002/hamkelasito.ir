@@ -839,8 +839,8 @@ Voice
     <!-- start scripts -->
     <script src="/storage/assets/js/lib/jQuery.min.js"></script>
     <script src="/storage/assets/js/lib/lazyload.min.js"></script>
-    <script src="/storage/assets/js/component.min.js"></script>
-    <script src="/storage/assets/js/scripts.min.js"></script>
+    <script src="/storage/assets/js/component.js"></script>
+    <script src="/storage/assets/js/scripts.js"></script>
 
 
 

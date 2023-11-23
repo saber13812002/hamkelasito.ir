@@ -598,8 +598,8 @@
 @include('footer-site')
 
 <!-- start scripts -->
-<script src="/storage/assets/js/lib/jQuery.js"></script>
-<script src="/storage/assets/js/lib/lazyload.js"></script>
+<script src="/storage/assets/js/lib/jQuery.min.js"></script>
+<script src="/storage/assets/js/lib/lazyload.min.js"></script>
 <script src="/storage/assets/js/pro-validation.js"></script>
 <script src="/storage/assets/js/popup.js"></script>
 <script src="/storage/assets/js/component.js"></script>

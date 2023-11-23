@@ -30,19 +30,19 @@
 <!-- scripts -->
 <script src="/storage/assets/js/lib/jQuery.min.js"></script>
 <script src="/storage/assets/js/lib/lazyload.min.js"></script>
-<script src="/storage/assets/js/lib/cropper.min.js"></script>
-<script src="/storage/assets/js/lib/jquery-cropper.min.js"></script>
-<script src="/storage/assets/js/popup.min.js"></script>
-<script src="/storage/assets/js/modal-side.min.js"></script>
-<script src="/storage/assets/js/photo-selector.min.js"></script>
-<script src="/storage/assets/js/api-request-manager.min.js"></script>
-<script src="/storage/assets/js/modal-screen.min.js"></script>
-<script src="/storage/assets/js/wheel-picker.min.js"></script>
-<script src="/storage/assets/js/media-library.min.js"></script>
-<script src="/storage/assets/js/file-selector.min.js"></script>
-<script src="/storage/assets/js/pro-validation.min.js"></script>
-<script src="/storage/assets/js/component.min.js"></script>
-<script src="/storage/assets/js/dashboard.min.js"></script>
+<script src="/storage/assets/js/lib/cropper.js"></script>
+<script src="/storage/assets/js/lib/jquery-cropper.js"></script>
+<script src="/storage/assets/js/popup.js"></script>
+<script src="/storage/assets/js/modal-side.js"></script>
+<script src="/storage/assets/js/photo-selector.js"></script>
+<script src="/storage/assets/js/api-request-manager.js"></script>
+<script src="/storage/assets/js/modal-screen.js"></script>
+<script src="/storage/assets/js/wheel-picker.js"></script>
+<script src="/storage/assets/js/media-library.js"></script>
+<script src="/storage/assets/js/file-selector.js"></script>
+<script src="/storage/assets/js/pro-validation.js"></script>
+<script src="/storage/assets/js/component.js"></script>
+<script src="/storage/assets/js/dashboard.js"></script>
 
 </body>
 

@@ -416,11 +416,11 @@
     {{--    TODO Saber --}}
     <script src="/storage/assets/js/lib/jQuery.min.js"></script>
     <script src="/storage/assets/js/lib/lazyload.min.js"></script>
-    <script src="/storage/assets/js/app-screen.min.js"></script>
-    <script src="/storage/assets/js/modal-screen.min.js"></script>
-    <script src="/storage/assets/js/api-request-manager.min.js"></script>
-    <script src="/storage/assets/js/pro-validation.min.js"></script>
-    <script src="/storage/assets/js/component.min.js"></script>
-    <script src="/storage/assets/js/scripts.min.js"></script>
+    <script src="/storage/assets/js/app-screen.js"></script>
+    <script src="/storage/assets/js/modal-screen.js"></script>
+    <script src="/storage/assets/js/api-request-manager.js"></script>
+    <script src="/storage/assets/js/pro-validation.js"></script>
+    <script src="/storage/assets/js/component.js"></script>
+    <script src="/storage/assets/js/scripts.js"></script>
 
 @endsection

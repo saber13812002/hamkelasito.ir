@@ -32,11 +32,11 @@
 <!-- start scripts -->
 <script src="/storage/assets/js/lib/jQuery.min.js"></script>
 <script src="/storage/assets/js/lib/lazyload.min.js"></script>
-<script src="/storage/assets/js/lib/swiper-bundle.min.js"></script>
-<script src="/storage/assets/js/pro-validation.min.js"></script>
-<script src="/storage/assets/js/popup.min.js"></script>
-<script src="/storage/assets/js/component.min.js"></script>
-<script src="/storage/assets/js/scripts.min.js"></script>
+<script src="/storage/assets/js/lib/swiper-bundle.js"></script>
+<script src="/storage/assets/js/pro-validation.js"></script>
+<script src="/storage/assets/js/popup.js"></script>
+<script src="/storage/assets/js/component.js"></script>
+<script src="/storage/assets/js/scripts.js"></script>
 
 </body>
 
