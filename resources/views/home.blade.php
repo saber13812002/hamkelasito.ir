@@ -62,7 +62,7 @@
                             <div class="item-content slider-content-{{ $slider->order-1 }} active"
                                  data-index="{{ $slider->order-1 }}">
                                 <div class="item-title">
-                                    <a href="model-page" aria-label="{{ $slider->order-1 }}" itemprop="url"><span
+                                    <a href="model-page?id={{ $slider->member?$slider->member->id:"" }}" aria-label="{{ $slider->order-1 }}" itemprop="url"><span
                                             itemprop="name">{{ $slider->member?$slider->member->name:"" }}</span></a>
                                     <a {{$slider->video?"":"style=display:none"}} href="/storage/assets/video/{{ $slider->video }}"
                                        data-light-box="slide_{{ $slider->order-1 }}_video"
