@@ -60,7 +60,7 @@ class AuthController extends Controller
 //        dd($request);
         $request->validate([
             'name' => 'required',
-            'email' => 'required|email',
+            'email' => 'required|email|unique:users',
             'password' => 'required|min:6',
         ]);
 
@@ -114,33 +114,11 @@ class AuthController extends Controller
 
     public function create(array $data)
     {
-        // Retrieve the entered email and password
-        $email = $data['email'];
-        $password = $data['password'];
-
-        $user = User::where('email', $email)->first();
-//        dd($user);
-        if ($user) {
-            // User already exists, compare passwords
-            if (Hash::check($password, $user->password)) {
-                // Passwords match, log in the user
-                Auth::login($user);
-
-                // Redirect the user to the desired page
-                return redirect('/dashboard');
-            } else {
-                // Passwords don't match, display an error message
-                return back()->withErrors(['password' => 'Incorrect password']);
-            }
-        } else {
-            // User doesn't exist, proceed with registration logic
-            // ...
-            return User::create([
-                'name' => $data['name'],
-                'email' => $email,
-                'password' => Hash::make($password)
-            ]);
-        }
+        return User::create([
+            'name' => $data['name'],
+            'email' => $data['email'],
+            'password' => Hash::make($data['password'])
+        ]);
     }
 
     public function logout()

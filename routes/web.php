@@ -78,7 +78,7 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'web', 'verified']],
 //    Route::get('/category', [\App\Http\Controllers\CategoryController::class, 'index']);
 //});
 
-//Auth::routes();
+Auth::routes();
 
 //Route::group(['prefix' => 'dashboard-models', 'middleware' => ['set.locale']], function () {
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('root');
@@ -141,4 +141,4 @@ Route::group(['prefix' => 'dashboard-models', 'middleware' => ['auth', 'web', 'v
 });
 
 // email verification
-//Auth::routes(['verify' => true]);
+Auth::routes(['verify' => true]);
