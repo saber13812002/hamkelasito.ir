@@ -20,7 +20,7 @@ class MemberController extends Controller
      */
     public function index()
     {
-        $members = Member::all();
+        $members = Member::published()->get();
         return view('admin.member.index', compact('members'));
     }
 
@@ -31,10 +31,10 @@ class MemberController extends Controller
     {
         $data = $request->all();
 //    dd($data);
-//    return Member::all();
+//    return Member::published()->get();
 
 //    dd($request->sort);
-//    Member::all();
+//    Member::published()->get();
         return '';
     }
 
@@ -47,7 +47,7 @@ class MemberController extends Controller
 //    dd($request->query('filter'), $request->query('sort'));
         $limit = 3;
         $phrase = $request->s;
-        $phraseResults = Member::where('name', 'like', '%' . $phrase . '%');
+        $phraseResults = Member::query()->published()->where('name', 'like', '%' . $phrase . '%');
         $foundItems = $phraseResults->limit($limit + 1)->get();
         $count = $foundItems->count();
         $foundItems = $phraseResults->limit($limit)->get();
@@ -65,7 +65,7 @@ class MemberController extends Controller
 //        dd($request->query('filter'), $request->query('sort'), $request->sort, $request);
 
 //        dd($request->data);
-        $memberBuilder = Member::query();
+        $memberBuilder = Member::query()->published();
         $memberBuilder->whereId(1);
         $members = $memberBuilder->get();
         return view('layouts.single-pages.models-list-items', compact('members'));

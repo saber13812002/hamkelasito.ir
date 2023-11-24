@@ -27,6 +27,17 @@ class Member extends Model
     }
 
 
+    public function scopePublished($builder)
+    {
+        $builder->where('published_at', '<=', now());
+    }
+
+
+    public function scopeNotPublished($builder)
+    {
+        $builder->whereNull('published_at');
+    }
+
     public function slider(): HasOne
     {
         return $this->hasOne(Slider::class);

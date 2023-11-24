@@ -74,6 +74,7 @@ class MemberFactory extends Factory
             'skills' => $this->faker->paragraph(),
             'skill_tags' => $this->faker->randomElement(['Basketball', 'Inline-skating', 'Tennis']),
 
+            'published_at' => $this->faker->dateTime('now'),
         ];
     }
 }

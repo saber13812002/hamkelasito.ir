@@ -19,7 +19,7 @@ class HomeController
     public function index()
     {
         $categories = Category::all();
-        $members = Member::all();
+        $members = Member::published()->get();
         $sliders = Slider::all();
 
         return view('home', compact('categories', 'members', 'sliders'));
@@ -29,7 +29,7 @@ class HomeController
     {
         if ($request->has('id')) {
             $id = $request->id;
-            $member = Member::query()->find($id);
+            $member = Member::query()->published()->find($id);
             return view('model-page', compact('member'));
         } else
             return redirect('home');
@@ -47,9 +47,8 @@ class HomeController
         if ($request->has('category_id')) {
             $categoryId = $request->get('category_id');
         }
-        $membersBuilder = Member::query();
+        $membersBuilder = Member::query()->published();
         if (!$global == 'all' || !$categoryId == null) {
-            $membersBuilder = Member::query();
             if ($global != 'all') {
                 $membersBuilder->whereType($global);
             }
@@ -138,7 +137,7 @@ class HomeController
     {
         if ($request->has('id')) {
             $id = $request->id;
-            $member = Member::query()->find($id);
+            $member = Member::query()->published()->find($id);
             return view('pdf.composite', compact('member'));
         } else
             return redirect('home');
@@ -147,7 +146,7 @@ class HomeController
     public function composite2(Request $request, $id)
     {
         if ($id) {
-            $member = Member::query()->find($id);
+            $member = Member::query()->published()->find($id);
 //            return view('pdf.composite', compact('member'));
 //            $pdf = Pdf::loadView('pdf.composite2', ['member' => $member, 'url' => config('app.url')]);
 
@@ -167,7 +166,7 @@ class HomeController
     public function composite3(Request $request, $id)
     {
         if ($id) {
-            $member = Member::query()->find($id);
+            $member = Member::query()->published()->find($id);
             $url = config('app.url');
             $pdf = PDF::loadView('pdf.composite2', compact('member', 'url'));
             return $pdf->download('composite-' . $id . '.pdf');
