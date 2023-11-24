@@ -19,7 +19,7 @@ class RouteServiceProvider extends ServiceProvider
      */
     public const HOME = '/admin';
     public const DASHBOARD_MODELS = '/dashboard-models';
-    public const APPLY_AS_A_MODEL_FORM_ROLE =  '/dashboard-models/apply-as-a-model-form-role';
+    public const APPLY_AS_A_MODEL_FORM_ROLE = '/dashboard-models/apply-as-a-model-form-role';
 
     /**
      * Define your route model bindings, pattern filters, and other route configuration.
@@ -37,6 +37,15 @@ class RouteServiceProvider extends ServiceProvider
 
             Route::middleware('web')
                 ->group(base_path('routes/web.php'));
+
+            // TODO: middleware admin
+            Route::middleware(['auth', 'web', 'verified'])
+                ->prefix('admin')
+                ->group(base_path('routes/admin.php'));
+
+            Route::middleware(['auth', 'web', 'verified'])
+                ->prefix('dashboard-models')
+                ->group(base_path('routes/dashboard-members.php'));
         });
     }
 }
