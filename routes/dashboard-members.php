@@ -23,8 +23,8 @@ Route::get('apply-as-a-model-form-step-1', [MemberController::class, 'step1get']
 Route::post('apply-as-a-model-form-step-1', [MemberController::class, 'step1'])->name('step1');
 Route::get('apply-as-a-model-form-step-2', [MemberController::class, 'step2get'])->name('step2get');
 Route::post('apply-as-a-model-form-step-2', [MemberController::class, 'step2'])->name('step2');
-Route::any('apply-as-a-model-form-step-3', [MemberController::class, 'step3get'])->name('step3get');
-Route::any('apply-as-a-model-form-step-3', [MemberController::class, 'step3'])->name('step3');
+Route::get('apply-as-a-model-form-step-3', [MemberController::class, 'step3get'])->name('step3get');
+Route::post('apply-as-a-model-form-step-3', [MemberController::class, 'step3'])->name('step3');
 Route::any('apply-as-a-model-form-step-4', [MemberController::class, 'step4'])->name('step4');
 Route::any('apply-as-a-model-form-step-5', [MemberController::class, 'step5'])->name('step5');
 Route::any('apply-as-a-model-form-step-6', [MemberController::class, 'step6'])->name('step6');

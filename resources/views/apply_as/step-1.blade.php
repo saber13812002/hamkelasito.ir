@@ -107,7 +107,10 @@
                                         <div class="form-section-label">
                                             <div>
                                                 Name
-                                                <div class="field-hint">Your identity will be verified using your official documents. Please ensure the information you enter matches that on your ID.</div>
+                                                <div class="field-hint">Your identity will be verified using your
+                                                    official documents. Please ensure the information you enter matches
+                                                    that on your ID.
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="form-section-content">
@@ -116,8 +119,12 @@
                                             <div class="field field-type-nr-input" data-type="text" data-required="true"
                                                  data-required-type="firstname">
                                                 <div class="field-content">
-                                                    <label for="first_name">First Name <span class="field-required-star">*</span></label>
-                                                    <input value="saner" type="text" name="first_name" id="first_name">
+                                                    <label for="first_name">First Name <span
+                                                            class="field-required-star">*</span></label>
+                                                    <input
+                                                        @if (isset($old) && isset($old['first_name']))
+                                                            value="{{$old['first_name']}}"
+                                                        @endif type="text" name="first_name" id="first_name">
                                                 </div>
                                             </div>
                                             <div class="field-error-msg" id="field_error_first_name"></div>
@@ -126,8 +133,13 @@
                                             <div class="field field-type-nr-input" data-type="text" data-required="true"
                                                  data-required-type="japanFirstName">
                                                 <div class="field-content">
-                                                    <label for="first_name_furigana">First Name (Furigana) <span class="field-required-star">*</span></label>
-                                                    <input type="text" name="first_name_furigana" id="first_name_furigana">
+                                                    <label for="first_name_furigana">First Name (Furigana) <span
+                                                            class="field-required-star">*</span></label>
+                                                    <input
+                                                        @if (isset($old) && isset($old['first_name_furigana']))
+                                                            value="{{$old['first_name_furigana']}}"
+                                                        @endif type="text" name="first_name_furigana"
+                                                        id="first_name_furigana">
                                                 </div>
                                             </div>
                                             <div class="field-error-msg" id="field_error_first_name_furigana"></div>
@@ -136,7 +148,10 @@
                                             <div class="field field-type-nr-input" data-type="text">
                                                 <div class="field-content">
                                                     <label for="middle_name">Middle Name</label>
-                                                    <input type="text" name="middle_name" id="middle_name">
+                                                    <input
+                                                        @if (isset($old) && isset($old['middle_name']))
+                                                            value="{{$old['middle_name']}}"
+                                                        @endif type="text" name="middle_name" id="middle_name">
                                                 </div>
                                             </div>
                                             <div class="field-error-msg" id="field_error_middle_name"></div>
@@ -145,8 +160,12 @@
                                             <div class="field field-type-nr-input" data-type="text" data-required="true"
                                                  data-required-type="lastname">
                                                 <div class="field-content">
-                                                    <label for="last_name">Last Name <span class="field-required-star">*</span></label>
-                                                    <input type="text" name="last_name" id="last_name">
+                                                    <label for="last_name">Last Name <span
+                                                            class="field-required-star">*</span></label>
+                                                    <input
+                                                        @if (isset($old) && isset($old['last_name']))
+                                                            value="{{$old['last_name']}}"
+                                                        @endif type="text" name="last_name" id="last_name">
                                                 </div>
                                             </div>
                                             <div class="field-error-msg" id="field_error_last_name"></div>
@@ -155,8 +174,13 @@
                                             <div class="field field-type-nr-input" data-type="text" data-required="true"
                                                  data-required-type="japanLastName">
                                                 <div class="field-content">
-                                                    <label for="last_name_furigana">Last Name (Furigana) <span class="field-required-star">*</span></label>
-                                                    <input type="text" name="last_name_furigana" id="last_name_furigana">
+                                                    <label for="last_name_furigana">Last Name (Furigana) <span
+                                                            class="field-required-star">*</span></label>
+                                                    <input
+                                                        @if (isset($old) && isset($old['last_name_furigana']))
+                                                            value="{{$old['last_name_furigana']}}"
+                                                        @endif type="text" name="last_name_furigana"
+                                                        id="last_name_furigana">
                                                 </div>
                                             </div>
                                             <div class="field-error-msg" id="field_error_last_name_furigana"></div>
@@ -171,13 +195,19 @@
 
                                             <!-- stage name -->
                                             <div>
-                                                <div class="field field-type-nr-input"  data-required="false" data-type="text">
+                                                <div class="field field-type-nr-input" data-required="false"
+                                                     data-type="text">
                                                     <div class="field-content">
                                                         <label for="stage_name">Talent Name</label>
-                                                        <input type="text" name="stage_name" id="stage_name">
+                                                        <input
+                                                            @if (isset($old) && isset($old['stage_name']))
+                                                                value="{{$old['stage_name']}}"
+                                                            @endif type="text" name="stage_name" id="stage_name">
                                                     </div>
                                                 </div>
-                                                <div class="field-hint">If you enter a stage name, only your stage name will be displayed on your profile.</div>
+                                                <div class="field-hint">If you enter a stage name, only your stage name
+                                                    will be displayed on your profile.
+                                                </div>
                                             </div>
 
                                         </div>
@@ -185,7 +215,8 @@
 
                                     <!-- other nationality group -->
                                     <div class="form-section">
-                                        <div class="form-section-label align-top"><span>Do you have another nationality? <span class="field-required-star">*</span></span></div>
+                                        <div class="form-section-label align-top"><span>Do you have another nationality? <span
+                                                    class="field-required-star">*</span></span></div>
                                         <div class="form-section-content">
 
                                             <!-- other nationality checkbox -->
@@ -194,10 +225,16 @@
                                                     <div class="col-auto">
 
                                                         <!-- Yes -->
-                                                        <div class="field field-type-radio" data-required="true" data-type="radio">
+                                                        <div class="field field-type-radio" data-required="true"
+                                                             data-type="radio">
                                                             <div class="field-content">
                                                                 <label>
-                                                                    <input checked type="radio" value="yes" name="have_other_nationality" class="have_other_nationality">
+                                                                    <input
+                                                                        @if (isset($old) && isset($old['other_nationality']))
+                                                                            {{"checked"}}
+                                                                        @endif type="radio" value="yes"
+                                                                        name="have_other_nationality"
+                                                                        class="have_other_nationality">
                                                                     <span class="checkmark"></span>
                                                                     Yes
                                                                 </label>
@@ -208,10 +245,16 @@
                                                     <div class="col-auto">
 
                                                         <!-- no -->
-                                                        <div class="field field-type-radio" data-required="true" data-type="radio">
+                                                        <div class="field field-type-radio" data-required="true"
+                                                             data-type="radio">
                                                             <div class="field-content">
                                                                 <label>
-                                                                    <input type="radio" value="no" name="have_other_nationality" class="have_other_nationality">
+                                                                    <input
+                                                                        @if (isset($old) && !isset($old['other_nationality']))
+                                                                            {{"checked"}}
+                                                                        @endif type="radio" value="no"
+                                                                        name="have_other_nationality"
+                                                                        class="have_other_nationality">
                                                                     <span class="checkmark"></span>
                                                                     No
                                                                 </label>
@@ -228,10 +271,15 @@
                                                 <div class="field field-type-select"
                                                      data-source="/api/country/"
                                                      data-field-defualt-text="Select Item" data-field-search="true"
-                                                     data-required="true" data-btn-submit-text="Select" data-type="select" data-clear="true">
+                                                     data-required="true" data-btn-submit-text="Select"
+                                                     data-type="select" data-clear="true">
                                                     <div class="field-content">
-                                                        <label for="fathers_nationality">Other Nationality <span class="field-required-star">*</span></label>
-                                                        <select name="other_nationality" data-default-value="Paraguay,Albania"
+                                                        <label for="fathers_nationality">Other Nationality <span
+                                                                class="field-required-star">*</span></label>
+                                                        <select name="other_nationality"
+                                                                @if (isset($old) && isset($old['other_nationality']))
+                                                                    data-default-value="{{$old['other_nationality']}}"
+                                                                @endif
                                                                 id="other_nationality" multiple></select>
                                                         <i class="icon-arrow-down"></i>
                                                     </div>
@@ -244,7 +292,8 @@
 
                                     <!-- parent nationality group -->
                                     <div class="form-section">
-                                        <div class="form-section-label align-top"><span>Are you mixed? <span class="field-required-star">*</span></span></div>
+                                        <div class="form-section-label align-top"><span>Are you mixed? <span
+                                                    class="field-required-star">*</span></span></div>
                                         <div class="form-section-content">
 
                                             <!-- other nationality checkbox -->
@@ -253,10 +302,16 @@
                                                     <div class="col-auto">
 
                                                         <!-- Yes -->
-                                                        <div class="field field-type-radio" data-required="true" data-type="radio">
+                                                        <div class="field field-type-radio" data-required="true"
+                                                             data-type="radio">
                                                             <div class="field-content">
                                                                 <label>
-                                                                    <input type="radio" value="yes" name="are_you_mixed" class="are_you_mixed">
+                                                                    <input
+                                                                        @if (isset($old) && isset($old['are_you_mixed']) && str_contains($old['are_you_mixed'],"yes"))
+                                                                            {{"checked"}}
+                                                                        @endif type="radio" value="yes"
+                                                                        name="are_you_mixed"
+                                                                        class="are_you_mixed">
                                                                     <span class="checkmark"></span>
                                                                     Yes
                                                                 </label>
@@ -267,10 +322,16 @@
                                                     <div class="col-auto">
 
                                                         <!-- no -->
-                                                        <div class="field field-type-radio" data-required="true" data-type="radio">
+                                                        <div class="field field-type-radio" data-required="true"
+                                                             data-type="radio">
                                                             <div class="field-content">
                                                                 <label>
-                                                                    <input type="radio" value="no" name="are_you_mixed" class="are_you_mixed">
+                                                                    <input
+                                                                        @if (isset($old) && isset($old['are_you_mixed']) && str_contains($old['are_you_mixed'],"no"))
+                                                                            {{"checked"}}
+                                                                        @endif type="radio" value="no"
+                                                                        name="are_you_mixed"
+                                                                        class="are_you_mixed">
                                                                     <span class="checkmark"></span>
                                                                     No
                                                                 </label>
@@ -286,12 +347,18 @@
                                             <div data-dependency=".are_you_mixed" data-dependency-value="yes">
                                                 <div class="field field-type-select"
                                                      data-source="/api/country/"
-                                                     data-field-defualt-text="Select Item" data-field-search="true" data-clear="true"
-                                                     data-required="true" data-btn-submit-text="Select" data-type="select">
+                                                     data-field-defualt-text="Select Item" data-field-search="true"
+                                                     data-clear="true"
+                                                     data-required="true" data-btn-submit-text="Select"
+                                                     data-type="select">
                                                     <div class="field-content">
                                                         <label for="fathers_nationality">Father's
-                                                            Nationality <span class="field-required-star">*</span></label>
-                                                        <select name="fathers_nationality"
+                                                            Nationality <span
+                                                                class="field-required-star">*</span></label>
+                                                        <select
+                                                            @if (isset($old) && isset($old['fathers_nationality']))
+                                                                data-default-value="{{$old['fathers_nationality']}}"
+                                                            @endif name="fathers_nationality"
                                                                 id="fathers_nationality"></select>
                                                         <i class="icon-arrow-down"></i>
                                                     </div>
@@ -303,12 +370,18 @@
                                             <div data-dependency=".are_you_mixed" data-dependency-value="yes">
                                                 <div class="field field-type-select"
                                                      data-source="/api/country/"
-                                                     data-field-defualt-text="Select Item" data-field-search="true" data-clear="true"
-                                                     data-required="true" data-btn-submit-text="Select" data-type="select">
+                                                     data-field-defualt-text="Select Item" data-field-search="true"
+                                                     data-clear="true"
+                                                     data-required="true" data-btn-submit-text="Select"
+                                                     data-type="select">
                                                     <div class="field-content">
                                                         <label for="mothers_nationality">Mother's
-                                                            Nationality <span class="field-required-star">*</span></label>
-                                                        <select name="mothers_nationality"
+                                                            Nationality <span
+                                                                class="field-required-star">*</span></label>
+                                                        <select
+                                                            @if (isset($old) && isset($old['mothers_nationality']))
+                                                                data-default-value="{{$old['mothers_nationality']}}"
+                                                            @endif name="mothers_nationality"
                                                                 id="mothers_nationality"></select>
                                                         <i class="icon-arrow-down"></i>
                                                     </div>

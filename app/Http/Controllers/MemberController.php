@@ -251,8 +251,8 @@ class MemberController extends Controller
      */
     public function step0get()
     {
-        $old = TempTable::query()->whereUserId(auth()->user()->id)->whereStepId(0)->get()->pluck('value', 'model_field');
-//        dd($old['model_type'], isset($old), isset($old['model_type']));
+        $stepId = 0;
+        $old = $this->getOldFormData([$stepId]);
         $token = session('token');
         return view('apply_as.step-0', compact('token', 'old'));
     }
@@ -269,6 +269,18 @@ class MemberController extends Controller
     /**
      * Show the form for creating a new resource.
      */
+    public function step1get()
+    {
+        $stepId = 1;
+        $old = $this->getOldFormData([$stepId]);
+//        dd($old);
+        $token = session('token');
+        return view('apply_as.step-1', compact('token', 'old'));
+    }
+
+    /**
+     * Show the form for creating a new resource.
+     */
     public function step1(Request $request)
     {
 //        dd($request);
@@ -280,11 +292,35 @@ class MemberController extends Controller
     /**
      * Show the form for creating a new resource.
      */
+    public function step2get()
+    {
+        $stepId = 2;
+        $old = $this->getOldFormData([$stepId]);
+//        dd($old);
+        $token = session('token');
+        return view('apply_as.step-2', compact('token', 'old'));
+    }
+
+    /**
+     * Show the form for creating a new resource.
+     */
     public function step2(FormRequest $request)
     {
         $this->saveRequestToTempTable($request, 1);
         $token = session('token');
         return view('apply_as.step-2', compact('token'));
+    }
+
+    /**
+     * Show the form for creating a new resource.
+     */
+    public function step3get()
+    {
+        $stepId = 3;
+        $old = $this->getOldFormData([$stepId]);
+//        dd($old);
+        $token = session('token');
+        return view('apply_as.step-2', compact('token', 'old'));
     }
 
     /**
@@ -351,6 +387,15 @@ class MemberController extends Controller
     {
         $request->request->add(['step' => $stepId]);
         $userId = auth()->user()->id;
+
+        if (!auth()->user()->member) {
+            $member = new Member();
+            $member->user_id = $userId;
+            $member->save();
+//            $user =auth()->user();
+//            $user->member_id=$member->id;
+//            $user->save();
+        }
         Log::info($request);
 //        dd(auth()->user());
 //        $tempTable->member_id
@@ -358,29 +403,30 @@ class MemberController extends Controller
 //        dd($tempTable, $stepId, $tempFields);
         foreach ($tempFields as $tempField) {
 //            dd($request->get('model_type'));
-            if ($request->has($tempField->model_field)) {
+            if ($request->has($tempField->request_key)) {
                 $tempTable = TempTable::query()
                     ->whereStepId($stepId)
                     ->whereUserId($userId)
-                    ->whereModelField($tempField->model_field)
+                    ->whereModelField($tempField->request_key)
                     ->first();
 //                dd($tempTable);
                 if (!$tempTable) {
                     $tempTable = new TempTable();
                     $tempTable->step_id = $stepId;
                     $tempTable->user_id = $userId;
-                    $tempTable['model_field'] = $tempField->model_field;
+//                    $tempTable->member_id = auth()->user()->member()->id;
+                    $tempTable['model_field'] = $tempField->request_key;
                     $tempTable['model_name'] = $tempField->model_name;
                     $tempTable['type'] = $tempField->type;
                 }
                 if ($tempField->type == 'json')
-                    $tempTable['json'] = $request->get($tempField->model_field);
+                    $tempTable['json'] = $request->get($tempField->request_key);
                 else if ($tempField->type == 'text')
-                    $tempTable['text'] = $request->get($tempField->model_field);
+                    $tempTable['text'] = $request->get($tempField->request_key);
                 else if ($tempField->type == 'file') {
-                    $tempTable['value'] = $request->get($tempField->model_field);
+                    $tempTable['value'] = $request->get($tempField->request_key);
                 } else
-                    $tempTable['value'] = $request->get($tempField->model_field);
+                    $tempTable['value'] = $request->get($tempField->request_key);
 
 //                dd($request,$tempTable,$tempField);
                 $tempTable->save();
@@ -390,5 +436,19 @@ class MemberController extends Controller
             }
 
         }
+    }
+
+    /**
+     * @return TempTable
+     */
+    public function getOldFormData(array $stepIds)
+    {
+        $old = TempTable::query()
+            ->whereUserId(auth()->user()->id)
+            ->whereStepId($stepIds)
+            ->get()
+            ->pluck('value', 'model_field');
+//        dd($old['value'], isset($old), isset($old['model_type']));
+        return $old;
     }
 }

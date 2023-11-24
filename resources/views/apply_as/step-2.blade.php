@@ -113,28 +113,52 @@
                                                 <div class="field-content">
                                                     <label for="eye_color">Eye Color <span class="field-required-star">*</span></label>
                                                     <select name="eye_color" id="eye_color">
-                                                        <option value="Amber" data-color="#FFBF00">
+                                                        <option
+                                                            @if (isset($old) && isset($old['eye_color']) && str_contains($old['eye_color'],"Amber"))
+                                                                {{"selected"}}
+                                                            @endif value="Amber" data-color="#FFBF00">
                                                             Amber
                                                         </option>
-                                                        <option value="Blue" data-color="#0000FF">
+                                                        <option
+                                                            @if (isset($old) && isset($old['eye_color']) && str_contains($old['eye_color'],"Blue"))
+                                                                {{"selected"}}
+                                                            @endif value="Blue" data-color="#0000FF">
                                                             Blue
                                                         </option>
-                                                        <option value="Brown" data-color="#964B00">
+                                                        <option
+                                                            @if (isset($old) && isset($old['eye_color']) && str_contains($old['eye_color'],"Brown"))
+                                                                {{"selected"}}
+                                                            @endif value="Brown" data-color="#964B00">
                                                             Brown
                                                         </option>
-                                                        <option value="Grey" data-color="#808080">
+                                                        <option
+                                                            @if (isset($old) && isset($old['eye_color']) && str_contains($old['eye_color'],"Grey"))
+                                                                {{"selected"}}
+                                                            @endif value="Grey" data-color="#808080">
                                                             Grey
                                                         </option>
-                                                        <option value="Green" data-color="#008000">
+                                                        <option
+                                                            @if (isset($old) && isset($old['eye_color']) && str_contains($old['eye_color'],"Green"))
+                                                                {{"selected"}}
+                                                            @endif value="Green" data-color="#008000">
                                                             Green
                                                         </option>
-                                                        <option value="Hazel" data-color="#8E7618">
+                                                        <option
+                                                            @if (isset($old) && isset($old['eye_color']) && str_contains($old['eye_color'],"Hazel"))
+                                                                {{"selected"}}
+                                                            @endif value="Hazel" data-color="#8E7618">
                                                             Hazel
                                                         </option>
-                                                        <option value="Black" data-color="#000000">
+                                                        <option
+                                                            @if (isset($old) && isset($old['eye_color']) && str_contains($old['eye_color'],"Black"))
+                                                                {{"selected"}}
+                                                            @endif value="Black" data-color="#000000">
                                                             Black
                                                         </option>
-                                                        <option value="Heterochromia" data-color="#D9D9D9">
+                                                        <option
+                                                            @if (isset($old) && isset($old['eye_color']) && str_contains($old['eye_color'],"Heterochromia"))
+                                                                {{"selected"}}
+                                                            @endif value="Heterochromia" data-color="#D9D9D9">
                                                             Heterochromia
                                                         </option>
                                                     </select>
@@ -149,34 +173,64 @@
                                                 <div class="field-content">
                                                     <label for="current_hair_color">Current Hair Color <span class="field-required-star">*</span></label>
                                                     <select name="current_hair_color" id="current_hair_color">
-                                                        <option value="Black" data-color="#000000">
+                                                        <option
+                                                            @if (isset($old) && isset($old['current_hair_color']) && str_contains($old['current_hair_color'],"Black"))
+                                                                {{"selected"}}
+                                                            @endif value="Black" data-color="#000000">
                                                             Black
                                                         </option>
-                                                        <option value="Brown" data-color="#964B00">
+                                                        <option
+                                                            @if (isset($old) && isset($old['current_hair_color']) && str_contains($old['current_hair_color'],"Brown"))
+                                                                {{"selected"}}
+                                                            @endif value="Brown" data-color="#964B00">
                                                             Brown
                                                         </option>
-                                                        <option value="Blonde" data-color="#faf0be">
+                                                        <option
+                                                            @if (isset($old) && isset($old['current_hair_color']) && str_contains($old['current_hair_color'],"Blonde"))
+                                                                {{"selected"}}
+                                                            @endif value="Blonde" data-color="#faf0be">
                                                             Blonde
                                                         </option>
-                                                        <option value="Auburn" data-color="#a52a2a ">
+                                                        <option
+                                                            @if (isset($old) && isset($old['current_hair_color']) && str_contains($old['current_hair_color'],"Auburn"))
+                                                                {{"selected"}}
+                                                            @endif value="Auburn" data-color="#a52a2a ">
                                                             Auburn
                                                         </option>
-                                                        <option value="Chestnut" data-color="#954535">
+                                                        <option
+                                                            @if (isset($old) && isset($old['current_hair_color']) && str_contains($old['current_hair_color'],"Chestnut"))
+                                                                {{"selected"}}
+                                                            @endif value="Chestnut" data-color="#954535">
                                                             Chestnut
                                                         </option>
-                                                        <option value="Red" data-color="#FF0000">
+                                                        <option
+                                                            @if (isset($old) && isset($old['current_hair_color']) && str_contains($old['current_hair_color'],"Red"))
+                                                                {{"selected"}}
+                                                            @endif value="Red" data-color="#FF0000">
                                                             Red
                                                         </option>
-                                                        <option value="Gray and White" data-color="#D6D5CB">
+                                                        <option
+                                                            @if (isset($old) && isset($old['current_hair_color']) && str_contains($old['current_hair_color'],"Gray and White"))
+                                                                {{"selected"}}
+                                                            @endif value="Gray and White" data-color="#D6D5CB">
                                                             Gray and White
                                                         </option>
-                                                        <option value="Green" data-color="#008000">
+                                                        <option
+                                                            @if (isset($old) && isset($old['current_hair_color']) && str_contains($old['current_hair_color'],"Green"))
+                                                                {{"selected"}}
+                                                            @endif value="Green" data-color="#008000">
                                                             Green
                                                         </option>
-                                                        <option value="Blue" data-color="#0000FF">
+                                                        <option
+                                                            @if (isset($old) && isset($old['current_hair_color']) && str_contains($old['current_hair_color'],"Blue"))
+                                                                {{"selected"}}
+                                                            @endif value="Blue" data-color="#0000FF">
                                                             Blue
                                                         </option>
-                                                        <option value="Other" data-color="#D9D9D9">
+                                                        <option
+                                                            @if (isset($old) && isset($old['current_hair_color']) && str_contains($old['current_hair_color'],"Other"))
+                                                                {{"selected"}}
+                                                            @endif value="Other" data-color="#D9D9D9">
                                                             Other
 
                                                     </select>
@@ -198,7 +252,10 @@
                                                  data-required-type="range" data-unit="Cm" data-example="170" data-min="30" data-max="250">
                                                 <div class="field-content">
                                                     <label for="height">Height (Cm) <span class="field-required-star">*</span></label>
-                                                    <input type="number" name="height" id="height">
+                                                    <input
+                                                        @if (isset($old) && isset($old['height']))
+                                                            value="{{$old['height']}}"
+                                                        @endif type="number" name="height" id="height">
                                                 </div>
                                             </div>
                                             <div class="field-error-msg" id="field_error_height"></div>
@@ -208,7 +265,10 @@
                                                  data-required-type="range" data-unit="Kg" data-example="80" data-min="1.5" data-max="250">
                                                 <div class="field-content">
                                                     <label for="weight">Weight (Kg) <span class="field-required-star">*</span></label>
-                                                    <input type="number" name="weight" id="weight">
+                                                    <input
+                                                        @if (isset($old) && isset($old['weight']))
+                                                            value="{{$old['weight']}}"
+                                                        @endif type="number" name="weight" id="weight">
                                                 </div>
                                             </div>
                                             <div class="field-error-msg" id="field_error_weight"></div>
@@ -218,7 +278,10 @@
                                                  data-required-type="range" data-unit="Cm" data-example="75" data-min="30" data-max="180">
                                                 <div class="field-content">
                                                     <label for="bust">Bust (Cm) <span class="field-required-star">*</span></label>
-                                                    <input type="number" name="bust" id="bust">
+                                                    <input
+                                                        @if (isset($old) && isset($old['bust']))
+                                                            value="{{$old['bust']}}"
+                                                        @endif type="number" name="bust" id="bust">
                                                 </div>
                                             </div>
                                             <div class="field-error-msg" id="field_error_bust"></div>
@@ -228,7 +291,10 @@
                                                  data-required-type="range" data-unit="Cm" data-example="75" data-min="30" data-max="180">
                                                 <div class="field-content">
                                                     <label for="hips">Hips (Cm) <span class="field-required-star">*</span></label>
-                                                    <input type="number" name="hips" id="hips">
+                                                    <input
+                                                        @if (isset($old) && isset($old['hips']))
+                                                            value="{{$old['hips']}}"
+                                                        @endif type="number" name="hips" id="hips">
                                                 </div>
                                             </div>
                                             <div class="field-error-msg" id="field_error_hips"></div>
@@ -238,7 +304,10 @@
                                                  data-required-type="range" data-unit="Cm" data-example="75" data-min="30" data-max="180">
                                                 <div class="field-content">
                                                     <label for="waist">Waist (Cm) <span class="field-required-star">*</span></label>
-                                                    <input type="number" name="waist" id="waist">
+                                                    <input
+                                                        @if (isset($old) && isset($old['waist']))
+                                                            value="{{$old['waist']}}"
+                                                        @endif type="number" name="waist" id="waist">
                                                 </div>
                                             </div>
                                             <div class="field-error-msg" id="field_error_waist"></div>

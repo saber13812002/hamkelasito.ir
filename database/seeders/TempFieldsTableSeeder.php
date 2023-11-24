@@ -139,7 +139,7 @@ class TempFieldsTableSeeder extends Seeder
             9 => 
             array (
                 'id' => 10,
-                'step_id' => 0,
+                'step_id' => 1,
                 'model_name' => 'Member',
                 'model_field' => 'name',
                 'request_key' => 'first_name',

@@ -15,7 +15,7 @@ return new class extends Migration {
 
             $table->integer('step_id');
             $table->bigInteger('user_id')->default(1);
-            $table->bigInteger('member_id')->default(1);
+            $table->bigInteger('member_id')->default(0);
 
             $table->string('model_name')->default('Member');
             $table->string('model_field');
