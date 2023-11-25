@@ -188,7 +188,7 @@
                     <div class="heading">
                         <div class="top-area">
                             <div class="title-area">
-                                <h2 class="heading-title" itemprop="name">OUR SERVICES</h2>
+                                <h2 class="heading-title" itemprop="name">{{__('menu.Our Services')}}</h2>
                             </div>
                         </div>
                     </div>
@@ -199,30 +199,27 @@
                             <i class="icon-woman"></i>
                             <div class="card-title" itemprop="itemOffered" itemscope=""
                                  itemtype="https://schema.org/Service">
-                                <span itemprop="name">Model</span>
+                                <span itemprop="name">{{__('menu.Model')}}</span>
                             </div>
-                            <div class="card-content">We provide the optimal model selection tailored to your specific
-                                requirements.
+                            <div class="card-content">{{trans("menu.We provide the optimal model selection tailored to your specific requirements.")}}
                             </div>
                         </div>
                         <div class="card" itemprop="itemListElement" itemscope="" itemtype="https://schema.org/Offer">
                             <i class="icon-creativity"></i>
                             <div class="card-title" itemprop="itemOffered" itemscope=""
                                  itemtype="https://schema.org/Service">
-                                <span itemprop="name">Talent</span>
+                                <span itemprop="name">{{__('menu.Talent')}}</span>
                             </div>
-                            <div class="card-content">Uniting events and exhibitions with the perfect talent to ensure a
-                                remarkable experience
+                            <div class="card-content">{{__('menu.Uniting events and exhibitions with the perfect talent to ensure a remarkable experience')}}
                             </div>
                         </div>
                         <div class="card" itemprop="itemListElement" itemscope="" itemtype="https://schema.org/Offer">
                             <i class="icon-actors"></i>
                             <div class="card-title" itemprop="itemOffered" itemscope=""
                                  itemtype="https://schema.org/Service">
-                                <span itemprop="name">Actor</span>
+                                <span itemprop="name">{{__('menu.Actor')}}</span>
                             </div>
-                            <div class="card-content">Delivering a myriad of actor types, ready to fulfill every
-                                performance requirement
+                            <div class="card-content">{{__('menu.Delivering a myriad of actor types, ready to fulfill every performance requirement')}}
                             </div>
                         </div>
                     </div>
