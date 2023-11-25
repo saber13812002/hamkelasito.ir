@@ -131,7 +131,7 @@
                         <div class="slider-thumbnails-wrapper">
                             @foreach($sliders as $slider)
                                 <div class="item-thumbnail slider-thumbnail-{{ $slider->order-1 }} first"
-                                     style="background-image: url(&quot;storage/assets/img/3x4/{{ $slider->image_3x4 }}&quot;); width: 292.5px; height: 390px; left: 0px; top: 0px; z-index: 0;"
+                                     style="background-image: url('storage/assets/img/3x4/{{ $slider->image_3x4 }}'); width: 292.5px; height: 390px; left: 0px; top: 0px; z-index: 0;"
                                      data-index="{{ $slider->order-1 }}">
                                 </div>
                             @endforeach
@@ -236,25 +236,25 @@
                         <div class="heading">
                             <div class="top-area">
                                 <div class="title-area">
-                                    <h2 class="heading-title" itemprop="name">TOP MODELS</h2>
+                                    <h2 class="heading-title" itemprop="name">{{__('menu.TOP MODELS')}}</h2>
                                     <div class="heading-filters desktop">
                                         <ul>
                                             <li>
                                                 <a href="/#" class="filter-option" data-filter="japanese"
                                                    aria-label="Filter Japanese Top Models">
-                                                    Japanese
+                                                    {{__('menu.Japanese')}}
                                                 </a>
                                             </li>
                                             <li>
                                                 <a href="/#" class="filter-option" data-filter="mixed"
                                                    aria-label="Filter Mixed Top Models">
-                                                    Mixed
+                                                    {{__('menu.Mixed')}}
                                                 </a>
                                             </li>
                                             <li>
                                                 <a href="/#" class="filter-option active" data-filter="international"
                                                    aria-label="Filter International Top Models">
-                                                    International
+                                                    {{__('menu.International')}}
                                                 </a>
                                             </li>
                                         </ul>
@@ -262,7 +262,7 @@
                                 </div>
                                 <div class="action-area">
                                     <a href="models-list" itemprop="url">
-                                        <span>See All</span>
+                                        <span>{{__('menu.See All')}}</span>
                                     </a>
                                 </div>
                             </div>

@@ -26,5 +26,13 @@ return [
     'Uniting events and exhibitions with the perfect talent to ensure a remarkable experience' => 'Uniting events and exhibitions with the perfect talent to ensure a remarkable experience',
     'Actor' => 'Actor',
     'Delivering a myriad of actor types, ready to fulfill every performance requirement' => 'Delivering a myriad of actor types, ready to fulfill every performance requirement',
+    'TOP MODELS' => 'TOP MODELS',
+    'News' => 'News',
+    'See All' => 'See All',
+    'Japanese' => 'Japanese',
+    'Mixed' => 'Mixed',
+    'International' => 'International',
+    'Model' => 'Model',
+    'Model' => 'Model',
 
 ];
