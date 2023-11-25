@@ -490,6 +490,8 @@ class MemberController extends Controller
 
         $options = $this->generateShoeUkSize($options);
         $options = $this->generateShoeEuSize($options);
+        $options = $this->generateShoeUsMenSize($options);
+        $options = $this->generateShoeUsWomenSize($options);
 //        dd($options);
         return $options;
     }
@@ -526,6 +528,54 @@ class MemberController extends Controller
         foreach ($eu_sizes as $key => $eu_size) {
             $options['shoe_eu_size'][$key]['name'] = $eu_size;
             $options['shoe_eu_size'][$key]['value'] = $eu_size;
+        }
+        return $options;
+    }
+
+    /**
+     * @param array $options
+     * @return array
+     */
+    public function generateShoeUsMenSize(array $options): array
+    {
+        $us_sizes = array();
+        for ($size = 1; $size <= 13.5; $size += 0.5) {
+            $us_sizes[] = $size."C";
+        }
+        for ($size = 1; $size <= 2; $size += 0.5) {
+            $us_sizes[] = $size."Y";
+        }
+        for ($size = 5; $size <= 16; $size += 0.5) {
+            $us_sizes[] = $size;
+        }
+//        dd($uk_sizes);
+        foreach ($us_sizes as $key => $us_size) {
+            $options['shoe_us_men_size'][$key]['name'] = $us_size;
+            $options['shoe_us_men_size'][$key]['value'] = $us_size;
+        }
+        return $options;
+    }
+
+    /**
+     * @param array $options
+     * @return array
+     */
+    public function generateShoeUsWomenSize(array $options): array
+    {
+        $us_sizes = array();
+        for ($size = 1; $size <= 13.5; $size += 0.5) {
+            $us_sizes[] = $size."C";
+        }
+        for ($size = 1; $size <= 2; $size += 0.5) {
+            $us_sizes[] = $size."Y";
+        }
+        for ($size = 5; $size <= 15.5; $size += 0.5) {
+            $us_sizes[] = $size;
+        }
+//        dd($uk_sizes);
+        foreach ($us_sizes as $key => $us_size) {
+            $options['shoe_us_women_size'][$key]['name'] = $us_size;
+            $options['shoe_us_women_size'][$key]['value'] = $us_size;
         }
         return $options;
     }

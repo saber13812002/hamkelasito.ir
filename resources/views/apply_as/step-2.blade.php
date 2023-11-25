@@ -513,57 +513,15 @@
                                                                 <label for="shoe_us_men_size">Size (us Men) <span
                                                                         class="field-required-star">*</span></label>
                                                                 <select name="shoe_us_men_size" id="shoe_us_men_size">
-                                                                    <option value="1C">1C</option>
-                                                                    <option value="1.5C">1.5C</option>
-                                                                    <option value="2C">2C</option>
-                                                                    <option value="2.5C">2.5C</option>
-                                                                    <option value="3C">3C</option>
-                                                                    <option value="3.5C">3.5C</option>
-                                                                    <option value="4C">4C</option>
-                                                                    <option value="4.5C">4.5C</option>
-                                                                    <option value="5C">5C</option>
-                                                                    <option value="5.5C">5.5C</option>
-                                                                    <option value="6C">6C</option>
-                                                                    <option value="6.5C">6.5C</option>
-                                                                    <option value="7C">7C</option>
-                                                                    <option value="7.5C">7.5C</option>
-                                                                    <option value="8C">8C</option>
-                                                                    <option value="8.5C">8.5C</option>
-                                                                    <option value="9C">9C</option>
-                                                                    <option value="9.5C">9.5C</option>
-                                                                    <option value="10C">10C</option>
-                                                                    <option value="10.5C">10.5C</option>
-                                                                    <option value="11C">11C</option>
-                                                                    <option value="11.5C">11.5C</option>
-                                                                    <option value="12C">12C</option>
-                                                                    <option value="12.5C">12.5C</option>
-                                                                    <option value="13C">13C</option>
-                                                                    <option value="13.5C">13.5C</option>
-                                                                    <option value="1Y">1Y</option>
-                                                                    <option value="1.5Y">1.5Y</option>
-                                                                    <option value="2Y">2Y</option>
-                                                                    <option value="3.5">3.5</option>
-                                                                    <option value="4">4</option>
-                                                                    <option value="4.5">4.5</option>
-                                                                    <option value="5">5</option>
-                                                                    <option value="5.5">5.5</option>
-                                                                    <option value="6">6</option>
-                                                                    <option value="6.5">6.5</option>
-                                                                    <option value="7">7</option>
-                                                                    <option value="7.5">7.5</option>
-                                                                    <option value="8">8</option>
-                                                                    <option value="8.5">8.5</option>
-                                                                    <option value="9">9</option>
-                                                                    <option value="9.5">9.5</option>
-                                                                    <option value="10">10</option>
-                                                                    <option value="10.5">10.5</option>
-                                                                    <option value="11">11</option>
-                                                                    <option value="11.5">11.5</option>
-                                                                    <option value="12">12</option>
-                                                                    <option value="13">13</option>
-                                                                    <option value="14">14</option>
-                                                                    <option value="15">15</option>
-                                                                    <option value="16">16</option>
+                                                                    @foreach($options['shoe_us_men_size'] as $shoe_us_men_size)
+                                                                        <option
+                                                                            @if (isset($saved) && isset($saved['shoe_us_men_size']) && ($saved['shoe_us_men_size']==$shoe_us_men_size['value']))
+                                                                                {{"selected"}}
+                                                                            @endif
+                                                                            value="{{$shoe_us_men_size['value']}}">
+                                                                            {{$shoe_us_men_size['name']}}
+                                                                        </option>
+                                                                    @endforeach
                                                                 </select>
                                                                 <i class="icon-arrow-down"></i>
                                                             </div>
@@ -577,57 +535,15 @@
                                                                         class="field-required-star">*</span></label>
                                                                 <select name="shoe_us_women_size"
                                                                         id="shoe_us_women_size">
-                                                                    <option value="1C">1C</option>
-                                                                    <option value="1.5C">1.5C</option>
-                                                                    <option value="2C">2C</option>
-                                                                    <option value="2.5C">2.5C</option>
-                                                                    <option value="3C">3C</option>
-                                                                    <option value="3.5C">3.5C</option>
-                                                                    <option value="4C">4C</option>
-                                                                    <option value="4.5C">4.5C</option>
-                                                                    <option value="5C">5C</option>
-                                                                    <option value="5.5C">5.5C</option>
-                                                                    <option value="6C">6C</option>
-                                                                    <option value="6.5C">6.5C</option>
-                                                                    <option value="7C">7C</option>
-                                                                    <option value="7.5C">7.5C</option>
-                                                                    <option value="8C">8C</option>
-                                                                    <option value="8.5C">8.5C</option>
-                                                                    <option value="9C">9C</option>
-                                                                    <option value="9.5C">9.5C</option>
-                                                                    <option value="10C">10C</option>
-                                                                    <option value="10.5C">10.5C</option>
-                                                                    <option value="11C">11C</option>
-                                                                    <option value="11.5C">11.5C</option>
-                                                                    <option value="12C">12C</option>
-                                                                    <option value="12.5C">12.5C</option>
-                                                                    <option value="13C">13C</option>
-                                                                    <option value="13.5C">13.5C</option>
-                                                                    <option value="1Y">1Y</option>
-                                                                    <option value="1.5Y">1.5Y</option>
-                                                                    <option value="2Y">2Y</option>
-                                                                    <option value="5">5</option>
-                                                                    <option value="5.5">5.5</option>
-                                                                    <option value="6">6</option>
-                                                                    <option value="6.5">6.5</option>
-                                                                    <option value="7">7</option>
-                                                                    <option value="7.5">7.5</option>
-                                                                    <option value="8">8</option>
-                                                                    <option value="8.5">8.5</option>
-                                                                    <option value="9">9</option>
-                                                                    <option value="9.5">9.5</option>
-                                                                    <option value="10">10</option>
-                                                                    <option value="10.5">10.5</option>
-                                                                    <option value="11">11</option>
-                                                                    <option value="11.5">11.5</option>
-                                                                    <option value="12">12</option>
-                                                                    <option value="12.5">12.5</option>
-                                                                    <option value="13">13</option>
-                                                                    <option value="13.5">13.5</option>
-                                                                    <option value="14">14</option>
-                                                                    <option value="14.5">14.5</option>
-                                                                    <option value="15">15</option>
-                                                                    <option value="15.5">15.5</option>
+                                                                    @foreach($options['shoe_us_women_size'] as $shoe_us_women_size)
+                                                                        <option
+                                                                            @if (isset($saved) && isset($saved['shoe_us_women_size']) && ($saved['shoe_us_women_size']==$shoe_us_women_size['value']))
+                                                                                {{"selected"}}
+                                                                            @endif
+                                                                            value="{{$shoe_us_women_size['value']}}">
+                                                                            {{$shoe_us_women_size['name']}}
+                                                                        </option>
+                                                                    @endforeach
                                                                 </select>
                                                                 <i class="icon-arrow-down"></i>
                                                             </div>
