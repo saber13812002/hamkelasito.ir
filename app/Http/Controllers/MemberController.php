@@ -252,9 +252,9 @@ class MemberController extends Controller
     public function step0get()
     {
         $stepId = 0;
-        $old = $this->getOldFormData([$stepId]);
+        $saved = $this->getOldFormData([$stepId]);
         $token = session('token');
-        return view('apply_as.step-0', compact('token', 'old'));
+        return view('apply_as.step-0', compact('token', 'saved'));
     }
 
     /**
@@ -272,10 +272,10 @@ class MemberController extends Controller
     public function step1get()
     {
         $stepId = 1;
-        $old = $this->getOldFormData([$stepId]);
-//        dd($old);
+        $saved = $this->getOldFormData([$stepId]);
+//        dd($saved);
         $token = session('token');
-        return view('apply_as.step-1', compact('token', 'old'));
+        return view('apply_as.step-1', compact('token', 'saved'));
     }
 
     /**
@@ -295,10 +295,11 @@ class MemberController extends Controller
     public function step2get()
     {
         $stepId = 2;
-        $old = $this->getOldFormData([$stepId]);
-//        dd($old);
+        $saved = $this->getOldFormData([$stepId]);
+//        dd($saved);
+
         $token = session('token');
-        return view('apply_as.step-2', compact('token', 'old'));
+        return view('apply_as.step-2', compact('token', 'saved'));
     }
 
     /**
@@ -317,10 +318,10 @@ class MemberController extends Controller
     public function step3get()
     {
         $stepId = 3;
-        $old = $this->getOldFormData([$stepId]);
-//        dd($old);
+        $saved = $this->getOldFormData([$stepId]);
+//        dd($saved);
         $token = session('token');
-        return view('apply_as.step-2', compact('token', 'old'));
+        return view('apply_as.step-2', compact('token', 'saved'));
     }
 
     /**
@@ -443,12 +444,12 @@ class MemberController extends Controller
      */
     public function getOldFormData(array $stepIds)
     {
-        $old = TempTable::query()
+        $saved = TempTable::query()
             ->whereUserId(auth()->user()->id)
             ->whereStepId($stepIds)
             ->get()
             ->pluck('value', 'model_field');
-//        dd($old['value'], isset($old), isset($old['model_type']));
-        return $old;
+//        dd($saved['value'], isset($saved), isset($saved['model_type']));
+        return $saved;
     }
 }

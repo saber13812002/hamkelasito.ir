@@ -122,8 +122,8 @@
                                                     <label for="first_name">First Name <span
                                                             class="field-required-star">*</span></label>
                                                     <input
-                                                        @if (isset($old) && isset($old['first_name']))
-                                                            value="{{$old['first_name']}}"
+                                                        @if (isset($saved) && isset($saved['first_name']))
+                                                            value="{{$saved['first_name']}}"
                                                         @endif type="text" name="first_name" id="first_name">
                                                 </div>
                                             </div>
@@ -136,8 +136,8 @@
                                                     <label for="first_name_furigana">First Name (Furigana) <span
                                                             class="field-required-star">*</span></label>
                                                     <input
-                                                        @if (isset($old) && isset($old['first_name_furigana']))
-                                                            value="{{$old['first_name_furigana']}}"
+                                                        @if (isset($saved) && isset($saved['first_name_furigana']))
+                                                            value="{{$saved['first_name_furigana']}}"
                                                         @endif type="text" name="first_name_furigana"
                                                         id="first_name_furigana">
                                                 </div>
@@ -149,8 +149,8 @@
                                                 <div class="field-content">
                                                     <label for="middle_name">Middle Name</label>
                                                     <input
-                                                        @if (isset($old) && isset($old['middle_name']))
-                                                            value="{{$old['middle_name']}}"
+                                                        @if (isset($saved) && isset($saved['middle_name']))
+                                                            value="{{$saved['middle_name']}}"
                                                         @endif type="text" name="middle_name" id="middle_name">
                                                 </div>
                                             </div>
@@ -163,8 +163,8 @@
                                                     <label for="last_name">Last Name <span
                                                             class="field-required-star">*</span></label>
                                                     <input
-                                                        @if (isset($old) && isset($old['last_name']))
-                                                            value="{{$old['last_name']}}"
+                                                        @if (isset($saved) && isset($saved['last_name']))
+                                                            value="{{$saved['last_name']}}"
                                                         @endif type="text" name="last_name" id="last_name">
                                                 </div>
                                             </div>
@@ -177,8 +177,8 @@
                                                     <label for="last_name_furigana">Last Name (Furigana) <span
                                                             class="field-required-star">*</span></label>
                                                     <input
-                                                        @if (isset($old) && isset($old['last_name_furigana']))
-                                                            value="{{$old['last_name_furigana']}}"
+                                                        @if (isset($saved) && isset($saved['last_name_furigana']))
+                                                            value="{{$saved['last_name_furigana']}}"
                                                         @endif type="text" name="last_name_furigana"
                                                         id="last_name_furigana">
                                                 </div>
@@ -200,8 +200,8 @@
                                                     <div class="field-content">
                                                         <label for="stage_name">Talent Name</label>
                                                         <input
-                                                            @if (isset($old) && isset($old['stage_name']))
-                                                                value="{{$old['stage_name']}}"
+                                                            @if (isset($saved) && isset($saved['stage_name']))
+                                                                value="{{$saved['stage_name']}}"
                                                             @endif type="text" name="stage_name" id="stage_name">
                                                     </div>
                                                 </div>
@@ -230,7 +230,7 @@
                                                             <div class="field-content">
                                                                 <label>
                                                                     <input
-                                                                        @if (isset($old) && isset($old['other_nationality']))
+                                                                        @if (isset($saved) && isset($saved['other_nationality']))
                                                                             {{"checked"}}
                                                                         @endif type="radio" value="yes"
                                                                         name="have_other_nationality"
@@ -250,7 +250,7 @@
                                                             <div class="field-content">
                                                                 <label>
                                                                     <input
-                                                                        @if (isset($old) && !isset($old['other_nationality']))
+                                                                        @if (isset($saved) && !isset($saved['other_nationality']))
                                                                             {{"checked"}}
                                                                         @endif type="radio" value="no"
                                                                         name="have_other_nationality"
@@ -277,8 +277,8 @@
                                                         <label for="fathers_nationality">Other Nationality <span
                                                                 class="field-required-star">*</span></label>
                                                         <select name="other_nationality"
-                                                                @if (isset($old) && isset($old['other_nationality']))
-                                                                    data-default-value="{{$old['other_nationality']}}"
+                                                                @if (isset($saved) && isset($saved['other_nationality']))
+                                                                    data-default-value="{{$saved['other_nationality']}}"
                                                                 @endif
                                                                 id="other_nationality" multiple></select>
                                                         <i class="icon-arrow-down"></i>
@@ -307,7 +307,7 @@
                                                             <div class="field-content">
                                                                 <label>
                                                                     <input
-                                                                        @if (isset($old) && isset($old['are_you_mixed']) && str_contains($old['are_you_mixed'],"yes"))
+                                                                        @if (isset($saved) && isset($saved['are_you_mixed']) && str_contains($saved['are_you_mixed'],"yes"))
                                                                             {{"checked"}}
                                                                         @endif type="radio" value="yes"
                                                                         name="are_you_mixed"
@@ -327,7 +327,7 @@
                                                             <div class="field-content">
                                                                 <label>
                                                                     <input
-                                                                        @if (isset($old) && isset($old['are_you_mixed']) && str_contains($old['are_you_mixed'],"no"))
+                                                                        @if (isset($saved) && isset($saved['are_you_mixed']) && str_contains($saved['are_you_mixed'],"no"))
                                                                             {{"checked"}}
                                                                         @endif type="radio" value="no"
                                                                         name="are_you_mixed"
@@ -356,8 +356,8 @@
                                                             Nationality <span
                                                                 class="field-required-star">*</span></label>
                                                         <select
-                                                            @if (isset($old) && isset($old['fathers_nationality']))
-                                                                data-default-value="{{$old['fathers_nationality']}}"
+                                                            @if (isset($saved) && isset($saved['fathers_nationality']))
+                                                                data-default-value="{{$saved['fathers_nationality']}}"
                                                             @endif name="fathers_nationality"
                                                                 id="fathers_nationality"></select>
                                                         <i class="icon-arrow-down"></i>
@@ -379,8 +379,8 @@
                                                             Nationality <span
                                                                 class="field-required-star">*</span></label>
                                                         <select
-                                                            @if (isset($old) && isset($old['mothers_nationality']))
-                                                                data-default-value="{{$old['mothers_nationality']}}"
+                                                            @if (isset($saved) && isset($saved['mothers_nationality']))
+                                                                data-default-value="{{$saved['mothers_nationality']}}"
                                                             @endif name="mothers_nationality"
                                                                 id="mothers_nationality"></select>
                                                         <i class="icon-arrow-down"></i>
