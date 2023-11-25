@@ -59,6 +59,7 @@ Route::get('/news-single-company', [App\Http\Controllers\NewsController::class, 
 Route::get('/composite', [App\Http\Controllers\HomeController::class, 'composite'])->name('composite');
 Route::get('/composite2/{id}', [App\Http\Controllers\HomeController::class, 'composite2'])->name('composite2');
 Route::get('/composite3/{id}', [App\Http\Controllers\HomeController::class, 'composite3'])->name('composite3');
+Route::get('/composite4/{id}', [App\Http\Controllers\HomeController::class, 'composite4'])->name('composite4');
 
 // Email Verification
 Auth::routes(['verify' => true]);

@@ -7,7 +7,6 @@ use App\Models\ContactUs;
 use App\Models\Member;
 use App\Models\Slider;
 use Barryvdh\DomPDF\Facade\Pdf as PDF;
-use Dompdf\Dompdf;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;
@@ -147,161 +146,7 @@ class HomeController
     {
         if ($id) {
             $member = Member::query()->published()->find($id);
-//            return view('pdf.composite', compact('member'));
-//            $pdf = Pdf::loadView('pdf.composite2', ['member' => $member, 'url' => config('app.url')]);
-
-
-            $html = '
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Liliana Composite</title>
-    <link href="/storage/assets/css/composite-new.css" rel="stylesheet">
-</head>
-
-<body>
-
-
-<!-- header -->
-<table id="header">
-    <tr>
-        <td class="brand-name">
-            <table>
-                <tr>
-                    <td class="name">Cameron W</td>
-                    <td><strong id="profile_id">No. 2123</strong></td>
-                </tr>
-            </table>
-            <div class="brand-other-name">アスガリモガダ</div>
-        </td>
-        <td class="brand-logo">
-            <img src="/storage/assets/img/logo.svg" alt="liliana">
-        </td>
-    </tr>
-</table>
-
-<!-- model meta -->
-<table class="meta">
-    <tr>
-        <td>
-            Nationality
-            <strong>Russian</strong>
-        </td>
-        <td class="divider"><div></div></td>
-        <td>
-            Language
-            <strong>Japan</strong>
-        </td>
-        <td class="divider"><div></div></td>
-        <td>
-            Height
-            <strong>183</strong>
-        </td>
-        <td class="divider"><div></div></td>
-        <td>
-            Bust
-            <strong>56</strong>
-        </td>
-        <td class="divider"><div></div></td>
-        <td>
-            Hips
-            <strong>64</strong>
-        </td>
-        <td class="divider"><div></div></td>
-        <td>
-            Waist
-            <strong>64</strong>
-        </td>
-        <td class="divider"><div></div></td>
-        <td>
-            Shoes
-            <strong>64</strong>
-        </td>
-        <td class="divider"><div></div></td>
-        <td>
-            Eye
-            <strong>Brown</strong>
-        </td>
-        <td class="divider"><div></div></td>
-        <td>
-            Hair
-            <strong>Brown</strong>
-        </td>
-    </tr>
-</table>
-
-<!-- image -->
-<table id="images">
-    <tr>
-        <td>
-            <img src="/storage/assets/img/3x4/036.webp" alt="Image">
-        </td>
-        <td>
-            <table>
-                <tr>
-                    <td>
-                        <img src="/storage/assets/img/3x4/032.webp" alt="Image">
-                    </td>
-                    <td>
-                        <img src="/storage/assets/img/3x4/033.webp" alt="Image">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <img src="/storage/assets/img/3x4/034.webp" alt="Image">
-                    </td>
-                    <td>
-                        <img src="/storage/assets/img/3x4/035.webp" alt="Image">
-                    </td>
-                </tr>
-            </table>
-        </td>
-    </tr>
-</table>
-
-<!-- footer -->
-<div id="footer">
-    <table class="meta">
-        <tr>
-            <td>
-                Tel
-                <strong>03-6362-3355</strong>
-            </td>
-            <td class="divider"><div></div></td>
-            <td>
-                Fax
-                <strong>03-6323-0195</strong>
-            </td>
-            <td class="divider"><div></div></td>
-            <td>
-                Email
-                <strong>info@lilianamodels.com</strong>
-            </td>
-            <td class="divider"><div></div></td>
-            <td>
-                URL
-                <strong>www.lilianamodels.com</strong>
-            </td>
-            <td class="divider"><div></div></td>
-            <td>
-                Address
-                <strong>4-4-8, Akasaka, Minato-ku, Tokyo, 107-0052</strong>
-            </td>
-        </tr>
-    </table>
-</div>
-
-</body>
-</html>
-';
-
-            $dompdf = new DOMPDF();
-            $dompdf->load_html($html);
-            $dompdf->render();
-//            $dompdf->set_base_path('https://lili.pardisania.ir/storage/assets/css/composite.css');
-            $dompdf->stream("hello.pdf");
-//            return $pdf->download('composite-' . $id . '.pdf');
+            return view('pdf.composite', compact('member'));
         } else
             return redirect('home');
     }
@@ -313,6 +158,19 @@ class HomeController
             $url = config('app.url');
             $pdf = PDF::loadView('pdf.composite2', compact('member', 'url'));
             return $pdf->download('composite-' . $id . '.pdf');
+        } else
+            return redirect('home');
+    }
+
+    public function composite4(Request $request, $id)
+    {
+        if ($id) {
+            $member = Member::query()->published()->find($id);
+            $url = config('app.url');
+            $pdf = PDF::loadView('pdf.composite2',compact('url'));
+
+//            $pdf = Pdf::setPaper('a4', 'landscape')->setWarnings(false)->save('myfile.pdf');
+            return $pdf->download('invoice.pdf');
         } else
             return redirect('home');
     }

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Liliana Composite</title>
-    <link href="/storage/assets/css/composite-new.css" rel="stylesheet">
+    <link href="{{$url}}/storage/assets/css/composite-new.css" rel="stylesheet">
 </head>
 <body>
 
@@ -22,7 +22,7 @@
             <div class="brand-other-name">アスガリモガダ</div>
         </td>
         <td class="brand-logo">
-            <img src="/storage/assets/img/logo.svg" alt="liliana">
+            <img src="{{$url}}/storage/assets/img/logo.svg" alt="liliana">
         </td>
     </tr>
 </table>
@@ -81,24 +81,24 @@
 <table id="images">
     <tr>
         <td>
-            <img src="/storage/assets/img/3x4/036.webp" alt="Image">
+            <img src="{{$url}}/storage/assets/img/3x4/036.webp" alt="Image">
         </td>
         <td>
             <table>
                 <tr>
                     <td>
-                        <img src="/storage/assets/img/3x4/032.webp" alt="Image">
+                        <img src="{{$url}}/storage/assets/img/3x4/032.webp" alt="Image">
                     </td>
                     <td>
-                        <img src="/storage/assets/img/3x4/033.webp" alt="Image">
+                        <img src="{{$url}}/storage/assets/img/3x4/033.webp" alt="Image">
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <img src="/storage/assets/img/3x4/034.webp" alt="Image">
+                        <img src="{{$url}}/storage/assets/img/3x4/034.webp" alt="Image">
                     </td>
                     <td>
-                        <img src="/storage/assets/img/3x4/035.webp" alt="Image">
+                        <img src="{{$url}}/storage/assets/img/3x4/035.webp" alt="Image">
                     </td>
                 </tr>
             </table>
