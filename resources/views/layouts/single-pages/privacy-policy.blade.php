@@ -2,6 +2,9 @@
 
 @section('content-home')
 
+    <body style="visibility: visible;" class="page page-privacy-policy">
+
+    @include('header-site')
     <!-- start main -->
     <main>
         <div id="content">
@@ -109,5 +112,6 @@
     </main>
 
 
+    </body>
 
 @endsection

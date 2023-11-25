@@ -1,6 +1,10 @@
 @extends('layout-home')
 
 @section('content-home')
+
+    <body style="visibility: visible;" class="page page-model">
+
+    @include('header-site')
     <!-- start content -->
     <main>
         <div id="content">
@@ -1864,4 +1868,5 @@ Voice
         </template>
     </div>
 
+    </body>
 @endsection

@@ -20,13 +20,8 @@
     <!-- end styles -->
 </head>
 
-<body class="page-home" style="visibility: visible;">
-
-@include('header-site')
-
 @yield('content-home')
 
 @include('loader-site')
 @include('footer-site')
-</body>
 </html>

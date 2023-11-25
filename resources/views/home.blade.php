@@ -2,6 +2,9 @@
 
 @section('content-home')
 
+    <body class="page-home" style="visibility: visible;">
+
+    @include('header-site')
     <!-- start main -->
     <main>
         <div id="content">
@@ -393,4 +396,5 @@
     <div id="mttContainer" class="bootstrapiso notranslate" data-html="true" data-original-title="" title=""
          style="transform: translate(129px, 650px);"></div>
 
+    </body>
 @endsection

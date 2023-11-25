@@ -2,6 +2,9 @@
 
 @section('content-home')
 
+    <body style="visibility: visible;" class="page page-become-a-model">
+
+    @include('header-site')
     <!-- start main -->
     <main>
         <div id="content">
@@ -70,5 +73,6 @@
 
 
 
+    </body>
 
 @endsection

@@ -1,6 +1,10 @@
 @extends('layout-home')
 
 @section('content-home')
+
+    <body style="visibility: visible;" class="page page-about-us">
+
+    @include('header-site')
     <!-- start content -->
     <main>
         <div id="content" itemscope itemtype="https://schema.org/AboutPage">
@@ -117,4 +121,5 @@
         </div>
     </main>
 
+    </body>
 @endsection

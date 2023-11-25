@@ -2,6 +2,9 @@
 
 @section('content-home')
 
+    <body style="visibility: visible;" class="page page-archive">
+
+    @include('header-site')
     <!-- start page breadcrumb -->
     <div class="page-breadcrumb">
         <div class="container-xxl">
@@ -423,4 +426,5 @@
     <script src="/storage/assets/js/component.js"></script>
     <script src="/storage/assets/js/scripts.js"></script>
 
+    </body>
 @endsection
