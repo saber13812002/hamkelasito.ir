@@ -262,8 +262,10 @@ class MemberController extends Controller
      */
     public function step0()
     {
+        $stepId = 0;
+        $saved = $this->getOldFormData([$stepId]);
         $token = session('token');
-        return view('apply_as.step-0', compact('token'));
+        return view('apply_as.step-0', compact('token', 'saved'));
     }
 
     /**
@@ -285,8 +287,10 @@ class MemberController extends Controller
     {
 //        dd($request);
         $this->saveRequestToTempTable($request, 0);
+        $stepId = 1;
+        $saved = $this->getOldFormData([$stepId]);
         $token = session('token');
-        return view('apply_as.step-1', compact('token'));
+        return view('apply_as.step-1', compact('token', 'saved'));
     }
 
     /**
@@ -298,8 +302,9 @@ class MemberController extends Controller
         $saved = $this->getOldFormData([$stepId]);
 //        dd($saved);
 
+        $options = $this->getOptions([$stepId]);
         $token = session('token');
-        return view('apply_as.step-2', compact('token', 'saved'));
+        return view('apply_as.step-2', compact('token', 'saved', 'options'));
     }
 
     /**
@@ -308,8 +313,11 @@ class MemberController extends Controller
     public function step2(FormRequest $request)
     {
         $this->saveRequestToTempTable($request, 1);
+        $stepId = 2;
+        $saved = $this->getOldFormData([$stepId]);
+        $options = $this->getOptions([$stepId]);
         $token = session('token');
-        return view('apply_as.step-2', compact('token'));
+        return view('apply_as.step-2', compact('token', 'saved', 'options'));
     }
 
     /**
@@ -330,8 +338,10 @@ class MemberController extends Controller
     public function step3(FormRequest $request)
     {
         $this->saveRequestToTempTable($request, 2);
+        $stepId = 3;
+        $saved = $this->getOldFormData([$stepId]);
         $token = session('token');
-        return view('apply_as.step-3', compact('token'));
+        return view('apply_as.step-3', compact('token', 'saved'));
     }
 
     /**
@@ -340,8 +350,10 @@ class MemberController extends Controller
     public function step4(FormRequest $request)
     {
         $this->saveRequestToTempTable($request, 3);
+        $stepId = 4;
+        $saved = $this->getOldFormData([$stepId]);
         $token = session('token');
-        return view('apply_as.step-4', compact('token'));
+        return view('apply_as.step-4', compact('token', 'saved'));
     }
 
     /**
@@ -350,8 +362,10 @@ class MemberController extends Controller
     public function step5(FormRequest $request)
     {
         $this->saveRequestToTempTable($request, 4);
+        $stepId = 5;
+        $saved = $this->getOldFormData([$stepId]);
         $token = session('token');
-        return view('apply_as.step-5', compact('token'));
+        return view('apply_as.step-5', compact('token', 'saved'));
     }
 
     /**
@@ -360,8 +374,10 @@ class MemberController extends Controller
     public function step6(FormRequest $request)
     {
         $this->saveRequestToTempTable($request, 5);
+        $stepId = 6;
+        $saved = $this->getOldFormData([$stepId]);
         $token = session('token');
-        return view('apply_as.step-6', compact('token'));
+        return view('apply_as.step-6', compact('token', 'saved'));
     }
 
     /**
@@ -370,8 +386,10 @@ class MemberController extends Controller
     public function step7(FormRequest $request)
     {
         $this->saveRequestToTempTable($request, 6);
+        $stepId = 7;
+        $saved = $this->getOldFormData([$stepId]);
         $token = session('token');
-        return view('apply_as.step-7', compact('token'));
+        return view('apply_as.step-7', compact('token', 'saved'));
     }
 
     /**
@@ -380,8 +398,10 @@ class MemberController extends Controller
     public function step8(FormRequest $request)
     {
         $this->saveRequestToTempTable($request, 7);
+        $stepId = 8;
+        $saved = $this->getOldFormData([$stepId]);
         $token = session('token');
-        return view('apply_as.step-8', compact('token'));
+        return view('apply_as.step-8', compact('token', 'saved'));
     }
 
     private function saveRequestToTempTable(Request $request, int $stepId)
@@ -451,5 +471,62 @@ class MemberController extends Controller
             ->pluck('value', 'model_field');
 //        dd($saved['value'], isset($saved), isset($saved['model_type']));
         return $saved;
+    }
+
+    /**
+     * @return array
+     */
+    public function getOptions(array $stepIds)
+    {
+
+//        $optionElement = OptionElement::query()
+//            ->whereStepId($stepIds)
+//            ->get();
+
+//        dd($saved['value'], isset($saved), isset($saved['model_type']));
+
+        $options = array();
+
+
+        $options = $this->generateShoeUkSize($options);
+        $options = $this->generateShoeEuSize($options);
+//        dd($options);
+        return $options;
+    }
+
+    /**
+     * @param array $options
+     * @return array
+     */
+    public function generateShoeUkSize(array $options): array
+    {
+        $uk_sizes = array();
+        for ($size = 0.5; $size <= 15; $size += 0.5) {
+            $uk_sizes[] = $size;
+        }
+//        dd($uk_sizes);
+        foreach ($uk_sizes as $key => $uk_size) {
+            $options['shoe_uk_size'][$key]['name'] = $uk_size;
+            $options['shoe_uk_size'][$key]['value'] = $uk_size;
+        }
+        return $options;
+    }
+
+    /**
+     * @param array $options
+     * @return array
+     */
+    public function generateShoeEuSize(array $options): array
+    {
+        $uk_sizes = array();
+        for ($size = 16; $size <= 50; $size += 0.5) {
+            $eu_sizes[] = $size;
+        }
+//        dd($uk_sizes);
+        foreach ($eu_sizes as $key => $eu_size) {
+            $options['shoe_eu_size'][$key]['name'] = $eu_size;
+            $options['shoe_eu_size'][$key]['value'] = $eu_size;
+        }
+        return $options;
     }
 }

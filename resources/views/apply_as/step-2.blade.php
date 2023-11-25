@@ -108,10 +108,12 @@
                                         <div class="form-section-content">
 
                                             <!-- eye color -->
-                                            <div class="field field-type-select" data-type="select" data-btn-submit-text="Select" data-required="true"
+                                            <div class="field field-type-select" data-type="select"
+                                                 data-btn-submit-text="Select" data-required="true"
                                                  data-field-defualt-text="Select Item">
                                                 <div class="field-content">
-                                                    <label for="eye_color">Eye Color <span class="field-required-star">*</span></label>
+                                                    <label for="eye_color">Eye Color <span
+                                                            class="field-required-star">*</span></label>
                                                     <select name="eye_color" id="eye_color">
                                                         <option
                                                             @if (isset($saved) && isset($saved['eye_color']) && str_contains($saved['eye_color'],"Amber"))
@@ -168,10 +170,12 @@
                                             <div class="field-error-msg" id="field_error_eye_color"></div>
 
                                             <!-- current hair color -->
-                                            <div class="field field-type-select" data-type="select" data-btn-submit-text="Select" data-required="true"
+                                            <div class="field field-type-select" data-type="select"
+                                                 data-btn-submit-text="Select" data-required="true"
                                                  data-field-defualt-text="Select Item">
                                                 <div class="field-content">
-                                                    <label for="current_hair_color">Current Hair Color <span class="field-required-star">*</span></label>
+                                                    <label for="current_hair_color">Current Hair Color <span
+                                                            class="field-required-star">*</span></label>
                                                     <select name="current_hair_color" id="current_hair_color">
                                                         <option
                                                             @if (isset($saved) && isset($saved['current_hair_color']) && str_contains($saved['current_hair_color'],"Black"))
@@ -248,10 +252,13 @@
                                         <div class="form-section-content">
 
                                             <!-- height -->
-                                            <div class="field field-type-nr-input" data-type="number" data-required="true"
-                                                 data-required-type="range" data-unit="Cm" data-example="170" data-min="30" data-max="250">
+                                            <div class="field field-type-nr-input" data-type="number"
+                                                 data-required="true"
+                                                 data-required-type="range" data-unit="Cm" data-example="170"
+                                                 data-min="30" data-max="250">
                                                 <div class="field-content">
-                                                    <label for="height">Height (Cm) <span class="field-required-star">*</span></label>
+                                                    <label for="height">Height (Cm) <span
+                                                            class="field-required-star">*</span></label>
                                                     <input
                                                         @if (isset($saved) && isset($saved['height']))
                                                             value="{{$saved['height']}}"
@@ -261,10 +268,13 @@
                                             <div class="field-error-msg" id="field_error_height"></div>
 
                                             <!-- weight -->
-                                            <div class="field field-type-nr-input" data-required="true" data-type="number"
-                                                 data-required-type="range" data-unit="Kg" data-example="80" data-min="1.5" data-max="250">
+                                            <div class="field field-type-nr-input" data-required="true"
+                                                 data-type="number"
+                                                 data-required-type="range" data-unit="Kg" data-example="80"
+                                                 data-min="1.5" data-max="250">
                                                 <div class="field-content">
-                                                    <label for="weight">Weight (Kg) <span class="field-required-star">*</span></label>
+                                                    <label for="weight">Weight (Kg) <span
+                                                            class="field-required-star">*</span></label>
                                                     <input
                                                         @if (isset($saved) && isset($saved['weight']))
                                                             value="{{$saved['weight']}}"
@@ -274,10 +284,13 @@
                                             <div class="field-error-msg" id="field_error_weight"></div>
 
                                             <!-- bust -->
-                                            <div class="field field-type-nr-input" data-required="true" data-type="number"
-                                                 data-required-type="range" data-unit="Cm" data-example="75" data-min="30" data-max="180">
+                                            <div class="field field-type-nr-input" data-required="true"
+                                                 data-type="number"
+                                                 data-required-type="range" data-unit="Cm" data-example="75"
+                                                 data-min="30" data-max="180">
                                                 <div class="field-content">
-                                                    <label for="bust">Bust (Cm) <span class="field-required-star">*</span></label>
+                                                    <label for="bust">Bust (Cm) <span
+                                                            class="field-required-star">*</span></label>
                                                     <input
                                                         @if (isset($saved) && isset($saved['bust']))
                                                             value="{{$saved['bust']}}"
@@ -287,10 +300,13 @@
                                             <div class="field-error-msg" id="field_error_bust"></div>
 
                                             <!-- hips -->
-                                            <div class="field field-type-nr-input" data-required="true" data-type="number"
-                                                 data-required-type="range" data-unit="Cm" data-example="75" data-min="30" data-max="180">
+                                            <div class="field field-type-nr-input" data-required="true"
+                                                 data-type="number"
+                                                 data-required-type="range" data-unit="Cm" data-example="75"
+                                                 data-min="30" data-max="180">
                                                 <div class="field-content">
-                                                    <label for="hips">Hips (Cm) <span class="field-required-star">*</span></label>
+                                                    <label for="hips">Hips (Cm) <span
+                                                            class="field-required-star">*</span></label>
                                                     <input
                                                         @if (isset($saved) && isset($saved['hips']))
                                                             value="{{$saved['hips']}}"
@@ -300,10 +316,13 @@
                                             <div class="field-error-msg" id="field_error_hips"></div>
 
                                             <!-- waist -->
-                                            <div class="field field-type-nr-input" data-required="true" data-type="number"
-                                                 data-required-type="range" data-unit="Cm" data-example="75" data-min="30" data-max="180">
+                                            <div class="field field-type-nr-input" data-required="true"
+                                                 data-type="number"
+                                                 data-required-type="range" data-unit="Cm" data-example="75"
+                                                 data-min="30" data-max="180">
                                                 <div class="field-content">
-                                                    <label for="waist">Waist (Cm) <span class="field-required-star">*</span></label>
+                                                    <label for="waist">Waist (Cm) <span
+                                                            class="field-required-star">*</span></label>
                                                     <input
                                                         @if (isset($saved) && isset($saved['waist']))
                                                             value="{{$saved['waist']}}"
@@ -319,31 +338,38 @@
                                     <div class="form-section">
                                         <div class="form-section-label">Shoe Size</div>
                                         <div class="form-section-content">
-                                            <div class="row field-group-validations" data-group-validation-relation="and">
+                                            <div class="row field-group-validations"
+                                                 data-group-validation-relation="and">
 
                                                 <!-- shoe unit -->
                                                 <div class="col-6">
-                                                    <div class="field field-type-select" data-type="select" data-btn-submit-text="Select"
+                                                    <div class="field field-type-select" data-type="select"
+                                                         data-btn-submit-text="Select"
                                                          data-required="true" data-field-defualt-text="Select Item">
                                                         <div class="field-content">
-                                                            <label for="size_unit">Size Unit <span class="field-required-star">*</span></label>
+                                                            <label for="size_unit">Size Unit <span
+                                                                    class="field-required-star">*</span></label>
                                                             <select name="size_unit" id="size_unit">
                                                                 <option value="jp"
                                                                 @if (isset($saved) && isset($saved['size_unit']) && str_contains($saved['size_unit'],"jp"))
                                                                     {{"selected"}}
-                                                                    @endif >JP</option>
+                                                                    @endif >JP
+                                                                </option>
                                                                 <option value="uk"
                                                                 @if (isset($saved) && isset($saved['size_unit']) && str_contains($saved['size_unit'],"uk"))
                                                                     {{"selected"}}
-                                                                    @endif >UK</option>
+                                                                    @endif >UK
+                                                                </option>
                                                                 <option value="us"
                                                                 @if (isset($saved) && isset($saved['size_unit']) && str_contains($saved['size_unit'],"us"))
                                                                     {{"selected"}}
-                                                                    @endif >US</option>
+                                                                    @endif >US
+                                                                </option>
                                                                 <option value="eu"
                                                                 @if (isset($saved) && isset($saved['size_unit']) && str_contains($saved['size_unit'],"eu"))
                                                                     {{"selected"}}
-                                                                    @endif >EU</option>
+                                                                    @endif >EU
+                                                                </option>
                                                             </select>
                                                             <i class="icon-arrow-down"></i>
                                                         </div>
@@ -357,42 +383,52 @@
                                                     <div data-dependency="#size_unit" data-dependency-value="jp">
                                                         <div class="field field-type-select wheel-mode"
                                                              data-required="true" data-field-defualt-text="Select Item"
-                                                             data-btn-submit-text="Select" data-type="select" data-field-search="true">
+                                                             data-btn-submit-text="Select" data-type="select"
+                                                             data-field-search="true">
                                                             <div class="field-content">
-                                                                <label for="shoe_jp_size">Size (JP) <span class="field-required-star">*</span></label>
+                                                                <label for="shoe_jp_size">Size (JP) <span
+                                                                        class="field-required-star">*</span></label>
                                                                 <select name="shoe_jp_size" id="shoe_jp_size">
                                                                     <option value="7"
                                                                     @if (isset($saved) && isset($saved['shoe_jp_size']) && ($saved['shoe_jp_size']=="7"))
                                                                         {{"selected"}}
-                                                                        @endif >7</option>
+                                                                        @endif >7
+                                                                    </option>
                                                                     <option value="7.5"
                                                                     @if (isset($saved) && isset($saved['shoe_jp_size']) && ($saved['shoe_jp_size']=="7.5"))
                                                                         {{"selected"}}
-                                                                        @endif >7.5</option>
+                                                                        @endif >7.5
+                                                                    </option>
                                                                     <option value="8"
                                                                     @if (isset($saved) && isset($saved['shoe_jp_size']) && ($saved['shoe_jp_size']=="8"))
                                                                         {{"selected"}}
-                                                                        @endif >8</option>
+                                                                        @endif >8
+                                                                    </option>
                                                                     <option value="8.5"
                                                                     @if (isset($saved) && isset($saved['shoe_jp_size']) && ($saved['shoe_jp_size']=="8.5"))
                                                                         {{"selected"}}
-                                                                        @endif >8.5</option>
+                                                                        @endif >8.5
+                                                                    </option>
                                                                     <option value="9"
                                                                     @if (isset($saved) && isset($saved['shoe_jp_size']) && ($saved['shoe_jp_size']=="9"))
                                                                         {{"selected"}}
-                                                                        @endif >9</option>
+                                                                        @endif >9
+                                                                    </option>
                                                                     <option value="9.5"
                                                                     @if (isset($saved) && isset($saved['shoe_jp_size']) && ($saved['shoe_jp_size']=="9.5"))
                                                                         {{"selected"}}
-                                                                        @endif >9.5</option>
+                                                                        @endif >9.5
+                                                                    </option>
                                                                     <option value="10"
                                                                     @if (isset($saved) && isset($saved['shoe_jp_size']) && ($saved['shoe_jp_size']=="10"))
                                                                         {{"selected"}}
-                                                                        @endif>10</option>
+                                                                        @endif>10
+                                                                    </option>
                                                                     <option value="10.5"
                                                                     @if (isset($saved) && isset($saved['shoe_jp_size']) && ($saved['shoe_jp_size']=="10.5"))
                                                                         {{"selected"}}
-                                                                        @endif>10.5</option>
+                                                                        @endif>10.5
+                                                                    </option>
                                                                     <option value="11">11</option>
                                                                     <option value="11.5">11.5</option>
                                                                     <option value="12">12</option>
@@ -446,39 +482,21 @@
                                                     <div data-dependency="#size_unit" data-dependency-value="uk">
                                                         <div class="field field-type-select wheel-mode"
                                                              data-required="true" data-field-defualt-text="Select Item"
-                                                             data-btn-submit-text="Select" data-type="select" data-field-search="true">
+                                                             data-btn-submit-text="Select" data-type="select"
+                                                             data-field-search="true">
                                                             <div class="field-content">
-                                                                <label for="shoe_uk_size">Size (UK) <span class="field-required-star">*</span></label>
+                                                                <label for="shoe_uk_size">Size (UK) <span
+                                                                        class="field-required-star">*</span></label>
                                                                 <select name="shoe_uk_size" id="shoe_uk_size">
-                                                                    <option value="0.5">0.5</option>
-                                                                    <option value="1">1</option>
-                                                                    <option value="1.5">1.5</option>
-                                                                    <option value="2">2</option>
-                                                                    <option value="2.5">2.5</option>
-                                                                    <option value="3">3</option>
-                                                                    <option value="3.5">3.5</option>
-                                                                    <option value="4">4</option>
-                                                                    <option value="4.5">4.5</option>
-                                                                    <option value="5">5</option>
-                                                                    <option value="5.5">5.5</option>
-                                                                    <option value="6">6</option>
-                                                                    <option value="6.5">6.5</option>
-                                                                    <option value="7">7</option>
-                                                                    <option value="7.5">7.5</option>
-                                                                    <option value="8">8</option>
-                                                                    <option value="8.5">8.5</option>
-                                                                    <option value="9">9</option>
-                                                                    <option value="9.5">9.5</option>
-                                                                    <option value="10">10</option>
-                                                                    <option value="10.5">10.5</option>
-                                                                    <option value="11">11</option>
-                                                                    <option value="11.5">11.5</option>
-                                                                    <option value="12">12</option>
-                                                                    <option value="12.5">12.5</option>
-                                                                    <option value="13">13</option>
-                                                                    <option value="13.5">13.5</option>
-                                                                    <option value="14">14</option>
-                                                                    <option value="15">15</option>
+                                                                    @foreach($options['shoe_uk_size'] as $shoe_uk_size)
+                                                                        <option
+                                                                            @if (isset($saved) && isset($saved['shoe_uk_size']) && ($saved['shoe_uk_size']==$shoe_uk_size['value']))
+                                                                                {{"selected"}}
+                                                                            @endif
+                                                                            value="{{$shoe_uk_size['value']}}">
+                                                                            {{$shoe_uk_size['name']}}
+                                                                        </option>
+                                                                    @endforeach
                                                                 </select>
                                                                 <i class="icon-arrow-down"></i>
                                                             </div>
@@ -489,9 +507,11 @@
                                                     <div data-dependency="#size_unit" data-dependency-value="us">
                                                         <div class="field field-type-select wheel-mode"
                                                              data-required="true" data-field-defualt-text="Select Item"
-                                                             data-btn-submit-text="Select" data-type="select" data-field-search="true">
+                                                             data-btn-submit-text="Select" data-type="select"
+                                                             data-field-search="true">
                                                             <div class="field-content">
-                                                                <label for="shoe_us_men_size">Size (us Men) <span class="field-required-star">*</span></label>
+                                                                <label for="shoe_us_men_size">Size (us Men) <span
+                                                                        class="field-required-star">*</span></label>
                                                                 <select name="shoe_us_men_size" id="shoe_us_men_size">
                                                                     <option value="1C">1C</option>
                                                                     <option value="1.5C">1.5C</option>
@@ -550,10 +570,13 @@
                                                         </div>
                                                         <div class="field field-type-select wheel-mode"
                                                              data-required="true" data-field-defualt-text="Select Item"
-                                                             data-btn-submit-text="Select" data-type="select" data-field-search="true">
+                                                             data-btn-submit-text="Select" data-type="select"
+                                                             data-field-search="true">
                                                             <div class="field-content">
-                                                                <label for="shoe_us_women_size">Size (us Women) <span class="field-required-star">*</span></label>
-                                                                <select name="shoe_us_women_size" id="shoe_us_women_size">
+                                                                <label for="shoe_us_women_size">Size (us Women) <span
+                                                                        class="field-required-star">*</span></label>
+                                                                <select name="shoe_us_women_size"
+                                                                        id="shoe_us_women_size">
                                                                     <option value="1C">1C</option>
                                                                     <option value="1.5C">1.5C</option>
                                                                     <option value="2C">2C</option>
@@ -615,61 +638,21 @@
                                                     <div data-dependency="#size_unit" data-dependency-value="eu">
                                                         <div class="field field-type-select wheel-mode"
                                                              data-required="true" data-field-defualt-text="Select Item"
-                                                             data-btn-submit-text="Select" data-type="select" data-field-search="true">
+                                                             data-btn-submit-text="Select" data-type="select"
+                                                             data-field-search="true">
                                                             <div class="field-content">
-                                                                <label for="shoe_eu_size">Size (EU) <span class="field-required-star">*</span></label>
+                                                                <label for="shoe_eu_size">Size (EU) <span
+                                                                        class="field-required-star">*</span></label>
                                                                 <select name="shoe_eu_size" id="shoe_eu_size">
-                                                                    <option value="16">16</option>
-                                                                    <option value="16.5">16.5</option>
-                                                                    <option value="17">17</option>
-                                                                    <option value="18">18</option>
-                                                                    <option value="18.5">18.5</option>
-                                                                    <option value="19">19</option>
-                                                                    <option value="19.5">19.5</option>
-                                                                    <option value="20">20</option>
-                                                                    <option value="21">21</option>
-                                                                    <option value="21.5">21.5</option>
-                                                                    <option value="22">22</option>
-                                                                    <option value="22.5">22.5</option>
-                                                                    <option value="23.5">23.5</option>
-                                                                    <option value="24">24</option>
-                                                                    <option value="25">25</option>
-                                                                    <option value="25.5">25.5</option>
-                                                                    <option value="26">26</option>
-                                                                    <option value="26.5">26.5</option>
-                                                                    <option value="27">27</option>
-                                                                    <option value="27.5">27.5</option>
-                                                                    <option value="28">28</option>
-                                                                    <option value="28.5">28.5</option>
-                                                                    <option value="29.5">29.5</option>
-                                                                    <option value="30">30</option>
-                                                                    <option value="31">31</option>
-                                                                    <option value="31.5">31.5</option>
-                                                                    <option value="32">32</option>
-                                                                    <option value="33">33</option>
-                                                                    <option value="33.5">33.5</option>
-                                                                    <option value="34.5">34.5</option>
-                                                                    <option value="35">35</option>
-                                                                    <option value="36">36</option>
-                                                                    <option value="36.5">36.5</option>
-                                                                    <option value="37">37</option>
-                                                                    <option value="38">38</option>
-                                                                    <option value="38.5">38.5</option>
-                                                                    <option value="39">39</option>
-                                                                    <option value="40">40</option>
-                                                                    <option value="40.5">40.5</option>
-                                                                    <option value="41">41</option>
-                                                                    <option value="42">42</option>
-                                                                    <option value="42.5">42.5</option>
-                                                                    <option value="43">43</option>
-                                                                    <option value="44">44</option>
-                                                                    <option value="44.5">44.5</option>
-                                                                    <option value="45">45</option>
-                                                                    <option value="46">46</option>
-                                                                    <option value="47">47</option>
-                                                                    <option value="48">48</option>
-                                                                    <option value="49">49</option>
-                                                                    <option value="50">50</option>
+                                                                    @foreach($options['shoe_eu_size'] as $shoe_eu_size)
+                                                                        <option
+                                                                            @if (isset($saved) && isset($saved['shoe_eu_size']) && ($saved['shoe_eu_size']==$shoe_eu_size['value']))
+                                                                                {{"selected"}}
+                                                                            @endif
+                                                                            value="{{$shoe_eu_size['value']}}">
+                                                                            {{$shoe_eu_size['name']}}
+                                                                        </option>
+                                                                    @endforeach
                                                                 </select>
                                                                 <i class="icon-arrow-down"></i>
                                                             </div>
@@ -689,10 +672,12 @@
                                         <div class="form-section-content">
 
                                             <!-- clothes -->
-                                            <div class="field field-type-select" data-type="select" data-btn-submit-text="Select"
+                                            <div class="field field-type-select" data-type="select"
+                                                 data-btn-submit-text="Select"
                                                  data-required="true" data-field-defualt-text="Select Item">
                                                 <div class="field-content">
-                                                    <label for="clothe_size">Clothes Size <span class="field-required-star">*</span></label>
+                                                    <label for="clothe_size">Clothes Size <span
+                                                            class="field-required-star">*</span></label>
                                                     <select name="clothe_size" id="clothe_size">
                                                         <option value="60">60 cm</option>
                                                         <option value="70">70 cm</option>
@@ -757,6 +742,5 @@
 
         </div>
     </main>
-
 
 @endsection
