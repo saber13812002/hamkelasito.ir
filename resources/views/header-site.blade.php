@@ -22,11 +22,19 @@
             </div>
             <div class="actions">
                 <div class="app-lang">
-                    <a href="/?lng=jp" class="btn btn-icon" aria-label="Change Language To Japane">
+                    <a href="/?locale=ja" class="btn btn-icon
+                     @if(App::getLocale() == 'ja')
+                     active
+                    @endif
+                    " aria-label="Change Language To Japane">
                         JP
                     </a>
                     <div class="divider"></div>
-                    <a href="/?lng=en" class="btn btn-icon active" aria-label="Change language To English">
+                    <a href="/?locale=en" class="btn btn-icon
+                     @if(App::getLocale() == 'en')
+                     active
+                    @endif
+                    " aria-label="Change language To English">
                         EN
                     </a>
                 </div>
@@ -150,7 +158,7 @@
                         @else
                             <a href="/#" class="dashboard">
                             <span>
-                                {{Auth::user()->name}}
+                               {{trans('adminlte.full_name')}} :  {{Auth::user()->name}}
                                 <i class="icon-arrow-right"></i>
                             </span>
                             </a>
@@ -293,7 +301,7 @@
                                     <img src="/storage/assets/img/1x1/001.webp" width="80" height="80" alt="Model">
                                 </noscript>
                                 <div class="user-content">
-                                    <div class="user-display-name">{{Auth::user()->name}}</div>
+                                    <div class="user-display-name">{{trans('adminlte.full_name')}} : {{Auth::user()->name}}</div>
                                     <a href="/dashboard-models/">
                                         Go to Dashboard
                                         <i class="icon-arrow-right"></i>
