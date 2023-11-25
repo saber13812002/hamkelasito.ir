@@ -16,4 +16,7 @@ return [
     'important'                     => 'Important',
     'warning'                       => 'Warning',
     'information'                   => 'Information',
+    'woman-models'                   => 'Woman Models',
+    'man-models'                   => 'Man Models',
+    'kids-and-baby-models'                   => 'Kids & Baby Models',
 ];
