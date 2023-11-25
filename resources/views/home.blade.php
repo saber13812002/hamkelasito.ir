@@ -169,7 +169,7 @@
                                              alt="{{ $category->name }} Category">
                                     </noscript>
                                     <div class="home-categories-title">
-                                        <span itemprop="name">{{ $category->name }}</span>
+                                        <span itemprop="name">{{ __('menu.'.$category->slug) }}</span>
                                         <div class="arrow"></div>
                                     </div>
                                 </a>
