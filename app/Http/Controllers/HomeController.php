@@ -167,10 +167,8 @@ class HomeController
         if ($id) {
             $member = Member::query()->published()->find($id);
             $url = config('app.url');
-            $pdf = PDF::loadView('pdf.composite2',compact('url'));
-
-//            $pdf = Pdf::setPaper('a4', 'landscape')->setWarnings(false)->save('myfile.pdf');
-            return $pdf->download('invoice.pdf');
+            $pdf = PDF::loadView('pdf.composite2', compact('url'));
+            return $pdf->setPaper('a4', 'landscape')->download('composite_' . $id . '.pdf');
         } else
             return redirect('home');
     }

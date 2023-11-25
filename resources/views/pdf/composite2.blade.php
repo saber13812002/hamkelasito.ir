@@ -81,24 +81,24 @@
 <table id="images">
     <tr>
         <td>
-            <img src="{{$url}}/storage/assets/img/3x4/036.webp" alt="Image">
+            <img src="{{$url}}/storage/assets/img/3x4/036.jpg" alt="Image">
         </td>
         <td>
             <table>
                 <tr>
                     <td>
-                        <img src="{{$url}}/storage/assets/img/3x4/032.webp" alt="Image">
+                        <img src="{{$url}}/storage/assets/img/3x4/036.jpg" alt="Image">
                     </td>
                     <td>
-                        <img src="{{$url}}/storage/assets/img/3x4/033.webp" alt="Image">
+                        <img src="{{$url}}/storage/assets/img/3x4/036.jpg" alt="Image">
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <img src="{{$url}}/storage/assets/img/3x4/034.webp" alt="Image">
+                        <img src="{{$url}}/storage/assets/img/3x4/036.jpg" alt="Image">
                     </td>
                     <td>
-                        <img src="{{$url}}/storage/assets/img/3x4/035.webp" alt="Image">
+                        <img src="{{$url}}/storage/assets/img/3x4/036.jpg" alt="Image">
                     </td>
                 </tr>
             </table>
