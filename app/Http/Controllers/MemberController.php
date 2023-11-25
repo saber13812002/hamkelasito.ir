@@ -329,7 +329,7 @@ class MemberController extends Controller
         $saved = $this->getOldFormData([$stepId]);
 //        dd($saved);
         $token = session('token');
-        return view('apply_as.step-2', compact('token', 'saved'));
+        return view('apply_as.step-3', compact('token', 'saved'));
     }
 
     /**

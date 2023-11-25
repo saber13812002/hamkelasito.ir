@@ -3,7 +3,7 @@
 @section('title', 'Dashboard')
 
 @section('content_header')
-    <h1>Dashboard</h1>
+    <h1>{{__('menu.Dashboard')}}</h1>
 @stop
 
 @section('content')
@@ -17,7 +17,7 @@
                 <div class="card-body">
                     <div class="row">
                         <div class="col-md-12">
-                            <h5 class="card-title">{{__('Awaiting Members')}}</h5>
+                            <h5 class="card-title">{{__('menu.Awaiting Members')}}</h5>
                         </div>
                     </div>
                     <div class="row">
@@ -36,7 +36,7 @@
                 <div class="card-body">
                     <div class="row">
                         <div class="col-md-12">
-                            <h5 class="card-title">{{__('Completed Approvals')}}</h5>
+                            <h5 class="card-title">{{__('menu.Completed Approvals')}}</h5>
                         </div>
                     </div>
                     <div class="row">
@@ -55,7 +55,7 @@
                 <div class="card-body">
                     <div class="row">
                         <div class="col-md-12">
-                            <h5 class="card-title">{{__('Awaiting')}}/{{__('Rejected Items')}}</h5>
+                            <h5 class="card-title">{{__('menu.Awaiting')}}/{{__('menu.Rejected Items')}}</h5>
                         </div>
                     </div>
                     <div class="row">
@@ -75,7 +75,7 @@
                 <div class="card-body">
                     <div class="row">
                         <div class="col-md-12">
-                            <h5 class="card-title">{{__('Total Members')}}</h5>
+                            <h5 class="card-title">{{__('menu.Total Members')}}</h5>
                         </div>
                     </div>
                     <div class="row">
@@ -99,11 +99,11 @@
                     <table class="table table-bordered  table-striped table-hover ui-state-hover">
                         <thead>
                         <tr>
-                            <th>{{__('Id')}}</th>
-{{--                            <th>{{__('User Id')}}</th>--}}
-                            <th>{{__('Member Name')}}</th>
-                            <th>{{__('Fields Count')}}</th>
-                            <th>{{__('Date')}}</th>
+                            <th>{{__('menu.Id')}}</th>
+{{--                            <th>{{__('menu.User Id')}}</th>--}}
+                            <th>{{__('menu.Member Name')}}</th>
+                            <th>{{__('menu.Fields Count')}}</th>
+                            <th>{{__('menu.Date')}}</th>
                             <th>{{__('Options')}}</th>
                         </tr>
                         </thead>

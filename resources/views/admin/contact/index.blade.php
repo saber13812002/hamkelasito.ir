@@ -12,14 +12,14 @@
         <div class="col-md-12 mb-2">
 
             <button data-toggle="modal" data-target="#createSlider"
-                    class="btn btn-success float-right">{{__('Add Contact us form manually')}} <i
+                    class="btn btn-success float-right">{{__('menu.Add Contact us form manually')}} <i
                     class="fas fa-cogs"></i></button>
         </div>
         <div class="col-12">
 
             <div class="card">
                 <div class="card-header">
-                    <h3 class="card-title">{{__('Contact Us Management')}}</h3>
+                    <h3 class="card-title">{{__('menu.Contact Us Management')}}</h3>
 
                     <div class="card-tools">
 
@@ -32,8 +32,8 @@
                         <thead>
                         <tr>
                             <th>#</th>
-                            <th>{{__('Id')}}</th>
-                            <th>{{__('Name')}}</th>
+                            <th>{{__('menu.Id')}}</th>
+                            <th>{{__('menu.Name')}}</th>
                             <th>{{__('Company Name')}}</th>
                             <th>{{__('Email')}}</th>
                             <th>{{__('Phone')}}</th>

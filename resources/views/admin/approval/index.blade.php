@@ -3,7 +3,7 @@
 @section('title', 'Dashboard')
 
 @section('content_header')
-    <h1>Dashboard</h1>
+    <h1>{{__('menu.Dashboard')}}</h1>
 @stop
 
 @section('content')
@@ -12,13 +12,13 @@
         <div class="col-md-12 mb-2">
 
             <button data-toggle="modal" data-target="#createSlider"
-                    class="btn btn-success float-right">{{__('Add Item')}} <i class="fas fa-cogs"></i></button>
+                    class="btn btn-success float-right">{{__('menu.Add Item')}} <i class="fas fa-cogs"></i></button>
         </div>
         <div class="col-12">
 
             <div class="card">
                 <div class="card-header">
-                    <h3 class="card-title">{{__('Approval Management')}}</h3>
+                    <h3 class="card-title">{{__('menu.Approval Management')}}</h3>
 
                     <div class="card-tools">
 
@@ -33,21 +33,21 @@
                             <thead>
                             <tr>
                                 <th>#</th>
-                                <th>{{__('Id')}}</th>
-                                <th>{{__('Step Id')}}</th>
-                                <th>{{__('User Id')}}</th>
-                                <th>{{__('Member Id')}}</th>
-                                <th>{{__('Model Name')}}</th>
-                                <th>{{__('Model Field')}}</th>
-                                <th>{{__('Type')}}</th>
-                                <th>{{__('Approve')}}</th>
-                                <th>{{__('Value')}}</th>
-                                <th>{{__('Text')}}</th>
-                                <th>{{__('Json')}}</th>
-                                <th>{{__('Approved At')}}</th>
-                                <th>{{__('Admin Id')}}</th>
-                                <th>{{__('Created At')}}</th>
-                                <th>{{__('Updated At')}}</th>
+                                <th>{{__('menu.Id')}}</th>
+                                <th>{{__('menu.Step Id')}}</th>
+                                <th>{{__('menu.User Id')}}</th>
+                                <th>{{__('menu.Member Id')}}</th>
+                                <th>{{__('menu.Model Name')}}</th>
+                                <th>{{__('menu.Model Field')}}</th>
+                                <th>{{__('menu.Type')}}</th>
+                                <th>{{__('menu.Approve')}}</th>
+                                <th>{{__('menu.Value')}}</th>
+                                <th>{{__('menu.Text')}}</th>
+                                <th>{{__('menu.Json')}}</th>
+                                <th>{{__('menu.Approved At')}}</th>
+                                <th>{{__('menu.Admin Id')}}</th>
+                                <th>{{__('menu.Created At')}}</th>
+                                <th>{{__('menu.Updated At')}}</th>
                             </tr>
                             </thead>
                             <tbody>
