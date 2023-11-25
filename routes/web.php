@@ -16,13 +16,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-
 Route::get('/dashboard', function () {
     return view('dashboard');
 });
-
-
-// https://www.itsolutionstuff.com/post/laravel-10-custom-login-and-registration-exampleexample
 
 Route::get('/become-a-model', [App\Http\Controllers\HomeController::class, 'becomeModel'])->name('become-a-model');
 
@@ -39,10 +35,8 @@ Route::post('password/email', 'Auth\ForgotPasswordController@sendResetLinkEmail'
 Route::get('password/reset/{token}', 'Auth\ResetPasswordController@showResetForm')->name('password.reset');
 Route::post('password/reset', 'Auth\ResetPasswordController@reset');
 
-
 Auth::routes();
 
-//Route::group(['prefix' => 'dashboard-models', 'middleware' => ['set.locale']], function () {
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('root');
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/model-page', [App\Http\Controllers\HomeController::class, 'modelPage'])->name('model-page');
@@ -61,13 +55,10 @@ Route::get('/work', [App\Http\Controllers\NewsController::class, 'newsCategory']
 Route::get('/news-single', [App\Http\Controllers\NewsController::class, 'newsSingle'])->name('news-single');
 Route::get('/news-single-company', [App\Http\Controllers\NewsController::class, 'newsSingleCompany'])->name('news-single-company');
 
-
 // PDF
 Route::get('/composite', [App\Http\Controllers\HomeController::class, 'composite'])->name('composite');
 Route::get('/composite2/{id}', [App\Http\Controllers\HomeController::class, 'composite2'])->name('composite2');
 Route::get('/composite3/{id}', [App\Http\Controllers\HomeController::class, 'composite3'])->name('composite3');
 
-//});
-
-// email verification
+// Email Verification
 Auth::routes(['verify' => true]);
