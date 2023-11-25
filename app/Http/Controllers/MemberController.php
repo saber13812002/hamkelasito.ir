@@ -486,13 +486,50 @@ class MemberController extends Controller
 //        dd($saved['value'], isset($saved), isset($saved['model_type']));
 
         $options = array();
+        if (in_array(2, $stepIds)) {
+            $options = $this->generateClotheSize($options);
+            $options = $this->generateShoeUkSize($options);
+            $options = $this->generateShoeEuSize($options);
+            $options = $this->generateShoeJpSize($options);
+            $options = $this->generateShoeUsMenSize($options);
+            $options = $this->generateShoeUsWomenSize($options);
+        }
+        if (in_array(3, $stepIds)) {
 
+        }
 
-        $options = $this->generateShoeUkSize($options);
-        $options = $this->generateShoeEuSize($options);
-        $options = $this->generateShoeUsMenSize($options);
-        $options = $this->generateShoeUsWomenSize($options);
 //        dd($options);
+        return $options;
+    }
+
+    /**
+     * @param array $options
+     * @return array
+     */
+    public function generateClotheSize(array $options): array
+    {
+        $clothe_sizes = array();
+        $i = 0;
+        for ($size = 60; $size <= 170; $size += 10) {
+            $i++;
+            $clothe_sizes[] = $size;
+        }
+        $clothe_sizes[$i++] = 'XS';
+        $clothe_sizes[$i++] = 'S';
+        $clothe_sizes[$i++] = 'M';
+        $clothe_sizes[$i++] = 'L';
+        $clothe_sizes[$i++] = 'XL';
+        $clothe_sizes[$i++] = '2XL';
+        $clothe_sizes[$i++] = '3XL';
+        $clothe_sizes[$i++] = '4XL';
+        $clothe_sizes[$i] = 'XL';
+
+
+//        dd($clothe_sizes);
+        foreach ($clothe_sizes as $key => $clothe_size) {
+            $options['clothe_size'][$key]['name'] = $clothe_size;
+            $options['clothe_size'][$key]['value'] = $clothe_size;
+        }
         return $options;
     }
 
@@ -536,14 +573,32 @@ class MemberController extends Controller
      * @param array $options
      * @return array
      */
+    public function generateShoeJpSize(array $options): array
+    {
+        $jp_sizes = array();
+        for ($size = 16; $size <= 50; $size += 0.5) {
+            $jp_sizes[] = $size;
+        }
+//        dd($uk_sizes);
+        foreach ($jp_sizes as $key => $eu_size) {
+            $options['shoe_jp_size'][$key]['name'] = $eu_size;
+            $options['shoe_jp_size'][$key]['value'] = $eu_size;
+        }
+        return $options;
+    }
+
+    /**
+     * @param array $options
+     * @return array
+     */
     public function generateShoeUsMenSize(array $options): array
     {
         $us_sizes = array();
         for ($size = 1; $size <= 13.5; $size += 0.5) {
-            $us_sizes[] = $size."C";
+            $us_sizes[] = $size . "C";
         }
         for ($size = 1; $size <= 2; $size += 0.5) {
-            $us_sizes[] = $size."Y";
+            $us_sizes[] = $size . "Y";
         }
         for ($size = 5; $size <= 16; $size += 0.5) {
             $us_sizes[] = $size;
@@ -564,10 +619,10 @@ class MemberController extends Controller
     {
         $us_sizes = array();
         for ($size = 1; $size <= 13.5; $size += 0.5) {
-            $us_sizes[] = $size."C";
+            $us_sizes[] = $size . "C";
         }
         for ($size = 1; $size <= 2; $size += 0.5) {
-            $us_sizes[] = $size."Y";
+            $us_sizes[] = $size . "Y";
         }
         for ($size = 5; $size <= 15.5; $size += 0.5) {
             $us_sizes[] = $size;
