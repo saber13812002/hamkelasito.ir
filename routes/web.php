@@ -57,6 +57,7 @@ Route::get('/privacy-policy', [App\Http\Controllers\HomeController::class, 'priv
 // NEWS
 Route::get('/news-result', [App\Http\Controllers\NewsController::class, 'newsResult'])->name('news-result');
 Route::get('/news-category', [App\Http\Controllers\NewsController::class, 'newsCategory'])->name('news-category');
+Route::get('/work', [App\Http\Controllers\NewsController::class, 'newsCategory'])->name('news-category');
 Route::get('/news-single', [App\Http\Controllers\NewsController::class, 'newsSingle'])->name('news-single');
 Route::get('/news-single-company', [App\Http\Controllers\NewsController::class, 'newsSingleCompany'])->name('news-single-company');
 
