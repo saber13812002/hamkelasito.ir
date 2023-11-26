@@ -3,8 +3,11 @@
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\MemberController;
 use App\Models\City;
+use App\Models\Country;
+use App\Models\Language;
 use App\Models\State;
 use App\Models\Upload;
+//use http\Client\Request;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Log;
@@ -44,18 +47,18 @@ Route::group(['prefix' => 'user', 'middleware' => 'auth:sanctum'], function () {
 // /api/languages/
 Route::get('/languages', function (Request $request) {
 //    dd($request->query('filter'), $request->query('sort'));
-    $json = loadJSON('languages');
-    return json_decode($json);
+//    $json = loadJSON('languages');
+//    return json_decode($json);
 //    dd(json_decode($json));
-//    return Language::all();
+    return Language::all();
 });
 
 // /api/country/
 Route::get('/country', function (Request $request) {
 //    dd($request->query('filter'), $request->query('sort'));
-    $json = loadJSON('country');
-    return json_decode($json);
-//    return Country::all();
+//    $json = loadJSON('country');
+//    return json_decode($json);
+    return Country::all();
 });
 
 
@@ -68,8 +71,8 @@ Route::get('/numcode', function (Request $request) {
 
 Route::get('/state/{state}', function (Request $request, string $state) {
 //    dd($request->query('filter'), $request->query('sort'));
-    $json = loadJSON('state');
-    return json_decode($json);
+//    $json = loadJSON('state');
+//    return json_decode($json);
 //    dd(json_decode($json));
     return State::all();
 });
@@ -77,20 +80,21 @@ Route::get('/state/{state}', function (Request $request, string $state) {
 
 Route::get('/city/{city}', function (Request $request) {
 //    dd($request->query('filter'), $request->query('sort'));
-    $json = loadJSON('city');
-    return json_decode($json);
+//    $json = loadJSON('city');
+//    return json_decode($json);
 //    dd(json_decode($json));
     return City::all();
 });
 
 Route::get('/city/', function (Request $request) {
-    $json = loadJSON('city');
-    return json_decode($json);
+//    $json = loadJSON('city');
+//    return json_decode($json);
+    return City::all();
 });
 
 // /api/uploadphoto/
 Route::group([
-    'middleware' => ['auth:sanctum', 'cors'],
+//    'middleware' => ['auth:sanctum', 'cors'],
     'prefix' => '',
 ], function () {
     Route::any('/uploadphoto', function (Request $request) {
