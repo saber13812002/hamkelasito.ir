@@ -91,7 +91,7 @@ class AuthController extends Controller
 //            dd($memberAwaitItems);
             $awaitingMembers = $memberAwaitBuilder
                 ->count();
-            $totalMembers = Member::count();
+            $totalMembers = Member::published()->count();
             $completedApprovals = $totalMembers - $awaitingMembers;
             $totalItems = TempTable::count();
             $rejectedItems = TempTable::query()

@@ -20,7 +20,7 @@ class MemberController extends Controller
      */
     public function index()
     {
-        $members = Member::all();
+        $members = Member::published()->get();
         return view('admin.member.index', compact('members'));
     }
 
@@ -31,10 +31,10 @@ class MemberController extends Controller
     {
         $data = $request->all();
 //    dd($data);
-//    return Member::all();
+//    return Member::published()->get();
 
 //    dd($request->sort);
-//    Member::all();
+//    Member::published()->get();
         return '';
     }
 
@@ -47,7 +47,7 @@ class MemberController extends Controller
 //    dd($request->query('filter'), $request->query('sort'));
         $limit = 3;
         $phrase = $request->s;
-        $phraseResults = Member::where('name', 'like', '%' . $phrase . '%');
+        $phraseResults = Member::query()->published()->where('name', 'like', '%' . $phrase . '%');
         $foundItems = $phraseResults->limit($limit + 1)->get();
         $count = $foundItems->count();
         $foundItems = $phraseResults->limit($limit)->get();
@@ -65,7 +65,7 @@ class MemberController extends Controller
 //        dd($request->query('filter'), $request->query('sort'), $request->sort, $request);
 
 //        dd($request->data);
-        $memberBuilder = Member::query();
+        $memberBuilder = Member::query()->published();
         $memberBuilder->whereId(1);
         $members = $memberBuilder->get();
         return view('layouts.single-pages.models-list-items', compact('members'));
@@ -251,9 +251,10 @@ class MemberController extends Controller
      */
     public function step0get()
     {
-        $old = TempTable::query()->whereUserId(auth()->user()->id)->whereStepId(0)->get();
+        $stepId = 0;
+        $saved = $this->getOldFormData([$stepId]);
         $token = session('token');
-        return view('apply_as.step-0', compact('token', 'old'));
+        return view('apply_as.step-0', compact('token', 'saved'));
     }
 
     /**
@@ -261,8 +262,22 @@ class MemberController extends Controller
      */
     public function step0()
     {
+        $stepId = 0;
+        $saved = $this->getOldFormData([$stepId]);
         $token = session('token');
-        return view('apply_as.step-0', compact('token'));
+        return view('apply_as.step-0', compact('token', 'saved'));
+    }
+
+    /**
+     * Show the form for creating a new resource.
+     */
+    public function step1get()
+    {
+        $stepId = 1;
+        $saved = $this->getOldFormData([$stepId]);
+//        dd($saved);
+        $token = session('token');
+        return view('apply_as.step-1', compact('token', 'saved'));
     }
 
     /**
@@ -272,8 +287,24 @@ class MemberController extends Controller
     {
 //        dd($request);
         $this->saveRequestToTempTable($request, 0);
+        $stepId = 1;
+        $saved = $this->getOldFormData([$stepId]);
         $token = session('token');
-        return view('apply_as.step-1', compact('token'));
+        return view('apply_as.step-1', compact('token', 'saved'));
+    }
+
+    /**
+     * Show the form for creating a new resource.
+     */
+    public function step2get()
+    {
+        $stepId = 2;
+        $saved = $this->getOldFormData([$stepId]);
+//        dd($saved);
+
+        $options = $this->getOptions([$stepId]);
+        $token = session('token');
+        return view('apply_as.step-2', compact('token', 'saved', 'options'));
     }
 
     /**
@@ -282,8 +313,23 @@ class MemberController extends Controller
     public function step2(FormRequest $request)
     {
         $this->saveRequestToTempTable($request, 1);
+        $stepId = 2;
+        $saved = $this->getOldFormData([$stepId]);
+        $options = $this->getOptions([$stepId]);
         $token = session('token');
-        return view('apply_as.step-2', compact('token'));
+        return view('apply_as.step-2', compact('token', 'saved', 'options'));
+    }
+
+    /**
+     * Show the form for creating a new resource.
+     */
+    public function step3get()
+    {
+        $stepId = 3;
+        $saved = $this->getOldFormData([$stepId]);
+//        dd($saved);
+        $token = session('token');
+        return view('apply_as.step-3', compact('token', 'saved'));
     }
 
     /**
@@ -292,8 +338,10 @@ class MemberController extends Controller
     public function step3(FormRequest $request)
     {
         $this->saveRequestToTempTable($request, 2);
+        $stepId = 3;
+        $saved = $this->getOldFormData([$stepId]);
         $token = session('token');
-        return view('apply_as.step-3', compact('token'));
+        return view('apply_as.step-3', compact('token', 'saved'));
     }
 
     /**
@@ -302,8 +350,10 @@ class MemberController extends Controller
     public function step4(FormRequest $request)
     {
         $this->saveRequestToTempTable($request, 3);
+        $stepId = 4;
+        $saved = $this->getOldFormData([$stepId]);
         $token = session('token');
-        return view('apply_as.step-4', compact('token'));
+        return view('apply_as.step-4', compact('token', 'saved'));
     }
 
     /**
@@ -312,8 +362,10 @@ class MemberController extends Controller
     public function step5(FormRequest $request)
     {
         $this->saveRequestToTempTable($request, 4);
+        $stepId = 5;
+        $saved = $this->getOldFormData([$stepId]);
         $token = session('token');
-        return view('apply_as.step-5', compact('token'));
+        return view('apply_as.step-5', compact('token', 'saved'));
     }
 
     /**
@@ -322,8 +374,10 @@ class MemberController extends Controller
     public function step6(FormRequest $request)
     {
         $this->saveRequestToTempTable($request, 5);
+        $stepId = 6;
+        $saved = $this->getOldFormData([$stepId]);
         $token = session('token');
-        return view('apply_as.step-6', compact('token'));
+        return view('apply_as.step-6', compact('token', 'saved'));
     }
 
     /**
@@ -332,8 +386,10 @@ class MemberController extends Controller
     public function step7(FormRequest $request)
     {
         $this->saveRequestToTempTable($request, 6);
+        $stepId = 7;
+        $saved = $this->getOldFormData([$stepId]);
         $token = session('token');
-        return view('apply_as.step-7', compact('token'));
+        return view('apply_as.step-7', compact('token', 'saved'));
     }
 
     /**
@@ -342,13 +398,25 @@ class MemberController extends Controller
     public function step8(FormRequest $request)
     {
         $this->saveRequestToTempTable($request, 7);
+        $stepId = 8;
+        $saved = $this->getOldFormData([$stepId]);
         $token = session('token');
-        return view('apply_as.step-8', compact('token'));
+        return view('apply_as.step-8', compact('token', 'saved'));
     }
 
     private function saveRequestToTempTable(Request $request, int $stepId)
     {
         $request->request->add(['step' => $stepId]);
+        $userId = auth()->user()->id;
+
+        if (!auth()->user()->member) {
+            $member = new Member();
+            $member->user_id = $userId;
+            $member->save();
+//            $user =auth()->user();
+//            $user->member_id=$member->id;
+//            $user->save();
+        }
         Log::info($request);
 //        dd(auth()->user());
 //        $tempTable->member_id
@@ -356,21 +424,30 @@ class MemberController extends Controller
 //        dd($tempTable, $stepId, $tempFields);
         foreach ($tempFields as $tempField) {
 //            dd($request->get('model_type'));
-            if ($request->has($tempField->model_field)) {
-                $tempTable = new TempTable();
-                $tempTable->step_id = $stepId;
-                $tempTable->user_id = auth()->user()->id;
-                $tempTable['model_field'] = $tempField->model_field;
-                $tempTable['model_name'] = $tempField->model_name;
-                $tempTable['type'] = $tempField->type;
+            if ($request->has($tempField->request_key)) {
+                $tempTable = TempTable::query()
+                    ->whereStepId($stepId)
+                    ->whereUserId($userId)
+                    ->whereModelField($tempField->request_key)
+                    ->first();
+//                dd($tempTable);
+                if (!$tempTable) {
+                    $tempTable = new TempTable();
+                    $tempTable->step_id = $stepId;
+                    $tempTable->user_id = $userId;
+//                    $tempTable->member_id = auth()->user()->member()->id;
+                    $tempTable['model_field'] = $tempField->request_key;
+                    $tempTable['model_name'] = $tempField->model_name;
+                    $tempTable['type'] = $tempField->type;
+                }
                 if ($tempField->type == 'json')
-                    $tempTable['json'] = $request->get($tempField->model_field);
+                    $tempTable['json'] = $request->get($tempField->request_key);
                 else if ($tempField->type == 'text')
-                    $tempTable['text'] = $request->get($tempField->model_field);
+                    $tempTable['text'] = $request->get($tempField->request_key);
                 else if ($tempField->type == 'file') {
-                    $tempTable['value'] = $request->get($tempField->model_field);
+                    $tempTable['value'] = $request->get($tempField->request_key);
                 } else
-                    $tempTable['value'] = $request->get($tempField->model_field);
+                    $tempTable['value'] = $request->get($tempField->request_key);
 
 //                dd($request,$tempTable,$tempField);
                 $tempTable->save();
@@ -380,5 +457,181 @@ class MemberController extends Controller
             }
 
         }
+    }
+
+    /**
+     * @return TempTable
+     */
+    public function getOldFormData(array $stepIds)
+    {
+        $saved = TempTable::query()
+            ->whereUserId(auth()->user()->id)
+            ->whereStepId($stepIds)
+            ->get()
+            ->pluck('value', 'model_field');
+//        dd($saved['value'], isset($saved), isset($saved['model_type']));
+        return $saved;
+    }
+
+    /**
+     * @return array
+     */
+    public function getOptions(array $stepIds)
+    {
+
+//        $optionElement = OptionElement::query()
+//            ->whereStepId($stepIds)
+//            ->get();
+
+//        dd($saved['value'], isset($saved), isset($saved['model_type']));
+
+        $options = array();
+        if (in_array(2, $stepIds)) {
+            $options = $this->generateClotheSize($options);
+            $options = $this->generateShoeUkSize($options);
+            $options = $this->generateShoeEuSize($options);
+            $options = $this->generateShoeJpSize($options);
+            $options = $this->generateShoeUsMenSize($options);
+            $options = $this->generateShoeUsWomenSize($options);
+        }
+        if (in_array(3, $stepIds)) {
+
+        }
+
+//        dd($options);
+        return $options;
+    }
+
+    /**
+     * @param array $options
+     * @return array
+     */
+    public function generateClotheSize(array $options): array
+    {
+        $clothe_sizes = array();
+        $i = 0;
+        for ($size = 60; $size <= 170; $size += 10) {
+            $i++;
+            $clothe_sizes[] = $size;
+        }
+        $clothe_sizes[$i++] = 'XS';
+        $clothe_sizes[$i++] = 'S';
+        $clothe_sizes[$i++] = 'M';
+        $clothe_sizes[$i++] = 'L';
+        $clothe_sizes[$i++] = 'XL';
+        $clothe_sizes[$i++] = '2XL';
+        $clothe_sizes[$i++] = '3XL';
+        $clothe_sizes[$i++] = '4XL';
+        $clothe_sizes[$i] = 'XL';
+
+
+//        dd($clothe_sizes);
+        foreach ($clothe_sizes as $key => $clothe_size) {
+            $options['clothe_size'][$key]['name'] = $clothe_size;
+            $options['clothe_size'][$key]['value'] = $clothe_size;
+        }
+        return $options;
+    }
+
+    /**
+     * @param array $options
+     * @return array
+     */
+    public function generateShoeUkSize(array $options): array
+    {
+        $uk_sizes = array();
+        for ($size = 0.5; $size <= 15; $size += 0.5) {
+            $uk_sizes[] = $size;
+        }
+//        dd($uk_sizes);
+        foreach ($uk_sizes as $key => $uk_size) {
+            $options['shoe_uk_size'][$key]['name'] = $uk_size;
+            $options['shoe_uk_size'][$key]['value'] = $uk_size;
+        }
+        return $options;
+    }
+
+    /**
+     * @param array $options
+     * @return array
+     */
+    public function generateShoeEuSize(array $options): array
+    {
+        $uk_sizes = array();
+        for ($size = 16; $size <= 50; $size += 0.5) {
+            $eu_sizes[] = $size;
+        }
+//        dd($uk_sizes);
+        foreach ($eu_sizes as $key => $eu_size) {
+            $options['shoe_eu_size'][$key]['name'] = $eu_size;
+            $options['shoe_eu_size'][$key]['value'] = $eu_size;
+        }
+        return $options;
+    }
+
+    /**
+     * @param array $options
+     * @return array
+     */
+    public function generateShoeJpSize(array $options): array
+    {
+        $jp_sizes = array();
+        for ($size = 16; $size <= 50; $size += 0.5) {
+            $jp_sizes[] = $size;
+        }
+//        dd($uk_sizes);
+        foreach ($jp_sizes as $key => $eu_size) {
+            $options['shoe_jp_size'][$key]['name'] = $eu_size;
+            $options['shoe_jp_size'][$key]['value'] = $eu_size;
+        }
+        return $options;
+    }
+
+    /**
+     * @param array $options
+     * @return array
+     */
+    public function generateShoeUsMenSize(array $options): array
+    {
+        $us_sizes = array();
+        for ($size = 1; $size <= 13.5; $size += 0.5) {
+            $us_sizes[] = $size . "C";
+        }
+        for ($size = 1; $size <= 2; $size += 0.5) {
+            $us_sizes[] = $size . "Y";
+        }
+        for ($size = 5; $size <= 16; $size += 0.5) {
+            $us_sizes[] = $size;
+        }
+//        dd($uk_sizes);
+        foreach ($us_sizes as $key => $us_size) {
+            $options['shoe_us_men_size'][$key]['name'] = $us_size;
+            $options['shoe_us_men_size'][$key]['value'] = $us_size;
+        }
+        return $options;
+    }
+
+    /**
+     * @param array $options
+     * @return array
+     */
+    public function generateShoeUsWomenSize(array $options): array
+    {
+        $us_sizes = array();
+        for ($size = 1; $size <= 13.5; $size += 0.5) {
+            $us_sizes[] = $size . "C";
+        }
+        for ($size = 1; $size <= 2; $size += 0.5) {
+            $us_sizes[] = $size . "Y";
+        }
+        for ($size = 5; $size <= 15.5; $size += 0.5) {
+            $us_sizes[] = $size;
+        }
+//        dd($uk_sizes);
+        foreach ($us_sizes as $key => $us_size) {
+            $options['shoe_us_women_size'][$key]['name'] = $us_size;
+            $options['shoe_us_women_size'][$key]['value'] = $us_size;
+        }
+        return $options;
     }
 }

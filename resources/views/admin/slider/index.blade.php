@@ -12,13 +12,13 @@
         <div class="col-md-12 mb-2">
 
             <button data-toggle="modal" data-target="#createSlider"
-                    class="btn btn-success float-right">{{__('Add Slider')}} <i class="fas fa-cogs"></i></button>
+                    class="btn btn-success float-right">{{__('menu.Add Slider')}} <i class="fas fa-cogs"></i></button>
         </div>
         <div class="col-12">
 
             <div class="card">
                 <div class="card-header">
-                    <h3 class="card-title">{{__('Sliders Management')}}</h3>
+                    <h3 class="card-title">{{__('menu.Sliders Management')}}</h3>
 
                     <div class="card-tools">
 
@@ -31,16 +31,16 @@
                         <thead>
                         <tr>
                             <th>#</th>
-                            <th>{{__('Member Id')}}</th>
-                            <th>{{__('Description')}}</th>
-                            <th>{{__('Image 3x4')}}</th>
-                            <th>{{__('Image Large')}}</th>
-                            <th>{{__('Image Medium')}}</th>
-                            <th>{{__('Image Small')}}</th>
-                            <th>{{__('Video')}}</th>
-                            <th>{{__('Order')}}</th>
-                            <th>{{__('Enable')}}</th>
-                            <th>{{__('Options')}}</th>
+                            <th>{{__('menu.Member Id')}}</th>
+                            <th>{{__('menu.Description')}}</th>
+                            <th>{{__('menu.Image 3x4')}}</th>
+                            <th>{{__('menu.Image Large')}}</th>
+                            <th>{{__('menu.Image Medium')}}</th>
+                            <th>{{__('menu.Image Small')}}</th>
+                            <th>{{__('menu.Video')}}</th>
+                            <th>{{__('menu.Order')}}</th>
+                            <th>{{__('menu.Enable')}}</th>
+                            <th>{{__('menu.Options')}}</th>
                         </tr>
                         </thead>
                         <tbody>

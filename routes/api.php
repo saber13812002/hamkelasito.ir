@@ -24,7 +24,6 @@ use Illuminate\Support\Facades\Route;
 
 Route::any('/',  [MemberController::class, 'api']);
 
-
 Route::any('/search', [MemberController::class, 'search']);
 
 Route::any('/filter', [MemberController::class, 'filter']);

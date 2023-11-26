@@ -12,13 +12,13 @@
         <div class="col-md-12 mb-2">
 
             <button data-toggle="modal" data-target="#createLanguage"
-                    class="btn btn-success float-right">{{__('Add Language')}} <i class="fas fa-cogs"></i></button>
+                    class="btn btn-success float-right">{{__('menu.Add Language')}} <i class="fas fa-cogs"></i></button>
         </div>
         <div class="col-12">
 
             <div class="card">
                 <div class="card-header">
-                    <h3 class="card-title">{{__('Languages Management')}}</h3>
+                    <h3 class="card-title">{{__('menu.Languages Management')}}</h3>
 
                     <div class="card-tools">
 
@@ -31,11 +31,11 @@
                         <thead>
                         <tr>
                             <th>#</th>
-                            <th>{{__('Text')}}</th>
-                            <th>{{__('Value')}}</th>
-                            <th>{{__('Color')}}</th>
-                            <th>{{__('Flag')}}</th>
-                            <th>{{__('Options')}}</th>
+                            <th>{{__('menu.Text')}}</th>
+                            <th>{{__('menu.Value')}}</th>
+                            <th>{{__('menu.Color')}}</th>
+                            <th>{{__('menu.Flag')}}</th>
+                            <th>{{__('menu.Options')}}</th>
                         </tr>
                         </thead>
                         <tbody>

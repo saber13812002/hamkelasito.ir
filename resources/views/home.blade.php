@@ -2,6 +2,9 @@
 
 @section('content-home')
 
+    <body class="page-home" style="visibility: visible;">
+
+    @include('header-site')
     <!-- start main -->
     <main>
         <div id="content">
@@ -128,7 +131,7 @@
                         <div class="slider-thumbnails-wrapper">
                             @foreach($sliders as $slider)
                                 <div class="item-thumbnail slider-thumbnail-{{ $slider->order-1 }} first"
-                                     style="background-image: url(&quot;storage/assets/img/3x4/{{ $slider->image_3x4 }}&quot;); width: 292.5px; height: 390px; left: 0px; top: 0px; z-index: 0;"
+                                     style="background-image: url('storage/assets/img/3x4/{{ $slider->image_3x4 }}'); width: 292.5px; height: 390px; left: 0px; top: 0px; z-index: 0;"
                                      data-index="{{ $slider->order-1 }}">
                                 </div>
                             @endforeach
@@ -166,7 +169,7 @@
                                              alt="{{ $category->name }} Category">
                                     </noscript>
                                     <div class="home-categories-title">
-                                        <span itemprop="name">{{ $category->name }}</span>
+                                        <span itemprop="name">{{ __('menu.'.$category->slug) }}</span>
                                         <div class="arrow"></div>
                                     </div>
                                 </a>
@@ -185,7 +188,7 @@
                     <div class="heading">
                         <div class="top-area">
                             <div class="title-area">
-                                <h2 class="heading-title" itemprop="name">OUR SERVICES</h2>
+                                <h2 class="heading-title" itemprop="name">{{__('menu.Our Services')}}</h2>
                             </div>
                         </div>
                     </div>
@@ -196,30 +199,27 @@
                             <i class="icon-woman"></i>
                             <div class="card-title" itemprop="itemOffered" itemscope=""
                                  itemtype="https://schema.org/Service">
-                                <span itemprop="name">Model</span>
+                                <span itemprop="name">{{__('menu.Model')}}</span>
                             </div>
-                            <div class="card-content">We provide the optimal model selection tailored to your specific
-                                requirements.
+                            <div class="card-content">{{trans("menu.We provide the optimal model selection tailored to your specific requirements.")}}
                             </div>
                         </div>
                         <div class="card" itemprop="itemListElement" itemscope="" itemtype="https://schema.org/Offer">
                             <i class="icon-creativity"></i>
                             <div class="card-title" itemprop="itemOffered" itemscope=""
                                  itemtype="https://schema.org/Service">
-                                <span itemprop="name">Talent</span>
+                                <span itemprop="name">{{__('menu.Talent')}}</span>
                             </div>
-                            <div class="card-content">Uniting events and exhibitions with the perfect talent to ensure a
-                                remarkable experience
+                            <div class="card-content">{{__('menu.Uniting events and exhibitions with the perfect talent to ensure a remarkable experience')}}
                             </div>
                         </div>
                         <div class="card" itemprop="itemListElement" itemscope="" itemtype="https://schema.org/Offer">
                             <i class="icon-actors"></i>
                             <div class="card-title" itemprop="itemOffered" itemscope=""
                                  itemtype="https://schema.org/Service">
-                                <span itemprop="name">Actor</span>
+                                <span itemprop="name">{{__('menu.Actor')}}</span>
                             </div>
-                            <div class="card-content">Delivering a myriad of actor types, ready to fulfill every
-                                performance requirement
+                            <div class="card-content">{{__('menu.Delivering a myriad of actor types, ready to fulfill every performance requirement')}}
                             </div>
                         </div>
                     </div>
@@ -236,25 +236,25 @@
                         <div class="heading">
                             <div class="top-area">
                                 <div class="title-area">
-                                    <h2 class="heading-title" itemprop="name">TOP MODELS</h2>
+                                    <h2 class="heading-title" itemprop="name">{{__('menu.TOP MODELS')}}</h2>
                                     <div class="heading-filters desktop">
                                         <ul>
                                             <li>
                                                 <a href="/#" class="filter-option" data-filter="japanese"
                                                    aria-label="Filter Japanese Top Models">
-                                                    Japanese
+                                                    {{__('menu.Japanese')}}
                                                 </a>
                                             </li>
                                             <li>
                                                 <a href="/#" class="filter-option" data-filter="mixed"
                                                    aria-label="Filter Mixed Top Models">
-                                                    Mixed
+                                                    {{__('menu.Mixed')}}
                                                 </a>
                                             </li>
                                             <li>
                                                 <a href="/#" class="filter-option active" data-filter="international"
                                                    aria-label="Filter International Top Models">
-                                                    International
+                                                    {{__('menu.International')}}
                                                 </a>
                                             </li>
                                         </ul>
@@ -262,7 +262,7 @@
                                 </div>
                                 <div class="action-area">
                                     <a href="models-list" itemprop="url">
-                                        <span>See All</span>
+                                        <span>{{__('menu.See All')}}</span>
                                     </a>
                                 </div>
                             </div>
@@ -393,4 +393,5 @@
     <div id="mttContainer" class="bootstrapiso notranslate" data-html="true" data-original-title="" title=""
          style="transform: translate(129px, 650px);"></div>
 
+    </body>
 @endsection

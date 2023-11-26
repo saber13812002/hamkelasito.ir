@@ -296,6 +296,11 @@ return [
             'icon' => 'fas fa-fw fa-main',
         ],
         [
+            'text' => 'Translation',
+            'url'  => 'translations',
+            'icon' => 'fas fa-fw fa-language',
+        ],
+        [
             'text' => 'Categories',
             'url'  => 'admin/categories',
             'icon' => 'fas fa-fw fa-cat',

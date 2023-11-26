@@ -12,13 +12,13 @@
         <div class="col-md-12 mb-2">
 
             <button data-toggle="modal" data-target="#createCategory"
-                    class="btn btn-success float-right">{{__('Add Member')}} <i class="fas fa-cogs"></i></button>
+                    class="btn btn-success float-right">{{__('menu.Add Member')}} <i class="fas fa-cogs"></i></button>
         </div>
         <div class="col-12">
 
             <div class="card">
                 <div class="card-header">
-                    <h3 class="card-title">{{__('Members Management')}}</h3>
+                    <h3 class="card-title">{{__('menu.Members Management')}}</h3>
 
                     <div class="card-tools">
 
@@ -31,25 +31,25 @@
                         <thead>
                         <tr>
                             <th>#</th>
-                            <th>{{__('No')}}</th>
-                            <th>{{__('Name')}}</th>
-                            <th>{{__('Family')}}</th>
-                            <th>{{__('Alias')}}</th>
-                            <th>{{__('Town')}}</th>
-                            <th>{{__('Type')}}</th>
-                            <th>{{__('Model Cat.')}}</th>
-                            <th>{{__('Age')}}</th>
-                            <th>{{__('Height')}}</th>
-                            <th>{{__('Bust')}}</th>
-                            <th>{{__('Waist')}}</th>
-                            <th>{{__('Hips')}}</th>
-                            <th>{{__('Shoes Size')}}</th>
-                            <th>{{__('Hair Color')}}</th>
-                            <th>{{__('Eye Color')}}</th>
-                            <th>{{__('Nationality')}}</th>
-                            <th>{{__('Language')}}</th>
-                            <th>{{__('Profile Image')}}</th>
-                            <th>{{__('Options')}}</th>
+                            <th>{{__('menu.No')}}</th>
+                            <th>{{__('menu.Name')}}</th>
+                            <th>{{__('menu.Family')}}</th>
+                            <th>{{__('menu.Alias')}}</th>
+                            <th>{{__('menu.Town')}}</th>
+                            <th>{{__('menu.Type')}}</th>
+                            <th>{{__('menu.Model Cat.')}}</th>
+                            <th>{{__('menu.Age')}}</th>
+                            <th>{{__('menu.Height')}}</th>
+                            <th>{{__('menu.Bust')}}</th>
+                            <th>{{__('menu.Waist')}}</th>
+                            <th>{{__('menu.Hips')}}</th>
+                            <th>{{__('menu.Shoes Size')}}</th>
+                            <th>{{__('menu.Hair Color')}}</th>
+                            <th>{{__('menu.Eye Color')}}</th>
+                            <th>{{__('menu.Nationality')}}</th>
+                            <th>{{__('menu.Language')}}</th>
+                            <th>{{__('menu.Profile Image')}}</th>
+                            <th>{{__('menu.Options')}}</th>
                         </tr>
                         </thead>
                         <tbody>

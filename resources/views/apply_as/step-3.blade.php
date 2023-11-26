@@ -118,7 +118,7 @@
 
                                     <!-- native language and other language -->
                                     <div class="form-section">
-                                        <div class="form-section-label">Language(s)</div>
+                                        <div class="form-section-label">Language(s)s</div>
                                         <div class="form-section-content">
                                             <div class="field field-type-select"
                                                  data-source="/api/languages/"
@@ -132,7 +132,7 @@
                                             </div>
                                             <div class="field-error-msg" id="field_error_native_language"></div>
                                             <div class="table-repeater" data-name="Other Languages" data-unique="language" data-unique-message="The chosen language is already selected. Please choose a different language or edit the current selection">
-                                                <input type="hidden" name="other_language" class="table-repeater-input" value=''>
+                                                <input type="hidden" name="other_language" class="table-repeater-input" value='[{"language":{"type":"select","input":"ab","text":"Abkhaz"},"level":{"type":"select","input":"Fluent","text":"Fluent"}}]'>
                                                 <div class="repeater-label">Other Languages</div>
                                                 <div class="repeater-table">
                                                     <table>

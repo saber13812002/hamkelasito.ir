@@ -13,7 +13,6 @@ return new class extends Migration {
         Schema::create('members', function (Blueprint $table) {
             $table->id();
 
-
             $table->bigInteger('user_id')->nullable();
 
             $table->string('profile_image')->nullable();
@@ -68,6 +67,8 @@ return new class extends Migration {
             $table->text('biography')->nullable();
             $table->text('skills')->nullable();
             $table->string('skill_tags')->nullable();
+
+            $table->dateTime('published_at')->nullable();
 
             $table->timestamps();
         });

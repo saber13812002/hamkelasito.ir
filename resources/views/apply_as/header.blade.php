@@ -22,11 +22,19 @@
             </div>
             <div class="actions">
                 <div class="app-lang">
-                    <a href="?lng=jp" class="btn btn-icon" aria-label="Change Language To Japane">
+                    <a href="?locale=ja" class="btn btn-icon
+                     @if(App::getLocale() == 'ja')
+                     active
+                    @endif
+                    " aria-label="Change Language To Japane">
                         JP
                     </a>
                     <div class="divider"></div>
-                    <a href="?lng=en" class="btn btn-icon active" aria-label="Change language To English">
+                    <a href="?locale=en" class="btn btn-icon
+                     @if(App::getLocale() == 'en')
+                     active
+                    @endif
+                    " aria-label="Change language To English">
                         EN
                     </a>
                 </div>

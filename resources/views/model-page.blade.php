@@ -1,6 +1,10 @@
 @extends('layout-home')
 
 @section('content-home')
+
+    <body style="visibility: visible;" class="page page-model">
+
+    @include('header-site')
     <!-- start content -->
     <main>
         <div id="content">
@@ -69,6 +73,10 @@
                                     <a href="/composite2/{{$member->id}}" aria-label="Model Profile">
                                         <i class="icon-user-square"></i>
                                         <span>Profile</span>
+                                    </a>
+                                    <a href="/composite4/{{$member->id}}" aria-label="Model Profile">
+                                        <i class="icon-user-square"></i>
+                                        <span>PDF</span>
                                     </a>
                                 </div>
                             </div>
@@ -1864,4 +1872,5 @@ Voice
         </template>
     </div>
 
+    </body>
 @endsection

@@ -6,11 +6,11 @@
             <div class="heading">
                 <div class="top-area">
                     <div class="title-area">
-                        <h2 class="heading-title" itemprop="name">News</h2>
+                        <h2 class="heading-title" itemprop="name">{{__('menu.News')}}</h2>
                     </div>
                     <div class="action-area">
                         <a href="./news-category">
-                            See All
+                            {{__('menu.See All')}}
                         </a>
                     </div>
                 </div>

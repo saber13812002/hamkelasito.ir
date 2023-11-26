@@ -1,0 +1,15 @@
+{
+    "theseasons": {
+        "normal": "theseasons_normal_e6d56f37aefa22c819c501837f3167c9"
+    },
+    "amelaryas": {
+        "normal": "amelaryas_normal_52a20790baf40ca6aa89f7566ed683b3"
+    },
+    "montserrat": {
+        "300": "C:\\Users\\saber\\saberprojects\\hamkelasito\\hamkelasito.ir\\storage\\fonts\/montserrat_300_ef1ebd6456abdd36457ac761d9991b15",
+        "normal": "C:\\Users\\saber\\saberprojects\\hamkelasito\\hamkelasito.ir\\storage\\fonts\/montserrat_normal_000c29bd6b98d17f7828ada45e75174b",
+        "500": "C:\\Users\\saber\\saberprojects\\hamkelasito\\hamkelasito.ir\\storage\\fonts\/montserrat_500_66d5e405cbc9e670d148399c704c61c1",
+        "600": "C:\\Users\\saber\\saberprojects\\hamkelasito\\hamkelasito.ir\\storage\\fonts\/montserrat_600_671ef04577ea799b8d054ac5bdfe5ee0",
+        "bold": "montserrat_bold_97823d877a42a6e2ae688c1f3d901728"
+    }
+}

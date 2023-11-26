@@ -1,7 +1,10 @@
 @extends('layout-home')
 
 @section('content-home')
-    <!-- start content -->
+
+    <body style="visibility: visible;" class="page page-contact-us">
+
+    @include('header-site')
 
 
     <!-- start content -->
@@ -222,5 +225,6 @@
         </div>
     </main>
 
+    </body>
 
 @endsection
