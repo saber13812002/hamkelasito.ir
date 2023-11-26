@@ -97,7 +97,7 @@ Route::group([
 //    'middleware' => ['auth:sanctum', 'cors'],
     'prefix' => '',
 ], function () {
-    Route::any('/uploadphoto', function (Request $request) {
+    Route::any('/uploadphoto/', function (Request $request) {
 //    dd($request->query('filter'), $request->query('sort'));
 //        Log::info($request->header('Authorization') ? "1" : "0");
 //        Log::info();
