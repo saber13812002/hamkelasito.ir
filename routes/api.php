@@ -152,7 +152,7 @@ Route::group([
             return response()->json([
                 'message' => 'File uploaded successfully',
                 'url' => $fullUrl,
-                'id' => $uniqId,
+                'id' => $upload->id,
                 'type' => 'photo',
                 'name' => $filename,
                 'thumbnail' => $fullUrl,

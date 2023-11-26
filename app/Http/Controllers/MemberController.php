@@ -7,6 +7,7 @@ use App\Http\Requests\UpdateMemberRequest;
 use App\Models\Member;
 use App\Models\TempField;
 use App\Models\TempTable;
+use App\Models\Upload;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
@@ -457,6 +458,38 @@ class MemberController extends Controller
     }
 
     /**
+     * @return array
+     */
+    public function getOldFileData(array $stepIds)
+    {
+        $saved = TempTable::query()
+            ->whereUserId(auth()->user()->id)
+            ->whereStepId($stepIds)
+            ->whereType('file')
+            ->get()
+            ->pluck('value', 'model_field');
+//        dd($saved);
+        $saved_file = null;
+        foreach ($saved as $key => $save) {
+//            dd($key, $save);
+            $items = explode(',', $save);
+            $uploads = Upload::whereIn('id', $items)->get();
+//            dd($uploads);
+            $string = '[';
+            $count = 0;
+            foreach ($uploads as $upload) {
+                $count++;
+                $string .= ($count > 1 ? ',' : '') . '{"message":"File uploaded successfully","url":"' . $upload->full_url . '","id":"' . $upload->id . '","type":"photo","name":"' . $upload->name . '","thumbnail":"' . $upload->full_url . '"}';
+            }
+            $string .= ']';
+            $saved_file[$key] = $string;
+        }
+//        dd($saved_file);
+        return $saved_file;
+    }
+//
+
+    /**
      * @return TempTable
      */
     public function getOldJsonData(array $stepIds)
@@ -653,10 +686,12 @@ class MemberController extends Controller
         $saved = $this->getOldFormData([$stepId]);
         $saved_text = $this->getOldTextData([$stepId]);
         $saved_json = $this->getOldJsonData([$stepId]);
+        $saved_file = $this->getOldFileData([$stepId]);
 //        dd($saved);
+//        dd($saved_file);
         $options = $this->getOptions([$stepId]);
         $token = session('token');
-        $compact = compact('token', 'saved', 'saved_text', 'saved_json', 'options');
+        $compact = compact('token', 'saved', 'saved_text', 'saved_json', 'saved_file', 'options');
         return $compact;
     }
 }
