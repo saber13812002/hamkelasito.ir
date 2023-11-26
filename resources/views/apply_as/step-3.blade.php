@@ -142,7 +142,9 @@
                                                  data-unique="language"
                                                  data-unique-message="The chosen language is already selected. Please choose a different language or edit the current selection">
                                                 <input type="hidden" name="other_language" class="table-repeater-input"
-                                                       value='[{"language":{"type":"select","input":"ab","text":"Abkhaz"},"level":{"type":"select","input":"Fluent","text":"Fluent"}}]'>
+                                                       @if (isset($saved_json) && isset($saved_json['other_language']))
+                                                           value="{{$saved_json['other_language']}}"
+                                                    @endif >
                                                 <div class="repeater-label">Other Languages</div>
                                                 <div class="repeater-table">
                                                     <table>
@@ -227,7 +229,8 @@
                                                 <div class="field-content">
                                                     <label for="biography">Bio <span
                                                             class="field-required-star">*</span></label>
-                                                    <textarea name="biography" id="biography" rows="5"></textarea>
+                                                    <textarea name="biography" id="biography"
+                                                              rows="5">{{$saved_text?$saved_text['biography']:""}}</textarea>
                                                 </div>
                                             </div>
                                             <div class="field-error-msg" id="field_error_biography"></div>
@@ -251,7 +254,9 @@
                                             <div class="table-repeater" data-name="Skill" data-required="true"
                                                  data-custom-column="[{&quot;name&quot;: &quot;tags&quot;, &quot;text&quot;: &quot;Skill Tags&quot;}]">
                                                 <input type="hidden" name="skills" class="table-repeater-input"
-                                                       value=''>
+                                                       @if (isset($saved_json) && isset($saved_json['skills']))
+                                                           value="{{$saved_json['skills']}}"
+                                                    @endif >
                                                 <div class="repeater-table">
                                                     <table>
                                                         <thead></thead>
@@ -1102,7 +1107,10 @@
                                                  data-exclusive-empty-element-check="job_experiences_pdf"
                                                  data-name="Job Experiences" data-required="true">
                                                 <input type="hidden" name="job_experiences" id="job_experiences"
-                                                       class="table-repeater-input" value=''>
+                                                       class="table-repeater-input"
+                                                       @if (isset($saved_json) && isset($saved_json['job_experiences']))
+                                                           value="{{$saved_json['job_experiences']}}"
+                                                    @endif >
                                                 <div class="repeater-table">
                                                     <table>
                                                         <thead></thead>
