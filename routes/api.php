@@ -7,11 +7,12 @@ use App\Models\Country;
 use App\Models\Language;
 use App\Models\State;
 use App\Models\Upload;
-//use http\Client\Request;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Route;
+
+//use http\Client\Request;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,7 +26,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-Route::any('/',  [MemberController::class, 'api']);
+Route::any('/', [MemberController::class, 'api']);
 
 Route::any('/search', [MemberController::class, 'search']);
 
@@ -86,11 +87,21 @@ Route::get('/city/{city}', function (Request $request) {
     return City::all();
 });
 
-Route::get('/city/', function (Request $request) {
+Route::get('/city', function (Request $request) {
 //    $json = loadJSON('city');
 //    return json_decode($json);
     return City::all();
 });
+
+Route::get('/geoname/children', function (Request $request) {
+    //?geonameId=202&username=mohammadsh79&lang=en
+//    dd($request->query('filter'), $request->query('sort'));
+//    $json = loadJSON('state');
+//    return json_decode($json);
+//    dd(json_decode($json));
+    return State::all();
+});
+
 
 // /api/uploadphoto/
 Route::group([
