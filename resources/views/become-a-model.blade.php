@@ -14,8 +14,8 @@
                 <div class="container-xxxl">
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="./home">Home</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Become Liliana</li>
+                            <li class="breadcrumb-item"><a href="./home">{{__('menu.Home')}}</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">{{__('menu.Become Liliana')}}</li>
                         </ol>
                     </nav>
                 </div>
@@ -24,7 +24,7 @@
             <!-- start page title -->
             <div class="page-title">
                 <div class="container-xxl">
-                    <h1>Become Liliana</h1>
+                    <h1>{{__('menu.Become Liliana')}}</h1>
                 </div>
             </div>
 
@@ -63,16 +63,16 @@
             <div class="section section-apply-model">
                 <div class="container-lg">
                     <a href="./register" class="btn btn-primary">
-                        Apply
-                    </a>
-                </div>
-            </div>
+    {{__('menu.Apply')}}
+</a>
+</div>
+</div>
 
-        </div>
-    </main>
+</div>
+</main>
 
 
 
-    </body>
+</body>
 
 @endsection

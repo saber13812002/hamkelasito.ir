@@ -78,29 +78,29 @@
                         <div class="accordion-content" style="display: none;">
                             <div class="ft-menu">
                                 <ul>
-                                    <li><a href="/">Home</a></li>
-                                    <li><a href="work">Portfolio</a></li>
-                                    <li><a href="news-category">News</a></li>
-                                    <li><a href="about-us">About us</a></li>
-                                    <li><a href="contact-us">Contact us</a></li>
-                                    <li><a href="company-profile">Company Profile</a></li>
-                                    <li><a href="privacy-policy">Privacy Policy</a></li>
+                                    <li><a href="/">{{__('menu.Home')}}</a></li>
+                                    <li><a href="work">{{__('menu.Portfolio')}}</a></li>
+                                    <li><a href="news-category">{{__('menu.News')}}</a></li>
+                                    <li><a href="about-us">{{__('menu.About us')}}</a></li>
+                                    <li><a href="contact-us">{{__('menu.Contact us')}}</a></li>
+                                    <li><a href="company-profile">{{__('menu.Company Profile')}}</a></li>
+                                    <li><a href="privacy-policy">{{__('menu.Privacy Policy')}}</a></li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                     <div class="accordion-item">
                         <button class="accordion-header">
-                            <span class="accordion-title">Categories</span>
+                            <span class="accordion-title">{{__('menu.Categories')}}</span>
                             <i class="icon-arrow-down"></i>
                         </button>
                         <div class="accordion-content" style="display: none;">
                             <div class="ft-categories">
                                 <ul>
-                                    <li><a href="models-list">Model</a></li>
-                                    <li><a href="models-list">Talent</a></li>
-                                    <li><a href="models-list">Actor</a></li>
-                                    <li><a href="models-list">Extra</a></li>
+                                    <li><a href="models-list">{{__('menu.Model')}}</a></li>
+                                    <li><a href="models-list">{{__('menu.Talent')}}</a></li>
+                                    <li><a href="models-list">{{__('menu.Actor')}}</a></li>
+                                    <li><a href="models-list">{{__('menu.Extra')}}</a></li>
                                 </ul>
                             </div>
                         </div>

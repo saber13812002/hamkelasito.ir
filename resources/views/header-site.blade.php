@@ -73,13 +73,13 @@
                     <!-- menu nav -->
                     <nav class="menu-nav">
                         <ul>
-                            <li class="active"><a href="/">Home</a></li>
-                            <li><a href="work">Portfolio</a></li>
-                            <li><a href="news-category">News</a></li>
-                            <li><a href="about-us">About us</a></li>
-                            <li><a href="contact-us">Contact us</a></li>
-                            <li><a href="company-profile">Company Profile</a></li>
-                            <li><a href="privacy-policy">Privacy Policy</a></li>
+                            <li class="active"><a href="/">{{__('menu.Home')}}</a></li>
+                            <li><a href="work">{{__('menu.Portfolio')}}</a></li>
+                            <li><a href="news-category">{{__('menu.News')}}</a></li>
+                            <li><a href="about-us">{{__('menu.About us')}}</a></li>
+                            <li><a href="contact-us">{{__('menu.Contact us')}}</a></li>
+                            <li><a href="company-profile">{{__('menu.Company Profile')}}</a></li>
+                            <li><a href="privacy-policy">{{__('menu.Privacy Policy')}}</a></li>
                         </ul>
                     </nav>
 
@@ -88,49 +88,49 @@
                         <div class="category">
                             <div class="category-title">Model</div>
                             <ul class="category-content">
-                                <li><a href="models-list">All</a></li>
-                                <li><a href="models-list">Women</a></li>
-                                <li><a href="models-list">Men</a></li>
-                                <li><a href="models-list">Kids &amp; Babies</a></li>
-                                <li><a href="models-list">Japanese</a></li>
-                                <li><a href="models-list">Mixed</a></li>
-                                <li><a href="models-list">International</a></li>
+                                <li><a href="models-list">{{__('menu.All')}}</a></li>
+                                <li><a href="models-list">{{__('menu.Women')}}</a></li>
+                                <li><a href="models-list">{{__('menu.Men')}}</a></li>
+                                <li><a href="models-list">{{__('menu.Kids &amp; Babies')}}</a></li>
+                                <li><a href="models-list">{{__('menu.Japanese')}}</a></li>
+                                <li><a href="models-list">{{__('menu.Mixed')}}</a></li>
+                                <li><a href="models-list">{{__('menu.International')}}</a></li>
                             </ul>
                         </div>
                         <div class="category">
                             <div class="category-title">Talent</div>
                             <ul class="category-content">
-                                <li><a href="models-list">All</a></li>
-                                <li><a href="models-list">Women</a></li>
-                                <li><a href="models-list">Men</a></li>
-                                <li><a href="models-list">Kids</a></li>
-                                <li><a href="models-list">Japanese</a></li>
-                                <li><a href="models-list">Mixed</a></li>
-                                <li><a href="models-list">International</a></li>
+                                <li><a href="models-list">{{__('menu.All')}}</a></li>
+                                <li><a href="models-list">{{__('menu.Women')}}</a></li>
+                                <li><a href="models-list">{{__('menu.Men')}}</a></li>
+                                <li><a href="models-list">{{__('menu.Kids')}}</a></li>
+                                <li><a href="models-list">{{__('menu.Japanese')}}</a></li>
+                                <li><a href="models-list">{{__('menu.Mixed')}}</a></li>
+                                <li><a href="models-list">{{__('menu.International')}}</a></li>
                             </ul>
                         </div>
                         <div class="category">
                             <div class="category-title">Actor</div>
                             <ul class="category-content">
-                                <li><a href="models-list">All</a></li>
-                                <li><a href="models-list">Actors</a></li>
-                                <li><a href="models-list">Actresses</a></li>
-                                <li><a href="models-list">Kids</a></li>
-                                <li><a href="models-list">Japanese</a></li>
-                                <li><a href="models-list">Mixed</a></li>
-                                <li><a href="models-list">International</a></li>
+                                <li><a href="models-list">{{__('menu.All')}}</a></li>
+                                <li><a href="models-list">{{__('menu.Actors')}}</a></li>
+                                <li><a href="models-list">{{__('menu.Actresses')}}</a></li>
+                                <li><a href="models-list">{{__('menu.Kids')}}</a></li>
+                                <li><a href="models-list">{{__('menu.Japanese')}}</a></li>
+                                <li><a href="models-list">{{__('menu.Mixed')}}</a></li>
+                                <li><a href="models-list">{{__('menu.International')}}</a></li>
                             </ul>
                         </div>
                         <div class="category">
                             <div class="category-title">Extra</div>
                             <ul class="category-content">
-                                <li><a href="models-list">All</a></li>
-                                <li><a href="models-list">Women</a></li>
-                                <li><a href="models-list">Men</a></li>
-                                <li><a href="models-list">Kids</a></li>
-                                <li><a href="models-list">Japanese</a></li>
-                                <li><a href="models-list">Mixed</a></li>
-                                <li><a href="models-list">International</a></li>
+                                <li><a href="models-list">{{__('menu.All')}}</a></li>
+                                <li><a href="models-list">{{__('menu.Women')}}</a></li>
+                                <li><a href="models-list">{{__('menu.Men')}}</a></li>
+                                <li><a href="models-list">{{__('menu.Kids')}}</a></li>
+                                <li><a href="models-list">{{__('menu.Japanese')}}</a></li>
+                                <li><a href="models-list">{{__('menu.Mixed')}}</a></li>
+                                <li><a href="models-list">{{__('menu.International')}}</a></li>
                             </ul>
                         </div>
                     </div>
@@ -206,13 +206,13 @@
                                 <div class="tab-content-item active" data-tab-target="tab_header_menu">
                                     <nav class="menu-nav">
                                         <ul>
-                                            <li><a href="/">Home</a></li>
-                                            <li><a href="work">Portfolio</a></li>
-                                            <li><a href="news-category">News</a></li>
-                                            <li><a href="about-us">About us</a></li>
-                                            <li><a href="contact-us">Contact us</a></li>
-                                            <li><a href="company-profile">Company Profile</a></li>
-                                            <li><a href="privacy-policy">Privacy Policy</a></li>
+                                            <li><a href="/">{{__('menu.Home')}}</a></li>
+                                            <li><a href="work">{{__('menu.Portfolio')}}</a></li>
+                                            <li><a href="news-category">{{__('menu.News')}}</a></li>
+                                            <li><a href="about-us">{{__('menu.About us')}}</a></li>
+                                            <li><a href="contact-us">{{__('menu.Contact us')}}</a></li>
+                                            <li><a href="company-profile">{{__('menu.Company Profile')}}</a></li>
+                                            <li><a href="privacy-policy">{{__('menu.Privacy Policy')}}</a></li>
                                         </ul>
                                     </nav>
                                 </div>
@@ -225,13 +225,13 @@
                                             </button>
                                             <div class="accordion-content" style="display: none;">
                                                 <ul>
-                                                    <li><a href="models-list">All</a></li>
-                                                    <li><a href="models-list">Women</a></li>
-                                                    <li><a href="models-list">Men</a></li>
-                                                    <li><a href="models-list">Kids &amp; Babies</a></li>
-                                                    <li><a href="models-list">Japanese</a></li>
-                                                    <li><a href="models-list">Mixed</a></li>
-                                                    <li><a href="models-list">International</a></li>
+                                                    <li><a href="models-list">{{__('menu.All')}}</a></li>
+                                                    <li><a href="models-list">{{__('menu.Women')}}</a></li>
+                                                    <li><a href="models-list">{{__('menu.Men')}}</a></li>
+                                                    <li><a href="models-list">{{__('menu.Kids &amp; Babies')}}</a></li>
+                                                    <li><a href="models-list">{{__('menu.Japanese')}}</a></li>
+                                                    <li><a href="models-list">{{__('menu.Mixed')}}</a></li>
+                                                    <li><a href="models-list">{{__('menu.International')}}</a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -242,13 +242,13 @@
                                             </button>
                                             <div class="accordion-content" style="display: none;">
                                                 <ul>
-                                                    <li><a href="models-list">All</a></li>
-                                                    <li><a href="models-list">Women</a></li>
-                                                    <li><a href="models-list">Men</a></li>
-                                                    <li><a href="models-list">Kids</a></li>
-                                                    <li><a href="models-list">Japanese</a></li>
-                                                    <li><a href="models-list">Mixed</a></li>
-                                                    <li><a href="models-list">International</a></li>
+                                                    <li><a href="models-list">{{__('menu.All')}}</a></li>
+                                                    <li><a href="models-list">{{__('menu.Women')}}</a></li>
+                                                    <li><a href="models-list">{{__('menu.Men')}}</a></li>
+                                                    <li><a href="models-list">{{__('menu.Kids')}}</a></li>
+                                                    <li><a href="models-list">{{__('menu.Japanese')}}</a></li>
+                                                    <li><a href="models-list">{{__('menu.Mixed')}}</a></li>
+                                                    <li><a href="models-list">{{__('menu.International')}}</a></li>
                                                 </ul>
                                             </div>
                                         </div>
