@@ -230,7 +230,10 @@
                                                     <label for="biography">Bio <span
                                                             class="field-required-star">*</span></label>
                                                     <textarea name="biography" id="biography"
-                                                              rows="5">{{$saved_text?$saved_text['biography']:""}}</textarea>
+                                                              rows="5">@if (isset($saved_text) && isset($saved_text['biography']))
+                                                            "{{$saved_text['biography']}}"
+                                                        @endif
+                                                    </textarea>
                                                 </div>
                                             </div>
                                             <div class="field-error-msg" id="field_error_biography"></div>
