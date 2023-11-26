@@ -137,7 +137,10 @@ class HomeController
         if ($request->has('id')) {
             $id = $request->id;
             $member = Member::query()->published()->find($id);
-            return view('pdf.composite2', compact('member'));
+            $url = config('app.url');
+            $images = $this->getImages($member);
+            $this->checkPhotos($images);
+            return view('pdf.composite2', compact('member', 'url', 'images'));
         } else
             return redirect('home');
     }
@@ -146,7 +149,10 @@ class HomeController
     {
         if ($id) {
             $member = Member::query()->published()->find($id);
-            return view('pdf.composite', compact('member'));
+            $url = config('app.url');
+            $images = $this->getImages($member);
+            $this->checkPhotos($images);
+            return view('pdf.composite', compact('member', 'url', 'images'));
         } else
             return redirect('home');
     }
@@ -167,10 +173,67 @@ class HomeController
         if ($id) {
             $member = Member::query()->published()->find($id);
             $url = config('app.url');
-            $pdf = PDF::loadView('pdf.composite2', compact('url'));
+            $images = $this->getImages($member);
+            $this->checkPhotos($images);
+//            dd($images);
+            $pdf = PDF::loadView('pdf.composite2', compact('member', 'url', 'images'));
             return $pdf->setPaper('a4', 'landscape')->download('composite_' . $id . '.pdf');
         } else
             return redirect('home');
+    }
+
+
+    public function getMemberPhoto($member, $dotExtension = '.jpg'): array
+    {
+        $PUBLIC = config('dompdf.public_path');
+        $images['actual'] = $PUBLIC . '/img/3x4/' . $member->profile_image . $dotExtension;
+        $images['actual_webp'] = $PUBLIC . '/img/3x4/' . $member->profile_image . '.webp';
+        $images['url'] = config('app.url') . '/storage/assets/img/3x4/' . $member->profile_image . $dotExtension;
+        $images['url_webp'] = config('app.url') . '/storage/assets/img/3x4/' . $member->profile_image . '.webp';
+        return $images;
+    }
+
+    public function checkPhotos($images)
+    {
+//        dd($images);
+        foreach ($images as $image) {
+            $this->checkPhoto($image);
+        }
+    }
+
+    public function checkPhoto($photoRelativeLocalAddress)
+    {
+//        dd($photoRelativeLocalAddress);
+        if (file_exists($photoRelativeLocalAddress['actual'])) {
+//            dd($photoRelativeLocalAddress['actual']);
+            return $photoRelativeLocalAddress;
+        } else {
+            return $this->hs_webp2jpg($photoRelativeLocalAddress['actual_webp'], $photoRelativeLocalAddress['actual'], 100);;
+        }
+    }
+
+    function hs_webp2jpg($source_file, $destination_file, $compression_quality = 100)
+    {
+        $image = imagecreatefromwebp($source_file);
+        $result = imagejpeg($image, $destination_file, $compression_quality);
+        if (false === $result) {
+            return false;
+        }
+        imagedestroy($image);
+        return $destination_file;
+    }
+
+    private function getImages($member): array
+    {
+        $images[] = null;
+        for ($i = 0; $i < 5; $i++) {
+            $image = $this->getMemberPhoto($member, '.jpg');
+            $images[$i]['actual'] = $image['actual'];
+            $images[$i]['actual_webp'] = $image['actual_webp'];
+            $images[$i]['url'] = $image['url'];
+            $images[$i]['url_webp'] = $image['url_webp'];
+        }
+        return $images;
     }
 
 }

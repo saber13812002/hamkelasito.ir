@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,14 +14,14 @@
         <td class="brand-name">
             <table>
                 <tr>
-                    <td class="name">Cameron W</td>
-                    <td><strong id="profile_id">No. 2123</strong></td>
+                    <td class="name">{{$member->name}}</td>
+                    <td><strong id="profile_id">No. {{$member->no}}</strong></td>
                 </tr>
             </table>
-            <div class="brand-other-name">アスガリモガダ</div>
+            <div class="brand-other-name">{{$member->stage_name}}</div>
         </td>
         <td class="brand-logo">
-            <img src="{{$url}}/storage/assets/img/logo.svg" alt="liliana">
+            <img src="{{$url}}/storage/assets/img/logo.png" alt="liliana">
         </td>
     </tr>
 </table>
@@ -32,47 +31,63 @@
     <tr>
         <td>
             Nationality
-            <strong>Russian</strong>
+            <strong>{{$member->nationality}}</strong>
         </td>
-        <td class="divider"><div></div></td>
+        <td class="divider">
+            <div></div>
+        </td>
         <td>
             Language
-            <strong>Japan</strong>
+            <strong>{{$member->language}}</strong>
         </td>
-        <td class="divider"><div></div></td>
+        <td class="divider">
+            <div></div>
+        </td>
         <td>
             Height
-            <strong>183</strong>
+            <strong>{{$member->height}}</strong>
         </td>
-        <td class="divider"><div></div></td>
+        <td class="divider">
+            <div></div>
+        </td>
         <td>
             Bust
-            <strong>56</strong>
+            <strong>{{$member->bust}}</strong>
         </td>
-        <td class="divider"><div></div></td>
+        <td class="divider">
+            <div></div>
+        </td>
         <td>
             Hips
-            <strong>64</strong>
+            <strong>{{$member->hips}}</strong>
         </td>
-        <td class="divider"><div></div></td>
+        <td class="divider">
+            <div></div>
+        </td>
         <td>
             Waist
-            <strong>64</strong>
+            <strong>{{$member->waist}}</strong>
         </td>
-        <td class="divider"><div></div></td>
+        <td class="divider">
+            <div></div>
+        </td>
         <td>
             Shoes
-            <strong>64</strong>
+            <strong>{{$member->shoe_size}}</strong>
         </td>
-        <td class="divider"><div></div></td>
+        <td class="divider">
+            <div></div>
+        </td>
         <td>
             Eye
-            <strong>Brown</strong>
+            <strong>{{$member->eye_color}}</strong>
         </td>
-        <td class="divider"><div></div></td>
+        <td class="divider">
+            <div></div>
+        </td>
         <td>
             Hair
-            <strong>Brown</strong>
+            <strong>{{$member->hair_color}}</strong>
         </td>
     </tr>
 </table>
@@ -81,24 +96,24 @@
 <table id="images">
     <tr>
         <td>
-            <img src="{{$url}}/storage/assets/img/3x4/036.jpg" alt="Image">
+            <img src="{{$images[0]['url']}}" alt="Image">
         </td>
         <td>
             <table>
                 <tr>
                     <td>
-                        <img src="{{$url}}/storage/assets/img/3x4/036.jpg" alt="Image">
+                        <img src="{{$images[1]['url']}}" alt="Image">
                     </td>
                     <td>
-                        <img src="{{$url}}/storage/assets/img/3x4/036.jpg" alt="Image">
+                        <img src="{{$images[2]['url']}}" alt="Image">
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <img src="{{$url}}/storage/assets/img/3x4/036.jpg" alt="Image">
+                        <img src="{{$images[3]['url']}}" alt="Image">
                     </td>
                     <td>
-                        <img src="{{$url}}/storage/assets/img/3x4/036.jpg" alt="Image">
+                        <img src="{{$images[4]['url']}}" alt="Image">
                     </td>
                 </tr>
             </table>
@@ -114,22 +129,30 @@
                 Tel
                 <strong>03-6362-3355</strong>
             </td>
-            <td class="divider"><div></div></td>
+            <td class="divider">
+                <div></div>
+            </td>
             <td>
                 Fax
                 <strong>03-6323-0195</strong>
             </td>
-            <td class="divider"><div></div></td>
+            <td class="divider">
+                <div></div>
+            </td>
             <td>
                 Email
                 <strong>info@lilianamodels.com</strong>
             </td>
-            <td class="divider"><div></div></td>
+            <td class="divider">
+                <div></div>
+            </td>
             <td>
                 URL
                 <strong>www.lilianamodels.com</strong>
             </td>
-            <td class="divider"><div></div></td>
+            <td class="divider">
+                <div></div>
+            </td>
             <td>
                 Address
                 <strong>4-4-8, Akasaka, Minato-ku, Tokyo, 107-0052</strong>
