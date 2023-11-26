@@ -28,7 +28,7 @@
                                         <div class="row row-gap-8 gap-1">
                                             <div class="col col-country-code">
                                                 <div class="field field-type-select"
-                                                     data-source="/api/numcode/" data-btn-submit-text="Select"
+                                                     data-source="/api/numcode" data-btn-submit-text="Select"
                                                      data-field-defualt-text="Select Item" data-field-search="true"
                                                      data-required="true" data-type="select">
                                                     <div class="field-content">
@@ -58,7 +58,7 @@
                                         <div class="row gap-1">
                                             <div class="col col-country-code">
                                                 <div class="field field-type-select"
-                                                     data-source="/api/numcode/" data-btn-submit-text="Select"
+                                                     data-source="/api/numcode" data-btn-submit-text="Select"
                                                      data-field-defualt-text="Select Item" data-field-search="true" data-type="select">
                                                     <div class="field-content">
                                                         <label for="country_code_phone">Country</label>
@@ -130,7 +130,7 @@
                                         <div class="row row-gap-8 gap-1" data-dependency="#line_account_type" data-dependency-value="Phone Number">
                                             <div class="col col-country-code">
                                                 <div class="field field-type-select"
-                                                     data-source="/api/numcode/" data-btn-submit-text="Select"
+                                                     data-source="/api/numcode" data-btn-submit-text="Select"
                                                      data-field-defualt-text="Select Item" data-field-search="true" data-type="select">
                                                     <div class="field-content">
                                                         <label for="line_code_phone">Country <span class="field-required-star">*</span></label>
@@ -253,7 +253,7 @@
 
                                         <!-- country -->
                                         <div class="field field-type-select"
-                                             data-source="/api/country/" data-btn-submit-text="Select"
+                                             data-source="/api/country" data-btn-submit-text="Select"
                                              data-field-defualt-text="Select Item" data-field-search="true"
                                              data-required="true" data-type="select">
                                             <div class="field-content">
@@ -432,7 +432,7 @@
                                         <div class="row gap-1" data-dependency=".have_manager" data-dependency-value="yes">
                                             <div class="col col-country-code">
                                                 <div class="field field-type-select top-options"
-                                                     data-source="/api/numcode/" data-btn-submit-text="Select"
+                                                     data-source="/api/numcode" data-btn-submit-text="Select"
                                                      data-field-defualt-text="Select Item" data-field-search="true"
                                                      data-required="true" data-type="select">
                                                     <div class="field-content">
@@ -496,7 +496,7 @@
                                         <div class="row gap-1">
                                             <div class="col col-country-code">
                                                 <div class="field field-type-select top-options"
-                                                     data-source="/api/numcode/" data-btn-submit-text="Select"
+                                                     data-source="/api/numcode" data-btn-submit-text="Select"
                                                      data-field-defualt-text="Select Item" data-field-search="true"
                                                      data-required="true" data-type="select">
                                                     <div class="field-content">

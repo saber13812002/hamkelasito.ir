@@ -98,10 +98,8 @@
                         <!-- step content -->
                         <div class="step-content step-content-info" data-step="5">
                             <div class="container-lg">
-
                                 <!-- step inner content -->
                                 <div class="step-inner-content">
-
                                     <!-- mobile number group -->
                                     <div class="form-section">
                                         <div class="form-section-label">Contact</div>
@@ -109,7 +107,7 @@
                                             <div class="row gap-1">
                                                 <div class="col col-country-code">
                                                     <div class="field field-type-select"
-                                                         data-source="/api/numcode/" data-btn-submit-text="Select"
+                                                         data-source="/api/numcode" data-btn-submit-text="Select"
                                                          data-field-defualt-text="Select Item" data-field-search="true"
                                                          data-required="true" data-type="select">
                                                         <div class="field-content">
@@ -141,7 +139,7 @@
 
                                             <!-- country -->
                                             <div class="field field-type-select"
-                                                 data-source="/api/country/" data-btn-submit-text="Select"
+                                                 data-source="/api/country" data-btn-submit-text="Select"
                                                  data-field-defualt-text="Select Item" data-field-search="true"
                                                  data-required="true" data-type="select">
                                                 <div class="field-content">

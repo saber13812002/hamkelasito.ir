@@ -7,6 +7,7 @@ use App\Http\Requests\UpdateMemberRequest;
 use App\Models\Member;
 use App\Models\TempField;
 use App\Models\TempTable;
+use App\Models\Upload;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
@@ -252,9 +253,8 @@ class MemberController extends Controller
     public function step0get()
     {
         $stepId = 0;
-        $saved = $this->getOldFormData([$stepId]);
-        $token = session('token');
-        return view('apply_as.step-0', compact('token', 'saved'));
+        $compact = $this->getArr($stepId);
+        return view('apply_as.step-0', $compact);
     }
 
     /**
@@ -263,9 +263,8 @@ class MemberController extends Controller
     public function step0()
     {
         $stepId = 0;
-        $saved = $this->getOldFormData([$stepId]);
-        $token = session('token');
-        return view('apply_as.step-0', compact('token', 'saved'));
+        $compact = $this->getArr($stepId);
+        return view('apply_as.step-0', $compact);
     }
 
     /**
@@ -274,10 +273,8 @@ class MemberController extends Controller
     public function step1get()
     {
         $stepId = 1;
-        $saved = $this->getOldFormData([$stepId]);
-//        dd($saved);
-        $token = session('token');
-        return view('apply_as.step-1', compact('token', 'saved'));
+        $compact = $this->getArr($stepId);
+        return view('apply_as.step-1', $compact);
     }
 
     /**
@@ -288,9 +285,8 @@ class MemberController extends Controller
 //        dd($request);
         $this->saveRequestToTempTable($request, 0);
         $stepId = 1;
-        $saved = $this->getOldFormData([$stepId]);
-        $token = session('token');
-        return view('apply_as.step-1', compact('token', 'saved'));
+        $compact = $this->getArr($stepId);
+        return view('apply_as.step-1', $compact);
     }
 
     /**
@@ -299,12 +295,8 @@ class MemberController extends Controller
     public function step2get()
     {
         $stepId = 2;
-        $saved = $this->getOldFormData([$stepId]);
-//        dd($saved);
-
-        $options = $this->getOptions([$stepId]);
-        $token = session('token');
-        return view('apply_as.step-2', compact('token', 'saved', 'options'));
+        $compact = $this->getArr($stepId);
+        return view('apply_as.step-2', $compact);
     }
 
     /**
@@ -314,10 +306,8 @@ class MemberController extends Controller
     {
         $this->saveRequestToTempTable($request, 1);
         $stepId = 2;
-        $saved = $this->getOldFormData([$stepId]);
-        $options = $this->getOptions([$stepId]);
-        $token = session('token');
-        return view('apply_as.step-2', compact('token', 'saved', 'options'));
+        $compact = $this->getArr($stepId);
+        return view('apply_as.step-2', $compact);
     }
 
     /**
@@ -326,10 +316,8 @@ class MemberController extends Controller
     public function step3get()
     {
         $stepId = 3;
-        $saved = $this->getOldFormData([$stepId]);
-//        dd($saved);
-        $token = session('token');
-        return view('apply_as.step-3', compact('token', 'saved'));
+        $compact = $this->getArr($stepId);
+        return view('apply_as.step-3', $compact);
     }
 
     /**
@@ -339,9 +327,8 @@ class MemberController extends Controller
     {
         $this->saveRequestToTempTable($request, 2);
         $stepId = 3;
-        $saved = $this->getOldFormData([$stepId]);
-        $token = session('token');
-        return view('apply_as.step-3', compact('token', 'saved'));
+        $compact = $this->getArr($stepId);
+        return view('apply_as.step-3', $compact);
     }
 
     /**
@@ -351,9 +338,8 @@ class MemberController extends Controller
     {
         $this->saveRequestToTempTable($request, 3);
         $stepId = 4;
-        $saved = $this->getOldFormData([$stepId]);
-        $token = session('token');
-        return view('apply_as.step-4', compact('token', 'saved'));
+        $compact = $this->getArr($stepId);
+        return view('apply_as.step-4', $compact);
     }
 
     /**
@@ -363,9 +349,8 @@ class MemberController extends Controller
     {
         $this->saveRequestToTempTable($request, 4);
         $stepId = 5;
-        $saved = $this->getOldFormData([$stepId]);
-        $token = session('token');
-        return view('apply_as.step-5', compact('token', 'saved'));
+        $compact = $this->getArr($stepId);
+        return view('apply_as.step-5', $compact);
     }
 
     /**
@@ -375,9 +360,8 @@ class MemberController extends Controller
     {
         $this->saveRequestToTempTable($request, 5);
         $stepId = 6;
-        $saved = $this->getOldFormData([$stepId]);
-        $token = session('token');
-        return view('apply_as.step-6', compact('token', 'saved'));
+        $compact = $this->getArr($stepId);
+        return view('apply_as.step-6', $compact);
     }
 
     /**
@@ -387,9 +371,8 @@ class MemberController extends Controller
     {
         $this->saveRequestToTempTable($request, 6);
         $stepId = 7;
-        $saved = $this->getOldFormData([$stepId]);
-        $token = session('token');
-        return view('apply_as.step-7', compact('token', 'saved'));
+        $compact = $this->getArr($stepId);
+        return view('apply_as.step-7', $compact);
     }
 
     /**
@@ -399,9 +382,8 @@ class MemberController extends Controller
     {
         $this->saveRequestToTempTable($request, 7);
         $stepId = 8;
-        $saved = $this->getOldFormData([$stepId]);
-        $token = session('token');
-        return view('apply_as.step-8', compact('token', 'saved'));
+        $compact = $this->getArr($stepId);
+        return view('apply_as.step-8', $compact);
     }
 
     private function saveRequestToTempTable(Request $request, int $stepId)
@@ -467,10 +449,70 @@ class MemberController extends Controller
         $saved = TempTable::query()
             ->whereUserId(auth()->user()->id)
             ->whereStepId($stepIds)
+            ->whereType('string')
             ->get()
             ->pluck('value', 'model_field');
 //        dd($saved['value'], isset($saved), isset($saved['model_type']));
+//        dd($saved);
         return $saved;
+    }
+
+    /**
+     * @return array
+     */
+    public function getOldFileData(array $stepIds)
+    {
+        $saved = TempTable::query()
+            ->whereUserId(auth()->user()->id)
+            ->whereStepId($stepIds)
+            ->whereType('file')
+            ->get()
+            ->pluck('value', 'model_field');
+//        dd($saved);
+        $saved_file = null;
+        foreach ($saved as $key => $save) {
+//            dd($key, $save);
+            $items = explode(',', $save);
+            $uploads = Upload::whereIn('id', $items)->get();
+//            dd($uploads);
+            $string = '[';
+            $count = 0;
+            foreach ($uploads as $upload) {
+                $count++;
+                $string .= ($count > 1 ? ',' : '') . '{"message":"File uploaded successfully","url":"' . $upload->full_url . '","id":"' . $upload->id . '","type":"photo","name":"' . $upload->name . '","thumbnail":"' . $upload->full_url . '"}';
+            }
+            $string .= ']';
+            $saved_file[$key] = $string;
+        }
+//        dd($saved_file);
+        return $saved_file;
+    }
+//
+
+    /**
+     * @return TempTable
+     */
+    public function getOldJsonData(array $stepIds)
+    {
+        return TempTable::query()
+            ->whereUserId(auth()->user()->id)
+            ->whereStepId($stepIds)
+            ->whereType('json')
+            ->get()
+            ->pluck('json', 'model_field');
+    }
+
+    /**
+     * @return TempTable
+     */
+    public function getOldTextData(array $stepIds)
+    {
+        return TempTable::query()
+            ->whereUserId(auth()->user()->id)
+            ->whereStepId($stepIds)
+            ->whereType('text')
+            ->get()
+            ->pluck('text', 'model_field');
     }
 
     /**
@@ -633,5 +675,23 @@ class MemberController extends Controller
             $options['shoe_us_women_size'][$key]['value'] = $us_size;
         }
         return $options;
+    }
+
+    /**
+     * @param int $stepId
+     * @return array
+     */
+    public function getArr(int $stepId): array
+    {
+        $saved = $this->getOldFormData([$stepId]);
+        $saved_text = $this->getOldTextData([$stepId]);
+        $saved_json = $this->getOldJsonData([$stepId]);
+        $saved_file = $this->getOldFileData([$stepId]);
+//        dd($saved);
+//        dd($saved_file);
+        $options = $this->getOptions([$stepId]);
+        $token = session('token');
+        $compact = compact('token', 'saved', 'saved_text', 'saved_json', 'saved_file', 'options');
+        return $compact;
     }
 }
