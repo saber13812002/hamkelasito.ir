@@ -492,7 +492,7 @@
                                                     <div class="table-row">
                                                         <div class="table-col col-full-width">
                                                             <div class="check-item">
-                                                                <div class="check-label">Native Language:</div>
+                                                                <div class="check-label">{{__('menu.Native Language')}}:</div>
                                                                 <div class="check-value"
                                                                      data-input-watcher="native_language"
                                                                      data-input-watcher-type="select">
@@ -503,7 +503,7 @@
                                                     </div>
                                                     <div class="live-table-repeater"
                                                          id="other_language_live_table_repeater">
-                                                        <div class="repeater-label">Other Languages:</div>
+                                                        <div class="repeater-label">{{__('menu.Other Languages')}}:</div>
                                                         <div class="repeater-table">
                                                             <table>
                                                                 <thead></thead>
@@ -1831,7 +1831,7 @@
                                  data-field-search="true"
                                  data-required="true" data-type="select">
                                 <div class="field-content">
-                                    <label for="native_language">Native Language <span
+                                    <label for="native_language">{{__('menu.Native Language')}} <span
                                             class="field-required-star">*</span></label>
                                     <select name="native_language" id="native_language" data-value="en"
                                             data-default-value="en"></select>
@@ -1844,7 +1844,7 @@
                                  data-live="other_language_live_table_repeater">
                                 <input type="hidden" name="other_language" class="table-repeater-input"
                                        value='[{"language":{"type":"select","input":"en","text":"English"},"level":{"type":"select","input":"begginer","text":"Begginer"}},{"language":{"type":"select","input":"ja","text":"Japanese"},"level":{"type":"select","input":"native","text":"Native"}}]'>
-                                <div class="repeater-label">Other Languages</div>
+                                <div class="repeater-label">{{__('menu.Other Languages')}}</div>
                                 <div class="repeater-table">
                                     <table>
                                         <thead></thead>

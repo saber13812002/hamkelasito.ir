@@ -476,7 +476,7 @@
                                     <div class="table-row">
                                         <div class="table-col col-full-width">
                                             <div class="check-item">
-                                                <div class="check-label">Native Language:</div>
+                                                <div class="check-label">{{__('menu.Native Language')}}:</div>
                                                 <div class="check-value">
                                                     English
                                                 </div>
@@ -484,7 +484,7 @@
                                         </div>
                                     </div>
                                     <div class="live-table-repeater">
-                                        <div class="repeater-label">Other Languages</div>
+                                        <div class="repeater-label">{{__('menu.Other Languages')}}</div>
                                         <div class="repeater-table">
                                             <table>
                                                 <thead>
