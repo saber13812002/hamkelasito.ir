@@ -49,10 +49,10 @@ Route::group(['prefix' => 'user', 'middleware' => 'auth:sanctum'], function () {
 // /api/languages/
 Route::get('/languages', function (Request $request) {
 //    dd($request->query('filter'), $request->query('sort'));
-//    $json = loadJSON('languages');
-//    return json_decode($json);
+    $json = loadJSON('languages');
+    return json_decode($json);
 //    dd(json_decode($json));
-    return Language::all();
+//    return Language::all();
 });
 
 // /api/country/
