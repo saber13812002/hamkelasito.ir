@@ -17,7 +17,7 @@
             <!-- start page title -->
             <div class="page-title">
                 <div class="container-xxl">
-                    <h1>Apply</h1>
+                    <h1>{{__('menu.Apply')}}</h1>
                 </div>
             </div>
 
@@ -39,7 +39,7 @@
                                     </div>
                                     <div class="step-label">
                                         <span>Step 1:</span>
-                                        Basic Info
+                                        {{__('menu.Basic Info')}}
                                     </div>
                                 </div>
                                 <div data-step="2" class="step-item checked">
@@ -49,7 +49,7 @@
                                     </div>
                                     <div class="step-label">
                                         <span>Step 2:</span>
-                                        Physical Info
+                                        {{__('menu.Physical Info')}}
                                     </div>
                                 </div>
                                 <div data-step="3" class="step-item active">
@@ -59,7 +59,7 @@
                                     </div>
                                     <div class="step-label">
                                         <span>Step 3:</span>
-                                        Skills & Experiences
+                                        {{__('menu.Skills & Experiences')}}
                                     </div>
                                 </div>
                                 <div data-step="4" class="step-item">
@@ -69,7 +69,7 @@
                                     </div>
                                     <div class="step-label">
                                         <span>Step 4:</span>
-                                        Media
+                                        {{__('menu.Media')}}
                                     </div>
                                 </div>
                                 <div data-step="5" class="step-item">
@@ -79,7 +79,7 @@
                                     </div>
                                     <div class="step-label">
                                         <span>Step 5:</span>
-                                        Contact Info
+                                        {{__('menu.Contact Info')}}
                                     </div>
                                 </div>
                                 <div data-step="6" class="step-item">
@@ -89,7 +89,7 @@
                                     </div>
                                     <div class="step-label">
                                         <span>Step 6:</span>
-                                        Authentication
+                                        {{__('menu.Authentication')}}
                                     </div>
                                 </div>
                             </div>
@@ -120,7 +120,7 @@
 
                                     <!-- native language and other language -->
                                     <div class="form-section">
-                                        <div class="form-section-label">Language(s)s</div>
+                                        <div class="form-section-label">{{__('menu.Language(s)s')}}</div>
                                         <div class="form-section-content">
                                             <div class="field field-type-select"
                                                  data-source="/api/languages"
@@ -128,7 +128,7 @@
                                                  data-field-search="true"
                                                  data-required="true" data-type="select">
                                                 <div class="field-content">
-                                                    <label for="native_language">Native Language <span
+                                                    <label for="native_language">{{__('menu.Native Language')}} <span
                                                             class="field-required-star">*</span></label>
                                                     <select
                                                         @if (isset($saved) && isset($saved['native_language']))
@@ -145,7 +145,7 @@
                                                        @if (isset($saved_json) && isset($saved_json['other_language']))
                                                            value="{{$saved_json['other_language']}}"
                                                     @endif >
-                                                <div class="repeater-label">Other Languages</div>
+                                                <div class="repeater-label">{{__('menu.Other Languages')}}</div>
                                                 <div class="repeater-table">
                                                     <table>
                                                         <thead></thead>
@@ -156,7 +156,7 @@
                                                         class="btn btn-full btn-icon-left repeater-add-item">
                                                 <span>
                                                     <i class="icon-add"></i>
-                                                    Add New Language
+                                                    {{__('menu.Add New Language')}}
                                                 </span>
                                                 </button>
                                                 <div class="repeater-form">
@@ -173,7 +173,7 @@
                                                                         data-source="/api/languages"
                                                                         data-field-search="true" data-type="select">
                                                                         <div class="field-content">
-                                                                            <label for="more_language_lng">Language
+                                                                            <label for="more_language_lng">{{__('menu.Language')}}
                                                                                 <span
                                                                                     class="field-required-star">*</span></label>
                                                                             <select name="language"
@@ -190,21 +190,21 @@
                                                                         data-btn-submit-text="Select"
                                                                         data-type="select">
                                                                         <div class="field-content">
-                                                                            <label for="more_language_level">Language
-                                                                                Level <span class="field-required-star">*</span></label>
+                                                                            <label for="more_language_level">{{__('menu.Language Level')}}
+                                                                                 <span class="field-required-star">*</span></label>
                                                                             <select name="level"
                                                                                     id="more_language_level">
-                                                                                <option value="Native">Native</option>
-                                                                                <option value="Fluent">Fluent</option>
-                                                                                <option value="Advanced">Advanced
+                                                                                <option value="Native">{{__('menu.Native')}}</option>
+                                                                                <option value="Fluent">{{__('menu.Fluent')}}</option>
+                                                                                <option value="Advanced">{{__('menu.Advanced')}}
                                                                                 </option>
                                                                                 <option value="Intermediate">
-                                                                                    Intermediate
+                                                                                    {{__('menu.Intermediate')}}
                                                                                 </option>
-                                                                                <option value="Beginner">Beginner
+                                                                                <option value="Beginner">{{__('menu.Beginner')}}
                                                                                 </option>
-                                                                                <option value="A Few Words">A Few
-                                                                                    Words
+                                                                                <option value="A Few Words">{{__('menu.A Few Words')}}
+
                                                                                 </option>
                                                                             </select>
                                                                             <i class="icon-arrow-down"></i>
@@ -222,12 +222,12 @@
 
                                     <!-- bio -->
                                     <div class="form-section">
-                                        <div class="form-section-label">Biography</div>
+                                        <div class="form-section-label">{{__('menu.Biography')}}</div>
                                         <div class="form-section-content">
                                             <div class="field field-type-text-area" data-required="true"
                                                  data-type="textarea" data-max-length="1000">
                                                 <div class="field-content">
-                                                    <label for="biography">Bio <span
+                                                    <label for="biography">{{__('menu.Bio')}} <span
                                                             class="field-required-star">*</span></label>
                                                     <textarea name="biography" id="biography"
                                                               rows="5">@if (isset($saved_text) && isset($saved_text['biography']))
@@ -251,7 +251,7 @@
 
                                     <!-- skills -->
                                     <div class="form-section">
-                                        <div class="form-section-label"><span>Skill(s) <span
+                                        <div class="form-section-label"><span>{{__('menu.Skill(s)')}} <span
                                                     class="field-required-star">*</span></span></div>
                                         <div class="form-section-content">
                                             <div class="table-repeater" data-name="Skill" data-required="true"
@@ -270,7 +270,7 @@
                                                         class="btn btn-full btn-icon-left repeater-add-item">
                                                 <span>
                                                     <i class="icon-add"></i>
-                                                    Add New Skill
+                                                    {{__('menu.Add New Skill')}}
                                                 </span>
                                                 </button>
                                                 <div class="repeater-form">

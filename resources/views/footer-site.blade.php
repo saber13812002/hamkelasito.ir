@@ -1,4 +1,3 @@
-
 <!-- start footer -->
 <footer id="footer">
     <div class="container-xxl">
@@ -15,8 +14,7 @@
                         </noscript>
                     </a>
                     <p>
-                        We celebrate your uniqueness, help you achieve dreams, and support your creative journey at
-                        every step.
+                        {{__('menu.We celebrate your uniqueness, help you achieve dreams, and support your creative journey at every step').'.'}}
                     </p>
                 </div>
                 <div class="social-link">
@@ -60,7 +58,7 @@
                         <li>
                             <i class="icon-location"></i>
                             <span>
-                                2nd floor, Vort Akasaka II, 4-4-8 Akasaka, Minato-ku, Tokyo 107-0052
+                                {{__('menu.2nd floor, Vort Akasaka II, 4-4-8 Akasaka, Minato-ku, Tokyo 107-0052')}}
                             </span>
                         </li>
                     </ul>
@@ -72,7 +70,7 @@
                 <div class="accordion">
                     <div class="accordion-item">
                         <button class="accordion-header">
-                            <span class="accordion-title">Menu</span>
+                            <span class="accordion-title">{{__('menu.Menu')}}</span>
                             <i class="icon-arrow-down"></i>
                         </button>
                         <div class="accordion-content" style="display: none;">
@@ -135,6 +133,6 @@
         </div>
     </div>
     <div class="copyright">
-        ©2023 Liliana Entertainment Agency, All Rights Reserved.
+        {{__('menu.©2023 Liliana Entertainment Agency, All Rights Reserved')}}.
     </div>
 </footer>
