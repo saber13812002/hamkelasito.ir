@@ -231,7 +231,7 @@
                                                             class="field-required-star">*</span></label>
                                                     <textarea name="biography" id="biography"
                                                               rows="5">@if (isset($saved_text) && isset($saved_text['biography']))
-                                                            "{{$saved_text['biography']}}"
+                                                            {{$saved_text['biography']}}
                                                         @endif
                                                     </textarea>
                                                 </div>
