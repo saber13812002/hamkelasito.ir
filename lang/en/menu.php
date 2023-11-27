@@ -103,6 +103,8 @@ return array (
     'Actors' => 'Actors',
     'Actresses' => 'Actresses',
     'Login' => 'Login',
+    'Logout' => 'Logout',
+    'logout' => 'Logout',
     'We celebrate your uniqueness, help you achieve dreams, and support your creative journey at every step' => 'We celebrate your uniqueness, help you achieve dreams, and support your creative journey at every step',
     '2nd floor, Vort Akasaka II, 4-4-8 Akasaka, Minato-ku, Tokyo 107-0052' => '2nd floor, Vort Akasaka II, 4-4-8 Akasaka, Minato-ku, Tokyo 107-0052',
     '©2023 Liliana Entertainment Agency, All Rights Reserved' => '©2023 Liliana Entertainment Agency, All Rights Reserved',
