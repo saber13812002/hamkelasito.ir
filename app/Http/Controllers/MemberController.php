@@ -272,9 +272,13 @@ class MemberController extends Controller
      */
     public function step0get()
     {
+        $this->getResponseObject();
         $stepId = 0;
         $compact = $this->getArr($stepId);
-        return view('apply_as.step-0', $compact);
+//        return view('apply_as.step-0', $compact);
+
+        return response()
+            ->view('apply_as.step-0', $compact);
     }
 
     /**
@@ -282,9 +286,15 @@ class MemberController extends Controller
      */
     public function step0()
     {
+        $this->getResponseObject();
+
         $stepId = 0;
         $compact = $this->getArr($stepId);
-        return view('apply_as.step-0', $compact);
+//        return view('apply_as.step-0', $compact);
+
+        return response()
+            ->view('apply_as.step-0', $compact);
+//            ->header('Content-Type', $contentType);
     }
 
     /**
@@ -292,9 +302,15 @@ class MemberController extends Controller
      */
     public function step1get()
     {
+
+        $this->getResponseObject();
+
         $stepId = 1;
         $compact = $this->getArr($stepId);
-        return view('apply_as.step-1', $compact);
+//        return view('apply_as.step-1', $compact);
+
+        return response()
+            ->view('apply_as.step-1', $compact);
     }
 
     /**
@@ -302,11 +318,13 @@ class MemberController extends Controller
      */
     public function step1(Request $request)
     {
+        $this->getResponseObject();
 //        dd($request);
         $this->saveRequestToTempTable($request, 0);
         $stepId = 1;
         $compact = $this->getArr($stepId);
-        return view('apply_as.step-1', $compact);
+        return response()
+            ->view('apply_as.step-1', $compact);
     }
 
     /**
@@ -314,9 +332,11 @@ class MemberController extends Controller
      */
     public function step2get()
     {
+        $this->getResponseObject();
         $stepId = 2;
         $compact = $this->getArr($stepId);
-        return view('apply_as.step-2', $compact);
+        return response()
+            ->view('apply_as.step-2', $compact);
     }
 
     /**
@@ -324,10 +344,12 @@ class MemberController extends Controller
      */
     public function step2(FormRequest $request)
     {
+        $this->getResponseObject();
         $this->saveRequestToTempTable($request, 1);
         $stepId = 2;
         $compact = $this->getArr($stepId);
-        return view('apply_as.step-2', $compact);
+        return response()
+            ->view('apply_as.step-2', $compact);
     }
 
     /**
@@ -335,9 +357,11 @@ class MemberController extends Controller
      */
     public function step3get()
     {
+        $this->getResponseObject();
         $stepId = 3;
         $compact = $this->getArr($stepId);
-        return view('apply_as.step-3', $compact);
+        return response()
+            ->view('apply_as.step-3', $compact);
     }
 
     /**
@@ -345,10 +369,12 @@ class MemberController extends Controller
      */
     public function step3(FormRequest $request)
     {
+        $this->getResponseObject();
         $this->saveRequestToTempTable($request, 2);
         $stepId = 3;
         $compact = $this->getArr($stepId);
-        return view('apply_as.step-3', $compact);
+        return response()
+            ->view('apply_as.step-3', $compact);
     }
 
     /**
@@ -356,10 +382,12 @@ class MemberController extends Controller
      */
     public function step4(FormRequest $request)
     {
+        $this->getResponseObject();
         $this->saveRequestToTempTable($request, 3);
         $stepId = 4;
         $compact = $this->getArr($stepId);
-        return view('apply_as.step-4', $compact);
+        return response()
+            ->view('apply_as.step-4', $compact);
     }
 
     /**
@@ -367,10 +395,12 @@ class MemberController extends Controller
      */
     public function step5(FormRequest $request)
     {
+        $this->getResponseObject();
         $this->saveRequestToTempTable($request, 4);
         $stepId = 5;
         $compact = $this->getArr($stepId);
-        return view('apply_as.step-5', $compact);
+        return response()
+            ->view('apply_as.step-5', $compact);
     }
 
     /**
@@ -378,10 +408,12 @@ class MemberController extends Controller
      */
     public function step6(FormRequest $request)
     {
+        $this->getResponseObject();
         $this->saveRequestToTempTable($request, 5);
         $stepId = 6;
         $compact = $this->getArr($stepId);
-        return view('apply_as.step-6', $compact);
+        return response()
+            ->view('apply_as.step-6', $compact);
     }
 
     /**
@@ -389,10 +421,12 @@ class MemberController extends Controller
      */
     public function step7(FormRequest $request)
     {
+        $this->getResponseObject();
         $this->saveRequestToTempTable($request, 6);
         $stepId = 7;
         $compact = $this->getArr($stepId);
-        return view('apply_as.step-7', $compact);
+        return response()
+            ->view('apply_as.step-7', $compact);
     }
 
     /**
@@ -400,10 +434,12 @@ class MemberController extends Controller
      */
     public function step8(FormRequest $request)
     {
+        $this->getResponseObject();
         $this->saveRequestToTempTable($request, 7);
         $stepId = 8;
         $compact = $this->getArr($stepId);
-        return view('apply_as.step-8', $compact);
+        return response()
+            ->view('apply_as.step-8', $compact);
     }
 
     private function saveRequestToTempTable(Request $request, int $stepId)
@@ -713,5 +749,19 @@ class MemberController extends Controller
         $token = session('token');
         $compact = compact('token', 'saved', 'saved_text', 'saved_json', 'saved_file', 'options');
         return $compact;
+    }
+
+    /**
+     * @return void
+     */
+    public function getResponseObject(): void
+    {
+        $response = new \Illuminate\Http\Response('test', 200, array(
+            'Cache-Control' => 'max-age=' . (config('imagecache.lifetime') * 60) . ', public',
+            'Content-Length' => strlen('test'),
+        ));
+
+        $response->setLastModified(new \DateTime('now'));
+        $response->setExpires(\Carbon\Carbon::now()->addMinutes(config('imagecache.lifetime')));
     }
 }
