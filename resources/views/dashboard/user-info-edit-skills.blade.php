@@ -35,7 +35,7 @@
                     <div class="col-12">
                         <div class="white-box">
                             <div class="white-box-header">
-                                <div class="white-box-title">Skills & Experiences</div>
+                                <div class="white-box-title">{{__('menu.Skills & Experiences')}}</div>
                             </div>
                             <div class="white-box-content">
 

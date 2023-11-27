@@ -38,7 +38,7 @@
                                     </div>
                                     <div class="step-label">
                                         <span>Step 1:</span>
-                                        Basic Info
+                                        {{__('menu.Basic Info')}}
                                     </div>
                                 </div>
                                 <div data-step="2" class="step-item checked">
@@ -48,7 +48,7 @@
                                     </div>
                                     <div class="step-label">
                                         <span>Step 2:</span>
-                                        Physical Info
+                                        {{__('menu.Physical Info')}}
                                     </div>
                                 </div>
                                 <div data-step="3" class="step-item checked">
@@ -58,7 +58,7 @@
                                     </div>
                                     <div class="step-label">
                                         <span>Step 3:</span>
-                                        Skills & Experiences
+                                        {{__('menu.Skills & Experiences')}}
                                     </div>
                                 </div>
                                 <div data-step="4" class="step-item checked">
@@ -68,7 +68,7 @@
                                     </div>
                                     <div class="step-label">
                                         <span>Step 4:</span>
-                                        Media
+                                        {{__('menu.Media')}}
                                     </div>
                                 </div>
                                 <div data-step="5" class="step-item checked">
@@ -78,7 +78,7 @@
                                     </div>
                                     <div class="step-label">
                                         <span>Step 5:</span>
-                                        Contact Info
+                                        {{__('menu.Contact Info')}}
                                     </div>
                                 </div>
                                 <div data-step="6" class="step-item checked">
@@ -88,7 +88,7 @@
                                     </div>
                                     <div class="step-label">
                                         <span>Step 6:</span>
-                                        Authentication
+                                        {{__('menu.Authentication')}}
                                     </div>
                                 </div>
                             </div>
@@ -305,7 +305,7 @@
                                                 <div class="heading">
                                                     <div class="top-area">
                                                         <div class="title-area">
-                                                            <div class="heading-title">2. Physical Info:</div>
+                                                            <div class="heading-title">2. {{__('menu.Physical Info')}}:</div>
                                                         </div>
                                                         <div class="action-area">
                                                             <button type="button"
@@ -473,7 +473,7 @@
                                                     <div class="top-area">
                                                         <div class="title-area">
                                                             <div class="heading-title">
-                                                                3. Skills & Experiences:
+                                                                3. {{__('menu.Skills & Experiences')}}:
                                                             </div>
                                                         </div>
                                                         <div class="action-area">
@@ -562,7 +562,7 @@
                                                     <div class="top-area">
                                                         <div class="title-area">
                                                             <div class="heading-title">
-                                                                4. Media
+                                                                4. {{__('menu.Media')}}
                                                             </div>
                                                         </div>
                                                         <div class="action-area">
@@ -679,7 +679,7 @@
                                                     <div class="top-area">
                                                         <div class="title-area">
                                                             <div class="heading-title">
-                                                                5. Contact Info
+                                                                5. {{__('menu.Contact Info')}}
                                                             </div>
                                                         </div>
                                                         <div class="action-area">
@@ -795,7 +795,7 @@
                                                     <div class="top-area">
                                                         <div class="title-area">
                                                             <div class="heading-title">
-                                                                6. Authentication:
+                                                                6. {{__('menu.Authentication')}}:
                                                             </div>
                                                         </div>
                                                         <div class="action-area">
@@ -980,7 +980,7 @@
             <!-- step 1 -->
             <div class="edit-form" id="edit_form_step_1">
                 <div class="edit-form-header">
-                    <div class="edit-form-title">Edit Basic Info:</div>
+                    <div class="edit-form-title">Edit {{__('menu.Basic Info')}}:</div>
                     <div class="edit-form-actions">
                         <a href="#" class="btn-edit-form-cancel">
                             <i class="icon-close"></i>
@@ -1237,7 +1237,7 @@
             <!-- step 2 -->
             <div class="edit-form" id="edit_form_step_2">
                 <div class="edit-form-header">
-                    <div class="edit-form-title">Edit Physical Info:</div>
+                    <div class="edit-form-title">Edit {{__('menu.Physical Info')}}:</div>
                     <div class="edit-form-actions">
                         <a href="#" class="btn-edit-form-cancel">
                             <i class="icon-close"></i>
@@ -1793,7 +1793,7 @@
             <!-- step 3 -->
             <div class="edit-form" id="edit_form_step_3">
                 <div class="edit-form-header">
-                    <div class="edit-form-title">Edit Skills & Experiences:</div>
+                    <div class="edit-form-title">Edit {{__('menu.Skills & Experiences')}}:</div>
                     <div class="edit-form-actions">
                         <a href="#" class="btn-edit-form-cancel">
                             <i class="icon-close"></i>
@@ -2967,7 +2967,7 @@
             <!-- step 4 -->
             <div class="edit-form edit-form-upload" id="edit_form_step_4">
                 <div class="edit-form-header">
-                    <div class="edit-form-title">Edit Media:</div>
+                    <div class="edit-form-title">Edit {{__('menu.Media')}}:</div>
                     <div class="edit-form-actions">
                         <a href="#" class="btn-edit-form-cancel">
                             <i class="icon-close"></i>
@@ -3099,7 +3099,7 @@
             <!-- step 5 -->
             <div class="edit-form edit-form-contact-info" id="edit_form_step_5">
                 <div class="edit-form-header">
-                    <div class="edit-form-title">Edit Contact Info:</div>
+                    <div class="edit-form-title">Edit {{__('menu.Contact Info')}}:</div>
                     <div class="edit-form-actions">
                         <a href="#" class="btn-edit-form-cancel">
                             <i class="icon-close"></i>
@@ -3250,7 +3250,7 @@
             <!-- step 6 -->
             <div class="edit-form edit-form-content-bank" id="edit_form_step_6">
                 <div class="edit-form-header">
-                    <div class="edit-form-title">Authentication:</div>
+                    <div class="edit-form-title">{{__('menu.Authentication')}}:</div>
                     <div class="edit-form-actions">
                         <a href="#" class="btn-edit-form-cancel">
                             <i class="icon-close"></i>

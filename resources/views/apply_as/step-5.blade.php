@@ -39,7 +39,7 @@
                                     </div>
                                     <div class="step-label">
                                         <span>Step 1:</span>
-                                        Basic Info
+                                        {{__('menu.Basic Info')}}
                                     </div>
                                 </div>
                                 <div data-step="2" class="step-item checked">
@@ -49,7 +49,7 @@
                                     </div>
                                     <div class="step-label">
                                         <span>Step 2:</span>
-                                        Physical Info
+                                        {{__('menu.Physical Info')}}
                                     </div>
                                 </div>
                                 <div data-step="3" class="step-item checked">
@@ -59,7 +59,7 @@
                                     </div>
                                     <div class="step-label">
                                         <span>Step 3:</span>
-                                        Skills & Experiences
+                                        {{__('menu.Skills & Experiences')}}
                                     </div>
                                 </div>
                                 <div data-step="4" class="step-item checked">
@@ -69,7 +69,7 @@
                                     </div>
                                     <div class="step-label">
                                         <span>Step 4:</span>
-                                        Media
+                                        {{__('menu.Media')}}
                                     </div>
                                 </div>
                                 <div data-step="5" class="step-item active">
@@ -79,7 +79,7 @@
                                     </div>
                                     <div class="step-label">
                                         <span>Step 5:</span>
-                                        Contact Info
+                                        {{__('menu.Contact Info')}}
                                     </div>
                                 </div>
                                 <div data-step="6" class="step-item">
@@ -89,7 +89,7 @@
                                     </div>
                                     <div class="step-label">
                                         <span>Step 6:</span>
-                                        Authentication
+                                        {{__('menu.Authentication')}}
                                     </div>
                                 </div>
                             </div>

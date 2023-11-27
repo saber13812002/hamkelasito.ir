@@ -804,7 +804,7 @@
                                                                                 <option value="sculpture">Sculpture
                                                                                 </option>
                                                                                 <option value="mixed_media">Mixed
-                                                                                    Media
+                                                                                    {{__('menu.Media')}}
                                                                                 </option>
                                                                                 <option value="digital_art">Digital
                                                                                     Art

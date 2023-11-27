@@ -26,7 +26,7 @@
                     <div class="col-12">
                         <div class="white-box">
                             <div class="white-box-header">
-                                <div class="white-box-title">Edit Media</div>
+                                <div class="white-box-title">Edit {{__('menu.Media')}}</div>
                             </div>
                             <div class="white-box-content content-mixing-md main-white-box-content">
                                 <div class="gallery-edit-media-body">
