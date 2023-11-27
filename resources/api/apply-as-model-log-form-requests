@@ -135,3 +135,26 @@
      'hashName' => NULL,
   )),
 )
+
+
+
+[2023-11-27 12:19:40] local.INFO: array (
+  'filter' =>
+  array (
+    'filter_gender' => 'women',
+    'filter_age_group' => 'baby',
+    'filter_nationality' => '54,208,32',
+    'filter_language' => '1',
+    'filter_height_min' => '0',
+    'filter_height_max' => '190',
+    'filter_bust_min' => '0',
+    'filter_bust_max' => '220',
+    'filter_waist_min' => '0',
+    'filter_waist_max' => '220',
+    'filter_hips_min' => '0',
+    'filter_hips_max' => '220',
+    'filter_hair_color' => 'Chestnut',
+    'filter_eye_color' => 'Green',
+  ),
+  'sort' => 'newest',
+)

@@ -112,7 +112,13 @@
                                                          data-required="true" data-type="select">
                                                         <div class="field-content">
                                                             <label for="country_code">Country <span class="field-required-star">*</span></label>
-                                                            <select name="country_code" id="country_code" data-value="JPN" data-default-value="JPN"></select>
+                                                            <select name="country_code" id="country_code"
+                                                                    @if (isset($saved_file) && isset($saved_file['other_photos']))
+                                                                        data-value="{{$saved_file['other_photos']}}"
+                                                                    @else
+                                                                        data-value="JPN" data-default-value="JPN"
+                                                                    @endif
+                                                            ></select>
                                                             <i class="icon-arrow-down"></i>
                                                         </div>
                                                     </div>

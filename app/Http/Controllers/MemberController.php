@@ -63,12 +63,32 @@ class MemberController extends Controller
      */
     public function filter(Request $request)
     {
-//        dd($request->query('filter'), $request->query('sort'), $request->sort, $request);
-
+        Log::info($request);
 //        dd($request->data);
+        $perPage = $request->input('per_page', 10);
+        $page = $request->input('page', 1);
         $memberBuilder = Member::query()->published();
-        $memberBuilder->whereId(1);
-        $members = $memberBuilder->get();
+        $memberBuilder->name($request->name);
+        $members = $memberBuilder->paginate($perPage, ['*'], 'page', $page);
+        return view('layouts.single-pages.models-list-section', compact('members'));
+    }
+
+    /**
+     * filter results.
+     *
+     */
+    public function archive(Request $request)
+    {
+//        dd($request->query('filter'), $request->query('sort'), $request->sort, $request);
+        Log::info($request);
+//        dd($request->data);
+
+        $perPage = $request->input('per_page', 10);
+        $page = $request->input('page', 1);
+
+        $memberBuilder = Member::query()->published();
+//        $memberBuilder->whereId(12);
+        $members = $memberBuilder->paginate($perPage, ['*'], 'page', $page);
         return view('layouts.single-pages.models-list-items', compact('members'));
     }
 

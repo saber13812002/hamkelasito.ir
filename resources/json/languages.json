@@ -1,0 +1,1276 @@
+[
+    {
+        "id": "ab",
+        "text": "Abkhaz",
+        "value": "ab",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "aa",
+        "text": "Afar",
+        "value": "aa",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "af",
+        "text": "Afrikaans",
+        "value": "af",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "ak",
+        "text": "Akan",
+        "value": "ak",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "sq",
+        "text": "Albanian",
+        "value": "sq",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "am",
+        "text": "Amharic",
+        "value": "am",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "ar",
+        "text": "Arabic",
+        "value": "ar",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "an",
+        "text": "Aragonese",
+        "value": "an",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "hy",
+        "text": "Armenian",
+        "value": "hy",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "as",
+        "text": "Assamese",
+        "value": "as",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "av",
+        "text": "Avaric",
+        "value": "av",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "ae",
+        "text": "Avestan",
+        "value": "ae",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "ay",
+        "text": "Aymara",
+        "value": "ay",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "az",
+        "text": "Azerbaijani",
+        "value": "az",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "bm",
+        "text": "Bambara",
+        "value": "bm",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "ba",
+        "text": "Bashkir",
+        "value": "ba",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "eu",
+        "text": "Basque",
+        "value": "eu",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "be",
+        "text": "Belarusian",
+        "value": "be",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "bn",
+        "text": "Bengali",
+        "value": "bn",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "bh",
+        "text": "Bihari",
+        "value": "bh",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "bi",
+        "text": "Bislama",
+        "value": "bi",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "bs",
+        "text": "Bosnian",
+        "value": "bs",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "br",
+        "text": "Breton",
+        "value": "br",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "bg",
+        "text": "Bulgarian",
+        "value": "bg",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "my",
+        "text": "Burmese",
+        "value": "my",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "ca",
+        "text": "Catalan; Valencian",
+        "value": "ca",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "ch",
+        "text": "Chamorro",
+        "value": "ch",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "ce",
+        "text": "Chechen",
+        "value": "ce",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "ny",
+        "text": "Chichewa; Chewa; Nyanja",
+        "value": "ny",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "zh",
+        "text": "Chinese",
+        "value": "zh",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "cv",
+        "text": "Chuvash",
+        "value": "cv",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "kw",
+        "text": "Cornish",
+        "value": "kw",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "co",
+        "text": "Corsican",
+        "value": "co",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "cr",
+        "text": "Cree",
+        "value": "cr",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "hr",
+        "text": "Croatian",
+        "value": "hr",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "cs",
+        "text": "Czech",
+        "value": "cs",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "da",
+        "text": "Danish",
+        "value": "da",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "dv",
+        "text": "Divehi; Dhivehi; Maldivian;",
+        "value": "dv",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "nl",
+        "text": "Dutch",
+        "value": "nl",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "en",
+        "text": "English",
+        "value": "en",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "eo",
+        "text": "Esperanto",
+        "value": "eo",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "et",
+        "text": "Estonian",
+        "value": "et",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "ee",
+        "text": "Ewe",
+        "value": "ee",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "fo",
+        "text": "Faroese",
+        "value": "fo",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "fj",
+        "text": "Fijian",
+        "value": "fj",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "fi",
+        "text": "Finnish",
+        "value": "fi",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "fr",
+        "text": "French",
+        "value": "fr",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "ff",
+        "text": "Fula; Fulah; Pulaar; Pular",
+        "value": "ff",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "gl",
+        "text": "Galician",
+        "value": "gl",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "ka",
+        "text": "Georgian",
+        "value": "ka",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "de",
+        "text": "German",
+        "value": "de",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "el",
+        "text": "Greek, Modern",
+        "value": "el",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "gn",
+        "text": "Guaraní",
+        "value": "gn",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "gu",
+        "text": "Gujarati",
+        "value": "gu",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "ht",
+        "text": "Haitian; Haitian Creole",
+        "value": "ht",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "ha",
+        "text": "Hausa",
+        "value": "ha",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "he",
+        "text": "Hebrew (modern)",
+        "value": "he",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "hz",
+        "text": "Herero",
+        "value": "hz",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "hi",
+        "text": "Hindi",
+        "value": "hi",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "ho",
+        "text": "Hiri Motu",
+        "value": "ho",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "hu",
+        "text": "Hungarian",
+        "value": "hu",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "ia",
+        "text": "Interlingua",
+        "value": "ia",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "id",
+        "text": "Indonesian",
+        "value": "id",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "ie",
+        "text": "Interlingue",
+        "value": "ie",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "ga",
+        "text": "Irish",
+        "value": "ga",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "ig",
+        "text": "Igbo",
+        "value": "ig",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "ik",
+        "text": "Inupiaq",
+        "value": "ik",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "io",
+        "text": "Ido",
+        "value": "io",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "is",
+        "text": "Icelandic",
+        "value": "is",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "it",
+        "text": "Italian",
+        "value": "it",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "iu",
+        "text": "Inuktitut",
+        "value": "iu",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "ja",
+        "text": "Japanese",
+        "value": "ja",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "jv",
+        "text": "Javanese",
+        "value": "jv",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "kl",
+        "text": "Kalaallisut, Greenlandic",
+        "value": "kl",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "kn",
+        "text": "Kannada",
+        "value": "kn",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "kr",
+        "text": "Kanuri",
+        "value": "kr",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "ks",
+        "text": "Kashmiri",
+        "value": "ks",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "kk",
+        "text": "Kazakh",
+        "value": "kk",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "km",
+        "text": "Khmer",
+        "value": "km",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "ki",
+        "text": "Kikuyu, Gikuyu",
+        "value": "ki",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "rw",
+        "text": "Kinyarwanda",
+        "value": "rw",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "ky",
+        "text": "Kirghiz, Kyrgyz",
+        "value": "ky",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "kv",
+        "text": "Komi",
+        "value": "kv",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "kg",
+        "text": "Kongo",
+        "value": "kg",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "ko",
+        "text": "Korean",
+        "value": "ko",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "ku",
+        "text": "Kurdish",
+        "value": "ku",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "kj",
+        "text": "Kwanyama, Kuanyama",
+        "value": "kj",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "la",
+        "text": "Latin",
+        "value": "la",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "lb",
+        "text": "Luxembourgish, Letzeburgesch",
+        "value": "lb",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "lg",
+        "text": "Luganda",
+        "value": "lg",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "li",
+        "text": "Limburgish, Limburgan, Limburger",
+        "value": "li",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "ln",
+        "text": "Lingala",
+        "value": "ln",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "lo",
+        "text": "Lao",
+        "value": "lo",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "lt",
+        "text": "Lithuanian",
+        "value": "lt",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "lu",
+        "text": "Luba-Katanga",
+        "value": "lu",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "lv",
+        "text": "Latvian",
+        "value": "lv",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "gv",
+        "text": "Manx",
+        "value": "gv",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "mk",
+        "text": "Macedonian",
+        "value": "mk",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "mg",
+        "text": "Malagasy",
+        "value": "mg",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "ms",
+        "text": "Malay",
+        "value": "ms",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "ml",
+        "text": "Malayalam",
+        "value": "ml",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "mt",
+        "text": "Maltese",
+        "value": "mt",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "mi",
+        "text": "Māori",
+        "value": "mi",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "mr",
+        "text": "Marathi (Marāṭhī)",
+        "value": "mr",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "mh",
+        "text": "Marshallese",
+        "value": "mh",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "mn",
+        "text": "Mongolian",
+        "value": "mn",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "na",
+        "text": "Nauru",
+        "value": "na",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "nv",
+        "text": "Navajo, Navaho",
+        "value": "nv",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "nb",
+        "text": "Norwegian Bokmål",
+        "value": "nb",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "nd",
+        "text": "North Ndebele",
+        "value": "nd",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "ne",
+        "text": "Nepali",
+        "value": "ne",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "ng",
+        "text": "Ndonga",
+        "value": "ng",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "nn",
+        "text": "Norwegian Nynorsk",
+        "value": "nn",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "no",
+        "text": "Norwegian",
+        "value": "no",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "ii",
+        "text": "Nuosu",
+        "value": "ii",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "nr",
+        "text": "South Ndebele",
+        "value": "nr",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "oc",
+        "text": "Occitan",
+        "value": "oc",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "oj",
+        "text": "Ojibwe, Ojibwa",
+        "value": "oj",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "cu",
+        "text": "Old Church Slavonic, Church Slavic, Church Slavonic, Old Bulgarian, Old Slavonic",
+        "value": "cu",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "om",
+        "text": "Oromo",
+        "value": "om",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "or",
+        "text": "Oriya",
+        "value": "or",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "os",
+        "text": "Ossetian, Ossetic",
+        "value": "os",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "pa",
+        "text": "Panjabi, Punjabi",
+        "value": "pa",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "pi",
+        "text": "Pāli",
+        "value": "pi",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "fa",
+        "text": "Persian",
+        "value": "fa",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "pl",
+        "text": "Polish",
+        "value": "pl",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "ps",
+        "text": "Pashto, Pushto",
+        "value": "ps",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "pt",
+        "text": "Portuguese",
+        "value": "pt",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "qu",
+        "text": "Quechua",
+        "value": "qu",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "rm",
+        "text": "Romansh",
+        "value": "rm",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "rn",
+        "text": "Kirundi",
+        "value": "rn",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "ro",
+        "text": "Romanian, Moldavian, Moldovan",
+        "value": "ro",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "ru",
+        "text": "Russian",
+        "value": "ru",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "sa",
+        "text": "Sanskrit (Saṁskṛta)",
+        "value": "sa",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "sc",
+        "text": "Sardinian",
+        "value": "sc",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "sd",
+        "text": "Sindhi",
+        "value": "sd",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "se",
+        "text": "Northern Sami",
+        "value": "se",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "sm",
+        "text": "Samoan",
+        "value": "sm",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "sg",
+        "text": "Sango",
+        "value": "sg",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "sr",
+        "text": "Serbian",
+        "value": "sr",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "gd",
+        "text": "Scottish Gaelic; Gaelic",
+        "value": "gd",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "sn",
+        "text": "Shona",
+        "value": "sn",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "si",
+        "text": "Sinhala, Sinhalese",
+        "value": "si",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "sk",
+        "text": "Slovak",
+        "value": "sk",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "sl",
+        "text": "Slovene",
+        "value": "sl",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "so",
+        "text": "Somali",
+        "value": "so",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "st",
+        "text": "Southern Sotho",
+        "value": "st",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "es",
+        "text": "Spanish; Castilian",
+        "value": "es",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "su",
+        "text": "Sundanese",
+        "value": "su",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "sw",
+        "text": "Swahili",
+        "value": "sw",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "ss",
+        "text": "Swati",
+        "value": "ss",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "sv",
+        "text": "Swedish",
+        "value": "sv",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "ta",
+        "text": "Tamil",
+        "value": "ta",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "te",
+        "text": "Telugu",
+        "value": "te",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "tg",
+        "text": "Tajik",
+        "value": "tg",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "th",
+        "text": "Thai",
+        "value": "th",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "ti",
+        "text": "Tigrinya",
+        "value": "ti",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "bo",
+        "text": "Tibetan Standard, Tibetan, Central",
+        "value": "bo",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "tk",
+        "text": "Turkmen",
+        "value": "tk",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "tl",
+        "text": "Tagalog",
+        "value": "tl",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "tn",
+        "text": "Tswana",
+        "value": "tn",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "to",
+        "text": "Tonga (Tonga Islands)",
+        "value": "to",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "tr",
+        "text": "Turkish",
+        "value": "tr",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "ts",
+        "text": "Tsonga",
+        "value": "ts",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "tt",
+        "text": "Tatar",
+        "value": "tt",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "tw",
+        "text": "Twi",
+        "value": "tw",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "ty",
+        "text": "Tahitian",
+        "value": "ty",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "ug",
+        "text": "Uighur, Uyghur",
+        "value": "ug",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "uk",
+        "text": "Ukrainian",
+        "value": "uk",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "ur",
+        "text": "Urdu",
+        "value": "ur",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "uz",
+        "text": "Uzbek",
+        "value": "uz",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "ve",
+        "text": "Venda",
+        "value": "ve",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "vi",
+        "text": "Vietnamese",
+        "value": "vi",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "vo",
+        "text": "Volapük",
+        "value": "vo",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "wa",
+        "text": "Walloon",
+        "value": "wa",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "cy",
+        "text": "Welsh",
+        "value": "cy",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "wo",
+        "text": "Wolof",
+        "value": "wo",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "fy",
+        "text": "Western Frisian",
+        "value": "fy",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "xh",
+        "text": "Xhosa",
+        "value": "xh",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "yi",
+        "text": "Yiddish",
+        "value": "yi",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "yo",
+        "text": "Yoruba",
+        "value": "yo",
+        "color": false,
+        "flag": false
+    },
+    {
+        "id": "za",
+        "text": "Zhuang, Chuang",
+        "value": "za",
+        "color": false,
+        "flag": false
+    }
+]
