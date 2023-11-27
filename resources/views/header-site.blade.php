@@ -18,15 +18,23 @@
                         <img src="/storage/assets/img/logo-white.svg" width="88" height="24" alt="liliana">
                     </noscript>
                 </a>
-                <h1 class="app-bar-title-hidden">Liliana Models</h1>
+                <h1 class="app-bar-title-hidden">{{__('menu.Liliana Models')}}</h1>
             </div>
             <div class="actions">
                 <div class="app-lang">
-                    <a href="/?lng=jp" class="btn btn-icon" aria-label="Change Language To Japane">
+                    <a href="/?locale=ja" class="btn btn-icon
+                     @if(App::getLocale() == 'ja')
+                     active
+                    @endif
+                    " aria-label="Change Language To Japane">
                         JP
                     </a>
                     <div class="divider"></div>
-                    <a href="/?lng=en" class="btn btn-icon active" aria-label="Change language To English">
+                    <a href="/?locale=en" class="btn btn-icon
+                     @if(App::getLocale() == 'en')
+                     active
+                    @endif
+                    " aria-label="Change language To English">
                         EN
                     </a>
                 </div>
@@ -65,64 +73,64 @@
                     <!-- menu nav -->
                     <nav class="menu-nav">
                         <ul>
-                            <li class="active"><a href="/">Home</a></li>
-                            <li><a href="work">Portfolio</a></li>
-                            <li><a href="news-category">News</a></li>
-                            <li><a href="about-us">About us</a></li>
-                            <li><a href="contact-us">Contact us</a></li>
-                            <li><a href="company-profile">Company Profile</a></li>
-                            <li><a href="privacy-policy">Privacy Policy</a></li>
+                            <li class="active"><a href="/">{{__('menu.Home')}}</a></li>
+                            <li><a href="work">{{__('menu.Portfolio')}}</a></li>
+                            <li><a href="news-category">{{__('menu.News')}}</a></li>
+                            <li><a href="about-us">{{__('menu.About us')}}</a></li>
+                            <li><a href="contact-us">{{__('menu.Contact us')}}</a></li>
+                            <li><a href="company-profile">{{__('menu.Company Profile')}}</a></li>
+                            <li><a href="privacy-policy">{{__('menu.Privacy Policy')}}</a></li>
                         </ul>
                     </nav>
 
                     <!-- menu categories -->
                     <div class="menu-categories">
                         <div class="category">
-                            <div class="category-title">Model</div>
+                            <div class="category-title">{{__('menu.Model')}}</div>
                             <ul class="category-content">
-                                <li><a href="models-list">All</a></li>
-                                <li><a href="models-list">Women</a></li>
-                                <li><a href="models-list">Men</a></li>
-                                <li><a href="models-list">Kids &amp; Babies</a></li>
-                                <li><a href="models-list">Japanese</a></li>
-                                <li><a href="models-list">Mixed</a></li>
-                                <li><a href="models-list">International</a></li>
+                                <li><a href="models-list">{{__('menu.All')}}</a></li>
+                                <li><a href="models-list">{{__('menu.Women')}}</a></li>
+                                <li><a href="models-list">{{__('menu.Men')}}</a></li>
+                                <li><a href="models-list">{{__('menu.Kids & Babies')}}</a></li>
+                                <li><a href="models-list">{{__('menu.Japanese')}}</a></li>
+                                <li><a href="models-list">{{__('menu.Mixed')}}</a></li>
+                                <li><a href="models-list">{{__('menu.International')}}</a></li>
                             </ul>
                         </div>
                         <div class="category">
-                            <div class="category-title">Talent</div>
+                            <div class="category-title">{{__('menu.Talent')}}</div>
                             <ul class="category-content">
-                                <li><a href="models-list">All</a></li>
-                                <li><a href="models-list">Women</a></li>
-                                <li><a href="models-list">Men</a></li>
-                                <li><a href="models-list">Kids</a></li>
-                                <li><a href="models-list">Japanese</a></li>
-                                <li><a href="models-list">Mixed</a></li>
-                                <li><a href="models-list">International</a></li>
+                                <li><a href="models-list">{{__('menu.All')}}</a></li>
+                                <li><a href="models-list">{{__('menu.Women')}}</a></li>
+                                <li><a href="models-list">{{__('menu.Men')}}</a></li>
+                                <li><a href="models-list">{{__('menu.Kids')}}</a></li>
+                                <li><a href="models-list">{{__('menu.Japanese')}}</a></li>
+                                <li><a href="models-list">{{__('menu.Mixed')}}</a></li>
+                                <li><a href="models-list">{{__('menu.International')}}</a></li>
                             </ul>
                         </div>
                         <div class="category">
-                            <div class="category-title">Actor</div>
+                            <div class="category-title">{{__('menu.Actor')}}</div>
                             <ul class="category-content">
-                                <li><a href="models-list">All</a></li>
-                                <li><a href="models-list">Actors</a></li>
-                                <li><a href="models-list">Actresses</a></li>
-                                <li><a href="models-list">Kids</a></li>
-                                <li><a href="models-list">Japanese</a></li>
-                                <li><a href="models-list">Mixed</a></li>
-                                <li><a href="models-list">International</a></li>
+                                <li><a href="models-list">{{__('menu.All')}}</a></li>
+                                <li><a href="models-list">{{__('menu.Actors')}}</a></li>
+                                <li><a href="models-list">{{__('menu.Actresses')}}</a></li>
+                                <li><a href="models-list">{{__('menu.Kids')}}</a></li>
+                                <li><a href="models-list">{{__('menu.Japanese')}}</a></li>
+                                <li><a href="models-list">{{__('menu.Mixed')}}</a></li>
+                                <li><a href="models-list">{{__('menu.International')}}</a></li>
                             </ul>
                         </div>
                         <div class="category">
-                            <div class="category-title">Extra</div>
+                            <div class="category-title">{{__('menu.Extra')}}</div>
                             <ul class="category-content">
-                                <li><a href="models-list">All</a></li>
-                                <li><a href="models-list">Women</a></li>
-                                <li><a href="models-list">Men</a></li>
-                                <li><a href="models-list">Kids</a></li>
-                                <li><a href="models-list">Japanese</a></li>
-                                <li><a href="models-list">Mixed</a></li>
-                                <li><a href="models-list">International</a></li>
+                                <li><a href="models-list">{{__('menu.All')}}</a></li>
+                                <li><a href="models-list">{{__('menu.Women')}}</a></li>
+                                <li><a href="models-list">{{__('menu.Men')}}</a></li>
+                                <li><a href="models-list">{{__('menu.Kids')}}</a></li>
+                                <li><a href="models-list">{{__('menu.Japanese')}}</a></li>
+                                <li><a href="models-list">{{__('menu.Mixed')}}</a></li>
+                                <li><a href="models-list">{{__('menu.International')}}</a></li>
                             </ul>
                         </div>
                     </div>
@@ -138,25 +146,25 @@
                             <a href="become-a-model" class="btn btn-icon-left">
                             <span>
                                 <i class="icon-add"></i>
-                                Become Liliana
+                                {{__('menu.Become Liliana')}}
                             </span>
                             </a>
                             <a href="login" class="btn btn-primary btn-icon-left">
                             <span>
                                 <i class="icon-log-in"></i>
-                                Login
+                                {{__('menu.Login')}}
                             </span>
                             </a>
                         @else
                             <a href="/#" class="dashboard">
                             <span>
-                                {{Auth::user()->name}}
+                               {{trans('adminlte.full_name')}} :  {{Auth::user()->name}}
                                 <i class="icon-arrow-right"></i>
                             </span>
                             </a>
                             <a href="/#" class="logout">
                             <span>
-                                Logout
+                                {{__('menu.Logout')}}
                                 <i class="icon-logout"></i>
                             </span>
                             </a>
@@ -188,23 +196,23 @@
                         <div class="tabs" data-active="tab_header_menu">
                             <ul class="tabs-item">
                                 <li id="tab_header_menu" class="active">
-                                    menu
+                                    {{__('menu.menu')}}
                                 </li>
                                 <li id="tab_header_categories">
-                                    categories
+                                    {{__('menu.categories')}}
                                 </li>
                             </ul>
                             <div class="tabs-contents">
                                 <div class="tab-content-item active" data-tab-target="tab_header_menu">
                                     <nav class="menu-nav">
                                         <ul>
-                                            <li><a href="/">Home</a></li>
-                                            <li><a href="work">Portfolio</a></li>
-                                            <li><a href="news-category">News</a></li>
-                                            <li><a href="about-us">About us</a></li>
-                                            <li><a href="contact-us">Contact us</a></li>
-                                            <li><a href="company-profile">Company Profile</a></li>
-                                            <li><a href="privacy-policy">Privacy Policy</a></li>
+                                            <li><a href="/">{{__('menu.Home')}}</a></li>
+                                            <li><a href="work">{{__('menu.Portfolio')}}</a></li>
+                                            <li><a href="news-category">{{__('menu.News')}}</a></li>
+                                            <li><a href="about-us">{{__('menu.About us')}}</a></li>
+                                            <li><a href="contact-us">{{__('menu.Contact us')}}</a></li>
+                                            <li><a href="company-profile">{{__('menu.Company Profile')}}</a></li>
+                                            <li><a href="privacy-policy">{{__('menu.Privacy Policy')}}</a></li>
                                         </ul>
                                     </nav>
                                 </div>
@@ -212,69 +220,69 @@
                                     <div class="accordion">
                                         <div class="accordion-item">
                                             <button class="accordion-header">
-                                                <span class="accordion-title">Model</span>
+                                                <span class="accordion-title">{{__('menu.Model')}}</span>
                                                 <i class="icon-arrow-down"></i>
                                             </button>
                                             <div class="accordion-content" style="display: none;">
                                                 <ul>
-                                                    <li><a href="models-list">All</a></li>
-                                                    <li><a href="models-list">Women</a></li>
-                                                    <li><a href="models-list">Men</a></li>
-                                                    <li><a href="models-list">Kids &amp; Babies</a></li>
-                                                    <li><a href="models-list">Japanese</a></li>
-                                                    <li><a href="models-list">Mixed</a></li>
-                                                    <li><a href="models-list">International</a></li>
+                                                    <li><a href="models-list">{{__('menu.All')}}</a></li>
+                                                    <li><a href="models-list">{{__('menu.Women')}}</a></li>
+                                                    <li><a href="models-list">{{__('menu.Men')}}</a></li>
+                                                    <li><a href="models-list">{{__('menu.Kids & Babies')}}</a></li>
+                                                    <li><a href="models-list">{{__('menu.Japanese')}}</a></li>
+                                                    <li><a href="models-list">{{__('menu.Mixed')}}</a></li>
+                                                    <li><a href="models-list">{{__('menu.International')}}</a></li>
                                                 </ul>
                                             </div>
                                         </div>
                                         <div class="accordion-item">
                                             <button class="accordion-header">
-                                                <span class="accordion-title">Talent</span>
+                                                <span class="accordion-title">{{__('menu.Talent')}}</span>
                                                 <i class="icon-arrow-down"></i>
                                             </button>
                                             <div class="accordion-content" style="display: none;">
                                                 <ul>
-                                                    <li><a href="models-list">All</a></li>
-                                                    <li><a href="models-list">Women</a></li>
-                                                    <li><a href="models-list">Men</a></li>
-                                                    <li><a href="models-list">Kids</a></li>
-                                                    <li><a href="models-list">Japanese</a></li>
-                                                    <li><a href="models-list">Mixed</a></li>
-                                                    <li><a href="models-list">International</a></li>
+                                                    <li><a href="models-list">{{__('menu.All')}}</a></li>
+                                                    <li><a href="models-list">{{__('menu.Women')}}</a></li>
+                                                    <li><a href="models-list">{{__('menu.Men')}}</a></li>
+                                                    <li><a href="models-list">{{__('menu.Kids')}}</a></li>
+                                                    <li><a href="models-list">{{__('menu.Japanese')}}</a></li>
+                                                    <li><a href="models-list">{{__('menu.Mixed')}}</a></li>
+                                                    <li><a href="models-list">{{__('menu.International')}}</a></li>
                                                 </ul>
                                             </div>
                                         </div>
                                         <div class="accordion-item">
                                             <button class="accordion-header">
-                                                <span class="accordion-title">Actor</span>
+                                                <span class="accordion-title">{{__('menu.Actor')}}</span>
                                                 <i class="icon-arrow-down"></i>
                                             </button>
                                             <div class="accordion-content" style="display: none;">
                                                 <ul>
-                                                    <li><a href="models-list">All</a></li>
-                                                    <li><a href="models-list">Actors</a></li>
-                                                    <li><a href="models-list">Actresses</a></li>
-                                                    <li><a href="models-list">Kids</a></li>
-                                                    <li><a href="models-list">Japanese</a></li>
-                                                    <li><a href="models-list">Mixed</a></li>
-                                                    <li><a href="models-list">International</a></li>
+                                                    <li><a href="models-list">{{__('menu.All')}}</a></li>
+                                                    <li><a href="models-list">{{__('menu.Actors')}}</a></li>
+                                                    <li><a href="models-list">{{__('menu.Actresses')}}</a></li>
+                                                    <li><a href="models-list">{{__('menu.Kids')}}</a></li>
+                                                    <li><a href="models-list">{{__('menu.Japanese')}}</a></li>
+                                                    <li><a href="models-list">{{__('menu.Mixed')}}</a></li>
+                                                    <li><a href="models-list">{{__('menu.International')}}</a></li>
                                                 </ul>
                                             </div>
                                         </div>
                                         <div class="accordion-item">
                                             <button class="accordion-header">
-                                                <span class="accordion-title">Extra</span>
+                                                <span class="accordion-title">{{__('menu.Extra')}}</span>
                                                 <i class="icon-arrow-down"></i>
                                             </button>
                                             <div class="accordion-content" style="display: none;">
                                                 <ul>
-                                                    <li><a href="models-list">All</a></li>
-                                                    <li><a href="models-list">Women</a></li>
-                                                    <li><a href="models-list">Men</a></li>
-                                                    <li><a href="models-list">Kids</a></li>
-                                                    <li><a href="models-list">Japanese</a></li>
-                                                    <li><a href="models-list">Mixed</a></li>
-                                                    <li><a href="models-list">International</a></li>
+                                                    <li><a href="models-list">{{__('menu.All')}}</a></li>
+                                                    <li><a href="models-list">{{__('menu.Women')}}</a></li>
+                                                    <li><a href="models-list">{{__('menu.Men')}}</a></li>
+                                                    <li><a href="models-list">{{__('menu.Kids')}}</a></li>
+                                                    <li><a href="models-list">{{__('menu.Japanese')}}</a></li>
+                                                    <li><a href="models-list">{{__('menu.Mixed')}}</a></li>
+                                                    <li><a href="models-list">{{__('menu.International')}}</a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -293,17 +301,17 @@
                                     <img src="/storage/assets/img/1x1/001.webp" width="80" height="80" alt="Model">
                                 </noscript>
                                 <div class="user-content">
-                                    <div class="user-display-name">{{Auth::user()->name}}</div>
+                                    <div class="user-display-name">{{trans('adminlte.full_name')}} : {{Auth::user()->name}}</div>
                                     <a href="/dashboard-models/">
-                                        Go to Dashboard
+                                        {{__('menu.Go to Dashboard')}}
                                         <i class="icon-arrow-right"></i>
                                     </a>
                                 </div>
                             </div>
                         @endguest
                         @guest
-                            <a href="login" class="btn btn-primary btn-full">Login</a>
-                            <a href="become-a-model" class="btn btn-full">Become Liliana</a>
+                            <a href="login" class="btn btn-primary btn-full">{{__('menu.Login')}}</a>
+                            <a href="become-a-model" class="btn btn-full">{{__('menu.Become Liliana')}}</a>
                         @endguest
                         <ul class="menu-contact-us">
                             <li>
@@ -353,14 +361,14 @@
             <div class="recent-cleared-message">
                 <span>All Recent Deleted</span>
                 <button type="button" id="btn_undo_search_recent">
-                    Undo
+                    {{__('menu.Undo')}}
                     <i class="icon-rotate-ccw-converted"></i>
                 </button>
             </div>
             <div class="recent-search-section">
                 <div class="recent-model-heading">
-                    <span>Recent Searches</span>
-                    <a href="/#" id="btn_clear_search_recent">Clear All</a>
+                    <span>{{__('menu.Recent Searches')}}</span>
+                    <a href="/#" id="btn_clear_search_recent">{{__('menu.Clear All')}}</a>
                 </div>
                 <div class="recent-model">
                     <a href="model-page">
@@ -455,7 +463,7 @@
                 </li>
             </ul>
             <a href="models-list" class="more-result">
-                See All 25 Results
+                {{__('menu.See All 25 Results')}}
                 <i class="icon-arrow-right"></i>
             </a>
         </div>
@@ -542,7 +550,7 @@
                             <img src="/storage/assets/img/3x4/027.webp" width="200" height="260" alt="model">
                         </noscript>
                         <div class="card-metas">
-                            <span class="meta-item">New Face</span>
+                            <span class="meta-item">{{__('menu.New Face')}}</span>
                         </div>
                         <div class="card-content">
                             <div class="card-inner-content">
@@ -572,7 +580,7 @@
                             <img src="/storage/assets/img/3x4/021.webp" width="200" height="260" alt="model">
                         </noscript>
                         <div class="card-metas">
-                            <span class="meta-item">New Face</span>
+                            <span class="meta-item">{{__('menu.New Face')}}</span>
                         </div>
                         <div class="card-content">
                             <div class="card-inner-content">
@@ -653,9 +661,9 @@
             </div>
         </div>
         <div class="bookmark-actions">
-            <a href="models-list" class="btn btn-full">Hire Some Models</a>
+            <a href="models-list" class="btn btn-full">{{__('menu.Hire Some Models')}}</a>
             <a href="bookmark-select-models" class="btn btn-primary btn-full">
-                Hire All Models
+                {{__('menu.Hire All Models')}}
             </a>
         </div>
     </div>

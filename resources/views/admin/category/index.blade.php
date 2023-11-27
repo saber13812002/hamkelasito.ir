@@ -12,13 +12,13 @@
         <div class="col-md-12 mb-2">
 
             <button data-toggle="modal" data-target="#createCategory"
-                    class="btn btn-success float-right">{{__('Add Category')}} <i class="fas fa-cogs"></i></button>
+                    class="btn btn-success float-right">{{__('menu.Add Category')}} <i class="fas fa-cogs"></i></button>
         </div>
         <div class="col-12">
 
             <div class="card">
                 <div class="card-header">
-                    <h3 class="card-title">{{__('Categories Management')}}</h3>
+                    <h3 class="card-title">{{__('menu.Categories Management')}}</h3>
 
                     <div class="card-tools">
 
@@ -31,12 +31,12 @@
                         <thead>
                         <tr>
                             <th>#</th>
-                            <th>{{__('Slug')}}</th>
-                            <th>{{__('Name')}}</th>
-                            <th>{{__('Image')}}</th>
-                            <th>{{__('Created At')}}</th>
-                            <th>{{__('Updated At')}}</th>
-                            <th>{{__('Options')}}</th>
+                            <th>{{__('menu.Slug')}}</th>
+                            <th>{{__('menu.Name')}}</th>
+                            <th>{{__('menu.Image')}}</th>
+                            <th>{{__('menu.Created At')}}</th>
+                            <th>{{__('menu.Updated At')}}</th>
+                            <th>{{__('menu.Options')}}</th>
                         </tr>
                         </thead>
                         <tbody>

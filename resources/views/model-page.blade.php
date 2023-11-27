@@ -1,6 +1,10 @@
 @extends('layout-home')
 
 @section('content-home')
+
+    <body style="visibility: visible;" class="page page-model">
+
+    @include('header-site')
     <!-- start content -->
     <main>
         <div id="content">
@@ -10,8 +14,8 @@
                 <div class="container-xxl">
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="home">Home</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Profile</li>
+                            <li class="breadcrumb-item"><a href="home">{{__('menu.Home')}}</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">{{__('menu.Profile')}}</li>
                         </ol>
                     </nav>
                 </div>
@@ -69,6 +73,10 @@
                                     <a href="/composite2/{{$member->id}}" aria-label="Model Profile">
                                         <i class="icon-user-square"></i>
                                         <span>Profile</span>
+                                    </a>
+                                    <a href="/composite4/{{$member->id}}" aria-label="Model Profile">
+                                        <i class="icon-user-square"></i>
+                                        <span>PDF</span>
                                     </a>
                                 </div>
                             </div>
@@ -1864,4 +1872,5 @@ Voice
         </template>
     </div>
 
+    </body>
 @endsection

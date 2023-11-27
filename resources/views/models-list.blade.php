@@ -2,13 +2,16 @@
 
 @section('content-home')
 
+    <body style="visibility: visible;" class="page page-archive">
+
+    @include('header-site')
     <!-- start page breadcrumb -->
     <div class="page-breadcrumb">
         <div class="container-xxl">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="./home">Home</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Models</li>
+                    <li class="breadcrumb-item"><a href="./home">{{__('menu.Home')}}</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">{{__('menu.Models')}}</li>
                 </ol>
             </nav>
         </div>
@@ -155,7 +158,7 @@
                         <div class="col-6 col-md-4 col-lg-3 group-filter" data-group-name="Nationality"
                              data-group-id="nationality" data-status="label_filter_nationality">
                             <div class="field field-type-select multiple" data-type="select"
-                                 data-source="/api/country/"
+                                 data-source="/api/country"
                                  data-field-search="true">
                                 <div class="field-content">
                                     <label for="filter_nationality"
@@ -170,7 +173,7 @@
                         <div class="col-6 col-md-4 col-lg-3 group-filter" data-group-name="Language"
                              data-group-id="language" data-status="label_filter_language">
                             <div class="field field-type-select multiple" data-type="select"
-                                 data-source="/api/languages/"
+                                 data-source="/api/languages"
                                  data-field-search="true">
                                 <div class="field-content">
                                     <label for="filter_language" id="label_filter_language">Language</label>
@@ -423,4 +426,5 @@
     <script src="/storage/assets/js/component.js"></script>
     <script src="/storage/assets/js/scripts.js"></script>
 
+    </body>
 @endsection

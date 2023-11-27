@@ -1,6 +1,10 @@
 @extends('layout-home')
 
 @section('content-home')
+
+    <body style="visibility: visible;" class="page page-about-us">
+
+    @include('header-site')
     <!-- start content -->
     <main>
         <div id="content" itemscope itemtype="https://schema.org/AboutPage">
@@ -10,7 +14,7 @@
                 <div class="container-xxxl">
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="./home">Home</a></li>
+                            <li class="breadcrumb-item"><a href="./home">Home')}}</a></li>
                             <li class="breadcrumb-item active" aria-current="page">About Us</li>
                         </ol>
                     </nav>
@@ -60,37 +64,34 @@
                 <meta itemprop="serviceType" content="INTERNATIONAL MODEL AGENCY">
                 <meta itemprop="areaServed" content="INTERNATIONAL">
                 <div class="container-lg">
-                    <h6 itemprop="name">Our Services</h6>
+                    <h6 itemprop="name">{{__('menu.Our Services')}}</h6>
                     <div class="our-services" itemprop="hasOfferCatalog" itemscope
                          itemtype="https://schema.org/OfferCatalog">
                         <div class="card" itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer">
                             <i class="icon-woman"></i>
                             <div class="card-title" itemprop="itemOffered" itemscope
                                  itemtype="https://schema.org/Service">
-                                <span itemprop="name">Model</span>
+                                <span itemprop="name">{{__('menu.Model')}}</span>
                             </div>
-                            <div class="card-content">We provide the optimal model selection tailored to your specific
-                                requirements.
+                            <div class="card-content">{{__('menu.We provide the optimal model selection tailored to your specific requirements.')}}
                             </div>
                         </div>
                         <div class="card" itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer">
                             <i class="icon-creativity"></i>
                             <div class="card-title" itemprop="itemOffered" itemscope
                                  itemtype="https://schema.org/Service">
-                                <span itemprop="name">Talent</span>
+                                <span itemprop="name">{{__('menu.Talent')}}</span>
                             </div>
-                            <div class="card-content">Uniting events and exhibitions with the perfect talent to ensure a
-                                remarkable experience
+                            <div class="card-content">{{__('menu.Uniting events and exhibitions with the perfect talent to ensure a remarkable experience')}}
                             </div>
                         </div>
                         <div class="card" itemprop="itemListElement" itemscope itemtype="https://schema.org/Offer">
                             <i class="icon-actors"></i>
                             <div class="card-title" itemprop="itemOffered" itemscope
                                  itemtype="https://schema.org/Service">
-                                <span itemprop="name">Actor</span>
+                                <span itemprop="name">{{__('menu.Actor')}}</span>
                             </div>
-                            <div class="card-content">Delivering a myriad of actor types, ready to fulfill every
-                                performance requirement
+                            <div class="card-content">{{__('menu.Delivering a myriad of actor types, ready to fulfill every performance requirement')}}
                             </div>
                         </div>
                     </div>
@@ -117,4 +118,5 @@
         </div>
     </main>
 
+    </body>
 @endsection

@@ -1128,7 +1128,7 @@
                             <!-- other nationality -->
                             <div data-dependency=".have_other_nationality" data-dependency-value="yes">
                                 <div class="field field-type-select top-options"
-                                     data-source="/api/country/"
+                                     data-source="/api/country"
                                      data-field-defualt-text="Select Item" data-field-search="true" data-clear="true"
                                      data-required="true" data-btn-submit-text="Select" data-type="select">
                                     <div class="field-content">
@@ -1191,7 +1191,7 @@
                             <!-- father -->
                             <div data-dependency=".are_you_mixed" data-dependency-value="yes">
                                 <div class="field field-type-select top-options"
-                                     data-source="/api/country/"
+                                     data-source="/api/country"
                                      data-field-defualt-text="Select Item" data-field-search="true" data-clear="true"
                                      data-required="true" data-btn-submit-text="Select" data-type="select">
                                     <div class="field-content">
@@ -1209,7 +1209,7 @@
                             <!-- mother -->
                             <div data-dependency=".are_you_mixed" data-dependency-value="yes">
                                 <div class="field field-type-select top-options"
-                                     data-source="/api/country/"
+                                     data-source="/api/country"
                                      data-field-defualt-text="Select Item" data-field-search="true" data-clear="true"
                                      data-required="true" data-btn-submit-text="Select" data-type="select">
                                     <div class="field-content">
@@ -1826,7 +1826,7 @@
                         <div class="form-section-label">Language(s)</div>
                         <div class="form-section-content">
                             <div class="field field-type-select"
-                                 data-source="/api/languages/"
+                                 data-source="/api/languages"
                                  data-field-defualt-text="Select Item" data-btn-submit-text="Select"
                                  data-field-search="true"
                                  data-required="true" data-type="select">
@@ -1866,12 +1866,15 @@
                                                     <div class="field field-type-select field-language table-visible"
                                                          data-required="true" data-field-defualt-text="Select Item"
                                                          data-btn-submit-text="Select"
-                                                         data-source="/api/languages/"
+                                                         data-source="/api/languages"
                                                          data-field-search="true" data-type="select">
                                                         <div class="field-content">
                                                             <label for="more_language_lng">Language <span
                                                                     class="field-required-star">*</span></label>
-                                                            <select name="language" id="more_language_lng"></select>
+                                                            <select
+                                                                @if (isset($saved) && isset($saved['native_language']))
+                                                                    data-default-value="{{$saved['native_language']}}"
+                                                                @endif name="language" id="more_language_lng"></select>
                                                             <i class="icon-arrow-down"></i>
                                                         </div>
                                                     </div>
@@ -3117,7 +3120,7 @@
                             <div class="row gap-1">
                                 <div class="col col-country-code">
                                     <div class="field field-type-select"
-                                         data-source="/api/numcode/"
+                                         data-source="/api/numcode"
                                          data-btn-submit-text="Select"
                                          data-field-defualt-text="Select Item" data-field-search="true"
                                          data-required="true" data-type="select">
@@ -3152,7 +3155,7 @@
 
                             <!-- country -->
                             <div class="field field-type-select"
-                                 data-source="/api/country/" data-btn-submit-text="Select"
+                                 data-source="/api/country" data-btn-submit-text="Select"
                                  data-field-defualt-text="Select Item" data-field-search="true"
                                  data-required="true" data-type="select">
                                 <div class="field-content">

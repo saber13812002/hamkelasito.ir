@@ -12,8 +12,8 @@
                 <div class="container-xxl">
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="./home">Home</a></li>
-                            <li class="breadcrumb-item"><a href="./news-category">news</a></li>
+                            <li class="breadcrumb-item"><a href="./home">{{__('menu.Home')}}</a></li>
+                            <li class="breadcrumb-item"><a href="./news-category">{{__('menu.news')}}</a></li>
                             <li class="breadcrumb-item active" aria-current="page">Aline R News</li>
                         </ol>
                     </nav>
@@ -494,7 +494,7 @@
                         <a href="#" class="btn btn-full btn-icon-left btn-load-more" id="btn_load_more_result_news" data-page="1" data-query="aline-r">
                         <span>
                             <i class="icon-add"></i>
-                            10 More News
+                            10 {{__('menu.More News')}}
                         </span>
                         </a>
                     </div>

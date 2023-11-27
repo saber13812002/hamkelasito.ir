@@ -73,7 +73,7 @@
                                 <div class="white-box-title">Notifications</div>
                                 <div class="white-box-actions">
                                     <a href="/dashboard-models/notifications">
-                                        <span>See All</span>
+                                        <span>{{__('menu.See All')}}</span>
                                         <i class="icon-arrow-right"></i>
                                     </a>
                                 </div>

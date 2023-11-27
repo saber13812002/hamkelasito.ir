@@ -12,13 +12,13 @@
         <div class="col-md-12 mb-2">
 
             <button data-toggle="modal" data-target="#createSlider"
-                    class="btn btn-success float-right">{{__('Add Choice')}} <i class="fas fa-cogs"></i></button>
+                    class="btn btn-success float-right">{{__('menu.Add Choice')}} <i class="fas fa-cogs"></i></button>
         </div>
         <div class="col-12">
 
             <div class="card">
                 <div class="card-header">
-                    <h3 class="card-title">{{__('Choices Management')}}</h3>
+                    <h3 class="card-title">{{__('menu.Choices Management')}}</h3>
 
                     <div class="card-tools">
 
@@ -31,7 +31,7 @@
                         <thead>
                         <tr>
                             <th>#</th>
-                            <th>{{__('Id')}}</th>
+                            <th>{{__('menu.Id')}}</th>
                             <th>{{__('is_correct')}}</th>
                             <th>{{__('title')}}</th>
                             <th>{{__('description')}}</th>

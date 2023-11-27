@@ -693,7 +693,7 @@
                         <a href="#" class="btn btn-full btn-icon-left btn-load-more" id="btn_load_more_liliana_news" data-page="1">
                         <span>
                             <i class="icon-add"></i>
-                            10 More News
+                            10 {{__('menu.More News')}}
                         </span>
                         </a>
                     </div>
@@ -1217,7 +1217,7 @@
                         <a href="#" class="btn btn-full btn-icon-left btn-load-more" id="btn_load_more_member_news" data-page="1">
                         <span>
                             <i class="icon-add"></i>
-                            10 More News
+                            10 {{__('menu.More News')}}
                         </span>
                         </a>
                     </div>
