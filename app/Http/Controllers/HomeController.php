@@ -38,6 +38,7 @@ class HomeController
     {
         Log::info($request);
         $filter = [];
+        $filterBoxOpen = false;
         $global = 'all';
         $categoryId = null;
         if ($request->has('global')) {
@@ -45,6 +46,11 @@ class HomeController
         }
         if ($request->has('category_id')) {
             $categoryId = $request->get('category_id');
+        }
+        // TODO:
+        if ($request->has('filter_nationality')) {
+
+//            $categoryId = $request->get('category_id');
         }
         $membersBuilder = Member::query()->published();
         if (!$global == 'all' || !$categoryId == null) {
@@ -62,15 +68,11 @@ class HomeController
         }
         if ($request->has('s')) {
             $filterName = $request->get('s');
-            $filterNameQuery = '%' . $filterName . '%';
-            $membersBuilder->where('name', 'like', $filterNameQuery)
-                ->orWhere('family', 'like', $filterNameQuery)
-                ->orWhere('middle_name', 'like', $filterNameQuery)
-                ->orWhere('alias', 'like', $filterNameQuery)
-                ->orWhere('first_name_furigana', 'like', $filterNameQuery)
-                ->orWhere('last_name_furigana', 'like', $filterNameQuery)
-                ->orWhere('stage_name', 'like', $filterNameQuery);
+
+            $membersBuilder->name($filterName);
+
             $filter['name'] = $filterName;
+            $filterBoxOpen = true;
         }
 
         if ($global != 'all') {
@@ -81,7 +83,7 @@ class HomeController
 
         $categories = Category::all();
 
-        return view('models-list', compact('members', 'categories', 'filter'));
+        return view('models-list', compact('members', 'categories', 'filter', 'global', 'filterBoxOpen'));
 
     }
 

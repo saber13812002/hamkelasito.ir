@@ -35,7 +35,7 @@
                     <div class="col-12">
                         <div class="white-box">
                             <div class="white-box-header">
-                                <div class="white-box-title">Skills & Experiences</div>
+                                <div class="white-box-title">{{__('menu.Skills & Experiences')}}</div>
                             </div>
                             <div class="white-box-content">
 
@@ -48,7 +48,7 @@
                                              data-field-defualt-text="Select Item" data-btn-submit-text="Select" data-field-search="true"
                                              data-required="true" data-type="select">
                                             <div class="field-content">
-                                                <label for="native_language">Native Language <span class="field-required-star">*</span></label>
+                                                <label for="native_language">{{__('menu.Native Language')}} <span class="field-required-star">*</span></label>
                                                 <select name="native_language" id="native_language" data-value="en" data-default-value="en"></select>
                                                 <i class="icon-arrow-down"></i>
                                             </div>
@@ -56,7 +56,7 @@
                                         <div class="field-error-msg" id="field_error_native_language"></div>
                                         <div class="table-repeater" data-name="Other Languages" data-unique="language" data-unique-message="The chosen language is already selected. Please choose a different language or edit the current selection">
                                             <input type="hidden" name="other_language" class="table-repeater-input" value='[{"language":{"type":"select","input":"en","text":"English"},"level":{"type":"select","input":"begginer","text":"Begginer"}},{"language":{"type":"select","input":"ja","text":"Japanese"},"level":{"type":"select","input":"native","text":"Native"}}]'>
-                                            <div class="repeater-label">Other Languages</div>
+                                            <div class="repeater-label">{{__('menu.Other Languages')}}</div>
                                             <div class="repeater-table">
                                                 <table>
                                                     <thead></thead>

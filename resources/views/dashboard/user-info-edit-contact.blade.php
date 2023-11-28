@@ -15,7 +15,7 @@
                     <div class="col-12">
                         <div class="white-box">
                             <div class="white-box-header">
-                                <div class="white-box-title">Contact Info</div>
+                                <div class="white-box-title">{{__('menu.Contact Info')}}</div>
                             </div>
                             <div class="white-box-content">
 

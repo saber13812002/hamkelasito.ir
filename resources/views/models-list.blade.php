@@ -34,22 +34,38 @@
         <div class="container-xxl">
             <ul>
                 <li>
-                    <a href="./models-list?global=all" class="active">
+                    <a href="./models-list?global=all"
+                       @if (isset($global) && $global == 'all')
+                           class="active"
+                        @endif
+                    >
                         All
                     </a>
                 </li>
                 <li>
-                    <a href="./models-list?global=japanese">
+                    <a href="./models-list?global=japanese"
+                       @if (isset($global) && $global == 'japanese')
+                           class="active"
+                        @endif
+                    >
                         Japanese
                     </a>
                 </li>
                 <li>
-                    <a href="./models-list?global=mixed">
+                    <a href="./models-list?global=mixed"
+                       @if (isset($global) && $global == 'mixed')
+                           class="active"
+                        @endif
+                    >
                         Mixed
                     </a>
                 </li>
                 <li>
-                    <a href="./models-list?global=international">
+                    <a href="./models-list?global=international"
+                       @if (isset($global) && $global == 'international')
+                           class="active"
+                        @endif
+                    >
                         International
                     </a>
                 </li>
@@ -62,7 +78,10 @@
         <div class="container-xxl">
             <div class="section-filter-actions">
                 <div class="filter-actions-wrapper">
-                    <button type="button" id="btn_filter_professional">
+                    <button type="button" id="btn_filter_professional"
+                            @if (isset($filterBoxOpen) && $filterBoxOpen)
+                                class="opened"
+                        @endif>
                         <i class="icon-filter"></i>
                         <span>Filters</span>
                         <i class="icon-arrow-down"></i>
@@ -83,7 +102,10 @@
                     </div>
                 </div>
             </div>
-            <div class="filter-box">
+            <div class="filter-box"
+                 @if (isset($filterBoxOpen) && $filterBoxOpen)
+                     style="display: block"
+                @endif >
                 <div class="filter-box-content">
                     <div class="row">
 
@@ -353,62 +375,7 @@
 
     <!-- start section models -->
     <section class="section section-models">
-        <div class="container-xxl">
-            <div class="grid-photo" id="models_archive_page">
-                @foreach($members as $member)
-                    <div class="grid-item">
-                        <article class="model-card" itemscope
-                                 itemtype="https://schema.org/Person">
-                            <a href="./model-page?id={{ $member->id }}" itemprop="url">
-                                <meta itemprop="image"
-                                      content="/storage/assets/img/3x4/{{ $member->profile_image}}.webp">
-                                <img src="/storage/assets/img/lazy-3x4.webp" class="lazy"
-                                     data-src="/storage/assets/img/3x4/{{ $member->profile_image}}.webp"
-                                     width="200" height="260" alt="model">
-                                <noscript>
-                                    <img src="/storage/assets/img/3x4/{{ $member->profile_image}}.webp"
-                                         width="200" height="260"
-                                         alt="model">
-                                </noscript>
-                                @if($member->isNew)
-                                    <div class="card-metas">
-                                        <span class="meta-item">NEW FACE</span>
-                                    </div>
-                                @endif
-                                <div class="card-content">
-                                    <div class="card-inner-content">
-                                        <h2 class="card-primary-title" itemprop="name">{{ $member->name}}</h2>
-                                        <div class="card-content-item"
-                                             itemprop="nationality">{{ $member->nationality}}</div>
-                                        <div class="card-content-item">{{ $member->town}}</div>
-                                        <div class="card-content-item">{{ $member->height}} / {{ $member->bust}}
-                                            / {{ $member->waist}} / {{ $member->hips}} / {{ $member->age}}</div>
-                                        <div class="card-content-item">{{ $member->model_categories}}</div>
-                                    </div>
-                                    <div class="card-action">
-                                        <div class="btn btn-icon btn-add-model-to-bookmark">
-                                            <i class="icon-archive-add"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </article>
-                    </div>
-                @endforeach
-
-                @if($members->count()>9)
-                    <div class="end-actions">
-                        <button class="btn btn-icon-left load-more" id="btn_load_more_models_archive_page"
-                                data-page="2">
-                                <span>
-                                    <i class="icon-add"></i>
-                                    Load More
-                                </span>
-                        </button>
-                    </div>
-                @endif
-            </div>
-        </div>
+        @include('layouts.single-pages.models-list-section',compact('members'))
     </section>
 
     </div>

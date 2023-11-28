@@ -1,4 +1,3 @@
-
 <!-- comments -->
 <div class="post-comment">
     <div class="post-comment-form">
@@ -31,7 +30,8 @@
             <!-- comment -->
             <div class="row">
                 <div class="col">
-                    <div class="field field-type-text-area" data-required="true" data-type="textarea" data-max-length="1000">
+                    <div class="field field-type-text-area" data-required="true" data-type="textarea"
+                         data-max-length="1000">
                         <div class="field-content">
                             <label for="comment_text">Comment <span class="field-required-star">*</span></label>
                             <textarea name="comment_text" id="comment_text" rows="5"></textarea>
@@ -65,7 +65,8 @@
                         <div class="post-comment-meta">
                                                     <span>
                                                         <i class="icon-clock"></i>
-                                                        <time class="woocommerce-review__published-date" datetime="2022-08-18T13:01:14+00:00">August 18, 2022</time>
+                                                        <time class="woocommerce-review__published-date"
+                                                              datetime="2022-08-18T13:01:14+00:00">August 18, 2022</time>
                                                     </span>
                             <a href="#" class="post-comment-replay">replay</a>
                         </div>
@@ -90,7 +91,8 @@
                                 <div class="post-comment-meta">
                                                             <span>
                                                                 <i class="icon-clock"></i>
-                                                                <time class="woocommerce-review__published-date" datetime="2022-08-18T13:01:14+00:00">August 18, 2022</time>
+                                                                <time class="woocommerce-review__published-date"
+                                                                      datetime="2022-08-18T13:01:14+00:00">August 18, 2022</time>
                                                             </span>
                                     <a href="#" class="post-comment-replay">replay</a>
                                 </div>
@@ -115,7 +117,8 @@
                                 <div class="post-comment-meta">
                                                             <span>
                                                                 <i class="icon-clock"></i>
-                                                                <time class="woocommerce-review__published-date" datetime="2022-08-18T13:01:14+00:00">August 18, 2022</time>
+                                                                <time class="woocommerce-review__published-date"
+                                                                      datetime="2022-08-18T13:01:14+00:00">August 18, 2022</time>
                                                             </span>
                                     <a href="#" class="post-comment-replay">replay</a>
                                 </div>
@@ -142,7 +145,8 @@
                         <div class="post-comment-meta">
                                                     <span>
                                                         <i class="icon-clock"></i>
-                                                        <time class="woocommerce-review__published-date" datetime="2022-08-18T13:01:14+00:00">August 18, 2022</time>
+                                                        <time class="woocommerce-review__published-date"
+                                                              datetime="2022-08-18T13:01:14+00:00">August 18, 2022</time>
                                                     </span>
                             <a href="#" class="post-comment-replay">replay</a>
                         </div>
@@ -167,7 +171,8 @@
                         <div class="post-comment-meta">
                                                     <span>
                                                         <i class="icon-clock"></i>
-                                                        <time class="woocommerce-review__published-date" datetime="2022-08-18T13:01:14+00:00">August 18, 2022</time>
+                                                        <time class="woocommerce-review__published-date"
+                                                              datetime="2022-08-18T13:01:14+00:00">August 18, 2022</time>
                                                     </span>
                             <a href="#" class="post-comment-replay">replay</a>
                         </div>

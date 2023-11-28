@@ -39,7 +39,7 @@
                                     </div>
                                     <div class="step-label">
                                         <span>Step 1:</span>
-                                        Basic Info
+                                        {{__('menu.Basic Info')}}
                                     </div>
                                 </div>
                                 <div data-step="2" class="step-item checked">
@@ -49,7 +49,7 @@
                                     </div>
                                     <div class="step-label">
                                         <span>Step 2:</span>
-                                        Physical Info
+                                        {{__('menu.Physical Info')}}
                                     </div>
                                 </div>
                                 <div data-step="3" class="step-item checked">
@@ -59,7 +59,7 @@
                                     </div>
                                     <div class="step-label">
                                         <span>Step 3:</span>
-                                        Skills & Experiences
+                                        {{__('menu.Skills & Experiences')}}
                                     </div>
                                 </div>
                                 <div data-step="4" class="step-item checked">
@@ -69,7 +69,7 @@
                                     </div>
                                     <div class="step-label">
                                         <span>Step 4:</span>
-                                        Media
+                                        {{__('menu.Media')}}
                                     </div>
                                 </div>
                                 <div data-step="5" class="step-item checked">
@@ -79,7 +79,7 @@
                                     </div>
                                     <div class="step-label">
                                         <span>Step 5:</span>
-                                        Contact Info
+                                        {{__('menu.Contact Info')}}
                                     </div>
                                 </div>
                                 <div data-step="6" class="step-item active">
@@ -89,7 +89,7 @@
                                     </div>
                                     <div class="step-label">
                                         <span>Step 6:</span>
-                                        Authentication
+                                        {{__('menu.Authentication')}}
                                     </div>
                                 </div>
                             </div>
@@ -111,11 +111,26 @@
                                                 <div class="field-content">
                                                     <label for="authentication_type">Type of Authentication <span class="field-required-star">*</span></label>
                                                     <select name="authentication_type" id="authentication_type">
-                                                        <option value="passport">Passport</option>
-                                                        <option value="drive_license">Driver's License</option>
-                                                        <option value="insurance_card">Insurance Card</option>
-                                                        <option value="my_number_card">My Number Card</option>
-                                                        <option value="residence_card">Residence Card</option>
+                                                        <option
+                                                            @if (isset($saved) && isset($saved['authentication_type']) && str_contains($saved['authentication_type'],"passport"))
+                                                                {{"selected"}}
+                                                            @endif value="passport">Passport</option>
+                                                        <option
+                                                            @if (isset($saved) && isset($saved['authentication_type']) && str_contains($saved['authentication_type'],"drive_license"))
+                                                                {{"selected"}}
+                                                            @endif value="drive_license">Driver's License</option>
+                                                        <option
+                                                            @if (isset($saved) && isset($saved['authentication_type']) && str_contains($saved['authentication_type'],"insurance_card"))
+                                                                {{"selected"}}
+                                                            @endif value="insurance_card">Insurance Card</option>
+                                                        <option
+                                                            @if (isset($saved) && isset($saved['authentication_type']) && str_contains($saved['authentication_type'],"my_number_card"))
+                                                                {{"selected"}}
+                                                            @endif value="my_number_card">My Number Card</option>
+                                                        <option
+                                                            @if (isset($saved) && isset($saved['authentication_type']) && str_contains($saved['authentication_type'],"residence_card"))
+                                                                {{"selected"}}
+                                                            @endif value="residence_card">Residence Card</option>
                                                     </select>
                                                     <i class="icon-arrow-down"></i>
                                                 </div>
@@ -138,7 +153,11 @@
                                         <div class="form-section-content">
                                             <div>
                                                 <div class="field field-type-upload" data-type="upload" data-required="true">
-                                                    <div class="upload-drop-zone" data-limit-count="1" data-limit-size="10" data-accept=".png,.jpg">
+                                                    <div class="upload-drop-zone"
+                                                         @if (isset($saved_file) && isset($saved_file['passport_photo']))
+                                                             data-default="{{$saved_file['passport_photo']}}"
+                                                         @endif
+                                                         data-limit-count="1" data-limit-size="10" data-accept=".png,.jpg">
                                                         <input type="hidden" class="input-drop-zone" name="passport_photo" id="passport_photo">
                                                         <label>Photo of Passport</label>
                                                         <i class="icon-upload"></i>

@@ -60,7 +60,7 @@
                         <div class="white-box expand-event active">
                             <div class="white-box-header">
                                 <div class="white-box-title">
-                                    Basic Info
+                                    {{__('menu.Basic Info')}}
                                     <div class="mini-circle-progress" data-num="30" data-value="0%"></div>
                                 </div>
                                 <div class="white-box-actions">
@@ -243,7 +243,7 @@
                         <div class="white-box expand-event">
                             <div class="white-box-header">
                                 <div class="white-box-title">
-                                    Physical Info
+                                    {{__('menu.Physical Info')}}
                                     <div class="mini-circle-progress" data-num="60" data-value="0%"></div>
                                 </div>
                                 <div class="white-box-actions">
@@ -462,7 +462,7 @@
                         <div class="white-box expand-event">
                             <div class="white-box-header">
                                 <div class="white-box-title">
-                                    Skills & Experiences
+                                    {{__('menu.Skills & Experiences')}}
                                     <div class="mini-circle-progress" data-num="15" data-value="0%"></div>
                                 </div>
                                 <div class="white-box-actions">
@@ -476,7 +476,7 @@
                                     <div class="table-row">
                                         <div class="table-col col-full-width">
                                             <div class="check-item">
-                                                <div class="check-label">Native Language:</div>
+                                                <div class="check-label">{{__('menu.Native Language')}}:</div>
                                                 <div class="check-value">
                                                     English
                                                 </div>
@@ -484,7 +484,7 @@
                                         </div>
                                     </div>
                                     <div class="live-table-repeater">
-                                        <div class="repeater-label">Other Languages</div>
+                                        <div class="repeater-label">{{__('menu.Other Languages')}}</div>
                                         <div class="repeater-table">
                                             <table>
                                                 <thead>
@@ -666,7 +666,7 @@
                         <div class="white-box no-body">
                             <div class="white-box-header">
                                 <div class="white-box-title">
-                                    Media
+                                    {{__('menu.Media')}}
                                     <div class="mini-circle-progress" data-num="86" data-value="0%"></div>
                                 </div>
                                 <div class="white-box-actions">
@@ -691,7 +691,7 @@
                         <div class="white-box expand-event">
                             <div class="white-box-header">
                                 <div class="white-box-title">
-                                    Contact Info
+                                    {{__('menu.Contact Info')}}
                                     <div class="mini-circle-progress" data-num="50" data-value="0%"></div>
                                 </div>
                                 <div class="white-box-actions">

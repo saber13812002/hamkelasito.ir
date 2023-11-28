@@ -39,7 +39,7 @@
                                     </div>
                                     <div class="step-label">
                                         <span>Step 1:</span>
-                                        Basic Info
+                                        {{__('menu.Basic Info')}}
                                     </div>
                                 </div>
                                 <div data-step="2" class="step-item checked">
@@ -49,7 +49,7 @@
                                     </div>
                                     <div class="step-label">
                                         <span>Step 2:</span>
-                                        Physical Info
+                                        {{__('menu.Physical Info')}}
                                     </div>
                                 </div>
                                 <div data-step="3" class="step-item checked">
@@ -59,7 +59,7 @@
                                     </div>
                                     <div class="step-label">
                                         <span>Step 3:</span>
-                                        Skills & Experiences
+                                        {{__('menu.Skills & Experiences')}}
                                     </div>
                                 </div>
                                 <div data-step="4" class="step-item checked">
@@ -69,7 +69,7 @@
                                     </div>
                                     <div class="step-label">
                                         <span>Step 4:</span>
-                                        Media
+                                        {{__('menu.Media')}}
                                     </div>
                                 </div>
                                 <div data-step="5" class="step-item active">
@@ -79,7 +79,7 @@
                                     </div>
                                     <div class="step-label">
                                         <span>Step 5:</span>
-                                        Contact Info
+                                        {{__('menu.Contact Info')}}
                                     </div>
                                 </div>
                                 <div data-step="6" class="step-item">
@@ -89,7 +89,7 @@
                                     </div>
                                     <div class="step-label">
                                         <span>Step 6:</span>
-                                        Authentication
+                                        {{__('menu.Authentication')}}
                                     </div>
                                 </div>
                             </div>
@@ -111,19 +111,32 @@
                                                          data-field-defualt-text="Select Item" data-field-search="true"
                                                          data-required="true" data-type="select">
                                                         <div class="field-content">
-                                                            <label for="country_code">Country <span class="field-required-star">*</span></label>
-                                                            <select name="country_code" id="country_code" data-value="JPN" data-default-value="JPN"></select>
+                                                            <label for="country_code">Country <span
+                                                                    class="field-required-star">*</span></label>
+                                                            <select name="country_code" id="country_code"
+                                                                    @if (isset($saved) && isset($saved['country_code']))
+                                                                        data-value="{{$saved['country_code']}}"
+                                                                    data-default-value="{{$saved['country_code']}}"
+                                                                    @else
+                                                                        data-value="JPN" data-default-value="JPN"
+                                                                @endif
+                                                            ></select>
                                                             <i class="icon-arrow-down"></i>
                                                         </div>
                                                     </div>
                                                     <div class="field-error-msg" id="field_error_country_code"></div>
                                                 </div>
                                                 <div class="col">
-                                                    <div class="field field-type-nr-input" data-type="number" data-required="true"
+                                                    <div class="field field-type-nr-input" data-type="number"
+                                                         data-required="true"
                                                          data-required-type="mobile">
                                                         <div class="field-content">
-                                                            <label for="mobile_number">Mobile Number <span class="field-required-star">*</span></label>
-                                                            <input type="tel" name="mobile_number" id="mobile_number">
+                                                            <label for="mobile_number">Mobile Number <span
+                                                                    class="field-required-star">*</span></label>
+                                                            <input type="tel" name="mobile_number" id="mobile_number"
+                                                                   @if (isset($saved) && isset($saved['mobile_number']))
+                                                                       value="{{$saved['mobile_number']}}"
+                                                                @endif >
                                                         </div>
                                                     </div>
                                                     <div class="field-error-msg" id="field_error_mobile_number"></div>
@@ -143,19 +156,34 @@
                                                  data-field-defualt-text="Select Item" data-field-search="true"
                                                  data-required="true" data-type="select">
                                                 <div class="field-content">
-                                                    <label for="country">Country <span class="field-required-star">*</span></label>
-                                                    <select name="country" id="country" data-value="Japan" data-default-value="Japan"></select>
+                                                    <label for="country">Country <span
+                                                            class="field-required-star">*</span></label>
+                                                    <select name="country" id="country"
+
+                                                            @if (isset($saved) && isset($saved['country']))
+                                                                data-value="{{$saved['country']}}"
+                                                            data-default-value="{{$saved['country']}}"
+                                                            @else
+                                                                data-value="Japan"
+                                                            data-default-value="Japan"
+                                                        @endif
+                                                    ></select>
                                                     <i class="icon-arrow-down"></i>
                                                 </div>
                                             </div>
                                             <div class="field-error-msg" id="field_error_country"></div>
 
                                             <!-- zipcode -->
-                                            <div class="field field-type-nr-input" data-type="number" data-required="true"
+                                            <div class="field field-type-nr-input" data-type="number"
+                                                 data-required="true"
                                                  data-required-type="zipcode">
                                                 <div class="field-content">
-                                                    <label for="zipcode">Zip Code <span class="field-required-star">*</span></label>
-                                                    <input type="number" name="zipcode" id="zipcode">
+                                                    <label for="zipcode">Zip Code <span
+                                                            class="field-required-star">*</span></label>
+                                                    <input type="number" name="zipcode" id="zipcode"
+                                                           @if (isset($saved) && isset($saved['zipcode']))
+                                                               value="{{$saved['zipcode']}}"
+                                                        @endif >
                                                 </div>
                                             </div>
                                             <div class="field-error-msg" id="field_error_zipcode"></div>
@@ -163,22 +191,38 @@
                                             <!-- state and city -->
                                             <div class="row gap-1">
                                                 <div class="col-6">
-                                                    <div class="field field-type-select" data-field-defualt-text="Select Item" data-btn-submit-text="Select" data-field-search="true"
+                                                    <div class="field field-type-select"
+                                                         data-field-defualt-text="Select Item"
+                                                         data-btn-submit-text="Select"
+                                                         data-field-search="true"
                                                          data-required="true" data-type="select">
                                                         <div class="field-content">
-                                                            <label for="state">State <span class="field-required-star">*</span></label>
-                                                            <select name="state" id="state"></select>
+                                                            <label for="state">State <span
+                                                                    class="field-required-star">*</span></label>
+                                                            <select name="state" id="state"
+                                                                    @if (isset($saved) && isset($saved['state']))
+                                                                        data-value="{{$saved['state']}}"
+                                                                    data-default-value="{{$saved['state']}}"
+                                                                @endif ></select>
                                                             <i class="icon-arrow-down"></i>
                                                         </div>
                                                     </div>
                                                     <div class="field-error-msg" id="field_error_state"></div>
                                                 </div>
                                                 <div class="col-6">
-                                                    <div class="field field-type-select" data-field-defualt-text="Select Item" data-btn-submit-text="Select" data-field-search="true"
+                                                    <div class="field field-type-select"
+                                                         data-field-defualt-text="Select Item"
+                                                         data-btn-submit-text="Select"
+                                                         data-field-search="true"
                                                          data-required="true" data-type="select">
                                                         <div class="field-content">
-                                                            <label for="city">City <span class="field-required-star">*</span></label>
-                                                            <select name="city" id="city"></select>
+                                                            <label for="city">City <span
+                                                                    class="field-required-star">*</span></label>
+                                                            <select name="city" id="city"
+                                                                    @if (isset($saved) && isset($saved['city']))
+                                                                        data-value="{{$saved['city']}}"
+                                                                    data-default-value="{{$saved['city']}}"
+                                                                @endif ></select>
                                                             <i class="icon-arrow-down"></i>
                                                         </div>
                                                     </div>
@@ -187,28 +231,43 @@
                                             </div>
 
                                             <!-- area -->
-                                            <div class="field field-type-nr-input" data-type="text" data-required="true">
+                                            <div class="field field-type-nr-input" data-type="text"
+                                                 data-required="true">
                                                 <div class="field-content">
-                                                    <label for="area">Area <span class="field-required-star">*</span></label>
-                                                    <input type="text" name="area" id="area">
+                                                    <label for="area">Area <span
+                                                            class="field-required-star">*</span></label>
+                                                    <input type="text" name="area" id="area"
+                                                           @if (isset($saved) && isset($saved['area']))
+                                                               value="{{$saved['area']}}"
+                                                        @endif >
                                                 </div>
                                             </div>
                                             <div class="field-error-msg" id="field_error_area"></div>
 
                                             <!-- address -->
-                                            <div class="field field-type-nr-input" data-type="text" data-required="true">
+                                            <div class="field field-type-nr-input" data-type="text"
+                                                 data-required="true">
                                                 <div class="field-content">
-                                                    <label for="address">Address <span class="field-required-star">*</span></label>
-                                                    <input type="text" name="address" id="address">
+                                                    <label for="address">Address <span
+                                                            class="field-required-star">*</span></label>
+                                                    <input type="text" name="address" id="address"
+                                                           @if (isset($saved) && isset($saved['address']))
+                                                               value="{{$saved['address']}}"
+                                                        @endif >
                                                 </div>
                                             </div>
                                             <div class="field-error-msg" id="field_error_address"></div>
 
                                             <!-- apartment -->
-                                            <div class="field field-type-nr-input" data-type="text" data-required="true">
+                                            <div class="field field-type-nr-input" data-type="text"
+                                                 data-required="true">
                                                 <div class="field-content">
-                                                    <label for="address_2">Apartment,Suite,etc. Name & Number <span class="field-required-star">*</span></label>
-                                                    <input type="text" name="address_2" id="address_2">
+                                                    <label for="address_2">Apartment,Suite,etc. Name & Number <span
+                                                            class="field-required-star">*</span></label>
+                                                    <input type="text" name="address_2" id="address_2"
+                                                           @if (isset($saved) && isset($saved['address_2']))
+                                                               value="{{$saved['address_2']}}"
+                                                        @endif >
                                                 </div>
                                             </div>
                                             <div class="field-error-msg" id="field_error_address_2"></div>
@@ -248,6 +307,5 @@
 
         </div>
     </main>
-
 
 @endsection

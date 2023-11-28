@@ -128,7 +128,7 @@
                                                  data-field-search="true"
                                                  data-required="true" data-type="select">
                                                 <div class="field-content">
-                                                    <label for="native_language">{{__('menu.Native Language')}} <span
+                                                    <label for="native_language">{{__('menu.Native Language')}}<span
                                                             class="field-required-star">*</span></label>
                                                     <select
                                                         @if (isset($saved) && isset($saved['native_language']))
@@ -194,16 +194,16 @@
                                                                                  <span class="field-required-star">*</span></label>
                                                                             <select name="level"
                                                                                     id="more_language_level">
-                                                                                <option value="Native">{{__('menu.Native')}}</option>
-                                                                                <option value="Fluent">{{__('menu.Fluent')}}</option>
-                                                                                <option value="Advanced">{{__('menu.Advanced')}}
+                                                                                <option value="Native">Native</option>
+                                                                                <option value="Fluent">Fluent</option>
+                                                                                <option value="Advanced">Advanced
                                                                                 </option>
                                                                                 <option value="Intermediate">
-                                                                                    {{__('menu.Intermediate')}}
+                                                                                    Intermediate
                                                                                 </option>
-                                                                                <option value="Beginner">{{__('menu.Beginner')}}
+                                                                                <option value="Beginner">Beginner
                                                                                 </option>
-                                                                                <option value="A Few Words">{{__('menu.A Few Words')}}
+                                                                                <option value="A Few Words">A Few Words
 
                                                                                 </option>
                                                                             </select>
@@ -231,7 +231,7 @@
                                                             class="field-required-star">*</span></label>
                                                     <textarea name="biography" id="biography"
                                                               rows="5">@if (isset($saved_text) && isset($saved_text['biography']))
-                                                            "{{$saved_text['biography']}}"
+                                                            {{$saved_text['biography']}}
                                                         @endif
                                                     </textarea>
                                                 </div>
