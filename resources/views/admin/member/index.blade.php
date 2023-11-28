@@ -37,7 +37,7 @@
                             <th>{{__('menu.Alias')}}</th>
                             <th>{{__('menu.Town')}}</th>
                             <th>{{__('menu.Type')}}</th>
-                            <th>{{__('menu.Model Cat.')}}</th>
+                            <th>{{__('menu.Model Cat')}}.</th>
                             <th>{{__('menu.Age')}}</th>
                             <th>{{__('menu.Height')}}</th>
                             <th>{{__('menu.Bust')}}</th>

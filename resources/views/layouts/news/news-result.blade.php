@@ -13,7 +13,7 @@
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="./home">{{__('menu.Home')}}</a></li>
-                            <li class="breadcrumb-item"><a href="./news-category">{{__('menu.news')}}</a></li>
+                            <li class="breadcrumb-item"><a href="./news-category">{{__('menu.News')}}</a></li>
                             <li class="breadcrumb-item active" aria-current="page">Aline R News</li>
                         </ol>
                     </nav>
