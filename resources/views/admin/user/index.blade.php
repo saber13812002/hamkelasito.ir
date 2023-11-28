@@ -1,9 +1,9 @@
-@extends('adminlte::page')
+@extends('MetronicView::layouts.master')
 
-@section('title', 'Dashboard')
+@section('title', 'Users')
 
 @section('content_header')
-    <h1>Dashboard</h1>
+    <h1>Users</h1>
 @stop
 
 @section('content')
@@ -83,3 +83,4 @@
 @section('js')
     <script> console.log('Hi!'); </script>
 @stop
+
