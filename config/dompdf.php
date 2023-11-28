@@ -222,6 +222,7 @@ return array(
          * @var int
          */
         "dpi" => 96,
+//        "debugCss" => true,
 
         /**
          * Enable inline PHP
@@ -269,7 +270,7 @@ return array(
         /**
          * A ratio applied to the fonts height to be more like browsers' line height
          */
-        "font_height_ratio" => 1.1,
+        "font_height_ratio" => 1,
 
         /**
          * Use the HTML5 Lib parser
