@@ -14,8 +14,8 @@
                 <div class="container-xxl">
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="home">Home</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Profile</li>
+                            <li class="breadcrumb-item"><a href="home">{{__('menu.Home')}}</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">{{__('menu.Profile')}}</li>
                         </ol>
                     </nav>
                 </div>

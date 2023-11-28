@@ -104,7 +104,7 @@
                             <th>{{__('menu.Member Name')}}</th>
                             <th>{{__('menu.Fields Count')}}</th>
                             <th>{{__('menu.Date')}}</th>
-                            <th>{{__('Options')}}</th>
+                            <th>{{__('menu.Options')}}</th>
                         </tr>
                         </thead>
                         <tbody>

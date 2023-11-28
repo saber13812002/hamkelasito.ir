@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="/storage/assets/css/icon-style.min.css">
     <link rel="icon" type="image/png" sizes="48x48" href="/storage/assets/img/favicon.ico">
     <link rel="stylesheet" href="/storage/assets/css/owl.carousel.min.css">
+
     <!-- end styles -->
 </head>
 
