@@ -30,6 +30,7 @@
 @include('footer-site')
 
 <!-- start scripts -->
+<script src="/storage/assets/js/env.js"></script>
 <script src="/storage/assets/js/lib/jQuery.min.js"></script>
 <script src="/storage/assets/js/lib/lazyload.min.js"></script>
 <script src="/storage/assets/js/lib/swiper-bundle.js"></script>

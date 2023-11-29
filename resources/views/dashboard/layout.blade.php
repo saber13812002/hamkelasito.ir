@@ -12,6 +12,7 @@
     <!-- styles -->
     <link rel="stylesheet" href="/storage/assets/css/dashboard/dashboard-style.css">
     <link rel="stylesheet" href="/storage/assets/css/icon-style.min.css">
+    <link rel="stylesheet" href="/storage/assets/css/cropper.min.css">
     <link rel="icon" type="image/png" sizes="48x48" href="/storage/assets/img/favicon.ico">
 </head>
 
@@ -28,10 +29,11 @@
 </div>
 
 <!-- scripts -->
+<script src="/storage/assets/js/env.js"></script>
 <script src="/storage/assets/js/lib/jQuery.min.js"></script>
 <script src="/storage/assets/js/lib/lazyload.min.js"></script>
-<script src="/storage/assets/js/lib/cropper.js"></script>
-<script src="/storage/assets/js/lib/jquery-cropper.js"></script>
+<script src="/storage/assets/js/lib/cropper.min.js"></script>
+<script src="/storage/assets/js/lib/jquery-cropper.min.js"></script>
 <script src="/storage/assets/js/popup.js"></script>
 <script src="/storage/assets/js/modal-side.js"></script>
 <script src="/storage/assets/js/photo-selector.js"></script>
