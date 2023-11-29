@@ -19,6 +19,8 @@
     <link href="{{ metronic_assets() }}/plugins/global/plugins.bundle.css" rel="stylesheet" type="text/css"/>
     <link href="{{ metronic_assets() }}/css/style.bundle.css" rel="stylesheet" type="text/css"/>
     <!--end::Global Stylesheets Bundle-->
+    @yield('js')
+
 </head>
 <!--end::Head-->
 <!--begin::Body-->
@@ -96,6 +98,7 @@
 <script src="{{ metronic_assets() }}/js/custom/modals/create-app.js"></script>
 <script src="{{ metronic_assets() }}/js/custom/modals/upgrade-plan.js"></script>
 <!--end::Page Custom Javascript-->
+@yield('js')
 <!--end::Javascript-->
 </body>
 <!--end::Body-->
