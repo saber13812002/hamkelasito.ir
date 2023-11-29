@@ -9,8 +9,7 @@
 @section('content')
 
     <div class="row">
-        <div class="col-md-12 mb-2">
-
+        <div class="col-md-12 mb-2" style="text-align: right !important;">
             <button data-toggle="modal" data-target="#createCategory"
                     class="btn btn-success float-right">{{__('Add User')}} <i class="fas fa-cogs"></i></button>
         </div>
@@ -77,7 +76,7 @@
                                                 <!--end::Svg Icon-->
                                             </a>
                                             <a href="#"
-                                               class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1">
+                                               class="btn btn-icon btn-bg-light btn-active-color-success btn-sm me-1">
                                                 <!--begin::Svg Icon | path: icons/duotune/art/art005.svg-->
                                                 <span class="svg-icon svg-icon-3">
 																		<svg xmlns="http://www.w3.org/2000/svg"
@@ -94,7 +93,7 @@
                                                 <!--end::Svg Icon-->
                                             </a>
                                             <a href="#"
-                                               class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm">
+                                               class="btn btn-icon btn-bg-light btn-active-color-danger btn-sm">
                                                 <!--begin::Svg Icon | path: icons/duotune/general/gen027.svg-->
                                                 <span class="svg-icon svg-icon-3">
 																		<svg xmlns="http://www.w3.org/2000/svg"
