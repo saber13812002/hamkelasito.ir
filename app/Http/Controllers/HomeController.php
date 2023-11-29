@@ -180,8 +180,26 @@ class HomeController
 //            dd($images);
             $pdf = PDF::loadView('pdf.composite2', compact('member', 'url', 'images'));
             return $pdf->setPaper('a4', 'landscape')->download('composite_' . $id . '.pdf');
-        } else
-            return redirect('home');
+        }
+        return redirect('home');
+    }
+
+    public function composite5(Request $request, $id)
+    {
+        if ($id) {
+            $member = Member::query()->published()->find($id);
+            $url = config('app.url');
+            $images = $this->getImages($member);
+            $this->checkPhotos($images);
+//            dd($images);
+            $pdf = PDF::loadView('pdf.composite5', compact('member', 'url', 'images'));
+
+            return $pdf
+                ->setPaper('a4')
+                ->setOption(['dpi' => 190])
+                ->download('profile_' . $id . '.pdf');
+        }
+        return redirect('home');
     }
 
 

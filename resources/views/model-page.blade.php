@@ -66,17 +66,21 @@
                                     </div>
                                 </div>
                                 <div class="actions">
-                                    <a href="/composite?id={{$member->id}}" aria-label="Model Composite">
+                                    <a href="/composite?id={{$member->id}}" target="_blank" aria-label="Model Composite">
                                         <i class="icon-document"></i>
                                         <span>Composite</span>
                                     </a>
-                                    <a href="/composite2/{{$member->id}}" aria-label="Model Profile">
+                                    <a href="/composite2/{{$member->id}}" target="_blank" aria-label="Model Profile">
                                         <i class="icon-user-square"></i>
                                         <span>Profile</span>
                                     </a>
-                                    <a href="/composite4/{{$member->id}}" aria-label="Model Profile">
+                                    <a href="/composite4/{{$member->id}}" target="_blank" aria-label="Model Profile">
                                         <i class="icon-user-square"></i>
                                         <span>PDF</span>
+                                    </a>
+                                    <a href="/composite5/{{$member->id}}" target="_blank" aria-label="Model Profile">
+                                        <i class="icon-user-square"></i>
+                                        <span>PDF2</span>
                                     </a>
                                 </div>
                             </div>
