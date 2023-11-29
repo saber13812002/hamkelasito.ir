@@ -384,6 +384,7 @@
 
     <!-- start scripts -->
     {{--    TODO Saber --}}
+    <script src="/storage/assets/js/env.js"></script>
     <script src="/storage/assets/js/lib/jQuery.min.js"></script>
     <script src="/storage/assets/js/lib/lazyload.min.js"></script>
     <script src="/storage/assets/js/app-screen.js"></script>
