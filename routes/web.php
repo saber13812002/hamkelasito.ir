@@ -60,6 +60,8 @@ Route::get('/composite', [App\Http\Controllers\HomeController::class, 'composite
 Route::get('/composite2/{id}', [App\Http\Controllers\HomeController::class, 'composite2'])->name('composite2');
 Route::get('/composite3/{id}', [App\Http\Controllers\HomeController::class, 'composite3'])->name('composite3');
 Route::get('/composite4/{id}', [App\Http\Controllers\HomeController::class, 'composite4'])->name('composite4');
+Route::get('/composite5/{id}', [App\Http\Controllers\HomeController::class, 'composite5'])->name('composite5');
+Route::get('/composite6/{id}', [App\Http\Controllers\HomeController::class, 'composite6'])->name('composite6');
 
 // Email Verification
 Auth::routes(['verify' => true]);
