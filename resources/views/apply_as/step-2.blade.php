@@ -431,10 +431,10 @@
 
                                                     <!-- us -->
                                                     <div data-dependency="#size_unit" data-dependency-value="us">
-                                                        @if($options['sex'] == "male" || $options['sex'] == "other")
+                                                        @if($options['gender'] == "male" || $options['gender'] == "other")
                                                             <div class="field field-type-select wheel-mode"
-                                                                 @if($options['sex'] == "male" || $options['sex'] == "other") data-required="true"
-                                                                 @endif data-field-defualt-text="Select Item"
+                                                                 data-required="true"
+                                                                  data-field-defualt-text="Select Item"
                                                                  data-btn-submit-text="Select" data-type="select"
                                                                  data-field-search="true">
                                                                 <div class="field-content">
@@ -456,10 +456,10 @@
                                                                 </div>
                                                             </div>
                                                         @endif
-                                                        @if($options['sex'] == "female")
+                                                        @if($options['gender'] == "female")
                                                             <div class="field field-type-select wheel-mode"
-                                                                 @if($options['sex'] == "female") data-required="true"
-                                                                 @endif data-field-defualt-text="Select Item"
+                                                                 data-required="true"
+                                                                 data-field-defualt-text="Select Item"
                                                                  data-btn-submit-text="Select" data-type="select"
                                                                  data-field-search="true">
                                                                 <div class="field-content">

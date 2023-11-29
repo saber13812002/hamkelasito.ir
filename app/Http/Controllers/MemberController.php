@@ -592,7 +592,11 @@ class MemberController extends Controller
             $options = $this->generateShoeUsMenSize($options);
             $options = $this->generateShoeUsWomenSize($options);
             // todo
-            $options['sex'] = "male";
+            $options['gender'] = TempTable::query()
+                ->whereUserId(auth()->user()->id)
+                ->whereModelField('gender')
+                ->first()->value;
+//            dd($op);
         }
         if (in_array(3, $stepIds)) {
 
