@@ -24,6 +24,18 @@ if (!function_exists('metronic_aside_menu_handler')) {
         return collect($config);
     }
 }
+/**
+ * Get Metronic navbar menu items.
+ *
+ * @return \Illuminate\Support\Collection
+ */
+if (!function_exists('metronic_nav_menu_handler')) {
+    function metronic_nav_menu_handler(): \Illuminate\Support\Collection
+    {
+        $config = config('metronic_menu_config.top_menu');
+        return collect($config);
+    }
+}
 
 /**
  * Check user access for Metronic items.
