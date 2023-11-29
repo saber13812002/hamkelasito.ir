@@ -46,6 +46,7 @@ class HomeController
         }
         if ($request->has('category_id')) {
             $categoryId = $request->get('category_id');
+            //
         }
         // TODO:
         if ($request->has('filter_nationality')) {
