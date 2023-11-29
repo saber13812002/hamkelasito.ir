@@ -25,6 +25,18 @@ if (!function_exists('metronic_aside_menu_handler')) {
     }
 }
 /**
+ * Get Metronic footer menu items.
+ *
+ * @return \Illuminate\Support\Collection
+ */
+if (!function_exists('metronic_footer_menu_handler')) {
+    function metronic_footer_menu_handler(): \Illuminate\Support\Collection
+    {
+        $config = config('metronic_menu_config.footer');
+        return collect($config);
+    }
+}
+/**
  * Get Metronic navbar menu items.
  *
  * @return \Illuminate\Support\Collection

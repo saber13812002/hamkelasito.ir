@@ -191,6 +191,23 @@ return [
         ]
     ],
     'footer' => [
+        [
+            'text' => 'Main',
+            'url' => 'admin',
+            'access' => true,
+        ],
+        [
+            'text' => 'Translation',
+            'url' => 'translations',
+            'icon' => 'fas fa-fw fa-language',
+            'access' => true,
+        ],
+        [
+            'text' => 'Categories',
+            'url' => 'admin/categories',
+            'icon' => 'fas fa-fw fa-cat',
+            'access' => true,
 
+        ],
     ]
 ];
