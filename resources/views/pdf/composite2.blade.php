@@ -12,12 +12,7 @@
 <table id="header">
     <tr>
         <td class="brand-name">
-            <table>
-                <tr>
-                    <td class="name">{{$member->name}}</td>
-                    <td><strong id="profile_id">No. {{$member->no}}</strong></td>
-                </tr>
-            </table>
+            <div class="name">{{$member->name}}<strong id="profile_id">No. {{$member->no}}</strong></div>
             <div class="brand-other-name">{{$member->stage_name}}</div>
         </td>
         <td class="brand-logo">
