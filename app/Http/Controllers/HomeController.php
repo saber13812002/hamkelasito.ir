@@ -202,6 +202,24 @@ class HomeController
         return redirect('home');
     }
 
+    public function composite6(Request $request, $id)
+    {
+        if ($id) {
+            $member = Member::query()->published()->find($id);
+            $url = config('app.url');
+            $images = $this->getImages($member);
+            $this->checkPhotos($images);
+//            dd($images);
+            $pdf = PDF::loadView('pdf.composite6', compact('member', 'url', 'images'));
+
+            return $pdf
+                ->setPaper('a4')
+                ->setOption(['dpi' => 190])
+                ->download('profile_' . $id . '.pdf');
+        }
+        return redirect('home');
+    }
+
 
     public function getMemberPhoto($member, $dotExtension = '.jpg'): array
     {

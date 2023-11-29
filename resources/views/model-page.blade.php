@@ -82,6 +82,10 @@
                                         <i class="icon-user-square"></i>
                                         <span>PDF2</span>
                                     </a>
+                                    <a href="/composite6/{{$member->id}}" target="_blank" aria-label="Model Profile">
+                                        <i class="icon-user-square"></i>
+                                        <span>PDF3</span>
+                                    </a>
                                 </div>
                             </div>
                             <div class="model-categories">
