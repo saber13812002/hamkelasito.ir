@@ -591,9 +591,24 @@ class MemberController extends Controller
             $options = $this->generateShoeJpSize($options);
             $options = $this->generateShoeUsMenSize($options);
             $options = $this->generateShoeUsWomenSize($options);
+            // todo
+            $options['gender'] = TempTable::query()
+                ->whereUserId(auth()->user()->id)
+                ->whereModelField('gender')
+                ->first()->value;
+//            dd($op);
         }
         if (in_array(3, $stepIds)) {
 
+        }
+        if (in_array(3, $stepIds)) {
+
+        }
+        if (in_array(3, $stepIds)) {
+
+        }
+        if (in_array(6, $stepIds)) {
+            $options['dropzone']['front_photo_drive_license_card'] = "[{&quot;message&quot;:&quot;File uploaded successfully&quot;,&quot;url&quot;:&quot;/uploads/6567335c2ac91.png&quot;,&quot;id&quot;:41,&quot;type&quot;:&quot;photo&quot;,&quot;name&quot;:&quot;6567335c2ac91.png&quot;,&quot;thumbnail&quot;:&quot;/uploads/6567335c2ac91.png&quot;}]";
         }
 
 //        dd($options);
@@ -757,7 +772,7 @@ class MemberController extends Controller
     public function getResponseObject(): void
     {
         $response = new \Illuminate\Http\Response('test', 200, array(
-            'Cache-Control' => 'max-age=' . (config('imagecache.lifetime') * 60) . ', public',
+            'Cache-Control' => 'max-age=' . '0' . ', public',
             'Content-Length' => strlen('test'),
         ));
 

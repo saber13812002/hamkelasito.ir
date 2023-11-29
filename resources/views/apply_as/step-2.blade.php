@@ -431,49 +431,57 @@
 
                                                     <!-- us -->
                                                     <div data-dependency="#size_unit" data-dependency-value="us">
-                                                        <div class="field field-type-select wheel-mode"
-                                                             data-required="true" data-field-defualt-text="Select Item"
-                                                             data-btn-submit-text="Select" data-type="select"
-                                                             data-field-search="true">
-                                                            <div class="field-content">
-                                                                <label for="shoe_us_men_size">Size (us Men) <span
-                                                                        class="field-required-star">*</span></label>
-                                                                <select name="shoe_us_men_size" id="shoe_us_men_size">
-                                                                    @foreach($options['shoe_us_men_size'] as $shoe_us_men_size)
-                                                                        <option
-                                                                            @if (isset($saved) && isset($saved['shoe_us_men_size']) && ($saved['shoe_us_men_size']==$shoe_us_men_size['value']))
-                                                                                {{"selected"}}
-                                                                            @endif
-                                                                            value="{{$shoe_us_men_size['value']}}">
-                                                                            {{$shoe_us_men_size['name']}}
-                                                                        </option>
-                                                                    @endforeach
-                                                                </select>
-                                                                <i class="icon-arrow-down"></i>
+                                                        @if($options['gender'] == "male" || $options['gender'] == "other")
+                                                            <div class="field field-type-select wheel-mode"
+                                                                 data-required="true"
+                                                                  data-field-defualt-text="Select Item"
+                                                                 data-btn-submit-text="Select" data-type="select"
+                                                                 data-field-search="true">
+                                                                <div class="field-content">
+                                                                    <label for="shoe_us_men_size">Size (us Men) <span
+                                                                            class="field-required-star">*</span></label>
+                                                                    <select name="shoe_us_men_size"
+                                                                            id="shoe_us_men_size">
+                                                                        @foreach($options['shoe_us_men_size'] as $shoe_us_men_size)
+                                                                            <option
+                                                                                @if (isset($saved) && isset($saved['shoe_us_men_size']) && ($saved['shoe_us_men_size']==$shoe_us_men_size['value']))
+                                                                                    {{"selected"}}
+                                                                                @endif
+                                                                                value="{{$shoe_us_men_size['value']}}">
+                                                                                {{$shoe_us_men_size['name']}}
+                                                                            </option>
+                                                                        @endforeach
+                                                                    </select>
+                                                                    <i class="icon-arrow-down"></i>
+                                                                </div>
                                                             </div>
-                                                        </div>
-                                                        <div class="field field-type-select wheel-mode"
-                                                             data-required="true" data-field-defualt-text="Select Item"
-                                                             data-btn-submit-text="Select" data-type="select"
-                                                             data-field-search="true">
-                                                            <div class="field-content">
-                                                                <label for="shoe_us_women_size">Size (us Women) <span
-                                                                        class="field-required-star">*</span></label>
-                                                                <select name="shoe_us_women_size"
-                                                                        id="shoe_us_women_size">
-                                                                    @foreach($options['shoe_us_women_size'] as $shoe_us_women_size)
-                                                                        <option
-                                                                            @if (isset($saved) && isset($saved['shoe_us_women_size']) && ($saved['shoe_us_women_size']==$shoe_us_women_size['value']))
-                                                                                {{"selected"}}
-                                                                            @endif
-                                                                            value="{{$shoe_us_women_size['value']}}">
-                                                                            {{$shoe_us_women_size['name']}}
-                                                                        </option>
-                                                                    @endforeach
-                                                                </select>
-                                                                <i class="icon-arrow-down"></i>
+                                                        @endif
+                                                        @if($options['gender'] == "female")
+                                                            <div class="field field-type-select wheel-mode"
+                                                                 data-required="true"
+                                                                 data-field-defualt-text="Select Item"
+                                                                 data-btn-submit-text="Select" data-type="select"
+                                                                 data-field-search="true">
+                                                                <div class="field-content">
+                                                                    <label for="shoe_us_women_size">Size (us Women)
+                                                                        <span
+                                                                            class="field-required-star">*</span></label>
+                                                                    <select name="shoe_us_women_size"
+                                                                            id="shoe_us_women_size">
+                                                                        @foreach($options['shoe_us_women_size'] as $shoe_us_women_size)
+                                                                            <option
+                                                                                @if (isset($saved) && isset($saved['shoe_us_women_size']) && ($saved['shoe_us_women_size']==$shoe_us_women_size['value']))
+                                                                                    {{"selected"}}
+                                                                                @endif
+                                                                                value="{{$shoe_us_women_size['value']}}">
+                                                                                {{$shoe_us_women_size['name']}}
+                                                                            </option>
+                                                                        @endforeach
+                                                                    </select>
+                                                                    <i class="icon-arrow-down"></i>
+                                                                </div>
                                                             </div>
-                                                        </div>
+                                                        @endif
                                                     </div>
 
                                                     <!-- eu -->

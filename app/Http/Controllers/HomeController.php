@@ -57,10 +57,10 @@ class HomeController
             if ($global != 'all') {
                 $membersBuilder->whereType($global);
             }
-//            dd($membersBuilder->get());
+
             $membersBuilder->whereModelCategories('Model');
-            if ($categoryId == 1 || $categoryId == 2) {
-                $membersBuilder->whereGender($categoryId == 1 ? "Male" : "Female");
+            if ($categoryId == "1" || $categoryId == "2") {
+                $membersBuilder->whereGender($categoryId == "1" ? "Male" : "Female");
             } else {
                 $membersBuilder->where('age', '<', 18);
             }
@@ -80,6 +80,11 @@ class HomeController
         }
 
         $members = $membersBuilder->get();
+
+//        foreach ($members as $member)
+//            if ($member->gender != ($categoryId == "1" ? "Male" : "Female")) {
+//                dd("break");
+//            }
 
         $categories = Category::all();
 
