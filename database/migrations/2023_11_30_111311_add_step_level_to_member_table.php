@@ -11,7 +11,7 @@ return new class extends Migration {
     public function up(): void
     {
         Schema::table('members', function (Blueprint $table) {
-            $table->tinyInteger('level_step')->nullable();
+//            $table->tinyInteger('level_step')->nullable();
         });
     }
 
@@ -21,7 +21,7 @@ return new class extends Migration {
     public function down(): void
     {
         Schema::table('members', function (Blueprint $table) {
-            $table->dropColumn('level_step');
+//            $table->dropColumn('level_step');
         });
     }
 };
