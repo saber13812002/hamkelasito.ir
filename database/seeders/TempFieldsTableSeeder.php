@@ -14,12 +14,12 @@ class TempFieldsTableSeeder extends Seeder
      */
     public function run()
     {
-        
+
 
         \DB::table('temp_fields')->delete();
-        
+
         \DB::table('temp_fields')->insert(array (
-            0 => 
+            0 =>
             array (
                 'id' => 1,
                 'step_id' => 0,
@@ -32,7 +32,7 @@ class TempFieldsTableSeeder extends Seeder
                 'created_at' => '2023-11-12 13:01:00',
                 'updated_at' => '2023-11-12 13:01:00',
             ),
-            1 => 
+            1 =>
             array (
                 'id' => 2,
                 'step_id' => 0,
@@ -45,7 +45,7 @@ class TempFieldsTableSeeder extends Seeder
                 'created_at' => '2023-11-12 13:01:00',
                 'updated_at' => '2023-11-12 13:01:00',
             ),
-            2 => 
+            2 =>
             array (
                 'id' => 3,
                 'step_id' => 0,
@@ -58,7 +58,7 @@ class TempFieldsTableSeeder extends Seeder
                 'created_at' => '2023-11-12 13:01:00',
                 'updated_at' => '2023-11-12 13:01:00',
             ),
-            3 => 
+            3 =>
             array (
                 'id' => 4,
                 'step_id' => 0,
@@ -71,7 +71,7 @@ class TempFieldsTableSeeder extends Seeder
                 'created_at' => '2023-11-12 13:01:00',
                 'updated_at' => '2023-11-12 13:01:00',
             ),
-            4 => 
+            4 =>
             array (
                 'id' => 5,
                 'step_id' => 0,
@@ -84,7 +84,7 @@ class TempFieldsTableSeeder extends Seeder
                 'created_at' => '2023-11-12 13:01:00',
                 'updated_at' => '2023-11-12 13:01:00',
             ),
-            5 => 
+            5 =>
             array (
                 'id' => 6,
                 'step_id' => 0,
@@ -97,7 +97,7 @@ class TempFieldsTableSeeder extends Seeder
                 'created_at' => '2023-11-12 13:01:00',
                 'updated_at' => '2023-11-12 13:01:00',
             ),
-            6 => 
+            6 =>
             array (
                 'id' => 7,
                 'step_id' => 0,
@@ -110,7 +110,7 @@ class TempFieldsTableSeeder extends Seeder
                 'created_at' => '2023-11-12 13:01:00',
                 'updated_at' => '2023-11-12 13:01:00',
             ),
-            7 => 
+            7 =>
             array (
                 'id' => 8,
                 'step_id' => 0,
@@ -123,7 +123,7 @@ class TempFieldsTableSeeder extends Seeder
                 'created_at' => '2023-11-12 13:01:00',
                 'updated_at' => '2023-11-12 13:01:00',
             ),
-            8 => 
+            8 =>
             array (
                 'id' => 9,
                 'step_id' => 0,
@@ -136,7 +136,7 @@ class TempFieldsTableSeeder extends Seeder
                 'created_at' => '2023-11-12 13:01:00',
                 'updated_at' => '2023-11-12 13:01:00',
             ),
-            9 => 
+            9 =>
             array (
                 'id' => 10,
                 'step_id' => 1,
@@ -149,7 +149,7 @@ class TempFieldsTableSeeder extends Seeder
                 'created_at' => '2023-11-12 13:01:00',
                 'updated_at' => '2023-11-12 13:01:00',
             ),
-            10 => 
+            10 =>
             array (
                 'id' => 11,
                 'step_id' => 1,
@@ -162,7 +162,7 @@ class TempFieldsTableSeeder extends Seeder
                 'created_at' => '2023-11-12 13:01:00',
                 'updated_at' => '2023-11-12 13:01:00',
             ),
-            11 => 
+            11 =>
             array (
                 'id' => 12,
                 'step_id' => 1,
@@ -175,7 +175,7 @@ class TempFieldsTableSeeder extends Seeder
                 'created_at' => '2023-11-12 13:01:00',
                 'updated_at' => '2023-11-12 13:01:00',
             ),
-            12 => 
+            12 =>
             array (
                 'id' => 13,
                 'step_id' => 1,
@@ -188,7 +188,7 @@ class TempFieldsTableSeeder extends Seeder
                 'created_at' => '2023-11-12 13:01:00',
                 'updated_at' => '2023-11-12 13:01:00',
             ),
-            13 => 
+            13 =>
             array (
                 'id' => 14,
                 'step_id' => 1,
@@ -201,7 +201,7 @@ class TempFieldsTableSeeder extends Seeder
                 'created_at' => '2023-11-12 13:01:00',
                 'updated_at' => '2023-11-12 13:01:00',
             ),
-            14 => 
+            14 =>
             array (
                 'id' => 15,
                 'step_id' => 1,
@@ -214,7 +214,7 @@ class TempFieldsTableSeeder extends Seeder
                 'created_at' => '2023-11-12 13:01:00',
                 'updated_at' => '2023-11-12 13:01:00',
             ),
-            15 => 
+            15 =>
             array (
                 'id' => 16,
                 'step_id' => 1,
@@ -227,7 +227,7 @@ class TempFieldsTableSeeder extends Seeder
                 'created_at' => '2023-11-12 13:01:00',
                 'updated_at' => '2023-11-12 13:01:00',
             ),
-            16 => 
+            16 =>
             array (
                 'id' => 17,
                 'step_id' => 1,
@@ -240,7 +240,7 @@ class TempFieldsTableSeeder extends Seeder
                 'created_at' => '2023-11-12 13:01:00',
                 'updated_at' => '2023-11-12 13:01:00',
             ),
-            17 => 
+            17 =>
             array (
                 'id' => 18,
                 'step_id' => 1,
@@ -253,7 +253,7 @@ class TempFieldsTableSeeder extends Seeder
                 'created_at' => '2023-11-12 13:01:00',
                 'updated_at' => '2023-11-12 13:01:00',
             ),
-            18 => 
+            18 =>
             array (
                 'id' => 19,
                 'step_id' => 1,
@@ -266,7 +266,7 @@ class TempFieldsTableSeeder extends Seeder
                 'created_at' => '2023-11-12 13:01:00',
                 'updated_at' => '2023-11-12 13:01:00',
             ),
-            19 => 
+            19 =>
             array (
                 'id' => 20,
                 'step_id' => 1,
@@ -279,7 +279,7 @@ class TempFieldsTableSeeder extends Seeder
                 'created_at' => '2023-11-12 13:01:00',
                 'updated_at' => '2023-11-12 13:01:00',
             ),
-            20 => 
+            20 =>
             array (
                 'id' => 21,
                 'step_id' => 2,
@@ -292,12 +292,12 @@ class TempFieldsTableSeeder extends Seeder
                 'created_at' => '2023-11-12 13:01:00',
                 'updated_at' => '2023-11-12 13:01:00',
             ),
-            21 => 
+            21 =>
             array (
                 'id' => 22,
                 'step_id' => 2,
                 'model_name' => 'Member',
-                'model_field' => 'current_hair_color',
+                'model_field' => 'hair_color',
                 'request_key' => 'current_hair_color',
                 'type' => 'string',
                 'file_type' => '',
@@ -305,7 +305,7 @@ class TempFieldsTableSeeder extends Seeder
                 'created_at' => '2023-11-12 13:01:00',
                 'updated_at' => '2023-11-12 13:01:00',
             ),
-            22 => 
+            22 =>
             array (
                 'id' => 23,
                 'step_id' => 2,
@@ -318,7 +318,7 @@ class TempFieldsTableSeeder extends Seeder
                 'created_at' => '2023-11-12 13:01:00',
                 'updated_at' => '2023-11-12 13:01:00',
             ),
-            23 => 
+            23 =>
             array (
                 'id' => 24,
                 'step_id' => 2,
@@ -331,7 +331,7 @@ class TempFieldsTableSeeder extends Seeder
                 'created_at' => '2023-11-12 13:01:00',
                 'updated_at' => '2023-11-12 13:01:00',
             ),
-            24 => 
+            24 =>
             array (
                 'id' => 25,
                 'step_id' => 2,
@@ -344,7 +344,7 @@ class TempFieldsTableSeeder extends Seeder
                 'created_at' => '2023-11-12 13:01:00',
                 'updated_at' => '2023-11-12 13:01:00',
             ),
-            25 => 
+            25 =>
             array (
                 'id' => 26,
                 'step_id' => 2,
@@ -357,7 +357,7 @@ class TempFieldsTableSeeder extends Seeder
                 'created_at' => '2023-11-12 13:01:00',
                 'updated_at' => '2023-11-12 13:01:00',
             ),
-            26 => 
+            26 =>
             array (
                 'id' => 27,
                 'step_id' => 2,
@@ -370,12 +370,12 @@ class TempFieldsTableSeeder extends Seeder
                 'created_at' => '2023-11-12 13:01:00',
                 'updated_at' => '2023-11-12 13:01:00',
             ),
-            27 => 
+            27 =>
             array (
                 'id' => 28,
                 'step_id' => 2,
                 'model_name' => 'Member',
-                'model_field' => 'size_unit',
+                'model_field' => 'shoe_size_unit',
                 'request_key' => 'size_unit',
                 'type' => 'string',
                 'file_type' => '',
@@ -383,12 +383,12 @@ class TempFieldsTableSeeder extends Seeder
                 'created_at' => '2023-11-12 13:01:00',
                 'updated_at' => '2023-11-12 13:01:00',
             ),
-            28 => 
+            28 =>
             array (
                 'id' => 29,
                 'step_id' => 2,
                 'model_name' => 'Member',
-                'model_field' => 'shoe_jp_size',
+                'model_field' => 'shoe_size',
                 'request_key' => 'shoe_jp_size',
                 'type' => 'string',
                 'file_type' => '',
@@ -396,12 +396,12 @@ class TempFieldsTableSeeder extends Seeder
                 'created_at' => '2023-11-12 13:01:00',
                 'updated_at' => '2023-11-12 13:01:00',
             ),
-            29 => 
+            29 =>
             array (
                 'id' => 30,
                 'step_id' => 2,
                 'model_name' => 'Member',
-                'model_field' => 'shoe_uk_size',
+                'model_field' => 'shoe_size',
                 'request_key' => 'shoe_uk_size',
                 'type' => 'string',
                 'file_type' => '',
@@ -409,12 +409,12 @@ class TempFieldsTableSeeder extends Seeder
                 'created_at' => '2023-11-12 13:01:00',
                 'updated_at' => '2023-11-12 13:01:00',
             ),
-            30 => 
+            30 =>
             array (
                 'id' => 31,
                 'step_id' => 2,
                 'model_name' => 'Member',
-                'model_field' => 'shoe_us_men_size',
+                'model_field' => 'shoe_size',
                 'request_key' => 'shoe_us_men_size',
                 'type' => 'string',
                 'file_type' => '',
@@ -422,12 +422,12 @@ class TempFieldsTableSeeder extends Seeder
                 'created_at' => '2023-11-12 13:01:00',
                 'updated_at' => '2023-11-12 13:01:00',
             ),
-            31 => 
+            31 =>
             array (
                 'id' => 32,
                 'step_id' => 2,
                 'model_name' => 'Member',
-                'model_field' => 'shoe_us_women_size',
+                'model_field' => 'shoe_size',
                 'request_key' => 'shoe_us_women_size',
                 'type' => 'string',
                 'file_type' => '',
@@ -435,12 +435,12 @@ class TempFieldsTableSeeder extends Seeder
                 'created_at' => '2023-11-12 13:01:00',
                 'updated_at' => '2023-11-12 13:01:00',
             ),
-            32 => 
+            32 =>
             array (
                 'id' => 33,
                 'step_id' => 2,
                 'model_name' => 'Member',
-                'model_field' => 'shoe_eu_size',
+                'model_field' => 'shoe_size',
                 'request_key' => 'shoe_eu_size',
                 'type' => 'string',
                 'file_type' => '',
@@ -448,7 +448,7 @@ class TempFieldsTableSeeder extends Seeder
                 'created_at' => '2023-11-12 13:01:00',
                 'updated_at' => '2023-11-12 13:01:00',
             ),
-            33 => 
+            33 =>
             array (
                 'id' => 34,
                 'step_id' => 2,
@@ -461,7 +461,7 @@ class TempFieldsTableSeeder extends Seeder
                 'created_at' => '2023-11-12 13:01:00',
                 'updated_at' => '2023-11-12 13:01:00',
             ),
-            34 => 
+            34 =>
             array (
                 'id' => 35,
                 'step_id' => 3,
@@ -474,7 +474,7 @@ class TempFieldsTableSeeder extends Seeder
                 'created_at' => '2023-11-12 13:01:00',
                 'updated_at' => '2023-11-12 13:01:00',
             ),
-            35 => 
+            35 =>
             array (
                 'id' => 36,
                 'step_id' => 3,
@@ -487,7 +487,7 @@ class TempFieldsTableSeeder extends Seeder
                 'created_at' => '2023-11-12 13:01:00',
                 'updated_at' => '2023-11-12 13:01:00',
             ),
-            36 => 
+            36 =>
             array (
                 'id' => 37,
                 'step_id' => 3,
@@ -500,7 +500,7 @@ class TempFieldsTableSeeder extends Seeder
                 'created_at' => '2023-11-12 13:01:00',
                 'updated_at' => '2023-11-12 13:01:00',
             ),
-            37 => 
+            37 =>
             array (
                 'id' => 38,
                 'step_id' => 3,
@@ -513,7 +513,7 @@ class TempFieldsTableSeeder extends Seeder
                 'created_at' => '2023-11-12 13:01:00',
                 'updated_at' => '2023-11-12 13:01:00',
             ),
-            38 => 
+            38 =>
             array (
                 'id' => 39,
                 'step_id' => 3,
@@ -526,7 +526,7 @@ class TempFieldsTableSeeder extends Seeder
                 'created_at' => '2023-11-12 13:01:00',
                 'updated_at' => '2023-11-12 13:01:00',
             ),
-            39 => 
+            39 =>
             array (
                 'id' => 40,
                 'step_id' => 3,
@@ -539,7 +539,7 @@ class TempFieldsTableSeeder extends Seeder
                 'created_at' => '2023-11-12 13:01:00',
                 'updated_at' => '2023-11-12 13:01:00',
             ),
-            40 => 
+            40 =>
             array (
                 'id' => 41,
                 'step_id' => 4,
@@ -552,7 +552,7 @@ class TempFieldsTableSeeder extends Seeder
                 'created_at' => '2023-11-12 13:01:00',
                 'updated_at' => '2023-11-12 13:01:00',
             ),
-            41 => 
+            41 =>
             array (
                 'id' => 42,
                 'step_id' => 4,
@@ -565,7 +565,7 @@ class TempFieldsTableSeeder extends Seeder
                 'created_at' => '2023-11-12 13:01:00',
                 'updated_at' => '2023-11-12 13:01:00',
             ),
-            42 => 
+            42 =>
             array (
                 'id' => 43,
                 'step_id' => 4,
@@ -578,7 +578,7 @@ class TempFieldsTableSeeder extends Seeder
                 'created_at' => '2023-11-12 13:01:00',
                 'updated_at' => '2023-11-12 13:01:00',
             ),
-            43 => 
+            43 =>
             array (
                 'id' => 44,
                 'step_id' => 5,
@@ -591,7 +591,7 @@ class TempFieldsTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            44 => 
+            44 =>
             array (
                 'id' => 45,
                 'step_id' => 5,
@@ -604,7 +604,7 @@ class TempFieldsTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            45 => 
+            45 =>
             array (
                 'id' => 46,
                 'step_id' => 5,
@@ -617,7 +617,7 @@ class TempFieldsTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            46 => 
+            46 =>
             array (
                 'id' => 47,
                 'step_id' => 5,
@@ -630,7 +630,7 @@ class TempFieldsTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            47 => 
+            47 =>
             array (
                 'id' => 48,
                 'step_id' => 5,
@@ -643,7 +643,7 @@ class TempFieldsTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            48 => 
+            48 =>
             array (
                 'id' => 49,
                 'step_id' => 5,
@@ -656,7 +656,7 @@ class TempFieldsTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            49 => 
+            49 =>
             array (
                 'id' => 50,
                 'step_id' => 5,
@@ -669,7 +669,7 @@ class TempFieldsTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            50 => 
+            50 =>
             array (
                 'id' => 51,
                 'step_id' => 5,
@@ -682,7 +682,7 @@ class TempFieldsTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            51 => 
+            51 =>
             array (
                 'id' => 52,
                 'step_id' => 5,
@@ -695,7 +695,7 @@ class TempFieldsTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            52 => 
+            52 =>
             array (
                 'id' => 53,
                 'step_id' => 6,
@@ -708,7 +708,7 @@ class TempFieldsTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            53 => 
+            53 =>
             array (
                 'id' => 54,
                 'step_id' => 6,
@@ -721,7 +721,7 @@ class TempFieldsTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            54 => 
+            54 =>
             array (
                 'id' => 55,
                 'step_id' => 6,
@@ -734,7 +734,7 @@ class TempFieldsTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            55 => 
+            55 =>
             array (
                 'id' => 56,
                 'step_id' => 6,
@@ -747,7 +747,7 @@ class TempFieldsTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            56 => 
+            56 =>
             array (
                 'id' => 57,
                 'step_id' => 6,
@@ -760,7 +760,7 @@ class TempFieldsTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            57 => 
+            57 =>
             array (
                 'id' => 58,
                 'step_id' => 6,
@@ -773,7 +773,7 @@ class TempFieldsTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            58 => 
+            58 =>
             array (
                 'id' => 59,
                 'step_id' => 6,
@@ -786,7 +786,7 @@ class TempFieldsTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            59 => 
+            59 =>
             array (
                 'id' => 60,
                 'step_id' => 6,
@@ -799,7 +799,7 @@ class TempFieldsTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            60 => 
+            60 =>
             array (
                 'id' => 61,
                 'step_id' => 6,
@@ -812,7 +812,7 @@ class TempFieldsTableSeeder extends Seeder
                 'created_at' => NULL,
                 'updated_at' => NULL,
             ),
-            61 => 
+            61 =>
             array (
                 'id' => 62,
                 'step_id' => 6,
@@ -826,7 +826,7 @@ class TempFieldsTableSeeder extends Seeder
                 'updated_at' => NULL,
             ),
         ));
-        
-        
+
+
     }
 }

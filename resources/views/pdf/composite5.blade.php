@@ -159,7 +159,7 @@
                     <span>#{{$member->skill_tags}}</span>
                 </div>
                 <ul class="skill-list">
-                    {{--        @foreach ($member->skills as $index => $skill)--}}
+                    {{--        @foreach ($member->skills_text as $index => $skill)--}}
                     {{--        <li>--}}
                     {{--            <div class="skill-list-title">Skill {{$index}}</div>--}}
                     {{--            <div class="skill-list-description">--}}
@@ -170,7 +170,7 @@
                     <li>
                         <div class="skill-list-title">Skill 1</div>
                         <div class="skill-list-description">
-                            {{$member->skills}}
+                            {{$member->skills_text}}
                         </div>
                     </li>
 
