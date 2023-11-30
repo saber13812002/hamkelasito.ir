@@ -29,13 +29,18 @@
   MAIL_FROM_ADDRESS="hello@example.com"
   MAIL_FROM_NAME="${APP_NAME}"
   ```
- - 
+ -
 
 ### translation.io
 config your env with this key:
 
  - TRANSLATIONIO_KEY
  - https://translation.io/saber13812002/lili/
+
+### Username And Password For Login In Lilian
+Username : ```rikobih739@mkurg.com```
+
+Password : ```rikobih739@mkurg.com```
 
 ## License
 

@@ -52,11 +52,11 @@
                                         <label for="email">Email</label>
                                         <input type="email" placeholder="Entered Email" id="email"
                                                class="form-control" name="email" required>
-                                        @if ($errors->has('email'))
-                                            <span class="text-danger">{{ $errors->first('email') }}</span>
-                                        @endif
                                     </div>
                                 </div>
+                                @if ($errors->has('email'))
+                                    <div class="field-error-msg" id="field_error_email">{{ $errors->first('email') }}</div>
+                                @endif
                                 <div class="field-error-msg" id="field_error_email"></div>
                             </div>
                             <div>
@@ -65,12 +65,12 @@
                                         <label for="password">Password</label>
                                         <input type="password" placeholder="Entered Password" id="password"
                                                class="form-control" name="password" required>
-                                        @if ($errors->has('password'))
-                                            <span class="text-danger">{{ $errors->first('password') }}</span>
-                                        @endif
                                     </div>
                                     <i class="icon-eye field-show-password"></i>
                                 </div>
+                                @if ($errors->has('password'))
+                                    <div class="field-error-msg" id="field_error_password">{{ $errors->first('password') }}</div>
+                                @endif
                                 <div class="field-error-msg" id="field_error_password"></div>
                             </div>
                         </div>
