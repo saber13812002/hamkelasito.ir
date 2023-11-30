@@ -176,7 +176,10 @@
                         <ul>
                             <li>
                                 <i class="icon-call"></i>
-                                <a href="tel:+81-3-6362-3355">+81-3-6362-3355</a>
+                                <a href="tel:+81-3-6362-3355">@if(App::getLocale() != 'ja')
+                                   +81-
+                                @endif
+                                3-6362-3355</a>
                             </li>
                             <li>
                                 <i class="icon-sms"></i>
