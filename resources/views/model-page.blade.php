@@ -382,8 +382,6 @@ Voice
                                                 <img src="/storage/assets/img/profile/profile-1/3x4/001.webp" width="192"
                                                      height="262" alt="image">
                                             </noscript>
-
-
                                         </a>
                                     </div>
                                     <div class="grid-item" itemprop="item" itemscope=""
