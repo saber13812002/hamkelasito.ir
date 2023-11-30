@@ -124,6 +124,11 @@ class HomeController
         return view('layouts.single-pages.contact-us');
     }
 
+    public function ContactUsGet(FormRequest $request)
+    {
+        return view('layouts.single-pages.contact-us');
+    }
+
     public function companyProfile()
     {
         return view('layouts.single-pages.company-profile');
