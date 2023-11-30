@@ -1,9 +1,9 @@
-@extends('adminlte::page')
+@extends('MetronicView::layouts.master')
 
-@section('title', 'Dashboard')
+@section('title', 'Country')
 
 @section('content_header')
-    <h1>Dashboard</h1>
+    <h1>Country</h1>
 @stop
 
 @section('content')
