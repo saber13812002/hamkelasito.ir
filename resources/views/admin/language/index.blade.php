@@ -39,7 +39,7 @@
                             <th>{{__('menu.Options')}}</th>
                         </tr>
                         </thead>
-                        <tbody>
+                        <tbody class="fw-bold text-gray-600">
                         @php
                             $i=0;
                         @endphp
