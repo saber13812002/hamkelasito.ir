@@ -445,15 +445,18 @@ class MemberController extends Controller
     private function saveRequestToTempTable(Request $request, int $stepId)
     {
         $request->request->add(['step' => $stepId]);
-        $userId = auth()->user()->id;
-
-        if (!auth()->user()->member) {
+        $user = auth()->user();
+        $userId = $user->id;
+//        dd($user->member());
+        if (!$user->member()) {
             $member = new Member();
             $member->user_id = $userId;
             $member->save();
 //            $user =auth()->user();
 //            $user->member_id=$member->id;
 //            $user->save();
+        } else {
+            $member = $user->member();
         }
         Log::info($request);
 //        dd(auth()->user());

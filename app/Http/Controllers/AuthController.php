@@ -88,23 +88,23 @@ class AuthController extends Controller
                 ->orWhere('approved_at', '=', '');
             $array = TempTable::query()->distinct()->pluck('member_id')->toArray();
             $memberAwaitItems = Member::whereIn('id', $array)->get();
-//            dd($memberAwaitItems);
-            $awaitingMembers = $memberAwaitBuilder
+//            dd($array,$memberAwaitItems,$memberAwaitBuilder);
+            $awaitingMembersCount = $memberAwaitBuilder
                 ->count();
-            $totalMembers = Member::published()->count();
-            $completedApprovals = $totalMembers - $awaitingMembers;
-            $totalItems = TempTable::count();
-            $rejectedItems = TempTable::query()
+            $totalMembersCount = Member::published()->count();
+            $completedApprovalsCount = $totalMembersCount - $awaitingMembersCount;
+            $totalItemsCount = TempTable::count();
+            $rejectedItemsCount = TempTable::query()
                 ->whereDate('updated_at', '>=', 'created_at')
                 ->count();
-            $awaitingItems = $totalItems - $rejectedItems;
+            $awaitingItemsCount = $totalItemsCount - $rejectedItemsCount;
             return view('auth.admin', compact(
                 'memberAwaitItems',
-                'awaitingMembers',
-                'completedApprovals',
-                'awaitingItems',
-                'rejectedItems',
-                'totalMembers'
+                'awaitingMembersCount',
+                'completedApprovalsCount',
+                'awaitingItemsCount',
+                'rejectedItemsCount',
+                'totalMembersCount'
             ));
         }
 
