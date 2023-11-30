@@ -1,9 +1,9 @@
-@extends('adminlte::page')
+@extends('MetronicView::layouts.master')
 
-@section('title', 'Dashboard')
+@section('title', __('menu.Approval'))
 
 @section('content_header')
-    <h1>{{__('menu.Dashboard')}}</h1>
+    <h1>{{__('menu.Approval')}}</h1>
 @stop
 
 @section('content')
