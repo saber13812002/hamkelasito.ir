@@ -141,6 +141,7 @@
 
                     <!-- side action -->
                     <div class="side-action">
+
                         @guest
                         <a href="/register" class="btn btn-icon-left">
                             <span>
