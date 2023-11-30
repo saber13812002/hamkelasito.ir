@@ -5022,7 +5022,7 @@ class MembersTableSeeder extends Seeder
             100 =>
             array (
                 'id' => 101,
-                'user_id' => NULL,
+                'user_id' => 101,
                 'profile_image' => '037',
                 'thumbnail_image' => '037',
                 'no' => 101,
@@ -5072,7 +5072,7 @@ class MembersTableSeeder extends Seeder
             101 =>
             array (
                 'id' => 102,
-                'user_id' => NULL,
+                'user_id' => 102,
                 'profile_image' => '038',
                 'thumbnail_image' => '038',
                 'no' => 102,
@@ -5122,7 +5122,7 @@ class MembersTableSeeder extends Seeder
             102 =>
             array (
                 'id' => 103,
-                'user_id' => NULL,
+                'user_id' => 103,
                 'profile_image' => '039',
                 'thumbnail_image' => '039',
                 'no' => 103,
@@ -5172,7 +5172,7 @@ class MembersTableSeeder extends Seeder
             103 =>
             array (
                 'id' => 104,
-                'user_id' => NULL,
+                'user_id' => 104,
                 'profile_image' => '040',
                 'thumbnail_image' => '040',
                 'no' => 104,
@@ -5222,7 +5222,7 @@ class MembersTableSeeder extends Seeder
             104 =>
             array (
                 'id' => 105,
-                'user_id' => NULL,
+                'user_id' => 105,
                 'profile_image' => '041',
                 'thumbnail_image' => '041',
                 'no' => 105,
@@ -5272,7 +5272,7 @@ class MembersTableSeeder extends Seeder
             105 =>
             array (
                 'id' => 106,
-                'user_id' => NULL,
+                'user_id' => 106,
                 'profile_image' => '042',
                 'thumbnail_image' => '042',
                 'no' => 106,
@@ -5322,7 +5322,7 @@ class MembersTableSeeder extends Seeder
             106 =>
             array (
                 'id' => 107,
-                'user_id' => NULL,
+                'user_id' => 107,
                 'profile_image' => '043',
                 'thumbnail_image' => '043',
                 'no' => 107,

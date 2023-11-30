@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -28,6 +29,9 @@ class MemberFactory extends Factory
             'thumbnail_image' => $rand3digit,
             'no' => $rand,
 
+            'user_id' => function () {
+                return User::factory()->create()->id; // Connect the foreign key to the primary key of User model
+            },
             'name' => $this->faker->firstName($gender) . ($remainder ? "and" : ""),
             'middle_name' => $this->faker->firstName($gender),
             'family' => $this->faker->lastName,
