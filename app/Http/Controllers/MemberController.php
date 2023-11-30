@@ -8,6 +8,7 @@ use App\Models\Member;
 use App\Models\TempField;
 use App\Models\TempTable;
 use App\Models\Upload;
+use App\Services\MemberService;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
@@ -319,7 +320,6 @@ class MemberController extends Controller
     public function step1(Request $request)
     {
         $this->getResponseObject();
-//        dd($request);
         $this->saveRequestToTempTable($request, 0);
         $stepId = 1;
         $compact = $this->getArr($stepId);
@@ -442,19 +442,23 @@ class MemberController extends Controller
             ->view('apply_as.step-8', $compact);
     }
 
+    private function checkExitMember($userId): Member
+    {
+        if (!auth()->user()->getMember) {
+            $member = new Member();
+            $member->user_id = $userId;
+            $member->save();
+            return $member;
+        }
+        return auth()->user()->getMember;
+    }
+
     private function saveRequestToTempTable(Request $request, int $stepId)
     {
         $request->request->add(['step' => $stepId]);
         $userId = auth()->user()->id;
-
-        if (!auth()->user()->member) {
-            $member = new Member();
-            $member->user_id = $userId;
-            $member->save();
-//            $user =auth()->user();
-//            $user->member_id=$member->id;
-//            $user->save();
-        }
+        $member = $this->checkExitMember($userId);
+        MemberService::updateLevelStep($member, $stepId);
         Log::info($request);
 //        dd(auth()->user());
 //        $tempTable->member_id
