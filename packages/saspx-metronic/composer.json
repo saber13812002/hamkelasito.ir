@@ -1,0 +1,17 @@
+{
+    "name": "saspx/saspx-metronic",
+    "description": "metronic admin panel for laravel",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Saspx\\SaspxMetronic\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Mohammad Saleh Faezy",
+            "email": "2158430-saleh.faezy77@users.noreply.gitlab.com"
+        }
+    ],
+    "require": {}
+}
