@@ -32,7 +32,8 @@ class TempTableController extends Controller
             ->orWhereNotNull('json')
             ->orWhereNotNull('text')
             ->get();
-        return view('admin.member.tempTables', compact('approve_items', 'member_id'));
+        $member = Member::query()->where('id', $member_id)->first();
+        return view('admin.member.tempTables', compact('approve_items', 'member'));
     }
 
     public function postApproveForm(FormRequest $request)

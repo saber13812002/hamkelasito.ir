@@ -1,29 +1,37 @@
 @extends('MetronicView::layouts.master')
 
-@section('title', 'Dashboard')
+@section('title', 'Member Id: ' . $member->id)
 
 @section('content_header')
-    <h1>Dashboard</h1>
+    <h1>{{__('Approval Management')}}</h1>
 @stop
 
 @section('content')
 
     <div class="row">
-        <div class="col-md-12 mb-2">
 
-            <button data-toggle="modal" data-target="#createSlider"
-                    class="btn btn-success float-right">{{__('Add Item')}} <i class="fas fa-cogs"></i></button>
-        </div>
         <div class="col-12">
 
             <div class="card">
-                <div class="card-header">
-                    <h3 class="card-title">{{__('Approval Management')}}</h3>
 
-                    <div class="card-tools">
-                        Member Id: {{$member_id}}
+                <div class="card-header mt-6">
+                    <!--begin::Card title-->
+                    <div class="card-title flex-column">
+                        <h2 class="mb-1">{{ $member->name . ' ' . $member->middle_name . ' ' . $member->family }}</h2>
+                        <div class="fs-6 fw-bold text-muted"> Member Id: #{{$member->id}}</div>
                     </div>
+                    <!--end::Card title-->
+                    <!--begin::Card toolbar-->
+                    <div class="card-toolbar">
+                        <button type="button" class="btn btn-light-success btn-sm" data-bs-toggle="modal"
+                                data-bs-target="#kt_modal_add_schedule">
+                            <!--SVG file not found: media/icons/duotune/art/art008.svg-->
+                            Approval
+                        </button>
+                    </div>
+                    <!--end::Card toolbar-->
                 </div>
+
                 <!-- /.card-header -->
 
                 <div class="card-body table-responsive p-0">
