@@ -180,7 +180,7 @@
                                 <i class="icon-arrow-right"></i>
                             </span>
                             </a>
-                            <a href="#" class="logout">
+                            <a href="/logout" class="logout">
                             <span>
                                 Logout
                                 <i class="icon-logout"></i>
