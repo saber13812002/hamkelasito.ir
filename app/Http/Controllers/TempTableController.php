@@ -18,7 +18,7 @@ class TempTableController extends Controller
      */
     public function index()
     {
-        $approve_items = TempTable::whereNull('approved_at')->get();
+        $approve_items = TempTable::query()->whereNull('approved_at')->paginate(15);
         return view('admin.approval.index', compact('approve_items'));
     }
 

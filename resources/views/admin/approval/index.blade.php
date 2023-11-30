@@ -18,7 +18,8 @@
 
                     <div class="card-toolbar">
                         <button data-toggle="modal" data-target="#createSlider"
-                                class="btn btn-success float-right">{{__('menu.Add Item')}} <i class="fas fa-cogs"></i></button>
+                                class="btn btn-success float-right">{{__('menu.Add Item')}} <i class="fas fa-cogs"></i>
+                        </button>
                     </div>
                 </div>
                 <!-- /.card-header -->
@@ -26,21 +27,16 @@
                 <div class="card-body table-responsive">
                     <form action="{{ route('items.approve') }}" method="POST">
                         @csrf
-                        <table class="table align-middle table-row-dashed fs-6 gy-5 mb-0 dataTable no-footer" id="users_table">
+                        <table class="table align-middle table-row-dashed fs-6 gy-5 mb-0 dataTable no-footer"
+                               id="users_table">
                             <thead>
                             <tr>
+                                <th>{{__('menu.Approve')}}</th>
                                 <th>#</th>
                                 <th>{{__('menu.Id')}}</th>
-                                <th>{{__('menu.Step Id')}}</th>
                                 <th>{{__('menu.User Id')}}</th>
-                                <th>{{__('menu.Member Id')}}</th>
                                 <th>{{__('menu.Model Name')}}</th>
                                 <th>{{__('menu.Model Field')}}</th>
-                                <th>{{__('menu.Type')}}</th>
-                                <th>{{__('menu.Approve')}}</th>
-                                <th>{{__('menu.Value')}}</th>
-                                <th>{{__('menu.Text')}}</th>
-                                <th>{{__('menu.Json')}}</th>
                                 <th>{{__('menu.Approved At')}}</th>
                                 <th>{{__('menu.Admin Id')}}</th>
                                 <th>{{__('menu.Created At')}}</th>
@@ -48,22 +44,8 @@
                             </tr>
                             </thead>
                             <tbody class="fw-bold text-gray-600">
-                            @php
-                                $i=0;
-                            @endphp
                             @foreach ($approve_items as $item)
-                                @php
-                                    $i++
-                                @endphp
                                 <tr id="#slider{{$item->id}}">
-                                    <td>{{$i}}</td>
-                                    <td>{{$item->id}}</td>
-                                    <td>{{$item->step_id}}</td>
-                                    <td>{{$item->user_id}}</td>
-                                    <td>{{$item->member_id}}</td>
-                                    <td>{{$item->model_name}}</td>
-                                    <td>{{$item->model_field}}</td>
-                                    <td>{{$item->type}}</td>
                                     <td>
                                         <div class="checkbox">
                                             <label>
@@ -72,10 +54,12 @@
                                             </label>
                                         </div>
                                     </td>
-                                    <td>{{$item->value}}</td>
-                                    <td>{{$item->text}}</td>
-                                    <td>{{$item->json}}</td>
-                                    <td>{{$item->approved_at}}</td>
+                                    <td>{{$loop->index}}</td>
+                                    <td>{{$item->id}}</td>
+                                    <td>{{$item->user_id}}</td>
+                                    <td>{{$item->model_name}}</td>
+                                    <td>{{$item->model_field}}</td>
+                                    <td>{{$item->approved_at ?? '-'}}</td>
                                     <td>{{$item->admin_id}}</td>
                                     <td>{{$item->created_at}}</td>
                                     <td>{{$item->updated_at}}</td>
@@ -83,14 +67,24 @@
                             @endforeach
                             </tbody>
                         </table>
-                        <button type="submit" class="btn btn-primary">Approve</button>
+                        <button type="submit" class="btn btn-light-primary w-100">Approve Selected Items</button>
                     </form>
                 </div>
-                <div class="card-footer">
-                    <div class="row">
-                        <div class="col-12">
-
-                        </div>
+                <div class="card-header">
+                    <h3 class="card-title align-items-start flex-column">
+                        <span class="card-label fw-bolder text-dark">Page : {{ $approve_items->currentPage() }}</span>
+                        <span class="text-muted mt-1 fw-bold fs-7">
+                              {!! __('Showing') !!}
+                            <span class="fw-semibold">{{ $approve_items->firstItem() }}</span>
+                            {!! __('to') !!}
+                            <span class="fw-semibold">{{ $approve_items->lastItem() }}</span>
+                            {!! __('of') !!}
+                            <span class="fw-semibold">{{ $approve_items->total() }}</span>
+                            {!! __('results') !!}
+                        </span>
+                    </h3>
+                    <div class="card-toolbar">
+                        @include('MetronicView::parts.paginate',['paginator' => $approve_items])
                     </div>
                 </div>
                 <!-- /.card-body -->
