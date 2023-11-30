@@ -44,7 +44,8 @@ Route::any('/models-list', [HomeController::class, 'modelsList'])->name('models-
 
 // STATIC PAGES
 Route::get('/about-us', [App\Http\Controllers\HomeController::class, 'aboutUs'])->name('about-us');
-Route::any('/contact-us', [App\Http\Controllers\HomeController::class, 'contactUs'])->name('contact-us');
+Route::get('/contact-us', [App\Http\Controllers\HomeController::class, 'contactUsGet'])->name('contact-us');
+Route::post('/contact-us', [App\Http\Controllers\HomeController::class, 'contactUs'])->name('contact-us-post');
 Route::get('/company-profile', [App\Http\Controllers\HomeController::class, 'companyProfile'])->name('company-profile');
 Route::get('/privacy-policy', [App\Http\Controllers\HomeController::class, 'privacyPolicy'])->name('privacy-policy');
 
