@@ -9,27 +9,24 @@
 @section('content')
 
     <div class="row">
-        <div class="col-md-12 mb-2">
 
-            <button data-toggle="modal" data-target="#createSlider"
-                    class="btn btn-success float-right">{{__('menu.Add Item')}} <i class="fas fa-cogs"></i></button>
-        </div>
         <div class="col-12">
 
             <div class="card">
                 <div class="card-header">
                     <h3 class="card-title">{{__('menu.Approval Management')}}</h3>
 
-                    <div class="card-tools">
-
+                    <div class="card-toolbar">
+                        <button data-toggle="modal" data-target="#createSlider"
+                                class="btn btn-success float-right">{{__('menu.Add Item')}} <i class="fas fa-cogs"></i></button>
                     </div>
                 </div>
                 <!-- /.card-header -->
 
-                <div class="card-body table-responsive p-0">
+                <div class="card-body table-responsive">
                     <form action="{{ route('items.approve') }}" method="POST">
                         @csrf
-                        <table class="table table-hover" id="users_table">
+                        <table class="table align-middle table-row-dashed fs-6 gy-5 mb-0 dataTable no-footer" id="users_table">
                             <thead>
                             <tr>
                                 <th>#</th>
@@ -50,7 +47,7 @@
                                 <th>{{__('menu.Updated At')}}</th>
                             </tr>
                             </thead>
-                            <tbody>
+                            <tbody class="fw-bold text-gray-600">
                             @php
                                 $i=0;
                             @endphp
