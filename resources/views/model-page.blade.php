@@ -375,15 +375,13 @@ Voice
                                            itemprop="url" data-object-id="0">
                                             <meta itemprop="thumbnailUrl"
                                                   content="/storage/assets/img/profile/profile-1/3x4/001.webp">
-                                            <img src="/storage/assets/001.webp" class="lazy lz-entered lz-loaded"
+                                            <img src="/storage/assets/img/profile/profile-1/3x4/001.webp" class="lazy lz-entered lz-loaded"
                                                  data-src="/storage/assets/img/profile/profile-1/3x4/001.webp"
                                                  width="192" height="262" alt="image" data-ll-status="loaded">
                                             <noscript>
                                                 <img src="/storage/assets/img/profile/profile-1/3x4/001.webp" width="192"
                                                      height="262" alt="image">
                                             </noscript>
-
-
                                         </a>
                                     </div>
                                     <div class="grid-item" itemprop="item" itemscope=""
@@ -395,7 +393,7 @@ Voice
                                            itemprop="url" data-object-id="1">
                                             <meta itemprop="thumbnailUrl"
                                                   content="/storage/assets/img/profile/profile-1/3x4/002.webp">
-                                            <img src="/storage/assets/002.webp" class="lazy lz-entered lz-loaded"
+                                            <img src="/storage/assets/img/profile/profile-1/3x4/002.webp" class="lazy lz-entered lz-loaded"
                                                  data-src="/storage/assets/img/profile/profile-1/3x4/002.webp"
                                                  width="192" height="262" alt="image" data-ll-status="loaded">
                                             <noscript>
@@ -415,7 +413,7 @@ Voice
                                            itemprop="url" data-object-id="2">
                                             <meta itemprop="thumbnailUrl"
                                                   content="/storage/assets/img/profile/profile-1/3x4/003.webp">
-                                            <img src="/storage/assets/003.webp" class="lazy lz-entered lz-loaded"
+                                            <img src="/storage/assets/img/profile/profile-1/3x4/003.webp" class="lazy lz-entered lz-loaded"
                                                  data-src="/storage/assets/img/profile/profile-1/3x4/003.webp"
                                                  width="192" height="262" alt="image" data-ll-status="loaded">
                                             <noscript>
@@ -435,7 +433,7 @@ Voice
                                            itemprop="url" data-object-id="3">
                                             <meta itemprop="thumbnailUrl"
                                                   content="/storage/assets/img/profile/profile-1/3x4/004.webp">
-                                            <img src="/storage/assets/004(1).webp" class="lazy lz-entered lz-loaded"
+                                            <img src="/storage/assets/img/profile/profile-1/3x4/004.webp" class="lazy lz-entered lz-loaded"
                                                  data-src="/storage/assets/img/profile/profile-1/3x4/004.webp"
                                                  width="192" height="262" alt="image" data-ll-status="loaded">
                                             <noscript>
@@ -455,7 +453,7 @@ Voice
                                            itemprop="url" data-object-id="4">
                                             <meta itemprop="thumbnailUrl"
                                                   content="/storage/assets/img/profile/profile-1/3x4/005.webp">
-                                            <img src="/storage/assets/005(1).webp" class="lazy lz-entered lz-loaded"
+                                            <img src="/storage/assets/img/profile/profile-1/3x4/005.webp" class="lazy lz-entered lz-loaded"
                                                  data-src="/storage/assets/img/profile/profile-1/3x4/005.webp"
                                                  width="192" height="262" alt="image" data-ll-status="loaded">
                                             <noscript>
@@ -571,12 +569,12 @@ Voice
                                                data-object-id="10">
                                                 <div class="card-thumbnail">
                                                     <meta itemprop="thumbnail"
-                                                          content="/storage/assets/img/video-001.webp">
+                                                          content="/storage/assets/img/video/video-001.webp">
                                                     <img src="/storage/assets/img/lazy-1.7x1.webp" class="lazy"
-                                                         data-src="/storage/assets/img/video-001.webp" width="296"
+                                                         data-src="/storage/assets/img/video/video-001.webp" width="296"
                                                          height="168" alt="video">
                                                     <noscript>
-                                                        <img src="/storage/assets/img/video-001.webp" width="296"
+                                                        <img src="/storage/assets/img/video/video-001.webp" width="296"
                                                              height="168"
                                                              alt="video">
                                                     </noscript>
@@ -600,12 +598,12 @@ Voice
                                                data-object-id="11">
                                                 <div class="card-thumbnail">
                                                     <meta itemprop="thumbnail"
-                                                          content="/storage/assets/img/video-002.webp">
+                                                          content="/storage/assets/img/video/video-002.webp">
                                                     <img src="/storage/assets/img/lazy-1.7x1.webp" class="lazy"
-                                                         data-src="/storage/assets/img/video-002.webp" width="296"
+                                                         data-src="/storage/assets/img/video/video-002.webp" width="296"
                                                          height="168" alt="video">
                                                     <noscript>
-                                                        <img src="/storage/assets/img/video-002.webp" width="296"
+                                                        <img src="/storage/assets/img/video/video-002.webp" width="296"
                                                              height="168"
                                                              alt="video">
                                                     </noscript>
@@ -629,12 +627,12 @@ Voice
                                                data-object-id="12">
                                                 <div class="card-thumbnail">
                                                     <meta itemprop="thumbnail"
-                                                          content="/storage/assets/img/video-003.webp">
+                                                          content="/storage/assets/img/video/video-003.webp">
                                                     <img src="/storage/assets/img/lazy-1.7x1.webp" class="lazy"
-                                                         data-src="/storage/assets/img/video-003.webp" width="296"
+                                                         data-src="/storage/assets/img/video/video-003.webp" width="296"
                                                          height="168" alt="video">
                                                     <noscript>
-                                                        <img src="/storage/assets/img/video-003.webp" width="296"
+                                                        <img src="/storage/assets/img/video/video-003.webp" width="296"
                                                              height="168"
                                                              alt="video">
                                                     </noscript>
@@ -658,12 +656,12 @@ Voice
                                                data-object-id="13">
                                                 <div class="card-thumbnail">
                                                     <meta itemprop="thumbnail"
-                                                          content="/storage/assets/img/video-004.webp">
+                                                          content="/storage/assets/img/video/video-004.webp">
                                                     <img src="/storage/assets/img/lazy-1.7x1.webp" class="lazy"
-                                                         data-src="/storage/assets/img/video-004.webp" width="296"
+                                                         data-src="/storage/assets/img/video/video-004.webp" width="296"
                                                          height="168" alt="video">
                                                     <noscript>
-                                                        <img src="/storage/assets/img/video-004.webp" width="296"
+                                                        <img src="/storage/assets/img/video/video-004.webp" width="296"
                                                              height="168"
                                                              alt="video">
                                                     </noscript>
