@@ -239,7 +239,7 @@
                             <div class="tab-content-item active" data-tab-target="profile_biography">
                                 <div class="biography-description read-more-element" data-length-desktop="500"
                                      data-length-mobile="250" data-detect="true">
-                                    (Biography) {{$member->skills}}
+                                    (Biography) {{$member->skills_text}}
                                     ...<span class="read-more-button">Read More</span></div>
                             </div>
                             <div class="tab-content-item" data-tab-target="skills_career">
@@ -255,7 +255,7 @@
                                             </div>
                                             <div class="skill-description read-more-element" data-length-desktop="500"
                                                  data-length-mobile="250" data-detect="true">
-                                                (Career) {{$member->skills}}
+                                                (Career) {{$member->skills_text}}
                                                 yea...<span class="read-more-button">Read More</span></div>
                                         </li>
                                         <li>
@@ -267,7 +267,7 @@
                                             </div>
                                             <div class="skill-description read-more-element" data-length-desktop="500"
                                                  data-length-mobile="250" data-detect="true">
-                                                (Career) {{$member->skills}}
+                                                (Career) {{$member->skills_text}}
                                                 yea...<span class="read-more-button">Read More</span></div>
                                         </li>
                                         <li>
@@ -279,7 +279,7 @@
                                             </div>
                                             <div class="skill-description read-more-element" data-length-desktop="500"
                                                  data-length-mobile="250" data-detect="true">
-                                                (Career) {{$member->skills}}
+                                                (Career) {{$member->skills_text}}
                                                 yea...<span class="read-more-button">Read More</span></div>
                                         </li>
                                     </ul>
@@ -294,7 +294,7 @@
                                             </div>
                                             <div class="skill-description read-more-element" data-length-desktop="500"
                                                  data-length-mobile="250" data-detect="true">
-                                                (Career) {{$member->skills}}
+                                                (Career) {{$member->skills_text}}
                                                 yea...<span class="read-more-button">Read More</span></div>
                                         </li>
                                         <li>
@@ -306,7 +306,7 @@
                                             </div>
                                             <div class="skill-description read-more-element" data-length-desktop="500"
                                                  data-length-mobile="250" data-detect="true">
-                                                (Career) {{$member->skills}}
+                                                (Career) {{$member->skills_text}}
                                                 yea...<span class="read-more-button">Read More</span></div>
                                         </li>
                                     </ul>
@@ -325,7 +325,7 @@
                                             </div>
                                             <div class="skill-description read-more-element" data-length-desktop="500"
                                                  data-length-mobile="250" data-detect="true">
-                                                (Skills) {{$member->skills}}
+                                                (Skills) {{$member->skills_text}}
                                                 yea...<span class="read-more-button">Read More</span></div>
                                         </li>
                                     </ul>

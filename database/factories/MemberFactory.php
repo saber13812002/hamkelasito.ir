@@ -75,7 +75,7 @@ class MemberFactory extends Factory
             'biography' => $this->faker->paragraph(),
             'language' => $this->faker->randomElement(['en', 'ja', 'fa']),
             'nationality' => $this->faker->randomElement(['Japan', 'England', 'USA']),
-            'skills' => $this->faker->paragraph(),
+            'skills_text' => $this->faker->paragraph(),
             'skill_tags' => $this->faker->randomElement(['Basketball', 'Inline-skating', 'Tennis']),
 
             'published_at' => $this->faker->dateTime('now'),
