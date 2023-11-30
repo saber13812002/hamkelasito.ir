@@ -8,7 +8,7 @@
                 <button class="btn btn-icon app-bar-desktop" id="btn_appbar_menu" aria-label="Open Menu">
                     <i class="icon-menu"></i>
                 </button>
-                <a href="/become-a-model" class="btn btn-icon app-bar-mobile" aria-label="Back">
+                <a href="/register" class="btn btn-icon app-bar-mobile" aria-label="Back">
                     <i class="icon-arrow-left-1"></i>
                 </a>
             </div>
@@ -140,7 +140,7 @@
 
                     <!-- side action -->
                     <div class="side-action">
-                        <a href="/become-a-model" class="btn btn-icon-left">
+                        <a href="/register" class="btn btn-icon-left">
                             <span>
                                 <i class="icon-add"></i>
                                 Become Liliana
@@ -303,7 +303,7 @@
                             </div>
                         </div>
                         <a href="/login" class="btn btn-primary btn-full">Login</a>
-                        <a href="/become-a-model" class="btn btn-full">Become Liliana</a>
+                        <a href="/register" class="btn btn-full">Become Liliana</a>
                         <ul class="menu-contact-us">
                             <li>
                                 <i class="icon-sms"></i>
