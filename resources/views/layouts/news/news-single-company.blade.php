@@ -164,13 +164,13 @@
                     <!-- side action -->
                     <div class="side-action">
                         @guest
-                            <a href="./register" class="btn btn-icon-left">
+                            <a href="{{route('become-a-model')}}" class="btn btn-icon-left">
                             <span>
                                 <i class="icon-add"></i>
                                 {{__('menu.Become Liliana')}}
                             </span>
                             </a>
-                            <a href="./login" class="btn btn-primary btn-icon-left">
+                            <a href="{{route('login')}}" class="btn btn-primary btn-icon-left">
                             <span>
                                 <i class="icon-log-in"></i>
                                 {{__('menu.Login')}}
@@ -328,14 +328,14 @@
                                 <div class="user-content">
                                     <div class="user-display-name">{{trans('adminlte.full_name')}}
                                         : {{Auth::user()->name}}</div>
-                                    <a href="../dashboard/models/index">
-                                        Go to Dashboard
+                                    <a href="{{route('dashboard-models')}}">
+                                        {{__('menu.Go to Dashboard')}}
                                         <i class="icon-arrow-right"></i>
                                     </a>
                                 </div>
                             </div>
                         @else
-                            <a href="./login" class="btn btn-primary btn-full">{{__('menu.Login')}}</a>
+                            <a href="{{route('login')}}" class="btn btn-primary btn-full">{{__('menu.Login')}}</a>
                             <a href="{{route('become-a-model')}}" class="btn btn-full">{{__('menu.Become Liliana')}}</a>
                         @endauth
                         <ul class="menu-contact-us">

@@ -76,7 +76,7 @@
             <!-- start apply as a model -->
             <div class="section section-apply-model">
                 <div class="container-lg">
-                    <a href="./register" class="btn btn-primary">
+                    <a href="{{route('become-a-model')}}" class="btn btn-primary">
                         {{__('menu.Apply')}}
                     </a>
                 </div>

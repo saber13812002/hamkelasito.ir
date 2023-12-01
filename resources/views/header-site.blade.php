@@ -142,7 +142,7 @@
                     <!-- side action -->
                     <div class="side-action">
                         @guest
-                            <a href="/register" class="btn btn-icon-left">
+                            <a href="{{route('become-a-model')}}" class="btn btn-icon-left">
                             <span>
                                 <i class="icon-add"></i>
                                 {{__('menu.Become Liliana')}}
@@ -313,7 +313,7 @@
                         @endguest
                         @guest
                             <a href="login" class="btn btn-primary btn-full">{{__('menu.Login')}}</a>
-                            <a href="/register" class="btn btn-full">{{__('menu.Become Liliana')}}</a>
+                            <a href="{{route('become-a-model')}}" class="btn btn-full">{{__('menu.Become Liliana')}}</a>
                         @endguest
                         <ul class="menu-contact-us">
                             <li>

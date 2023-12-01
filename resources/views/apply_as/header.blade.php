@@ -8,7 +8,7 @@
                 <button class="btn btn-icon app-bar-desktop" id="btn_appbar_menu" aria-label="Open Menu">
                     <i class="icon-menu"></i>
                 </button>
-                <a href="/register" class="btn btn-icon app-bar-mobile" aria-label="Back">
+                <a href="{{route('become-a-model')}}" class="btn btn-icon app-bar-mobile" aria-label="Back">
                     <i class="icon-arrow-left-1"></i>
                 </a>
             </div>
@@ -147,20 +147,20 @@
                     <div class="side-action">
 
                         @guest
-                            <a href="/register" class="btn btn-icon-left">
+                            <a href="{{route('become-a-model')}}" class="btn btn-icon-left">
                             <span>
                                 <i class="icon-add"></i>
-                                Become Liliana
+                                {{__('menu.Become Liliana')}}
                             </span>
                             </a>
-                            <a href="/login" class="btn btn-primary btn-icon-left">
+                            <a href="{{route('login')}}" class="btn btn-primary btn-icon-left">
                             <span>
                                 <i class="icon-log-in"></i>
                                 {{__('menu.Login')}}
                             </span>
                             </a>
                         @else
-                            <a href="/dashboard-models" class="dashboard">
+                            <a href="{{route('dashboard-models')}}" class="dashboard">
                             <span>
                                 Miss Leslie Alexander
                                 <i class="icon-arrow-right"></i>
@@ -306,14 +306,14 @@
                             </noscript>
                             <div class="user-content">
                                 <div class="user-display-name">Miss Leslie Alexander</div>
-                                <a href="/storage/dashboard/models/index">
-                                    Go to Dashboard
+                                <a href="{{route('dashboard-models')}}">
+                                    {{__('menu.Go to Dashboard')}}
                                     <i class="icon-arrow-right"></i>
                                 </a>
                             </div>
                         </div>
                         @guest()
-                            <a href="/login" class="btn btn-primary btn-full">Login</a>
+                            <a href="{{route('login')}}" class="btn btn-primary btn-full">Login</a>
                             <a href="{{route('become-a-model')}}" class="btn btn-full">{{__('menu.Become Liliana')}}</a>
                         @endguest
                         <ul class="menu-contact-us">
