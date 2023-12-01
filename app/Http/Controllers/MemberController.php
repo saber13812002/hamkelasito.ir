@@ -11,6 +11,7 @@ use App\Models\Upload;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\Session;
 
 class MemberController extends Controller
 {
@@ -506,13 +507,20 @@ class MemberController extends Controller
         }
     }
 
+    public function getId(): int
+    {
+        return auth()->user()->id;
+        // todo : WIP
+//        return Session::get(auth()->user()->id . '_admin_login_to_user_dashboard', auth()->user()->id);
+    }
+
     /**
      * @return TempTable
      */
     public function getOldFormData(array $stepIds)
     {
         $saved = TempTable::query()
-            ->whereUserId(auth()->user()->id)
+            ->whereUserId($this->getId())
             ->whereStepId($stepIds)
             ->whereType('string')
             ->get()
@@ -528,7 +536,7 @@ class MemberController extends Controller
     public function getOldFileData(array $stepIds)
     {
         $saved = TempTable::query()
-            ->whereUserId(auth()->user()->id)
+            ->whereUserId($this->getId())
             ->whereStepId($stepIds)
             ->whereType('file')
             ->get()
@@ -560,7 +568,7 @@ class MemberController extends Controller
     public function getOldJsonData(array $stepIds)
     {
         return TempTable::query()
-            ->whereUserId(auth()->user()->id)
+            ->whereUserId($this->getId())
             ->whereStepId($stepIds)
             ->whereType('json')
             ->get()
@@ -573,7 +581,7 @@ class MemberController extends Controller
     public function getOldTextData(array $stepIds)
     {
         return TempTable::query()
-            ->whereUserId(auth()->user()->id)
+            ->whereUserId($this->getId())
             ->whereStepId($stepIds)
             ->whereType('text')
             ->get()
@@ -602,7 +610,7 @@ class MemberController extends Controller
             $options = $this->generateShoeUsWomenSize($options);
             // todo
             $options['gender'] = TempTable::query()
-                ->whereUserId(auth()->user()->id)
+                ->whereUserId($this->getId())
                 ->whereModelField('gender')
                 ->first()->value;
 //            dd($op);
@@ -787,5 +795,23 @@ class MemberController extends Controller
 
         $response->setLastModified(new \DateTime('now'));
         $response->setExpires(\Carbon\Carbon::now()->addMinutes(config('imagecache.lifetime')));
+    }
+
+    public function loginMemberUpdatePage(Member $member)
+    {
+        $checkSession = Session::get(auth()->user()->id . '_admin_login_to_user_dashboard');
+        if (!$checkSession || $checkSession != $member->user_id) {
+            Session::put(auth()->user()->id . '_admin_login_to_user_dashboard', $member->user_id);
+        }
+        return redirect()->route('step0');
+    }
+
+    public function backToAdmin()
+    {
+        $checkSession = Session::get(auth()->user()->id . '_admin_login_to_user_dashboard');
+        if ($checkSession) {
+            Session::remove(auth()->user()->id . '_admin_login_to_user_dashboard');
+        }
+        return redirect()->route('adminMember');
     }
 }
