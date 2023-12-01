@@ -15,7 +15,7 @@
                         <div class="app-bar-container">
                             <div class="leading"></div>
                             <div class="app-bar-title">
-                                <h1>Login</h1>
+                                <h1>{{__('menu.Login')}}</h1>
                             </div>
                             <div class="actions"></div>
                         </div>
@@ -78,11 +78,11 @@
                     <div class="form-footer">
                         <button type="submit" class="btn btn-primary btn-full btn-icon-right">
                             <span>
-                                Login
+                                {{__('menu.Login')}}
                                 <i class="icon-arrow-right-1"></i>
                             </span>
                         </button>
-                        <a href="./forgot-password.html">Forgot Password</a>
+                        <a href="/forgot-password">Forgot Password</a>
                     </div>
                 </form>
             </div>

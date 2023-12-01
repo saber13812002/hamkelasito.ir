@@ -16,18 +16,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-});
 
-Route::get('/become-a-model', [HomeController::class, 'becomeModel'])->name('register');
+Route::get('/become-a-model', [HomeController::class, 'becomeModel'])->name('become-a-model');
 
 Route::get('login', [AuthController::class, 'index'])->name('login');
 Route::post('post-login', [AuthController::class, 'postLogin'])->name('login.post');
 Route::get('register', [AuthController::class, 'registration'])->name('register');
 //Route::get('apply-as-a-model', [AuthController::class, 'registration'])->name('apply-as-a-model');
 Route::post('post-registration', [AuthController::class, 'postRegistration'])->name('register.post');
-Route::get('dashboard', [AuthController::class, 'dashboard']);
+//Route::get('dashboard', [AuthController::class, 'dashboard']);
 Route::get('logout', [AuthController::class, 'logout'])->name('logout');
 
 Route::get('password/reset', 'Auth\ForgotPasswordController@showLinkRequestForm')->name('password.request');

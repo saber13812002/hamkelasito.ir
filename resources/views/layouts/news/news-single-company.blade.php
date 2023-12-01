@@ -66,14 +66,17 @@
                         data-url="/news-single">
                     <i class="icon-share"></i>
                 </button>
-                <a href="../dashboard/models/index" class="user-dashboard">
-                    <i class="icon-user"></i>
-                    <!--                    <img src="/storage/assets/img/lazy-1x1.webp" class="lazy" data-src="/storage/assets/img/1x1/001.webp"-->
-                    <!--                         width="80" height="80" alt="Model">-->
-                    <!--                    <noscript>-->
-                    <!--                        <img src="/storage/assets/img/1x1/001.webp" width="80" height="80" alt="Model">-->
-                    <!--                    </noscript>-->
-                </a>
+                @auth()
+                    <a href="{{route('dashboard-models')}}" class="user-dashboard">
+                        <i class="icon-user"></i>
+                        <img src="/storage/assets/img/lazy-1x1.webp" class="lazy"
+                             data-src="/storage/assets/img/1x1/001.webp"
+                             width="80" height="80" alt="Model">
+                        <noscript>
+                            <img src="/storage/assets/img/1x1/001.webp" width="80" height="80" alt="Model">
+                        </noscript>
+                    </a>
+                @endauth
             </div>
         </div>
     </div>
@@ -195,9 +198,9 @@
                             <li>
                                 <i class="icon-call"></i>
                                 <a href="tel:+81-3-6362-3355">@if(App::getLocale() != 'ja')
-                                   +81-
-                                @endif
-                                3-6362-3355</a>
+                                        +81-
+                                    @endif
+                                    3-6362-3355</a>
                             </li>
                             <li>
                                 <i class="icon-sms"></i>
@@ -314,8 +317,7 @@
                         </div>
                     </div>
                     <div class="col-auto">
-                        @guest
-                        @else
+                        @auth()
                             <div class="user-account-mini">
                                 <img src="/storage/assets/img/lazy-1x1.webp" class="lazy"
                                      data-src="/storage/assets/img/1x1/001.webp"
@@ -324,19 +326,18 @@
                                     <img src="/storage/assets/img/1x1/001.webp" width="80" height="80" alt="Model">
                                 </noscript>
                                 <div class="user-content">
-                                    <div class="user-display-name">{{trans('adminlte.full_name')}} : {{Auth::user()->name}}</div>
+                                    <div class="user-display-name">{{trans('adminlte.full_name')}}
+                                        : {{Auth::user()->name}}</div>
                                     <a href="../dashboard/models/index">
                                         Go to Dashboard
                                         <i class="icon-arrow-right"></i>
                                     </a>
                                 </div>
                             </div>
-                        @endguest
-
-                        @guest
-                            <a href="./login" class="btn btn-primary btn-full">Login</a>
-                            <a href="./register" class="btn btn-full">Become Liliana</a>
-                        @endguest
+                        @else
+                            <a href="./login" class="btn btn-primary btn-full">{{__('menu.Login')}}</a>
+                            <a href="{{route('become-a-model')}}" class="btn btn-full">{{__('menu.Become Liliana')}}</a>
+                        @endauth
                         <ul class="menu-contact-us">
                             <li>
                                 <i class="icon-sms"></i>

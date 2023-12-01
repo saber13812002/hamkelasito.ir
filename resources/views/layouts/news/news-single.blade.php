@@ -66,14 +66,16 @@
                         data-url="/news-single">
                     <i class="icon-share"></i>
                 </button>
-                <a href="../dashboard/models/index" class="user-dashboard">
-                    <i class="icon-user"></i>
-                    <!--                    <img src="/storage/assets/img/lazy-1x1.webp" class="lazy" data-src="/storage/assets/img/1x1/001.webp"-->
-                    <!--                         width="80" height="80" alt="Model">-->
-                    <!--                    <noscript>-->
-                    <!--                        <img src="/storage/assets/img/1x1/001.webp" width="80" height="80" alt="Model">-->
-                    <!--                    </noscript>-->
-                </a>
+                @auth()
+                    <a href="{{route('dashboard-models')}}" class="user-dashboard">
+                        <i class="icon-user"></i>
+                        <img src="/storage/assets/img/lazy-1x1.webp" class="lazy" data-src="/storage/assets/img/1x1/001.webp"
+                             width="80" height="80" alt="Model">
+                        <noscript>
+                            <img src="/storage/assets/img/1x1/001.webp" width="80" height="80" alt="Model">
+                        </noscript>
+                    </a>
+                @endauth
             </div>
         </div>
     </div>
@@ -161,16 +163,16 @@
                     <!-- side action -->
                     <div class="side-action">
                         @guest
-                            <a href="./register" class="btn btn-icon-left">
+                            <a href="{{route('become-a-model')}}" class="btn btn-icon-left">
                             <span>
                                 <i class="icon-add"></i>
-                                Become Liliana
+                                {{__('menu.Become Liliana')}}
                             </span>
                             </a>
                             <a href="./login" class="btn btn-primary btn-icon-left">
                             <span>
                                 <i class="icon-log-in"></i>
-                                Login
+                                {{__('menu.Login')}}
                             </span>
                             </a>
                         @else
@@ -314,8 +316,7 @@
                         </div>
                     </div>
                     <div class="col-auto">
-                        @guest
-                        @else
+                        @auth()
                             <div class="user-account-mini">
                                 <img src="/storage/assets/img/lazy-1x1.webp" class="lazy"
                                      data-src="/storage/assets/img/1x1/001.webp"
@@ -331,11 +332,10 @@
                                     </a>
                                 </div>
                             </div>
-                        @endguest
-                        @guest
-                            <a href="./login" class="btn btn-primary btn-full">Login</a>
-                            <a href="./register" class="btn btn-full">Become Liliana</a>
-                        @endguest
+                        @else
+                            <a href="./login" class="btn btn-primary btn-full">{{__('menu.Login')}}</a>
+                            <a href="{{route('become-a-model')}}" class="btn btn-full">{{__('menu.Become Liliana')}}</a>
+                        @endauth
                         <ul class="menu-contact-us">
                             <li>
                                 <i class="icon-sms"></i>

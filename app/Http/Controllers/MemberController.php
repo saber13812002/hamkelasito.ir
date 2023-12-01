@@ -95,7 +95,7 @@ class MemberController extends Controller
     /**
      * Show the form for creating a new resource.
      */
-    public function main()
+    public function dashboardAdmin()
     {
         $token = session('token');
         return view('dashboard.main', compact('token'));

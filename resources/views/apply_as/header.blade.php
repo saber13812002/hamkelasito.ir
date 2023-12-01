@@ -47,14 +47,18 @@
                     <i class="icon-search-normal"></i>
                 </button>
                 <a href="/home" class="app-bar-mobile">Cancel</a>
-                <a href="/storage/dashboard/models/index" class="user-dashboard">
-                    <i class="icon-user"></i>
-                    <!--                    <img src="/storage/assets/img/lazy-1x1.webp" class="lazy" data-src="/storage/assets/img/1x1/001.webp"-->
-                    <!--                         width="80" height="80" alt="Model">-->
-                    <!--                    <noscript>-->
-                    <!--                        <img src="/storage/assets/img/1x1/001.webp" width="80" height="80" alt="Model">-->
-                    <!--                    </noscript>-->
-                </a>
+                @guest
+                @else
+                    <a href="{{route('dashboard-models')}}" class="user-dashboard">
+                        <i class="icon-user"></i>
+                        <img src="/storage/assets/img/lazy-1x1.webp" class="lazy"
+                             data-src="/storage/assets/img/1x1/001.webp"
+                             width="80" height="80" alt="Model">
+                        <noscript>
+                            <img src="/storage/assets/img/1x1/001.webp" width="80" height="80" alt="Model">
+                        </noscript>
+                    </a>
+                @endguest
             </div>
         </div>
     </div>
@@ -143,30 +147,30 @@
                     <div class="side-action">
 
                         @guest
-                        <a href="/register" class="btn btn-icon-left">
+                            <a href="/register" class="btn btn-icon-left">
                             <span>
                                 <i class="icon-add"></i>
                                 Become Liliana
                             </span>
-                        </a>
-                        <a href="/login" class="btn btn-primary btn-icon-left">
+                            </a>
+                            <a href="/login" class="btn btn-primary btn-icon-left">
                             <span>
                                 <i class="icon-log-in"></i>
-                                Login
+                                {{__('menu.Login')}}
                             </span>
-                        </a>
+                            </a>
                         @else
-                        <a href="/dashboard-models" class="dashboard">
+                            <a href="/dashboard-models" class="dashboard">
                             <span>
                                 Miss Leslie Alexander
                                 <i class="icon-arrow-right"></i>
                             </span>
-                            <a href="/logout" class="logout">
+                                <a href="/logout" class="logout">
                             <span>
                                 Logout
                                 <i class="icon-logout"></i>
                             </span>
-                            </a>
+                                </a>
 
                         @endguest
                     </div>
@@ -308,8 +312,10 @@
                                 </a>
                             </div>
                         </div>
-                        <a href="/login" class="btn btn-primary btn-full">Login</a>
-                        <a href="/register" class="btn btn-full">Become Liliana</a>
+                        @guest()
+                            <a href="/login" class="btn btn-primary btn-full">Login</a>
+                            <a href="{{route('become-a-model')}}" class="btn btn-full">{{__('menu.Become Liliana')}}</a>
+                        @endguest
                         <ul class="menu-contact-us">
                             <li>
                                 <i class="icon-sms"></i>

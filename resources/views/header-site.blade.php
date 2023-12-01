@@ -45,17 +45,16 @@
                 <button class="btn btn-icon app-bar-desktop" id="btn_appbar_search" aria-label="Open Search">
                     <i class="icon-search-normal"></i>
                 </button>
-                @guest
-                @else
-                    <a href="/dashboard-models/" class="user-dashboard">
+                @auth()
+                    <a href="{{route('dashboard-models')}}" class="user-dashboard">
                         <i class="icon-user"></i>
-                        <!--                    <img src="/storage/assets/img/lazy-1x1.webp" class="lazy" data-src="/storage/assets/img/1x1/001.webp"-->
-                        <!--                         width="80" height="80" alt="Model">-->
-                        <!--                    <noscript>-->
-                        <!--                        <img src="/storage/assets/img/1x1/001.webp" width="80" height="80" alt="Model">-->
-                        <!--                    </noscript>-->
+                        <img src="/storage/assets/img/lazy-1x1.webp" class="lazy" data-src="/storage/assets/img/1x1/001.webp"
+                             width="80" height="80" alt="Model">
+                        <noscript>
+                            <img src="/storage/assets/img/1x1/001.webp" width="80" height="80" alt="Model">
+                        </noscript>
                     </a>
-                @endguest
+                @endauth
             </div>
         </div>
     </div>
