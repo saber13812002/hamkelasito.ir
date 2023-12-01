@@ -19,9 +19,15 @@ class MemberController extends Controller
      *
      * admin panel super admin
      */
-    public function index()
+    public function index(Request $request)
     {
-        $members = Member::published()->get();
+        $members = Member::query()->when(isset($request->search), function ($q) use ($request) {
+            return $q->where('name', 'LIKE', '%' . $request->search . '%')
+                ->orWhere('family', 'LIKE', '%' . $request->search . '%')
+                ->orWhere('middle_name', 'LIKE', '%' . $request->search . '%')
+                ->orWhere('alias', 'LIKE', '%' . $request->search . '%')
+                ->orWhere('no', 'LIKE', '%' . $request->search . '%');
+        })->published()->paginate();
         return view('admin.member.index', compact('members'));
     }
 
