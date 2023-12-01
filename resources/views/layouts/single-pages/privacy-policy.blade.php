@@ -38,7 +38,12 @@
                         </div>
                     </div>
                     <p>
-                        Liliana Modeling ("Liliana") is committed to protecting personally identifiable information (PII) such as names, addresses, and phone numbers. Liliana will not disclose to third parties any digital or written information provided at the time of application or inquiry for purposes other than selecting models at auditions and responding to inquiries. Liliana undertakes to ensure that all employees are aware of the importance of protecting PII and strictly adhere to the company’s policies in this regard.
+                        Liliana Modeling ("Liliana") is committed to protecting personally identifiable information
+                        (PII) such as names, addresses, and phone numbers. Liliana will not disclose to third parties
+                        any digital or written information provided at the time of application or inquiry for purposes
+                        other than selecting models at auditions and responding to inquiries. Liliana undertakes to
+                        ensure that all employees are aware of the importance of protecting PII and strictly adhere to
+                        the company’s policies in this regard.
                     </p>
                     <h6>1. Collection and Management of Personally Identifiable Information</h6>
                     <ul class="list">
@@ -110,6 +115,14 @@
 
         </div>
     </main>
+
+
+    <!-- start scripts -->
+    <script src="/storage/assets/js/lib/jQuery.min.js"></script>
+    <script src="/storage/assets/js/lib/lazyload.min.js"></script>
+    <script src="/storage/assets/js/super-slider.js"></script>
+    <script src="/storage/assets/js/component.js"></script>
+    <script src="/storage/assets/js/scripts.js"></script>
 
 
     </body>

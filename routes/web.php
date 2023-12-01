@@ -20,7 +20,7 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 });
 
-Route::get('/become-a-model', [App\Http\Controllers\AuthController::class, 'registration'])->name('register');
+Route::get('/become-a-model', [HomeController::class, 'becomeModel'])->name('register');
 
 Route::get('login', [AuthController::class, 'index'])->name('login');
 Route::post('post-login', [AuthController::class, 'postLogin'])->name('login.post');

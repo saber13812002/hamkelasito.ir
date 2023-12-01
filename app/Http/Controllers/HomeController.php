@@ -141,7 +141,7 @@ class HomeController
 
     public function becomeModel()
     {
-        return view('become-a-model');
+        return view('layouts.single-pages.become-a-model');
     }
 
     public function composite(Request $request)
