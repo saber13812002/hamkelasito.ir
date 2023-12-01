@@ -25,9 +25,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-Route::get('', [AuthController::class, 'admin']);
+Route::get('', [AuthController::class, 'admin'])->name('adminMain');
 Route::get('categories', [CategoryController::class, 'index']);
-Route::get('members', [MemberController::class, 'index']);
+Route::get('members', [MemberController::class, 'index'])->name('adminMember');
 Route::get('users', [UserController::class, 'index']);
 Route::get('sliders', [SliderController::class, 'index']);
 Route::get('languages', [LanguageController::class, 'index']);
@@ -45,6 +45,8 @@ Route::get('packages', [SurveyController::class, 'packages'])->name('admin.surve
 Route::get('questions/{package_id}', [SurveyController::class, 'questions'])->name('admin.survey.questions');
 Route::get('choices/{question_id}', [SurveyController::class, 'choices'])->name('admin.survey.choices');
 
+Route::get('/members/{member}/overview', [MemberController::class, 'loginMemberUpdatePage'])->name('loginMemberUpdatePage');
+Route::get('/action/logout-member', [MemberController::class, 'backToAdmin'])->name('backToAdmin');
 
 //Route::get('/admin', function () {
 //    Route::get('/', [AuthController::class, 'admin']);
