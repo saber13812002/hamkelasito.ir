@@ -28,8 +28,6 @@ class dbimport extends Command
      */
     public function handle()
     {
-
-        // Retrieve data from the source database
         $models = LiliModel::limit(1)->offset(0)->get();
         $users = LiliUser::limit(5)->offset(0)->get();
 //        dd($models);
@@ -60,7 +58,7 @@ class dbimport extends Command
 //            ["", "eye_color_id"],
 //            ["", "bank_name"],
 //            ["", "branch_name"],
-            ["no", "account_no"],
+//            ["no", "account_no"],
 //            ["", "account_name"],
 //            ["", "account_classification_id"],
 //            ["", "type_of_visa"],
@@ -77,10 +75,10 @@ class dbimport extends Command
 //            ["", "is_show_subscribe_count"],
 //            ["", "deleted_at"],
         ];
-        $map2 = [
-            ["", "name"],
-            ["first_name", "first_name"],
-            ["last_name", "last_name"],
+        $maps2 = [
+//            ["", "name"],
+            ["name", "first_name"],
+            ["family", "last_name"],
             ["last_name_furigana", "last_name_jpn"],
             ["first_name_furigana", "first_name_jpn"],
 //            ["", "first_name_length"],
@@ -114,19 +112,15 @@ class dbimport extends Command
 //            ["", "deleted_at"],
         ];
 
-// Iterate over each row and save it in the destination database
         foreach ($models as $row) {
-            // Create a new instance of the destination model
             $destinationModel = new Member();
 
-            // Set the attributes of the destination model with values from the source model
             foreach ($maps as $map) {
                 $destinationModel[$map[0]] = $row[$map[1]];
             }
-//                dd($map[0]);
-            // ...
-
-            // Save the destination model instance to the destination database
+            foreach ($maps2 as $map) {
+                $destinationModel[$map[0]] = $row[$map[1]];
+            }
             $destinationModel->save();
         }
     }
