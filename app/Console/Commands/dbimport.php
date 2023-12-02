@@ -3,6 +3,7 @@
 namespace App\Console\Commands;
 
 use App\Models\LiliModel;
+use App\Models\LiliUser;
 use App\Models\Member;
 use Illuminate\Console\Command;
 
@@ -13,7 +14,7 @@ class dbimport extends Command
      *
      * @var string
      */
-    protected $signature = 'app:dbimport {}';
+    protected $signature = 'app:dbimport';
 
     /**
      * The console command description.
@@ -29,8 +30,10 @@ class dbimport extends Command
     {
 
         // Retrieve data from the source database
-        $sourceData = LiliModel::all();
-
+//        $models = LiliModel::limit(5)->offset(0)->get();
+        $users = LiliUser::limit(5)->offset(0)->get();
+//        dd($models);
+        dd($users[0]);
 
         $maps = [
             ["", "job_experience"],
@@ -74,9 +77,45 @@ class dbimport extends Command
             ["", "is_show_subscribe_count"],
             ["", "deleted_at"],
         ];
+        $map2 = [
+            ["", "name"],
+            ["", "first_name"],
+            ["", "last_name"],
+            ["", "last_name_jpn"],
+            ["", "first_name_jpn"],
+            ["", "first_name_length"],
+            ["", "name_jpn"],
+            ["", "first_name_jpn_length"],
+            ["", "bio"],
+            ["", "bio_jpn"],
+            ["", "email"],
+            ["", "email_verified_at"],
+            ["", "model_verified_at"],
+            ["", "model_updated_unverified"],
+            ["", "model_updated_not_appended"],
+            ["", "cell_phone"],
+            ["", "city"],
+            ["", "country_id"],
+            ["", "ethnic_id"],
+            ["", "gender_id"],
+            ["", "birthday"],
+            ["", "corporate"],
+            ["", "unique_id"],
+            ["", "model_id"],
+            ["", "password"],
+            ["", "api_token"],
+            ["", "google_id"],
+            ["", "remember_token"],
+            ["", "created_at"],
+            ["", "updated_at"],
+            ["", "seen_at"],
+            ["", "is_model"],
+            ["", "age"],
+            ["", "deleted_at"],
+        ];
 
 // Iterate over each row and save it in the destination database
-        foreach ($sourceData as $row) {
+        foreach ($models as $row) {
             // Create a new instance of the destination model
             $destinationModel = new Member();
 

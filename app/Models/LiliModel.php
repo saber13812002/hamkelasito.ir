@@ -8,4 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class LiliModel extends Model
 {
     use HasFactory;
+
+    protected $table = 'models';
+    protected $connection = 'lilimysql';
 }
