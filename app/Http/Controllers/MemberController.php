@@ -123,7 +123,9 @@ class MemberController extends Controller
     public function userInfo()
     {
         $token = session('token');
-        return view('dashboard.user-info', compact('token'));
+        $memberUserId = $this->getId();
+        $member = Member::query()->where('user_id', $memberUserId)->first();
+        return view('dashboard.user-info', compact('token', 'member'));
     }
 
     /**
@@ -185,8 +187,13 @@ class MemberController extends Controller
      */
     public function userInfoEditBasicInfo()
     {
+        $memberUserId = $this->getId();
         $token = session('token');
-        return view('dashboard.user-info-edit-basic-info', compact('token'));
+        $member = Member::query()->where('user_id', $memberUserId)->first();
+        if (check_login_from_admin_to_member()) {
+            return view('dashboard.admin-user-info-edit-basic-info', compact('token', 'member'));
+        }
+        return view('dashboard.user-info-edit-basic-info', compact('token', 'member'));
     }
 
     /**
@@ -509,9 +516,12 @@ class MemberController extends Controller
 
     public function getId(): int
     {
+//         todo : WIP
+        $session = Session::get('admin_login_to_user_dashboard');
+        if ($session && !is_null($session)) {
+            return $session;
+        }
         return auth()->user()->id;
-        // todo : WIP
-//        return Session::get(auth()->user()->id . '_admin_login_to_user_dashboard', auth()->user()->id);
     }
 
     /**
@@ -609,10 +619,11 @@ class MemberController extends Controller
             $options = $this->generateShoeUsMenSize($options);
             $options = $this->generateShoeUsWomenSize($options);
             // todo
+
             $options['gender'] = TempTable::query()
                 ->whereUserId($this->getId())
                 ->whereModelField('gender')
-                ->first()->value;
+                ->first()->value ?? null;
 //            dd($op);
         }
         if (in_array(3, $stepIds)) {
@@ -799,18 +810,18 @@ class MemberController extends Controller
 
     public function loginMemberUpdatePage(Member $member)
     {
-        $checkSession = Session::get(auth()->user()->id . '_admin_login_to_user_dashboard');
-        if (!$checkSession || $checkSession != $member->user_id) {
-            Session::put(auth()->user()->id . '_admin_login_to_user_dashboard', $member->user_id);
+        $checkSession = Session::get('admin_login_to_user_dashboard');
+        if (!$checkSession || $checkSession !== $member->user_id) {
+            Session::put('admin_login_to_user_dashboard', $member->user_id);
         }
-        return redirect()->route('step0');
+        return redirect()->route('user-info');
     }
 
     public function backToAdmin()
     {
-        $checkSession = Session::get(auth()->user()->id . '_admin_login_to_user_dashboard');
+        $checkSession = Session::get('admin_login_to_user_dashboard');
         if ($checkSession) {
-            Session::remove(auth()->user()->id . '_admin_login_to_user_dashboard');
+            Session::remove('admin_login_to_user_dashboard');
         }
         return redirect()->route('adminMember');
     }

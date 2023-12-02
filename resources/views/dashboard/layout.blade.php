@@ -17,7 +17,19 @@
 </head>
 
 @yield('content-dashboard')
-
+@if(check_login_from_admin_to_member())
+    <div
+        style="text-align:center;width: 10%;height:auto;padding:10px; border-radius: 10px; position: fixed;background: #ffc107;top: 80%;left: 5%;right:2%;z-index: 99999">
+        <strong>Admin Login : #{{ admin_to_member_id() }}</strong>
+        <br>
+        <span style="padding: 5px;border-radius: 10px">
+            <form method="post" action="{{ route('backToAdmin') }}">
+               <button type="submit">Back To Panel</button>
+                @csrf
+            </form>
+    </span>
+    </div>
+@endif
 <!-- start loading -->
 <div class="page-loading visible">
     <div class="loading-content">
@@ -45,6 +57,7 @@
 <script src="/storage/assets/js/pro-validation.js"></script>
 <script src="/storage/assets/js/component.js"></script>
 <script src="/storage/assets/js/dashboard.js"></script>
+@yield('js')
 
 </body>
 
