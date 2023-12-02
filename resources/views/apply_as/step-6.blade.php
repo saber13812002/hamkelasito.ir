@@ -106,31 +106,38 @@
                                     <div class="form-section">
                                         <div class="form-section-label">Authentication Info</div>
                                         <div class="form-section-content">
-                                            <div class="field field-type-select" data-btn-submit-text="Select" data-field-defualt-text=" "
+                                            <div class="field field-type-select" data-btn-submit-text="Select"
+                                                 data-field-defualt-text=" "
                                                  data-required="true" data-type="select">
                                                 <div class="field-content">
-                                                    <label for="authentication_type">Type of Authentication <span class="field-required-star">*</span></label>
+                                                    <label for="authentication_type">Type of Authentication <span
+                                                            class="field-required-star">*</span></label>
                                                     <select name="authentication_type" id="authentication_type">
                                                         <option
                                                             @if (isset($saved) && isset($saved['authentication_type']) && str_contains($saved['authentication_type'],"passport"))
                                                                 {{"selected"}}
-                                                            @endif value="passport">Passport</option>
+                                                            @endif value="passport">Passport
+                                                        </option>
                                                         <option
                                                             @if (isset($saved) && isset($saved['authentication_type']) && str_contains($saved['authentication_type'],"drive_license"))
                                                                 {{"selected"}}
-                                                            @endif value="drive_license">Driver's License</option>
+                                                            @endif value="drive_license">Driver's License
+                                                        </option>
                                                         <option
                                                             @if (isset($saved) && isset($saved['authentication_type']) && str_contains($saved['authentication_type'],"insurance_card"))
                                                                 {{"selected"}}
-                                                            @endif value="insurance_card">Insurance Card</option>
+                                                            @endif value="insurance_card">Insurance Card
+                                                        </option>
                                                         <option
                                                             @if (isset($saved) && isset($saved['authentication_type']) && str_contains($saved['authentication_type'],"my_number_card"))
                                                                 {{"selected"}}
-                                                            @endif value="my_number_card">My Number Card</option>
+                                                            @endif value="my_number_card">My Number Card
+                                                        </option>
                                                         <option
                                                             @if (isset($saved) && isset($saved['authentication_type']) && str_contains($saved['authentication_type'],"residence_card"))
                                                                 {{"selected"}}
-                                                            @endif value="residence_card">Residence Card</option>
+                                                            @endif value="residence_card">Residence Card
+                                                        </option>
                                                     </select>
                                                     <i class="icon-arrow-down"></i>
                                                 </div>
@@ -140,7 +147,8 @@
                                     </div>
 
                                     <!-- passport photo -->
-                                    <div class="form-section" data-dependency="#authentication_type" data-dependency-value="passport">
+                                    <div class="form-section" data-dependency="#authentication_type"
+                                         data-dependency-value="passport">
                                         <div class="form-section-label">
                                             <span>Passport Photo <span class="field-required-star">*</span></span>
                                             <a href="#" data-light-box="photo_guide_passport"
@@ -152,17 +160,22 @@
                                         </div>
                                         <div class="form-section-content">
                                             <div>
-                                                <div class="field field-type-upload" data-type="upload" data-required="true">
+                                                <div class="field field-type-upload" data-type="upload"
+                                                     data-required="true">
                                                     <div class="upload-drop-zone"
                                                          @if (isset($saved_file) && isset($saved_file['passport_photo']))
                                                              data-default="{{$saved_file['passport_photo']}}"
                                                          @endif
-                                                         data-limit-count="1" data-limit-size="10" data-accept=".png,.jpg">
-                                                        <input type="hidden" class="input-drop-zone" name="passport_photo" id="passport_photo">
+                                                         data-limit-count="1" data-limit-size="10"
+                                                         data-accept=".png,.jpg">
+                                                        <input type="hidden" class="input-drop-zone"
+                                                               name="passport_photo" id="passport_photo">
                                                         <label>Photo of Passport</label>
                                                         <i class="icon-upload"></i>
                                                         <div class="upload-title">
-                                                            <b>Click to upload</b> <span class="visible-desktop">or drag and drop</span> a photo of your passport <span class="field-required-star">*</span>
+                                                            <b>Click to upload</b> <span class="visible-desktop">or drag and drop</span>
+                                                            a photo of your passport <span
+                                                                class="field-required-star">*</span>
                                                         </div>
                                                         <div class="upload-description">
                                                             Allowed format: PNG, JPG (Up to: 1 photo/10 Mb)
@@ -176,7 +189,8 @@
                                     </div>
 
                                     <!-- drive photo -->
-                                    <div class="form-section" data-dependency="#authentication_type" data-dependency-value="drive_license">
+                                    <div class="form-section" data-dependency="#authentication_type"
+                                         data-dependency-value="drive_license">
                                         <div class="form-section-label">
                                             <span>Driver's License Card Photo <span class="field-required-star">*</span></span>
                                             <a href="#" data-light-box="photo_guide_drive"
@@ -186,46 +200,68 @@
                                                 Photo Guide
                                             </a>
                                         </div>
+
                                         <div class="form-section-content">
                                             <div>
-                                                <div class="field field-type-upload" data-type="upload" data-required="true">
-                                                    <div class="upload-drop-zone" data-limit-count="1" data-limit-size="10" data-accept=".png,.jpg">
-                                                        <input type="hidden" class="input-drop-zone" name="front_photo_drive_license_card" id="front_photo_drive_license_card">
+                                                <div class="field field-type-upload" data-type="upload"
+                                                     data-required="true">
+                                                    <div class="upload-drop-zone"
+                                                         @if(isset($options['dropzone']) && $options['dropzone']['front_photo_drive_license_card'])
+                                                             data-default="{{$options['dropzone']['front_photo_drive_license_card']}}"
+                                                         @endif
+                                                         data-limit-count="1" data-limit-size="10"
+                                                         data-accept=".png,.jpg">
+                                                        <input type="hidden" class="input-drop-zone"
+                                                               name="front_photo_drive_license_card"
+                                                               id="front_photo_drive_license_card"
+                                                               value="41">
                                                         <label>Driver's License Front Photo</label>
                                                         <i class="icon-upload"></i>
                                                         <div class="upload-title">
-                                                            <b>Click to upload</b> <span class="visible-desktop">or drag and drop</span> the front side photo of your driver's license <span class="field-required-star">*</span>
+                                                            <b>Click to upload</b> <span class="visible-desktop">or drag and drop</span>
+                                                            the front side photo of your driver's license <span
+                                                                class="field-required-star">*</span>
                                                         </div>
                                                         <div class="upload-description">
                                                             Allowed format: PNG, JPG (Up to: 1 photo/10 Mb)
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="field-error-msg" id="field_error_front_photo_drive_license_card"></div>
+                                                <div class="field-error-msg"
+                                                     id="field_error_front_photo_drive_license_card"></div>
                                                 <div class="upload-drop-zone-file single"></div>
                                             </div>
+
                                             <div>
-                                                <div class="field field-type-upload" data-type="upload" data-required="true">
-                                                    <div class="upload-drop-zone" data-limit-count="1" data-limit-size="10" data-accept=".png,.jpg">
-                                                        <input type="hidden" class="input-drop-zone" name="back_photo_drive_license_card" id="back_photo_drive_license_card">
+                                                <div class="field field-type-upload" data-type="upload"
+                                                     data-required="true">
+                                                    <div class="upload-drop-zone" data-limit-count="1"
+                                                         data-limit-size="10" data-accept=".png,.jpg">
+                                                        <input type="hidden" class="input-drop-zone"
+                                                               name="back_photo_drive_license_card"
+                                                               id="back_photo_drive_license_card">
                                                         <label>Driver's License Back Photo</label>
                                                         <i class="icon-upload"></i>
                                                         <div class="upload-title">
-                                                            <b>Click to upload</b> <span class="visible-desktop">or drag and drop</span> the back side photo of your driver's license <span class="field-required-star">*</span>
+                                                            <b>Click to upload</b> <span class="visible-desktop">or drag and drop</span>
+                                                            the back side photo of your driver's license <span
+                                                                class="field-required-star">*</span>
                                                         </div>
                                                         <div class="upload-description">
                                                             Allowed format: PNG, JPG (Up to: 1 photo/10 Mb)
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="field-error-msg" id="field_error_back_photo_drive_license_card"></div>
+                                                <div class="field-error-msg"
+                                                     id="field_error_back_photo_drive_license_card"></div>
                                                 <div class="upload-drop-zone-file single"></div>
                                             </div>
                                         </div>
                                     </div>
 
                                     <!-- insurance photo -->
-                                    <div class="form-section" data-dependency="#authentication_type" data-dependency-value="insurance_card">
+                                    <div class="form-section" data-dependency="#authentication_type"
+                                         data-dependency-value="insurance_card">
                                         <div class="form-section-label">
                                             <span>Insurance Card Photo <span class="field-required-star">*</span></span>
                                             <a href="#" data-light-box="photo_guide_insurance"
@@ -237,44 +273,59 @@
                                         </div>
                                         <div class="form-section-content">
                                             <div>
-                                                <div class="field field-type-upload" data-type="upload" data-required="true">
-                                                    <div class="upload-drop-zone" data-limit-count="1" data-limit-size="10" data-accept=".png,.jpg">
-                                                        <input type="hidden" class="input-drop-zone" name="front_photo_insurance_card" id="front_photo_insurance_card">
+                                                <div class="field field-type-upload" data-type="upload"
+                                                     data-required="true">
+                                                    <div class="upload-drop-zone" data-limit-count="1"
+                                                         data-limit-size="10" data-accept=".png,.jpg">
+                                                        <input type="hidden" class="input-drop-zone"
+                                                               name="front_photo_insurance_card"
+                                                               id="front_photo_insurance_card">
                                                         <label>Front Photo of Insurance Card</label>
                                                         <i class="icon-upload"></i>
                                                         <div class="upload-title">
-                                                            <b>Click to upload</b> <span class="visible-desktop">or drag and drop</span> the front side photo of your insurance card <span class="field-required-star">*</span>
+                                                            <b>Click to upload</b> <span class="visible-desktop">or drag and drop</span>
+                                                            the front side photo of your insurance card <span
+                                                                class="field-required-star">*</span>
                                                         </div>
                                                         <div class="upload-description">
                                                             Allowed format: PNG, JPG (Up to: 1 photo/10 Mb)
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="field-error-msg" id="field_error_front_photo_insurance_card"></div>
+                                                <div class="field-error-msg"
+                                                     id="field_error_front_photo_insurance_card"></div>
                                                 <div class="upload-drop-zone-file single"></div>
                                             </div>
                                             <div>
-                                                <div class="field field-type-upload" data-type="upload" data-required="true">
-                                                    <div class="upload-drop-zone" data-limit-count="1" data-limit-size="10" data-accept=".png,.jpg">
-                                                        <input type="hidden" class="input-drop-zone" name="back_photo_insurance_card" id="back_photo_insurance_card">
+                                                <div class="field field-type-upload" data-type="upload"
+                                                     data-required="true">
+                                                    <div class="upload-drop-zone" data-limit-count="1"
+                                                         data-limit-size="10" data-accept=".png,.jpg">
+                                                        <input type="hidden" class="input-drop-zone"
+                                                               name="back_photo_insurance_card"
+                                                               id="back_photo_insurance_card">
                                                         <label>Back Photo of Insurance Card</label>
                                                         <i class="icon-upload"></i>
                                                         <div class="upload-title">
-                                                            <b>Click to upload</b> <span class="visible-desktop">or drag and drop</span> the back side photo of your insurance card <span class="field-required-star">*</span>
+                                                            <b>Click to upload</b> <span class="visible-desktop">or drag and drop</span>
+                                                            the back side photo of your insurance card <span
+                                                                class="field-required-star">*</span>
                                                         </div>
                                                         <div class="upload-description">
                                                             Allowed format: PNG, JPG (Up to: 1 photo/10 Mb)
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="field-error-msg" id="field_error_back_photo_insurance_card"></div>
+                                                <div class="field-error-msg"
+                                                     id="field_error_back_photo_insurance_card"></div>
                                                 <div class="upload-drop-zone-file single"></div>
                                             </div>
                                         </div>
                                     </div>
 
                                     <!-- my number photo -->
-                                    <div class="form-section" data-dependency="#authentication_type" data-dependency-value="my_number_card">
+                                    <div class="form-section" data-dependency="#authentication_type"
+                                         data-dependency-value="my_number_card">
                                         <div class="form-section-label">
                                             <span>My Number Card Photo <span class="field-required-star">*</span></span>
                                             <a href="#" data-light-box="photo_guide_my_number"
@@ -286,44 +337,59 @@
                                         </div>
                                         <div class="form-section-content">
                                             <div>
-                                                <div class="field field-type-upload" data-type="upload" data-required="true">
-                                                    <div class="upload-drop-zone" data-limit-count="1" data-limit-size="10" data-accept=".png,.jpg">
-                                                        <input type="hidden" class="input-drop-zone" name="front_photo_my_number_card" id="front_photo_my_number_card">
+                                                <div class="field field-type-upload" data-type="upload"
+                                                     data-required="true">
+                                                    <div class="upload-drop-zone" data-limit-count="1"
+                                                         data-limit-size="10" data-accept=".png,.jpg">
+                                                        <input type="hidden" class="input-drop-zone"
+                                                               name="front_photo_my_number_card"
+                                                               id="front_photo_my_number_card">
                                                         <label>Front Photo of My Number Card</label>
                                                         <i class="icon-upload"></i>
                                                         <div class="upload-title">
-                                                            <b>Click to upload</b> <span class="visible-desktop">or drag and drop</span> the front side photo of my number card <span class="field-required-star">*</span>
+                                                            <b>Click to upload</b> <span class="visible-desktop">or drag and drop</span>
+                                                            the front side photo of my number card <span
+                                                                class="field-required-star">*</span>
                                                         </div>
                                                         <div class="upload-description">
                                                             Allowed format: PNG, JPG (Up to: 1 photo/10 Mb)
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="field-error-msg" id="field_error_front_photo_my_number_card"></div>
+                                                <div class="field-error-msg"
+                                                     id="field_error_front_photo_my_number_card"></div>
                                                 <div class="upload-drop-zone-file single"></div>
                                             </div>
                                             <div>
-                                                <div class="field field-type-upload" data-type="upload" data-required="true">
-                                                    <div class="upload-drop-zone" data-limit-count="1" data-limit-size="10" data-accept=".png,.jpg">
-                                                        <input type="hidden" class="input-drop-zone" name="back_photo_my_number_card" id="back_photo_my_number_card">
+                                                <div class="field field-type-upload" data-type="upload"
+                                                     data-required="true">
+                                                    <div class="upload-drop-zone" data-limit-count="1"
+                                                         data-limit-size="10" data-accept=".png,.jpg">
+                                                        <input type="hidden" class="input-drop-zone"
+                                                               name="back_photo_my_number_card"
+                                                               id="back_photo_my_number_card">
                                                         <label>Back Photo of My Number Card</label>
                                                         <i class="icon-upload"></i>
                                                         <div class="upload-title">
-                                                            <b>Click to upload</b> <span class="visible-desktop">or drag and drop</span> the back side photo of my number card <span class="field-required-star">*</span>
+                                                            <b>Click to upload</b> <span class="visible-desktop">or drag and drop</span>
+                                                            the back side photo of my number card <span
+                                                                class="field-required-star">*</span>
                                                         </div>
                                                         <div class="upload-description">
                                                             Allowed format: PNG, JPG (Up to: 1 photo/10 Mb)
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="field-error-msg" id="field_error_back_photo_my_number_card"></div>
+                                                <div class="field-error-msg"
+                                                     id="field_error_back_photo_my_number_card"></div>
                                                 <div class="upload-drop-zone-file single"></div>
                                             </div>
                                         </div>
                                     </div>
 
                                     <!-- resident photo -->
-                                    <div class="form-section" data-dependency="#authentication_type" data-dependency-value="residence_card">
+                                    <div class="form-section" data-dependency="#authentication_type"
+                                         data-dependency-value="residence_card">
                                         <div class="form-section-label">
                                             <span>Resident Card Photo <span class="field-required-star">*</span></span>
                                             <a href="#" data-light-box="photo_guide_resident"
@@ -335,37 +401,51 @@
                                         </div>
                                         <div class="form-section-content">
                                             <div>
-                                                <div class="field field-type-upload" data-type="upload" data-required="true">
-                                                    <div class="upload-drop-zone" data-limit-count="1" data-limit-size="10" data-accept=".png,.jpg">
-                                                        <input type="hidden" class="input-drop-zone" name="front_photo_residence_card" id="front_photo_residence_card">
+                                                <div class="field field-type-upload" data-type="upload"
+                                                     data-required="true">
+                                                    <div class="upload-drop-zone" data-limit-count="1"
+                                                         data-limit-size="10" data-accept=".png,.jpg">
+                                                        <input type="hidden" class="input-drop-zone"
+                                                               name="front_photo_residence_card"
+                                                               id="front_photo_residence_card">
                                                         <label>Front Photo of Residence Card</label>
                                                         <i class="icon-upload"></i>
                                                         <div class="upload-title">
-                                                            <b>Click to upload</b> <span class="visible-desktop">or drag and drop</span> the front side photo of your resident card <span class="field-required-star">*</span>
+                                                            <b>Click to upload</b> <span class="visible-desktop">or drag and drop</span>
+                                                            the front side photo of your resident card <span
+                                                                class="field-required-star">*</span>
                                                         </div>
                                                         <div class="upload-description">
                                                             Allowed format: PNG, JPG (Up to: 1 photo/10 Mb)
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="field-error-msg" id="field_error_front_photo_residence_card"></div>
+                                                <div class="field-error-msg"
+                                                     id="field_error_front_photo_residence_card"></div>
                                                 <div class="upload-drop-zone-file single"></div>
                                             </div>
                                             <div>
-                                                <div class="field field-type-upload" data-type="upload" data-required="true">
-                                                    <div class="upload-drop-zone" data-limit-count="1" data-limit-size="10" data-accept=".png,.jpg">
-                                                        <input type="hidden" class="input-drop-zone" name="back_photo_residence_card" id="back_photo_residence_card">
+                                                <div class="field field-type-upload" data-type="upload"
+                                                     data-required="true">
+                                                    <div class="upload-drop-zone" data-limit-count="1"
+                                                         data-limit-size="10" data-accept=".png,.jpg">
+                                                        <input type="hidden" class="input-drop-zone"
+                                                               name="back_photo_residence_card"
+                                                               id="back_photo_residence_card">
                                                         <label>Back Photo of Residence Card</label>
                                                         <i class="icon-upload"></i>
                                                         <div class="upload-title">
-                                                            <b>Click to upload</b> <span class="visible-desktop">or drag and drop</span> the back side photo of your resident card <span class="field-required-star">*</span>
+                                                            <b>Click to upload</b> <span class="visible-desktop">or drag and drop</span>
+                                                            the back side photo of your resident card <span
+                                                                class="field-required-star">*</span>
                                                         </div>
                                                         <div class="upload-description">
                                                             Allowed format: PNG, JPG (Up to: 1 photo/10 Mb)
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="field-error-msg" id="field_error_back_photo_residence_card"></div>
+                                                <div class="field-error-msg"
+                                                     id="field_error_back_photo_residence_card"></div>
                                                 <div class="upload-drop-zone-file single"></div>
                                             </div>
                                         </div>
@@ -379,9 +459,20 @@
                                             </button>
                                         </div>
                                         <div class="photo-guide-content">
-                                            <img src="/storage/assets/img/photo-guides/Passport-Photo.webp" width="320" height="280" alt="Passport Photo Guide">
+                                            <img src="/storage/assets/img/photo-guides/Passport-Photo.webp" width="320"
+                                                 height="280" alt="Passport Photo Guide">
                                             <p>
-                                                To verify your identity for Liliana Models, it's vital that your passport is both current and has not expired. Find a well-lit environment, ideally with natural light, and position the passport on a flat, solid-colored, non-reflective surface, ensuring no shadows or glare affect the image. When capturing the photo with a high-resolution smartphone or camera, hold it directly overhead. Ensure you take a clear photo of the photo and details page of the passport, making sure the full page is in view without any cropping. All details on the passport, including text, photos, and security features, should be crisp and legible in the image. As always, we prioritize your privacy and use the passport strictly for verification purposes.
+                                                To verify your identity for Liliana Models, it's vital that your
+                                                passport is both current and has not expired. Find a well-lit
+                                                environment, ideally with natural light, and position the passport on a
+                                                flat, solid-colored, non-reflective surface, ensuring no shadows or
+                                                glare affect the image. When capturing the photo with a high-resolution
+                                                smartphone or camera, hold it directly overhead. Ensure you take a clear
+                                                photo of the photo and details page of the passport, making sure the
+                                                full page is in view without any cropping. All details on the passport,
+                                                including text, photos, and security features, should be crisp and
+                                                legible in the image. As always, we prioritize your privacy and use the
+                                                passport strictly for verification purposes.
                                             </p>
                                         </div>
                                         <div class="photo-guide-footer">
@@ -399,9 +490,22 @@
                                             </button>
                                         </div>
                                         <div class="photo-guide-content">
-                                            <img src="/storage/assets/img/photo-guides/Card-Photo.webp" width="320" height="280" alt="Driver's License Guide">
+                                            <img src="/storage/assets/img/photo-guides/Card-Photo.webp" width="320"
+                                                 height="280" alt="Driver's License Guide">
                                             <p>
-                                                To verify your identity for Liliana Models, it's crucial that your Driver's License is both current and has not expired. Before capturing the image, ensure it's free from smudges or fingerprints. Find a well-lit environment, ideally with natural light, and position the Driver's License on a flat, solid-colored, non-reflective surface, ensuring no shadows or glare affect the image. When capturing the photo with a high-resolution smartphone or camera, hold it directly overhead. Ensure you take clear photos of both the front and back sides of the Driver's License, making sure the full license is in view without any cropping for each side. All details on the Driver's License, including text, photos, and security features, should be crisp and legible on both images. As always, we prioritize your privacy and use the Driver's License strictly for verification purposes.
+                                                To verify your identity for Liliana Models, it's crucial that your
+                                                Driver's License is both current and has not expired. Before capturing
+                                                the image, ensure it's free from smudges or fingerprints. Find a
+                                                well-lit environment, ideally with natural light, and position the
+                                                Driver's License on a flat, solid-colored, non-reflective surface,
+                                                ensuring no shadows or glare affect the image. When capturing the photo
+                                                with a high-resolution smartphone or camera, hold it directly overhead.
+                                                Ensure you take clear photos of both the front and back sides of the
+                                                Driver's License, making sure the full license is in view without any
+                                                cropping for each side. All details on the Driver's License, including
+                                                text, photos, and security features, should be crisp and legible on both
+                                                images. As always, we prioritize your privacy and use the Driver's
+                                                License strictly for verification purposes.
                                             </p>
                                         </div>
                                         <div class="photo-guide-footer">
@@ -419,9 +523,21 @@
                                             </button>
                                         </div>
                                         <div class="photo-guide-content">
-                                            <img src="/storage/assets/img/photo-guides/Card-Photo.webp" width="320" height="280" alt="Insurance Card Guide">
+                                            <img src="/storage/assets/img/photo-guides/Card-Photo.webp" width="320"
+                                                 height="280" alt="Insurance Card Guide">
                                             <p>
-                                                To verify your identity for Liliana Models, it's crucial that your Insurance Card is both current and has not expired. Before capturing the image, ensure it's free from smudges or fingerprints. Find a well-lit environment, ideally with natural light, and position the Insurance Card on a flat, solid-colored, non-reflective surface, ensuring no shadows or glare affect the image. When capturing the photo with a high-resolution smartphone or camera, hold it directly overhead. Ensure you take clear photos of both the front and back sides of the Insurance Card, making sure the full card is in view without any cropping for each side. All details on the Insurance Card, including text, photos, and logos, should be crisp and legible on both images. As always, we prioritize your privacy and use the Insurance Card strictly for verification purposes.
+                                                To verify your identity for Liliana Models, it's crucial that your
+                                                Insurance Card is both current and has not expired. Before capturing the
+                                                image, ensure it's free from smudges or fingerprints. Find a well-lit
+                                                environment, ideally with natural light, and position the Insurance Card
+                                                on a flat, solid-colored, non-reflective surface, ensuring no shadows or
+                                                glare affect the image. When capturing the photo with a high-resolution
+                                                smartphone or camera, hold it directly overhead. Ensure you take clear
+                                                photos of both the front and back sides of the Insurance Card, making
+                                                sure the full card is in view without any cropping for each side. All
+                                                details on the Insurance Card, including text, photos, and logos, should
+                                                be crisp and legible on both images. As always, we prioritize your
+                                                privacy and use the Insurance Card strictly for verification purposes.
                                             </p>
                                         </div>
                                         <div class="photo-guide-footer">
@@ -439,9 +555,22 @@
                                             </button>
                                         </div>
                                         <div class="photo-guide-content">
-                                            <img src="/storage/assets/img/photo-guides/Card-Photo.webp" width="320" height="280" alt="My Number Card Guide">
+                                            <img src="/storage/assets/img/photo-guides/Card-Photo.webp" width="320"
+                                                 height="280" alt="My Number Card Guide">
                                             <p>
-                                                To verify your identity for Liliana Models, it's crucial that your My Number Card is both current and has not expired. Before capturing the image, ensure it's free from smudges or fingerprints. Find a well-lit environment, ideally with natural light, and position the My Number Card on a flat, solid-colored, non-reflective surface, ensuring no shadows or glare affect the image. When capturing the photo with a high-resolution smartphone or camera, hold it directly overhead. Ensure you take clear photos of both the front and back sides of the My Number Card, making sure the full card is in view without any cropping for each side. All details on the My Number Card, including text, photos, and security features, should be crisp and legible on both images. As always, we prioritize your privacy and use the My Number Card strictly for verification purposes.
+                                                To verify your identity for Liliana Models, it's crucial that your My
+                                                Number Card is both current and has not expired. Before capturing the
+                                                image, ensure it's free from smudges or fingerprints. Find a well-lit
+                                                environment, ideally with natural light, and position the My Number Card
+                                                on a flat, solid-colored, non-reflective surface, ensuring no shadows or
+                                                glare affect the image. When capturing the photo with a high-resolution
+                                                smartphone or camera, hold it directly overhead. Ensure you take clear
+                                                photos of both the front and back sides of the My Number Card, making
+                                                sure the full card is in view without any cropping for each side. All
+                                                details on the My Number Card, including text, photos, and security
+                                                features, should be crisp and legible on both images. As always, we
+                                                prioritize your privacy and use the My Number Card strictly for
+                                                verification purposes.
                                             </p>
                                         </div>
                                         <div class="photo-guide-footer">
@@ -459,9 +588,22 @@
                                             </button>
                                         </div>
                                         <div class="photo-guide-content">
-                                            <img src="/storage/assets/img/photo-guides/Card-Photo.webp" width="320" height="280" alt="Residence Card Photo Guide">
+                                            <img src="/storage/assets/img/photo-guides/Card-Photo.webp" width="320"
+                                                 height="280" alt="Residence Card Photo Guide">
                                             <p>
-                                                To verify your identity for Liliana Models, it's crucial that your Residence Card is both current and has not expired. Before capturing the image, ensure it's free from smudges or fingerprints. Find a well-lit environment, ideally with natural light, and position the Residence Card on a flat, solid-colored, non-reflective surface, ensuring no shadows or glare affect the image. When capturing the photo with a high-resolution smartphone or camera, hold it directly overhead. Ensure you take clear photos of both the front and back sides of the Residence Card, making sure the full Residence Card is in view without any cropping for each side. All details on the Residence Card, including text, photos, and holograms, should be crisp and legible on both images. As always, we prioritize your privacy and use the Residence Card strictly for verification purposes.
+                                                To verify your identity for Liliana Models, it's crucial that your
+                                                Residence Card is both current and has not expired. Before capturing the
+                                                image, ensure it's free from smudges or fingerprints. Find a well-lit
+                                                environment, ideally with natural light, and position the Residence Card
+                                                on a flat, solid-colored, non-reflective surface, ensuring no shadows or
+                                                glare affect the image. When capturing the photo with a high-resolution
+                                                smartphone or camera, hold it directly overhead. Ensure you take clear
+                                                photos of both the front and back sides of the Residence Card, making
+                                                sure the full Residence Card is in view without any cropping for each
+                                                side. All details on the Residence Card, including text, photos, and
+                                                holograms, should be crisp and legible on both images. As always, we
+                                                prioritize your privacy and use the Residence Card strictly for
+                                                verification purposes.
                                             </p>
                                         </div>
                                         <div class="photo-guide-footer">
@@ -503,6 +645,5 @@
 
         </div>
     </main>
-
 
 @endsection

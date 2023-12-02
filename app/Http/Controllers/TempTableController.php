@@ -46,12 +46,20 @@ class TempTableController extends Controller
         foreach ($approvedItems as $approvedItem) {
             $filteredItems = $approvalItems->where('id', $approvedItem);
             $item = $filteredItems->first();
+//            dd($item);
             if ($item) {
                 $item->approved_at = Carbon::now();
                 if ($item->type == "string") {
                     try {
-                        $model = Member::find($item->member_id);
-                        $model->update([$item->model_field => $item->value]);
+                        if ($item->user_id == 0) {
+                            $model = new Member();
+                            $model->update([$item->model_field => $item->value]);
+                            $model->save();
+
+                        } else {
+                            $model = Member::find($item->user_id);
+                            $model->update([$item->model_field => $item->value]);
+                        }
                         $item->save();
                     } catch (Exception $e) {
                         Log::error('error in approve' . $e->getMessage());

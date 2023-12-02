@@ -112,7 +112,7 @@ Route::group([
     Route::any('/uploadphoto', function (Request $request) {
 //    dd($request->query('filter'), $request->query('sort'));
 //        Log::info($request->header('Authorization') ? "1" : "0");
-//        Log::info();
+        Log::info($request);
         $user_id = 0;
         if (auth()->user()) {
             $user_id = auth()->user()->id;

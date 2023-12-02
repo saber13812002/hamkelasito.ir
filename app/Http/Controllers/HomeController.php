@@ -57,10 +57,10 @@ class HomeController
             if ($global != 'all') {
                 $membersBuilder->whereType($global);
             }
-//            dd($membersBuilder->get());
+
             $membersBuilder->whereModelCategories('Model');
-            if ($categoryId == 1 || $categoryId == 2) {
-                $membersBuilder->whereGender($categoryId == 1 ? "Male" : "Female");
+            if ($categoryId == "1" || $categoryId == "2") {
+                $membersBuilder->whereGender($categoryId == "1" ? "Male" : "Female");
             } else {
                 $membersBuilder->where('age', '<', 18);
             }
@@ -80,6 +80,11 @@ class HomeController
         }
 
         $members = $membersBuilder->get();
+
+//        foreach ($members as $member)
+//            if ($member->gender != ($categoryId == "1" ? "Male" : "Female")) {
+//                dd("break");
+//            }
 
         $categories = Category::all();
 
@@ -119,6 +124,11 @@ class HomeController
         return view('layouts.single-pages.contact-us');
     }
 
+    public function ContactUsGet(FormRequest $request)
+    {
+        return view('layouts.single-pages.contact-us');
+    }
+
     public function companyProfile()
     {
         return view('layouts.single-pages.company-profile');
@@ -131,7 +141,7 @@ class HomeController
 
     public function becomeModel()
     {
-        return view('become-a-model');
+        return view('layouts.single-pages.become-a-model');
     }
 
     public function composite(Request $request)
@@ -180,8 +190,44 @@ class HomeController
 //            dd($images);
             $pdf = PDF::loadView('pdf.composite2', compact('member', 'url', 'images'));
             return $pdf->setPaper('a4', 'landscape')->download('composite_' . $id . '.pdf');
-        } else
-            return redirect('home');
+        }
+        return redirect('home');
+    }
+
+    public function composite5(Request $request, $id)
+    {
+        if ($id) {
+            $member = Member::query()->published()->find($id);
+            $url = config('app.url');
+            $images = $this->getImages($member);
+            $this->checkPhotos($images);
+//            dd($images);
+            $pdf = PDF::loadView('pdf.composite5', compact('member', 'url', 'images'));
+
+            return $pdf
+                ->setPaper('a4')
+                ->setOption(['dpi' => 190])
+                ->download('profile_' . $id . '.pdf');
+        }
+        return redirect('home');
+    }
+
+    public function composite6(Request $request, $id)
+    {
+        if ($id) {
+            $member = Member::query()->published()->find($id);
+            $url = config('app.url');
+            $images = $this->getImages($member);
+            $this->checkPhotos($images);
+//            dd($images);
+            $pdf = PDF::loadView('pdf.composite6', compact('member', 'url', 'images'));
+
+            return $pdf
+                ->setPaper('a4')
+                ->setOption(['dpi' => 190])
+                ->download('profile_' . $id . '.pdf');
+        }
+        return redirect('home');
     }
 
 

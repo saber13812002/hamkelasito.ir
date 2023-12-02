@@ -32,7 +32,7 @@ Route::any('apply-as-a-model-form-step-final-check', [MemberController::class, '
 Route::any('apply-as-a-model-success', [MemberController::class, 'step8'])->name('step8');
 
 
-Route::get('', [MemberController::class, 'main'])->name('main');
+Route::get('', [MemberController::class, 'dashboardAdmin'])->name('dashboard-models');
 Route::get('role', [MemberController::class, 'role'])->name('role');
 Route::get('user-info', [MemberController::class, 'userInfo'])->name('user-info');
 Route::get('gallery', [MemberController::class, 'gallery'])->name('gallery');

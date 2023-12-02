@@ -24,7 +24,7 @@
                         <div class="col-md-12">
                             <i class="fa fa-clock" style="font-size: 2rem; color: #ffc107"></i>
                             <span
-                                style="font-size:1.5rem;font-weight: 900; color: #ffc107">{{$awaitingMembers}}</span>
+                                style="font-size:1.5rem;font-weight: 900; color: #ffc107">{{$awaitingMembersCount}}</span>
                         </div>
 
                     </div>
@@ -43,7 +43,7 @@
                         <div class="col-md-12">
                             <i class="fa fa-check" style="font-size: 2rem; color:#28a745"></i>
                             <span
-                                style="font-size:1.5rem;font-weight: 900; color:#28a745">{{$completedApprovals}}</span>
+                                style="font-size:1.5rem;font-weight: 900; color:#28a745">{{$completedApprovalsCount}}</span>
                         </div>
 
                     </div>
@@ -62,7 +62,7 @@
                         <div class="col-md-12">
                             <i class="fa fa-ban" style="font-size: 2rem; color: #dc3545;"></i>
                             <span
-                                style="font-size:1.5rem;font-weight: 900; color: #dc3545;">{{$awaitingItems}}/{{$rejectedItems}}</span>
+                                style="font-size:1.5rem;font-weight: 900; color: #dc3545;">{{$awaitingItemsCount}}/{{$rejectedItemsCount}}</span>
                         </div>
 
                     </div>
@@ -81,7 +81,7 @@
                     <div class="row">
                         <div class="col-md-12">
                             <i class="fa fa-users" style="font-size: 2rem; color: #6f42c1"></i>
-                            <span style="font-size:1.5rem;font-weight: 900; color: #6f42c1">{{$totalMembers}}
+                            <span style="font-size:1.5rem;font-weight: 900; color: #6f42c1">{{$totalMembersCount}}
                         </span>
                         </div>
                     </div>

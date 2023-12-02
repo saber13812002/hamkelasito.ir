@@ -41,11 +41,17 @@
                             <ul class="list-link-contact" itemscope itemtype="https://schema.org/Organization">
                                 <li>
                                     <i class="icon-call"></i>
-                                    <a href="tel:+81-3-6362-3355"><span itemprop="telephone">+81-3-6362-3355</span></a>
+                                    <a href="tel:+81-3-6362-3355"><span itemprop="telephone">@if(App::getLocale() != 'ja')
+                                   +81-
+                                @endif
+                                3-6362-3355</span></a>
                                 </li>
                                 <li>
                                     <i class="icon-fax"></i>
-                                    <a href="fax:+81-3-6323-0195"><span itemprop="faxNumber">+81-3-6323-0195</span></a>
+                                    <a href="fax:+81-3-6323-0195"><span itemprop="faxNumber">@if(App::getLocale() != 'ja')
+                                   +81-
+                                @endif
+                                3-6323-0195</span></a>
                                 </li>
                                 <li>
                                     <i class="icon-sms"></i>

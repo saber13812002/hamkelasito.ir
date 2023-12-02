@@ -66,17 +66,25 @@
                                     </div>
                                 </div>
                                 <div class="actions">
-                                    <a href="/composite?id={{$member->id}}" aria-label="Model Composite">
+                                    <a href="/composite?id={{$member->id}}" target="_blank" aria-label="Model Composite">
                                         <i class="icon-document"></i>
                                         <span>Composite</span>
                                     </a>
-                                    <a href="/composite2/{{$member->id}}" aria-label="Model Profile">
+                                    <a href="/composite2/{{$member->id}}" target="_blank" aria-label="Model Profile">
                                         <i class="icon-user-square"></i>
                                         <span>Profile</span>
                                     </a>
-                                    <a href="/composite4/{{$member->id}}" aria-label="Model Profile">
+                                    <a href="/composite4/{{$member->id}}" target="_blank" aria-label="Model Profile">
                                         <i class="icon-user-square"></i>
                                         <span>PDF</span>
+                                    </a>
+                                    <a href="/composite5/{{$member->id}}" target="_blank" aria-label="Model Profile">
+                                        <i class="icon-user-square"></i>
+                                        <span>PDF2</span>
+                                    </a>
+                                    <a href="/composite6/{{$member->id}}" target="_blank" aria-label="Model Profile">
+                                        <i class="icon-user-square"></i>
+                                        <span>PDF3</span>
                                     </a>
                                 </div>
                             </div>
@@ -231,7 +239,7 @@
                             <div class="tab-content-item active" data-tab-target="profile_biography">
                                 <div class="biography-description read-more-element" data-length-desktop="500"
                                      data-length-mobile="250" data-detect="true">
-                                    (Biography) {{$member->skills}}
+                                    (Biography) {{$member->skills_text}}
                                     ...<span class="read-more-button">Read More</span></div>
                             </div>
                             <div class="tab-content-item" data-tab-target="skills_career">
@@ -247,7 +255,7 @@
                                             </div>
                                             <div class="skill-description read-more-element" data-length-desktop="500"
                                                  data-length-mobile="250" data-detect="true">
-                                                (Career) {{$member->skills}}
+                                                (Career) {{$member->skills_text}}
                                                 yea...<span class="read-more-button">Read More</span></div>
                                         </li>
                                         <li>
@@ -259,7 +267,7 @@
                                             </div>
                                             <div class="skill-description read-more-element" data-length-desktop="500"
                                                  data-length-mobile="250" data-detect="true">
-                                                (Career) {{$member->skills}}
+                                                (Career) {{$member->skills_text}}
                                                 yea...<span class="read-more-button">Read More</span></div>
                                         </li>
                                         <li>
@@ -271,7 +279,7 @@
                                             </div>
                                             <div class="skill-description read-more-element" data-length-desktop="500"
                                                  data-length-mobile="250" data-detect="true">
-                                                (Career) {{$member->skills}}
+                                                (Career) {{$member->skills_text}}
                                                 yea...<span class="read-more-button">Read More</span></div>
                                         </li>
                                     </ul>
@@ -286,7 +294,7 @@
                                             </div>
                                             <div class="skill-description read-more-element" data-length-desktop="500"
                                                  data-length-mobile="250" data-detect="true">
-                                                (Career) {{$member->skills}}
+                                                (Career) {{$member->skills_text}}
                                                 yea...<span class="read-more-button">Read More</span></div>
                                         </li>
                                         <li>
@@ -298,7 +306,7 @@
                                             </div>
                                             <div class="skill-description read-more-element" data-length-desktop="500"
                                                  data-length-mobile="250" data-detect="true">
-                                                (Career) {{$member->skills}}
+                                                (Career) {{$member->skills_text}}
                                                 yea...<span class="read-more-button">Read More</span></div>
                                         </li>
                                     </ul>
@@ -317,7 +325,7 @@
                                             </div>
                                             <div class="skill-description read-more-element" data-length-desktop="500"
                                                  data-length-mobile="250" data-detect="true">
-                                                (Skills) {{$member->skills}}
+                                                (Skills) {{$member->skills_text}}
                                                 yea...<span class="read-more-button">Read More</span></div>
                                         </li>
                                     </ul>
@@ -367,15 +375,13 @@ Voice
                                            itemprop="url" data-object-id="0">
                                             <meta itemprop="thumbnailUrl"
                                                   content="/storage/assets/img/profile/profile-1/3x4/001.webp">
-                                            <img src="/storage/assets/001.webp" class="lazy lz-entered lz-loaded"
+                                            <img src="/storage/assets/img/profile/profile-1/3x4/001.webp" class="lazy lz-entered lz-loaded"
                                                  data-src="/storage/assets/img/profile/profile-1/3x4/001.webp"
                                                  width="192" height="262" alt="image" data-ll-status="loaded">
                                             <noscript>
                                                 <img src="/storage/assets/img/profile/profile-1/3x4/001.webp" width="192"
                                                      height="262" alt="image">
                                             </noscript>
-
-
                                         </a>
                                     </div>
                                     <div class="grid-item" itemprop="item" itemscope=""
@@ -387,7 +393,7 @@ Voice
                                            itemprop="url" data-object-id="1">
                                             <meta itemprop="thumbnailUrl"
                                                   content="/storage/assets/img/profile/profile-1/3x4/002.webp">
-                                            <img src="/storage/assets/002.webp" class="lazy lz-entered lz-loaded"
+                                            <img src="/storage/assets/img/profile/profile-1/3x4/002.webp" class="lazy lz-entered lz-loaded"
                                                  data-src="/storage/assets/img/profile/profile-1/3x4/002.webp"
                                                  width="192" height="262" alt="image" data-ll-status="loaded">
                                             <noscript>
@@ -407,7 +413,7 @@ Voice
                                            itemprop="url" data-object-id="2">
                                             <meta itemprop="thumbnailUrl"
                                                   content="/storage/assets/img/profile/profile-1/3x4/003.webp">
-                                            <img src="/storage/assets/003.webp" class="lazy lz-entered lz-loaded"
+                                            <img src="/storage/assets/img/profile/profile-1/3x4/003.webp" class="lazy lz-entered lz-loaded"
                                                  data-src="/storage/assets/img/profile/profile-1/3x4/003.webp"
                                                  width="192" height="262" alt="image" data-ll-status="loaded">
                                             <noscript>
@@ -427,7 +433,7 @@ Voice
                                            itemprop="url" data-object-id="3">
                                             <meta itemprop="thumbnailUrl"
                                                   content="/storage/assets/img/profile/profile-1/3x4/004.webp">
-                                            <img src="/storage/assets/004(1).webp" class="lazy lz-entered lz-loaded"
+                                            <img src="/storage/assets/img/profile/profile-1/3x4/004.webp" class="lazy lz-entered lz-loaded"
                                                  data-src="/storage/assets/img/profile/profile-1/3x4/004.webp"
                                                  width="192" height="262" alt="image" data-ll-status="loaded">
                                             <noscript>
@@ -447,7 +453,7 @@ Voice
                                            itemprop="url" data-object-id="4">
                                             <meta itemprop="thumbnailUrl"
                                                   content="/storage/assets/img/profile/profile-1/3x4/005.webp">
-                                            <img src="/storage/assets/005(1).webp" class="lazy lz-entered lz-loaded"
+                                            <img src="/storage/assets/img/profile/profile-1/3x4/005.webp" class="lazy lz-entered lz-loaded"
                                                  data-src="/storage/assets/img/profile/profile-1/3x4/005.webp"
                                                  width="192" height="262" alt="image" data-ll-status="loaded">
                                             <noscript>
@@ -563,12 +569,12 @@ Voice
                                                data-object-id="10">
                                                 <div class="card-thumbnail">
                                                     <meta itemprop="thumbnail"
-                                                          content="/storage/assets/img/video-001.webp">
+                                                          content="/storage/assets/img/video/video-001.webp">
                                                     <img src="/storage/assets/img/lazy-1.7x1.webp" class="lazy"
-                                                         data-src="/storage/assets/img/video-001.webp" width="296"
+                                                         data-src="/storage/assets/img/video/video-001.webp" width="296"
                                                          height="168" alt="video">
                                                     <noscript>
-                                                        <img src="/storage/assets/img/video-001.webp" width="296"
+                                                        <img src="/storage/assets/img/video/video-001.webp" width="296"
                                                              height="168"
                                                              alt="video">
                                                     </noscript>
@@ -592,12 +598,12 @@ Voice
                                                data-object-id="11">
                                                 <div class="card-thumbnail">
                                                     <meta itemprop="thumbnail"
-                                                          content="/storage/assets/img/video-002.webp">
+                                                          content="/storage/assets/img/video/video-002.webp">
                                                     <img src="/storage/assets/img/lazy-1.7x1.webp" class="lazy"
-                                                         data-src="/storage/assets/img/video-002.webp" width="296"
+                                                         data-src="/storage/assets/img/video/video-002.webp" width="296"
                                                          height="168" alt="video">
                                                     <noscript>
-                                                        <img src="/storage/assets/img/video-002.webp" width="296"
+                                                        <img src="/storage/assets/img/video/video-002.webp" width="296"
                                                              height="168"
                                                              alt="video">
                                                     </noscript>
@@ -621,12 +627,12 @@ Voice
                                                data-object-id="12">
                                                 <div class="card-thumbnail">
                                                     <meta itemprop="thumbnail"
-                                                          content="/storage/assets/img/video-003.webp">
+                                                          content="/storage/assets/img/video/video-003.webp">
                                                     <img src="/storage/assets/img/lazy-1.7x1.webp" class="lazy"
-                                                         data-src="/storage/assets/img/video-003.webp" width="296"
+                                                         data-src="/storage/assets/img/video/video-003.webp" width="296"
                                                          height="168" alt="video">
                                                     <noscript>
-                                                        <img src="/storage/assets/img/video-003.webp" width="296"
+                                                        <img src="/storage/assets/img/video/video-003.webp" width="296"
                                                              height="168"
                                                              alt="video">
                                                     </noscript>
@@ -650,12 +656,12 @@ Voice
                                                data-object-id="13">
                                                 <div class="card-thumbnail">
                                                     <meta itemprop="thumbnail"
-                                                          content="/storage/assets/img/video-004.webp">
+                                                          content="/storage/assets/img/video/video-004.webp">
                                                     <img src="/storage/assets/img/lazy-1.7x1.webp" class="lazy"
-                                                         data-src="/storage/assets/img/video-004.webp" width="296"
+                                                         data-src="/storage/assets/img/video/video-004.webp" width="296"
                                                          height="168" alt="video">
                                                     <noscript>
-                                                        <img src="/storage/assets/img/video-004.webp" width="296"
+                                                        <img src="/storage/assets/img/video/video-004.webp" width="296"
                                                              height="168"
                                                              alt="video">
                                                     </noscript>
