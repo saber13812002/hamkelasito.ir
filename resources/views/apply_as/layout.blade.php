@@ -25,15 +25,6 @@
 
 @yield('content-apply')
 
-@if(check_login_from_admin_to_member())
-    <div
-        style="text-align:center;width: 150px;height:auto;padding:5px; border-radius: 100px; position: fixed;background: red;top: 85%;left: 3%;">
-        <strong>Admin Access</strong>
-        <span style="padding: 5px;border-radius: 10px">
-        <a href="{{ route('backToAdmin') }}" style="color: #ffffff !important;">Back To Panel</a>
-    </span>
-    </div>
-@endif
 <!-- start loading -->
 @include('loader-site')
 

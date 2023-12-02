@@ -46,7 +46,7 @@ Route::get('questions/{package_id}', [SurveyController::class, 'questions'])->na
 Route::get('choices/{question_id}', [SurveyController::class, 'choices'])->name('admin.survey.choices');
 
 Route::get('/members/{member}/overview', [MemberController::class, 'loginMemberUpdatePage'])->name('loginMemberUpdatePage');
-Route::get('/action/logout-member', [MemberController::class, 'backToAdmin'])->name('backToAdmin');
+Route::post('/action/logout-member', [MemberController::class, 'backToAdmin'])->name('backToAdmin');
 
 //Route::get('/admin', function () {
 //    Route::get('/', [AuthController::class, 'admin']);
