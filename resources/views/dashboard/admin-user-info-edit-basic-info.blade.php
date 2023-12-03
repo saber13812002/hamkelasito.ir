@@ -22,20 +22,19 @@
                                 <div class="white-box-content">
                                     @php($memberObj = collect($member))
                                     @forelse($memberObj->except([
-                                    'id','user_id',
-                                    'no','published_at','created_at','updated_at',
-                                    "front_photo_drive_license_card" ,
-                                    "back_photo_drive_license_card" ,
-                                    "front_photo_insurance_card" ,
-                                    "back_photo_insurance_card" ,
-                                    "front_photo_my_number_card" ,
-                                    "back_photo_my_number_card" ,
-                                    "front_photo_residence_card" ,
-                                    "back_photo_residence_card" ,
-                                    'profile_image','other_photos',
-                                    'thumbnail_image','full_length_photo'
+                                       'user_id','id',
+                                        'no','published_at','created_at','updated_at',
+                                        "front_photo_drive_license_card" ,
+                                        "back_photo_drive_license_card" ,
+                                        "front_photo_insurance_card" ,
+                                        "back_photo_insurance_card" ,
+                                        "front_photo_my_number_card" ,
+                                        "back_photo_my_number_card" ,
+                                        "front_photo_residence_card" ,
+                                        "back_photo_residence_card" ,
+                                        'profile_image','other_photos',
+                                        'thumbnail_image','full_length_photo','is_new'
                                     ])->toArray() as $item => $value)
-
                                         <!-- name group -->
                                         <div class="form-section">
                                             <div class="form-section-label">
@@ -49,7 +48,6 @@
                                                 </div>
                                             </div>
                                             <div class="form-section-content">
-
                                                 <!-- first name -->
                                                 <div class="field field-type-nr-input" data-type="text"
                                                      data-required="true"
@@ -102,10 +100,11 @@
                 let sendData = getAreaFieldData($('#formBox'));
                 console.log(sendData)
                 $.ajax({
-                    url: {{ env('APP_URL') }} + "/api/uploadphoto",
+                    url: '{{ env('APP_URL') }}' + "/api/update_user",
                     type: "POST",
                     data: {
-                        fields: sendData,
+                        'field': sendData,
+                        'id': {{ $member->id }}
                     },
                     success: function (data) {
                         baseFormData = sendData;

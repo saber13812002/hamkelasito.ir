@@ -274,6 +274,23 @@ class MemberController extends Controller
     }
 
     /**
+     * Update the specified resource in storage.
+     */
+    public function updateFromApi(Request $request)
+    {
+        $members = Member::query()->where('id', $request->id)->first();
+        if ($members) {
+            $_mem = $request->field ?? [];
+            $members->update($_mem);
+            $members->save();
+            return response()->json([
+                'message' => 'Your request was sent Successfully.'
+            ])->setStatusCode(200);
+        }
+        return response()->json()->setStatusCode(404);
+    }
+
+    /**
      * Remove the specified resource from storage.
      */
     public function destroy(Member $members)

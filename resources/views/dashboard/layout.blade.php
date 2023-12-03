@@ -57,6 +57,7 @@
 <script src="/storage/assets/js/pro-validation.js"></script>
 <script src="/storage/assets/js/component.js"></script>
 <script src="/storage/assets/js/dashboard.js"></script>
+
 @yield('js')
 
 </body>
