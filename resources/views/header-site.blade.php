@@ -45,17 +45,16 @@
                 <button class="btn btn-icon app-bar-desktop" id="btn_appbar_search" aria-label="Open Search">
                     <i class="icon-search-normal"></i>
                 </button>
-                @guest
-                @else
-                    <a href="/dashboard-models/" class="user-dashboard">
+                @auth()
+                    <a href="{{route('dashboard-models')}}" class="user-dashboard">
                         <i class="icon-user"></i>
-                        <!--                    <img src="/storage/assets/img/lazy-1x1.webp" class="lazy" data-src="/storage/assets/img/1x1/001.webp"-->
-                        <!--                         width="80" height="80" alt="Model">-->
-                        <!--                    <noscript>-->
-                        <!--                        <img src="/storage/assets/img/1x1/001.webp" width="80" height="80" alt="Model">-->
-                        <!--                    </noscript>-->
+                        <img src="/storage/assets/img/lazy-1x1.webp" class="lazy" data-src="/storage/assets/img/1x1/001.webp"
+                             width="80" height="80" alt="Model">
+                        <noscript>
+                            <img src="/storage/assets/img/1x1/001.webp" width="80" height="80" alt="Model">
+                        </noscript>
                     </a>
-                @endguest
+                @endauth
             </div>
         </div>
     </div>
@@ -143,7 +142,7 @@
                     <!-- side action -->
                     <div class="side-action">
                         @guest
-                            <a href="become-a-model" class="btn btn-icon-left">
+                            <a href="{{route('become-a-model')}}" class="btn btn-icon-left">
                             <span>
                                 <i class="icon-add"></i>
                                 {{__('menu.Become Liliana')}}
@@ -162,7 +161,7 @@
                                 <i class="icon-arrow-right"></i>
                             </span>
                             </a>
-                            <a href="/#" class="logout">
+                            <a href="/logout" class="logout">
                             <span>
                                 {{__('menu.Logout')}}
                                 <i class="icon-logout"></i>
@@ -314,7 +313,7 @@
                         @endguest
                         @guest
                             <a href="login" class="btn btn-primary btn-full">{{__('menu.Login')}}</a>
-                            <a href="become-a-model" class="btn btn-full">{{__('menu.Become Liliana')}}</a>
+                            <a href="{{route('become-a-model')}}" class="btn btn-full">{{__('menu.Become Liliana')}}</a>
                         @endguest
                         <ul class="menu-contact-us">
                             <li>

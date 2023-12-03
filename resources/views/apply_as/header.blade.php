@@ -8,13 +8,14 @@
                 <button class="btn btn-icon app-bar-desktop" id="btn_appbar_menu" aria-label="Open Menu">
                     <i class="icon-menu"></i>
                 </button>
-                <a href="/become-a-model" class="btn btn-icon app-bar-mobile" aria-label="Back">
+                <a href="{{route('become-a-model')}}" class="btn btn-icon app-bar-mobile" aria-label="Back">
                     <i class="icon-arrow-left-1"></i>
                 </a>
             </div>
             <div class="app-bar-title">
                 <a href="/home" class="app-logo" aria-label="Liliana">
-                    <img src="/storage/assets/img/lazy-trp-1x1.webp" class="lazy" data-src="/storage/assets/img/logo.svg" width="88"
+                    <img src="/storage/assets/img/lazy-trp-1x1.webp" class="lazy"
+                         data-src="/storage/assets/img/logo.svg" width="88"
                          height="24" alt="liliana">
                     <noscript>
                         <img src="/storage/assets/img/logo.svg" width="88" height="24" alt="liliana">
@@ -46,14 +47,18 @@
                     <i class="icon-search-normal"></i>
                 </button>
                 <a href="/home" class="app-bar-mobile">Cancel</a>
-                <a href="/storage/dashboard/models/index" class="user-dashboard">
-                    <i class="icon-user"></i>
-                    <!--                    <img src="/storage/assets/img/lazy-1x1.webp" class="lazy" data-src="/storage/assets/img/1x1/001.webp"-->
-                    <!--                         width="80" height="80" alt="Model">-->
-                    <!--                    <noscript>-->
-                    <!--                        <img src="/storage/assets/img/1x1/001.webp" width="80" height="80" alt="Model">-->
-                    <!--                    </noscript>-->
-                </a>
+                @guest
+                @else
+                    <a href="{{route('dashboard-models')}}" class="user-dashboard">
+                        <i class="icon-user"></i>
+                        <img src="/storage/assets/img/lazy-1x1.webp" class="lazy"
+                             data-src="/storage/assets/img/1x1/001.webp"
+                             width="80" height="80" alt="Model">
+                        <noscript>
+                            <img src="/storage/assets/img/1x1/001.webp" width="80" height="80" alt="Model">
+                        </noscript>
+                    </a>
+                @endguest
             </div>
         </div>
     </div>
@@ -140,30 +145,34 @@
 
                     <!-- side action -->
                     <div class="side-action">
-                        <a href="/become-a-model" class="btn btn-icon-left">
+
+                        @guest
+                            <a href="{{route('become-a-model')}}" class="btn btn-icon-left">
                             <span>
                                 <i class="icon-add"></i>
-                                Become Liliana
+                                {{__('menu.Become Liliana')}}
                             </span>
-                        </a>
-                        <a href="/login" class="btn btn-primary btn-icon-left">
+                            </a>
+                            <a href="{{route('login')}}" class="btn btn-primary btn-icon-left">
                             <span>
                                 <i class="icon-log-in"></i>
-                                Login
+                                {{__('menu.Login')}}
                             </span>
-                        </a>
-                        <a href="#" class="dashboard">
+                            </a>
+                        @else
+                            <a href="{{route('dashboard-models')}}" class="dashboard">
                             <span>
                                 Miss Leslie Alexander
                                 <i class="icon-arrow-right"></i>
                             </span>
-                        </a>
-                        <a href="#" class="logout">
+                                <a href="/logout" class="logout">
                             <span>
                                 Logout
                                 <i class="icon-logout"></i>
                             </span>
-                        </a>
+                                </a>
+
+                        @endguest
                     </div>
 
                     <!-- side info -->
@@ -289,21 +298,24 @@
                     </div>
                     <div class="col-auto">
                         <div class="user-account-mini">
-                            <img src="/storage/assets/img/lazy-1x1.webp" class="lazy" data-src="/storage/assets/img/1x1/001.webp"
+                            <img src="/storage/assets/img/lazy-1x1.webp" class="lazy"
+                                 data-src="/storage/assets/img/1x1/001.webp"
                                  width="80" height="80" alt="Model">
                             <noscript>
                                 <img src="/storage/assets/img/1x1/001.webp" width="80" height="80" alt="Model">
                             </noscript>
                             <div class="user-content">
                                 <div class="user-display-name">Miss Leslie Alexander</div>
-                                <a href="/storage/dashboard/models/index">
-                                    Go to Dashboard
+                                <a href="{{route('dashboard-models')}}">
+                                    {{__('menu.Go to Dashboard')}}
                                     <i class="icon-arrow-right"></i>
                                 </a>
                             </div>
                         </div>
-                        <a href="/login" class="btn btn-primary btn-full">Login</a>
-                        <a href="/become-a-model" class="btn btn-full">Become Liliana</a>
+                        @guest()
+                            <a href="{{route('login')}}" class="btn btn-primary btn-full">Login</a>
+                            <a href="{{route('become-a-model')}}" class="btn btn-full">{{__('menu.Become Liliana')}}</a>
+                        @endguest
                         <ul class="menu-contact-us">
                             <li>
                                 <i class="icon-sms"></i>
@@ -362,7 +374,8 @@
                 </div>
                 <div class="recent-model">
                     <a href="/model-page">
-                        <img src="/storage/assets/img/lazy-3x4.webp" class="lazy" data-src="/storage/assets/img/3x4/012.webp"
+                        <img src="/storage/assets/img/lazy-3x4.webp" class="lazy"
+                             data-src="/storage/assets/img/3x4/012.webp"
                              width="120" height="160" alt="Model">
                         <noscript>
                             <img src="/storage/assets/img/3x4/012.webp" width="120" height="160" alt="Model">
@@ -370,7 +383,8 @@
                         <span>Maaya</span>
                     </a>
                     <a href="/model-page">
-                        <img src="/storage/assets/img/lazy-3x4.webp" class="lazy" data-src="/storage/assets/img/3x4/011.webp"
+                        <img src="/storage/assets/img/lazy-3x4.webp" class="lazy"
+                             data-src="/storage/assets/img/3x4/011.webp"
                              width="120" height="160" alt="Model">
                         <noscript>
                             <img src="/storage/assets/img/3x4/011.webp" width="120" height="160" alt="Model">
@@ -384,7 +398,8 @@
                         <span>Mikel</span>
                     </a>
                     <a href="/model-page">
-                        <img src="/storage/assets/img/lazy-3x4.webp" class="lazy" data-src="/storage/assets/img/3x4/028.webp"
+                        <img src="/storage/assets/img/lazy-3x4.webp" class="lazy"
+                             data-src="/storage/assets/img/3x4/028.webp"
                              width="120" height="160" alt="Model">
                         <noscript>
                             <img src="/storage/assets/img/3x4/028.webp" width="120" height="160" alt="Model">
@@ -401,7 +416,8 @@
             <ul>
                 <li>
                     <a href="/model-page">
-                        <img src="/storage/assets/img/lazy-1x1.webp" class="lazy" data-src="/storage/assets/img/1x1/003.webp"
+                        <img src="/storage/assets/img/lazy-1x1.webp" class="lazy"
+                             data-src="/storage/assets/img/1x1/003.webp"
                              width="80" height="80" alt="model">
                         <noscript>
                             <img src="/storage/assets/img/1x1/005.webp" width="80" height="80" alt="model">
@@ -418,7 +434,8 @@
                 </li>
                 <li>
                     <a href="/model-page">
-                        <img src="/storage/assets/img/lazy-1x1.webp" class="lazy" data-src="/storage/assets/img/1x1/004.webp"
+                        <img src="/storage/assets/img/lazy-1x1.webp" class="lazy"
+                             data-src="/storage/assets/img/1x1/004.webp"
                              width="80" height="80" alt="model">
                         <noscript>
                             <img src="/storage/assets/img/1x1/005.webp" width="80" height="80" alt="model">
@@ -433,7 +450,8 @@
                 </li>
                 <li>
                     <a href="/model-page">
-                        <img src="/storage/assets/img/lazy-1x1.webp" class="lazy" data-src="/storage/assets/img/1x1/005.webp"
+                        <img src="/storage/assets/img/lazy-1x1.webp" class="lazy"
+                             data-src="/storage/assets/img/1x1/005.webp"
                              width="80" height="80" alt="model">
                         <noscript>
                             <img src="/storage/assets/img/1x1/005.webp" width="80" height="80" alt="model">

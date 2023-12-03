@@ -124,6 +124,11 @@ class HomeController
         return view('layouts.single-pages.contact-us');
     }
 
+    public function ContactUsGet(FormRequest $request)
+    {
+        return view('layouts.single-pages.contact-us');
+    }
+
     public function companyProfile()
     {
         return view('layouts.single-pages.company-profile');
@@ -136,7 +141,7 @@ class HomeController
 
     public function becomeModel()
     {
-        return view('become-a-model');
+        return view('layouts.single-pages.become-a-model');
     }
 
     public function composite(Request $request)

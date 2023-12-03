@@ -96,7 +96,7 @@ class MemberController extends Controller
     /**
      * Show the form for creating a new resource.
      */
-    public function main()
+    public function dashboardAdmin()
     {
         $token = session('token');
         return view('dashboard.main', compact('token'));
@@ -444,11 +444,19 @@ class MemberController extends Controller
 
     private function checkExitMember($userId): Member
     {
-        if (!auth()->user()->getMember) {
+        $request->request->add(['step' => $stepId]);
+        $user = auth()->user();
+        $userId = $user->id;
+//        dd($user->member());
+        if (!$user->member()) {
             $member = new Member();
             $member->user_id = $userId;
             $member->save();
-            return $member;
+//            $user =auth()->user();
+//            $user->member_id=$member->id;
+//            $user->save();
+        } else {
+            $member = $user->member();
         }
         return auth()->user()->getMember;
     }

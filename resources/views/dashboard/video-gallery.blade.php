@@ -35,7 +35,7 @@
                                         <ul>
                                             <li class="item">
                                                 <div class="item-thumbnail">
-                                                    <img src="/storage/assets/img/video-001.webp" alt="image 1">
+                                                    <img src="/storage/assets/img/video/video-001.webp" alt="image 1">
                                                 </div>
                                                 <div class="item-content">
                                                     <div class="item-tags">
@@ -90,7 +90,7 @@
                                         <ul>
                                             <li class="item">
                                                 <div class="item-thumbnail">
-                                                    <img src="/storage/assets/img/video-001.webp" alt="image 1">
+                                                    <img src="/storage/assets/img/video/video-001.webp" alt="image 1">
                                                 </div>
                                                 <div class="item-content">
                                                     <div class="item-tags">
@@ -142,7 +142,7 @@
                                         <ul>
                                             <li class="item">
                                                 <div class="item-thumbnail">
-                                                    <img src="/storage/assets/img/video-001.webp" alt="image 1">
+                                                    <img src="/storage/assets/img/video/video-001.webp" alt="image 1">
                                                 </div>
                                                 <div class="item-content">
                                                     <div class="item-title">2023 - Job Experiences Title 1</div>
@@ -193,7 +193,7 @@
                                         <ul>
                                             <li class="item">
                                                 <div class="item-thumbnail">
-                                                    <img src="/storage/assets/img/video-001.webp" alt="image 1">
+                                                    <img src="/storage/assets/img/video/video-001.webp" alt="image 1">
                                                 </div>
                                                 <div class="item-content">
                                                     <div class="item-title">Sport - Football, Valliball, Dart</div>
@@ -254,7 +254,7 @@
                                         <ul>
                                             <li class="item">
                                                 <div class="item-thumbnail">
-                                                    <img src="/storage/assets/img/video-001.webp" alt="image 1">
+                                                    <img src="/storage/assets/img/video/video-001.webp" alt="image 1">
                                                 </div>
                                                 <div class="item-content">
                                                     <div class="item-tags">
