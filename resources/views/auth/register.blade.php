@@ -2,7 +2,7 @@
 @section('content-home')
     <body class="page page-account-form form-email form-email-model" style="visibility: visible;">
 
-    @include('header-site')
+    @include('header-site',['logo' => '/storage/assets/img/logo.svg'])
     <!-- start main -->
     <main>
         <div id="content">

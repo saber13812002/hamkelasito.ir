@@ -4,7 +4,7 @@
 
     <body class="page page-account-form" style="visibility: visible;">
 
-    @include('header-site')
+    @include('header-site',['logo' => '/storage/assets/img/logo.svg'])
     <!-- start main -->
     <main>
         <div id="content">
