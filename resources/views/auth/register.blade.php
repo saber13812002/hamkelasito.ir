@@ -2,7 +2,7 @@
 @section('content-home')
     <body class="page page-account-form form-email form-email-model" style="visibility: visible;">
 
-    @include('header-site')
+    @include('header-site',['logo' => '/storage/assets/img/logo.svg'])
     <!-- start main -->
     <main>
         <div id="content">
@@ -52,7 +52,7 @@
                                     <div class="field-content">
                                         <label for="email">{{ __('Name') }}</label>
                                         <input type="text" placeholder="Entered Name" id="name"
-                                               class="form-control" name="name" value="{{ old('name') }}" required>
+                                               class="form-control" name="name" value="{{ old('name') }}">
                                         @error('name')
                                             <div class="field-error-msg" id="field_error_name">{{ $message }}</div>
                                         @enderror
@@ -66,7 +66,7 @@
                                     <div class="field-content">
                                         <label for="email">{{ __('Email Address') }}</label>
                                         <input type="email" placeholder="Entered Email" id="email"
-                                               class="form-control" name="email" required>
+                                               class="form-control" name="email">
                                         @error('email')
                                             <div class="field-error-msg" id="field_error_name">{{ $message }}</div>
                                         @enderror
@@ -79,7 +79,7 @@
                                     <div class="field-content">
                                         <label for="password">{{ __('Password') }}</label>
                                         <input type="password" placeholder="Entered Password" id="password"
-                                               class="form-control" name="password" required>
+                                               class="form-control" name="password">
                                         @error('password')
                                             <div class="field-error-msg" id="field_error_password">{{ $message }}</div>
                                         @enderror
@@ -92,7 +92,7 @@
                                 <div class="field field-type-nr-input" data-type="text" data-required="true">
                                     <div class="field-content">
                                         <label for="password">{{ __('Password') }}</label>
-                                        <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
+                                        <input id="password-confirm" type="password" class="form-control" name="password_confirmation" autocomplete="new-password">
                                     </div>
                                 </div>
                             </div>

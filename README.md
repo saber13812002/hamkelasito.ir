@@ -17,7 +17,8 @@
  - copy .env.local .env
  - run install.bat commands
  - run update.bat
-
+ - run `composer dump` for update and set metronic init
+ - and run `php artisan vendor:publish` and select for publish metronic assets `Saspx\metronic\MetronicServiceProvider `
 ### mail configuration
  - make sure you do configuration for email verification in env file
 ```  MAIL_MAILER=smtp

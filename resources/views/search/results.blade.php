@@ -22,7 +22,7 @@
 </ul>
 @if($count>$limit)
     <a href="models-list/?s={{$phrase}}" class="more-result">
-        See All {{$count}} Results
+        {{__("menu.See All Results")}}
         <i class="icon-arrow-right"></i>
     </a>
 @endif

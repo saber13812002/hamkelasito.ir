@@ -289,69 +289,163 @@ return [
     |
     */
 
+//    'menu' => [
+//        // Navbar items:
+//        [
+//            'type'         => 'navbar-search',
+//            'text'         => 'search',
+//            'topnav_right' => true,
+//        ],
+//        [
+//            'type'         => 'fullscreen-widget',
+//            'topnav_right' => true,
+//        ],
+//
+//        // Sidebar items:
+//        [
+//            'type' => 'sidebar-menu-search',
+//            'text' => 'search',
+//        ],
+//        [
+//            'text' => 'blog',
+//            'url'  => 'admin/blog',
+//            'can'  => 'manage-blog',
+//        ],
+//        [
+//            'text'        => 'pages',
+//            'url'         => 'admin/pages',
+//            'icon'        => 'far fa-fw fa-file',
+//            'label'       => 4,
+//            'label_color' => 'success',
+//        ],
+//        ['header' => 'account_settings'],
+//        [
+//            'text' => 'profile',
+//            'url'  => 'admin/settings',
+//            'icon' => 'fas fa-fw fa-user',
+//        ],
+//        [
+//            'text' => 'change_password',
+//            'url'  => 'admin/settings',
+//            'icon' => 'fas fa-fw fa-lock',
+//        ],
+//        [
+//            'text'    => 'multilevel',
+//            'icon'    => 'fas fa-fw fa-share',
+//            'submenu' => [
+//                [
+//                    'text' => 'level_one',
+//                    'url'  => '#',
+//                ],
+//                [
+//                    'text'    => 'level_one',
+//                    'url'     => '#',
+//                    'submenu' => [
+//                        [
+//                            'text' => 'level_two',
+//                            'url'  => '#',
+//                        ],
+//                        [
+//                            'text'    => 'level_two',
+//                            'url'     => '#',
+//                            'submenu' => [
+//                                [
+//                                    'text' => 'level_three',
+//                                    'url'  => '#',
+//                                ],
+//                                [
+//                                    'text' => 'level_three',
+//                                    'url'  => '#',
+//                                ],
+//                            ],
+//                        ],
+//                    ],
+//                ],
+//                [
+//                    'text' => 'level_one',
+//                    'url'  => '#',
+//                ],
+//            ],
+//        ],
+//        ['header' => 'labels'],
+//        [
+//            'text'       => 'important',
+//            'icon_color' => 'red',
+//            'url'        => '#',
+//        ],
+//        [
+//            'text'       => 'warning',
+//            'icon_color' => 'yellow',
+//            'url'        => '#',
+//        ],
+//        [
+//            'text'       => 'information',
+//            'icon_color' => 'cyan',
+//            'url'        => '#',
+//        ],
+//    ],
     'menu' => [
         [
             'text' => 'Main',
-            'url'  => 'admin',
+            'url' => 'admin',
             'icon' => 'fas fa-fw fa-main',
         ],
         [
             'text' => 'Translation',
-            'url'  => 'translations',
+            'url' => 'translations',
             'icon' => 'fas fa-fw fa-language',
         ],
         [
             'text' => 'Categories',
-            'url'  => 'admin/categories',
+            'url' => 'admin/categories',
             'icon' => 'fas fa-fw fa-cat',
         ],
         [
             'text' => 'Members',
-            'url'  => 'admin/members',
+            'url' => 'admin/members',
             'icon' => 'fas fa-fw fa-users',
         ],
         [
             'text' => 'Users',
-            'url'  => 'admin/users',
+            'url' => 'admin/users',
             'icon' => 'fas fa-fw fa-user',
         ],
         [
             'text' => 'Sliders',
-            'url'  => 'admin/sliders',
+            'url' => 'admin/sliders',
             'icon' => 'fas fa-fw fa-map',
         ],
         [
             'text' => 'Countries',
-            'url'  => 'admin/countries',
+            'url' => 'admin/countries',
             'icon' => 'fas fa-fw fa-icons',
         ],
         [
             'text' => 'Languages',
-            'url'  => 'admin/languages',
+            'url' => 'admin/languages',
             'icon' => 'fas fa-fw fa-language',
         ],
         [
             'text' => 'Approval Fields',
-            'url'  => 'admin/fields',
+            'url' => 'admin/fields',
             'icon' => 'fas fa-fw fa-check',
         ],
         [
             'text' => 'Approval',
-            'url'  => 'admin/approval',
+            'url' => 'admin/approval',
             'icon' => 'fas fa-fw fa-check',
         ],
         [
             'text' => 'Contact Us',
-            'url'  => 'admin/contact-us',
+            'url' => 'admin/contact-us',
             'icon' => 'fas fa-fw fa-user',
         ],
         [
             'text' => 'Survey',
-            'url'  => 'admin/survey',
+            'url' => 'admin/survey',
             'icon' => 'fas fa-fw fa-question',
         ],
     ],
-
     /*
     |--------------------------------------------------------------------------
     | Menu Filters

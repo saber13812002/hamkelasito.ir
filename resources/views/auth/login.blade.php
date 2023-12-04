@@ -4,7 +4,7 @@
 
     <body class="page page-account-form" style="visibility: visible;">
 
-    @include('header-site')
+    @include('header-site',['logo' => '/storage/assets/img/logo.svg'])
     <!-- start main -->
     <main>
         <div id="content">
@@ -51,7 +51,7 @@
                                     <div class="field-content">
                                         <label for="email">Email</label>
                                         <input type="email" placeholder="Entered Email" id="email"
-                                               class="form-control" name="email" required>
+                                               class="form-control" name="email">
                                     </div>
                                 </div>
                                 @if ($errors->has('email'))
@@ -64,7 +64,7 @@
                                     <div class="field-content">
                                         <label for="password">Password</label>
                                         <input type="password" placeholder="Entered Password" id="password"
-                                               class="form-control" name="password" required>
+                                               class="form-control" name="password">
                                     </div>
                                     <i class="icon-eye field-show-password"></i>
                                 </div>
