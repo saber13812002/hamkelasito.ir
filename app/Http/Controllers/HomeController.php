@@ -18,7 +18,7 @@ class HomeController
     public function index()
     {
         $categories = Category::all();
-        $members = Member::published()->get();
+        $members = Member::published()->limit(150)->get();
         $sliders = Slider::all();
 
         return view('home', compact('categories', 'members', 'sliders'));

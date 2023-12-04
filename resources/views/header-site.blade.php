@@ -11,7 +11,7 @@
             </div>
             <div class="app-bar-title">
                 <a href="/" class="app-logo" aria-label="Liliana">
-                    <img src="/storage/assets/img/logo-white.svg" class="lazy lz-entered lz-loaded"
+                    <img src="{{ $logo ?? '/storage/assets/img/logo-white.svg' }}" class="lazy lz-entered lz-loaded"
                          data-src="/storage/assets/img/logo-white.svg" width="88" height="24" alt="liliana"
                          data-ll-status="loaded">
                     <noscript>

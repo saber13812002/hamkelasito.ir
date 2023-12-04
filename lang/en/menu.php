@@ -111,7 +111,7 @@ return array (
   'Order' => 'Order',
   'Enable' => 'Enable',
   'Awaitingmembers' => 'Awaitingmembers',
-  'Awaitingmembers' => 'Awaitingmembers',
+  'See All Results' => 'See All Results',
   'Awaitingmembers' => 'Awaitingmembers',
   'Awaitingmembers' => 'Awaitingmembers',
   'Basic Info' => 'Basic Info',
