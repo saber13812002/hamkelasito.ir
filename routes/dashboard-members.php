@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Route;
 // DASHBOARD
 
 //APPLY_AS_A_MODEL_FORM
-Route::get('apply-as-a-model-form-role', [MemberController::class, 'step0get'])->name('step0get');
+    Route::get('apply-as-a-model-form-role', [MemberController::class, 'step0get'])->name('step0get');
 Route::post('apply-as-a-model-form-role', [MemberController::class, 'step0'])->name('step0');
 Route::get('apply-as-a-model-form-step-1', [MemberController::class, 'step1get'])->name('step1get')
     ->middleware('step.ctrl:1');;
