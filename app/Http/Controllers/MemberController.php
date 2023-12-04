@@ -11,6 +11,7 @@ use App\Models\Upload;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\Session;
 
 class MemberController extends Controller
 {
@@ -19,9 +20,15 @@ class MemberController extends Controller
      *
      * admin panel super admin
      */
-    public function index()
+    public function index(Request $request)
     {
-        $members = Member::published()->get();
+        $members = Member::query()->when(isset($request->search), function ($q) use ($request) {
+            return $q->where('name', 'LIKE', '%' . $request->search . '%')
+                ->orWhere('family', 'LIKE', '%' . $request->search . '%')
+                ->orWhere('middle_name', 'LIKE', '%' . $request->search . '%')
+                ->orWhere('alias', 'LIKE', '%' . $request->search . '%')
+                ->orWhere('no', 'LIKE', '%' . $request->search . '%');
+        })->published()->paginate();
         return view('admin.member.index', compact('members'));
     }
 
@@ -116,7 +123,9 @@ class MemberController extends Controller
     public function userInfo()
     {
         $token = session('token');
-        return view('dashboard.user-info', compact('token'));
+        $memberUserId = $this->getId();
+        $member = Member::query()->where('user_id', $memberUserId)->first();
+        return view('dashboard.user-info', compact('token', 'member'));
     }
 
     /**
@@ -178,8 +187,13 @@ class MemberController extends Controller
      */
     public function userInfoEditBasicInfo()
     {
+        $memberUserId = $this->getId();
         $token = session('token');
-        return view('dashboard.user-info-edit-basic-info', compact('token'));
+        $member = Member::query()->where('user_id', $memberUserId)->first();
+        if (check_login_from_admin_to_member()) {
+            return view('dashboard.admin-user-info-edit-basic-info', compact('token', 'member'));
+        }
+        return view('dashboard.user-info-edit-basic-info', compact('token', 'member'));
     }
 
     /**
@@ -257,6 +271,23 @@ class MemberController extends Controller
     public function update(UpdateMemberRequest $request, Member $members)
     {
         //
+    }
+
+    /**
+     * Update the specified resource in storage.
+     */
+    public function updateFromApi(Request $request)
+    {
+        $members = Member::query()->where('id', $request->id)->first();
+        if ($members) {
+            $_mem = $request->field ?? [];
+            $members->update($_mem);
+            $members->save();
+            return response()->json([
+                'message' => 'Your request was sent Successfully.'
+            ])->setStatusCode(200);
+        }
+        return response()->json()->setStatusCode(404);
     }
 
     /**
@@ -500,13 +531,23 @@ class MemberController extends Controller
         }
     }
 
+    public function getId(): int
+    {
+//         todo : WIP
+        $session = Session::get('admin_login_to_user_dashboard');
+        if ($session && !is_null($session)) {
+            return $session;
+        }
+        return auth()->user()->id;
+    }
+
     /**
      * @return TempTable
      */
     public function getOldFormData(array $stepIds)
     {
         $saved = TempTable::query()
-            ->whereUserId(auth()->user()->id)
+            ->whereUserId($this->getId())
             ->whereStepId($stepIds)
             ->whereType('string')
             ->get()
@@ -522,7 +563,7 @@ class MemberController extends Controller
     public function getOldFileData(array $stepIds)
     {
         $saved = TempTable::query()
-            ->whereUserId(auth()->user()->id)
+            ->whereUserId($this->getId())
             ->whereStepId($stepIds)
             ->whereType('file')
             ->get()
@@ -554,7 +595,7 @@ class MemberController extends Controller
     public function getOldJsonData(array $stepIds)
     {
         return TempTable::query()
-            ->whereUserId(auth()->user()->id)
+            ->whereUserId($this->getId())
             ->whereStepId($stepIds)
             ->whereType('json')
             ->get()
@@ -567,7 +608,7 @@ class MemberController extends Controller
     public function getOldTextData(array $stepIds)
     {
         return TempTable::query()
-            ->whereUserId(auth()->user()->id)
+            ->whereUserId($this->getId())
             ->whereStepId($stepIds)
             ->whereType('text')
             ->get()
@@ -595,10 +636,11 @@ class MemberController extends Controller
             $options = $this->generateShoeUsMenSize($options);
             $options = $this->generateShoeUsWomenSize($options);
             // todo
+
             $options['gender'] = TempTable::query()
-                ->whereUserId(auth()->user()->id)
+                ->whereUserId($this->getId())
                 ->whereModelField('gender')
-                ->first()->value;
+                ->first()->value ?? null;
 //            dd($op);
         }
         if (in_array(3, $stepIds)) {
@@ -781,5 +823,23 @@ class MemberController extends Controller
 
         $response->setLastModified(new \DateTime('now'));
         $response->setExpires(\Carbon\Carbon::now()->addMinutes(config('imagecache.lifetime')));
+    }
+
+    public function loginMemberUpdatePage(Member $member)
+    {
+        $checkSession = Session::get('admin_login_to_user_dashboard');
+        if (!$checkSession || $checkSession !== $member->user_id) {
+            Session::put('admin_login_to_user_dashboard', $member->user_id);
+        }
+        return redirect()->route('user-info');
+    }
+
+    public function backToAdmin()
+    {
+        $checkSession = Session::get('admin_login_to_user_dashboard');
+        if ($checkSession) {
+            Session::remove('admin_login_to_user_dashboard');
+        }
+        return redirect()->route('adminMember');
     }
 }

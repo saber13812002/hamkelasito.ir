@@ -3,7 +3,6 @@
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\MemberController;
 use App\Models\City;
-use App\Models\Language;
 use App\Models\State;
 use App\Models\Upload;
 use Illuminate\Http\Request;
@@ -32,7 +31,7 @@ Route::any('/search', [MemberController::class, 'search']);
 Route::any('/filter', [MemberController::class, 'filter']);
 
 Route::post('/load-more/archive', [MemberController::class, 'archive']);
-
+Route::post('/update_user', [MemberController::class, 'updateFromApi']);
 Route::group(['prefix' => 'user', 'middleware' => 'auth:sanctum'], function () {
 
     Route::get('/', function (Request $request) {

@@ -88,7 +88,12 @@ class AuthController extends Controller
                 ->orWhere('approved_at', '=', '');
             $array = TempTable::query()->distinct()->pluck('member_id')->toArray();
             $memberAwaitItems = Member::whereIn('id', $array)->get();
-//            dd($array,$memberAwaitItems,$memberAwaitBuilder);
+
+
+            // todo : this value just for demo and test chart item
+            $memberAwaitItems = Member::query()->limit(10)->get();
+
+
             $awaitingMembersCount = $memberAwaitBuilder
                 ->count();
             $totalMembersCount = Member::published()->count();
@@ -97,6 +102,12 @@ class AuthController extends Controller
             $rejectedItemsCount = TempTable::query()
                 ->whereDate('updated_at', '>=', 'created_at')
                 ->count();
+
+            // todo : this value just for demo and test chart item
+//            $totalItemsCount = 43;
+//            $rejectedItemsCount = 32;
+
+
             $awaitingItemsCount = $totalItemsCount - $rejectedItemsCount;
             return view('auth.admin', compact(
                 'memberAwaitItems',

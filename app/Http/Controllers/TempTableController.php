@@ -18,7 +18,7 @@ class TempTableController extends Controller
      */
     public function index()
     {
-        $approve_items = TempTable::whereNull('approved_at')->get();
+        $approve_items = TempTable::query()->whereNull('approved_at')->paginate(15);
         return view('admin.approval.index', compact('approve_items'));
     }
 
@@ -32,7 +32,8 @@ class TempTableController extends Controller
             ->orWhereNotNull('json')
             ->orWhereNotNull('text')
             ->get();
-        return view('admin.member.tempTables', compact('approve_items', 'member_id'));
+        $member = Member::query()->where('id', $member_id)->first();
+        return view('admin.member.tempTables', compact('approve_items', 'member'));
     }
 
     public function postApproveForm(FormRequest $request)

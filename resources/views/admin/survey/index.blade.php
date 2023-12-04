@@ -1,4 +1,4 @@
-@extends('adminlte::page')
+@extends('MetronicView::layouts.master')
 
 @section('title', 'Dashboard')
 
