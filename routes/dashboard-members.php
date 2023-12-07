@@ -17,19 +17,30 @@ use Illuminate\Support\Facades\Route;
 // DASHBOARD
 
 //APPLY_AS_A_MODEL_FORM
-Route::get('apply-as-a-model-form-role', [MemberController::class, 'step0get'])->name('step0get');
+    Route::get('apply-as-a-model-form-role', [MemberController::class, 'step0get'])->name('step0get');
 Route::post('apply-as-a-model-form-role', [MemberController::class, 'step0'])->name('step0');
-Route::get('apply-as-a-model-form-step-1', [MemberController::class, 'step1get'])->name('step1get');
-Route::post('apply-as-a-model-form-step-1', [MemberController::class, 'step1'])->name('step1');
-Route::get('apply-as-a-model-form-step-2', [MemberController::class, 'step2get'])->name('step2get');
-Route::post('apply-as-a-model-form-step-2', [MemberController::class, 'step2'])->name('step2');
-Route::get('apply-as-a-model-form-step-3', [MemberController::class, 'step3get'])->name('step3get');
-Route::post('apply-as-a-model-form-step-3', [MemberController::class, 'step3'])->name('step3');
-Route::any('apply-as-a-model-form-step-4', [MemberController::class, 'step4'])->name('step4');
-Route::any('apply-as-a-model-form-step-5', [MemberController::class, 'step5'])->name('step5');
-Route::any('apply-as-a-model-form-step-6', [MemberController::class, 'step6'])->name('step6');
-Route::any('apply-as-a-model-form-step-final-check', [MemberController::class, 'step7'])->name('step7');
-Route::any('apply-as-a-model-success', [MemberController::class, 'step8'])->name('step8');
+Route::get('apply-as-a-model-form-step-1', [MemberController::class, 'step1get'])->name('step1get')
+    ->middleware('step.ctrl:1');;
+Route::post('apply-as-a-model-form-step-1', [MemberController::class, 'step1'])->name('step1')
+    ->middleware('step.ctrl:1');
+Route::get('apply-as-a-model-form-step-2', [MemberController::class, 'step2get'])->name('step2get')
+    ->middleware('step.ctrl:2');
+Route::post('apply-as-a-model-form-step-2', [MemberController::class, 'step2'])->name('step2')
+    ->middleware('step.ctrl:2');;
+Route::get('apply-as-a-model-form-step-3', [MemberController::class, 'step3get'])->name('step3get')
+    ->middleware('step.ctrl:3');
+Route::post('apply-as-a-model-form-step-3', [MemberController::class, 'step3'])->name('step3')
+    ->middleware('step.ctrl:3');
+Route::any('apply-as-a-model-form-step-4', [MemberController::class, 'step4'])->name('step4')
+    ->middleware('step.ctrl:4');
+Route::any('apply-as-a-model-form-step-5', [MemberController::class, 'step5'])->name('step5')
+    ->middleware('step.ctrl:5');
+Route::any('apply-as-a-model-form-step-6', [MemberController::class, 'step6'])->name('step6')
+    ->middleware('step.ctrl:6');
+Route::any('apply-as-a-model-form-step-final-check', [MemberController::class, 'step7'])->name('step7')
+    ->middleware('step.ctrl:7');
+Route::any('apply-as-a-model-success', [MemberController::class, 'step8'])->name('step8')
+    ->middleware('step.ctrl:8');
 
 
 Route::get('', [MemberController::class, 'dashboardAdmin'])->name('dashboard-models');

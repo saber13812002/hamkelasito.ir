@@ -8,6 +8,7 @@ use App\Models\Member;
 use App\Models\TempField;
 use App\Models\TempTable;
 use App\Models\Upload;
+use App\Services\MemberService;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
@@ -320,8 +321,10 @@ class MemberController extends Controller
         $this->getResponseObject();
 
         $stepId = 0;
+        $this->updateLevelStep($stepId + 1);
         $compact = $this->getArr($stepId);
 //        return view('apply_as.step-0', $compact);
+        $this->updateLevelStep($stepId + 1);
 
         return response()
             ->view('apply_as.step-0', $compact);
@@ -350,9 +353,9 @@ class MemberController extends Controller
     public function step1(Request $request)
     {
         $this->getResponseObject();
-//        dd($request);
         $this->saveRequestToTempTable($request, 0);
         $stepId = 1;
+        $this->updateLevelStep($stepId + 1);
         $compact = $this->getArr($stepId);
         return response()
             ->view('apply_as.step-1', $compact);
@@ -378,6 +381,7 @@ class MemberController extends Controller
         $this->getResponseObject();
         $this->saveRequestToTempTable($request, 1);
         $stepId = 2;
+        $this->updateLevelStep($stepId + 1);
         $compact = $this->getArr($stepId);
         return response()
             ->view('apply_as.step-2', $compact);
@@ -403,6 +407,7 @@ class MemberController extends Controller
         $this->getResponseObject();
         $this->saveRequestToTempTable($request, 2);
         $stepId = 3;
+        $this->updateLevelStep($stepId + 1);
         $compact = $this->getArr($stepId);
         return response()
             ->view('apply_as.step-3', $compact);
@@ -416,6 +421,8 @@ class MemberController extends Controller
         $this->getResponseObject();
         $this->saveRequestToTempTable($request, 3);
         $stepId = 4;
+        $this->updateLevelStep($stepId + 1);
+
         $compact = $this->getArr($stepId);
         return response()
             ->view('apply_as.step-4', $compact);
@@ -429,6 +436,8 @@ class MemberController extends Controller
         $this->getResponseObject();
         $this->saveRequestToTempTable($request, 4);
         $stepId = 5;
+        $this->updateLevelStep($stepId + 1);
+
         $compact = $this->getArr($stepId);
         return response()
             ->view('apply_as.step-5', $compact);
@@ -442,6 +451,8 @@ class MemberController extends Controller
         $this->getResponseObject();
         $this->saveRequestToTempTable($request, 5);
         $stepId = 6;
+        $this->updateLevelStep($stepId + 1);
+
         $compact = $this->getArr($stepId);
         return response()
             ->view('apply_as.step-6', $compact);
@@ -455,6 +466,8 @@ class MemberController extends Controller
         $this->getResponseObject();
         $this->saveRequestToTempTable($request, 6);
         $stepId = 7;
+        $this->updateLevelStep($stepId + 1);
+
         $compact = $this->getArr($stepId);
         return response()
             ->view('apply_as.step-7', $compact);
@@ -468,14 +481,16 @@ class MemberController extends Controller
         $this->getResponseObject();
         $this->saveRequestToTempTable($request, 7);
         $stepId = 8;
+        $this->updateLevelStep($stepId + 1);
+
         $compact = $this->getArr($stepId);
         return response()
             ->view('apply_as.step-8', $compact);
     }
 
-    private function saveRequestToTempTable(Request $request, int $stepId)
+    private function checkExitMember($userId, $stepId): Member
     {
-        $request->request->add(['step' => $stepId]);
+        \request()->request->add(['step' => $stepId]);
         $user = auth()->user();
         $userId = $user->id;
 //        dd($user->member());
@@ -489,6 +504,15 @@ class MemberController extends Controller
         } else {
             $member = $user->member();
         }
+        return auth()->user()->getMember;
+    }
+
+    private function saveRequestToTempTable(Request $request, int $stepId)
+    {
+        $request->request->add(['step' => $stepId]);
+        $userId = auth()->user()->id;
+        $member = $this->checkExitMember($userId, $stepId);
+        MemberService::updateLevelStep($member, $stepId);
         Log::info($request);
 //        dd(auth()->user());
 //        $tempTable->member_id
@@ -809,6 +833,18 @@ class MemberController extends Controller
         $token = session('token');
         $compact = compact('token', 'saved', 'saved_text', 'saved_json', 'saved_file', 'options');
         return $compact;
+    }
+
+    public function updateLevelStep($stepId, $memberId = null): void
+    {
+        if (is_null($memberId)) {
+            $memberId = $this->getId();
+        }
+        $member = Member::query()->where('id', $memberId)->first();
+        if ($member) {
+            $member->level_step = $stepId;
+            $member->save();
+        }
     }
 
     /**
