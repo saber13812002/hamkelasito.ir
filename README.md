@@ -17,6 +17,15 @@
  - copy .env.local .env
  - run install.bat commands
  - run update.bat
+ - clone front into /storage/app/ instead of public folder : details in Front section of this doc
+ - run `composer dump` for update and set metronic init
+ - and run `php artisan vendor:publish` and select for publish metronic assets `Saspx\metronic\MetronicServiceProvider `
+
+### Front 
+
+ - clone from this or that ;)
+ - https://github.com/saber13812002/public-assets-lili
+ - https://github.com/MohammadShateri/public
 
 ### mail configuration
  - make sure you do configuration for email verification in env file
